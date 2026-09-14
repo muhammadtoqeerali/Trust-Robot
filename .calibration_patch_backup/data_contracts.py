@@ -335,49 +335,6 @@ class DatasetReadiness:
         )
 
 
-
-@dataclass(frozen=True)
-class CalibrationArtifactSpec:
-    artifact_id: str
-    source_path: str
-    sha256: str
-    verification_status: VerificationStatus
-    applies_to_stream_ids: tuple[str, ...] = ()
-    applies_to_frame_ids: tuple[str, ...] = ()
-    notes: str | None = None
-
-    def __post_init__(self):
-
-        if not self.artifact_id:
-            raise ContractError(
-                "calibration artifact requires artifact_id"
-            )
-
-        if not self.source_path:
-            raise ContractError(
-                "calibration artifact requires source_path"
-            )
-
-        if self.source_path.startswith("/"):
-            raise ContractError(
-                "calibration artifact path must be relative"
-            )
-
-        if not self.sha256:
-            raise ContractError(
-                "calibration artifact requires sha256"
-            )
-
-        if (
-            self.verification_status
-            == VerificationStatus.VERIFIED
-            and not self.artifact_id
-        ):
-            raise ContractError(
-                "verified calibration requires provenance"
-            )
-
-
 @dataclass(frozen=True)
 class TrajectoryRecord:
     dataset_id: str
@@ -386,7 +343,6 @@ class TrajectoryRecord:
     split: SplitRole
     streams: tuple[StreamSpec, ...]
     references: tuple[ReferenceSpec, ...]
-    calibration_artifacts: tuple[CalibrationArtifactSpec, ...] = ()
     derivative_kind: DerivativeKind = DerivativeKind.CLEAN
     corruption_seed: int | None = None
 

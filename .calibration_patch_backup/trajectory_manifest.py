@@ -19,7 +19,6 @@ from .data_contracts import (
     SynchronizationSpec,
     TrajectoryRecord,
     VerificationStatus,
-    CalibrationArtifactSpec,
     validate_trajectory_records,
 )
 
@@ -103,25 +102,6 @@ def _sync_dict(sync: SynchronizationSpec) -> dict:
     }
 
 
-
-def _calibration_dict(
-    artifact: CalibrationArtifactSpec,
-) -> dict:
-    return {
-        "artifact_id": artifact.artifact_id,
-        "source_path": artifact.source_path,
-        "sha256": artifact.sha256,
-        "verification_status":
-            artifact.verification_status.value,
-        "applies_to_stream_ids":
-            list(artifact.applies_to_stream_ids),
-        "applies_to_frame_ids":
-            list(artifact.applies_to_frame_ids),
-        "notes": artifact.notes,
-    }
-
-
-
 def _record_dict(
     record: TrajectoryRecord,
     synchronization: Sequence[SynchronizationSpec],
@@ -145,13 +125,6 @@ def _record_dict(
             for reference in sorted(
                 record.references,
                 key=lambda item: item.source_id,
-            )
-        ],
-        "calibration_artifacts": [
-            _calibration_dict(item)
-            for item in sorted(
-                record.calibration_artifacts,
-                key=lambda item: item.artifact_id,
             )
         ],
         "synchronization": [
