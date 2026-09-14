@@ -1,0 +1,12 @@
+# Machine-local dataset paths only.
+# Copy to a local, ignored file when datasets are actually acquired.
+# Do not commit workstation-specific absolute paths into portable scientific config.
+
+datasets:
+  M2DGR: null
+  EuRoC: null
+  TUM_VI: null
+  MUN_FRL: null
+  GrandTour: null
+  M3DGR: null
+  KIOS_QUADRUPED: null

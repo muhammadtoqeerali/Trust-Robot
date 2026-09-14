@@ -1,0 +1,461 @@
+{
+  "benchmark_scope": {
+    "datasets": [
+      "UNIVRFALL",
+      "KFALL"
+    ],
+    "historical_zero_window_trials": [
+      "106/27/1",
+      "106/27/5"
+    ],
+    "onfield_acquisition_p0_enabled": false,
+    "onfield_exclusion_reason": "raw trial mapping unverified",
+    "zero_window_trials_acquisition_only_allowed": true,
+    "zero_window_trials_model_coupled_allowed": false
+  },
+  "channel_policy": {
+    "CHANNEL_FREEZE": "one task channel per instance; choose deterministically among channels with at least one mutating admissible placement",
+    "FRAME_REPEAT": "repeat the complete six-channel sensor row",
+    "RANGE_CLIP": "one task channel per instance; choose deterministically among channels with at least one admissible clamp-changing placement",
+    "task_channels": [
+      "acc_x",
+      "acc_y",
+      "acc_z",
+      "gyr_x",
+      "gyr_y",
+      "gyr_z"
+    ]
+  },
+  "content_sha256": "cb33c32951930453db550dfd02deab67a9eb51e851edf1a186e7faa4a5432220",
+  "families": {
+    "CHANNEL_FREEZE": {
+      "kind": "CHANNEL_FREEZE",
+      "placement_constraints": {
+        "freeze_value_source": "selected channel value immediately before start",
+        "must_mutate_selected_channel": true,
+        "single_channel_per_instance": true,
+        "start_min": 1
+      },
+      "runtime_attribution_constraints": {
+        "all_datasets": "CHANNEL_FREEZE_SUSPECT only"
+      },
+      "severity_parameter": "frozen_sample_count",
+      "severity_values": {
+        "high": 20,
+        "low": 5,
+        "medium": 10
+      }
+    },
+    "FRAME_GAP": {
+      "kind": "FRAME_GAP",
+      "placement_constraints": {
+        "metadata_behavior": "remove sensor row and retain surrounding timestamps/counters so discontinuity is observable when provenance qualifies",
+        "must_leave_post_gap_sample": true,
+        "start_min": 1
+      },
+      "runtime_attribution_constraints": {
+        "KFALL": "hard-qualified from raw FrameCounter discontinuity",
+        "UNIVRFALL": "synthetic truth only; derived counter does not qualify a hard runtime cause"
+      },
+      "severity_parameter": "removed_sample_count",
+      "severity_values": {
+        "high": 8,
+        "low": 1,
+        "medium": 4
+      }
+    },
+    "FRAME_REPEAT": {
+      "kind": "FRAME_REPEAT",
+      "placement_constraints": {
+        "copy_source": "immediately preceding sensor row",
+        "must_mutate_sensor_values": true,
+        "start_min": 1,
+        "timestamps_and_counters_continue": true
+      },
+      "runtime_attribution_constraints": {
+        "all_datasets": "P0 truth does not qualify FRAME_REPEAT as a hard runtime cause without independent data-path evidence"
+      },
+      "severity_parameter": "repeated_sample_count",
+      "severity_values": {
+        "high": 10,
+        "low": 2,
+        "medium": 5
+      }
+    },
+    "RANGE_CLIP": {
+      "kind": "RANGE_CLIP",
+      "per_dataset_channel_levels": {
+        "KFALL": {
+          "high": {
+            "acc_x": {
+              "absolute_clamp_level": 1.068,
+              "high": 1.068,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1.068,
+              "source_quantile": "q0.990"
+            },
+            "acc_y": {
+              "absolute_clamp_level": 2.006,
+              "high": 2.006,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -2.006,
+              "source_quantile": "q0.990"
+            },
+            "acc_z": {
+              "absolute_clamp_level": 1.189,
+              "high": 1.189,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1.189,
+              "source_quantile": "q0.990"
+            },
+            "gyr_x": {
+              "absolute_clamp_level": 145.0156698,
+              "high": 145.0156698,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -145.0156698,
+              "source_quantile": "q0.990"
+            },
+            "gyr_y": {
+              "absolute_clamp_level": 190.7377182,
+              "high": 190.7377182,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -190.7377182,
+              "source_quantile": "q0.990"
+            },
+            "gyr_z": {
+              "absolute_clamp_level": 87.77716559999998,
+              "high": 87.77716559999998,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -87.77716559999998,
+              "source_quantile": "q0.990"
+            }
+          },
+          "low": {
+            "acc_x": {
+              "absolute_clamp_level": 3.0634530000002123,
+              "high": 3.0634530000002123,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -3.0634530000002123,
+              "source_quantile": "q0.999"
+            },
+            "acc_y": {
+              "absolute_clamp_level": 3.319,
+              "high": 3.319,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -3.319,
+              "source_quantile": "q0.999"
+            },
+            "acc_z": {
+              "absolute_clamp_level": 3.698,
+              "high": 3.698,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -3.698,
+              "source_quantile": "q0.999"
+            },
+            "gyr_x": {
+              "absolute_clamp_level": 306.8449639974122,
+              "high": 306.8449639974122,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -306.8449639974122,
+              "source_quantile": "q0.999"
+            },
+            "gyr_y": {
+              "absolute_clamp_level": 282.09317839741215,
+              "high": 282.09317839741215,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -282.09317839741215,
+              "source_quantile": "q0.999"
+            },
+            "gyr_z": {
+              "absolute_clamp_level": 239.2672608,
+              "high": 239.2672608,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -239.2672608,
+              "source_quantile": "q0.999"
+            }
+          },
+          "medium": {
+            "acc_x": {
+              "absolute_clamp_level": 1.3219999999999998,
+              "high": 1.3219999999999998,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1.3219999999999998,
+              "source_quantile": "q0.995"
+            },
+            "acc_y": {
+              "absolute_clamp_level": 2.313,
+              "high": 2.313,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -2.313,
+              "source_quantile": "q0.995"
+            },
+            "acc_z": {
+              "absolute_clamp_level": 1.626,
+              "high": 1.626,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1.626,
+              "source_quantile": "q0.995"
+            },
+            "gyr_x": {
+              "absolute_clamp_level": 196.6391856,
+              "high": 196.6391856,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -196.6391856,
+              "source_quantile": "q0.995"
+            },
+            "gyr_y": {
+              "absolute_clamp_level": 219.9585762,
+              "high": 219.9585762,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -219.9585762,
+              "source_quantile": "q0.995"
+            },
+            "gyr_z": {
+              "absolute_clamp_level": 117.2272068,
+              "high": 117.2272068,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -117.2272068,
+              "source_quantile": "q0.995"
+            }
+          }
+        },
+        "UNIVRFALL": {
+          "high": {
+            "acc_x": {
+              "absolute_clamp_level": 1646.7600000000093,
+              "high": 1646.7600000000093,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1646.7600000000093,
+              "source_quantile": "q0.990"
+            },
+            "acc_y": {
+              "absolute_clamp_level": 947.0,
+              "high": 947.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -947.0,
+              "source_quantile": "q0.990"
+            },
+            "acc_z": {
+              "absolute_clamp_level": 1079.0,
+              "high": 1079.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1079.0,
+              "source_quantile": "q0.990"
+            },
+            "gyr_x": {
+              "absolute_clamp_level": 113120.0,
+              "high": 113120.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -113120.0,
+              "source_quantile": "q0.990"
+            },
+            "gyr_y": {
+              "absolute_clamp_level": 106470.0,
+              "high": 106470.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -106470.0,
+              "source_quantile": "q0.990"
+            },
+            "gyr_z": {
+              "absolute_clamp_level": 53060.0,
+              "high": 53060.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -53060.0,
+              "source_quantile": "q0.990"
+            }
+          },
+          "low": {
+            "acc_x": {
+              "absolute_clamp_level": 3803.0,
+              "high": 3803.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -3803.0,
+              "source_quantile": "q0.999"
+            },
+            "acc_y": {
+              "absolute_clamp_level": 2278.875999999931,
+              "high": 2278.875999999931,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -2278.875999999931,
+              "source_quantile": "q0.999"
+            },
+            "acc_z": {
+              "absolute_clamp_level": 3376.875999999931,
+              "high": 3376.875999999931,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -3376.875999999931,
+              "source_quantile": "q0.999"
+            },
+            "gyr_x": {
+              "absolute_clamp_level": 251020.0,
+              "high": 251020.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -251020.0,
+              "source_quantile": "q0.999"
+            },
+            "gyr_y": {
+              "absolute_clamp_level": 262491.3199999952,
+              "high": 262491.3199999952,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -262491.3199999952,
+              "source_quantile": "q0.999"
+            },
+            "gyr_z": {
+              "absolute_clamp_level": 148811.31999999518,
+              "high": 148811.31999999518,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -148811.31999999518,
+              "source_quantile": "q0.999"
+            }
+          },
+          "medium": {
+            "acc_x": {
+              "absolute_clamp_level": 2175.3799999998882,
+              "high": 2175.3799999998882,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -2175.3799999998882,
+              "source_quantile": "q0.995"
+            },
+            "acc_y": {
+              "absolute_clamp_level": 1005.0,
+              "high": 1005.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1005.0,
+              "source_quantile": "q0.995"
+            },
+            "acc_z": {
+              "absolute_clamp_level": 1318.0,
+              "high": 1318.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -1318.0,
+              "source_quantile": "q0.995"
+            },
+            "gyr_x": {
+              "absolute_clamp_level": 144856.59999999218,
+              "high": 144856.59999999218,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -144856.59999999218,
+              "source_quantile": "q0.995"
+            },
+            "gyr_y": {
+              "absolute_clamp_level": 140700.0,
+              "high": 140700.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -140700.0,
+              "source_quantile": "q0.995"
+            },
+            "gyr_z": {
+              "absolute_clamp_level": 77560.0,
+              "high": 77560.0,
+              "interpretation": "synthetic_dev_quantile_clamp_not_physical_rail",
+              "low": -77560.0,
+              "source_quantile": "q0.995"
+            }
+          }
+        }
+      },
+      "placement_constraints": {
+        "candidate_must_contain_value_exceeding_clamp": true,
+        "candidate_span_samples": 40,
+        "must_mutate_selected_channel": true,
+        "single_channel_per_instance": true,
+        "symmetric_low_high_clamp": true
+      },
+      "runtime_attribution_constraints": {
+        "all_datasets": "synthetic clamp truth only; levels are development empirical quantiles and are not verified physical sensor rails"
+      },
+      "severity_parameter": "development_absolute_quantile_clamp",
+      "severity_to_quantile": {
+        "high": "q0.990",
+        "low": "q0.999",
+        "medium": "q0.995"
+      }
+    },
+    "TIMING_PERTURBATION": {
+      "affected_boundary_delta_if_nominal_ms": {
+        "high": 100.0,
+        "low": 20.0,
+        "medium": 50.0
+      },
+      "kind": "TIMING_PERTURBATION",
+      "nominal_boundary_delta_ms": 10.0,
+      "placement_constraints": {
+        "offset_must_be_nonzero": true,
+        "single_internal_boundary": true,
+        "step_shift_all_later_timestamps": true
+      },
+      "runtime_attribution_constraints": {
+        "KFALL": "candidate acquisition evidence, but hard ACQ_TIMING_VIOLATION still requires a separately frozen development-derived runtime timing envelope",
+        "UNIVRFALL": "synthetic timing truth does not upgrade timestamp provenance; runtime hard cause remains unavailable unless provenance and envelope requirements are independently met"
+      },
+      "severity_parameter": "extra_delay_ms",
+      "severity_values": {
+        "high": 90.0,
+        "low": 10.0,
+        "medium": 40.0
+      }
+    }
+  },
+  "freeze_contract": {
+    "admissibility_rules_frozen": true,
+    "calibration_may_modify_policy": false,
+    "corruption_instances_generated_here": false,
+    "development_policy_inputs_content_sha256": "6081ad317032c7dc5ea063a0296bf354f698773e5054eec51dc98a51a58ce489",
+    "evaluation_registry_content_sha256": "a99f3031e2efd388b8dcbf26673c41ae142a3ef3ea1eb8c2a4b609b819a13d71",
+    "final_test_may_modify_policy": false,
+    "placement_rules_frozen": true,
+    "range_clamps_are_physical_sensor_rails": false,
+    "runtime_detector_thresholds_frozen_here": false,
+    "runtime_persistence_frozen_here": false,
+    "seed_derivation_frozen": true,
+    "severity_grid_frozen": true,
+    "source_candidate_content_sha256": "9af1c68570c90a2b176f8aca4731b09c370824a8bd1b579c88364a25dc271d73"
+  },
+  "instance_generation": {
+    "candidate_selection": "Enumerate admissible candidates in canonical order and select index from the first 64 bits of a domain-separated SHA256 digest modulo the candidate count.",
+    "corrupt_after_partitioning": true,
+    "failed_admissibility_handling": "Record NOT_ADMISSIBLE with reason; do not replace with a different severity.",
+    "instances_materialized_as_full_corrupted_files": false,
+    "instances_per_trial_family_severity": 1,
+    "manifest_specs_only": true,
+    "master_seed_material": "P0_CORRUPTION_POLICY_V1|reliability-eval-registry-v1|416cc9d8895646c38edc6b7be1dfdc042d0c2219",
+    "no_op_instances_allowed": false,
+    "paired_clean_corrupt_required": true,
+    "regenerate_corruption_deterministically_at_evaluation": true,
+    "seed_derivation": "SHA256(master_seed_material || trial_id || family || severity || replicate_index)"
+  },
+  "policy_id": "P0_CORRUPTION_POLICY_V1",
+  "prospective_constraints": {
+    "calibration_corruption_instances_generated_at_policy_freeze": false,
+    "calibration_may_modify_policy": false,
+    "classifier_bypass_enabled": false,
+    "development_defines_policy": true,
+    "final_test_corruption_instances_generated_at_policy_freeze": false,
+    "final_test_may_modify_policy": false,
+    "physical_range_rail_claim": false,
+    "synthetic_truth_may_upgrade_runtime_evidence": false
+  },
+  "sampling_context": {
+    "nominal_period_evidence": "Development positive timestamp median is 10 ms in both UniVRFall and KFall.",
+    "nominal_sample_period_ms": 10.0,
+    "nominal_sampling_rate_hz": 100,
+    "runtime_timing_threshold_frozen_here": false
+  },
+  "severity_order": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "source_evidence": {
+    "calibration_statistics_used": false,
+    "development_policy_inputs": "data/provenance/p0_dev_policy_inputs_v1.json",
+    "development_policy_inputs_content_sha256": "6081ad317032c7dc5ea063a0296bf354f698773e5054eec51dc98a51a58ce489",
+    "final_test_statistics_used": false,
+    "frozen_evaluation_registry": "data/manifests/reliability_eval_registry_v1.json",
+    "frozen_evaluation_registry_content_sha256": "a99f3031e2efd388b8dcbf26673c41ae142a3ef3ea1eb8c2a4b609b819a13d71",
+    "frozen_evaluation_registry_tag": "reliability-eval-registry-v1",
+    "frozen_evaluation_registry_tag_commit": "416cc9d8895646c38edc6b7be1dfdc042d0c2219",
+    "statistics_partition": "development"
+  },
+  "status": "frozen_before_calibration_and_final_test_corruption_generation"
+}

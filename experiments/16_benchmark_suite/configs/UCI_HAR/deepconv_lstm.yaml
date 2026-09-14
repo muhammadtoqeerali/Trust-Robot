@@ -1,0 +1,13 @@
+experiment:
+  name: deepconv_lstm_UCI_HAR
+dataset:
+  name: UCI_HAR
+model:
+  name: deepconv_lstm
+training:
+  epochs: 100
+  batch_size: 64
+  learning_rate: 0.001
+  seed: 42
+augmentation:
+  reliability_training: false

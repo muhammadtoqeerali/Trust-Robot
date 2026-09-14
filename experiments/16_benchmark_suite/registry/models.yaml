@@ -1,0 +1,31 @@
+models:
+  ReliabilityCNN_v22:
+    module: models.architectures.reliability_cnn
+    class: ReliabilityCNN1D
+  CNN1D:
+    module: cnn1d
+    class: CNN1D
+  LSTM:
+    module: lstm
+    class: LSTMClassifier
+  DeepConvLSTM:
+    module: deepconv_lstm
+    class: DeepConvLSTM
+  Transformer:
+    module: transformer
+    class: IMUTransformer
+  ReliabilityCNN_v23:
+    module: models.architectures.reliability_cnn_v23
+    class: ReliabilityCNN_v23
+  ReliabilityCNN_v24:
+    module: models.architectures.reliability_cnn_v24
+    class: ReliabilityCNN_v24
+  DS_CNN:
+    module: models.architectures.ds_cnn
+    class: DS_CNN
+  TCN:
+    module: models.architectures.tcn
+    class: TCN
+  TinyTransformer:
+    module: models.architectures.tiny_transformer
+    class: TinyTransformer

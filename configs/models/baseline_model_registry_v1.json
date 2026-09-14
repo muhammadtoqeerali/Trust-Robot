@@ -1,0 +1,39 @@
+{
+  "benchmark_stage": "baseline_reconstruction",
+  "purpose": "fair_comparison_before_proposed_model",
+  "input": {
+    "window_samples": 128,
+    "channels": 6,
+    "sampling_hz": 50
+  },
+  "datasets": [
+    "UCI_HAR",
+    "PAMAP2",
+    "MotionSense",
+    "DSADS"
+  ],
+  "baseline_models": [
+    {
+      "name": "1D_CNN",
+      "role": "standard_IMU_deep_baseline"
+    },
+    {
+      "name": "CNN_LSTM",
+      "role": "temporal_sequence_baseline"
+    },
+    {
+      "name": "Transformer_encoder",
+      "role": "attention_baseline"
+    }
+  ],
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "macro_f1",
+      "latency",
+      "parameter_count"
+    ],
+    "split": "subject_disjoint"
+  },
+  "status": "initialized"
+}

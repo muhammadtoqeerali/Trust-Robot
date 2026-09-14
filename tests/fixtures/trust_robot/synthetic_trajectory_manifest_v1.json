@@ -1,0 +1,78 @@
+{
+  "dataset_id": "SYNTHETIC_TRUST_ROBOT",
+  "manifest_content_sha256": "8341d8e842ed8e4440a6fd478a828225af0ab820e8951d5d6431e94aac116ced",
+  "records": [
+    {
+      "base_trajectory_id": "synthetic_001",
+      "corruption_seed": null,
+      "dataset_id": "SYNTHETIC_TRUST_ROBOT",
+      "derivative_kind": "clean",
+      "references": [
+        {
+          "coverage": "full",
+          "derived_from_stream_ids": [
+            "mocap_pose"
+          ],
+          "frame_id": "mocap_world",
+          "rotation_coverage": "full",
+          "rotation_validity_artifact": null,
+          "source_id": "mocap_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "full",
+          "translation_validity_artifact": null
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "camera_clock",
+          "estimator_input": true,
+          "frame_id": "camera_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "camera",
+          "timestamp_unit": "ns"
+        },
+        {
+          "clock_domain": "mocap_clock",
+          "estimator_input": false,
+          "frame_id": "mocap_world",
+          "modality": "motion_capture",
+          "reference_only": true,
+          "stream_id": "mocap_pose",
+          "timestamp_unit": "ns"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "camera_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": "sensor_header_stamp",
+          "method": "synthetic manifest contract test",
+          "stream_id": "camera",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "conditional"
+        },
+        {
+          "clock_domain": "mocap_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": "dataset_native",
+          "method": "synthetic reference clock contract test",
+          "stream_id": "mocap_pose",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "conditional"
+        }
+      ],
+      "trajectory_id": "synthetic_001"
+    }
+  ],
+  "schema": "TRUST_ROBOT_TRAJECTORY_MANIFEST_V1",
+  "schema_version": 1
+}

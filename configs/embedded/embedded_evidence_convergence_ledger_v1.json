@@ -1,0 +1,250 @@
+{
+  "active_infrastructure_gates": {
+    "GATE_A_ONNX_EXECUTION_ENVIRONMENT": {
+      "checkpoint_deserialization_allowed": false,
+      "current_selected_interpreter": null,
+      "minimum_release_requirements": [
+        "single qualified Python interpreter",
+        "torch importable",
+        "onnx importable",
+        "onnxruntime importable",
+        "CPUExecutionProvider available",
+        "torch.onnx.export API audited against frozen exporter",
+        "exact environment qualification frozen before first export"
+      ],
+      "model_forward_allowed": false,
+      "onnx_export_allowed": false,
+      "reason": "No qualified existing single Python interpreter providing torch + onnx + onnxruntime with required CPU execution provider was recovered.",
+      "status": "BLOCKED"
+    },
+    "GATE_B_ARM_STM32_BUILD_TOOLCHAIN": {
+      "arm_none_eabi_gcc_available": false,
+      "firmware_build_allowed": false,
+      "minimum_release_requirements": [
+        "qualified ARM GNU bare-metal compiler",
+        "qualified binutils",
+        "exact compiler version and executable hashes",
+        "Cortex-M target verification",
+        "toolchain qualification frozen before first cross-compile"
+      ],
+      "reason": "No qualified ARM GNU bare-metal compiler/binutils, STM32 SDK, offline archive/cache, or equivalent target build toolchain was recovered.",
+      "status": "BLOCKED",
+      "stm32_sdk_available": false,
+      "target_cross_compile_allowed": false
+    },
+    "GATE_C_STM32_TARGET_INTEGRATION_AND_MEASUREMENT": {
+      "prerequisites": [
+        "Gate B released",
+        "STM32F722 target definition",
+        "startup/runtime support",
+        "linker memory map",
+        "CMSIS or equivalent target headers",
+        "prospective firmware integration",
+        "qualified measurement hardware/path"
+      ],
+      "reason": "No full prospective firmware integration path or connected STM32F722/ST-LINK target was recovered.",
+      "required_for_cycles_latency_energy": true,
+      "status": "BLOCKED"
+    }
+  },
+  "closed_scientific_boundaries": {
+    "classifier_bypass_allowed": false,
+    "final_ood_evaluator_may_be_rerun": false,
+    "historical_task_rule_may_change": false,
+    "host_resource_benchmark_v1_may_be_rerun": false,
+    "integrity_operating_point_may_change": false,
+    "ood_method_may_change": false,
+    "ood_threshold_may_change": false,
+    "protected_final_test_may_be_reopened": false,
+    "second_full_task_forward_allowed": false
+  },
+  "completed_evidence": {
+    "historical_target_archaeology": {
+      "absence_interpretation": "bounded_to_searched_workstation_evidence",
+      "complete": true,
+      "exact_historical_400ms_export_recovered": false,
+      "exact_historical_stm32_firmware_recovered": false
+    },
+    "portable_c_reference": {
+      "checkpoint_required_for_c_parity": false,
+      "deterministic_float32_grid_case_count": 162,
+      "host_semantic_parity_supported": true,
+      "implemented": true,
+      "lineage": "prospective_embedded_reference_implementation",
+      "native_c_test_count": 13,
+      "protected_dataset_required_for_c_parity": false,
+      "python_c_parity_test_count": 9
+    },
+    "prospective_onnx_method": {
+      "absolute_tolerance": 1e-05,
+      "decision_mismatch_tolerance": 0,
+      "exporter_frozen": true,
+      "format": "ONNX",
+      "input_shape": [
+        1,
+        40,
+        9
+      ],
+      "opset": 13,
+      "output_shape": [
+        1,
+        2
+      ],
+      "parity_vector_count": 68,
+      "precision": "float32",
+      "protocol_frozen": true,
+      "quantization_included": false,
+      "relative_tolerance": 1e-05
+    },
+    "reference_host_resource_evidence": {
+      "benchmark_v1_may_be_rerun": false,
+      "frozen": true,
+      "may_be_relabelled_as_stm32_resource_evidence": false,
+      "protected_dataset_used": false,
+      "scope": "x86_64_reference_host_only"
+    },
+    "runtime_semantics": {
+      "frozen": true,
+      "hard_cause": "FRAME_GAP",
+      "integrity_hard_cause_mask": 1,
+      "one_full_task_forward_per_window": true,
+      "ood_method": "top_two_logit_margin",
+      "ood_threshold": 0.00914505124092102,
+      "ood_unknown_condition": "margin < threshold",
+      "ood_uses_features": false,
+      "precedence": [
+        "INTEGRITY_ALERT",
+        "OOD_UNKNOWN",
+        "VALID"
+      ],
+      "second_full_task_forward_allowed": false,
+      "task_prediction_always_returned": true
+    }
+  },
+  "content_sha256": "a687c6bc71ad3d7672be3dfd388ab2ee0b56285fe4553c670a53a571175e095b",
+  "convergence_statement": "Scientific/runtime semantics and the portable C post-logit reference implementation are frozen. Further target-model conversion and STM32 build/resource evidence require infrastructure not recovered from the searched workstation.",
+  "currently_prohibited_claims": [
+    "exact historical deployed STM32 firmware recovered",
+    "exact historical deployed embedded model/export recovered",
+    "prospective ONNX export validated",
+    "STM32 importability validated",
+    "STM32 model numerical parity validated",
+    "full STM32F722 firmware built",
+    "STM32 flash footprint measured",
+    "STM32 RAM footprint measured",
+    "STM32 cycle count measured",
+    "STM32 latency measured",
+    "STM32 energy measured",
+    "host Python/native measurements are equivalent to STM32 resource measurements"
+  ],
+  "currently_supported_claims": [
+    "Exact surviving historical checkpoint is available.",
+    "Training/runtime lineage is high-confidence reconstructed, not exact deployed firmware.",
+    "Frozen reliability semantics are implemented in Python reference runtime.",
+    "Portable C post-logit reliability semantics match the frozen Python reference on host validation.",
+    "Portable C implementation is a prospective embedded reference implementation.",
+    "Reference-host runtime overhead evidence is valid only for the frozen x86-64 host benchmark.",
+    "Only FRAME_GAP is a selected V1 hard integrity cause.",
+    "OOD_UNKNOWN is residual model unfamiliarity and is not proof of sensor failure."
+  ],
+  "freeze_boundary": {
+    "checkpoint_deserialized": false,
+    "cross_compiler_executed": false,
+    "exporter_executed": false,
+    "final_test_reopened": false,
+    "firmware_built": false,
+    "model_forward_executed": false,
+    "onnx_export_executed": false,
+    "package_install_performed": false,
+    "protected_dataset_opened": false,
+    "resource_benchmark_rerun": false,
+    "stm32_device_measured": false,
+    "toolchain_installed": false
+  },
+  "frozen_anchors": {
+    "embedded_build_toolchain_blocker": {
+      "commit": "2d858320ba0122f483f759a50755a711c2c9ea78",
+      "content_sha256": "18786157fb29cf00859310e7d89b7289f1c8a2308984e60fb209b0f8b89f3c34",
+      "raw_sha256": "b8ee7a7e1d568c3d4ea0b46cb0c5434a73edeafaae1d72410e36422d7e1d4c58",
+      "tag": "prospective-embedded-build-toolchain-blocker-v1"
+    },
+    "embedded_reference_path": {
+      "commit": "c36a60aed60766162fb7cd3755c1f5040d9a072c",
+      "content_sha256": "eacbc717d36ff12dd6b2873c5d1bfae59d73abd9175c142ef824ad14ea34bcec",
+      "raw_sha256": "175059822fa16314e5117fa56557280aec831ed8b1c551cee1163e627d1d9d4f",
+      "tag": "embedded-reference-path-contract-v1"
+    },
+    "integrity_operating_point": {
+      "commit": "9ac878ea6a40e8c01a60e42e602a1fa9fc688d3b",
+      "tag": "integrity-operating-point-v1"
+    },
+    "onnx_execution_environment_blocker": {
+      "commit": "ea2653fe08a6b684ad652e0a0ad8ff8191e2632b",
+      "content_sha256": "331bbfba1105c9075adb3206f1afaa65b7373f3376b3081f2d66f9ea4a196c10",
+      "raw_sha256": "3f9f5f80886e09f8c04535c9fc253c8f98cd4cd6221d35e6229719503266a957",
+      "tag": "prospective-model-export-execution-environment-contract-v1"
+    },
+    "onnx_export_protocol": {
+      "commit": "7229081206d0b4cfe3249792282f0aa87abb9220",
+      "content_sha256": "714eda4d82caf56de2b023cfc04bac0de0f400323a3cefc9077db3ecfdc122ee",
+      "raw_sha256": "5574278d42584f03ec39274c287c48329b2dbbad49f25e77024d1b17ad94fdf3",
+      "tag": "prospective-protected-model-export-protocol-v1"
+    },
+    "onnx_exporter": {
+      "commit": "4050f610bc037aa854a066af5ad935df8dd22b45",
+      "tag": "prospective-fp32-onnx-exporter-v1"
+    },
+    "ood_operating_point": {
+      "commit": "fea9316d8510a5841baba48d273973e0267e4b28",
+      "tag": "ood-operating-point-v1"
+    },
+    "portable_c_runtime": {
+      "commit": "3f0db77158cc59e4273f75b076fef53aa6b1f413",
+      "tag": "portable-c-runtime-implementation-v1"
+    },
+    "portable_c_semantics": {
+      "commit": "552e2255a812e73b2782b1f8d697a94f03a15752",
+      "content_sha256": "965765b678220d8297b4c930533570b30fa43d2cc681e5fe91ca2431b009efda",
+      "raw_sha256": "bfe2d56e998150b5109462ae81be5e788c9fed28b1a290a9ef3adbebe6dbd831",
+      "tag": "portable-c-runtime-semantic-contract-v1"
+    },
+    "python_reference_runtime": {
+      "commit": "4755a74fe558021576934674e338865a36df5b55",
+      "tag": "runtime-reference-implementation-v1"
+    },
+    "reference_host_resource_result": {
+      "commit": "d97403737804eeaeeecd009b4407949b52fe6d48",
+      "content_sha256": "155f880ee5f4d82ed6c03d511fc1401afbdcf8bfff9c8e1a8f2be43901f2e734",
+      "raw_sha256": "1fe4ed729b4ae23d4104616e1450fb4143d7ea51cdedf0fce70aeb025b18b71e",
+      "tag": "runtime-resource-overhead-result-v1"
+    },
+    "runtime_integration_contract": {
+      "commit": "c2b7ae52b163afb33c828218e5c76f0686ad391a",
+      "tag": "runtime-integration-contract-v1"
+    }
+  },
+  "implementation_lineage": "prospective_embedded_reference_implementation",
+  "ledger_id": "EMBEDDED_EVIDENCE_CONVERGENCE_LEDGER_V1",
+  "next_decision_boundary": {
+    "allowed_next_planning_branches": [
+      "controlled isolated ONNX execution environment acquisition plan",
+      "controlled ARM GNU STM32 build-toolchain acquisition plan",
+      "paper/evidence synthesis that preserves current claim boundaries"
+    ],
+    "automatic_environment_or_toolchain_installation_allowed": false,
+    "further_target_evidence_requires_external_infrastructure_change": true,
+    "workstation_only_embedded_engineering_exhausted": true
+  },
+  "status": "workstation_evidence_converged_with_external_infrastructure_gates",
+  "target_family": "STM32F722",
+  "workstation_convergence_policy": {
+    "build_firmware_as_part_of_this_ledger": false,
+    "deserialize_checkpoint_as_part_of_this_ledger": false,
+    "execute_exporter_as_part_of_this_ledger": false,
+    "install_packages_or_toolchains_as_part_of_this_ledger": false,
+    "measure_stm32_hardware_as_part_of_this_ledger": false,
+    "repeat_arm_toolchain_archaeology_without_new_evidence": false,
+    "repeat_historical_embedded_archaeology_without_new_evidence": false,
+    "repeat_onnx_runtime_archaeology_without_new_evidence": false
+  }
+}

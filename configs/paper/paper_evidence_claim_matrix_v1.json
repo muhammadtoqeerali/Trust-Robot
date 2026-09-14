@@ -1,0 +1,365 @@
+{
+  "claims": [
+    {
+      "approved_wording": "The study uses the exact surviving historical DATE-2025 400 ms CNN checkpoint as the protected task model.",
+      "claim_id": "BASELINE_SURVIVING_CHECKPOINT",
+      "evidence": [
+        {
+          "checkpoint_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+          "commit": "d6fe744b292139d18fd4dee37c96066bcf2d38c6",
+          "tag": "baseline-date2025-cnn400-v1"
+        }
+      ],
+      "manuscript_section": "Methods / Historical baseline",
+      "prohibited_interpretations": [
+        "exact deployed STM32 firmware recovered",
+        "exact historical embedded export recovered"
+      ],
+      "qualification": "Training/model lineage is high-confidence reconstructed; the historical deployed STM32 firmware/export was not recovered.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "The protected historical task rule returns Falling only when P(Falling) is strictly greater than 0.9; otherwise it returns Activity.",
+      "claim_id": "RUNTIME_TASK_DECISION",
+      "evidence": [
+        {
+          "commit": "4755a74fe558021576934674e338865a36df5b55",
+          "tag": "runtime-reference-implementation-v1"
+        }
+      ],
+      "manuscript_section": "Methods / Runtime semantics",
+      "prohibited_interpretations": [
+        "plain argmax task decision",
+        "classifier bypass"
+      ],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "The selected V1 integrity operating point promotes only qualified FRAME_GAP evidence to the hard integrity-alert state.",
+      "claim_id": "INTEGRITY_SELECTED_CAUSE",
+      "evidence": [
+        {
+          "commit": "9ac878ea6a40e8c01a60e42e602a1fa9fc688d3b",
+          "tag": "integrity-operating-point-v1"
+        }
+      ],
+      "manuscript_section": "Methods / Integrity gate",
+      "prohibited_interpretations": [
+        "repeated vectors prove frame repetition",
+        "duplicate timestamps prove buffer stall",
+        "synthetic rail thresholds prove physical saturation",
+        "timing observations are hard causes in selected V1"
+      ],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "On the frozen KFall final integrity evaluation, FRAME_GAP detection achieved 932/932 event recall with zero-window detection latency.",
+      "claim_id": "INTEGRITY_FINAL_KFALL",
+      "evidence": [
+        {
+          "commit": "b1aaa28a5cd2222bd3acc7d5d86289ba9fd71c74",
+          "tag": "integrity-final-test-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / Integrity",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "The frozen clean integrity evaluation produced zero hard alerts across 932 clean KFall trials (1.97178 h) and 176 clean UniVR trials (0.726253 h).",
+      "claim_id": "INTEGRITY_CLEAN_ALERTS",
+      "evidence": [
+        {
+          "commit": "b1aaa28a5cd2222bd3acc7d5d86289ba9fd71c74",
+          "tag": "integrity-final-test-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / Integrity",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "UniVR produced 0/176 qualified FRAME_GAP detections under the selected policy because its derived counter does not constitute qualified hardware frame-counter evidence.",
+      "claim_id": "INTEGRITY_UNIVR_BOUNDARY",
+      "evidence": [
+        {
+          "commit": "b1aaa28a5cd2222bd3acc7d5d86289ba9fd71c74",
+          "tag": "integrity-final-test-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / Integrity",
+      "prohibited_interpretations": [],
+      "qualification": "This is a provenance/evidence boundary, not evidence that UniVR contains no acquisition faults.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "OOD_UNKNOWN is assigned when the absolute top-two binary logit margin is strictly below the frozen threshold 0.00914505124092102.",
+      "claim_id": "OOD_METHOD",
+      "evidence": [
+        {
+          "commit": "fea9316d8510a5841baba48d273973e0267e4b28",
+          "tag": "ood-operating-point-v1"
+        }
+      ],
+      "manuscript_section": "Methods / OOD gate",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "Across 366,507 frozen final-test windows, the selected OOD gate marked 4 windows OOD_UNKNOWN and accepted 366,503 windows, corresponding to an acceptance rate of 0.9999890861566082.",
+      "claim_id": "OOD_FINAL_COUNTS",
+      "evidence": [
+        {
+          "commit": "7d7db3d1efec177830239597803410384c154f07",
+          "tag": "ood-final-test-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / OOD",
+      "prohibited_interpretations": [
+        "OOD recall",
+        "novelty-detection sensitivity",
+        "sensor-failure recall",
+        "four true anomalies detected"
+      ],
+      "qualification": "The four OOD_UNKNOWN windows are descriptive residual unfamiliarity events, not labeled true-OOD detections.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "The four OOD_UNKNOWN windows were distributed as 2 KFall, 2 OnField, and 0 UniVR windows.",
+      "claim_id": "OOD_DATASET_BREAKDOWN",
+      "evidence": [
+        {
+          "commit": "7d7db3d1efec177830239597803410384c154f07",
+          "tag": "ood-final-test-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / OOD",
+      "prohibited_interpretations": [],
+      "qualification": "Dataset membership does not provide ground-truth OOD labels.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "The frozen primary-state precedence is INTEGRITY_ALERT, then OOD_UNKNOWN, then VALID, while the task prediction is always returned.",
+      "claim_id": "TRUST_PRECEDENCE",
+      "evidence": [
+        {
+          "commit": "4755a74fe558021576934674e338865a36df5b55",
+          "tag": "runtime-reference-implementation-v1"
+        }
+      ],
+      "manuscript_section": "Methods / Runtime integration",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "Reliability assessment reuses logits from exactly one full task-model forward per window and does not perform a second task forward for OOD scoring.",
+      "claim_id": "ONE_FORWARD",
+      "evidence": [
+        {
+          "commit": "4755a74fe558021576934674e338865a36df5b55",
+          "tag": "runtime-reference-implementation-v1"
+        }
+      ],
+      "manuscript_section": "Methods / Runtime integration",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "On the frozen x86-64 reference host benchmark, median task-only latency was 128.520 us and median integrated latency was 149.388 us, an incremental 20.868 us (16.237161531279177%).",
+      "claim_id": "HOST_RUNTIME_OVERHEAD",
+      "evidence": [
+        {
+          "commit": "d97403737804eeaeeecd009b4407949b52fe6d48",
+          "tag": "runtime-resource-overhead-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / Computational evidence",
+      "prohibited_interpretations": [
+        "STM32 latency",
+        "STM32 cycle count",
+        "embedded deadline proof"
+      ],
+      "qualification": "These measurements are reference-host observations only.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "Reference-host post-logit median times were 19.406 us for VALID, 19.436 us for OOD_UNKNOWN, and 20.358 us for INTEGRITY_ALERT.",
+      "claim_id": "HOST_POST_LOGIT_COST",
+      "evidence": [
+        {
+          "commit": "d97403737804eeaeeecd009b4407949b52fe6d48",
+          "tag": "runtime-resource-overhead-result-v1"
+        }
+      ],
+      "manuscript_section": "Results / Computational evidence",
+      "prohibited_interpretations": [],
+      "qualification": "These values are Python/reference-host measurements and must not be relabeled as embedded timing.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "The prospective portable-C post-logit reliability core passed 13 native C tests and 9 Python-to-C parity tests, including a deterministic 162-case float32 grid.",
+      "claim_id": "PORTABLE_C_PARITY",
+      "evidence": [
+        {
+          "commit": "3f0db77158cc59e4273f75b076fef53aa6b1f413",
+          "tag": "portable-c-runtime-implementation-v1"
+        }
+      ],
+      "manuscript_section": "Results / Embedded reference implementation",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "The C implementation is a prospective embedded reference implementation of the frozen post-logit reliability semantics.",
+      "claim_id": "PORTABLE_C_LINEAGE",
+      "evidence": [
+        {
+          "commit": "3f0db77158cc59e4273f75b076fef53aa6b1f413",
+          "tag": "portable-c-runtime-implementation-v1"
+        }
+      ],
+      "manuscript_section": "Methods / Embedded reference implementation",
+      "prohibited_interpretations": [],
+      "qualification": "It is not evidence of recovered historical STM32 firmware.",
+      "status": "SUPPORTED_WITH_QUALIFICATION"
+    },
+    {
+      "approved_wording": "A prospective float32 ONNX export protocol and exporter were frozen, but execution remains blocked because no qualified single environment with Torch, ONNX, and ONNX Runtime was recovered.",
+      "claim_id": "ONNX_STATUS",
+      "evidence": [
+        {
+          "commit": "ea2653fe08a6b684ad652e0a0ad8ff8191e2632b",
+          "tag": "prospective-model-export-execution-environment-contract-v1"
+        }
+      ],
+      "manuscript_section": "Limitations / Target realization",
+      "prohibited_interpretations": [
+        "ONNX export validated",
+        "STM32 model importability validated"
+      ],
+      "qualification": null,
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "STM32F722 target compilation remains blocked because no qualified ARM GNU bare-metal toolchain or STM32 SDK was recovered from the searched workstation evidence.",
+      "claim_id": "TOOLCHAIN_STATUS",
+      "evidence": [
+        {
+          "commit": "2d858320ba0122f483f759a50755a711c2c9ea78",
+          "tag": "prospective-embedded-build-toolchain-blocker-v1"
+        }
+      ],
+      "manuscript_section": "Limitations / Target realization",
+      "prohibited_interpretations": [],
+      "qualification": "The absence claim is limited to searched/available workstation evidence.",
+      "status": "SUPPORTED"
+    },
+    {
+      "approved_wording": "No STM32F722 flash, RAM, cycle, latency, or energy measurement is claimed.",
+      "claim_id": "STM32_RESOURCE_STATUS",
+      "evidence": [
+        {
+          "commit": "9e53db33f64dede8db34e6fcd5a96421557b4a98",
+          "tag": "embedded-evidence-convergence-ledger-v1"
+        }
+      ],
+      "manuscript_section": "Limitations / Target realization",
+      "prohibited_interpretations": [],
+      "qualification": null,
+      "status": "SUPPORTED"
+    }
+  ],
+  "content_sha256": "c527f17298cf4fc7fb7c8c16c14eac0f3bf19968a07808586a000bf1d67fc32b",
+  "freeze_boundary": {
+    "checkpoint_deserialized": false,
+    "cross_compiler_executed": false,
+    "exporter_executed": false,
+    "final_test_reopened": false,
+    "model_forward_executed": false,
+    "protected_dataset_opened": false,
+    "resource_benchmark_rerun": false,
+    "scientific_result_recomputed": false,
+    "scientific_threshold_modified": false
+  },
+  "global_prohibited_wording": [
+    "exact deployed firmware",
+    "exact historical STM32 export",
+    "deployed STM32 latency",
+    "STM32 flash usage measured",
+    "STM32 RAM usage measured",
+    "STM32 cycle count measured",
+    "STM32 energy measured",
+    "OOD recall",
+    "sensor-failure detection rate",
+    "four true OOD events detected",
+    "timing anomaly proves sensor failure",
+    "duplicate timestamp proves buffer stall",
+    "repeated vector proves frame repetition"
+  ],
+  "manuscript_section_map": {
+    "Embedded feasibility": [
+      "prospective portable-C implementation",
+      "reference-host-only computational evidence",
+      "ONNX execution blocker",
+      "ARM/STM32 toolchain blocker"
+    ],
+    "Introduction": [
+      "motivation for reliability/trust state separation",
+      "preserving protected task behavior",
+      "evidence-qualified integrity causes"
+    ],
+    "Limitations": [
+      "no exact historical deployed firmware recovered",
+      "UniVR counter evidence limitation",
+      "no labeled true-OOD detection claim",
+      "no STM32 resource/latency measurements",
+      "remaining external infrastructure gates"
+    ],
+    "Methods": [
+      "historical classifier decision rule",
+      "integrity evidence contract",
+      "OOD logit-margin contract",
+      "trust-state precedence",
+      "one-forward runtime integration",
+      "portable-C prospective reference"
+    ],
+    "Results": [
+      "integrity final evaluation",
+      "OOD final descriptive results",
+      "reference-host overhead",
+      "portable-C host semantic parity"
+    ]
+  },
+  "matrix_id": "PAPER_EVIDENCE_CLAIM_MATRIX_V1",
+  "paper_positioning": {
+    "core_contribution": "Evidence-gated reliability semantics that preserve the protected task classifier while exposing distinct integrity-alert and residual-unfamiliarity trust states.",
+    "embedded_positioning": "Host-validated prospective portable-C post-logit reference implementation with explicit target-infrastructure limitations.",
+    "not_positioned_as": [
+      "new fall classifier",
+      "STM32 deployment benchmark",
+      "sensor-fault diagnostic classifier",
+      "general-purpose OOD detector with labeled-OOD recall"
+    ]
+  },
+  "results_that_must_not_be_recomputed": [
+    "integrity final-test result V1",
+    "OOD calibration result V1",
+    "OOD final-test result V1",
+    "runtime resource-overhead benchmark V1"
+  ],
+  "source_convergence_ledger": {
+    "commit": "9e53db33f64dede8db34e6fcd5a96421557b4a98",
+    "content_sha256": "a687c6bc71ad3d7672be3dfd388ab2ee0b56285fe4553c670a53a571175e095b",
+    "raw_sha256": "d58f375362fe0936bb8f153ad4a82693980b9ca2c6894ab2e91117ee021987a7",
+    "tag": "embedded-evidence-convergence-ledger-v1"
+  },
+  "status": "frozen_claim_scope_for_manuscript_synthesis"
+}

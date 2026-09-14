@@ -1,0 +1,39 @@
+{
+    "datasets": [
+        "UCI_HAR",
+        "MotionSense",
+        "DSADS",
+        "KFall",
+        "UniVR"
+    ],
+    "models": [
+        {
+            "name": "CNN1D",
+            "script": "train_cnn.py"
+        },
+        {
+            "name": "CNN_LSTM",
+            "script": "train_cnn_lstm.py"
+        },
+        {
+            "name": "DeepConvLSTM",
+            "script": "train_deepconv_lstm.py"
+        },
+        {
+            "name": "TransformerHAR",
+            "script": "train_transformer.py"
+        },
+        {
+            "name": "TinyHAR",
+            "script": "train_tinyhar.py"
+        },
+        {
+            "name": "MobileHAR",
+            "script": "train_mobilehar.py"
+        },
+        {
+            "name": "ReliabilityCNN_v22",
+            "script": "experiments/15_reliability_v22/train_reliability_v22.py"
+        }
+    ]
+}

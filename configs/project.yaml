@@ -1,0 +1,63 @@
+project:
+  name: IMU_Reliability
+  mode: implementation
+  protected_task: preimpact_fall_detection
+  target_mcu: STM32F722
+  normal_path_task_forward_passes: 1
+
+data:
+  primary_dataset: UNIVRFall
+  sampling_hz: 100
+  split_policy: subject_disjoint
+  inject_integrity_conditions_after_split: true
+
+trust_states:
+  - VALID
+  - INTEGRITY_ALERT
+  - OOD_UNKNOWN
+
+integrity:
+  hard_causes:
+    - FRAME_GAP
+    - FIFO_OVERRUN
+    - FRAME_REPEAT
+    - BUFFER_STALL
+    - RANGE_CLIP
+    - ACQ_TIMING_VIOLATION
+
+  suspect_only:
+    - CHANNEL_FREEZE_SUSPECT
+
+  thresholds:
+    frame_gap: null
+    repeat_persistence: null
+    clipping_tolerance_raw_counts: null
+    clipping_persistence_samples: null
+    timing_jitter_limit: null
+
+ood:
+  selected_method: null
+  threshold: null
+  candidates:
+    - maximum_softmax_probability
+    - top_two_logit_margin
+    - energy
+    - prototype_cosine
+    - diagonal_standardized_feature_distance
+    - tcuq
+
+calibration:
+  clean_id_coverage_target: null
+  final_operating_point_frozen: false
+
+deployment:
+  normal_path_latency_overhead_target_percent: 10
+  preferred_latency_overhead_percent: 5
+  classifier_bypass_enabled: false
+
+provenance:
+  tiers:
+    P0: offline_synthetic
+    P1: firmware_injected
+    P2: hil_or_interface
+    P3: physical_configuration_or_trusted_status

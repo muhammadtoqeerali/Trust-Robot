@@ -1,0 +1,140 @@
+{
+  "blocker_release_rule": {
+    "blocker_can_be_released_when": "a pre-existing single interpreter environment satisfying all execution capabilities is discovered and separately qualified/frozen before exporter execution",
+    "discovery_alone_allows_export": false,
+    "exporter_may_run_before_qualification_receipt": false,
+    "qualification_receipt_required": true
+  },
+  "claim_boundary": {
+    "export_executed": false,
+    "prospective_onnx_validated": false,
+    "stm32_flash_claimed": false,
+    "stm32_importability_claimed": false,
+    "stm32_latency_claimed": false,
+    "stm32_numerical_parity_claimed": false,
+    "stm32_ram_claimed": false
+  },
+  "content_sha256": "331bbfba1105c9075adb3206f1afaa65b7373f3376b3081f2d66f9ea4a196c10",
+  "contract_id": "PROSPECTIVE_MODEL_EXPORT_EXECUTION_ENVIRONMENT_CONTRACT_V1",
+  "current_environment_selection": {
+    "reason": "no observed existing interpreter currently provides torch + onnx + onnxruntime together",
+    "selected_environment_qualified": false,
+    "selected_interpreter": null
+  },
+  "environment_qualification_before_first_export": {
+    "checkpoint_deserialization_during_qualification": false,
+    "model_forward_during_qualification": false,
+    "must_confirm_cpu_execution_provider": true,
+    "must_confirm_frozen_exporter_imports": true,
+    "must_confirm_torch_onnx_export_signature": true,
+    "must_freeze_before_exporter_execution": true,
+    "must_record_interpreter_realpath": true,
+    "must_record_module_origins": true,
+    "must_record_onnx_version": true,
+    "must_record_onnxruntime_available_providers": true,
+    "must_record_onnxruntime_version": true,
+    "must_record_python_version": true,
+    "must_record_torch_version": true,
+    "onnx_export_during_qualification": false,
+    "required": true
+  },
+  "freeze_boundary": {
+    "arm_toolchain_used": false,
+    "checkpoint_deserialized": false,
+    "model_forward_executed": false,
+    "onnx_artifact_created": false,
+    "onnx_export_executed": false,
+    "package_install_performed": false,
+    "protected_dataset_opened": false,
+    "quantization_executed": false,
+    "stm32_hardware_measured": false
+  },
+  "frozen_export_semantics": {
+    "absolute_tolerance": 1e-05,
+    "decision_mismatch_tolerance": 0,
+    "format": "ONNX",
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "ood_threshold": 0.00914505124092102,
+    "opset_version": 13,
+    "output_shape": [
+      1,
+      2
+    ],
+    "parity_vector_count": 68,
+    "precision": "float32",
+    "relative_tolerance": 1e-05
+  },
+  "frozen_lineage": {
+    "export_protocol_commit": "7229081206d0b4cfe3249792282f0aa87abb9220",
+    "export_protocol_content_sha256": "714eda4d82caf56de2b023cfc04bac0de0f400323a3cefc9077db3ecfdc122ee",
+    "export_protocol_raw_sha256": "5574278d42584f03ec39274c287c48329b2dbbad49f25e77024d1b17ad94fdf3",
+    "export_protocol_tag": "prospective-protected-model-export-protocol-v1",
+    "exporter_commit": "4050f610bc037aa854a066af5ad935df8dd22b45",
+    "exporter_raw_sha256": "3319c9321c953c198af4f345cbb8ac55b7d1e207f8025bb74423a386b776ee55",
+    "exporter_tag": "prospective-fp32-onnx-exporter-v1",
+    "portable_c_runtime_commit": "3f0db77158cc59e4273f75b076fef53aa6b1f413",
+    "portable_c_runtime_tag": "portable-c-runtime-implementation-v1"
+  },
+  "package_and_environment_policy": {
+    "copy_packages_between_environments": false,
+    "future_preexisting_environment_must_be_qualified_first": true,
+    "inject_foreign_site_packages": false,
+    "install_packages_as_part_of_this_contract": false,
+    "modify_miniforge_base": false,
+    "modify_opensim_scripting": false,
+    "modify_protechto311": false,
+    "silently_change_python_interpreter": false
+  },
+  "required_execution_capabilities": {
+    "all_required_modules_from_same_interpreter_environment": true,
+    "cross_environment_package_mixing_allowed": false,
+    "onnx_checker_available": true,
+    "onnx_importable": true,
+    "onnxruntime_cpu_execution_provider_required": true,
+    "onnxruntime_importable": true,
+    "single_python_interpreter": true,
+    "torch_importable": true,
+    "torch_onnx_export_available": true
+  },
+  "source_blocker": {
+    "blocker_id": "PROSPECTIVE_MODEL_EXPORT_DEPENDENCY_BLOCKER_V1",
+    "content_sha256": "96c865871201ca77daf5dcec620e2d732134b44c49e8f8807ec8550f555657b9",
+    "path": "data/manifests/prospective_model_export_dependency_blocker_v1.json"
+  },
+  "status": "frozen_while_export_execution_blocked",
+  "torch_onnx_export_api_requirements": {
+    "dynamic_axes": null,
+    "exporter_specific_parameters_that_must_be_supported_or_audited": [
+      "dynamo",
+      "external_data"
+    ],
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "output_shape": [
+      1,
+      2
+    ],
+    "precision": "float32",
+    "required_opset_version": 13,
+    "required_parameters": [
+      "model",
+      "args",
+      "f",
+      "export_params",
+      "training",
+      "input_names",
+      "output_names",
+      "opset_version",
+      "do_constant_folding",
+      "dynamic_axes",
+      "keep_initializers_as_inputs"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Datasets
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Generated results
+results/raw/*
+results/figures/*
+results/tables/*
+results/summaries/*
+
+# Models / binaries
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.h5
+*.elf
+*.bin
+*.hex
+*.map
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Workstation-specific dataset paths
+configs/datasets/local_paths.yaml
+data/manifests/p0_development_spec_manifest_v1_candidate.json
+data/manifests/p0_development_spec_manifest_v1_compact_candidate.json
+data/manifests/p0_development_spec_receipt_v1_candidate.json
+data/manifests/p0_calibration_spec_manifest_v1_candidate.json
+data/manifests/p0_calibration_spec_receipt_v1_candidate.json
+configs/integrity/integrity_calibration_protocol_v1_candidate.json
+
+# ============================================================
+# GitHub publication exclusions
+# Keep code/configs/manifests; exclude data payloads and outputs
+# ============================================================
+
+# Raw / downloaded datasets
+data/raw/
+data/raw_external/
+data/interim/
+data/processed/
+
+# Generated experimental results and benchmark outputs
+results/
+
+# Python/local environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Generated model/checkpoint binaries
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.hdf5
+
+# Compiled / deployment binaries
+*.elf
+*.bin
+*.hex
+*.so
+
+# Temporary process/runtime files
+*.pid
+*.tmp
+*.cache
+
+# Dataset archives / downloaded archives
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
+data/**/*.tgz
+
+# Large external benchmark dataset copies
+results/**/data/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+
+# Publication repository: all data artifacts are excluded
+data/
+
+# Generated logs/runtime state
+*.log
+*.pid
+
+# Paper evidence/output package is not part of source release
+paper_final_handoff/
+IMU_Reliability_FINAL_PAPER_HANDOFF.zip
+phase1b_baseline_forensics.txt
+
+# Historical/generated baseline forensic artifacts
+experiments/00_baseline/forensics/
+experiments/00_baseline/*_report.txt
+experiments/00_baseline/baseline_lock_and_clean_eval.txt
+experiments/00_baseline/historical_decision_rule.txt
+experiments/00_baseline/server_shutdown_diagnostic.txt
+
+# Generated integrity/forensic artifacts
+experiments/01_integrity_p0/forensics/
+experiments/01_integrity_p0/*_report.txt
+experiments/01_integrity_p0/*_inspection_v1.txt
+experiments/01_integrity_p0/*_inventory_v1.txt
+
+configs/trust_robot/local_paths.yaml

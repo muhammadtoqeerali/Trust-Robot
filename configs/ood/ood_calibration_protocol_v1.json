@@ -1,0 +1,285 @@
+{
+  "calibration_outputs_predeclared": {
+    "auroc_claim_allowed": false,
+    "method_comparison_table_required": false,
+    "ood_recall_claim_allowed": false,
+    "required": [
+      "selected_threshold",
+      "per_stratum_order_statistic_q_s",
+      "per_stratum_r_s",
+      "per_stratum_window_count",
+      "per_stratum_accepted_count",
+      "per_stratum_rejected_count",
+      "per_stratum_empirical_acceptance",
+      "overall_clean_id_acceptance",
+      "dataset_clean_id_acceptance",
+      "class_clean_id_acceptance",
+      "task_prediction_metrics_descriptive_only",
+      "checkpoint_and_source_hash_anchors",
+      "access_audit"
+    ],
+    "tnr_at_tpr_claim_allowed": false,
+    "true_ood_detection_metrics_allowed": false
+  },
+  "calibration_population": {
+    "all_windows_treated_as_clean_id_for_threshold_selection": true,
+    "class_totals": {
+      "Activity": 89544,
+      "Falling": 324
+    },
+    "dataset_trial_rows": {
+      "KFALL": 314,
+      "ONFIELD": 1,
+      "UNIVRFALL": 132
+    },
+    "dataset_windows": {
+      "KFALL": 9585,
+      "ONFIELD": 74332,
+      "UNIVRFALL": 5951
+    },
+    "empty_dataset_class_strata": [
+      {
+        "class": "Falling",
+        "dataset": "ONFIELD",
+        "included_in_threshold_constraint": false,
+        "n": 0
+      }
+    ],
+    "external_domain_shift_data_used": false,
+    "final_test_data_used": false,
+    "historical_role": "validation",
+    "integrity_corruptions_used": false,
+    "nonempty_dataset_class_strata": [
+      {
+        "class": "Activity",
+        "dataset": "KFALL",
+        "maximum_strictly_below_threshold_count": 93,
+        "minimum_empirical_acceptance_guaranteed": 0.9900449582530507,
+        "n": 9342,
+        "order_statistic_zero_based_index": 93
+      },
+      {
+        "class": "Falling",
+        "dataset": "KFALL",
+        "maximum_strictly_below_threshold_count": 2,
+        "minimum_empirical_acceptance_guaranteed": 0.9917695473251029,
+        "n": 243,
+        "order_statistic_zero_based_index": 2
+      },
+      {
+        "class": "Activity",
+        "dataset": "UNIVRFALL",
+        "maximum_strictly_below_threshold_count": 58,
+        "minimum_empirical_acceptance_guaranteed": 0.9901192504258943,
+        "n": 5870,
+        "order_statistic_zero_based_index": 58
+      },
+      {
+        "class": "Falling",
+        "dataset": "UNIVRFALL",
+        "maximum_strictly_below_threshold_count": 0,
+        "minimum_empirical_acceptance_guaranteed": 1.0,
+        "n": 81,
+        "order_statistic_zero_based_index": 0
+      },
+      {
+        "class": "Activity",
+        "dataset": "ONFIELD",
+        "maximum_strictly_below_threshold_count": 743,
+        "minimum_empirical_acceptance_guaranteed": 0.9900043050099553,
+        "n": 74332,
+        "order_statistic_zero_based_index": 743
+      }
+    ],
+    "partition": "calibration",
+    "protected_array_shape": [
+      40,
+      9
+    ],
+    "registry_tag": "reliability-eval-registry-v1",
+    "registry_tag_commit": "416cc9d8895646c38edc6b7be1dfdc042d0c2219",
+    "trial_row_count": 447,
+    "window_count": 89868
+  },
+  "content_sha256": "47c1f3b21c069953e76d3c9bc92ee29cf577675204c653a29e4844a4b35c38f5",
+  "external_domain_shift_contract": {
+    "current_extra_recordings_direct_model_compatibility": false,
+    "current_processed_extra_recordings_shape": [
+      30,
+      9
+    ],
+    "extra_recordings_used_for_calibration": false,
+    "extra_recordings_used_for_method_selection": false,
+    "extra_recordings_used_for_threshold_selection": false,
+    "future_claim_boundary": "Report as external/domain-shift unfamiliarity behavior unless stronger semantic OOD ground truth is independently established.",
+    "future_external_evaluation_allowed": true,
+    "future_requirement": "A separate score-blind 400-ms preprocessing/resegmentation specification must be frozen before model outputs are computed on ExtraRecordings.",
+    "protected_model_required_shape": [
+      40,
+      9
+    ]
+  },
+  "final_test_contract": {
+    "dataset_trial_rows": {
+      "KFALL": 932,
+      "ONFIELD": 8,
+      "UNIVRFALL": 176
+    },
+    "dataset_windows": {
+      "KFALL": 27068,
+      "ONFIELD": 331907,
+      "UNIVRFALL": 7532
+    },
+    "historical_window_count": 366507,
+    "interpretation_of_ood_unknown_rate": "ID rejection/unfamiliarity rate on the protected historical test population, not true-OOD recall.",
+    "may_modify_integrity_operating_point": false,
+    "may_modify_threshold": false,
+    "may_select_method": false,
+    "may_select_threshold": false,
+    "partition": "final_test",
+    "predeclared_metrics": [
+      "overall_id_acceptance_rate",
+      "overall_ood_unknown_rate",
+      "dataset_id_acceptance_rate",
+      "dataset_ood_unknown_rate",
+      "task_class_id_acceptance_rate",
+      "task_class_ood_unknown_rate",
+      "dataset_x_class_id_acceptance_rate",
+      "dataset_x_class_ood_unknown_rate",
+      "task_metrics_overall",
+      "task_metrics_conditioned_on_valid",
+      "task_metrics_conditioned_on_ood_unknown"
+    ],
+    "registry_trial_row_count": 1116
+  },
+  "freeze_anchors": {
+    "baseline_commit": "d6fe744b292139d18fd4dee37c96066bcf2d38c6",
+    "baseline_tag": "baseline-date2025-cnn400-v1",
+    "checkpoint_raw_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "integrity_final_test_result_commit": "b1aaa28a5cd2222bd3acc7d5d86289ba9fd71c74",
+    "integrity_final_test_result_tag": "integrity-final-test-result-v1",
+    "lineage_commit": "4b32a68cec9f88e73b5f09e22ff3335e1d590962",
+    "lineage_tag": "reliability-lineage-v2",
+    "model_source_raw_sha256": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d",
+    "project_config_raw_sha256": "a96dfe8aca5c1983cfc87182cda9c18b83251199ca8e5bc7d9dbe91f8ccda948",
+    "registry_commit": "416cc9d8895646c38edc6b7be1dfdc042d0c2219",
+    "registry_raw_sha256": "6683debdf52c07c72d440c7060b328c77039c522b0b0f1308ab99c8c499066f4",
+    "registry_tag": "reliability-eval-registry-v1",
+    "source_head_before_protocol_freeze": "b1aaa28a5cd2222bd3acc7d5d86289ba9fd71c74"
+  },
+  "pre_freeze_exposure_boundary": {
+    "checkpoint_bytes_hashed": true,
+    "checkpoint_deserialized_for_ood": false,
+    "final_test_ood_outputs_read": false,
+    "integrity_final_result_modified": false,
+    "integrity_operating_point_reopened": false,
+    "model_forward_executed_for_ood": false,
+    "model_weights_loaded_for_ood": false,
+    "ood_scores_computed": false,
+    "ood_threshold_selected": false,
+    "task_features_read_for_ood": false,
+    "task_logits_read_for_ood": false
+  },
+  "protected_model": {
+    "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED_V1",
+    "baseline_tag": "baseline-date2025-cnn400-v1",
+    "baseline_tag_commit": "d6fe744b292139d18fd4dee37c96066bcf2d38c6",
+    "checkpoint_path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+    "checkpoint_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "classifier_bypass_enabled": false,
+    "effective_task_channels": 6,
+    "model_source": "src/imu_reliability/baseline/date2025_cnn400.py",
+    "model_source_raw_sha256": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d",
+    "stored_channels": 9,
+    "task_classes": [
+      "Activity",
+      "Falling"
+    ],
+    "task_model_forwards_per_window": 1,
+    "window_samples": 40
+  },
+  "protocol_id": "OOD_CALIBRATION_PROTOCOL_V1",
+  "runtime_contract": {
+    "classifier_bypass_enabled": false,
+    "decision_precedence": [
+      "qualified_integrity_hard_cause",
+      "ood_margin_gate",
+      "valid"
+    ],
+    "ood_state_if_no_integrity_alert_and_margin_below_threshold": "OOD_UNKNOWN",
+    "ood_unknown_populates_integrity_cause_set": false,
+    "otherwise_state": "VALID",
+    "qualified_integrity_hard_cause_state": "INTEGRITY_ALERT(C_t)",
+    "second_full_task_forward_allowed": false,
+    "selected_ood_score_reuses": "task_logits_from_same_single_forward",
+    "suspect_only_integrity_indicator_populates_hard_cause_set": false,
+    "task_prediction_still_computed": true,
+    "task_prediction_still_returned": true
+  },
+  "scientific_role": {
+    "interpretation": "coverage-controlled residual task-model unfamiliarity on an integrity-valid window",
+    "not_claimed_as": [
+      "proof_of_novel_activity_class",
+      "proof_of_sensor_failure",
+      "qualified_integrity_cause",
+      "calibrated_true_ood_probability"
+    ],
+    "ood_positive_calibration_population_required": false,
+    "reason_no_positive_population_used": "No prospectively justified OOD-positive calibration corpus exists in the frozen project lineage. Method and threshold are therefore fixed from clean-ID coverage only.",
+    "trust_state": "OOD_UNKNOWN"
+  },
+  "score": {
+    "candidate_methods_declared_before_selection": [
+      "maximum_softmax_probability",
+      "top_two_logit_margin",
+      "energy",
+      "prototype_cosine",
+      "diagonal_standardized_feature_distance",
+      "tcuq"
+    ],
+    "candidate_scores_evaluated_before_method_selection": false,
+    "data_dependent_method_comparison_allowed": false,
+    "direction": "smaller_margin_is_more_unfamiliar",
+    "formula_binary": "abs(logit_0 - logit_1)",
+    "logit_class_order": [
+      "Activity",
+      "Falling"
+    ],
+    "requires_exp_or_log": false,
+    "requires_feature_vector": false,
+    "requires_second_task_model_forward": false,
+    "requires_softmax": false,
+    "runtime_accept_rule": "margin >= threshold",
+    "runtime_unknown_rule": "margin < threshold",
+    "selected_method": "top_two_logit_margin",
+    "selected_prospectively_before_ood_model_outputs": true,
+    "selection_basis": [
+      "Already declared in configs/project.yaml before OOD output exposure.",
+      "For a binary classifier the absolute top-two logit margin is monotonic with maximum-softmax confidence, so it preserves the same confidence ranking without requiring softmax/exp.",
+      "It reuses task logits from the single protected task-model forward and requires no prototype, covariance, feature-distance, or additional network computation.",
+      "Selection is aligned with the study's resource-efficiency objective and is not conditioned on calibration or final-test scores."
+    ],
+    "ties_at_threshold": "accepted"
+  },
+  "status": "frozen_before_first_ood_calibration_model_output_exposure",
+  "threshold_selection": {
+    "accepted_comparison": "greater_than_or_equal",
+    "clean_id_acceptance_target": 0.99,
+    "constraint_scope": "every nonempty dataset_x_task_class calibration stratum",
+    "global_threshold_rule": "min(q_s over all nonempty strata)",
+    "guarantee": "At least 99% empirical clean-ID acceptance in every nonempty protected calibration dataset_x_class stratum.",
+    "per_stratum_rule": {
+      "n_s": "number of calibration margins in stratum s",
+      "q_s": "sorted_margin_s[r_s] using zero-based indexing",
+      "r_s": "floor(0.01 * n_s)"
+    },
+    "rejection_fraction": 0.01,
+    "single_global_threshold": true,
+    "threshold_may_be_modified_after_calibration_review": false,
+    "threshold_may_be_modified_after_final_test_review": false,
+    "threshold_selected_before_protocol_freeze": false,
+    "threshold_selected_only_after_protocol_freeze": true,
+    "tie_policy": "accept_equal_to_threshold",
+    "unknown_comparison": "strict_less_than"
+  }
+}

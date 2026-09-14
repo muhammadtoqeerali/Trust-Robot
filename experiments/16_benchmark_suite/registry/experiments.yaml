@@ -1,0 +1,11 @@
+
+experiment:
+
+  epochs: 100
+
+  metrics:
+    - accuracy
+    - macro_f1
+    - weighted_f1
+    - latency
+    - parameters

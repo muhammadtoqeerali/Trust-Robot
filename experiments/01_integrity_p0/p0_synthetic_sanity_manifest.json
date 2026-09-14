@@ -1,0 +1,41 @@
+{
+  "clean": {
+    "fingerprint": "39672615aa9fd294b208dc74b75d02a0d656ef6ae2c1c76a160f23714fb75b5e",
+    "n_channels": 6,
+    "n_samples": 12,
+    "source_id": "P0_SYNTHETIC_SANITY_STREAM"
+  },
+  "corrupt": {
+    "fingerprint": "602bab64822578a219d00cedf539ad85a735827140f492cbd415a18817c30c60",
+    "n_channels": 6,
+    "n_samples": 10,
+    "source_id": "P0_SYNTHETIC_SANITY_STREAM"
+  },
+  "manifest_content_sha256": "38ed521b7b389de04c44bb8bef9f5a1e52af85f526dc90ce12b4858705354a4b",
+  "schema": "P0_PAIRED_CORRUPTION_V1",
+  "truths": [
+    {
+      "affected_clean_end_exclusive": 7,
+      "affected_clean_start": 5,
+      "clean_n_samples": 12,
+      "corrupt_anchor_index": 5,
+      "corrupt_n_samples": 10,
+      "details": {
+        "counter_after_gap": 8,
+        "counter_before_gap": 5,
+        "removed_samples": 2
+      },
+      "injection_id": "P0I_2fb201a87522a658bde98e55",
+      "spec": {
+        "channels": [],
+        "kind": "FRAME_GAP",
+        "length": 2,
+        "parameters": {},
+        "seed": 0,
+        "severity": "moderate",
+        "start_index": 5
+      },
+      "spec_id": "P0S_1aa95e69601a229da3bb"
+    }
+  ]
+}

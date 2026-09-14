@@ -1,0 +1,20 @@
+experiment:
+  name: DS_CNN_UCI_HAR
+
+dataset:
+  name: UCI_HAR
+  window_size: 128
+  channels: 6
+
+model:
+  name: DS_CNN
+
+training:
+  epochs: 100
+  batch_size: 64
+  optimizer: Adam
+  learning_rate: 0.001
+  seed: 42
+
+augmentation:
+  reliability_training: false

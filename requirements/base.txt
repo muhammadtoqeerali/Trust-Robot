@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+PyYAML
+tqdm
+rich
+joblib
+openpyxl
+pyarrow
+pytest
+pytest-cov

@@ -1,0 +1,13 @@
+experiment:
+  name: transformer_UCI_HAR
+dataset:
+  name: UCI_HAR
+model:
+  name: transformer
+training:
+  epochs: 100
+  batch_size: 64
+  learning_rate: 0.001
+  seed: 42
+augmentation:
+  reliability_training: false

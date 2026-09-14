@@ -1,0 +1,213 @@
+{
+  "builder_environment_note": {
+    "environment_values_are_not_measurement_results": true,
+    "python_platform_string": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35"
+  },
+  "claim_boundary": {
+    "allowed_after_successful_reference_measurement": [
+      "reference_host_task_only_latency",
+      "reference_host_integrated_runtime_latency",
+      "reference_host_incremental_latency",
+      "reference_host_relative_latency_overhead",
+      "reference_host_python_allocation_evidence",
+      "reference_host_process_peak_rss_observation",
+      "runtime_python_source_byte_count"
+    ],
+    "not_allowed_from_this_protocol": [
+      "stm32f722_latency",
+      "stm32f722_cycle_count",
+      "stm32f722_flash_overhead",
+      "stm32f722_ram_overhead",
+      "stm32f722_energy_overhead",
+      "deployed_firmware_latency",
+      "deployed_firmware_memory",
+      "exact_embedded_real_time_deadline_claim"
+    ],
+    "target_mcu_measurement_required_before_embedded_claims": true
+  },
+  "content_sha256": "f251abd253010c0694cd85b20eaf849f6d2751cac2f0e240ff78df4af9e1be9d",
+  "execution_environment_contract": {
+    "environment_metadata_to_record": [
+      "python_version",
+      "torch_version",
+      "numpy_version",
+      "platform",
+      "machine",
+      "processor",
+      "cpu_count",
+      "torch_num_threads",
+      "torch_num_interop_threads"
+    ],
+    "garbage_collection_policy": "disable_gc_inside_each_timed_block_and_restore_after",
+    "model_eval_mode": true,
+    "timed_model_calls_under_inference_mode": true,
+    "torch_device": "cpu",
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1,
+    "wall_clock": "time.perf_counter_ns"
+  },
+  "freeze_boundary": {
+    "benchmark_executed": false,
+    "benchmark_implementation_created": false,
+    "checkpoint_deserialized": false,
+    "dataset_array_opened": false,
+    "final_test_evaluator_rerun": false,
+    "final_test_output_recomputed": false,
+    "model_forward_executed": false,
+    "torch_imported_by_protocol_builder": false
+  },
+  "functional_invariants_rechecked_during_benchmark": {
+    "feature_vector_used_by_ood": false,
+    "historical_prediction_bias": 0.9,
+    "integrity_precedes_ood": true,
+    "one_full_task_model_call_per_end_to_end_iteration": true,
+    "ood_score": "abs(logit_0 - logit_1)",
+    "ood_threshold": 0.00914505124092102,
+    "second_task_forward_used": false,
+    "task_prediction_always_returned": true
+  },
+  "latency_protocol": {
+    "block_order": "alternate task-only-first and integrated-first across successive blocks to reduce fixed ordering bias",
+    "measured_iterations_per_block": 1000,
+    "measurement_blocks": 7,
+    "negative_measured_increment": "retain_as_observed_and_interpret_as_measurement_noise; do_not_clamp_to_zero",
+    "per_iteration_latency_recorded": true,
+    "primary_incremental_latency_definition": "median_integrated_reliability_ns - median_task_only_reference_ns",
+    "primary_relative_overhead_definition": "primary_incremental_latency_ns / median_task_only_reference_ns",
+    "reported_latency_statistics": [
+      "count",
+      "minimum_ns",
+      "median_ns",
+      "mean_ns",
+      "p95_ns",
+      "p99_ns",
+      "maximum_ns"
+    ],
+    "total_measured_calls_per_variant": 7000,
+    "variants": {
+      "integrated_reliability": {
+        "definition": "run_reliability_window(model, window, empty_integrity_assessment)",
+        "full_task_model_calls_per_iteration": 1,
+        "reliability_wrapper_called": true
+      },
+      "post_logit_integrity_alert": {
+        "definition": "decide_from_logits on fixed logits with a preconstructed qualified FRAME_GAP assessment",
+        "full_task_model_calls_per_iteration": 0
+      },
+      "post_logit_ood_unknown": {
+        "definition": "decide_from_logits on equal fixed logits producing OOD_UNKNOWN with an empty IntegrityAssessment",
+        "full_task_model_calls_per_iteration": 0
+      },
+      "post_logit_valid": {
+        "definition": "decide_from_logits on fixed logits producing VALID with an empty IntegrityAssessment",
+        "full_task_model_calls_per_iteration": 0
+      },
+      "task_only_reference": {
+        "definition": "exactly one model(window) call followed by historical decision_from_logits(logits)",
+        "full_task_model_calls_per_iteration": 1,
+        "reliability_wrapper_called": false
+      }
+    },
+    "warmup_iterations": 500
+  },
+  "measurement_scope": {
+    "batch_size": 1,
+    "calibration_dataset_used": false,
+    "device": "CPU",
+    "external_domain_shift_dataset_used": false,
+    "final_test_dataset_used": false,
+    "input_source": "deterministic_synthetic_only",
+    "integrity_operating_point_may_change": false,
+    "ood_threshold_may_change": false,
+    "protected_dataset_used": false,
+    "scientific_selection_allowed": false,
+    "scope": "reference_host_engineering_measurement",
+    "window_shape": [
+      1,
+      40,
+      9
+    ]
+  },
+  "memory_protocol": {
+    "checkpoint_loading_peak_memory_counted_as_runtime_overhead": false,
+    "host_process_peak_rss": true,
+    "host_process_peak_rss_method": "resource.getrusage(resource.RUSAGE_SELF).ru_maxrss recorded with platform/unit metadata",
+    "measure_end_to_end_variants": true,
+    "measure_post_logit_variants": true,
+    "model_parameter_memory_counted_as_incremental_reliability_overhead": false,
+    "python_allocation_or_rss_may_be_called_stm32_ram": false,
+    "python_allocator_measurement": "tracemalloc",
+    "reported_python_allocation_fields": [
+      "current_bytes",
+      "peak_bytes"
+    ],
+    "scope": "reference_host_only"
+  },
+  "protocol_id": "RUNTIME_RESOURCE_OVERHEAD_PROTOCOL_V1",
+  "purpose": "Quantify incremental engineering overhead of the frozen reference reliability runtime without reopening scientific selection and without making target-MCU claims.",
+  "result_contract": {
+    "candidate_result_path": "results/raw/runtime_resource_overhead_v1_candidate.json",
+    "result_may_modify_runtime_algorithm": false,
+    "result_may_modify_scientific_operating_points": false,
+    "result_must_record_all_protocol_statistics": true,
+    "result_must_record_checkpoint_hash": true,
+    "result_must_record_environment": true,
+    "result_must_record_runtime_source_hashes": true
+  },
+  "source_anchors": {
+    "checkpoint": {
+      "loading_time_included_in_latency_measurement": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+      "sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1"
+    },
+    "integrity_operating_point": {
+      "supported_v1_hard_causes": [
+        "FRAME_GAP"
+      ],
+      "tag": "integrity-operating-point-v1",
+      "tag_commit": "9ac878ea6a40e8c01a60e42e602a1fa9fc688d3b"
+    },
+    "ood_operating_point": {
+      "tag": "ood-operating-point-v1",
+      "tag_commit": "fea9316d8510a5841baba48d273973e0267e4b28",
+      "threshold": 0.00914505124092102
+    },
+    "protected_baseline": {
+      "historical_decision_raw_sha256": "4badaf73460402447ac5c4253017db15de07964d7182f098a4d335f1670ed9ab",
+      "model_source_raw_sha256": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d",
+      "tag": "baseline-date2025-cnn400-v1",
+      "tag_commit": "d6fe744b292139d18fd4dee37c96066bcf2d38c6"
+    },
+    "reference_runtime": {
+      "decision_raw_sha256": "00391737a5f2d167ded6e302031b2a354baf2eeb41ee3bc49a1f055e3a40e384",
+      "reliability_raw_sha256": "aa8fe189301c4dd2b67f501872d060a29e8e5e8e5cc518590e028a79068eda7b",
+      "runtime_init_raw_sha256": "f8b125ffb9e1c217bc2eb0c2aac197e64ca8cfc47d6f31ddf92068af575ef3e0",
+      "tag": "runtime-reference-implementation-v1",
+      "tag_commit": "4755a74fe558021576934674e338865a36df5b55"
+    },
+    "runtime_integration_contract": {
+      "content_sha256": "ffacdf7303738208d280f2f21f0d26fc7856a8dcf0946e34d88f133412467ca3",
+      "raw_sha256": "332beb6b99c73f6c4c153bcc21a05ab38e42516d1505c2c4f5f28f6ee5b3cf11",
+      "tag": "runtime-integration-contract-v1",
+      "tag_commit": "c2b7ae52b163afb33c828218e5c76f0686ad391a"
+    }
+  },
+  "static_footprint_protocol": {
+    "files": [
+      "src/imu_reliability/runtime/__init__.py",
+      "src/imu_reliability/runtime/decision.py",
+      "src/imu_reliability/runtime/reliability.py"
+    ],
+    "python_source_bytes_may_be_called_embedded_flash": false,
+    "python_source_bytes_may_be_called_mcu_code_size": false,
+    "report_runtime_source_raw_bytes": true
+  },
+  "status": "frozen_before_reference_host_resource_measurement",
+  "synthetic_input_contract": {
+    "construction": "torch.linspace(-1.0, 1.0, steps=360, dtype=torch.float32).reshape(1,40,9)",
+    "input_values_used_for_accuracy_or_selection": false,
+    "primary_pattern": "deterministic_linspace",
+    "protected_sensor_sample_used": false,
+    "random_input_used": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "version": "v1",
+  "purpose": "Controlled IMU reliability corruption evaluation",
+  "datasets": [
+    "UCI_HAR",
+    "PAMAP2",
+    "MotionSense",
+    "DSADS"
+  ],
+  "window": {
+    "samples": 128,
+    "channels": 6
+  },
+  "corruptions": {
+    "missing_channel": {
+      "description": "Complete removal of one or more IMU channels",
+      "channels": [
+        "accel_x",
+        "accel_y",
+        "accel_z",
+        "gyro_x",
+        "gyro_y",
+        "gyro_z"
+      ],
+      "severity": [
+        1,
+        2,
+        3
+      ]
+    },
+    "random_dropout": {
+      "description": "Temporal missing samples inside IMU windows",
+      "drop_ratio": [
+        0.1,
+        0.25,
+        0.5
+      ]
+    },
+    "gaussian_noise": {
+      "description": "Additive sensor noise injection",
+      "snr_db": [
+        20,
+        10,
+        5
+      ]
+    },
+    "sensor_drift": {
+      "description": "Constant bias shift simulating calibration drift",
+      "bias_scale": [
+        0.1,
+        0.25,
+        0.5
+      ]
+    }
+  },
+  "random_seeds": [
+    42,
+    123,
+    2026
+  ]
+}

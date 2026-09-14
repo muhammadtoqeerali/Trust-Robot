@@ -1,0 +1,684 @@
+{
+  "benchmark_tracks": {
+    "fall_safety_critical": {
+      "candidate_additions": [
+        {
+          "id": "SisFall",
+          "priority": "primary_addition_candidate",
+          "status": "not_yet_acquired_or_provenanced"
+        },
+        {
+          "id": "MobiAct",
+          "priority": "secondary_addition_candidate",
+          "status": "not_yet_acquired_or_provenanced"
+        }
+      ],
+      "core_existing_datasets": [
+        {
+          "id": "KFall",
+          "local_lineage_known": true,
+          "status": "core"
+        },
+        {
+          "id": "UniVRFall",
+          "local_lineage_known": true,
+          "status": "core"
+        }
+      ],
+      "external_shift_population": [
+        {
+          "id": "OnField",
+          "local_lineage_known": true,
+          "role": "natural_or_external_shift_population_not_automatically_training_data"
+        }
+      ],
+      "purpose": [
+        "fall_vs_ADL_recognition",
+        "safety_critical_error_analysis",
+        "fault_and_shift_reliability",
+        "legacy_retrofit_comparison"
+      ]
+    },
+    "general_har": {
+      "compatibility_candidates": [
+        {
+          "id": "WISDM_AR",
+          "note": "May be accelerometer-only depending on selected version; must not be silently mixed into the primary 6-axis leaderboard.",
+          "status": "not_yet_acquired_or_provenanced"
+        }
+      ],
+      "primary_6axis_candidates": [
+        {
+          "id": "UCI_HAR",
+          "status": "not_yet_acquired_or_provenanced"
+        },
+        {
+          "id": "PAMAP2",
+          "status": "not_yet_acquired_or_provenanced"
+        },
+        {
+          "id": "MotionSense",
+          "status": "not_yet_acquired_or_provenanced"
+        }
+      ],
+      "purpose": [
+        "multi_class_HAR",
+        "lightweight_task_model_comparison",
+        "selective_prediction",
+        "uncertainty_calibration"
+      ]
+    },
+    "harood_compatible_domain_generalization": {
+      "candidate_domains": [
+        "DSADS",
+        "USC_HAD",
+        "UCI_HAR",
+        "PAMAP2"
+      ],
+      "purpose": "Provide a standardized cross-domain comparison where dataset/channel compatibility permits.",
+      "status": "compatibility_target_not_yet_acquired_or_provenanced"
+    }
+  },
+  "common_imu_interface": {
+    "canonical_units": {
+      "accelerometer": "m_per_s2",
+      "gyroscope": "rad_per_s"
+    },
+    "missing_modality_policy": "A dataset missing a primary modality is evaluated in an explicitly labeled compatibility track unless a separate fair common-modality experiment is defined.",
+    "optional_metadata": [
+      "timestamp",
+      "sample_index",
+      "frame_counter",
+      "packet_sequence",
+      "device_id",
+      "subject_id",
+      "placement",
+      "orientation",
+      "hardware_status",
+      "activity_label",
+      "trial_id"
+    ],
+    "preserve_original_units_and_raw_values": true,
+    "primary_core_channels": [
+      "accel_x",
+      "accel_y",
+      "accel_z",
+      "gyro_x",
+      "gyro_y",
+      "gyro_z"
+    ]
+  },
+  "corruption_failure_suite": {
+    "families": {
+      "axis_outage": [
+        "accel_x_outage",
+        "accel_y_outage",
+        "accel_z_outage",
+        "gyro_x_outage",
+        "gyro_y_outage",
+        "gyro_z_outage"
+      ],
+      "calibration": [
+        "scale_drift",
+        "bias_drift"
+      ],
+      "compound": [
+        "ood_plus_dropout",
+        "noise_plus_scale_drift",
+        "frame_gap_plus_unfamiliar_activity"
+      ],
+      "missing_acquisition": [
+        "frame_gap",
+        "sample_or_packet_loss",
+        "segment_dropout"
+      ],
+      "modality_outage": [
+        "accelerometer_outage",
+        "gyroscope_outage"
+      ],
+      "noise": [
+        "gaussian_noise",
+        "burst_noise",
+        "impulsive_spikes"
+      ],
+      "orientation": [
+        "axis_rotation",
+        "coordinate_perturbation"
+      ],
+      "range": [
+        "clipping_like_corruption"
+      ],
+      "stuck_or_freeze": [
+        "stuck_axis",
+        "frozen_vector",
+        "constant_segment"
+      ],
+      "timing": [
+        "jitter",
+        "irregular_interval",
+        "time_warp",
+        "effective_rate_shift"
+      ]
+    },
+    "severity_policy": "Each synthetic family must have deterministic placements and predeclared severity levels selected using development data only.",
+    "synthetic_truth_is_physical_cause_proof": false
+  },
+  "created_from_literature_cutoff": "2026-08-19",
+  "dataset_inclusion_criteria": {
+    "exclusion_or_secondary_track_conditions": [
+      "unknown_subject_identity",
+      "unclear_train_test_provenance",
+      "unrecoverable_license_or_usage_status",
+      "insufficient_sensor_metadata",
+      "only_precomputed_features_without_raw_inertial_signal",
+      "missing_gyroscope_for_primary_6axis_track"
+    ],
+    "no_silent_modality_mixing": true,
+    "preferred": [
+      "accelerometer_xyz",
+      "gyroscope_xyz",
+      "device_or_placement_metadata",
+      "raw_or_near_raw_signals",
+      "sufficient_subject_count_for_held_out_subjects"
+    ],
+    "required": [
+      "documented source_and_version",
+      "documented_license_or_usage_terms",
+      "subject_or_participant_identifiers",
+      "documented_activity_labels",
+      "documented_sampling_rate_or_timestamps",
+      "reproducible_raw_to_processed_mapping",
+      "subject_disjoint_evaluation_possible"
+    ]
+  },
+  "development_calibration_final_lifecycle": {
+    "calibration": {
+      "allowed": [
+        "fit_predeclared_calibration_parameters",
+        "freeze_operating_thresholds",
+        "verify_target_coverage_constraints"
+      ],
+      "architecture_or_method_family_changes": false,
+      "begins_after_complete_method_selection": true,
+      "final_test_access": false
+    },
+    "development": {
+      "allowed": [
+        "compare_task_architectures",
+        "compare_ood_methods",
+        "compare_integrity_quality_detectors",
+        "tune_model_size",
+        "tune_predeclared_window_and_sampling_choices",
+        "tune_thresholds",
+        "run_ablations"
+      ],
+      "final_test_access": false
+    },
+    "final_test": {
+      "irreversible_result_receipt_required": true,
+      "single_locked_consumption": true,
+      "tuning_after_exposure": false
+    },
+    "method_freeze": {
+      "includes": [
+        "datasets_and_versions",
+        "splits",
+        "preprocessing",
+        "task_model",
+        "integrity_quality_logic",
+        "ood_method",
+        "calibration_method",
+        "trust_fusion",
+        "thresholds",
+        "metrics",
+        "statistical_plan"
+      ],
+      "required_before_final_test": true
+    }
+  },
+  "domain_generalization_bank": {
+    "candidate_methods": [
+      "DANN",
+      "CORAL",
+      "MMD",
+      "GroupDRO",
+      "ERM_plus_plus"
+    ],
+    "direct_cross_domain_reference": [
+      "GENHAR"
+    ],
+    "protocol_reference": "HAROOD",
+    "required_simple_reference": [
+      "ERM",
+      "Mixup"
+    ],
+    "selection_rule": "Do not execute all available methods blindly. Select a representative set during DEVELOPMENT using published relevance, reproducibility, and computational cost."
+  },
+  "efficiency_objectives": {
+    "actual_mcu_budget": "Must be defined against a real selected target and measured toolchain/hardware evidence before an MCU claim.",
+    "avoid_second_full_forward_preferred": true,
+    "incremental_latency_goal_percent": {
+      "status": "engineering_goal_not_scientific_freeze",
+      "stretch": 5,
+      "target": 10
+    },
+    "normal_path_full_task_forwards_target": 1,
+    "primary": "Evaluate accuracy-reliability-generalization-efficiency as a Pareto problem rather than optimizing accuracy alone."
+  },
+  "integrity_quality_semantics": {
+    "hard_integrity_evidence_sources": [
+      "qualified_frame_counter",
+      "qualified_packet_sequence",
+      "qualified_fifo_or_status_flag",
+      "qualified_crc_or_transport_error",
+      "qualified_hardware_timing",
+      "explicit_device_health_status"
+    ],
+    "hard_integrity_output": "INTEGRITY_ALERT(cause)",
+    "multiple_independent_causes_may_be_retained": true,
+    "signal_only_output": "QUALITY_SUSPECT",
+    "signal_only_quality_examples": [
+      "stuck_axis_pattern",
+      "dropout_pattern",
+      "noise_pattern",
+      "clipping_like_pattern",
+      "drift_pattern",
+      "freeze_pattern"
+    ],
+    "signal_pattern_must_not_name_unverified_physical_cause": true
+  },
+  "lineage": {
+    "expected_parent_head": "a1a2f29ad5a4ea62c8c025b70869c90e8303a3d1",
+    "source_competitor_landscape": "data/provenance/v2/competitor_landscape_candidate_v1b.json",
+    "source_competitor_landscape_sha256": "bf308388af7d8a0e024f689d2381bc6a3e3808b3d24d3a60d8bd3fd5374eee6c",
+    "v1_latest_frozen_commit": "a1a2f29ad5a4ea62c8c025b70869c90e8303a3d1",
+    "v1_latest_frozen_tag": "paper-evidence-claim-matrix-v1",
+    "v2_new_lineage": true
+  },
+  "mcu_claim_boundaries": {
+    "energy_claim_requires_physical_energy_measurement": true,
+    "host_measurements_are_mcu_measurements": false,
+    "intended_family": "STM32F722_or_equivalent_Cortex_M",
+    "portable_C_is_stm32_deployment": false,
+    "required_for_measured_mcu_claim": [
+      "actual_model_export",
+      "actual_cross_compile",
+      "actual_target_integration",
+      "actual_flash_measurement",
+      "actual_RAM_measurement",
+      "actual_cycle_or_latency_measurement"
+    ]
+  },
+  "metrics": {
+    "calibration": [
+      "ECE",
+      "Brier_score",
+      "NLL",
+      "conformal_coverage",
+      "average_prediction_set_size"
+    ],
+    "domain_shift": [
+      "macro_F1_by_domain",
+      "balanced_accuracy_by_domain",
+      "per_domain_task_performance",
+      "generalization_gap",
+      "relative_performance_drop"
+    ],
+    "efficiency": [
+      "trainable_parameters",
+      "MACs_or_FLOPs",
+      "model_bytes",
+      "host_latency_per_window",
+      "reliability_incremental_latency",
+      "reliability_relative_latency_overhead"
+    ],
+    "fall_specific": [
+      "fall_recall",
+      "fall_precision",
+      "false_positive_rate",
+      "false_negative_rate"
+    ],
+    "integrity_quality": [
+      "event_recall",
+      "event_precision",
+      "false_alerts_per_hour",
+      "alert_latency_samples",
+      "alert_latency_ms",
+      "cause_attribution_precision",
+      "cause_attribution_coverage"
+    ],
+    "ood": [
+      "AUROC",
+      "AUPR",
+      "FPR95",
+      "TPR_at_fixed_FPR",
+      "ID_acceptance_rate"
+    ],
+    "ood_applicability_rule": "AUROC, AUPR, FPR95, TPR-at-fixed-FPR, and OOD recall are reported only for populations with explicit binary ID/OOD or semantic-unknown ground truth. Ordinary cross-subject, cross-placement, or cross-dataset task generalization is not automatically relabeled as OOD detection.",
+    "operational_primary": [
+      "wrong_and_trusted",
+      "wrong_and_flagged",
+      "correct_and_trusted",
+      "correct_and_flagged",
+      "unsafe_acceptance",
+      "error_capture",
+      "coverage",
+      "selective_risk",
+      "AURC",
+      "risk_at_fixed_coverage",
+      "coverage_at_fixed_risk"
+    ],
+    "target_hardware_when_available": [
+      "total_flash",
+      "static_RAM",
+      "peak_RAM",
+      "cycles_per_window",
+      "latency_per_window",
+      "reliability_incremental_cycles",
+      "reliability_incremental_latency",
+      "energy_per_window"
+    ],
+    "task": [
+      "macro_F1",
+      "balanced_accuracy",
+      "per_class_recall",
+      "per_class_precision",
+      "specificity",
+      "confusion_matrix"
+    ]
+  },
+  "next_stage_after_protocol_candidate_validation": "scientific_review_then_freeze_phase1_protocol_before_dataset_acquisition_or_training",
+  "nonnegotiable_boundaries": {
+    "date_is_main_v2_task_model": false,
+    "date_role": "legacy_retrofit_case_study",
+    "no_final_test_tuning": true,
+    "no_silent_package_installation": true,
+    "no_unmeasured_mcu_claims": true,
+    "no_unrelated_untracked_file_changes": true,
+    "rerun_v1_integrity_final_test": false,
+    "rerun_v1_ood_final_test": false,
+    "rerun_v1_resource_benchmark": false,
+    "retune_v1_integrity_operating_point": false,
+    "retune_v1_ood_threshold": false,
+    "v1_is_frozen": true
+  },
+  "ood_and_shift_regimes": {
+    "claim_rules": {
+      "dataset_identity_is_not_unknown_class_truth": true,
+      "domain_shift_is_not_automatically_semantic_ood": true,
+      "ood_AUROC_requires_explicit_binary_ID_OOD_truth": true,
+      "placement_identity_is_not_unknown_class_truth": true,
+      "semantic_ood_recall_requires_explicit_unknown_truth": true,
+      "subject_identity_is_not_unknown_class_truth": true
+    },
+    "domain_shift_required": [
+      {
+        "domain_shift_ground_truth_available": true,
+        "ground_truth_basis": "held_out_subject_identity",
+        "id": "unseen_subject",
+        "interpretation": "Same task semantics under an unseen person/domain.",
+        "semantic_unknown_ground_truth_available": false
+      },
+      {
+        "domain_shift_ground_truth_available": true,
+        "ground_truth_basis": "placement_metadata_or_controlled_rotation",
+        "id": "placement_or_orientation_shift",
+        "interpretation": "Known placement/orientation change with activity semantics potentially unchanged.",
+        "semantic_unknown_ground_truth_available": false
+      },
+      {
+        "domain_shift_ground_truth_available": true,
+        "ground_truth_basis": "dataset_domain_identity",
+        "id": "cross_dataset_shift",
+        "interpretation": "Dataset origin is evidence of domain shift, not automatically evidence of an unknown semantic class.",
+        "semantic_unknown_exception": "Semantic OOD may be evaluated only in a separately declared class-disjoint cross-dataset experiment where unknown-class ground truth is explicit.",
+        "semantic_unknown_ground_truth_available": false
+      }
+    ],
+    "harood_compatibility": {
+      "implemented_common_activity_count": 6,
+      "implemented_common_channel_count": 6,
+      "implemented_cross_dataset_domains": [
+        "DSADS",
+        "USC_HAD",
+        "PAMAP2",
+        "UCI_HAR"
+      ],
+      "reference": "HAROOD",
+      "scenario_naming_caution": "HAROOD source evidence contains inconsistent high-level cross-device versus implemented/tabulated cross-dataset scenario naming. V2 must name the exact reproduced experiment rather than relying on a generic scenario list."
+    },
+    "optional_domain_shifts_if_supported": [
+      "cross_device",
+      "sample_rate_shift",
+      "temporal_or_session_shift"
+    ],
+    "semantic_ood_required": [
+      {
+        "domain_shift_ground_truth_available": true,
+        "ground_truth_basis": "held_out_activity_classes",
+        "id": "unseen_activity",
+        "interpretation": "Activities deliberately excluded from the known training label set and presented as unknown at evaluation time.",
+        "semantic_unknown_ground_truth_available": true
+      }
+    ]
+  },
+  "ood_uncertainty_competitor_bank": {
+    "cheap_single_forward": [
+      "maximum_softmax_probability",
+      "predictive_entropy",
+      "maximum_logit",
+      "top_two_logit_margin",
+      "energy_score",
+      "temperature_scaled_softmax",
+      "prototype_distance",
+      "mahalanobis_distance"
+    ],
+    "expensive_reference_only": [
+      "mc_dropout",
+      "deep_ensemble"
+    ],
+    "mandatory_direct_reliability": [
+      "TRUSTTINY_HAR",
+      "TINYHAR_UQ"
+    ],
+    "ported_method_fairness_rule": "Generic methods ported to IMU must use the same V2 datasets, splits, task backbone where applicable, and calibration boundary.",
+    "strong_ported_generic": [
+      "SNAP_UQ",
+      "TCUQ"
+    ],
+    "v1_margin_is_automatic_v2_winner": false
+  },
+  "primary_research_question": "Can a model-agnostic IMU reliability architecture jointly handle task recognition, qualified acquisition integrity, signal-quality suspicion, open-set/domain-shift uncertainty, predictive calibration, and resource constraints while reducing unsafe accepted errors across heterogeneous IMU datasets?",
+  "protocol_id": "IMU_RELIABILITY_V2_COMPETITOR_AND_BENCHMARK_PROTOCOL",
+  "revision": {
+    "final_test_exposed": false,
+    "reason": [
+      "Separate semantic OOD ground truth from ordinary domain/distribution shift ground truth.",
+      "Carry forward corrected HAROOD evidence documenting the paper's scenario-naming inconsistency and the implemented cross-dataset experiment."
+    ],
+    "revision_id": "v1b",
+    "scientific_result_changed": false,
+    "source_competitor_landscape": "data/provenance/v2/competitor_landscape_candidate_v1b.json",
+    "source_competitor_landscape_sha256": "bf308388af7d8a0e024f689d2381bc6a3e3808b3d24d3a60d8bd3fd5374eee6c",
+    "source_protocol_candidate": "configs/v2/imu_reliability_v2_competitor_and_benchmark_protocol_candidate_v1.json",
+    "source_protocol_candidate_sha256": "575323cd2e65baf4161cb389ec2ec18b2ed7d99962d9aa882d75d2c5acc55379",
+    "v1_artifact_changed": false
+  },
+  "sampling_and_windowing": {
+    "cross_dataset_common_rate_hz": {
+      "predeclared_candidates": [
+        50,
+        100
+      ],
+      "status": "development_selectable_then_freeze"
+    },
+    "cross_dataset_rule": "Use an explicitly documented common rate only when cross-dataset alignment requires it.",
+    "fall_window_duration_ms": {
+      "predeclared_candidates": [
+        400,
+        800,
+        1000
+      ],
+      "status": "development_selectable_then_freeze"
+    },
+    "freeze_before_calibration": true,
+    "general_har_window_duration_ms": {
+      "predeclared_candidates": [
+        1000,
+        2000,
+        2560
+      ],
+      "status": "development_selectable_then_freeze"
+    },
+    "selection_data_boundary": "development_only",
+    "window_overlap_percent": {
+      "predeclared_candidates": [
+        0,
+        50
+      ],
+      "status": "development_selectable_then_freeze"
+    },
+    "within_dataset_primary_rule": "Preserve documented native sampling rate where practical; do not upsample merely to create artificial information."
+  },
+  "schema": "imu_reliability_v2_competitor_and_benchmark_protocol_candidate",
+  "schema_version": "1b",
+  "secondary_research_questions": [
+    "Can independently qualified acquisition causes be separated from signal-only suspicion without overclaiming physical faults?",
+    "Which lightweight OOD or uncertainty method provides the strongest reliability-efficiency trade-off across unseen activities, subjects, placements, and datasets?",
+    "Does unified trust fusion reduce wrong-and-trusted predictions at useful trusted coverage?",
+    "Does the reliability architecture generalize across both fall detection and ordinary HAR?",
+    "Can reliability monitoring remain lightweight enough for practical Cortex-M-class deployment?",
+    "Can frozen legacy classifiers be retrofitted without retraining while preserving their task semantics?"
+  ],
+  "split_protocol": {
+    "deterministic_partitioning_required": true,
+    "no_trial_leakage_across_partitions": true,
+    "no_window_level_subject_leakage": true,
+    "partition_manifest_required": true,
+    "partition_roles": [
+      "train",
+      "development",
+      "calibration",
+      "final_test"
+    ],
+    "primary_rule": "subject_disjoint",
+    "published_compatibility_folds": "May be run as secondary analyses when required for direct paper comparison, but must be labeled separately from the primary V2 split.",
+    "small_dataset_rule": "If integer subject counts make target fractions infeasible, use a deterministic subject-level allocation that preserves all four roles and document the deviation.",
+    "target_subject_fraction": {
+      "calibration": 0.1,
+      "development": 0.15,
+      "final_test": 0.15,
+      "train": 0.6
+    }
+  },
+  "statistics": {
+    "avoid_window_level_pseudoreplication": true,
+    "clustered_or_hierarchical_bootstrap": true,
+    "confidence_interval": 0.95,
+    "effect_sizes_required": true,
+    "minimum_final_bootstrap_replicates": 10000,
+    "multiple_comparison_control": "Use Holm correction for families of confirmatory pairwise tests where formal significance testing is used.",
+    "paired_comparisons_when_same_test_units": true,
+    "primary_resampling_unit": "subject_or_domain_not_individual_window",
+    "report_distribution_across_subjects": true
+  },
+  "status": "development_candidate_not_frozen",
+  "success_and_pareto_criteria": {
+    "axes": [
+      "task_quality",
+      "reliability",
+      "generalization",
+      "efficiency"
+    ],
+    "best_is_not_single_dataset_accuracy": true,
+    "claim_best_only_if_supported_by_prespecified_comparison_scope": true,
+    "comparison_style": [
+      "matched_coverage_selective_risk",
+      "matched_risk_coverage",
+      "risk_coverage_curve",
+      "Pareto_front_analysis"
+    ],
+    "desired_final_position": "Top or statistically tied lightweight task performance with lower unsafe accepted error, strong shift/OOD discrimination, useful coverage, and low incremental resource overhead.",
+    "domain_shift_success_rule": "Evaluate retained task quality and operational reliability under known domain shifts separately from semantic-OOD detection performance.",
+    "primary_reliability_objective": "Reduce wrong-and-trusted predictions under clean, fault, and distribution-shift conditions while maintaining useful trusted coverage."
+  },
+  "task_model_bank": {
+    "identical_split_and_preprocessing_required_for_comparison": true,
+    "legacy_case_only": [
+      "DATE2025_CNN_400MS"
+    ],
+    "literature_baselines_from_ledger": [
+      "TINYHAR",
+      "TINIERHAR",
+      "HART"
+    ],
+    "proposed_backbone_status": "not_selected_until_development_comparison",
+    "required_generic_baselines": [
+      "1D_CNN",
+      "DS_CNN",
+      "DeepConvLSTM",
+      "TCN_or_residual_temporal_CNN"
+    ]
+  },
+  "terminology": {
+    "corruption": "A controlled synthetic or otherwise known perturbation used for reliability evaluation; synthetic corruption truth is not physical-cause proof.",
+    "domain_shift": "A known change in subject, placement, dataset, device, session, or other domain variable that may preserve the same task semantics and class set.",
+    "rule": "Domain shift must not automatically be reported as semantic OOD. Semantic OOD metrics require explicit unknown ground truth.",
+    "semantic_ood": "An input whose semantic class or explicitly defined unknown regime was withheld from the model's known training label space or known-class definition."
+  },
+  "trust_fusion_candidates": {
+    "ablation_required": [
+      "no_integrity_branch",
+      "no_quality_branch",
+      "no_ood_branch",
+      "no_predictive_uncertainty_branch",
+      "collapsed_generic_anomaly_state",
+      "no_evidence_qualification",
+      "no_trust_hierarchy"
+    ],
+    "candidate_precedence": {
+      "order": [
+        "INTEGRITY_ALERT",
+        "COMPOUND",
+        "QUALITY_SUSPECT",
+        "OOD_UNKNOWN",
+        "LOW_CONFIDENCE",
+        "TRUSTED"
+      ],
+      "status": "development_candidate_not_frozen"
+    },
+    "candidate_states": [
+      "TRUSTED",
+      "LOW_CONFIDENCE",
+      "OOD_UNKNOWN",
+      "QUALITY_SUSPECT",
+      "INTEGRITY_ALERT",
+      "COMPOUND"
+    ],
+    "operational_action_may_abstain": true,
+    "task_prediction_is_always_computed": true,
+    "task_prediction_may_be_returned_even_when_flagged": true
+  },
+  "v1_reuse_vs_legacy": {
+    "legacy_only": [
+      "DATE2025_task_architecture",
+      "DATE2025_historical_decision_threshold",
+      "V1_FRAME_GAP_only_operating_point",
+      "V1_top_two_margin_threshold",
+      "V1_final_test_populations",
+      "V1_host_resource_result"
+    ],
+    "reusable_principles": [
+      "provenance_and_hashing",
+      "split_before_corruption",
+      "no_final_test_tuning",
+      "synthetic_truth_vs_runtime_evidence_separation",
+      "hard_integrity_evidence_qualification",
+      "one_forward_runtime_preference",
+      "task_prediction_preservation",
+      "portable_runtime_semantics",
+      "failure_classification",
+      "consumed_evidence_discipline"
+    ]
+  }
+}

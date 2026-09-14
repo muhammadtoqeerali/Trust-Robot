@@ -1,0 +1,181 @@
+schema: trust_robot_dataset_registry
+version: 1
+status: candidate_not_frozen
+
+principles:
+  local_readiness_is_separate_from_proposal_status: true
+  reference_streams_must_not_be_estimator_inputs: true
+  score_only_reference_supported_dimensions: true
+  reference_validity_is_dimension_specific: true
+  raw_reference_files_are_immutable: true
+  base_trajectory_derivatives_stay_in_one_split: true
+  test_data_selects_no_parameters: true
+
+physical_platform_plan:
+  primary_eventual_physical_platform: local_quadruped_robot
+  provisional_local_dataset_id: KIOS_QUADRUPED
+  core_estimator_platform_specific: false
+  core_modalities:
+    - camera
+    - lidar
+    - imu
+  optional_platform_modalities:
+    - proprioception
+  optional_future_platforms:
+    - drone
+  rules:
+    - local_quadruped_development_data_must_be_explicitly_partitioned
+    - local_quadruped_final_physical_test_trajectories_must_be_held_out
+    - final_physical_test_data_selects_no_models_calibration_or_thresholds
+    - proprioception_is_optional_until_actual_robot_streams_are_verified
+    - drone_requirements_do_not_drive_the_current_core_architecture
+
+datasets:
+  M2DGR:
+    proposal_status: core_publicly_available
+    local_readiness: unverified
+    platform: ground_robot_indoor_outdoor
+    intended_roles:
+      - development
+      - validation_calibration
+      - controlled_fault_injection
+      - in_distribution_confirmation
+    candidate_input_modalities:
+      - camera
+      - lidar
+      - imu
+    reference_notes:
+      - outdoor Street/Circle/Gate/Walk: RTK/INS pose
+      - Hall/Door/Lift: Leica 3D position tracking; coverage is not complete through lift traversal
+      - Room/Roomdark: motion-capture pose; validity must be quality-audited before scoring
+    restrictions:
+      - trajectory_disjoint
+      - all_derivatives_of_base_trajectory_same_split
+      - score_only_independently_referenced_intervals_and_dimensions
+      - Leica_reference_is_translation_only_without_independent_orientation
+      - motion_capture_reference_requires_dimension_specific_validity_masks_when_quality_audit_finds_invalid_samples
+      - Xsens/GNSS/IMU contributing_to_reference_is_reference_only
+      - use_independent_IMU_instance_for_estimator_input_when_reference_uses_Xsens
+      - verified_sensor_header_stamp_is_measurement_time_basis
+      - rosbag_record_time_is_transport_provenance_diagnostic_not_measurement_time
+      - no_global_fixed_sensor_time_offset_without_explicit_evidence
+      - multimodal_association_and_scoring_require_required_stream_header_time_overlap_intersected_with_valid_independent_reference_coverage
+
+  EuRoC:
+    proposal_status: core_publicly_available
+    local_readiness: unverified
+    platform: mav
+    intended_roles:
+      - camera_imu_controlled_testing
+      - different_platform_comparison
+    candidate_input_modalities:
+      - camera
+      - imu
+    reference_notes:
+      - Vicon-room sequences support 6-DoF pose reference
+      - machine-hall sequences provide Leica 3D position reference
+    restrictions:
+      - rotational_metrics_only_with_independent_orientation_reference
+      - Leica_only_reference_supports_position_based_metrics
+
+  TUM_VI:
+    proposal_status: supplementary_publicly_available
+    local_readiness: unverified
+    platform: handheld_visual_inertial
+    intended_roles:
+      - cross_dataset_stress_test
+    candidate_input_modalities:
+      - camera
+      - imu
+    reference_notes:
+      - room sequences have motion-capture reference over full trajectories
+      - many longer sequences have reference only near start/end
+    restrictions:
+      - full_trajectory_pose_metrics_only_with_continuous_reference
+      - partial_reference_uses_justified_endpoint_or_tracking_metrics
+
+  MUN_FRL:
+    proposal_status: supplementary_publicly_available
+    local_readiness: unverified
+    platform: aerial
+    intended_roles:
+      - camera_imu_lidar_cross_platform_test
+    candidate_input_modalities:
+      - camera
+      - imu
+      - lidar
+    reference_notes:
+      - high_precision_RTK_PPK_GNSS_position
+      - release_may_include_6DoF_odometry_but_attitude_independence_must_be_verified
+    restrictions:
+      - RTK_PPK_reference_is_reference_only
+      - do_not_infer_full_attitude_from_position_only_reference
+
+  GrandTour:
+    proposal_status: supplementary_publicly_available_with_access_conditions
+    local_readiness: unverified
+    platform: anymal_d_quadruped
+    intended_roles:
+      - heterogeneous_sensor_cross_platform_stress_test
+    candidate_input_modalities:
+      - camera
+      - lidar
+      - imu
+    optional_branch_modalities:
+      - proprioception
+    reference_notes:
+      - mission_dependent_reference_instrumentation
+      - may_include_Leica_MS60_and_RTK_GNSS_INS_support
+    restrictions:
+      - include_only_missions_with_verified_streams_sync_calibration_and_reference
+      - streams_contributing_to_reference_construction_are_reference_only
+      - use_independent_released_IMU_for_estimator_input
+      - derived_contact_odometry_maps_or_estimator_outputs_not_independent_ground_truth
+
+  M3DGR:
+    proposal_status: conditional_release_must_be_verified
+    local_readiness: blocked_pending_verification
+    platform: ground_robot
+    intended_roles:
+      - dataset_native_degradation_evaluation_if_complete
+    candidate_input_modalities:
+      - camera
+      - imu
+      - lidar
+    conditional_modalities:
+      - wheel
+      - gnss
+    readiness_requirements:
+      - download_or_stable_access_verified
+      - checksum_or_file_integrity_verified
+      - calibration_verified
+      - timestamps_verified
+      - required_streams_verified
+      - independent_reference_coverage_verified
+    restrictions:
+      - reference_GNSS_RTK_or_derived_solution_is_reference_only
+
+  KIOS_QUADRUPED:
+    proposal_status: planned_local_collection
+    local_readiness: not_collected
+    platform: local_dog_quadruped
+    identity_status: provisional_until_actual_robot_and_dataset_identity_are_frozen
+    intended_roles:
+      - optional_development_training
+      - optional_validation_calibration
+      - held_out_physical_validation
+      - onboard_resource_profiling
+      - supervisory_policy_evaluation
+      - controlled_closed_loop_testing
+    candidate_input_modalities:
+      - camera
+      - lidar
+      - imu
+    optional_branch_modalities:
+      - proprioception
+    restrictions:
+      - development_and_calibration_trajectories_disjoint_from_final_held_out_physical_tests
+      - all_derivatives_of_one_base_trajectory_remain_in_one_partition
+      - final_held_out_physical_data_not_used_for_training_model_selection_calibration_or_threshold_selection
+      - actual_sensor_streams_timestamps_calibration_and_reference_provenance_must_be_verified_before_admission
+      - proprioception_requires_verified_actual_robot_streams_and_separate_justification

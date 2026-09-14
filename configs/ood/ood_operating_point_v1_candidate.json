@@ -1,0 +1,63 @@
+{
+  "accepted_rule": "margin >= threshold",
+  "binding_strata": [
+    {
+      "class": "Falling",
+      "dataset": "UNIVRFALL",
+      "q_s": 0.00914505124092102
+    }
+  ],
+  "claim_boundary": {
+    "calibrated_from_clean_id_coverage_only": true,
+    "external_domain_shift_result_used_for_selection": false,
+    "true_ood_detection_probability_claimed": false,
+    "true_ood_positive_calibration_data_used": false
+  },
+  "clean_id_acceptance_target": 0.99,
+  "content_sha256": "5ad2eadf124429fa2be4267e5dac06f4d8524b14d5f61fa830d5e80ee8a88ae4",
+  "final_test_contract": {
+    "final_test_outputs_used_for_selection": false,
+    "integrity_operating_point_may_change": false,
+    "method_may_change_after_final_test": false,
+    "threshold_may_change_after_final_test": false
+  },
+  "operating_point_id": "OOD_OPERATING_POINT_V1_CANDIDATE",
+  "runtime_contract": {
+    "classifier_bypass_enabled": false,
+    "decision_precedence": [
+      "qualified_integrity_hard_cause",
+      "ood_margin_gate",
+      "valid"
+    ],
+    "feature_vector_used_by_selected_score": false,
+    "integrity_alert_state": "INTEGRITY_ALERT(C_t)",
+    "ood_state": "OOD_UNKNOWN",
+    "second_full_task_forward_allowed": false,
+    "selected_score_uses": "task_logits_from_same_single_forward",
+    "task_model_forwards_per_window": 1,
+    "task_prediction_still_computed": true,
+    "task_prediction_still_returned": true,
+    "valid_state": "VALID"
+  },
+  "score_formula": "abs(logit_0 - logit_1)",
+  "selected_method": "top_two_logit_margin",
+  "source_evaluator": {
+    "raw_sha256": "6462829b7ffee3ca19dc25b7a605a3b7dd38ddf6bfb10a34ca8d098c0ae415df",
+    "tag": "ood-calibration-evaluator-v1b",
+    "tag_commit": "d879fbbfa512194b67f6a5087d0f76c7baa50227"
+  },
+  "source_protocol": {
+    "content_sha256": "47c1f3b21c069953e76d3c9bc92ee29cf577675204c653a29e4844a4b35c38f5",
+    "tag": "ood-calibration-protocol-v1",
+    "tag_commit": "9297a81411df9cfb3b3812f8eecd3b630c45bae4"
+  },
+  "source_result": {
+    "content_sha256": "0665981dc1ba225fc9a1164395fa0477b9bb0f6d5ec442003b5879ce506fc720",
+    "result_id": "OOD_CALIBRATION_V1_CANDIDATE"
+  },
+  "status": "candidate_from_frozen_calibration_result_not_yet_frozen",
+  "threshold": 0.00914505124092102,
+  "threshold_selection_rule": "minimum per-stratum one-percent lower-tail order statistic over all nonempty protected calibration dataset_x_class strata",
+  "ties_at_threshold_accepted": true,
+  "unknown_rule": "margin < threshold"
+}

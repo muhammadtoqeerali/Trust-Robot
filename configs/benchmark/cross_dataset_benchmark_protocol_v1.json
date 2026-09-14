@@ -1,0 +1,21 @@
+{
+  "benchmark_version": "v1",
+  "purpose": "cross_dataset_IMU_reliability_evaluation",
+  "datasets": [
+    "UCI_HAR",
+    "PAMAP2",
+    "MotionSense",
+    "DSADS"
+  ],
+  "common_representation": {
+    "window_samples": 128,
+    "channels": 6,
+    "sampling_hz": 50
+  },
+  "evaluation_protocol": {
+    "subject_disjoint": true,
+    "train_validation_test": "subject_based",
+    "cross_dataset_testing": true
+  },
+  "status": "initialized"
+}

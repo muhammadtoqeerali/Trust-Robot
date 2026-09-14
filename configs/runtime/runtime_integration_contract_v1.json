@@ -1,0 +1,185 @@
+{
+  "content_sha256": "ffacdf7303738208d280f2f21f0d26fc7856a8dcf0946e34d88f133412467ca3",
+  "contract_id": "RUNTIME_INTEGRATION_CONTRACT_V1",
+  "decision_precedence": [
+    {
+      "condition": "supported qualified integrity hard-cause set is non-empty",
+      "priority": 1,
+      "trust_state": "INTEGRITY_ALERT"
+    },
+    {
+      "condition": "no hard integrity cause and margin < 0.00914505124092102",
+      "priority": 2,
+      "trust_state": "OOD_UNKNOWN"
+    },
+    {
+      "condition": "otherwise",
+      "priority": 3,
+      "trust_state": "VALID"
+    }
+  ],
+  "freeze_boundary": {
+    "checkpoint_deserialized": false,
+    "dataset_arrays_opened": false,
+    "model_forward_executed": false,
+    "runtime_implementation_created": false,
+    "scientific_selection_reopened": false,
+    "torch_imported_by_builder": false
+  },
+  "historical_task_decision_contract": {
+    "activity_class": 0,
+    "binary_equivalent": "Falling iff P(Falling) > 0.9; Activity otherwise",
+    "comparison_is_strict": true,
+    "falling_class": 1,
+    "function": "decision_from_logits",
+    "historical_acceptance_test": "max_probability > 0.9",
+    "plain_argmax_may_replace_historical_decision": false,
+    "prediction_bias": 0.9,
+    "probability_transform": "softmax(logits, dim=1)",
+    "task_prediction_always_computed": true,
+    "task_prediction_always_returned": true
+  },
+  "implementation_safety_contract": {
+    "additional_task_model_forward_allowed": false,
+    "classifier_bypass_allowed": false,
+    "may_modify_integrity_operating_point": false,
+    "may_modify_ood_method": false,
+    "may_modify_ood_threshold": false,
+    "may_rerun_integrity_final_evaluator": false,
+    "may_rerun_ood_calibration_evaluator": false,
+    "may_rerun_ood_final_test_evaluator": false,
+    "may_use_final_outputs_for_new_selection": false
+  },
+  "input_contract": {
+    "batch_size": 1,
+    "integrity_assessment_is_constructed_from_evidence": true,
+    "integrity_input": "IntegrityAssessment",
+    "model_input_shape": [
+      1,
+      40,
+      9
+    ],
+    "reference_execution_unit": "one_400ms_window",
+    "runtime_wrapper_does_not_invent_integrity_evidence": true,
+    "stored_input_channels": 9,
+    "window_samples": 40
+  },
+  "integrity_runtime_contract": {
+    "assessment_type": "IntegrityAssessment",
+    "buffer_stall_inferred_from_duplicate_counter": false,
+    "channel_freeze_enters_hard_set": false,
+    "frame_gap_requires": "HARD_QUALIFIED provenance-qualified direct acquisition counter evidence",
+    "frame_repeat_inferred_from_duplicate_counter": false,
+    "hard_alert_test": "assessment.has_hard_alert",
+    "multiple_supported_qualified_causes_are_retained": true,
+    "observation_only_evidence_changes_primary_trust_state": false,
+    "supported_v1_hard_cause_mask": [
+      "FRAME_GAP"
+    ],
+    "suspects_change_primary_trust_state": false,
+    "suspects_may_be_returned_for_diagnostics": true,
+    "timing_observation_enters_hard_set": false,
+    "unsupported_hard_cause_mask_policy": "runtime_contract_violation_do_not_silently_promote_or_drop",
+    "unverified_or_derived_counter_gap_enters_hard_set": false
+  },
+  "ood_runtime_contract": {
+    "accepted_rule": "margin >= threshold",
+    "binary_score_formula": "abs(logit_0 - logit_1)",
+    "feature_vector_used": false,
+    "method": "top_two_logit_margin",
+    "method_may_change": false,
+    "score_source": "task_logits_from_the_same_single_task_forward",
+    "second_model_forward_used": false,
+    "threshold": 0.00914505124092102,
+    "threshold_may_change": false,
+    "ties_at_threshold_accepted": true,
+    "true_ood_probability_claimed": false,
+    "unknown_rule": "margin < threshold"
+  },
+  "output_contract": {
+    "integrity_alert_does_not_suppress_task_prediction": true,
+    "integrity_cause_mask": "always_present",
+    "ood_margin": "always_present_from_same_logits",
+    "ood_threshold": 0.00914505124092102,
+    "ood_unknown_does_not_suppress_task_prediction": true,
+    "suspect_indicators": "diagnostic_only",
+    "task_prediction": "always_present",
+    "trust_states": [
+      "VALID",
+      "OOD_UNKNOWN",
+      "INTEGRITY_ALERT"
+    ]
+  },
+  "planned_python_reference_api": {
+    "decision_module": "src/imu_reliability/runtime/decision.py",
+    "decision_record": "ReliabilityDecision",
+    "integrated_function_behavior": "perform exactly one protected task-model forward, derive the historical task prediction and frozen logit-margin score from those logits, then apply integrity > OOD > VALID precedence",
+    "integrated_single_window_function": "run_reliability_window",
+    "package": "imu_reliability.runtime",
+    "pure_decision_function": "decide_from_logits",
+    "reliability_module": "src/imu_reliability/runtime/reliability.py",
+    "trust_state_enum": "TrustState"
+  },
+  "purpose": "Reference runtime integration of the frozen historical task decision, evidence-qualified integrity state, and frozen OOD_UNKNOWN gate without statistical reopening.",
+  "resource_evidence_boundary": {
+    "exact_stm32_energy_overhead_claimed_at_contract_freeze": false,
+    "exact_stm32_flash_overhead_claimed_at_contract_freeze": false,
+    "exact_stm32_latency_claimed_at_contract_freeze": false,
+    "exact_stm32_ram_overhead_claimed_at_contract_freeze": false,
+    "required_next_evidence_after_reference_runtime": [
+      "reference_runtime_functional_tests",
+      "single_forward_call-count evidence",
+      "runtime_wrapper CPU overhead",
+      "runtime wrapper memory overhead",
+      "embedded translation or recovered firmware integration path",
+      "target-specific flash RAM latency measurements before deployment claims"
+    ],
+    "tracked_embedded_firmware_present_at_contract_freeze": false
+  },
+  "source_anchors": {
+    "integrity_final_test_result": {
+      "tag": "integrity-final-test-result-v1",
+      "tag_commit": "b1aaa28a5cd2222bd3acc7d5d86289ba9fd71c74"
+    },
+    "integrity_operating_point": {
+      "content_sha256": "02c7d6dabb5951409dd34491384fc2a800ef02a7b1ad0006098845925d847f59",
+      "tag": "integrity-operating-point-v1",
+      "tag_commit": "9ac878ea6a40e8c01a60e42e602a1fa9fc688d3b"
+    },
+    "ood_final_test_result": {
+      "tag": "ood-final-test-result-v1",
+      "tag_commit": "7d7db3d1efec177830239597803410384c154f07"
+    },
+    "ood_operating_point": {
+      "content_sha256": "0f23b8e152058d4f160861348e7fb295566af6be55083242db783a9a8e387747",
+      "raw_sha256": "46e343b5d44898f17942f8ba28257cd1389fc8bacf3f09026aeb226099ff3081",
+      "tag": "ood-operating-point-v1",
+      "tag_commit": "fea9316d8510a5841baba48d273973e0267e4b28"
+    },
+    "protected_baseline": {
+      "tag": "baseline-date2025-cnn400-v1",
+      "tag_commit": "d6fe744b292139d18fd4dee37c96066bcf2d38c6"
+    },
+    "runtime_dependency_source_sha256": {
+      "src/imu_reliability/baseline/date2025_cnn400.py": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d",
+      "src/imu_reliability/baseline/historical_decision.py": "4badaf73460402447ac5c4253017db15de07964d7182f098a4d335f1670ed9ab",
+      "src/imu_reliability/integrity/__init__.py": "05ecb0410c041d4a345830d71ebbb131a67b065a5ea3676dd23bc7cee03dff58",
+      "src/imu_reliability/integrity/evidence.py": "170443ff777f20da338415f6d2cbbfc1cece5067d22aa38fb4572243d885e560",
+      "src/imu_reliability/integrity/flatness.py": "fec5874bc61fc5995606b5bd7dabcc64f25bc35d08b335510959ba06740f88fc",
+      "src/imu_reliability/integrity/frame_gap.py": "7ff5e113005e3c3ba31e1500e25d649e10566fd81fc529d7548930587703ddfb",
+      "src/imu_reliability/integrity/monitor.py": "09c4f18ba03981747cfb9ff417501f68570e8108c4f0b390d80b7960a24f6c87",
+      "src/imu_reliability/integrity/timing.py": "6dce01804e4557a4390ecc61fb5b2d04d7a5733aaa65ffafa30d4ce45f4664de"
+    }
+  },
+  "status": "frozen_before_runtime_wrapper_implementation",
+  "task_model_contract": {
+    "full_task_model_invocations_per_window": 1,
+    "model_class": "Date2025CNN400",
+    "model_must_already_be_in_inference_mode": true,
+    "ood_requires_additional_model": false,
+    "ood_requires_penultimate_feature": false,
+    "reference_runtime_model_call": "model(window)",
+    "second_full_task_model_forward_allowed": false,
+    "selected_python_model_api": "Date2025CNN400.forward"
+  }
+}

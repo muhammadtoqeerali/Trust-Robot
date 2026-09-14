@@ -1,0 +1,117 @@
+{
+  "content_sha256": "eacbc717d36ff12dd6b2873c5d1bfae59d73abd9175c142ef824ad14ea34bcec",
+  "contract_id": "EMBEDDED_REFERENCE_PATH_CONTRACT_V1",
+  "evidence_receipt": {
+    "archaeology_id": "EMBEDDED_TARGET_ARCHAEOLOGY_V1",
+    "content_sha256": "e1d151d9837eedf1f4bc6aa71df6a1669e3d865b826fd6c9cf98706619286da7",
+    "path": "data/manifests/embedded_target_archaeology_receipt_v1.json"
+  },
+  "first_embedded_implementation_stage": {
+    "full_cnn_export_included": false,
+    "full_cnn_translation_included": false,
+    "hardware_flash_included": false,
+    "host_compiled_semantic_parity_allowed": true,
+    "protected_dataset_required": false,
+    "scope": "portable C reliability decision core implementing post-logit task decision, frozen OOD gate, qualified integrity hard-cause precedence, and task prediction return",
+    "stm32_hal_integration_included": false,
+    "synthetic_deterministic_test_vectors_only": true,
+    "target_cycle_measurement_included": false
+  },
+  "freeze_boundary": {
+    "arm_toolchain_installed": false,
+    "checkpoint_deserialized": false,
+    "embedded_c_source_created": false,
+    "firmware_built": false,
+    "model_forward_executed": false,
+    "new_model_export_created": false,
+    "protected_dataset_opened": false,
+    "stm32_hardware_measured": false
+  },
+  "frozen_software_lineage": {
+    "baseline_commit": "d6fe744b292139d18fd4dee37c96066bcf2d38c6",
+    "baseline_tag": "baseline-date2025-cnn400-v1",
+    "historical_decision_source_raw_sha256": "4badaf73460402447ac5c4253017db15de07964d7182f098a4d335f1670ed9ab",
+    "host_resource_result_commit": "d97403737804eeaeeecd009b4407949b52fe6d48",
+    "host_resource_result_tag": "runtime-resource-overhead-result-v1",
+    "protected_checkpoint_path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+    "protected_checkpoint_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "protected_model_source_raw_sha256": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d",
+    "reference_runtime_commit": "4755a74fe558021576934674e338865a36df5b55",
+    "reference_runtime_tag": "runtime-reference-implementation-v1",
+    "runtime_integration_contract_commit": "c2b7ae52b163afb33c828218e5c76f0686ad391a",
+    "runtime_integration_contract_content_sha256": "ffacdf7303738208d280f2f21f0d26fc7856a8dcf0946e34d88f133412467ca3",
+    "runtime_integration_contract_raw_sha256": "332beb6b99c73f6c4c153bcc21a05ab38e42516d1505c2c4f5f28f6ee5b3cf11",
+    "runtime_integration_contract_tag": "runtime-integration-contract-v1"
+  },
+  "future_model_embedding_boundary": {
+    "model_conversion_may_not_change_scientific_operating_points": true,
+    "new_model_export_must_be_labeled_prospective": true,
+    "new_model_export_requires_numerical_parity_validation": true,
+    "protected_checkpoint_is_surviving_model_source": true,
+    "surviving_400ms_embedded_export_available": false
+  },
+  "historical_recovery_decision": {
+    "absence_interpretation": "No exact historical embedded target path was recovered from the searched workstation evidence. This does not prove such firmware never existed.",
+    "exact_historical_400ms_model_export_recovered": false,
+    "exact_historical_cube_project_recovered": false,
+    "exact_historical_deployed_firmware_claim_allowed": false,
+    "exact_historical_embedded_model_claim_allowed": false,
+    "exact_historical_stm32_firmware_recovered": false,
+    "historical_deployment_build_artifact_recovered": false,
+    "historical_mcu_generated_model_code_recovered": false
+  },
+  "prospective_reference_path": {
+    "intended_target_family": "STM32F722",
+    "lineage_label": "prospective_embedded_reference_implementation",
+    "may_be_described_as_exact_deployed_firmware": false,
+    "may_be_described_as_exact_historical_deployment": false,
+    "may_be_described_as_reference_implementation": true,
+    "model_export_or_translation_requires_separate_frozen_protocol": true,
+    "must_be_validated_against_frozen_reference_runtime": true,
+    "must_preserve_frozen_runtime_semantics": true,
+    "required": true,
+    "target_resource_measurement_requires_separate_frozen_protocol": true
+  },
+  "resource_claim_boundary": {
+    "host_resource_result_may_be_relabelled_as_stm32_result": false,
+    "real_target_evidence_required_before_stm32_claim": true,
+    "stm32_cycles_currently_claimable": false,
+    "stm32_energy_currently_claimable": false,
+    "stm32_flash_currently_claimable": false,
+    "stm32_latency_currently_claimable": false,
+    "stm32_ram_currently_claimable": false
+  },
+  "runtime_semantics_to_preserve": {
+    "decision_precedence": [
+      "INTEGRITY_ALERT",
+      "OOD_UNKNOWN",
+      "VALID"
+    ],
+    "full_task_model_invocations_per_window": 1,
+    "historical_prediction_bias": 0.9,
+    "historical_task_decision_function": "decision_from_logits",
+    "ood_feature_vector_used": false,
+    "ood_method": "top_two_logit_margin",
+    "ood_threshold": 0.00914505124092102,
+    "second_full_task_model_forward_allowed": false,
+    "supported_v1_hard_cause_mask": [
+      "FRAME_GAP"
+    ],
+    "task_prediction_always_returned": true,
+    "window_shape": [
+      1,
+      40,
+      9
+    ]
+  },
+  "scientific_boundary": {
+    "classifier_bypass_allowed": false,
+    "host_resource_benchmark_may_be_rerun_for_tuning": false,
+    "integrity_operating_point_may_change": false,
+    "ood_method_may_change": false,
+    "ood_threshold_may_change": false,
+    "protected_final_test_may_be_reopened": false,
+    "second_full_task_model_forward_allowed": false
+  },
+  "status": "frozen_before_prospective_embedded_reference_implementation"
+}

@@ -1,0 +1,5 @@
+# Copy this file to local_paths.yaml and edit for each workstation.
+# local_paths.yaml is intentionally not committed.
+
+sources:
+  protechto_root: /path/to/Protechto-master

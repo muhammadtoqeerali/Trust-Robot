@@ -1,0 +1,13 @@
+experiment:
+  name: cnn1d_PAMAP2
+dataset:
+  name: PAMAP2
+model:
+  name: cnn1d
+training:
+  epochs: 100
+  batch_size: 64
+  learning_rate: 0.001
+  seed: 42
+augmentation:
+  reliability_training: false

@@ -1,0 +1,112 @@
+{
+  "blocker_release_rule": {
+    "candidate_must_be_qualified_and_frozen_before_use": true,
+    "future_installation_requires_separate_explicit_control_step": true,
+    "package_archive_discovery_alone_allows_installation": false,
+    "release_requires_toolchain_candidate": true,
+    "toolchain_discovery_alone_allows_cross_compile": false,
+    "toolchain_installation_is_part_of_this_contract": false
+  },
+  "content_sha256": "18786157fb29cf00859310e7d89b7289f1c8a2308984e60fb209b0f8b89f3c34",
+  "contract_id": "PROSPECTIVE_EMBEDDED_BUILD_TOOLCHAIN_BLOCKER_V1",
+  "current_target_build_state": {
+    "arm_none_eabi_binutils_available": false,
+    "arm_none_eabi_gcc_available": false,
+    "cmake_available": false,
+    "connected_stm32_or_stlink_device_available": false,
+    "firmware_build_allowed": false,
+    "make_available": true,
+    "ninja_available": false,
+    "openocd_or_stlink_tool_available": false,
+    "stm32_cube_sdk_available": false,
+    "stm32_programming_tool_available": false,
+    "target_cross_compile_allowed": false,
+    "target_resource_measurement_allowed": false
+  },
+  "freeze_boundary": {
+    "checkpoint_deserialized": false,
+    "cross_compiler_executed": false,
+    "firmware_built": false,
+    "model_forward_executed": false,
+    "onnx_export_executed": false,
+    "package_install_performed": false,
+    "stm32_device_measured": false,
+    "stm32_device_programmed": false,
+    "toolchain_archive_extracted": false,
+    "toolchain_installed": false
+  },
+  "frozen_lineage": {
+    "embedded_reference_path_commit": "c36a60aed60766162fb7cd3755c1f5040d9a072c",
+    "embedded_reference_path_tag": "embedded-reference-path-contract-v1",
+    "portable_c_header_raw_sha256": "0162556076334f8ff1323788fd133a33a7e110daba41c7aaba12967fbe3d858e",
+    "portable_c_runtime_commit": "3f0db77158cc59e4273f75b076fef53aa6b1f413",
+    "portable_c_runtime_tag": "portable-c-runtime-implementation-v1",
+    "portable_c_source_raw_sha256": "1b7e7fd97f993bb63396a72912f5d5b8bc2b5bb68864e9c556db8dddf6617fa6"
+  },
+  "full_stm32_firmware_requirements": {
+    "additional_target_integration_inputs_required": [
+      "STM32F722 target definition",
+      "startup/runtime support",
+      "linker memory map",
+      "CMSIS or equivalent target headers",
+      "HAL/board integration only if required by prospective firmware"
+    ],
+    "historical_firmware_recovered": false,
+    "portable_c_cross_compile_alone_is_full_firmware": false,
+    "prospective_firmware_must_be_labeled_prospective": true
+  },
+  "parallel_infrastructure_state": {
+    "checkpoint_deserialization_allowed_for_onnx_branch": false,
+    "onnx_export_blocker_active": true,
+    "onnx_exporter_execution_allowed": false
+  },
+  "portable_c_cross_compile_requirements": {
+    "cross_compile_may_start_before_toolchain_qualification": false,
+    "minimum_required_commands": [
+      "arm-none-eabi-gcc",
+      "arm-none-eabi-ar",
+      "arm-none-eabi-nm",
+      "arm-none-eabi-size",
+      "arm-none-eabi-objdump",
+      "arm-none-eabi-readelf"
+    ],
+    "required_before_cross_compile": [
+      "qualified ARM GNU bare-metal compiler",
+      "qualified ARM GNU assembler/linker/binutils",
+      "exact compiler version and executable hashes recorded",
+      "compiler target verified as ARM Cortex-M compatible"
+    ]
+  },
+  "resource_claim_boundary": {
+    "host_native_c_semantic_parity_already_supported": true,
+    "stm32_compilation_completed": false,
+    "stm32_cycles_claim_allowed": false,
+    "stm32_cycles_measured": false,
+    "stm32_data_bss_footprint_measured": false,
+    "stm32_energy_claim_allowed": false,
+    "stm32_energy_measured": false,
+    "stm32_flash_claim_allowed": false,
+    "stm32_latency_claim_allowed": false,
+    "stm32_latency_measured": false,
+    "stm32_link_completed": false,
+    "stm32_ram_claim_allowed": false,
+    "stm32_text_rodata_footprint_measured": false
+  },
+  "scientific_boundary": {
+    "classifier_bypass_allowed": false,
+    "historical_task_rule_may_change": false,
+    "host_resource_benchmark_may_be_rerun": false,
+    "integrity_operating_point_may_change": false,
+    "ood_method_may_change": false,
+    "ood_threshold_may_change": false,
+    "protected_final_test_may_be_reopened": false,
+    "second_task_model_forward_allowed": false
+  },
+  "source_receipt": {
+    "content_sha256": "06bfb916d67d8e6ac69b9b30c659a417c748d0f9970144a5f7855e880e245c8c",
+    "path": "data/manifests/embedded_build_toolchain_archaeology_receipt_v1.json",
+    "receipt_id": "EMBEDDED_BUILD_TOOLCHAIN_ARCHAEOLOGY_RECEIPT_V1"
+  },
+  "status": "active",
+  "target_family": "STM32F722"
+}

@@ -1,0 +1,22 @@
+
+datasets:
+
+  UCI_HAR:
+    classes: 6
+    active: true
+
+  PAMAP2:
+    classes: 12
+    active: true
+
+  WISDM:
+    classes: 6
+    active: false
+
+  KFall:
+    classes: 15
+    active: false
+
+  UniMiB_SHAR:
+    classes: 17
+    active: false

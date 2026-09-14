@@ -1,0 +1,89 @@
+{
+  "CHANNEL_FREEZE_SUSPECT": {
+    "enabled": false,
+    "enters_hard_cause_set": false,
+    "main_v1_disable_reason": "NO_FROZEN_CALIBRATION_CANDIDATE_MET_ALL_CLEAN_CONSTRAINTS_ON_BOTH_DATASETS",
+    "runtime_role": "SUSPECT_ONLY_IF_FUTURE_SEPARATE_CONFIGURATION_IS_STUDIED",
+    "selected_absolute_tolerance": null,
+    "selected_consecutive_deltas": null
+  },
+  "FRAME_GAP": {
+    "KFALL": {
+      "counter_provenance_required": "qualified_direct_raw_acquisition_counter",
+      "enabled": true,
+      "enters_hard_cause_set": true,
+      "evidence_status": "HARD_QUALIFIED",
+      "external_cause": "FRAME_GAP",
+      "rule": "current_counter > previous_counter + 1"
+    },
+    "UNIVRFALL": {
+      "hard_detection_enabled": false,
+      "reason": "oriented_or_derived_FrameCounter_is_not_qualified_direct_acquisition_evidence"
+    }
+  },
+  "TIMING_OBSERVATION_ENVELOPE": {
+    "KFALL": {
+      "enabled": true,
+      "enters_hard_cause_set": false,
+      "hard_cause_promotion": false,
+      "maximum_delta_ms": 15.0,
+      "minimum_delta_ms": 5.0,
+      "runtime_role": "OBSERVATION_ONLY",
+      "timestamp_scale_to_ms": 1000.0
+    },
+    "UNIVRFALL": {
+      "enabled": true,
+      "enters_hard_cause_set": false,
+      "hard_cause_promotion": false,
+      "maximum_delta_ms": 20.5,
+      "minimum_delta_ms": -0.5,
+      "runtime_role": "OBSERVATION_ONLY",
+      "timestamp_scale_to_ms": 1.0
+    }
+  },
+  "content_sha256": "02c7d6dabb5951409dd34491384fc2a800ef02a7b1ad0006098845925d847f59",
+  "disabled_or_nonhard_causes": {
+    "ACQ_TIMING_VIOLATION": "NOT_HARD_PROMOTED_HISTORICAL_TIMING_REMAINS_OBSERVATION_ONLY",
+    "BUFFER_STALL": "DISABLED_NO_INDEPENDENT_STALL_EVIDENCE",
+    "FIFO_OVERRUN": "DISABLED_NO_FIFO_STATUS_EVIDENCE",
+    "FRAME_REPEAT": "NO_HARD_CAUSE_IN_V1_HISTORICAL_P0",
+    "RANGE_CLIP": "NO_HARD_CAUSE_CONFIGURED_PHYSICAL_RAIL_NOT_VERIFIED"
+  },
+  "freeze_contract": {
+    "clean_constraints_modified_after_outcome_review": false,
+    "clean_feasibility_frozen_before_corruption_recall": true,
+    "final_test_corruptions_generated": false,
+    "final_test_data_used_for_selection": false,
+    "final_test_raw_files_opened": 0,
+    "ood_outputs_used": false,
+    "p0_policy_modified_after_outcome_review": false,
+    "search_spaces_modified_after_outcome_review": false,
+    "selected_from_calibration_only": true,
+    "task_model_outputs_used": false,
+    "unsupported_hard_cause_enabled": false
+  },
+  "hard_cause_set_contract": {
+    "FRAME_GAP_requires_dataset_specific_direct_counter_provenance": true,
+    "historical_p0_v1_supported_external_causes": [
+      "FRAME_GAP"
+    ],
+    "multiple_qualified_causes_retained_as_bitmask_set": true
+  },
+  "operating_point_id": "INTEGRITY_OPERATING_POINT_V1",
+  "scope": "historical_p0_v1",
+  "source_calibration_result_receipt": {
+    "content_sha256": "69335d537081d7d501b26ad28764e4fed573efc8fbff385429a9ac13b7f4d3fa",
+    "path": "data/manifests/integrity_calibration_result_receipt_v1.json"
+  },
+  "source_clean_feasibility_receipt": {
+    "content_sha256": "9db805a0d57c169925baf9761a36282e1c0a34ffd3d57f2f723c1e52b5cde4d1",
+    "tag": "integrity-calibration-clean-feasibility-v1",
+    "tag_commit": "4ef2e614ffdd8285c4fd28623c38fe09ad427372"
+  },
+  "source_protocol": {
+    "content_sha256": "ef912fe988d58e3ec86a9413298eec2491ff3186199462a285a558aefcebe806",
+    "tag": "integrity-calibration-protocol-v1",
+    "tag_commit": "305a7b0b68898df7b6dcca9db54d454ef8d7ba57"
+  },
+  "status": "frozen_before_final_test_corruption_generation"
+}

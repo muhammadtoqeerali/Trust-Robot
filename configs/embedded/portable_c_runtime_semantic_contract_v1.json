@@ -1,0 +1,283 @@
+{
+  "claim_boundary": {
+    "historical_embedded_model_claim_allowed": false,
+    "historical_firmware_claim_allowed": false,
+    "host_native_c_timing_may_be_relabelled_stm32_timing": false,
+    "portable_c_semantic_parity_claim_allowed_after_tests": true,
+    "stm32_cycles_claim_allowed": false,
+    "stm32_energy_claim_allowed": false,
+    "stm32_flash_claim_allowed": false,
+    "stm32_latency_claim_allowed": false,
+    "stm32_ram_claim_allowed": false
+  },
+  "content_sha256": "965765b678220d8297b4c930533570b30fa43d2cc681e5fe91ca2431b009efda",
+  "contract_id": "PORTABLE_C_RUNTIME_SEMANTIC_CONTRACT_V1",
+  "decision_precedence": [
+    {
+      "condition": "hard_cause_mask contains one or more supported qualified hard-cause bits",
+      "priority": 1,
+      "trust_state": "IR_TRUST_INTEGRITY_ALERT"
+    },
+    {
+      "condition": "ood_margin < frozen threshold",
+      "priority": 2,
+      "trust_state": "IR_TRUST_OOD_UNKNOWN"
+    },
+    {
+      "condition": "otherwise",
+      "priority": 3,
+      "trust_state": "IR_TRUST_VALID"
+    }
+  ],
+  "enum_contract": {
+    "statuses": {
+      "IR_STATUS_NONFINITE_LOGIT": 2,
+      "IR_STATUS_NULL_OUTPUT": 1,
+      "IR_STATUS_OK": 0,
+      "IR_STATUS_UNSUPPORTED_HARD_CAUSE": 3
+    },
+    "task_classes": {
+      "IR_CLASS_ACTIVITY": 0,
+      "IR_CLASS_FALLING": 1
+    },
+    "trust_states": {
+      "IR_TRUST_INTEGRITY_ALERT": 2,
+      "IR_TRUST_OOD_UNKNOWN": 1,
+      "IR_TRUST_VALID": 0
+    }
+  },
+  "error_contract": {
+    "errors_are_trust_states": false,
+    "nonfinite_logit": "IR_STATUS_NONFINITE_LOGIT",
+    "null_output": "IR_STATUS_NULL_OUTPUT",
+    "output_on_non_ok_status": "must_remain_unmodified",
+    "unsupported_hard_cause_bit": "IR_STATUS_UNSUPPORTED_HARD_CAUSE"
+  },
+  "freeze_boundary": {
+    "arm_toolchain_installed": false,
+    "c_compiler_invoked": false,
+    "c_header_created": false,
+    "c_source_created": false,
+    "checkpoint_deserialized": false,
+    "model_forward_executed": false,
+    "native_c_tests_created": false,
+    "protected_dataset_opened": false,
+    "python_c_parity_tests_created": false,
+    "stm32_hardware_measured": false
+  },
+  "future_parity_validation_contract": {
+    "checkpoint_required_for_parity": false,
+    "dataset_required_for_parity": false,
+    "frozen_python_reference_function": "imu_reliability.runtime.decide_from_logits",
+    "must_test_float32_value_immediately_above_ood_threshold": true,
+    "must_test_float32_value_immediately_below_ood_threshold": true,
+    "must_test_historical_non_argmax_case": true,
+    "must_test_integrity_precedence": true,
+    "must_test_nonfinite_error": true,
+    "must_test_output_unmodified_on_error": true,
+    "must_test_suspect_passthrough": true,
+    "must_test_threshold_equality": true,
+    "must_test_unsupported_hard_bit_error": true,
+    "native_c_unit_tests_required": true,
+    "python_reference_parity_required": true,
+    "synthetic_float32_logits_only": true
+  },
+  "historical_task_decision_contract": {
+    "activity_class": 0,
+    "binary_equivalent_rule": "Falling iff P(Falling) > 0.9; Activity otherwise",
+    "comparison_operator": "strict_greater_than",
+    "falling_class": 1,
+    "plain_argmax_may_replace_historical_rule": false,
+    "probability_computation": "stable float32 binary softmax using expf after subtracting max(logit_activity, logit_falling)",
+    "semantic_source": "frozen historical binary decision rule",
+    "threshold": 0.9,
+    "threshold_float32_bits": "0x3f666666",
+    "tie_returns_activity": true,
+    "uncertain_argmax_falling_may_still_return_activity": true
+  },
+  "integrity_mask_contract": {
+    "IR_CAUSE_FRAME_GAP": 1,
+    "IR_CAUSE_NONE": 0,
+    "IR_SUPPORTED_HARD_CAUSE_MASK": 1,
+    "any_hard_cause_bit_outside_supported_mask": "IR_STATUS_UNSUPPORTED_HARD_CAUSE",
+    "channel_freeze_enters_hard_mask": false,
+    "frame_gap_bit": 0,
+    "frame_gap_input_is_already_hard_qualified": true,
+    "portable_c_core_may_qualify_raw_counter_evidence": false,
+    "timing_observation_enters_hard_mask": false,
+    "unsupported_bits_may_be_promoted": false,
+    "unsupported_bits_may_be_silently_dropped": false
+  },
+  "language_contract": {
+    "dynamic_allocation": false,
+    "exceptions": false,
+    "language": "ISO C",
+    "minimum_standard": "C11",
+    "required_standard_headers": [
+      "math.h",
+      "stdint.h"
+    ],
+    "threads": false
+  },
+  "lineage": {
+    "exact_historical_400ms_export_recovered": false,
+    "exact_historical_deployment": false,
+    "exact_historical_firmware_recovered": false,
+    "implementation_label": "prospective_embedded_reference_implementation",
+    "intended_target_family": "STM32F722",
+    "source_archaeology_receipt_content_sha256": "e1d151d9837eedf1f4bc6aa71df6a1669e3d865b826fd6c9cf98706619286da7",
+    "source_archaeology_receipt_raw_sha256": "14b10131c11f88d94f93dc09597d07ff94b6c94668168f822e6d39a8fe27c2df",
+    "source_embedded_path_contract_commit": "c36a60aed60766162fb7cd3755c1f5040d9a072c",
+    "source_embedded_path_contract_content_sha256": "eacbc717d36ff12dd6b2873c5d1bfae59d73abd9175c142ef824ad14ea34bcec",
+    "source_embedded_path_contract_raw_sha256": "175059822fa16314e5117fa56557280aec831ed8b1c551cee1163e627d1d9d4f",
+    "source_embedded_path_contract_tag": "embedded-reference-path-contract-v1"
+  },
+  "numeric_contract": {
+    "finite_logit_precondition": true,
+    "historical_prediction_bias_decimal": 0.9,
+    "historical_prediction_bias_float32_bits": "0x3f666666",
+    "input_logit_type": "IEEE-754 binary32",
+    "ood_margin_operation": "fabsf(logit_activity - logit_falling)",
+    "ood_margin_type": "IEEE-754 binary32",
+    "ood_threshold_decimal": 0.00914505124092102,
+    "ood_threshold_exactly_representable_in_binary32": true,
+    "ood_threshold_float32_bits": "0x3c15d520"
+  },
+  "ood_contract": {
+    "accepted_condition": "ood_margin >= threshold",
+    "additional_model_forward_required": false,
+    "binary_score": "fabsf(logit_activity - logit_falling)",
+    "equality_at_threshold_accepted": true,
+    "feature_vector_used": false,
+    "method": "top_two_logit_margin",
+    "threshold": 0.00914505124092102,
+    "threshold_float32_bits": "0x3c15d520",
+    "unknown_condition": "ood_margin < threshold"
+  },
+  "planned_source_files": {
+    "header": "embedded/reference_runtime/include/imu_reliability_runtime.h",
+    "implementation": "embedded/reference_runtime/src/imu_reliability_runtime.c",
+    "native_c_tests": "embedded/reference_runtime/tests/test_imu_reliability_runtime.c",
+    "python_parity_tests": "tests/test_portable_c_runtime_parity_v1.py"
+  },
+  "predeclared_semantic_cases": [
+    {
+      "expected_task_prediction": 0,
+      "expected_trust_state": "IR_TRUST_VALID",
+      "hard_cause_mask": 0,
+      "id": "VALID_ACTIVITY_CONFIDENT",
+      "logits": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "expected_task_prediction": 0,
+      "expected_trust_state": "IR_TRUST_OOD_UNKNOWN",
+      "hard_cause_mask": 0,
+      "id": "OOD_EQUAL_LOGITS",
+      "logits": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "expected_task_prediction": 0,
+      "expected_trust_state": "IR_TRUST_VALID",
+      "hard_cause_mask": 0,
+      "id": "HISTORICAL_RULE_NOT_ARGMAX",
+      "logits": [
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "expected_task_prediction": 1,
+      "expected_trust_state": "IR_TRUST_VALID",
+      "hard_cause_mask": 0,
+      "id": "CONFIDENT_FALLING",
+      "logits": [
+        0.0,
+        3.0
+      ]
+    },
+    {
+      "expected_ood_margin": 0.00914505124092102,
+      "expected_task_prediction": 0,
+      "expected_trust_state": "IR_TRUST_VALID",
+      "hard_cause_mask": 0,
+      "id": "OOD_THRESHOLD_EQUALITY",
+      "logits": [
+        0.0,
+        0.00914505124092102
+      ]
+    },
+    {
+      "expected_task_prediction": 0,
+      "expected_trust_state": "IR_TRUST_INTEGRITY_ALERT",
+      "hard_cause_mask": 1,
+      "id": "INTEGRITY_PRECEDES_OOD",
+      "logits": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "public_api": {
+    "function_invokes_task_model": false,
+    "function_name": "ir_decide_from_logits",
+    "function_signature": "ir_status_t ir_decide_from_logits(float logit_activity, float logit_falling, uint32_t hard_cause_mask, uint32_t suspect_mask, ir_decision_t *out)",
+    "function_uses_feature_vector": false,
+    "inputs": {
+      "hard_cause_mask": "already-qualified hard-cause mask supplied by upstream integrity qualification",
+      "logit_activity": "IEEE-754 binary32 task logit for Activity/class 0",
+      "logit_falling": "IEEE-754 binary32 task logit for Falling/class 1",
+      "suspect_mask": "opaque diagnostic suspect bitmask; must not change primary trust state"
+    },
+    "output_struct": {
+      "integrity_cause_mask": "uint32_t",
+      "ood_margin": "float",
+      "ood_threshold": "float",
+      "suspect_mask": "uint32_t",
+      "task_prediction": "uint8_t",
+      "trust_state": "ir_trust_state_t"
+    },
+    "successful_decision_always_returns_task_prediction": true
+  },
+  "scientific_boundary": {
+    "classifier_bypass_allowed": false,
+    "historical_prediction_bias_may_change": false,
+    "host_resource_benchmark_may_be_rerun_for_tuning": false,
+    "integrity_operating_point_may_change": false,
+    "ood_method_may_change": false,
+    "ood_threshold_may_change": false,
+    "protected_final_test_may_be_reopened": false,
+    "second_task_model_forward_allowed": false
+  },
+  "scope": {
+    "component": "portable_post_logit_reliability_decision_core",
+    "feature_vector_input_included": false,
+    "filesystem_io_allowed": false,
+    "global_mutable_state_allowed": false,
+    "heap_allocation_allowed": false,
+    "host_compiled_semantic_validation_allowed": true,
+    "model_export_included": false,
+    "model_inference_included": false,
+    "network_io_allowed": false,
+    "raw_sensor_integrity_qualification_included": false,
+    "stm32_hal_integration_included": false
+  },
+  "status": "frozen_before_portable_c_source_implementation",
+  "suspect_contract": {
+    "changes_primary_trust_state": false,
+    "representation": "opaque_uint32_passthrough",
+    "returned_unchanged_on_success": true
+  },
+  "upstream_model_contract": {
+    "feature_vector_needed": false,
+    "logits_must_come_from_exactly_one_task_model_forward": true,
+    "model_export_or_translation_deferred": true,
+    "portable_c_core_calls_model": false,
+    "second_task_model_forward_allowed": false
+  }
+}

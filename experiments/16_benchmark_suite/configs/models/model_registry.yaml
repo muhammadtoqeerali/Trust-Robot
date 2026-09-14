@@ -1,0 +1,51 @@
+models:
+  ReliabilityCNN_v22:
+    UCI_HAR:
+      config: reliability_cnn_v22.yaml
+    PAMAP2:
+      config: reliability_cnn_v22.yaml
+  CNN1D:
+    UCI_HAR:
+      config: cnn1d.yaml
+    PAMAP2:
+      config: cnn1d.yaml
+  LSTM:
+    UCI_HAR:
+      config: lstm.yaml
+    PAMAP2:
+      config: lstm.yaml
+  DeepConvLSTM:
+    UCI_HAR:
+      config: deepconv_lstm.yaml
+    PAMAP2:
+      config: deepconv_lstm.yaml
+  Transformer:
+    UCI_HAR:
+      config: transformer.yaml
+    PAMAP2:
+      config: transformer.yaml
+  ReliabilityCNN_v23:
+    UCI_HAR:
+      config: reliability_cnn_v23.yaml
+    PAMAP2:
+      config: reliability_cnn_v23.yaml
+  ReliabilityCNN_v24:
+    UCI_HAR:
+      config: reliability_cnn_v24.yaml
+    PAMAP2:
+      config: reliability_cnn_v24.yaml
+  DS_CNN:
+    UCI_HAR:
+      config: ds_cnn.yaml
+    PAMAP2:
+      config: ds_cnn.yaml
+  TCN:
+    UCI_HAR:
+      config: tcn.yaml
+    PAMAP2:
+      config: tcn.yaml
+  TinyTransformer:
+    UCI_HAR:
+      config: tiny_transformer.yaml
+    PAMAP2:
+      config: tiny_transformer.yaml

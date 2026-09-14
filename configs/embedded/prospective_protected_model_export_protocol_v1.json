@@ -1,0 +1,193 @@
+{
+  "checkpoint_loading_contract": {
+    "checkpoint_sha256_must_be_verified_before_deserialization": true,
+    "direct_unpinned_torch_load_allowed": false,
+    "legacy_compatibility_source_may_only_be_used_via_pinned_loader": true,
+    "loader_raw_sha256": "6462829b7ffee3ca19dc25b7a605a3b7dd38ddf6bfb10a34ca8d098c0ae415df",
+    "loader_source": "experiments/03_ood/evaluate_ood_calibration_v1b.py",
+    "model_must_be_eval_mode": true
+  },
+  "claim_boundary": {
+    "downstream_embedded_toolchain_validation_required": true,
+    "onnx_validation_alone_proves_stm32_energy": false,
+    "onnx_validation_alone_proves_stm32_flash": false,
+    "onnx_validation_alone_proves_stm32_importability": false,
+    "onnx_validation_alone_proves_stm32_latency": false,
+    "onnx_validation_alone_proves_stm32_numerical_parity": false,
+    "onnx_validation_alone_proves_stm32_ram": false,
+    "validated_onnx_may_be_called_exact_historical_deployed_model": false,
+    "validated_onnx_may_be_called_exact_historical_firmware": false,
+    "validated_onnx_may_be_called_prospective_model_export": true
+  },
+  "content_sha256": "714eda4d82caf56de2b023cfc04bac0de0f400323a3cefc9077db3ecfdc122ee",
+  "decision_parity_contract": {
+    "decision_mismatch_tolerance": 0,
+    "decision_parity_may_not_be_repaired_by_threshold_change": true,
+    "historical_prediction_bias": 0.9,
+    "historical_task_prediction_exact_match_required": true,
+    "integrity_state_not_part_of_model_export_validation": true,
+    "ood_method": "top_two_logit_margin",
+    "ood_threshold": 0.00914505124092102,
+    "ood_threshold_equality_accepted": true,
+    "ood_trust_state_exact_match_required": true,
+    "ood_unknown_condition": "margin < threshold",
+    "reason_integrity_state_not_part_of_export_validation": "integrity evidence is external to model graph and already validated by frozen portable C runtime"
+  },
+  "deterministic_parity_input_contract": {
+    "batching_for_validation": "one_window_at_a_time",
+    "calibration_dataset_used": false,
+    "external_recording_dataset_used": false,
+    "final_test_dataset_used": false,
+    "modular_formula": "x[i,t,c] = (((i*37 + t*17 + c*13) % 257) - 128) / 64",
+    "modular_values_are_exact_binary_fractions": true,
+    "modular_vector_count": 64,
+    "no_random_generator_required": true,
+    "protected_dataset_used": false,
+    "structured_vector_count": 4,
+    "structured_vectors": [
+      "all_zero",
+      "all_one",
+      "all_minus_one",
+      "linear_minus_one_to_plus_one"
+    ],
+    "total_vector_count": 68,
+    "window_shape": [
+      1,
+      40,
+      9
+    ]
+  },
+  "export_scope": {
+    "constant_folding_allowed": true,
+    "dynamic_axes_allowed": false,
+    "export_full_frozen_forward": true,
+    "exporter_family": "torch.onnx.export",
+    "external_dataset_required": false,
+    "feature_output_included": false,
+    "fixed_batch_size": 1,
+    "format": "ONNX",
+    "logits_only_output": true,
+    "manual_layer_reimplementation_allowed": false,
+    "model_mode": "eval",
+    "model_parameters_embedded_in_artifact": true,
+    "opset_version": 13,
+    "parameter_finetuning_allowed": false,
+    "parameter_retraining_allowed": false,
+    "precision": "float32",
+    "quantization_deferred_to_separate_protocol": true,
+    "quantization_included": false
+  },
+  "failure_policy": {
+    "failed_export_artifact_may_be_called_validated": false,
+    "failed_export_may_change_historical_task_rule": false,
+    "failed_export_may_change_integrity_operating_point": false,
+    "failed_export_may_change_ood_threshold": false,
+    "failed_export_may_reopen_protected_final_test": false,
+    "failed_parity_may_loosen_tolerance_after_outputs_seen": false,
+    "failed_parity_requires_new_prospective_export_method_or_revision": true
+  },
+  "freeze_boundary": {
+    "arm_toolchain_used": false,
+    "calibration_dataset_opened": false,
+    "checkpoint_deserialized": false,
+    "final_test_dataset_opened": false,
+    "model_forward_executed": false,
+    "model_instantiated": false,
+    "onnx_artifact_created": false,
+    "onnx_export_executed": false,
+    "onnxruntime_inference_executed": false,
+    "protected_dataset_opened": false,
+    "quantization_executed": false,
+    "stm32_hardware_measured": false
+  },
+  "future_export_artifacts": {
+    "candidate_result": "results/raw/prospective_model_export_v1_candidate.json",
+    "export_test": "tests/test_protected_model_onnx_export_v1.py",
+    "exporter_script": "experiments/05_embedded/export_protected_model_onnx_v1.py",
+    "onnx_artifact": "artifacts/embedded/prospective/date2025_cnn400_fp32_v1.onnx",
+    "result_receipt": "data/manifests/prospective_model_export_result_receipt_v1.json"
+  },
+  "graph_validation_contract": {
+    "dynamic_dimension_forbidden": true,
+    "external_data_file_forbidden": true,
+    "feature_output_forbidden": true,
+    "fixed_input_shape_required": [
+      1,
+      40,
+      9
+    ],
+    "fixed_output_shape_required": [
+      1,
+      2
+    ],
+    "graph_output_must_be_logits": true,
+    "onnx_checker_required": true,
+    "onnx_runtime_cpu_execution_required": true,
+    "single_graph_output_required": true,
+    "training_mode_operation_forbidden": true
+  },
+  "lineage": {
+    "artifact_label": "prospective_protected_model_export",
+    "embedded_path_commit": "c36a60aed60766162fb7cd3755c1f5040d9a072c",
+    "embedded_path_tag": "embedded-reference-path-contract-v1",
+    "exact_historical_400ms_export_recovered": false,
+    "exact_historical_deployment_artifact": false,
+    "intended_target_family": "STM32F722",
+    "pinned_loader_raw_sha256": "6462829b7ffee3ca19dc25b7a605a3b7dd38ddf6bfb10a34ca8d098c0ae415df",
+    "portable_c_runtime_commit": "3f0db77158cc59e4273f75b076fef53aa6b1f413",
+    "portable_c_runtime_tag": "portable-c-runtime-implementation-v1",
+    "source_checkpoint_is_surviving_historical_checkpoint": true,
+    "source_checkpoint_path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+    "source_checkpoint_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "source_model_raw_sha256": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d"
+  },
+  "numerical_parity_contract": {
+    "absolute_tolerance": 1e-05,
+    "all_logit_elements_must_pass": true,
+    "candidate": "prospective float32 ONNX export",
+    "comparison_dtype": "float32",
+    "elementwise_acceptance": "abs(candidate-reference) <= atol + rtol*abs(reference)",
+    "record_max_absolute_error": true,
+    "record_max_relative_error": true,
+    "record_worst_vector_index": true,
+    "reference": "protected reconstructed PyTorch model from same checkpoint",
+    "relative_tolerance": 1e-05,
+    "tolerance_may_change_after_export_outputs_are_seen": false
+  },
+  "protocol_id": "PROSPECTIVE_PROTECTED_MODEL_EXPORT_PROTOCOL_V1",
+  "scientific_boundary": {
+    "classifier_bypass_allowed": false,
+    "export_result_may_be_used_for_scientific_selection": false,
+    "historical_prediction_bias_may_change": false,
+    "host_resource_benchmark_may_be_rerun": false,
+    "integrity_operating_point_may_change": false,
+    "ood_method_may_change": false,
+    "ood_threshold_may_change": false,
+    "protected_final_test_may_be_reopened": false,
+    "second_task_forward_allowed": false
+  },
+  "single_forward_runtime_boundary": {
+    "exported_model_represents_one_task_forward": true,
+    "feature_vector_for_ood_forbidden": true,
+    "runtime_reliability_core_consumes_exported_logits": true,
+    "second_model_forward_for_ood_forbidden": true
+  },
+  "status": "frozen_before_checkpoint_deserialization_or_model_export",
+  "tensor_contract": {
+    "activity_logit_index": 0,
+    "falling_logit_index": 1,
+    "input_dtype": "float32",
+    "input_name": "imu_window",
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "output_dtype": "float32",
+    "output_name": "logits",
+    "output_shape": [
+      1,
+      2
+    ]
+  }
+}
