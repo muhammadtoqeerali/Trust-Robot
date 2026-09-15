@@ -33,8 +33,25 @@ physical_platform_plan:
 datasets:
   M2DGR:
     proposal_status: core_publicly_available
-    local_readiness: unverified
+    local_readiness: manifest_verified
     platform: ground_robot_indoor_outdoor
+
+    manifest:
+      path: manifests/m2dgr_trajectory_manifest_v1.json
+      generated: true
+      trajectory_count: 36
+      hash_verified: true
+
+    verified_assets:
+      raw_rosbags: true
+      ground_truth_files: true
+      trajectory_manifest: true
+      calibration_artifact_provenance: true
+
+    unresolved:
+      synchronization_verified: false
+      numerical_association_tolerance_frozen: false
+      full_reference_coverage_verified: false
     intended_roles:
       - development
       - validation_calibration

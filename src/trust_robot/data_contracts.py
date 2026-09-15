@@ -2,6 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import Enum
+
+from .reference_coverage import (
+    ReferenceCoverageArtifact,
+)
 from typing import Iterable
 
 
@@ -387,6 +391,7 @@ class TrajectoryRecord:
     streams: tuple[StreamSpec, ...]
     references: tuple[ReferenceSpec, ...]
     calibration_artifacts: tuple[CalibrationArtifactSpec, ...] = ()
+    reference_coverage_artifacts: tuple[ReferenceCoverageArtifact, ...] = ()
     derivative_kind: DerivativeKind = DerivativeKind.CLEAN
     corruption_seed: int | None = None
 
@@ -402,6 +407,11 @@ class TrajectoryRecord:
         )
         object.__setattr__(self, "streams", tuple(self.streams))
         object.__setattr__(self, "references", tuple(self.references))
+        object.__setattr__(
+            self,
+            "reference_coverage_artifacts",
+            tuple(self.reference_coverage_artifacts),
+        )
 
         stream_ids = [stream.stream_id for stream in self.streams]
         if len(stream_ids) != len(set(stream_ids)):

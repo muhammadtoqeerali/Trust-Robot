@@ -192,3 +192,105 @@ Current status:
 PHASE_1_PROTOCOL_FROZEN = FALSE
 
 PROJECT_STATE_DOCUMENT = ACTIVE
+
+
+---
+
+# Phase 1D — M2DGR Reference Coverage Integration
+
+Status: COMPLETED
+
+## Implemented
+
+The TRUST-ROBOT pipeline now contains explicit reference validity modelling.
+
+Completed components:
+
+- Reference coverage artifact schema
+- Translation and rotation validity separation
+- Valid interval representation
+- Reference dimension validation
+- Leica position-only reference restriction
+- Manifest-level reference coverage serialization
+- Manifest-level reference coverage decoding
+- M2DGR builder generation of reference coverage artifacts
+- Synthetic manifest fixture migration
+
+## Verified
+
+Current validation state:
+
+- TRUST-ROBOT unit tests: PASS
+- Test count: 56
+- M2DGR trajectory manifest generation: PASS
+- Manifest canonical hashing: PASS
+- Calibration artifact provenance: PASS
+- Reference coverage integration: PASS
+
+## Current M2DGR Readiness
+
+M2DGR status:
+
+- Raw dataset verified: PASS
+- Trajectory manifest verified: PASS
+- Calibration provenance verified: PASS
+- Reference coverage schema verified: PASS
+
+Remaining:
+
+- Reference coverage populated from actual dataset quality audits
+- Synchronization verification integration
+- Numerical association tolerance selection
+- Evaluation pipeline implementation
+
+
+# Next Implementation Phases
+
+## Phase 2 — Dataset Quality Audit Integration
+
+Objectives:
+
+- Build automated M2DGR reference quality audit
+- Validate mocap quality
+- Validate Leica coverage intervals
+- Generate real reference coverage artifacts
+- Connect audit outputs to manifest admission
+
+
+## Phase 3 — Synchronization Verification
+
+Objectives:
+
+- Keep measurement time basis explicit
+- Avoid premature fixed offset assumptions
+- Validate cross-stream association
+- Select association tolerances only after evidence
+
+
+## Phase 4 — Evaluation Pipeline
+
+Objectives:
+
+- Implement reference-aware scoring
+- Enforce dimension-specific evaluation
+- Prevent invalid metric computation
+- Generate reproducible evaluation reports
+
+
+## Phase 5 — Physical Robot Integration
+
+Objectives:
+
+- Introduce local quadruped platform data
+- Verify actual sensor streams
+- Add physical validation protocol
+- Maintain held-out final evaluation policy
+
+---
+
+Current protocol state:
+
+PHASE_1_PROTOCOL_FROZEN = FALSE
+
+The protocol remains intentionally unfrozen until synchronization,
+reference validity, and evaluation rules are experimentally verified.

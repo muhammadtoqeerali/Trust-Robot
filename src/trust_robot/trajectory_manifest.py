@@ -8,7 +8,13 @@ import json
 import os
 import tempfile
 
+from .reference_coverage import (
+    ReferenceCoverageArtifact,
+    ValidInterval,
+)
+
 from .data_contracts import (
+    CalibrationArtifactSpec,
     ContractError,
     DerivativeKind,
     MeasurementTimeBasis,
@@ -122,6 +128,26 @@ def _calibration_dict(
 
 
 
+
+def _coverage_dict(
+    artifact,
+):
+    return {
+        "trajectory_id": artifact.trajectory_id,
+        "reference_source": artifact.reference_source,
+        "translation_valid": artifact.translation_valid,
+        "rotation_valid": artifact.rotation_valid,
+        "valid_intervals": [
+            {
+                "start_ns": item.start_ns,
+                "end_ns": item.end_ns,
+            }
+            for item in artifact.valid_intervals
+        ],
+        "reason": artifact.reason,
+    }
+
+
 def _record_dict(
     record: TrajectoryRecord,
     synchronization: Sequence[SynchronizationSpec],
@@ -153,6 +179,10 @@ def _record_dict(
                 record.calibration_artifacts,
                 key=lambda item: item.artifact_id,
             )
+        ],
+        "reference_coverage_artifacts": [
+            _coverage_dict(item)
+            for item in record.reference_coverage_artifacts
         ],
         "synchronization": [
             _sync_dict(sync)
@@ -435,6 +465,76 @@ def _decode_reference(
     )
 
 
+
+def _decode_calibration_artifact(
+    payload: dict,
+) -> CalibrationArtifactSpec:
+
+    _require_exact_keys(
+        payload,
+        {
+            "artifact_id",
+            "source_path",
+            "sha256",
+            "verification_status",
+            "applies_to_stream_ids",
+            "applies_to_frame_ids",
+            "notes",
+        },
+        "calibration_artifact",
+    )
+
+    return CalibrationArtifactSpec(
+        artifact_id=payload["artifact_id"],
+        source_path=payload["source_path"],
+        sha256=payload["sha256"],
+        verification_status=VerificationStatus(
+            payload["verification_status"]
+        ),
+        applies_to_stream_ids=tuple(
+            payload["applies_to_stream_ids"]
+        ),
+        applies_to_frame_ids=tuple(
+            payload["applies_to_frame_ids"]
+        ),
+        notes=payload["notes"],
+    )
+
+
+
+def _decode_coverage(
+    payload: dict,
+) -> ReferenceCoverageArtifact:
+
+    _require_exact_keys(
+        payload,
+        {
+            "trajectory_id",
+            "reference_source",
+            "translation_valid",
+            "rotation_valid",
+            "valid_intervals",
+            "reason",
+        },
+        "reference coverage",
+    )
+
+    return ReferenceCoverageArtifact(
+        trajectory_id=payload["trajectory_id"],
+        reference_source=payload["reference_source"],
+        translation_valid=payload["translation_valid"],
+        rotation_valid=payload["rotation_valid"],
+        valid_intervals=tuple(
+            ValidInterval(
+                item["start_ns"],
+                item["end_ns"],
+            )
+            for item in payload["valid_intervals"]
+        ),
+        reason=payload["reason"],
+    )
+
+
 def _decode_sync(
     payload: dict,
 ) -> SynchronizationSpec:
@@ -586,6 +686,8 @@ def validate_manifest_payload(
         "corruption_seed",
         "streams",
         "references",
+        "calibration_artifacts",
+        "reference_coverage_artifacts",
         "synchronization",
     }
 
@@ -625,6 +727,20 @@ def validate_manifest_payload(
             ]
         )
 
+        reference_coverage_artifacts = tuple(
+            _decode_coverage(item)
+            for item in raw_record[
+                "reference_coverage_artifacts"
+            ]
+        )
+
+        calibration_artifacts = tuple(
+            _decode_calibration_artifact(item)
+            for item in raw_record[
+                "calibration_artifacts"
+            ]
+        )
+
         record = TrajectoryRecord(
             dataset_id=raw_record[
                 "dataset_id"
@@ -642,6 +758,8 @@ def validate_manifest_payload(
             ),
             streams=streams,
             references=references,
+            calibration_artifacts=calibration_artifacts,
+            reference_coverage_artifacts=reference_coverage_artifacts,
             derivative_kind=DerivativeKind(
                 raw_record[
                     "derivative_kind"

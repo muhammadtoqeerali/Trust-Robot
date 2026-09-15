@@ -1,12 +1,28 @@
 {
   "dataset_id": "SYNTHETIC_TRUST_ROBOT",
-  "manifest_content_sha256": "8341d8e842ed8e4440a6fd478a828225af0ab820e8951d5d6431e94aac116ced",
+  "manifest_content_sha256": "2f8a871cf3b3a09e0c5127c49b833a3190fd94473c597010bee231222f135709",
   "records": [
     {
       "base_trajectory_id": "synthetic_001",
+      "calibration_artifacts": [],
       "corruption_seed": null,
       "dataset_id": "SYNTHETIC_TRUST_ROBOT",
       "derivative_kind": "clean",
+      "reference_coverage_artifacts": [
+        {
+          "reason": null,
+          "reference_source": "synthetic_reference",
+          "rotation_valid": true,
+          "trajectory_id": "synthetic_001",
+          "translation_valid": true,
+          "valid_intervals": [
+            {
+              "end_ns": 1000000000,
+              "start_ns": 0
+            }
+          ]
+        }
+      ],
       "references": [
         {
           "coverage": "full",

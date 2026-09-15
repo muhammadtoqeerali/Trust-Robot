@@ -35,4 +35,5 @@ __all__ = [
     "VerificationStatus",
     "TrajectoryRecord",
     "validate_trajectory_records",
+    "build_m2dgr_manifest",
 ]
