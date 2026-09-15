@@ -1,0 +1,4400 @@
+{
+  "dataset_id": "M2DGR",
+  "manifest_content_sha256": "7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745",
+  "records": [
+    {
+      "base_trajectory_id": "Circle_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "Circle_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "a16a194a1013f149bd2211bd5665ec89c939249b4973cfd384150d147bc05cbf",
+          "source_path": "raw/rosbags/Circle_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/Circle_01_reference_quality.json",
+          "source_id": "Circle_01_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/Circle_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "Circle_01"
+    },
+    {
+      "base_trajectory_id": "Circle_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "Circle_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "7ba99ad5a047602ce8444f85050b6d8d4df4c05cab3296457e1e59ba1c7872b2",
+          "source_path": "raw/rosbags/Circle_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/Circle_02_reference_quality.json",
+          "source_id": "Circle_02_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/Circle_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "Circle_02"
+    },
+    {
+      "base_trajectory_id": "door_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "door_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "da99e6d5ca2ebb05489db6cc16298a2a16489eabf3d083840438f16283f64586",
+          "source_path": "raw/rosbags/door_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "door_01_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/door_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "door_01"
+    },
+    {
+      "base_trajectory_id": "door_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "door_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "33d1b247ffafdffba70b4cc28fe117198f0f32890c033aaa7dd7598f1812110d",
+          "source_path": "raw/rosbags/door_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "door_02_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/door_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "door_02"
+    },
+    {
+      "base_trajectory_id": "gate_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "gate_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "88cc41607e93d6284d3efc36678b1da08436e7bbe7a91d82730f2c009a79b157",
+          "source_path": "raw/rosbags/gate_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/gate_01_reference_quality.json",
+          "source_id": "gate_01_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/gate_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "gate_01"
+    },
+    {
+      "base_trajectory_id": "gate_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "gate_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "d3ff328420b4d7244b07a775c718e6ec9e74d69f914ec58db1f7663551a5f21e",
+          "source_path": "raw/rosbags/gate_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/gate_02_reference_quality.json",
+          "source_id": "gate_02_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/gate_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "gate_02"
+    },
+    {
+      "base_trajectory_id": "gate_03",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "gate_03_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "d6646bd4fbdd34bc77266a4de16159f14a28b9d3bdfbf0e6ca6fcc4fa848518a",
+          "source_path": "raw/rosbags/gate_03.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/gate_03_reference_quality.json",
+          "source_id": "gate_03_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/gate_03_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "gate_03"
+    },
+    {
+      "base_trajectory_id": "hall_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "hall_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "eeaa8f4c6d347c838dbec466deb4a517043469c573f3171634b97b7112978480",
+          "source_path": "raw/rosbags/hall_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "hall_01_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/hall_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "hall_01"
+    },
+    {
+      "base_trajectory_id": "hall_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "hall_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "dda3d725fe1cfa55294823a78adbeb1ce6a8c5a1e0b089dc1e308e2b0b0ea5b5",
+          "source_path": "raw/rosbags/hall_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "hall_02_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/hall_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "hall_02"
+    },
+    {
+      "base_trajectory_id": "hall_03",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "hall_03_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "40558e7f6f834b85d55f0d38378571b5ef79082f2f28f618a48cb38d06d64e18",
+          "source_path": "raw/rosbags/hall_03.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "hall_03_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/hall_03_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "hall_03"
+    },
+    {
+      "base_trajectory_id": "hall_04",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "hall_04_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "560f4701afcae420795c15d5d11349d34cfb130564d69d0144c415b50e5cfde2",
+          "source_path": "raw/rosbags/hall_04.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "hall_04_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/hall_04_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "hall_04"
+    },
+    {
+      "base_trajectory_id": "hall_05",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "hall_05_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "a169296014a421714c68b0d462067d6b97a3a66f35dada94726baeb55773384a",
+          "source_path": "raw/rosbags/hall_05.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "hall_05_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/hall_05_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "hall_05"
+    },
+    {
+      "base_trajectory_id": "lift_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "lift_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "2b5d6eaa4f5727dcfd692907e6c5f5151d6c6225d431c869e5fa26fe456e6e35",
+          "source_path": "raw/rosbags/lift_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "lift_01_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/lift_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "lift_01"
+    },
+    {
+      "base_trajectory_id": "lift_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "lift_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "99cff8c26ccfa9b942f4484cca5be343f595c1faf60516f410a34d63ad834cf4",
+          "source_path": "raw/rosbags/lift_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "lift_02_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/lift_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "lift_02"
+    },
+    {
+      "base_trajectory_id": "lift_03",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "lift_03_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "ea3334ec8e64b20e17766cfedbee25465fcfe8b6127a287e3ac96bb327c5375a",
+          "source_path": "raw/rosbags/lift_03.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "lift_03_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/lift_03_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "lift_03"
+    },
+    {
+      "base_trajectory_id": "lift_04",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "lift_04_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "2f42417c5338ab29db1b9a63fa3a6b0538c950731ba9d39fade724bce5101485",
+          "source_path": "raw/rosbags/lift_04.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": null,
+          "rotation_validity_artifact": null,
+          "source_id": "lift_04_reference",
+          "supports_rotation": false,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/lift_04_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "lift_04"
+    },
+    {
+      "base_trajectory_id": "room_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "8ed5cac153bce390b637d1c4c9dde9954a3c74551fa5b80eede5e0f7ef8631af",
+          "source_path": "raw/rosbags/room_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_01_reference_quality.json",
+          "source_id": "room_01_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_01"
+    },
+    {
+      "base_trajectory_id": "room_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+          "source_path": "raw/rosbags/room_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_02_reference_quality.json",
+          "source_id": "room_02_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_02"
+    },
+    {
+      "base_trajectory_id": "room_03",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_03_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "a6fc481c291bedd69579c01b29fcf37a641ae5fb30b3476960f0d3ea9d2ef9d5",
+          "source_path": "raw/rosbags/room_03.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_03_reference_quality.json",
+          "source_id": "room_03_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_03_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_03"
+    },
+    {
+      "base_trajectory_id": "room_dark_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_dark_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "0d87357c3cdaa4a48e9add4a987b8bab80dc7d9040063b53c7f83aa48f63dbda",
+          "source_path": "raw/rosbags/room_dark_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_dark_01_reference_quality.json",
+          "source_id": "room_dark_01_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_dark_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_dark_01"
+    },
+    {
+      "base_trajectory_id": "room_dark_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_dark_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "1b2b1b9a1e05eb6d81030fd459b6cf6aeaeeeb9913e1360ea7a5446a294aa379",
+          "source_path": "raw/rosbags/room_dark_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_dark_02_reference_quality.json",
+          "source_id": "room_dark_02_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_dark_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_dark_02"
+    },
+    {
+      "base_trajectory_id": "room_dark_03",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_dark_03_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "2448b43da601e980f6b771c98fec9f65360d6eb5680c27f16dd345fe0a43c081",
+          "source_path": "raw/rosbags/room_dark_03.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_dark_03_reference_quality.json",
+          "source_id": "room_dark_03_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_dark_03_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_dark_03"
+    },
+    {
+      "base_trajectory_id": "room_dark_04",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_dark_04_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "00f5cf6f01691098bfa5bb03627ea35964aa564ee6bfabd054229bafe52752fe",
+          "source_path": "raw/rosbags/room_dark_04.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_dark_04_reference_quality.json",
+          "source_id": "room_dark_04_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_dark_04_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_dark_04"
+    },
+    {
+      "base_trajectory_id": "room_dark_05",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_dark_05_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "0f44634ba0829b55ec30ae9418d8c6b869498972058c7b7964dd259fea704f9c",
+          "source_path": "raw/rosbags/room_dark_05.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_dark_05_reference_quality.json",
+          "source_id": "room_dark_05_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_dark_05_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_dark_05"
+    },
+    {
+      "base_trajectory_id": "room_dark_06",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "room_dark_06_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "33de061940cf0b41fe8713bac9d322c485ee9920b879209e35e13f5f23038c64",
+          "source_path": "raw/rosbags/room_dark_06.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/room_dark_06_reference_quality.json",
+          "source_id": "room_dark_06_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/room_dark_06_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "room_dark_06"
+    },
+    {
+      "base_trajectory_id": "street_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "f40c3dc3978f4ae95b9d730233388b2e682d90f2fb9e273e77b6654daf8f1e94",
+          "source_path": "raw/rosbags/street_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_01_reference_quality.json",
+          "source_id": "street_01_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_01"
+    },
+    {
+      "base_trajectory_id": "street_010",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_010_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "f540e7183ac8ad1b925ecc16916d2d97e9bfbab1214cf7ad592a84604bff6d0f",
+          "source_path": "raw/rosbags/street_010.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_010_reference_quality.json",
+          "source_id": "street_010_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_010_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_010"
+    },
+    {
+      "base_trajectory_id": "street_02",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_02_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "9902f683d5bf23ea7dd44089f124839e287f2de671eb2e1dda2035ee9b2d64ca",
+          "source_path": "raw/rosbags/street_02.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_02_reference_quality.json",
+          "source_id": "street_02_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_02_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_02"
+    },
+    {
+      "base_trajectory_id": "street_03",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_03_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "d3f3f288ac42ad22ea546aab740998b320fe1d0088a000bc2524a4bafe5ec34d",
+          "source_path": "raw/rosbags/street_03.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_03_reference_quality.json",
+          "source_id": "street_03_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_03_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_03"
+    },
+    {
+      "base_trajectory_id": "street_04",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_04_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "4974b0bc80c8836d8100185ec0f4303bd2e989a07ca51132705e653e6159d681",
+          "source_path": "raw/rosbags/street_04.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_04_reference_quality.json",
+          "source_id": "street_04_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_04_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_04"
+    },
+    {
+      "base_trajectory_id": "street_05",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_05_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "4da5e416700c117a1ffb8507f08e59c3aff4adb5a331e53013bbbeae3780f651",
+          "source_path": "raw/rosbags/street_05.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_05_reference_quality.json",
+          "source_id": "street_05_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_05_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_05"
+    },
+    {
+      "base_trajectory_id": "street_06",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_06_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "b174f1b8bd3f6b5251f6fac1096ea3f604d9f590bc8c03a7d606454efe41c7c5",
+          "source_path": "raw/rosbags/street_06.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_06_reference_quality.json",
+          "source_id": "street_06_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_06_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_06"
+    },
+    {
+      "base_trajectory_id": "street_07",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_07_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "2badf23d1985da1a32626d904f108ce1db64cd9596e219f702ca48808c23a40f",
+          "source_path": "raw/rosbags/street_07.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_07_reference_quality.json",
+          "source_id": "street_07_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_07_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_07"
+    },
+    {
+      "base_trajectory_id": "street_08",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_08_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "8cc2703fa63c998d2c972d1471a48878497ce756ea95e319ea8acb4a5ff8a694",
+          "source_path": "raw/rosbags/street_08.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_08_reference_quality.json",
+          "source_id": "street_08_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_08_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_08"
+    },
+    {
+      "base_trajectory_id": "street_09",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "street_09_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "4fdfa41df63c15da4ba35f5f7ac79d2c04077f95050ea4562a35b7b911da8194",
+          "source_path": "raw/rosbags/street_09.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/street_09_reference_quality.json",
+          "source_id": "street_09_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/street_09_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "street_09"
+    },
+    {
+      "base_trajectory_id": "walk_01",
+      "calibration_artifacts": [
+        {
+          "applies_to_frame_ids": [],
+          "applies_to_stream_ids": [],
+          "artifact_id": "walk_01_bag_sha256",
+          "notes": "raw bag integrity artifact",
+          "sha256": "a313a7bf846693ad7fa37c0854f171b178fb0e862401b2233b44ea40df61eeb3",
+          "source_path": "raw/rosbags/walk_01.bag",
+          "verification_status": "verified"
+        }
+      ],
+      "corruption_seed": null,
+      "dataset_id": "M2DGR",
+      "derivative_kind": "clean",
+      "reference_coverage_artifacts": [],
+      "references": [
+        {
+          "coverage": "unknown",
+          "derived_from_stream_ids": [],
+          "frame_id": "unknown",
+          "rotation_coverage": "unknown",
+          "rotation_validity_artifact": "audit/reference_quality/walk_01_reference_quality.json",
+          "source_id": "walk_01_reference",
+          "supports_rotation": true,
+          "supports_translation": true,
+          "translation_coverage": "unknown",
+          "translation_validity_artifact": "audit/reference_quality/walk_01_reference_quality.json"
+        }
+      ],
+      "split": "train",
+      "streams": [
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_color_optical_frame",
+          "modality": "camera",
+          "reference_only": false,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "camera_imu_optical_frame",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/camera/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "base_link",
+          "modality": "imu",
+          "reference_only": false,
+          "stream_id": "/handsfree/imu",
+          "timestamp_unit": "nanoseconds"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "estimator_input": true,
+          "frame_id": "velodyne",
+          "modality": "lidar",
+          "reference_only": false,
+          "stream_id": "/velodyne_points",
+          "timestamp_unit": "nanoseconds"
+        }
+      ],
+      "synchronization": [
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/color/image_raw/compressed",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/camera/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/handsfree/imu",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        },
+        {
+          "clock_domain": "sensor_clock",
+          "fixed_offset_method": null,
+          "fixed_offset_seconds": null,
+          "measurement_time_basis": null,
+          "method": null,
+          "stream_id": "/velodyne_points",
+          "tolerance_evidence": null,
+          "tolerance_seconds": null,
+          "tolerance_selected_on_split": null,
+          "verification_status": "unverified"
+        }
+      ],
+      "trajectory_id": "walk_01"
+    }
+  ],
+  "schema": "TRUST_ROBOT_TRAJECTORY_MANIFEST_V1",
+  "schema_version": 1
+}

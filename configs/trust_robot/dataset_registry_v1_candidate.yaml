@@ -33,50 +33,88 @@ physical_platform_plan:
 datasets:
   M2DGR:
     proposal_status: core_publicly_available
-    local_readiness: manifest_verified
+    local_readiness: reference_quality_audited_sync_pending
     platform: ground_robot_indoor_outdoor
 
     manifest:
-      path: manifests/m2dgr_trajectory_manifest_v1.json
-      generated: true
+      active_path: manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json
+      legacy_path: manifests/m2dgr_trajectory_manifest_v1.json
+      reference_quality_index_path: manifests/m2dgr_reference_quality_index_v1.json
       trajectory_count: 36
-      hash_verified: true
+      active_schema_status: current_phase2_audited
+      legacy_schema_status: legacy_pre_reference_coverage_artifacts
+      active_manifest_content_sha256: 7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745
+      active_manifest_file_sha256: b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f
+      legacy_manifest_content_sha256: 6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671
+      legacy_manifest_file_sha256: efcee88f57355d7458659084cb224dbfbde8efde28e7cd3d4be9cd16e4b5376e
+      reference_quality_index_content_sha256: c768e25ca4957280ba042a8dc694990723188ce4032ff09d95a3e1409cae50e0
+      reference_quality_index_file_sha256: 5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77
 
     verified_assets:
       raw_rosbags: true
+      bag_checksum_sidecars: 36
       ground_truth_files: true
-      trajectory_manifest: true
+      reference_quality_artifacts: 36
+      structural_reference_quality_audited: true
+      trajectory_manifest_current_schema_validated: true
       calibration_artifact_provenance: true
+      bag_content_rehashed_during_phase2_finalization: false
+
+    reference_quality_summary:
+      rtk_ins_trajectories: 16
+      leica_translation_only_trajectories: 11
+      mocap_trajectories: 9
+      translation_invalid_samples_total: 0
+      sample_runs_authorize_interpolation: false
+      mocap_rotation_invalid_samples:
+        room_01: 165
+        room_02: 90
+        room_03: 216
+        room_dark_01: 122
+        room_dark_02: 191
+        room_dark_03: 145
+        room_dark_04: 107
+        room_dark_05: 78
+        room_dark_06: 160
 
     unresolved:
       synchronization_verified: false
       numerical_association_tolerance_frozen: false
+      continuous_time_reference_coverage_verified: false
       full_reference_coverage_verified: false
+      physical_reference_quality_independently_verified: false
+      evaluation_ready: false
+
     intended_roles:
       - development
       - validation_calibration
       - controlled_fault_injection
       - in_distribution_confirmation
+
     candidate_input_modalities:
       - camera
       - lidar
       - imu
+
     reference_notes:
-      - outdoor Street/Circle/Gate/Walk: RTK/INS pose
-      - Hall/Door/Lift: Leica 3D position tracking; coverage is not complete through lift traversal
-      - Room/Roomdark: motion-capture pose; validity must be quality-audited before scoring
+      - outdoor Street/Circle/Gate/Walk use RTK/INS pose reference
+      - Hall/Door/Lift use Leica translation-only reference
+      - Room/Roomdark use motion-capture pose with audited rotation-invalid samples
+      - structural sample validity does not imply continuous-time interpolation validity
+
     restrictions:
       - trajectory_disjoint
       - all_derivatives_of_base_trajectory_same_split
       - score_only_independently_referenced_intervals_and_dimensions
       - Leica_reference_is_translation_only_without_independent_orientation
-      - motion_capture_reference_requires_dimension_specific_validity_masks_when_quality_audit_finds_invalid_samples
-      - Xsens/GNSS/IMU contributing_to_reference_is_reference_only
+      - motion_capture_rotation_must_exclude_structurally_invalid_samples
+      - valid_sample_runs_do_not_authorize_interpolation
+      - Xsens/GNSS/IMU_contributing_to_reference_is_reference_only
       - use_independent_IMU_instance_for_estimator_input_when_reference_uses_Xsens
-      - verified_sensor_header_stamp_is_measurement_time_basis
-      - rosbag_record_time_is_transport_provenance_diagnostic_not_measurement_time
+      - rosbag_record_time_is_transport_provenance_not_measurement_time
       - no_global_fixed_sensor_time_offset_without_explicit_evidence
-      - multimodal_association_and_scoring_require_required_stream_header_time_overlap_intersected_with_valid_independent_reference_coverage
+      - numerical_association_tolerance_must_not_be_selected_on_confirmation_data
+      - no_scoring_until_synchronization_and_reference_association_are_verified
 
   EuRoC:
     proposal_status: core_publicly_available

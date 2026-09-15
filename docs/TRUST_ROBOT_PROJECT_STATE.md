@@ -1,296 +1,233 @@
 # TRUST-ROBOT Project State
 
-Last Updated:
-2026-09-14
+Last Updated: 2026-09-15
 
-Repository:
-muhammadtoqeerali/Trust-Robot
+Repository: `muhammadtoqeerali/Trust-Robot`
 
-Purpose:
-Scientific implementation tracking document.
-This file is the first document an AI agent should read before modifying the project.
+This document is the authoritative implementation-state record for the
+TRUST-ROBOT research project.
 
-============================================================
+## Current phase
 
-# CURRENT PHASE
+Phase 2 — M2DGR Reference Quality Audit and Evaluation Readiness
 
-Phase:
-Calibration Artifact Provenance Extension
+Status: COMPLETE — pending Phase-2 Git checkpoint.
+
+Next phase:
+
+Phase 3 — Synchronization Verification.
+
+## Research objective
+
+TRUST-ROBOT is developing a trustworthy multimodal robot-perception and
+evaluation framework with explicit provenance, independent reference
+validation, leakage prevention, reproducibility, dataset-aware
+evaluation, synchronization correctness, calibration integrity, and fair
+comparison protocols.
+
+Core modalities:
+
+- camera
+- LiDAR
+- IMU
+
+Future platform-specific modalities may be added only after actual
+stream/provenance verification.
+
+## Completed foundations
+
+Implemented and validated:
+
+- stream and frame contracts
+- reference-independence rules
+- split and lineage constraints
+- synchronization contracts
+- explicit measurement-time basis
+- no unsupported fixed timestamp offset
+- no confirmation-data tolerance selection
+- calibration artifact provenance
+- trajectory manifest schema V1
+- deterministic canonical hashing
+- immutable manifest writing
+- M2DGR trajectory discovery
+- M2DGR reference-family mapping
+- M2DGR reference structural auditing
+- dimension-specific translation/rotation sample validity
+- reference-quality artifact hashing
+- audit-backed M2DGR manifest admission
+- retirement of synthetic `[0,1] ns` reference coverage
+
+## Phase-2 validation result
+
+TRUST-ROBOT unit tests:
+
+66 PASS.
+
+Authoritative M2DGR reference-quality artifacts:
+
+36.
+
+Reference families:
+
+- RTK/INS: 16
+- Leica: 11
+- motion capture: 9
+
+Structural translation invalidity:
+
+0 samples across all 36 released reference files.
+
+Leica:
+
+- translation supported
+- rotation unsupported
+- continuous-time coverage not inferred from sample timestamps
+
+Motion capture:
+
+All 9 mocap trajectories contain structurally invalid rotation samples:
+
+- room_01: 165
+- room_02: 90
+- room_03: 216
+- room_dark_01: 122
+- room_dark_02: 191
+- room_dark_03: 145
+- room_dark_04: 107
+- room_dark_05: 78
+- room_dark_06: 160
+
+RTK/INS:
+
+All 16 trajectories are structurally clean under the current finite-value
+and quaternion-norm structural checks.
+
+These structural results do not independently verify physical tracking
+accuracy.
+
+## Manifest provenance
+
+Legacy dataset-local manifest:
+
+`manifests/m2dgr_trajectory_manifest_v1.json`
 
 Status:
-NEXT IMPLEMENTATION TARGET
 
-Current scientific objective:
+legacy pre-reference-coverage schema.
 
-Introduce machine-readable calibration provenance without
-freezing unsupported calibration assumptions.
+Legacy file SHA256:
 
-============================================================
+`efcee88f57355d7458659084cb224dbfbde8efde28e7cd3d4be9cd16e4b5376e`
 
-# COMPLETED IMPLEMENTATIONS
+Legacy manifest content SHA256:
 
-## Phase 1 — Data Contract Foundation
+`6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671`
 
-Status:
-COMPLETE
+The legacy artifact was verified and left unchanged.
 
-Implemented:
+Phase-2 audited successor:
 
-- Stream contracts
-- Frame contracts
-- Reference validity rules
-- Dataset readiness validation
-- Synchronization contract
-- Trajectory record validation
+`manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json`
 
-Validation:
+Manifest content SHA256:
 
-- Unit tests passing
-- Leakage prevention rules active
-- Reference independence enforced
+`7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745`
 
+File SHA256:
 
-------------------------------------------------------------
+`b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f`
 
-## Phase 2 — Synchronization Contract Extension
+Current strict schema validation:
 
-Status:
-COMPLETE
+PASS.
 
-Implemented:
+Reference-quality index:
 
-- Measurement time basis
-- Header timestamp handling policy
-- No default fixed offset
-- No frozen numerical association tolerance
-- Confirmation split cannot select tolerance
+`manifests/m2dgr_reference_quality_index_v1.json`
 
-Scientific decisions:
+Index content SHA256:
 
-DEFAULT_FIXED_OFFSET = NONE
+`c768e25ca4957280ba042a8dc694990723188ce4032ff09d95a3e1409cae50e0`
 
-NUMERICAL_ASSOCIATION_TOLERANCE = NOT_FROZEN
+File SHA256:
 
-SYNCHRONIZATION_VERIFIED = FALSE
+`5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77`
 
+## Integrity provenance
 
-------------------------------------------------------------
+All 36 ROS bag SHA256 checksum sidecars were validated against the legacy
+manifest.
 
-## Phase 3 — Trajectory Manifest Schema V1
+The bag payloads were not re-hashed during Phase-2 finalization.
 
-Status:
-COMPLETE
+All 36 generated reference-quality artifacts are bound to their raw
+ground-truth SHA256 values.
 
-Implemented:
+Raw reference files were not modified.
 
-- trajectory manifest schema
-- deterministic manifest generation
-- SHA256 identity tracking
-- immutable manifest write policy
-- lineage validation reuse
-- synchronization coverage validation
+## Important semantic distinction
 
-Validation:
+Reference-quality artifacts contain sample-index validity runs.
 
-52 tests PASS
+Those runs are not continuous-time validity intervals.
 
-Synthetic manifest validation PASS
+They do not authorize interpolation between samples.
 
-Real M2DGR assignment:
-NOT STARTED
+No numerical gap threshold has been frozen.
 
+No motion-discontinuity rejection threshold has been frozen.
 
-============================================================
+## Evaluation readiness
 
-# DATASET STATUS
+At this checkpoint:
 
-Dataset:
+- structural reference quality audited: TRUE
+- raw reference integrity bound: TRUE
+- synchronization verified: FALSE
+- continuous-time reference coverage verified: FALSE
+- physical reference quality independently verified: FALSE
+- numerical association tolerance frozen: FALSE
+- evaluation ready: FALSE
 
-M2DGR
+Therefore estimator scoring remains blocked.
 
-Acquisition:
+## Scientific policies that remain frozen
 
-IN PROGRESS
+Do not violate:
 
-Current status:
+- no ground-truth leakage
+- no reference derived from evaluated estimator inputs
+- no unsupported synchronization claim
+- no arbitrary fixed timestamp offset
+- no numerical association tolerance selected on confirmation/test data
+- no unsupported calibration value
+- no interpolation across unverified reference gaps
+- no rotational scoring where independent orientation reference is unavailable
+- no scoring of structurally invalid mocap rotation samples
+- no final-test parameter selection
 
-- ROS bags downloaded incrementally
-- Resume download verified
-- No truncation observed
-- Acquisition process remains independent from development
-
-
-Validation completed:
-
-- ROS bag magic validation
-- Header timestamp extraction
-- Sensor timing characterization
-- Cross-stream timing characterization
-
-Important policy:
-
-Timing characterization does NOT imply synchronization verification.
-
-
-============================================================
-
-# SCIENTIFIC POLICIES (DO NOT VIOLATE)
-
-Frozen:
-
-- No evaluation leakage
-- No reference derived from estimator inputs
-- No unsupported synchronization claim
-- No arbitrary fixed timestamp offset
-- No calibration values without provenance
-
-
-============================================================
-
-# NEXT IMPLEMENTATION ORDER
-
-## Next Phase
-
-Calibration Artifact Provenance Extension
-
-Planned:
-
-- CalibrationArtifactSpec
-- Calibration manifest section
-- Calibration checksum binding
-- Source provenance metadata
-- Applicability metadata
-- Frame graph validation integration
-
-
-After calibration:
-
-1. Real M2DGR trajectory assignment
-2. Real trajectory manifest generation
-3. Dataset split validation
-4. Evaluation pipeline preparation
-
-
-============================================================
-
-# DEVELOPMENT RULES FOR FUTURE AI AGENTS
-
-Before changing code:
-
-1. Read this file.
-2. Inspect existing tests.
-3. Preserve completed scientific contracts.
-4. Add tests before extending functionality.
-5. Do not freeze numerical assumptions without evidence.
-6. Update this file after every completed phase.
-
-
-============================================================
-
-Current status:
-
-PHASE_1_PROTOCOL_FROZEN = FALSE
-
-PROJECT_STATE_DOCUMENT = ACTIVE
-
-
----
-
-# Phase 1D — M2DGR Reference Coverage Integration
-
-Status: COMPLETED
-
-## Implemented
-
-The TRUST-ROBOT pipeline now contains explicit reference validity modelling.
-
-Completed components:
-
-- Reference coverage artifact schema
-- Translation and rotation validity separation
-- Valid interval representation
-- Reference dimension validation
-- Leica position-only reference restriction
-- Manifest-level reference coverage serialization
-- Manifest-level reference coverage decoding
-- M2DGR builder generation of reference coverage artifacts
-- Synthetic manifest fixture migration
-
-## Verified
-
-Current validation state:
-
-- TRUST-ROBOT unit tests: PASS
-- Test count: 56
-- M2DGR trajectory manifest generation: PASS
-- Manifest canonical hashing: PASS
-- Calibration artifact provenance: PASS
-- Reference coverage integration: PASS
-
-## Current M2DGR Readiness
-
-M2DGR status:
-
-- Raw dataset verified: PASS
-- Trajectory manifest verified: PASS
-- Calibration provenance verified: PASS
-- Reference coverage schema verified: PASS
-
-Remaining:
-
-- Reference coverage populated from actual dataset quality audits
-- Synchronization verification integration
-- Numerical association tolerance selection
-- Evaluation pipeline implementation
-
-
-# Next Implementation Phases
-
-## Phase 2 — Dataset Quality Audit Integration
+## Next phase — Phase 3 Synchronization Verification
 
 Objectives:
 
-- Build automated M2DGR reference quality audit
-- Validate mocap quality
-- Validate Leica coverage intervals
-- Generate real reference coverage artifacts
-- Connect audit outputs to manifest admission
+1. Establish a ROS-independent or otherwise reproducible bag inspection path.
+2. Verify actual sensor measurement-time fields.
+3. Characterize camera/LiDAR/IMU timing from measurement timestamps.
+4. Separate bag record time from measurement time.
+5. Test whether fixed offsets are supported by evidence.
+6. Keep fixed offset unset when evidence is insufficient.
+7. Establish reference-to-estimator temporal association evidence.
+8. Select any numerical association tolerance only through documented
+   evidence and permitted validation data.
+9. Preserve confirmation/test independence.
+10. Keep evaluation readiness false until the synchronization contract is
+    actually satisfied.
 
+## Development rule
 
-## Phase 3 — Synchronization Verification
+For long workstation jobs that may take many minutes or hours, use a
+detached workstation process with a PID and persistent log so laptop or
+SSH disconnection cannot terminate the computation.
 
-Objectives:
-
-- Keep measurement time basis explicit
-- Avoid premature fixed offset assumptions
-- Validate cross-stream association
-- Select association tolerances only after evidence
-
-
-## Phase 4 — Evaluation Pipeline
-
-Objectives:
-
-- Implement reference-aware scoring
-- Enforce dimension-specific evaluation
-- Prevent invalid metric computation
-- Generate reproducible evaluation reports
-
-
-## Phase 5 — Physical Robot Integration
-
-Objectives:
-
-- Introduce local quadruped platform data
-- Verify actual sensor streams
-- Add physical validation protocol
-- Maintain held-out final evaluation policy
-
----
-
-Current protocol state:
-
-PHASE_1_PROTOCOL_FROZEN = FALSE
-
-The protocol remains intentionally unfrozen until synchronization,
-reference validity, and evaluation rules are experimentally verified.
+Short validation and implementation commands may run normally in the
+interactive terminal.

@@ -844,3 +844,34 @@ Current state:
 - The next task is to inspect and redesign the inherited pipeline stage by
   stage against the TRUST-ROBOT proposal.
 
+---
+
+## 2026-09-15 Phase-2 Reference Quality Checkpoint
+
+M2DGR Phase-2 reference-quality auditing is complete.
+
+Validated state:
+
+- 36 trajectories
+- 16 RTK/INS references
+- 11 Leica translation-only references
+- 9 motion-capture references
+- zero structurally invalid translation samples
+- all 9 mocap trajectories contain structurally invalid rotation samples
+- sample-index validity runs do not authorize interpolation
+- synthetic `[0,1] ns` coverage retired
+- audited current-schema successor manifest generated
+- reference-quality index generated
+- 66 TRUST-ROBOT tests passing
+
+Unresolved and intentionally blocking evaluation:
+
+- synchronization verification
+- continuous-time reference coverage verification
+- physical reference-quality verification
+- numerical association tolerance selection
+
+Next implementation phase:
+
+Phase 3 — Synchronization Verification.
+
