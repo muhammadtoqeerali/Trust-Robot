@@ -1,6 +1,6 @@
 # TRUST-ROBOT Project State
 
-Last Updated: 2026-09-15
+Last Updated: 2026-09-16
 
 Repository: `muhammadtoqeerali/Trust-Robot`
 
@@ -9,225 +9,173 @@ TRUST-ROBOT research project.
 
 ## Current phase
 
-Phase 2 — M2DGR Reference Quality Audit and Evaluation Readiness
+Phase 3 — Synchronization Verification
 
-Status: COMPLETE — pending Phase-2 Git checkpoint.
+Status: IN PROGRESS.
 
-Next phase:
+Completed subphase:
 
-Phase 3 — Synchronization Verification.
+**Phase 3A — M2DGR Sensor Timing Characterization and Stream Inventory.**
 
-## Research objective
+Phase 3A does not verify cross-stream synchronization.
 
-TRUST-ROBOT is developing a trustworthy multimodal robot-perception and
-evaluation framework with explicit provenance, independent reference
-validation, leakage prevention, reproducibility, dataset-aware
-evaluation, synchronization correctness, calibration integrity, and fair
-comparison protocols.
-
-Core modalities:
-
-- camera
-- LiDAR
-- IMU
-
-Future platform-specific modalities may be added only after actual
-stream/provenance verification.
-
-## Completed foundations
-
-Implemented and validated:
-
-- stream and frame contracts
-- reference-independence rules
-- split and lineage constraints
-- synchronization contracts
-- explicit measurement-time basis
-- no unsupported fixed timestamp offset
-- no confirmation-data tolerance selection
-- calibration artifact provenance
-- trajectory manifest schema V1
-- deterministic canonical hashing
-- immutable manifest writing
-- M2DGR trajectory discovery
-- M2DGR reference-family mapping
-- M2DGR reference structural auditing
-- dimension-specific translation/rotation sample validity
-- reference-quality artifact hashing
-- audit-backed M2DGR manifest admission
-- retirement of synthetic `[0,1] ns` reference coverage
-
-## Phase-2 validation result
+## Current validated software state
 
 TRUST-ROBOT unit tests:
 
-66 PASS.
+**75 PASS.**
 
-Authoritative M2DGR reference-quality artifacts:
+Implemented Phase-3A components:
+
+- strict M2DGR timing-evidence loader/validator
+- hash-bound timing-evidence index
+- exact structural header-anomaly validation
+- trajectory-specific M2DGR stream admission
+- sensor-header-stamp measurement-time basis
+- conservative synchronization metadata
+- reproducible all-trajectory timing scanner
+- reproducible exact-header-anomaly scanner
+- reproducible metadata-only Phase-3 finalizer
+
+## M2DGR Phase-3A dataset result
+
+Trajectories audited:
 
 36.
 
-Reference families:
+Stream availability:
 
-- RTK/INS: 16
-- Leica: 11
-- motion capture: 9
+- handsfree IMU: 36/36
+- Velodyne: 36/36
+- camera image: 34/36
+- camera IMU: 34/36
 
-Structural translation invalidity:
+`street_09` and `street_010` contain neither audited camera stream.
 
-0 samples across all 36 released reference files.
+The Phase-3 successor manifest therefore contains 140 admitted stream entries
+and 140 corresponding synchronization entries.
 
-Leica:
+## Measurement-time basis
 
-- translation supported
-- rotation unsupported
-- continuous-time coverage not inferred from sample timestamps
+The sensor message header timestamp is the observed measurement-time field.
 
-Motion capture:
+ROS bag record time is retained as transport/provenance diagnostic
+information only.
 
-All 9 mocap trajectories contain structurally invalid rotation samples:
+Observing the header timestamp does not by itself verify synchronization.
 
-- room_01: 165
-- room_02: 90
-- room_03: 216
-- room_dark_01: 122
-- room_dark_02: 191
-- room_dark_03: 145
-- room_dark_04: 107
-- room_dark_05: 78
-- room_dark_06: 160
+## Structural timing findings
 
-RTK/INS:
+Message decode errors:
 
-All 16 trajectories are structurally clean under the current finite-value
-and quaternion-norm structural checks.
+0.
 
-These structural results do not independently verify physical tracking
-accuracy.
+Strict reversed sensor-header timestamps:
 
-## Manifest provenance
+1.
 
-Legacy dataset-local manifest:
+The reversal is:
 
-`manifests/m2dgr_trajectory_manifest_v1.json`
+- trajectory: `hall_05`
+- stream: `/camera/imu`
+- previous index: 53375
+- current index: 53376
+- delta: -49.212455 ms
 
-Status:
+Large monotonic camera-IMU startup/header anomalies were observed in:
 
-legacy pre-reference-coverage schema.
+- `lift_02`
+- `street_06`
+- `room_dark_03`
+- `walk_01`
+- `gate_02`
 
-Legacy file SHA256:
+They remain diagnostic observations only.
 
-`efcee88f57355d7458659084cb224dbfbde8efde28e7cd3d4be9cd16e4b5376e`
+No magnitude-based invalidity threshold has been introduced.
 
-Legacy manifest content SHA256:
+## Phase-3A immutable artifacts
 
-`6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671`
+Timing evidence index:
 
-The legacy artifact was verified and left unchanged.
+`manifests/m2dgr_timing_evidence_index_v1.json`
 
-Phase-2 audited successor:
+Content SHA256:
 
-`manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json`
-
-Manifest content SHA256:
-
-`7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745`
+`f2b1a74cb67124ec6fa725a23e3d8be8d2bd3d9d431590ad29ca1235dab149d6`
 
 File SHA256:
 
-`b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f`
+`70f8dbf16b2363c55fa180a8180d7fbc322495c25790498ddf64fb4d74c87b3f`
 
-Current strict schema validation:
+Phase-3 successor manifest:
 
-PASS.
+`manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json`
 
-Reference-quality index:
+Content SHA256:
 
-`manifests/m2dgr_reference_quality_index_v1.json`
-
-Index content SHA256:
-
-`c768e25ca4957280ba042a8dc694990723188ce4032ff09d95a3e1409cae50e0`
+`5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299`
 
 File SHA256:
 
-`5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77`
+`5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea`
 
-## Integrity provenance
+The Phase-2 manifest remains retained and unchanged.
 
-All 36 ROS bag SHA256 checksum sidecars were validated against the legacy
-manifest.
+Bag payloads were not rehashed during Phase-3A metadata finalization.
+Checksum provenance was instead cross-validated across existing checksum
+sidecars, Phase-2 integrity metadata, Phase-3 timing artifacts, and the
+timing-evidence index.
 
-The bag payloads were not re-hashed during Phase-2 finalization.
-
-All 36 generated reference-quality artifacts are bound to their raw
-ground-truth SHA256 values.
-
-Raw reference files were not modified.
-
-## Important semantic distinction
-
-Reference-quality artifacts contain sample-index validity runs.
-
-Those runs are not continuous-time validity intervals.
-
-They do not authorize interpolation between samples.
-
-No numerical gap threshold has been frozen.
-
-No motion-discontinuity rejection threshold has been frozen.
-
-## Evaluation readiness
+## Synchronization state
 
 At this checkpoint:
 
-- structural reference quality audited: TRUE
-- raw reference integrity bound: TRUE
+- measurement-time field observed: TRUE
+- trajectory-specific stream presence audited: TRUE
+- timing characterization complete: TRUE
 - synchronization verified: FALSE
+- fixed sensor-time offset estimated: FALSE
+- synchronization tolerance frozen: FALSE
+- common header-range adopted as validity mask: FALSE
+- automatic timestamp repair enabled: FALSE
+- automatic timestamp sample exclusion enabled: FALSE
+- reference-to-estimator temporal association verified: FALSE
 - continuous-time reference coverage verified: FALSE
-- physical reference quality independently verified: FALSE
-- numerical association tolerance frozen: FALSE
 - evaluation ready: FALSE
 
-Therefore estimator scoring remains blocked.
+Estimator scoring therefore remains blocked.
 
-## Scientific policies that remain frozen
+## Phase-3 scientific rules
 
-Do not violate:
+Do not:
 
-- no ground-truth leakage
-- no reference derived from evaluated estimator inputs
-- no unsupported synchronization claim
-- no arbitrary fixed timestamp offset
-- no numerical association tolerance selected on confirmation/test data
-- no unsupported calibration value
-- no interpolation across unverified reference gaps
-- no rotational scoring where independent orientation reference is unavailable
-- no scoring of structurally invalid mocap rotation samples
-- no final-test parameter selection
+- use bag record time as sensor measurement time;
+- interpret low nearest-neighbor timing error as synchronization proof;
+- infer a global fixed offset from the observed startup anomalies;
+- convert the numeric common header-range intersection into an automatic
+  validity interval;
+- automatically repair or drop the `hall_05` reversed timestamp;
+- select an association tolerance on confirmation/test data;
+- fabricate missing camera streams for `street_09` or `street_010`.
 
-## Next phase — Phase 3 Synchronization Verification
+## Remaining Phase-3 work
 
-Objectives:
-
-1. Establish a ROS-independent or otherwise reproducible bag inspection path.
-2. Verify actual sensor measurement-time fields.
-3. Characterize camera/LiDAR/IMU timing from measurement timestamps.
-4. Separate bag record time from measurement time.
-5. Test whether fixed offsets are supported by evidence.
-6. Keep fixed offset unset when evidence is insufficient.
-7. Establish reference-to-estimator temporal association evidence.
-8. Select any numerical association tolerance only through documented
-   evidence and permitted validation data.
-9. Preserve confirmation/test independence.
-10. Keep evaluation readiness false until the synchronization contract is
-    actually satisfied.
+1. Establish independent or dataset-supported evidence for actual clock
+   synchronization semantics.
+2. Determine whether streams share a clock domain or require explicit
+   clock-domain transformations.
+3. Establish reference-to-estimator temporal association policy.
+4. Determine whether any fixed offset is scientifically justified.
+5. Define any numerical association tolerance only from permitted evidence.
+6. Define explicit handling of structurally invalid timestamps such as the
+   `hall_05` reversal without tuning on confirmation/test results.
+7. Verify that any chosen policy generalizes beyond the observations used to
+   construct it.
+8. Keep evaluation readiness false until those requirements are satisfied.
 
 ## Development rule
 
-For long workstation jobs that may take many minutes or hours, use a
-detached workstation process with a PID and persistent log so laptop or
-SSH disconnection cannot terminate the computation.
+Long workstation scans must use a detached process with PID and persistent log.
 
-Short validation and implementation commands may run normally in the
-interactive terminal.
+Short metadata validation and unit-test commands may run interactively.

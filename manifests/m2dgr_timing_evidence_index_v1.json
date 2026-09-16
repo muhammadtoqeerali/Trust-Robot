@@ -1,0 +1,1330 @@
+{
+  "artifacts": [
+    {
+      "artifact_file_sha256": "b6d21b64721624a1c4ba4aa5388ac59469a09a0e586f2da11a77b540daa9861a",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/Circle_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "a16a194a1013f149bd2211bd5665ec89c939249b4973cfd384150d147bc05cbf",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 3448,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 44191,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 33016,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2339,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "Circle_01"
+    },
+    {
+      "artifact_file_sha256": "4414f816bfc355ecbd8da7291405b55a1ee5d0a137e57e42144c5c58bd8d6f66",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/Circle_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "7ba99ad5a047602ce8444f85050b6d8d4df4c05cab3296457e1e59ba1c7872b2",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 3223,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 40868,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 30404,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2170,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "Circle_02"
+    },
+    {
+      "artifact_file_sha256": "2b80ccc64b28eda428a70ec9ccd814c277a6a4e3f4e053c9bad80a0c002b7f9d",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/door_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "da99e6d5ca2ebb05489db6cc16298a2a16489eabf3d083840438f16283f64586",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 6823,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 87842,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 65753,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 4606,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "door_01"
+    },
+    {
+      "artifact_file_sha256": "17ebd7080bf5deb3d2508bf96ae7a7c9bc979f9ed2a2184a69796f98d85eeeff",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/door_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "33d1b247ffafdffba70b4cc28fe117198f0f32890c033aaa7dd7598f1812110d",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1865,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 24318,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 18271,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1271,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "door_02"
+    },
+    {
+      "artifact_file_sha256": "23db93c51b0f4fa851fb09ba419c35537b29e6ec6c64f2396921bb872912f569",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/gate_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "88cc41607e93d6284d3efc36678b1da08436e7bbe7a91d82730f2c009a79b157",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2490,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 33224,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 24545,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1722,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "gate_01"
+    },
+    {
+      "artifact_file_sha256": "4efe239d334c2ecc017121572d2442cf9276a7c1b51ede52373b78530d3626b9",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/gate_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "d3ff328420b4d7244b07a775c718e6ec9e74d69f914ec58db1f7663551a5f21e",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 4870,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 63199,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 47217,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 3268,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "gate_02"
+    },
+    {
+      "artifact_file_sha256": "b3765c096ebdbe86c99531f6530298eb6315d94e39e0fb832150423c8353da69",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/gate_03_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "d6646bd4fbdd34bc77266a4de16159f14a28b9d3bdfbf0e6ca6fcc4fa848518a",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 4199,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 54540,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 41161,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2834,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "gate_03"
+    },
+    {
+      "artifact_file_sha256": "b37e4250159d7a52a45cbc024a395dffa2f7ef8e7d92878e57e20ca30031a9e0",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/hall_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "eeaa8f4c6d347c838dbec466deb4a517043469c573f3171634b97b7112978480",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 5229,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 68150,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 50731,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 3511,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "hall_01"
+    },
+    {
+      "artifact_file_sha256": "9ba35628a6b28e7bf06c8e6978effded0ac9f0c2867d88afa137df35c33cb787",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/hall_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "dda3d725fe1cfa55294823a78adbeb1ce6a8c5a1e0b089dc1e308e2b0b0ea5b5",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1875,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 24791,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 18327,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1284,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "hall_02"
+    },
+    {
+      "artifact_file_sha256": "87de83423f7187638bf30ec2df6d72d5cf3790f86163a3ee7e03366da3b2579e",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/hall_03_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "40558e7f6f834b85d55f0d38378571b5ef79082f2f28f618a48cb38d06d64e18",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2393,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 31602,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 23344,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1645,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "hall_03"
+    },
+    {
+      "artifact_file_sha256": "adcc7f99fd393d20c727b58cfbc64379c5aa4d9a452a5698631adf1abb8b7f20",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/hall_04_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "560f4701afcae420795c15d5d11349d34cfb130564d69d0144c415b50e5cfde2",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2712,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 34716,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 25796,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1813,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "hall_04"
+    },
+    {
+      "artifact_file_sha256": "fcb994da51c9462d3ddf9909a277a0539f8089aadaebb13e4cb5f86adfd1245d",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/hall_05_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "a169296014a421714c68b0d462067d6b97a3a66f35dada94726baeb55773384a",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 6000,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 76911,
+          "reverse_count": 1
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 57458,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 4017,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "hall_05"
+    },
+    {
+      "artifact_file_sha256": "d73a1cc713f92efe7a9c604243f6c850c339078d84694a4d5758df45f1b3d902",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/lift_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "2b5d6eaa4f5727dcfd692907e6c5f5151d6c6225d431c869e5fa26fe456e6e35",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 3363,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 43795,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 32987,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2249,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "lift_01"
+    },
+    {
+      "artifact_file_sha256": "e41bb6b65129a8d0db42db066cc2d67bfa21bd4198534579466a8cd8ac9e6510",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/lift_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "99cff8c26ccfa9b942f4484cca5be343f595c1faf60516f410a34d63ad834cf4",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 7255,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 95188,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 71401,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 4873,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "lift_02"
+    },
+    {
+      "artifact_file_sha256": "d5ee0e81e77a543db5d56549f958df8ffb5c309bce1ac9e206480f41dfbe5f3b",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/lift_03_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "ea3334ec8e64b20e17766cfedbee25465fcfe8b6127a287e3ac96bb327c5375a",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 3727,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 48666,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 36100,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2522,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "lift_03"
+    },
+    {
+      "artifact_file_sha256": "3b80fe72401ee984cd2f5382711ece0920456be8e2857399a9ca84df7318a9ec",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/lift_04_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "2f42417c5338ab29db1b9a63fa3a6b0538c950731ba9d39fade724bce5101485",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 4440,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 57457,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 42786,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2986,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "lift_04"
+    },
+    {
+      "artifact_file_sha256": "087bfb8d31e75dbcfc647a7de2cb0ed4d8f13ddb1d87eda91d8e53354f3fe1be",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "8ed5cac153bce390b637d1c4c9dde9954a3c74551fa5b80eede5e0f7ef8631af",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1081,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 13104,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 10057,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 728,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_01"
+    },
+    {
+      "artifact_file_sha256": "c571029505357b3a1a2b0117a1eee9b4dd1bc49a87fc2227186cd22952370d56",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1113,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 13858,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 10426,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 752,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_02"
+    },
+    {
+      "artifact_file_sha256": "2eefc75b237a061f84eb1195d97e35950b88d53d572b7a9bb2d93100f4f048f2",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_03_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "a6fc481c291bedd69579c01b29fcf37a641ae5fb30b3476960f0d3ea9d2ef9d5",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1900,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 23582,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 17664,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1278,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_03"
+    },
+    {
+      "artifact_file_sha256": "1875c5663c5ea9f94f9bd6fd340695a26a9993103f4292e7e6392790548e0254",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_dark_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "0d87357c3cdaa4a48e9add4a987b8bab80dc7d9040063b53c7f83aa48f63dbda",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1614,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 20841,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 15478,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1112,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_dark_01"
+    },
+    {
+      "artifact_file_sha256": "23b780ac12cd32a0c705551f78e96c52d8fe1d3b76158e1ac00b6c7c2203c35b",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_dark_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "1b2b1b9a1e05eb6d81030fd459b6cf6aeaeeeb9913e1360ea7a5446a294aa379",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2404,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 30712,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 22980,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1647,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_dark_02"
+    },
+    {
+      "artifact_file_sha256": "9774bd24483e66acd6091acd056cb7c1a028a91ab45d6361ef6a673a5fcdba89",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_dark_03_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "2448b43da601e980f6b771c98fec9f65360d6eb5680c27f16dd345fe0a43c081",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 1697,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 21508,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 16058,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1159,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_dark_03"
+    },
+    {
+      "artifact_file_sha256": "12a8b85d41ece36d763e288b8cb8be7fea4cfaa70e6a7415c9deca54c6a0f9c8",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_dark_04_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "00f5cf6f01691098bfa5bb03627ea35964aa564ee6bfabd054229bafe52752fe",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2099,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 27268,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 20062,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1435,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_dark_04"
+    },
+    {
+      "artifact_file_sha256": "eb21db93dce0a164ef629ef91f45b266b584695abf01b25b671a2e6881dbea9f",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_dark_05_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "0f44634ba0829b55ec30ae9418d8c6b869498972058c7b7964dd259fea704f9c",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2308,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 30026,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 22098,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1587,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_dark_05"
+    },
+    {
+      "artifact_file_sha256": "1bd1712b5239b42bcf793e744286badad307c4cecd111da801af1a39dc9d134e",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/room_dark_06_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "33de061940cf0b41fe8713bac9d322c485ee9920b879209e35e13f5f23038c64",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 2523,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 32718,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 24088,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 1724,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "room_dark_06"
+    },
+    {
+      "artifact_file_sha256": "04c0a7f8e437c0105b9ce0d88271bc882851c5ce40e81fe951687c838c2deb6e",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "f40c3dc3978f4ae95b9d730233388b2e682d90f2fb9e273e77b6654daf8f1e94",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 15150,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 197189,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 147357,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 10270,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_01"
+    },
+    {
+      "artifact_file_sha256": "7e86eefdb3e7ab463be3fbc870b97dbdee7aa4bbf81277fd3930d4cf79cbb562",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_010_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu"
+      ],
+      "raw_bag_sha256": "f540e7183ac8ad1b925ecc16916d2d97e9bfbab1214cf7ad592a84604bff6d0f",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": null,
+          "header_count": 0,
+          "reverse_count": null
+        },
+        "/camera/imu": {
+          "duplicate_count": null,
+          "header_count": 0,
+          "reverse_count": null
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 129117,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 9087,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_010"
+    },
+    {
+      "artifact_file_sha256": "32810e7542cdbeea0e1c3aa15995014e736cd46fbcb191c3b475cb2f0b305dcb",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_02_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "9902f683d5bf23ea7dd44089f124839e287f2de671eb2e1dda2035ee9b2d64ca",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 18265,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 235303,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 177036,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 12257,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_02"
+    },
+    {
+      "artifact_file_sha256": "474b076cfd3be289882e4f55dd9a6f03708f08f6eea73da5f37903700b7f6439",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_03_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "d3f3f288ac42ad22ea546aab740998b320fe1d0088a000bc2524a4bafe5ec34d",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 5231,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 68389,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 51305,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 3535,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_03"
+    },
+    {
+      "artifact_file_sha256": "146ad954da15838dc02dcbefa6f0691b1ef0803d3c4adaffd85f5014cba900b1",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_04_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "4974b0bc80c8836d8100185ec0f4303bd2e989a07ca51132705e653e6159d681",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 12837,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 172025,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 125650,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 8568,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_04"
+    },
+    {
+      "artifact_file_sha256": "f6f9b52493e1f0c5e6bd5cefbf69690306f1c69ed479ca535000fb4b0db77862",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_05_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "4da5e416700c117a1ffb8507f08e59c3aff4adb5a331e53013bbbeae3780f651",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 6964,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 90336,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 67849,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 4687,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_05"
+    },
+    {
+      "artifact_file_sha256": "6b73d7226492879900130de4c5609b9640378f596e6c5e9fcabd5b31e9310e67",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_06_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "b174f1b8bd3f6b5251f6fac1096ea3f604d9f590bc8c03a7d606454efe41c7c5",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 7342,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 94655,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 71292,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 4936,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_06"
+    },
+    {
+      "artifact_file_sha256": "828daf9fdccda6d1c66d8d9bf8f518f0a6ab1f29c843cc6298d52e0eaaaca145",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_07_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "2badf23d1985da1a32626d904f108ce1db64cd9596e219f702ca48808c23a40f",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 13443,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 177240,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 132410,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 9276,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_07"
+    },
+    {
+      "artifact_file_sha256": "f5957df702d16027db2cb2fadbde954bf9354d02786d73c98c72f02d69077b43",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_08_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "8cc2703fa63c998d2c972d1471a48878497ce756ea95e319ea8acb4a5ff8a694",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 7262,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 94690,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 70934,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 4911,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_08"
+    },
+    {
+      "artifact_file_sha256": "bb864f2da7e21b153014e3acf342d2b20044f345147a1b6367f9962de92667cb",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/street_09_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu"
+      ],
+      "raw_bag_sha256": "4fdfa41df63c15da4ba35f5f7ac79d2c04077f95050ea4562a35b7b911da8194",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": null,
+          "header_count": 0,
+          "reverse_count": null
+        },
+        "/camera/imu": {
+          "duplicate_count": null,
+          "header_count": 0,
+          "reverse_count": null
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 128787,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 9060,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "street_09"
+    },
+    {
+      "artifact_file_sha256": "3b48e444fbbe2fd7ab31a877dc91642ba1d563cb4d6e7b3e44a488fe512228bc",
+      "artifact_relative_path": "audit/phase3_staging/stream_timing_v1/walk_01_phase3_stream_timing_v1.json",
+      "available_target_topics": [
+        "/camera/color/image_raw/compressed",
+        "/camera/imu",
+        "/handsfree/imu",
+        "/velodyne_points"
+      ],
+      "missing_target_topics": [],
+      "raw_bag_sha256": "a313a7bf846693ad7fa37c0854f171b178fb0e862401b2233b44ea40df61eeb3",
+      "stream_structural_counts": {
+        "/camera/color/image_raw/compressed": {
+          "duplicate_count": 0,
+          "header_count": 4333,
+          "reverse_count": 0
+        },
+        "/camera/imu": {
+          "duplicate_count": 0,
+          "header_count": 56158,
+          "reverse_count": 0
+        },
+        "/handsfree/imu": {
+          "duplicate_count": 0,
+          "header_count": 42168,
+          "reverse_count": 0
+        },
+        "/velodyne_points": {
+          "duplicate_count": 0,
+          "header_count": 2914,
+          "reverse_count": 0
+        }
+      },
+      "total_decode_errors": 0,
+      "trajectory_id": "walk_01"
+    }
+  ],
+  "dataset_id": "M2DGR",
+  "exact_anomaly_artifact_count": 1,
+  "exact_anomaly_artifacts": [
+    {
+      "artifact_file_sha256": "b191fd8d155a8cbcf7b1039bc8b50cf47cade42c33d2fe2349bc3eaf0f741a84",
+      "artifact_relative_path": "audit/phase3_staging/exact_anomalies/hall_05_camera_imu_reverse_v1.json",
+      "duplicate_count": 0,
+      "raw_bag_sha256": "a169296014a421714c68b0d462067d6b97a3a66f35dada94726baeb55773384a",
+      "reverse_count": 1,
+      "topic": "/camera/imu",
+      "trajectory_id": "hall_05"
+    }
+  ],
+  "index_content_sha256": "f2b1a74cb67124ec6fa725a23e3d8be8d2bd3d9d431590ad29ca1235dab149d6",
+  "policy": {
+    "automatic_sample_exclusion_rule_created": false,
+    "bag_record_time_role": "transport_provenance_diagnostic_only",
+    "characterization_only": true,
+    "common_header_range_is_validity_mask": false,
+    "fixed_time_offset_estimated": false,
+    "measurement_time_basis_observed": "sensor_header_stamp",
+    "synchronization_tolerance_frozen": false,
+    "synchronization_verified": false
+  },
+  "schema": "TRUST_ROBOT_M2DGR_TIMING_EVIDENCE_INDEX_V1",
+  "schema_version": 1,
+  "timing_artifact_count": 36,
+  "trajectory_count": 36
+}

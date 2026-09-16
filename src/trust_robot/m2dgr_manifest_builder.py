@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+from copy import deepcopy
 from hashlib import sha256
 from pathlib import Path
 
 from .data_contracts import (
     CalibrationArtifactSpec,
+    MeasurementTimeBasis,
     ReferenceCoverage,
     ReferenceSpec,
     SplitRole,
@@ -17,10 +19,17 @@ from .m2dgr_reference import (
     M2DGRReferenceFamily,
     infer_reference_family,
 )
+from .m2dgr_timing_evidence import (
+    available_stream_ids,
+    load_m2dgr_stream_timing_for_trajectory,
+    timing_artifact_path,
+)
 from .reference_quality import (
     load_reference_quality_artifact,
 )
 from .trajectory_manifest import (
+    canonical_digest,
+    validate_manifest_payload,
     write_immutable_manifest,
 )
 
@@ -30,14 +39,12 @@ DATASET_ID = "M2DGR"
 
 def sha256_file(path: Path) -> str:
     digest = sha256()
-
     with path.open("rb") as handle:
         while True:
             chunk = handle.read(1024 * 1024)
             if not chunk:
                 break
             digest.update(chunk)
-
     return digest.hexdigest()
 
 
@@ -47,6 +54,7 @@ def discover_trajectories(root: Path) -> list[str]:
 
 
 def build_streams() -> tuple[StreamSpec, ...]:
+    """Return the M2DGR candidate stream catalog."""
     return (
         StreamSpec(
             stream_id="/handsfree/imu",
@@ -87,6 +95,81 @@ def build_streams() -> tuple[StreamSpec, ...]:
     )
 
 
+def build_streams_for_trajectory(
+    dataset_root: Path,
+    trajectory_id: str,
+) -> tuple[StreamSpec, ...]:
+    """Admit only streams observed in the Phase-3 header-timing audit."""
+    timing = load_m2dgr_stream_timing_for_trajectory(
+        dataset_root,
+        trajectory_id,
+    )
+    available = set(available_stream_ids(timing))
+
+    streams = tuple(
+        stream
+        for stream in build_streams()
+        if stream.stream_id in available
+    )
+    if not streams:
+        raise ValueError(
+            f"M2DGR trajectory {trajectory_id!r} has no "
+            "admissible estimator streams"
+        )
+    return streams
+
+
+def build_synchronization_for_trajectory(
+    dataset_root: Path,
+    trajectory_id: str,
+    streams: tuple[StreamSpec, ...],
+) -> tuple[SynchronizationSpec, ...]:
+    """Record the observed measurement-time basis without verifying sync."""
+    timing_path = timing_artifact_path(
+        dataset_root,
+        trajectory_id,
+    )
+    timing = load_m2dgr_stream_timing_for_trajectory(
+        dataset_root,
+        trajectory_id,
+    )
+
+    admitted = {stream.stream_id for stream in streams}
+    observed = set(available_stream_ids(timing))
+    if admitted != observed:
+        raise ValueError(
+            f"{trajectory_id!r} synchronization stream set does not "
+            "match the audited stream inventory"
+        )
+
+    evidence_relpath = (
+        timing_path.relative_to(dataset_root).as_posix()
+    )
+    method = (
+        "Phase-3 sensor-header timing characterization from "
+        f"{evidence_relpath}; measurement-time basis observed, "
+        "cross-stream synchronization not yet verified"
+    )
+
+    return tuple(
+        SynchronizationSpec(
+            stream_id=stream.stream_id,
+            clock_domain=stream.clock_domain,
+            verification_status=VerificationStatus.UNVERIFIED,
+            method=method,
+            measurement_time_basis=(
+                MeasurementTimeBasis.SENSOR_HEADER_STAMP
+            ),
+            tolerance_seconds=None,
+            fixed_offset_seconds=None,
+            fixed_offset_method=None,
+            tolerance_evidence=None,
+            tolerance_selected_on_split=None,
+        )
+        for stream in streams
+    )
+
+
 def _quality_artifact_path(
     dataset_root: Path,
     trajectory_id: str,
@@ -104,15 +187,12 @@ def build_reference(
     gt_path: Path,
     trajectory_id: str,
 ) -> ReferenceSpec:
-    """Build an M2DGR reference spec from validated audit evidence.
-
-    Phase 2 intentionally leaves continuous-time coverage UNKNOWN. Structural
-    sample validity is carried by the reference-quality artifact, while
-    synchronization/association and interpolation policy remain separate work.
-    """
-
+    """Build an M2DGR reference spec from validated audit evidence."""
     family = infer_reference_family(trajectory_id)
-    quality_path = _quality_artifact_path(dataset_root, trajectory_id)
+    quality_path = _quality_artifact_path(
+        dataset_root,
+        trajectory_id,
+    )
 
     if not quality_path.is_file():
         raise FileNotFoundError(
@@ -121,32 +201,34 @@ def build_reference(
         )
 
     quality = load_reference_quality_artifact(quality_path)
-
     if quality["trajectory_id"] != trajectory_id:
         raise ValueError(
             f"reference-quality trajectory mismatch for {trajectory_id!r}"
         )
-
     if quality["reference_source"] != family.value:
         raise ValueError(
             f"reference-quality family mismatch for {trajectory_id!r}"
         )
 
-    expected_source_relpath = gt_path.relative_to(dataset_root).as_posix()
+    expected_source_relpath = (
+        gt_path.relative_to(dataset_root).as_posix()
+    )
     source = quality["source"]
-
     if source["relative_path"] != expected_source_relpath:
         raise ValueError(
             f"reference-quality source-path mismatch for {trajectory_id!r}"
         )
-
     if source["sha256"] != sha256_file(gt_path):
         raise ValueError(
             f"reference-quality source hash mismatch for {trajectory_id!r}"
         )
 
-    quality_relpath = quality_path.relative_to(dataset_root).as_posix()
-    supports_rotation = family is not M2DGRReferenceFamily.LEICA
+    quality_relpath = (
+        quality_path.relative_to(dataset_root).as_posix()
+    )
+    supports_rotation = (
+        family is not M2DGRReferenceFamily.LEICA
+    )
 
     return ReferenceSpec(
         source_id=f"{trajectory_id}_reference",
@@ -170,13 +252,216 @@ def build_reference(
     )
 
 
+
+def _stream_dict(
+    stream: StreamSpec,
+) -> dict:
+    return {
+        "stream_id": stream.stream_id,
+        "modality": stream.modality,
+        "frame_id": stream.frame_id,
+        "clock_domain": stream.clock_domain,
+        "timestamp_unit": stream.timestamp_unit,
+        "estimator_input": stream.estimator_input,
+        "reference_only": stream.reference_only,
+    }
+
+
+def _sync_dict(
+    sync: SynchronizationSpec,
+) -> dict:
+    return {
+        "stream_id": sync.stream_id,
+        "clock_domain": sync.clock_domain,
+        "verification_status": sync.verification_status.value,
+        "method": sync.method,
+        "tolerance_seconds": sync.tolerance_seconds,
+        "measurement_time_basis": (
+            sync.measurement_time_basis.value
+            if sync.measurement_time_basis is not None
+            else None
+        ),
+        "fixed_offset_seconds": sync.fixed_offset_seconds,
+        "fixed_offset_method": sync.fixed_offset_method,
+        "tolerance_evidence": sync.tolerance_evidence,
+        "tolerance_selected_on_split": (
+            sync.tolerance_selected_on_split.value
+            if sync.tolerance_selected_on_split is not None
+            else None
+        ),
+    }
+
+
+def build_phase3_timing_successor_payload(
+    dataset_root: str | Path,
+    phase2_payload: dict,
+) -> dict:
+    """Migrate an audited Phase-2 M2DGR manifest using Phase-3 timing evidence.
+
+    This migration is metadata-only. It does not read bag payloads, select a
+    synchronization tolerance, estimate a fixed offset, create an exclusion
+    rule, or mark synchronization verified.
+    """
+
+    dataset_root = Path(
+        dataset_root
+    )
+
+    # Require the source manifest to be valid in the current manifest schema
+    # before using it as migration input.
+    validate_manifest_payload(
+        phase2_payload
+    )
+
+    if phase2_payload[
+        "dataset_id"
+    ] != DATASET_ID:
+        raise ValueError(
+            "Phase-3 M2DGR successor requires an M2DGR source manifest"
+        )
+
+    new = deepcopy(
+        phase2_payload
+    )
+
+    old_by_id = {
+        record["trajectory_id"]: record
+        for record in phase2_payload[
+            "records"
+        ]
+    }
+
+    unchanged_fields = (
+        "dataset_id",
+        "trajectory_id",
+        "base_trajectory_id",
+        "split",
+        "derivative_kind",
+        "corruption_seed",
+        "references",
+        "calibration_artifacts",
+        "reference_coverage_artifacts",
+    )
+
+    for record in new[
+        "records"
+    ]:
+        trajectory_id = record[
+            "trajectory_id"
+        ]
+
+        old_record = old_by_id[
+            trajectory_id
+        ]
+
+        streams = build_streams_for_trajectory(
+            dataset_root,
+            trajectory_id,
+        )
+
+        expected_streams = {
+            stream.stream_id:
+                _stream_dict(
+                    stream
+                )
+            for stream in streams
+        }
+
+        old_streams = {
+            stream["stream_id"]:
+                stream
+            for stream in old_record[
+                "streams"
+            ]
+        }
+
+        for stream_id, expected in (
+            expected_streams.items()
+        ):
+            if stream_id not in old_streams:
+                raise ValueError(
+                    f"{trajectory_id!r}: audited stream "
+                    f"{stream_id!r} is absent from the source manifest"
+                )
+
+            if old_streams[
+                stream_id
+            ] != expected:
+                raise ValueError(
+                    f"{trajectory_id!r}: stream metadata changed "
+                    f"unexpectedly for {stream_id!r}"
+                )
+
+        admitted_ids = set(
+            expected_streams
+        )
+
+        record[
+            "streams"
+        ] = [
+            stream
+            for stream in old_record[
+                "streams"
+            ]
+            if stream[
+                "stream_id"
+            ] in admitted_ids
+        ]
+
+        synchronization = (
+            build_synchronization_for_trajectory(
+                dataset_root,
+                trajectory_id,
+                streams,
+            )
+        )
+
+        record[
+            "synchronization"
+        ] = [
+            _sync_dict(
+                item
+            )
+            for item in sorted(
+                synchronization,
+                key=lambda item:
+                    item.stream_id,
+            )
+        ]
+
+        for field in unchanged_fields:
+            if (
+                record[field]
+                != old_record[field]
+            ):
+                raise ValueError(
+                    f"{trajectory_id!r}: Phase-3 migration "
+                    f"unexpectedly changed {field!r}"
+                )
+
+    new.pop(
+        "manifest_content_sha256",
+        None,
+    )
+
+    new[
+        "manifest_content_sha256"
+    ] = canonical_digest(
+        new
+    )
+
+    validate_manifest_payload(
+        new
+    )
+
+    return new
+
 def build_records(
     dataset_root: Path,
 ) -> tuple[
     tuple[TrajectoryRecord, ...],
     dict[str, tuple[SynchronizationSpec, ...]],
 ]:
-    streams = build_streams()
     records = []
     sync = {}
 
@@ -186,9 +471,13 @@ def build_records(
     for trajectory_id in discover_trajectories(dataset_root):
         bag = bag_root / f"{trajectory_id}.bag"
         gt = gt_root / f"{trajectory_id}.txt"
-
         if not gt.exists():
             raise FileNotFoundError(gt)
+
+        streams = build_streams_for_trajectory(
+            dataset_root,
+            trajectory_id,
+        )
 
         record = TrajectoryRecord(
             dataset_id=DATASET_ID,
@@ -203,32 +492,25 @@ def build_records(
                     trajectory_id,
                 ),
             ),
-            # The Phase-1 ReferenceCoverageArtifact represented continuous-time
-            # intervals and previously carried a dummy [0, 1] ns placeholder.
-            # Phase 2 removes that placeholder. Continuous-time coverage remains
-            # unknown until synchronization/association evidence is established.
             reference_coverage_artifacts=(),
             calibration_artifacts=(
                 CalibrationArtifactSpec(
                     artifact_id=f"{trajectory_id}_bag_sha256",
-                    source_path=bag.relative_to(dataset_root).as_posix(),
+                    source_path=(
+                        bag.relative_to(dataset_root).as_posix()
+                    ),
                     sha256=sha256_file(bag),
                     verification_status=VerificationStatus.VERIFIED,
                     notes="raw bag integrity artifact",
                 ),
             ),
         )
-
         records.append(record)
 
-        sync[trajectory_id] = tuple(
-            SynchronizationSpec(
-                stream_id=stream.stream_id,
-                clock_domain=stream.clock_domain,
-                verification_status=VerificationStatus.UNVERIFIED,
-                method=None,
-            )
-            for stream in streams
+        sync[trajectory_id] = build_synchronization_for_trajectory(
+            dataset_root,
+            trajectory_id,
+            streams,
         )
 
     return tuple(records), sync
@@ -240,7 +522,6 @@ def build_m2dgr_manifest(
 ):
     dataset_root = Path(dataset_root)
     records, sync = build_records(dataset_root)
-
     return write_immutable_manifest(
         output_path,
         records,

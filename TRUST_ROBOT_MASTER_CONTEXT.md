@@ -875,3 +875,38 @@ Next implementation phase:
 
 Phase 3 — Synchronization Verification.
 
+
+---
+
+## Phase-3A checkpoint — 2026-09-16
+
+M2DGR sensor timing characterization is complete across all 36 trajectories.
+
+Important Phase-3A facts:
+
+- sensor header timestamps are the observed measurement-time fields;
+- ROS bag record time remains transport/provenance diagnostic only;
+- `/handsfree/imu` and `/velodyne_points` are present in 36/36 trajectories;
+- camera image and `/camera/imu` are present in 34/36 trajectories;
+- `street_09` and `street_010` do not contain the audited camera streams;
+- `hall_05 /camera/imu` has one strict header reversal at sample indices
+  53375 -> 53376 with delta -49.212455 ms;
+- large monotonic `/camera/imu` startup/header anomalies occur in
+  `lift_02`, `street_06`, `room_dark_03`, `walk_01`, and `gate_02`;
+- those monotonic anomalies are diagnostic only and do not create automatic
+  invalid-sample masks;
+- nearest-neighbor timing and common header-range intersection do not prove
+  synchronization;
+- no fixed offset has been estimated;
+- no synchronization tolerance has been selected;
+- synchronization remains UNVERIFIED;
+- evaluation remains blocked.
+
+Phase-3A immutable repository artifacts:
+
+- `manifests/m2dgr_timing_evidence_index_v1.json`
+- `manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json`
+
+Phase 3 remains in progress. The next scientific task is actual synchronization
+semantics and reference-to-estimator temporal association, not estimator
+scoring.

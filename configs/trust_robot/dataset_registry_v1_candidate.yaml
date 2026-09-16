@@ -33,22 +33,29 @@ physical_platform_plan:
 datasets:
   M2DGR:
     proposal_status: core_publicly_available
-    local_readiness: reference_quality_audited_sync_pending
+    local_readiness: timing_characterized_sync_pending
     platform: ground_robot_indoor_outdoor
 
     manifest:
-      active_path: manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json
+      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json
+      phase2_path: manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json
       legacy_path: manifests/m2dgr_trajectory_manifest_v1.json
       reference_quality_index_path: manifests/m2dgr_reference_quality_index_v1.json
+      timing_evidence_index_path: manifests/m2dgr_timing_evidence_index_v1.json
       trajectory_count: 36
-      active_schema_status: current_phase2_audited
+      active_schema_status: current_phase3_timing_audited
+      phase2_schema_status: current_phase2_reference_quality_audited
       legacy_schema_status: legacy_pre_reference_coverage_artifacts
-      active_manifest_content_sha256: 7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745
-      active_manifest_file_sha256: b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f
+      active_manifest_content_sha256: 5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299
+      phase2_manifest_content_sha256: 7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745
+      active_manifest_file_sha256: 5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea
+      phase2_manifest_file_sha256: b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f
       legacy_manifest_content_sha256: 6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671
       legacy_manifest_file_sha256: efcee88f57355d7458659084cb224dbfbde8efde28e7cd3d4be9cd16e4b5376e
       reference_quality_index_content_sha256: c768e25ca4957280ba042a8dc694990723188ce4032ff09d95a3e1409cae50e0
       reference_quality_index_file_sha256: 5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77
+      timing_evidence_index_content_sha256: f2b1a74cb67124ec6fa725a23e3d8be8d2bd3d9d431590ad29ca1235dab149d6
+      timing_evidence_index_file_sha256: 70f8dbf16b2363c55fa180a8180d7fbc322495c25790498ddf64fb4d74c87b3f
 
     verified_assets:
       raw_rosbags: true
@@ -59,6 +66,11 @@ datasets:
       trajectory_manifest_current_schema_validated: true
       calibration_artifact_provenance: true
       bag_content_rehashed_during_phase2_finalization: false
+      sensor_header_timing_artifacts: 36
+      exact_header_anomaly_artifacts: 1
+      trajectory_specific_stream_inventory_audited: true
+      measurement_time_basis_sensor_header_observed: true
+      bag_content_rehashed_during_phase3_finalization: false
 
     reference_quality_summary:
       rtk_ins_trajectories: 16
@@ -76,6 +88,28 @@ datasets:
         room_dark_04: 107
         room_dark_05: 78
         room_dark_06: 160
+
+    timing_characterization_summary:
+      handsfree_imu_trajectories: 36
+      velodyne_trajectories: 36
+      camera_image_trajectories: 34
+      camera_imu_trajectories: 34
+      camera_streams_missing_trajectories:
+        - street_09
+        - street_010
+      decoded_message_errors: 0
+      strict_header_reversal_count: 1
+      strict_header_reversal_trajectory: hall_05
+      strict_header_reversal_stream: /camera/imu
+      strict_header_reversal_delta_ms: -49.212455
+      large_monotonic_camera_imu_startup_anomalies:
+        - lift_02
+        - street_06
+        - room_dark_03
+        - walk_01
+        - gate_02
+      common_header_range_is_validity_mask: false
+      nearest_neighbor_timing_is_sync_proof: false
 
     unresolved:
       synchronization_verified: false
@@ -112,6 +146,10 @@ datasets:
       - Xsens/GNSS/IMU_contributing_to_reference_is_reference_only
       - use_independent_IMU_instance_for_estimator_input_when_reference_uses_Xsens
       - rosbag_record_time_is_transport_provenance_not_measurement_time
+      - sensor_header_stamp_is_observed_measurement_time_basis_not_sync_proof
+      - do_not_fabricate_camera_streams_for_street_09_or_street_010
+      - common_header_range_is_diagnostic_not_an_automatic_validity_mask
+      - reversed_header_timestamp_evidence_does_not_authorize_automatic_repair
       - no_global_fixed_sensor_time_offset_without_explicit_evidence
       - numerical_association_tolerance_must_not_be_selected_on_confirmation_data
       - no_scoring_until_synchronization_and_reference_association_are_verified
