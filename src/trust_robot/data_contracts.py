@@ -52,6 +52,14 @@ def _require_text(name: str, value: str) -> None:
 
 @dataclass(frozen=True)
 class StreamSpec:
+    """Describe one data stream.
+
+    ``clock_domain`` is a nominal timestamp-domain label. Equality of this
+    label across streams MUST NOT be interpreted as synchronization or proof
+    of a shared physical oscillator. SynchronizationSpec.verification_status
+    and its evidence are authoritative for synchronization claims.
+    """
+
     stream_id: str
     modality: str
     frame_id: str
@@ -209,6 +217,12 @@ class FrameSpec:
 
 @dataclass(frozen=True)
 class SynchronizationSpec:
+    """Record synchronization evidence and decisions for one stream.
+
+    A matching ``clock_domain`` string is not itself evidence that two streams
+    share a physical clock or synchronized capture time.
+    """
+
     stream_id: str
     clock_domain: str
     verification_status: VerificationStatus

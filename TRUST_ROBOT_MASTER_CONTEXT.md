@@ -910,3 +910,78 @@ Phase-3A immutable repository artifacts:
 Phase 3 remains in progress. The next scientific task is actual synchronization
 semantics and reference-to-estimator temporal association, not estimator
 scoring.
+
+---
+
+## Phase-3B checkpoint — 2026-09-17
+
+M2DGR synchronization-evidence characterization has reached a permanent
+checkpoint.
+
+Evidence now established:
+
+- u-blox receiver UTC is independently observable on 18 GNSS-bearing
+  trajectories;
+- all compared `/ublox/fix` headers on those trajectories exactly match
+  resolved receiver UTC;
+- bag record time is not accepted as measurement time and does not exhibit a
+  simple dataset-wide fixed relation to receiver UTC;
+- estimator-input sensor headers behave consistently with a host/system-time
+  epoch or mapping rather than native GNSS receiver UTC;
+- this epoch behavior does not prove a shared physical oscillator;
+- calibrated full-vector D435i/HandsFree gyro content provides strong evidence
+  for near-zero IMU temporal association at native sample-scale resolution;
+- the 28-trajectory clean cohort has best-lag range -11 to 0 ms and median
+  -4 ms;
+- zero-lag vector correlation has median 0.996203211;
+- the median best-over-zero correlation gain is only 0.000086185;
+- no scientifically defensible unique nonzero IMU fixed offset was identified.
+
+Phase-3B therefore does NOT freeze the diagnostic -4 ms cohort median as an
+offset.
+
+The shared Phase-3A `sensor_clock` label was semantically ambiguous.
+The Phase-3B successor replaces it with four distinct conservative per-stream
+clock-domain labels.
+
+These labels express uncertainty and are not a claim that the streams use
+different physical clocks.
+
+The data contract now explicitly states that equality of `clock_domain`
+strings is not synchronization proof.
+
+Phase-3B immutable repository artifacts:
+
+- `manifests/m2dgr_synchronization_evidence_v1.json`
+  - content SHA256:
+    `a4e3e8dd18970a47f5cb50f4bb8ea3cb0e625f5f51d9eb0028bf34d953ee9966`
+  - file SHA256:
+    `58615c56442485fc488eeb47f72dd074f51c05c64cda258a91a8c4937b83ef91`
+- `manifests/m2dgr_trajectory_manifest_v1_phase3b_sync_evidence.json`
+  - content SHA256:
+    `5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db`
+  - file SHA256:
+    `95e7c97ae991538c2e7160c935cbaacf784b824eae7feecf1d7b540abe5ebb55`
+
+Validated software state at this checkpoint:
+
+- 81 TRUST-ROBOT unit tests passing;
+- direct Phase-3B finalizer CLI works;
+- Phase-3B successor contains 36 trajectories, 140 stream entries, and
+  140 synchronization entries;
+- synchronization remains `UNVERIFIED`;
+- no fixed offset is stored;
+- no synchronization tolerance is stored;
+- evaluation readiness remains false.
+
+Remaining Phase-3 work:
+
+- camera-image-to-IMU physical capture timing;
+- LiDAR-to-IMU physical capture timing;
+- reference-to-estimator temporal association;
+- independent calibration verification;
+- scientifically valid validation/calibration partitioning before any
+  data-selected synchronization tolerance is frozen.
+
+Do not begin estimator scoring until these blockers are resolved by explicit
+evidence and policy.

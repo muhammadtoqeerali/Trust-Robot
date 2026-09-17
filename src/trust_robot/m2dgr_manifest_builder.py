@@ -24,6 +24,10 @@ from .m2dgr_timing_evidence import (
     load_m2dgr_stream_timing_for_trajectory,
     timing_artifact_path,
 )
+from .m2dgr_synchronization_evidence import (
+    CONSERVATIVE_CLOCK_DOMAINS,
+    validate_m2dgr_synchronization_evidence,
+)
 from .reference_quality import (
     load_reference_quality_artifact,
 )
@@ -455,6 +459,303 @@ def build_phase3_timing_successor_payload(
     )
 
     return new
+
+
+def build_phase3b_synchronization_successor_payload(
+    phase3_payload: dict,
+    synchronization_evidence: dict,
+    evidence_relative_path: str = (
+        "manifests/m2dgr_synchronization_evidence_v1.json"
+    ),
+) -> dict:
+    """Apply conservative Phase-3B clock-domain semantics.
+
+    This successor does not verify a common physical clock, estimate or apply
+    an offset, select a tolerance, create an exclusion rule, or alter stream
+    inventory. Equality of clock-domain labels is never synchronization proof.
+    """
+
+    validate_manifest_payload(
+        phase3_payload
+    )
+
+    validate_m2dgr_synchronization_evidence(
+        synchronization_evidence
+    )
+
+    if phase3_payload[
+        "dataset_id"
+    ] != DATASET_ID:
+        raise ValueError(
+            "Phase-3B synchronization successor requires M2DGR"
+        )
+
+    expected_source_sha = (
+        synchronization_evidence[
+            "manifest_semantics"
+        ][
+            "phase3_source_manifest_content_sha256"
+        ]
+    )
+
+    if phase3_payload[
+        "manifest_content_sha256"
+    ] != expected_source_sha:
+        raise ValueError(
+            "Phase-3B evidence is not bound to the supplied "
+            "Phase-3 manifest"
+        )
+
+    domains = (
+        synchronization_evidence[
+            "manifest_semantics"
+        ][
+            "recommended_conservative_clock_domains"
+        ]
+    )
+
+    if domains != CONSERVATIVE_CLOCK_DOMAINS:
+        raise ValueError(
+            "Phase-3B evidence contains unexpected clock domains"
+        )
+
+    if (
+        not evidence_relative_path
+        or Path(
+            evidence_relative_path
+        ).is_absolute()
+    ):
+        raise ValueError(
+            "Phase-3B evidence path must be non-empty and relative"
+        )
+
+    new = deepcopy(
+        phase3_payload
+    )
+
+    old_by_id = {
+        record[
+            "trajectory_id"
+        ]:
+            record
+        for record in phase3_payload[
+            "records"
+        ]
+    }
+
+    unchanged_record_fields = (
+        "dataset_id",
+        "trajectory_id",
+        "base_trajectory_id",
+        "split",
+        "derivative_kind",
+        "corruption_seed",
+        "references",
+        "calibration_artifacts",
+        "reference_coverage_artifacts",
+    )
+
+    sync_method = (
+        "Phase-3B synchronization evidence from "
+        f"{evidence_relative_path}; sensor headers show host/system-epoch "
+        "behavior and IMU content shows near-zero temporal association, "
+        "but common physical clock and capture synchronization remain "
+        "unverified; no fixed offset or tolerance selected"
+    )
+
+    for record in new[
+        "records"
+    ]:
+        trajectory_id = record[
+            "trajectory_id"
+        ]
+
+        old_record = old_by_id[
+            trajectory_id
+        ]
+
+        old_stream_by_id = {
+            item[
+                "stream_id"
+            ]:
+                item
+            for item in old_record[
+                "streams"
+            ]
+        }
+
+        old_sync_by_id = {
+            item[
+                "stream_id"
+            ]:
+                item
+            for item in old_record[
+                "synchronization"
+            ]
+        }
+
+        if set(
+            old_stream_by_id
+        ) != set(
+            old_sync_by_id
+        ):
+            raise ValueError(
+                f"{trajectory_id!r}: Phase-3 stream/sync inventory mismatch"
+            )
+
+        for stream in record[
+            "streams"
+        ]:
+            stream_id = stream[
+                "stream_id"
+            ]
+
+            if stream_id not in domains:
+                raise ValueError(
+                    f"{trajectory_id!r}: unexpected stream "
+                    f"{stream_id!r}"
+                )
+
+            old_stream = old_stream_by_id[
+                stream_id
+            ]
+
+            if old_stream[
+                "clock_domain"
+            ] != "sensor_clock":
+                raise ValueError(
+                    f"{trajectory_id!r}: expected Phase-3A nominal "
+                    f"sensor_clock label for {stream_id!r}"
+                )
+
+            for key, value in old_stream.items():
+                if key == "clock_domain":
+                    continue
+
+                if stream[
+                    key
+                ] != value:
+                    raise ValueError(
+                        f"{trajectory_id!r}: unexpected stream metadata "
+                        f"change for {stream_id!r}/{key!r}"
+                    )
+
+            stream[
+                "clock_domain"
+            ] = domains[
+                stream_id
+            ]
+
+        for sync in record[
+            "synchronization"
+        ]:
+            stream_id = sync[
+                "stream_id"
+            ]
+
+            old_sync = old_sync_by_id[
+                stream_id
+            ]
+
+            if old_sync[
+                "clock_domain"
+            ] != "sensor_clock":
+                raise ValueError(
+                    f"{trajectory_id!r}: unexpected Phase-3A sync "
+                    f"clock label for {stream_id!r}"
+                )
+
+            if old_sync[
+                "verification_status"
+            ] != "unverified":
+                raise ValueError(
+                    f"{trajectory_id!r}: source synchronization is "
+                    "not unverified"
+                )
+
+            if old_sync[
+                "measurement_time_basis"
+            ] != "sensor_header_stamp":
+                raise ValueError(
+                    f"{trajectory_id!r}: source measurement-time "
+                    "basis is not sensor_header_stamp"
+                )
+
+            if (
+                old_sync[
+                    "fixed_offset_seconds"
+                ] is not None
+                or old_sync[
+                    "fixed_offset_method"
+                ] is not None
+                or old_sync[
+                    "tolerance_seconds"
+                ] is not None
+                or old_sync[
+                    "tolerance_evidence"
+                ] is not None
+                or old_sync[
+                    "tolerance_selected_on_split"
+                ] is not None
+            ):
+                raise ValueError(
+                    f"{trajectory_id!r}: source manifest unexpectedly "
+                    "contains offset/tolerance decisions"
+                )
+
+            for key, value in old_sync.items():
+                if key in (
+                    "clock_domain",
+                    "method",
+                ):
+                    continue
+
+                if sync[
+                    key
+                ] != value:
+                    raise ValueError(
+                        f"{trajectory_id!r}: unexpected synchronization "
+                        f"change for {stream_id!r}/{key!r}"
+                    )
+
+            sync[
+                "clock_domain"
+            ] = domains[
+                stream_id
+            ]
+
+            sync[
+                "method"
+            ] = sync_method
+
+        for field in unchanged_record_fields:
+            if record[
+                field
+            ] != old_record[
+                field
+            ]:
+                raise ValueError(
+                    f"{trajectory_id!r}: Phase-3B migration "
+                    f"unexpectedly changed {field!r}"
+                )
+
+    new.pop(
+        "manifest_content_sha256",
+        None,
+    )
+
+    new[
+        "manifest_content_sha256"
+    ] = canonical_digest(
+        new
+    )
+
+    validate_manifest_payload(
+        new
+    )
+
+    return new
+
 
 def build_records(
     dataset_root: Path,

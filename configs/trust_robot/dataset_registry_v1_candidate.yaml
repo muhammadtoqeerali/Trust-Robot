@@ -33,22 +33,24 @@ physical_platform_plan:
 datasets:
   M2DGR:
     proposal_status: core_publicly_available
-    local_readiness: timing_characterized_sync_pending
+    local_readiness: phase3b_sync_evidence_characterized_sync_unverified
     platform: ground_robot_indoor_outdoor
 
     manifest:
-      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json
+      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3b_sync_evidence.json
       phase2_path: manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json
       legacy_path: manifests/m2dgr_trajectory_manifest_v1.json
       reference_quality_index_path: manifests/m2dgr_reference_quality_index_v1.json
       timing_evidence_index_path: manifests/m2dgr_timing_evidence_index_v1.json
+      synchronization_evidence_path: manifests/m2dgr_synchronization_evidence_v1.json
+      phase3a_path: manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json
       trajectory_count: 36
-      active_schema_status: current_phase3_timing_audited
+      active_schema_status: current_phase3b_sync_evidence_audited
       phase2_schema_status: current_phase2_reference_quality_audited
       legacy_schema_status: legacy_pre_reference_coverage_artifacts
-      active_manifest_content_sha256: 5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299
+      active_manifest_content_sha256: 5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db
       phase2_manifest_content_sha256: 7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745
-      active_manifest_file_sha256: 5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea
+      active_manifest_file_sha256: 95e7c97ae991538c2e7160c935cbaacf784b824eae7feecf1d7b540abe5ebb55
       phase2_manifest_file_sha256: b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f
       legacy_manifest_content_sha256: 6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671
       legacy_manifest_file_sha256: efcee88f57355d7458659084cb224dbfbde8efde28e7cd3d4be9cd16e4b5376e
@@ -56,6 +58,10 @@ datasets:
       reference_quality_index_file_sha256: 5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77
       timing_evidence_index_content_sha256: f2b1a74cb67124ec6fa725a23e3d8be8d2bd3d9d431590ad29ca1235dab149d6
       timing_evidence_index_file_sha256: 70f8dbf16b2363c55fa180a8180d7fbc322495c25790498ddf64fb4d74c87b3f
+      synchronization_evidence_content_sha256: a4e3e8dd18970a47f5cb50f4bb8ea3cb0e625f5f51d9eb0028bf34d953ee9966
+      synchronization_evidence_file_sha256: 58615c56442485fc488eeb47f72dd074f51c05c64cda258a91a8c4937b83ef91
+      phase3a_manifest_content_sha256: 5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299
+      phase3a_manifest_file_sha256: 5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea
 
     verified_assets:
       raw_rosbags: true
@@ -71,6 +77,11 @@ datasets:
       trajectory_specific_stream_inventory_audited: true
       measurement_time_basis_sensor_header_observed: true
       bag_content_rehashed_during_phase3_finalization: false
+      phase3b_synchronization_evidence_artifact_validated: true
+      conservative_clock_domain_labels: 4
+      imu_content_clean_cohort_trajectories: 28
+      imu_near_zero_temporal_association_observed: true
+      nonzero_imu_fixed_offset_supported: false
 
     reference_quality_summary:
       rtk_ins_trajectories: 16
@@ -111,8 +122,29 @@ datasets:
       common_header_range_is_validity_mask: false
       nearest_neighbor_timing_is_sync_proof: false
 
+    synchronization_evidence_summary:
+      gnss_receiver_utc_characterized_trajectories: 18
+      all_compared_fix_headers_exact_receiver_utc: true
+      receiver_clock_resets_observed: 0
+      bag_record_time_is_measurement_time: false
+      sensor_header_host_system_epoch_behavior_observed: true
+      common_physical_clock_verified: false
+      imu_clean_cohort_trajectories: 28
+      imu_best_lag_ms_min: -11.0
+      imu_best_lag_ms_median: -4.0
+      imu_best_lag_ms_max: 0.0
+      imu_zero_lag_vector_correlation_median: 0.996203211
+      imu_best_minus_zero_correlation_median: 0.000086185
+      near_zero_imu_temporal_association_observed: true
+      nonzero_fixed_offset_supported: false
+      clock_domain_equality_is_sync_proof: false
+
     unresolved:
       synchronization_verified: false
+      common_physical_clock_verified: false
+      camera_image_to_imu_capture_timing_verified: false
+      lidar_to_imu_capture_timing_verified: false
+      reference_to_estimator_temporal_association_verified: false
       numerical_association_tolerance_frozen: false
       continuous_time_reference_coverage_verified: false
       full_reference_coverage_verified: false
@@ -147,6 +179,9 @@ datasets:
       - use_independent_IMU_instance_for_estimator_input_when_reference_uses_Xsens
       - rosbag_record_time_is_transport_provenance_not_measurement_time
       - sensor_header_stamp_is_observed_measurement_time_basis_not_sync_proof
+      - equal_clock_domain_labels_are_not_synchronization_proof
+      - distinct_phase3b_clock_labels_preserve_unverified_physical_clock_relation
+      - near_zero_imu_content_association_does_not_freeze_a_fixed_offset
       - do_not_fabricate_camera_streams_for_street_09_or_street_010
       - common_header_range_is_diagnostic_not_an_automatic_validity_mask
       - reversed_header_timestamp_evidence_does_not_authorize_automatic_repair

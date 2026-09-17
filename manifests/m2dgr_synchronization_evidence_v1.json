@@ -1,0 +1,140 @@
+{
+  "content_sha256": "a4e3e8dd18970a47f5cb50f4bb8ea3cb0e625f5f51d9eb0028bf34d953ee9966",
+  "dataset_id": "M2DGR",
+  "manifest_semantics": {
+    "clock_domain_equality_may_be_used_as_sync_proof": false,
+    "current_shared_sensor_clock_label_is_physical_clock_proof": false,
+    "phase3_source_manifest_content_sha256": "5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299",
+    "phase3_timing_index_content_sha256": "f2b1a74cb67124ec6fa725a23e3d8be8d2bd3d9d431590ad29ca1235dab149d6",
+    "recommended_conservative_clock_domains": {
+      "/camera/color/image_raw/compressed": "m2dgr_camera_image_header_clock_unverified",
+      "/camera/imu": "m2dgr_camera_imu_header_clock_unverified",
+      "/handsfree/imu": "m2dgr_handsfree_header_clock_unverified",
+      "/velodyne_points": "m2dgr_velodyne_header_clock_unverified"
+    }
+  },
+  "observations": {
+    "bag_record_clock": {
+      "interpretation": "bag record time is transport provenance and is not accepted as sensor measurement time",
+      "stable_fixed_offset_to_gnss_receiver_utc": false,
+      "transport_latency_separated_from_clock_offset": false
+    },
+    "connection_inventory": {
+      "clock_topic_present_trajectory_count": 0,
+      "diagnostics_present_trajectory_count": 0,
+      "gnss_clock_topics_present_trajectory_count": 18,
+      "rosout_present_trajectory_count": 0,
+      "trajectory_count": 36,
+      "velodyne_packets_present_trajectory_count": 0
+    },
+    "gnss_receiver_clock": {
+      "all_fix_headers_exact_receiver_utc": true,
+      "interpretation": "GNSS receiver UTC is independently observable and internally coherent on the 18 GNSS-bearing trajectories",
+      "receiver_clock_reset_count": 0,
+      "reverse_receiver_utc_count": 0,
+      "trajectory_count": 18,
+      "unresolved_pvt_utc_count": 0
+    },
+    "imu_content_association": {
+      "author_calibration_independently_verified": false,
+      "best_lag_ms": {
+        "max": 0.0,
+        "median": -4.0,
+        "min": -11.0
+      },
+      "best_minus_zero_vector_correlation": {
+        "max": 0.0006514734283682433,
+        "median": 8.618496162710043e-05,
+        "min": 0.0
+      },
+      "clean_trajectory_count": 28,
+      "interpretation": "full-vector gyro content provides strong evidence of near-zero camera-IMU to HandsFree-IMU temporal association at native sample-scale resolution, but does not resolve a unique nonzero fixed offset",
+      "near_zero_temporal_association_observed": true,
+      "nonzero_fixed_offset_supported": false,
+      "rotation_estimated_from_timing_data": false,
+      "signal": "three_axis_angular_velocity_in_author_published_lidar_frame",
+      "window_lag_range_ms": {
+        "max": 34.0,
+        "median": 16.0,
+        "min": 5.0
+      },
+      "window_median_lag_ms": {
+        "max": 0.0,
+        "median": -4.0,
+        "min": -9.0
+      },
+      "zero_lag_vector_correlation": {
+        "max": 0.9984259687538505,
+        "median": 0.996203210851718,
+        "min": 0.9217757815641027
+      }
+    },
+    "sensor_header_epoch": {
+      "host_system_epoch_behavior_observed": true,
+      "interpretation": "sensor record-minus-header behavior remains comparatively stable while record-minus-GNSS-UTC varies substantially; this is consistent with host/system-time epoch expression or mapping, but does not prove a shared oscillator or physical capture synchronization",
+      "native_gnss_device_utc_behavior_supported": false,
+      "verified_common_physical_clock": false
+    }
+  },
+  "policy": {
+    "alignment_based_exclusion_rule_created": false,
+    "automatic_sample_exclusion_rule_created": false,
+    "characterization_only": true,
+    "clock_domain_verified": false,
+    "evaluation_ready": false,
+    "fixed_offset_applied": false,
+    "fixed_offset_estimated": false,
+    "phase3_manifest_modified": false,
+    "physical_capture_synchronization_verified": false,
+    "raw_data_modified": false,
+    "synchronization_tolerance_frozen": false,
+    "synchronization_verified": false
+  },
+  "remaining_blockers": [
+    "camera_image_to_imu_physical_capture_timing_not_independently_verified",
+    "lidar_to_imu_physical_capture_timing_not_independently_verified",
+    "reference_to_estimator_temporal_association_not_independently_verified",
+    "common_physical_clock_not_independently_verified",
+    "no_validation_calibration_split_for_data_selected_sync_tolerance",
+    "calibration_not_independently_verified"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_SYNCHRONIZATION_EVIDENCE_V1",
+  "schema_version": 1,
+  "source_artifacts": {
+    "clock_domain_fingerprint": {
+      "file_sha256": "4792e57ee378491369dc1f5ec813b19bb6ff427c8dad19780d712e4ea26b7a76",
+      "relative_path": "audit/phase3b_staging/clock_domain_fingerprint_v1/phase3b_clock_domain_fingerprint_v1.json",
+      "size_bytes": 37103
+    },
+    "connection_inventory": {
+      "file_sha256": "f97a4bef96a99891d415d97631157b117c9c5c1eccb7a3e0cf666e85d776151e",
+      "relative_path": "audit/phase3b_staging/connection_inventory_v1/phase3b_connection_inventory_v1.json",
+      "size_bytes": 170127
+    },
+    "gnss_clock": {
+      "file_sha256": "206870c495859942441a60edacc9e2bab4e2149950355c56c5defc7c2f74df9a",
+      "relative_path": "audit/phase3b_staging/gnss_clock_v1/phase3b_gnss_clock_summary_v1.json",
+      "size_bytes": 64908
+    },
+    "phase3_manifest": {
+      "file_sha256": "5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea",
+      "relative_path": "manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json",
+      "size_bytes": 177822
+    },
+    "phase3_timing_index": {
+      "file_sha256": "70f8dbf16b2363c55fa180a8180d7fbc322495c25790498ddf64fb4d74c87b3f",
+      "relative_path": "manifests/m2dgr_timing_evidence_index_v1.json",
+      "size_bytes": 43534
+    },
+    "vector_gyro_clean_cohort": {
+      "file_sha256": "643156f6411245416c644fe310cc06f5ff699576a5d56315a2f6f4ac19537792",
+      "relative_path": "audit/phase3b_staging/vector_gyro_alignment_clean_cohort_v1/phase3b_vector_gyro_alignment_clean_cohort_v1.json",
+      "size_bytes": 3655995
+    },
+    "within_trajectory_clock_drift": {
+      "file_sha256": "dc37e3f4ca1b35ce674e024f02c5239f309e3ca2a7cc87ee1cc6bbf19a6866de",
+      "relative_path": "audit/phase3b_staging/within_trajectory_clock_drift_v1/phase3b_within_trajectory_clock_drift_v1.json",
+      "size_bytes": 30536
+    }
+  }
+}
