@@ -33,24 +33,28 @@ physical_platform_plan:
 datasets:
   M2DGR:
     proposal_status: core_publicly_available
-    local_readiness: phase3b_sync_evidence_characterized_sync_unverified
+    local_readiness: phase3c_camera_imu_characterized_sync_unverified
     platform: ground_robot_indoor_outdoor
 
     manifest:
-      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3b_sync_evidence.json
+      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3c_camera_imu_sync_evidence.json
+      phase3b_path: manifests/m2dgr_trajectory_manifest_v1_phase3b_sync_evidence.json
       phase2_path: manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json
       legacy_path: manifests/m2dgr_trajectory_manifest_v1.json
       reference_quality_index_path: manifests/m2dgr_reference_quality_index_v1.json
       timing_evidence_index_path: manifests/m2dgr_timing_evidence_index_v1.json
       synchronization_evidence_path: manifests/m2dgr_synchronization_evidence_v1.json
+      camera_imu_synchronization_evidence_path: manifests/m2dgr_camera_imu_synchronization_evidence_v1.json
       phase3a_path: manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json
       trajectory_count: 36
-      active_schema_status: current_phase3b_sync_evidence_audited
+      active_schema_status: current_phase3c_camera_imu_sync_evidence_audited
       phase2_schema_status: current_phase2_reference_quality_audited
       legacy_schema_status: legacy_pre_reference_coverage_artifacts
-      active_manifest_content_sha256: 5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db
+      active_manifest_content_sha256: f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387
+      phase3b_manifest_content_sha256: 5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db
       phase2_manifest_content_sha256: 7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745
-      active_manifest_file_sha256: 95e7c97ae991538c2e7160c935cbaacf784b824eae7feecf1d7b540abe5ebb55
+      active_manifest_file_sha256: 4453544d437b31cb0ab16b090dfa2e710fab19cb1b90cb65b53d7651166eb156
+      phase3b_manifest_file_sha256: 95e7c97ae991538c2e7160c935cbaacf784b824eae7feecf1d7b540abe5ebb55
       phase2_manifest_file_sha256: b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f
       legacy_manifest_content_sha256: 6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671
       legacy_manifest_file_sha256: efcee88f57355d7458659084cb224dbfbde8efde28e7cd3d4be9cd16e4b5376e
@@ -60,6 +64,8 @@ datasets:
       timing_evidence_index_file_sha256: 70f8dbf16b2363c55fa180a8180d7fbc322495c25790498ddf64fb4d74c87b3f
       synchronization_evidence_content_sha256: a4e3e8dd18970a47f5cb50f4bb8ea3cb0e625f5f51d9eb0028bf34d953ee9966
       synchronization_evidence_file_sha256: 58615c56442485fc488eeb47f72dd074f51c05c64cda258a91a8c4937b83ef91
+      camera_imu_synchronization_evidence_content_sha256: d765f8ac13ff21dca23e289efef65fed31372189363e7fa61982e122514e190b
+      camera_imu_synchronization_evidence_file_sha256: 95ff9fdcaf2b74a9f7b118334f0fe3626bee3afe0916c3e09df4a7451d8425c7
       phase3a_manifest_content_sha256: 5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299
       phase3a_manifest_file_sha256: 5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea
 
@@ -82,6 +88,9 @@ datasets:
       imu_content_clean_cohort_trajectories: 28
       imu_near_zero_temporal_association_observed: true
       nonzero_imu_fixed_offset_supported: false
+      phase3c_camera_imu_synchronization_evidence_artifact_validated: true
+      phase3c_camera_imu_zero_lag_clean_cohort_trajectories: 28
+      phase3c_camera_imu_fixed_offset_supported: false
 
     reference_quality_summary:
       rtk_ins_trajectories: 16
@@ -139,6 +148,26 @@ datasets:
       nonzero_fixed_offset_supported: false
       clock_domain_equality_is_sync_proof: false
 
+    camera_imu_synchronization_evidence_summary:
+      released_realsense_metadata_topics_present: false
+      released_raw_camera_gyro_topics_present: false
+      released_raw_camera_accel_topics_present: false
+      exact_realsense_driver_configuration_recovered: false
+      united_imu_copy_style_sample_hold_supported: false
+      zero_lag_clean_cohort_trajectories: 28
+      zero_lag_vector_correlation_min: 0.069851642
+      zero_lag_vector_correlation_median: 0.728267345
+      zero_lag_vector_correlation_max: 0.943895974
+      zero_lag_rotation_angle_correlation_median: 0.710193493
+      zero_lag_median_rotation_error_deg_median: 0.257421703
+      zero_lag_median_rotation_error_deg_max: 1.639230858
+      lag_pilot_gate_01_best_vector_lag_ms: 23
+      lag_pilot_hall_01_best_vector_lag_ms: -67
+      lag_pilot_hall_01_hits_scan_boundary: true
+      lag_pilot_room_01_best_vector_lag_ms: -3
+      common_nonzero_camera_imu_fixed_offset_supported: false
+      camera_image_to_imu_physical_capture_sync_verified: false
+
     unresolved:
       synchronization_verified: false
       common_physical_clock_verified: false
@@ -182,6 +211,8 @@ datasets:
       - equal_clock_domain_labels_are_not_synchronization_proof
       - distinct_phase3b_clock_labels_preserve_unverified_physical_clock_relation
       - near_zero_imu_content_association_does_not_freeze_a_fixed_offset
+      - camera_visual_frontend_success_is_not_a_timing_validity_mask
+      - do_not_expand_camera_imu_lag_search_to_force_a_fixed_offset
       - do_not_fabricate_camera_streams_for_street_09_or_street_010
       - common_header_range_is_diagnostic_not_an_automatic_validity_mask
       - reversed_header_timestamp_evidence_does_not_authorize_automatic_repair

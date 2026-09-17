@@ -17,14 +17,15 @@ Completed subphases:
 
 - **Phase 3A — M2DGR Sensor Timing Characterization and Stream Inventory**
 - **Phase 3B — M2DGR Synchronization Evidence and Conservative Clock Semantics**
+- **Phase 3C — M2DGR Camera-Image ↔ D435i-IMU Timing Characterization**
 
-Phase 3B does not complete physical capture-time synchronization verification.
+Phase 3C does not complete physical capture-time synchronization verification.
 
 ## Current validated software state
 
 TRUST-ROBOT unit tests:
 
-**81 PASS.**
+**89 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -42,6 +43,11 @@ Implemented Phase-3 components now include:
 - permanent synchronization-evidence schema/validator
 - conservative Phase-3B successor-manifest migration
 - reproducible Phase-3B finalizer
+- strict Phase-3C camera/IMU evidence schema/validator
+- frozen visual/gyro zero-lag association method
+- 28-trajectory Phase-3C zero-lag generalization cohort
+- conservative Phase-3C successor-manifest migration
+- reproducible Phase-3C camera/IMU finalizer
 - explicit contract rule that equal `clock_domain` strings are not
   synchronization proof
 
@@ -60,7 +66,7 @@ Stream availability:
 
 `street_09` and `street_010` contain neither audited camera stream.
 
-The current Phase-3B successor contains:
+The current Phase-3C successor contains:
 
 - 36 trajectory records
 - 140 stream entries
@@ -291,15 +297,90 @@ File SHA256:
 
 The Phase-3A manifest remains retained and unchanged.
 
+The Phase-3B manifest remains retained as the immutable predecessor of the
+Phase-3C successor.
+
+## Phase-3C immutable artifacts
+
+Camera/IMU synchronization evidence:
+
+`manifests/m2dgr_camera_imu_synchronization_evidence_v1.json`
+
+Content SHA256:
+
+`d765f8ac13ff21dca23e289efef65fed31372189363e7fa61982e122514e190b`
+
+File SHA256:
+
+`95ff9fdcaf2b74a9f7b118334f0fe3626bee3afe0916c3e09df4a7451d8425c7`
+
+Phase-3C successor manifest:
+
+`manifests/m2dgr_trajectory_manifest_v1_phase3c_camera_imu_sync_evidence.json`
+
+Content SHA256:
+
+`f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387`
+
+File SHA256:
+
+`4453544d437b31cb0ab16b090dfa2e710fab19cb1b90cb65b53d7651166eb156`
+
+The successor changes 68 D435i synchronization `method` fields only.
+Clock domains, verification state, offsets, tolerances, stream metadata, and
+non-camera synchronization entries are unchanged from Phase 3B.
+
+## Phase-3C camera/IMU findings
+
+The frozen visual/gyro method processed all 28 predeclared clean-cohort
+trajectories.
+
+Zero-lag vector correlation:
+
+- minimum: 0.069851642
+- median: 0.728267345
+- maximum: 0.943895974
+
+Per-trajectory median rotation disagreement:
+
+- minimum: 0.128085942 degrees
+- median: 0.257421703 degrees
+- maximum: 1.639230858 degrees
+
+The physical-content association is therefore heterogeneous.
+
+A three-trajectory frozen lag pilot produced primary vector-correlation optima:
+
+- `gate_01`: +23 ms
+- `hall_01`: -67 ms, at the predeclared scan boundary
+- `room_01`: -3 ms
+
+Independent rotation-error diagnostics did not select the same lags.
+
+No common nonzero camera/IMU fixed offset is supported.
+
+No wider lag scan is authorized to force an offset.
+
+Released bags do not retain the RealSense metadata/raw motion topics required
+to independently identify the RGB physical capture event represented by the
+released ROS image header.
+
+Camera-image-to-IMU timing characterization is therefore complete to the limit
+supported by released evidence, while physical capture synchronization remains
+unverified.
+
 ## Synchronization state
 
-At the Phase-3B checkpoint:
+At the Phase-3C checkpoint:
 
 - measurement-time field observed: TRUE
 - trajectory-specific stream presence audited: TRUE
 - GNSS receiver UTC independently characterized: TRUE
 - host/system-epoch sensor-header behavior observed: TRUE
 - IMU near-zero physical-content association observed: TRUE
+- camera/IMU physical-content consistency observed on many trajectories: TRUE
+- camera/IMU consistency uniform across the clean cohort: FALSE
+- unique nonzero camera/IMU fixed offset identified: FALSE
 - common physical clock independently verified: FALSE
 - camera-image-to-IMU capture timing independently verified: FALSE
 - LiDAR-to-IMU capture timing independently verified: FALSE
@@ -330,7 +411,8 @@ Do not:
 
 ## Remaining Phase-3 work
 
-1. Independently characterize camera-image-to-IMU physical capture timing.
+1. Preserve the Phase-3C camera/IMU result as unverified physical capture
+   synchronization; do not resume lag tuning without new independent evidence.
 2. Independently characterize LiDAR-to-IMU physical capture timing.
 3. Establish reference-to-estimator temporal association.
 4. Independently verify calibration needed by evaluation.

@@ -28,6 +28,10 @@ from .m2dgr_synchronization_evidence import (
     CONSERVATIVE_CLOCK_DOMAINS,
     validate_m2dgr_synchronization_evidence,
 )
+from .m2dgr_camera_imu_synchronization_evidence import (
+    CAMERA_IMU_STREAM_IDS,
+    validate_m2dgr_camera_imu_synchronization_evidence,
+)
 from .reference_quality import (
     load_reference_quality_artifact,
 )
@@ -755,6 +759,272 @@ def build_phase3b_synchronization_successor_payload(
     )
 
     return new
+
+
+def build_phase3c_camera_imu_successor_payload(
+    phase3b_payload: dict,
+    camera_imu_evidence: dict,
+    evidence_relative_path: str = (
+        "manifests/"
+        "m2dgr_camera_imu_synchronization_evidence_v1.json"
+    ),
+) -> dict:
+    """Apply Phase-3C camera/IMU evidence without verifying synchronization.
+
+    Only the synchronization-method text for the D435i color and camera-IMU
+    streams may change. Stream metadata, clock domains, measurement-time
+    basis, verification status, fixed offsets, tolerances, reference
+    metadata, and all non-camera synchronization entries are preserved.
+    """
+
+    validate_manifest_payload(
+        phase3b_payload
+    )
+
+    validate_m2dgr_camera_imu_synchronization_evidence(
+        camera_imu_evidence
+    )
+
+    if phase3b_payload[
+        "dataset_id"
+    ] != DATASET_ID:
+        raise ValueError(
+            "Phase-3C camera/IMU successor requires M2DGR"
+        )
+
+    expected_source_sha = (
+        camera_imu_evidence[
+            "manifest_semantics"
+        ][
+            "phase3b_source_manifest_content_sha256"
+        ]
+    )
+
+    if phase3b_payload[
+        "manifest_content_sha256"
+    ] != expected_source_sha:
+        raise ValueError(
+            "Phase-3C camera/IMU evidence is not bound to "
+            "the supplied Phase-3B manifest"
+        )
+
+    semantics = camera_imu_evidence[
+        "manifest_semantics"
+    ]
+
+    if (
+        tuple(
+            semantics[
+                "camera_imu_sync_stream_ids"
+            ]
+        )
+        != CAMERA_IMU_STREAM_IDS
+    ):
+        raise ValueError(
+            "Phase-3C evidence contains an unexpected "
+            "camera/IMU stream set"
+        )
+
+    if (
+        semantics[
+            "phase3b_clock_domains_preserved"
+        ] is not True
+        or semantics[
+            "only_camera_imu_sync_method_updates_allowed"
+        ] is not True
+    ):
+        raise ValueError(
+            "Phase-3C evidence does not permit the expected "
+            "conservative successor operation"
+        )
+
+    if (
+        not evidence_relative_path
+        or Path(
+            evidence_relative_path
+        ).is_absolute()
+    ):
+        raise ValueError(
+            "Phase-3C evidence path must be non-empty and relative"
+        )
+
+    new = deepcopy(
+        phase3b_payload
+    )
+
+    old_by_id = {
+        record[
+            "trajectory_id"
+        ]:
+            record
+        for record in phase3b_payload[
+            "records"
+        ]
+    }
+
+    sync_method = (
+        "Phase-3C camera/IMU synchronization evidence from "
+        f"{evidence_relative_path}; frozen visual/gyro analysis shows "
+        "physical-content consistency on many trajectories but "
+        "heterogeneous agreement across the clean cohort, and the "
+        "predeclared lag pilot does not identify a common fixed offset; "
+        "RGB image-header physical capture semantics and RealSense frame "
+        "metadata remain unresolved; synchronization remains unverified "
+        "and no fixed offset or tolerance is selected"
+    )
+
+    for record in new[
+        "records"
+    ]:
+        trajectory_id = record[
+            "trajectory_id"
+        ]
+
+        old_record = old_by_id[
+            trajectory_id
+        ]
+
+        for key, value in (
+            old_record.items()
+        ):
+            if key == "synchronization":
+                continue
+
+            if record[
+                key
+            ] != value:
+                raise ValueError(
+                    f"{trajectory_id!r}: Phase-3C migration "
+                    f"unexpectedly changed record field {key!r}"
+                )
+
+        old_sync_by_id = {
+            item[
+                "stream_id"
+            ]:
+                item
+            for item in old_record[
+                "synchronization"
+            ]
+        }
+
+        stream_ids = {
+            item[
+                "stream_id"
+            ]
+            for item in old_record[
+                "streams"
+            ]
+        }
+
+        if (
+            set(
+                old_sync_by_id
+            )
+            != stream_ids
+        ):
+            raise ValueError(
+                f"{trajectory_id!r}: Phase-3B stream/sync "
+                "inventory mismatch"
+            )
+
+        for sync in record[
+            "synchronization"
+        ]:
+            stream_id = sync[
+                "stream_id"
+            ]
+
+            old_sync = old_sync_by_id[
+                stream_id
+            ]
+
+            if old_sync[
+                "verification_status"
+            ] != "unverified":
+                raise ValueError(
+                    f"{trajectory_id!r}: source synchronization "
+                    f"is not unverified for {stream_id!r}"
+                )
+
+            if old_sync[
+                "measurement_time_basis"
+            ] != "sensor_header_stamp":
+                raise ValueError(
+                    f"{trajectory_id!r}: source measurement-time "
+                    f"basis changed for {stream_id!r}"
+                )
+
+            if (
+                old_sync[
+                    "fixed_offset_seconds"
+                ] is not None
+                or old_sync[
+                    "fixed_offset_method"
+                ] is not None
+                or old_sync[
+                    "tolerance_seconds"
+                ] is not None
+                or old_sync[
+                    "tolerance_evidence"
+                ] is not None
+                or old_sync[
+                    "tolerance_selected_on_split"
+                ] is not None
+            ):
+                raise ValueError(
+                    f"{trajectory_id!r}: source manifest already "
+                    f"contains an offset/tolerance decision for "
+                    f"{stream_id!r}"
+                )
+
+            if (
+                stream_id
+                not in CAMERA_IMU_STREAM_IDS
+            ):
+                if sync != old_sync:
+                    raise ValueError(
+                        f"{trajectory_id!r}: Phase-3C unexpectedly "
+                        f"changed non-camera synchronization for "
+                        f"{stream_id!r}"
+                    )
+                continue
+
+            for key, value in (
+                old_sync.items()
+            ):
+                if key == "method":
+                    continue
+
+                if sync[
+                    key
+                ] != value:
+                    raise ValueError(
+                        f"{trajectory_id!r}: Phase-3C unexpectedly "
+                        f"changed {stream_id!r}/{key!r}"
+                    )
+
+            sync[
+                "method"
+            ] = sync_method
+
+    new.pop(
+        "manifest_content_sha256",
+        None,
+    )
+
+    new[
+        "manifest_content_sha256"
+    ] = canonical_digest(
+        new
+    )
+
+    validate_manifest_payload(
+        new
+    )
+
+    return new
+
 
 
 def build_records(

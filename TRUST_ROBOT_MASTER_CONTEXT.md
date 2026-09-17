@@ -985,3 +985,102 @@ Remaining Phase-3 work:
 
 Do not begin estimator scoring until these blockers are resolved by explicit
 evidence and policy.
+
+---
+
+## Phase-3C checkpoint — 2026-09-17
+
+M2DGR camera-image-to-D435i-IMU timing characterization has reached a
+permanent evidence checkpoint.
+
+Released-bag provenance findings:
+
+- D435i color and united `/camera/imu` streams exist on 34/36 trajectories;
+- released bags retain no RealSense metadata topics;
+- released bags retain no raw camera gyro/accelerometer topics;
+- exact RealSense driver revision/runtime configuration is not recoverable
+  from the released topic set.
+
+United-IMU pilot:
+
+- `/camera/imu` runs at approximately 200 Hz;
+- consecutive acceleration vectors do not show the simple held-last/copy
+  fingerprint on `gate_01`, `hall_01`, or `room_01`;
+- exact united-IMU construction remains unresolved.
+
+A visual/gyro zero-lag method was frozen before lag analysis and then applied
+unchanged to the predeclared 28-trajectory clean cohort.
+
+All 28 trajectories processed successfully.
+
+Aggregate zero-lag results:
+
+- vector-correlation min/median/max:
+  0.069851642 / 0.728267345 / 0.943895974;
+- rotation-angle-correlation median:
+  0.710193493;
+- per-trajectory median rotation-error min/median/max:
+  0.128085942 / 0.257421703 / 1.639230858 degrees.
+
+Agreement is heterogeneous.
+
+In particular, `room_dark_04`, `room_dark_05`, and `room_dark_06` demonstrate
+that successful visual front-end processing is not sufficient evidence of
+correct physical timing.
+
+The frozen three-trajectory lag pilot produced primary vector-correlation
+optima:
+
+- `gate_01`: +23 ms;
+- `hall_01`: -67 ms and at the scan boundary;
+- `room_01`: -3 ms.
+
+The improvements over zero lag are small/inconsistent and independent
+rotation-error diagnostics select different lags.
+
+No common nonzero camera-to-IMU fixed offset is scientifically supported.
+
+The scan is not expanded to force an offset.
+
+Phase-3C immutable repository artifacts:
+
+- `manifests/m2dgr_camera_imu_synchronization_evidence_v1.json`
+  - content SHA256:
+    `d765f8ac13ff21dca23e289efef65fed31372189363e7fa61982e122514e190b`
+  - file SHA256:
+    `95ff9fdcaf2b74a9f7b118334f0fe3626bee3afe0916c3e09df4a7451d8425c7`
+- `manifests/m2dgr_trajectory_manifest_v1_phase3c_camera_imu_sync_evidence.json`
+  - content SHA256:
+    `f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387`
+  - file SHA256:
+    `4453544d437b31cb0ab16b090dfa2e710fab19cb1b90cb65b53d7651166eb156`
+
+The Phase-3C successor is bound to the Phase-3B manifest content SHA256:
+
+`5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db`
+
+Only 68 synchronization `method` fields for the two D435i streams change.
+Clock domains, verification status, measurement-time basis, offsets,
+tolerances, stream metadata, and non-camera synchronization entries remain
+unchanged.
+
+Validated software state:
+
+- 89 TRUST-ROBOT unit tests passing;
+- synchronization remains `UNVERIFIED`;
+- fixed camera/IMU offset remains unset;
+- synchronization tolerance remains unset;
+- physical RGB capture synchronization remains unverified;
+- evaluation readiness remains false.
+
+Remaining Phase-3 blockers include:
+
+- LiDAR-to-IMU physical capture timing;
+- reference-to-estimator temporal association;
+- common physical-clock verification;
+- independent calibration verification;
+- a valid validation/calibration split before any data-selected synchronization
+  tolerance is frozen.
+
+Do not resume camera/IMU lag tuning without new independent evidence that
+resolves the released image-header physical capture semantics.

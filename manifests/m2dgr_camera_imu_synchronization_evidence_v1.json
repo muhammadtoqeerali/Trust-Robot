@@ -1,0 +1,202 @@
+{
+  "content_sha256": "d765f8ac13ff21dca23e289efef65fed31372189363e7fa61982e122514e190b",
+  "dataset_id": "M2DGR",
+  "manifest_semantics": {
+    "camera_imu_sync_stream_ids": [
+      "/camera/color/image_raw/compressed",
+      "/camera/imu"
+    ],
+    "only_camera_imu_sync_method_updates_allowed": true,
+    "phase3b_clock_domains_preserved": true,
+    "phase3b_source_manifest_content_sha256": "5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db"
+  },
+  "observations": {
+    "conclusion": {
+      "camera_and_d435i_imu_show_zero_lag_physical_content_consistency_on_many_trajectories": true,
+      "consistency_is_uniform_across_clean_cohort": false,
+      "recommended_next_action": "stop camera_imu lag tuning; retain synchronization as unverified and proceed to the next independent Phase-3 synchronization blocker",
+      "released_data_identify_unique_camera_to_imu_fixed_offset": false,
+      "released_data_independently_verify_rgb_physical_capture_synchronization": false
+    },
+    "lag_pilot": {
+      "best_minus_zero_vector_correlation": {
+        "gate_01": 0.0005880449930798504,
+        "hall_01": 0.005890235302994928,
+        "room_01": 5.833986569681038e-05
+      },
+      "best_vector_correlation_lags_ms": {
+        "gate_01": [
+          23
+        ],
+        "hall_01": [
+          -67
+        ],
+        "room_01": [
+          -3
+        ]
+      },
+      "common_nonzero_fixed_offset_supported": false,
+      "common_support_across_all_lags": true,
+      "lag_specific_sample_admission": false,
+      "lag_step_ms": 1,
+      "minimum_median_rotation_error_lags_ms": {
+        "gate_01": [
+          8
+        ],
+        "hall_01": [
+          48
+        ],
+        "room_01": [
+          -16
+        ]
+      },
+      "primary_best_lag_hits_scan_boundary": {
+        "gate_01": false,
+        "hall_01": true,
+        "room_01": false
+      },
+      "scan_expansion_scientifically_justified": false,
+      "trajectory_ids": [
+        "gate_01",
+        "hall_01",
+        "room_01"
+      ],
+      "visual_method_changed_after_zero_lag_pilot": false
+    },
+    "released_topic_evidence": {
+      "camera_info_topics_present": false,
+      "camera_metadata_topics_present": false,
+      "compressed_d435i_color_topic_present": true,
+      "exact_driver_configuration_recoverable_from_bag_topics": false,
+      "raw_camera_accel_topics_present": false,
+      "raw_camera_gyro_topics_present": false,
+      "trajectory_count": 36,
+      "united_camera_imu_topic_present": true
+    },
+    "united_imu_characterization": {
+      "affine_pilot_used_to_reject_linear_interpolation": false,
+      "copy_style_sample_hold_supported": false,
+      "exact_consecutive_acceleration_repeat_count": {
+        "gate_01": 0,
+        "hall_01": 0,
+        "room_01": 0
+      },
+      "linear_interpolation_or_other_processing_resolved": false,
+      "median_header_period_ms": {
+        "gate_01": 4.98128,
+        "hall_01": 4.986048,
+        "room_01": 4.988194
+      },
+      "pilot_trajectory_ids": [
+        "gate_01",
+        "hall_01",
+        "room_01"
+      ]
+    },
+    "zero_lag_visual_gyro_clean_cohort": {
+      "dark_room_frontend_success_counterexample": {
+        "room_dark_04": {
+          "median_rotation_error_deg": 1.0296125986558022,
+          "usable_pair_count": 2061,
+          "visual_success_fraction": 0.982840800762631,
+          "zero_lag_rotation_angle_correlation": 0.20534743554045456,
+          "zero_lag_vector_correlation": 0.1285024285721982
+        },
+        "room_dark_05": {
+          "median_rotation_error_deg": 1.2937979044537837,
+          "usable_pair_count": 2287,
+          "visual_success_fraction": 0.9921976592977894,
+          "zero_lag_rotation_angle_correlation": 0.14639254526103448,
+          "zero_lag_vector_correlation": 0.1600840773160541
+        },
+        "room_dark_06": {
+          "median_rotation_error_deg": 1.6392308582500785,
+          "usable_pair_count": 2513,
+          "visual_success_fraction": 0.9968279143536876,
+          "zero_lag_rotation_angle_correlation": 0.06102137799530794,
+          "zero_lag_vector_correlation": 0.06985164212535445
+        }
+      },
+      "failed_trajectory_count": 0,
+      "interpretation": "physical-content agreement is present on many trajectories but is heterogeneous; visual frontend success alone is not accepted as timing-validity evidence",
+      "lag_search_performed": false,
+      "median_rotation_error_deg": {
+        "count": 28,
+        "max": 1.6392308582500785,
+        "median": 0.25742170298551653,
+        "min": 0.12808594165758763,
+        "p25": 0.17040115494271238,
+        "p75": 0.3416457297202083
+      },
+      "method_changed_after_pilot": false,
+      "rotation_angle_correlation": {
+        "count": 28,
+        "max": 0.9742334529212391,
+        "median": 0.710193493299055,
+        "min": 0.06102137799530794,
+        "p25": 0.5488195674604898,
+        "p75": 0.8045337149657781
+      },
+      "selection_basis": "pre-existing Phase-3A structural timing evidence only",
+      "successful_trajectory_count": 28,
+      "trajectory_count": 28,
+      "usable_visual_imu_pair_count": {
+        "count": 28,
+        "max": 11453.0,
+        "median": 1085.0,
+        "min": 160.0,
+        "p25": 676.5,
+        "p75": 2798.0
+      },
+      "vector_correlation": {
+        "count": 28,
+        "max": 0.9438959735075354,
+        "median": 0.7282673454125702,
+        "min": 0.06985164212535445,
+        "p25": 0.5039112953116065,
+        "p75": 0.8020293681016872
+      },
+      "visual_success_fraction": {
+        "count": 28,
+        "max": 0.9968279143536876,
+        "median": 0.49907663513587286,
+        "min": 0.05901881224640354,
+        "p25": 0.2072629952516034,
+        "p75": 0.5923941615650813
+      }
+    }
+  },
+  "policy": {
+    "alignment_based_exclusion_rule_created": false,
+    "automatic_sample_exclusion_rule_created": false,
+    "characterization_only": true,
+    "evaluation_ready": false,
+    "fixed_offset_applied": false,
+    "fixed_offset_estimated": false,
+    "phase3b_manifest_modified": false,
+    "physical_capture_synchronization_verified": false,
+    "raw_data_modified": false,
+    "successor_clock_domains_modified": false,
+    "successor_non_camera_synchronization_modified": false,
+    "successor_stream_metadata_modified": false,
+    "synchronization_tolerance_frozen": false,
+    "synchronization_verified": false
+  },
+  "remaining_blockers": [
+    "rgb_image_header_physical_capture_event_not_independently_verified",
+    "released_bags_do_not_retain_realsense_frame_metadata",
+    "exact_realsense_driver_revision_and_runtime_configuration_not_identified",
+    "camera_calibration_not_independently_verified",
+    "visual_content_association_is_heterogeneous_across_trajectories",
+    "unique_camera_to_imu_fixed_offset_not_identified",
+    "no_validation_calibration_split_for_data_selected_sync_tolerance"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_CAMERA_IMU_SYNCHRONIZATION_EVIDENCE_V1",
+  "schema_version": 1,
+  "staging_source": {
+    "content_sha256": "59874240ba8255ecb8d01ef17b2a9948df92079fea13e50744ab1a5dafbe3113",
+    "file_sha256": "6e92471ac7564e109f7605e0c8ea00830ab8a3d47805f064e335a723989aafe9",
+    "relative_path": "audit/phase3c_staging/camera_imu_synchronization_evidence_v1/phase3c_camera_imu_synchronization_evidence_v1.json",
+    "size_bytes": 8446
+  }
+}
