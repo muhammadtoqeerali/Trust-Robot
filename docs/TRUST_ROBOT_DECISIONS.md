@@ -75,3 +75,40 @@ agreement is weak/heterogeneous; Leica cannot support the native LiDAR-interval
 translation diagnostic without interpolation; translation results change
 substantially with temporal-support definition; and RTK/INS receiver-UTC
 coordinate compatibility does not establish pose measurement-time semantics.
+
+## D-011 — Calibration artifact integrity is not sensor calibration
+
+Decision: explicitly separate calibration-related artifact roles into
+`artifact_integrity`, `calibration_provenance`, and
+`sensor_calibration_verification`.
+
+Legacy trajectory-manifest calibration artifacts default to
+`artifact_integrity`.
+
+Reason: the 36 existing M2DGR `calibration_artifacts` entries are raw-bag SHA
+integrity artifacts. Their verified status establishes file integrity, not
+camera intrinsics, sensor extrinsics, lever arms, or any other physical
+calibration quantity.
+
+A `sensor_calibration_verification` artifact must be independently verified and
+must explicitly identify the streams or frames to which the claim applies.
+
+Historical manifests remain byte-identical.
+
+## D-012 — Rotation content support does not upgrade full calibration
+
+Decision: record the frozen 28/28 D435i-IMU fixed-hypothesis result as
+independent released sensor-content support for the published relative-rotation
+convention, while keeping full calibration unverified.
+
+Do not infer translation, camera intrinsics, camera/LiDAR calibration,
+HandsFree/LiDAR full extrinsics, reference lever arms, synchronization, or
+evaluation readiness from this rotational-content result.
+
+No calibration successor trajectory manifest is created.
+
+Reason: the diagnostic compares a pre-existing published rotation against fixed
+identity and transpose alternatives without fitting a rotation or lag. It
+strongly challenges orientation convention but does not observe the complete
+set of physical calibration quantities required by the estimator/reference
+contract.

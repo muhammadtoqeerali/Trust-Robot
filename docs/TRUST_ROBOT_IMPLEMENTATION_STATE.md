@@ -5,9 +5,11 @@ Protocol state: superseded by later evidence-gated implementation state
 
 > This file is retained as Phase-1 development provenance. The authoritative
 > current state is `docs/TRUST_ROBOT_PROJECT_STATE.md`. As of 2026-09-18,
-> M2DGR synchronization/reference-timing work has reached the Phase-3E
-> conservative checkpoint with 99 TRUST-ROBOT tests passing; synchronization
-> and evaluation readiness remain unverified/false.
+> M2DGR synchronization/reference-timing characterization has reached the
+> conservative Phase-3E checkpoint and the calibration-verification evidence
+> gate is active with permanent calibration evidence and hardened calibration
+> artifact semantics. 111 TRUST-ROBOT tests pass; dataset calibration,
+> synchronization, and evaluation readiness remain unverified/false.
 
 ## Physical deployment target
 

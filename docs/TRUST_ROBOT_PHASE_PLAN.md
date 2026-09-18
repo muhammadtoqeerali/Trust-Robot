@@ -50,3 +50,34 @@ semantics unless new independent evidence is introduced.
 
 This ledger is explicit documentation of the active evidence-gated work and
 does not silently renumber the retained high-level historical plan.
+
+## Current M2DGR calibration-verification ledger
+
+The synchronization-verification checkpoints Phase 3A through Phase 3E are
+complete as evidence-characterization checkpoints. Completion does not mean
+that physical synchronization was verified.
+
+The active M2DGR calibration-verification gate has now frozen:
+
+- upstream calibration source provenance and calibration-history observations;
+- a no-refit, fixed-hypothesis 28-trajectory D435i-IMU relative-rotation
+  challenge;
+- an estimator/reference calibration requirements inventory;
+- calibration-artifact contract semantics separating integrity provenance from
+  actual sensor-calibration verification;
+- permanent calibration evidence in
+  `manifests/m2dgr_calibration_evidence_v1.json`.
+
+The released sensor content strongly supports the published D435i-IMU relative
+rotation over identity and transpose alternatives on all 28 predeclared clean
+trajectories.
+
+This result does not verify full extrinsics, translations, camera intrinsics,
+reference lever arms, physical synchronization, or evaluation readiness.
+
+No calibration successor trajectory manifest is created. The Phase-3D
+trajectory manifest remains the authoritative trajectory manifest.
+
+The historical high-level phase table above is retained unchanged; this ledger
+documents the active evidence gate without silently renumbering the original
+project plan.

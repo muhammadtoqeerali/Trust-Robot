@@ -14,6 +14,7 @@ from .reference_coverage import (
 )
 
 from .data_contracts import (
+    CalibrationArtifactRole,
     CalibrationArtifactSpec,
     ContractError,
     DerivativeKind,
@@ -25,7 +26,6 @@ from .data_contracts import (
     SynchronizationSpec,
     TrajectoryRecord,
     VerificationStatus,
-    CalibrationArtifactSpec,
     validate_trajectory_records,
 )
 
@@ -113,7 +113,7 @@ def _sync_dict(sync: SynchronizationSpec) -> dict:
 def _calibration_dict(
     artifact: CalibrationArtifactSpec,
 ) -> dict:
-    return {
+    payload = {
         "artifact_id": artifact.artifact_id,
         "source_path": artifact.source_path,
         "sha256": artifact.sha256,
@@ -125,6 +125,18 @@ def _calibration_dict(
             list(artifact.applies_to_frame_ids),
         "notes": artifact.notes,
     }
+
+    # Preserve the exact historical V1 representation for legacy
+    # integrity-only artifacts. Role-aware calibration evidence is additive.
+    if (
+        artifact.role
+        is not CalibrationArtifactRole.ARTIFACT_INTEGRITY
+    ):
+        payload[
+            "role"
+        ] = artifact.role.value
+
+    return payload
 
 
 
@@ -470,18 +482,54 @@ def _decode_calibration_artifact(
     payload: dict,
 ) -> CalibrationArtifactSpec:
 
-    _require_exact_keys(
-        payload,
-        {
-            "artifact_id",
-            "source_path",
-            "sha256",
-            "verification_status",
-            "applies_to_stream_ids",
-            "applies_to_frame_ids",
-            "notes",
-        },
-        "calibration_artifact",
+    legacy_keys = {
+        "artifact_id",
+        "source_path",
+        "sha256",
+        "verification_status",
+        "applies_to_stream_ids",
+        "applies_to_frame_ids",
+        "notes",
+    }
+
+    role_aware_keys = (
+        legacy_keys
+        | {
+            "role",
+        }
+    )
+
+    observed_keys = set(
+        payload
+    )
+
+    if observed_keys not in (
+        legacy_keys,
+        role_aware_keys,
+    ):
+        missing = sorted(
+            legacy_keys
+            - observed_keys
+        )
+
+        extra = sorted(
+            observed_keys
+            - role_aware_keys
+        )
+
+        raise ContractError(
+            "calibration_artifact has invalid keys; "
+            f"missing={missing}, extra={extra}"
+        )
+
+    role = (
+        CalibrationArtifactRole(
+            payload[
+                "role"
+            ]
+        )
+        if "role" in payload
+        else CalibrationArtifactRole.ARTIFACT_INTEGRITY
     )
 
     return CalibrationArtifactSpec(
@@ -498,6 +546,7 @@ def _decode_calibration_artifact(
             payload["applies_to_frame_ids"]
         ),
         notes=payload["notes"],
+        role=role,
     )
 
 

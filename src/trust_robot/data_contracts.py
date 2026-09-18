@@ -20,6 +20,21 @@ class VerificationStatus(str, Enum):
     NOT_APPLICABLE = "not_applicable"
 
 
+class CalibrationArtifactRole(str, Enum):
+    """Semantic role of an artifact stored with calibration provenance.
+
+    Historical TRUST-ROBOT trajectory manifests predate this distinction.
+    Their calibration_artifacts entries are raw-file integrity provenance,
+    not evidence that sensor calibration itself has been verified.
+    """
+
+    ARTIFACT_INTEGRITY = "artifact_integrity"
+    CALIBRATION_PROVENANCE = "calibration_provenance"
+    SENSOR_CALIBRATION_VERIFICATION = (
+        "sensor_calibration_verification"
+    )
+
+
 class ReferenceCoverage(str, Enum):
     FULL = "full"
     PARTIAL = "partial"
@@ -363,9 +378,11 @@ class CalibrationArtifactSpec:
     applies_to_stream_ids: tuple[str, ...] = ()
     applies_to_frame_ids: tuple[str, ...] = ()
     notes: str | None = None
+    role: CalibrationArtifactRole = (
+        CalibrationArtifactRole.ARTIFACT_INTEGRITY
+    )
 
     def __post_init__(self):
-
         if not self.artifact_id:
             raise ContractError(
                 "calibration artifact requires artifact_id"
@@ -386,14 +403,80 @@ class CalibrationArtifactSpec:
                 "calibration artifact requires sha256"
             )
 
+        object.__setattr__(
+            self,
+            "verification_status",
+            VerificationStatus(
+                self.verification_status
+            ),
+        )
+
+        object.__setattr__(
+            self,
+            "role",
+            CalibrationArtifactRole(
+                self.role
+            ),
+        )
+
+        object.__setattr__(
+            self,
+            "applies_to_stream_ids",
+            tuple(
+                self.applies_to_stream_ids
+            ),
+        )
+
+        object.__setattr__(
+            self,
+            "applies_to_frame_ids",
+            tuple(
+                self.applies_to_frame_ids
+            ),
+        )
+
         if (
-            self.verification_status
-            == VerificationStatus.VERIFIED
-            and not self.artifact_id
+            self.role
+            is CalibrationArtifactRole.SENSOR_CALIBRATION_VERIFICATION
         ):
-            raise ContractError(
-                "verified calibration requires provenance"
+            if (
+                self.verification_status
+                is not VerificationStatus.VERIFIED
+            ):
+                raise ContractError(
+                    "sensor calibration verification artifact "
+                    "must have verification_status='verified'"
+                )
+
+            if not (
+                self.applies_to_stream_ids
+                or self.applies_to_frame_ids
+            ):
+                raise ContractError(
+                    "sensor calibration verification artifact "
+                    "must identify affected streams or frames"
+                )
+
+    @property
+    def establishes_sensor_calibration(
+        self,
+    ) -> bool:
+        """Return whether this artifact may support calibration readiness.
+
+        File-integrity and calibration-provenance artifacts never establish
+        sensor calibration by themselves.
+        """
+
+        return (
+            self.role
+            is CalibrationArtifactRole.SENSOR_CALIBRATION_VERIFICATION
+            and self.verification_status
+            is VerificationStatus.VERIFIED
+            and bool(
+                self.applies_to_stream_ids
+                or self.applies_to_frame_ids
             )
+        )
 
 
 @dataclass(frozen=True)

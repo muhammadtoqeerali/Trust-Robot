@@ -1,0 +1,159 @@
+{
+  "content_sha256": "81b430950c274840c5611f76e9cd0d5be18382f884d1b7870e7d827bd5bdc3b6",
+  "contract_semantics": {
+    "artifact_integrity_establishes_sensor_calibration": false,
+    "calibration_provenance_establishes_sensor_calibration": false,
+    "historical_manifest_representation_preserved": true,
+    "historical_manifest_role_field_injected": false,
+    "legacy_calibration_artifact_default_role": "artifact_integrity",
+    "sensor_calibration_verification_role_requires_stream_or_frame_scope": true,
+    "sensor_calibration_verification_role_requires_verified_status": true
+  },
+  "dataset_id": "M2DGR",
+  "interpretation": {
+    "author_calibration_provenance_established": true,
+    "author_cross_file_consistency_established": true,
+    "camera_intrinsics_verified": false,
+    "camera_lidar_extrinsic_verified": false,
+    "d435i_imu_relative_rotation_has_independent_released_sensor_content_support": true,
+    "d435i_imu_relative_rotation_support_is_full_extrinsic_verification": false,
+    "dataset_calibration_verified": false,
+    "evaluation_ready": false,
+    "handsfree_lidar_full_extrinsic_verified": false,
+    "reference_lever_arms_verified": false,
+    "synchronization_verified": false,
+    "translation_verified": false
+  },
+  "manifest_semantics": {
+    "reason": "Calibration remains incomplete and no trajectory-level calibration readiness upgrade is scientifically justified. The contract hardening distinguishes integrity provenance from sensor-calibration verification without modifying historical manifest bytes.",
+    "source_trajectory_manifest": "manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json",
+    "source_trajectory_manifest_file_sha256": "67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f",
+    "successor_manifest_created": false,
+    "trajectory_manifest_modified": false
+  },
+  "observations": {
+    "author_calibration_provenance": {
+      "calibration_history_contains_rectification": true,
+      "calibration_results_sha256": "e515207fcf53668953a21a2e4d990643007a3a12ad54b91c456a8ee8a8100a90",
+      "released_bag_camera_info_or_calibration_like_topic_present_count": 0,
+      "released_bag_tf_present_count": 0,
+      "released_bag_tf_static_present_count": 0,
+      "source_quality_flag_count": 3,
+      "upstream_revision": "5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5"
+    },
+    "d435i_imu_relative_rotation": {
+      "frozen_trajectory_count": 28,
+      "full_extrinsic_verified": false,
+      "identity_rotation_zero_lag_score": {
+        "count": 28,
+        "max": 0.006730801280099218,
+        "median": -0.005437740408000902,
+        "min": -0.02300892699754487
+      },
+      "lag_fitted": false,
+      "motion_threshold_created": false,
+      "published_greater_than_both_fixed_alternatives_count": 28,
+      "published_greater_than_identity_count": 28,
+      "published_greater_than_transpose_count": 28,
+      "published_minus_best_fixed_alternative": {
+        "count": 28,
+        "max": 1.002646689257515,
+        "median": 0.9901506700620717,
+        "min": 0.9030439055777579
+      },
+      "published_rotation_zero_lag_score": {
+        "count": 28,
+        "max": 0.998425521536467,
+        "median": 0.9962264047379334,
+        "min": 0.9217749016984503
+      },
+      "rotation_fitted": false,
+      "score_threshold_created": false,
+      "sensor_content_support_observed": true,
+      "transpose_rotation_zero_lag_score": {
+        "count": 28,
+        "max": 0.021106744117931234,
+        "median": 5.383823984019497e-05,
+        "min": -0.015234335493692137
+      }
+    },
+    "legacy_manifest_calibration_artifacts": {
+      "all_are_raw_bag_integrity_artifacts": true,
+      "all_have_empty_applies_to_frame_ids": true,
+      "all_have_empty_applies_to_stream_ids": true,
+      "artifact_count": 36,
+      "establish_sensor_calibration": false
+    },
+    "requirements": {
+      "dataset_calibration_verified": false,
+      "full_extrinsic_calibrations_independently_verified": 0,
+      "intrinsic_calibrations_independently_verified": 0,
+      "mocap_published_sensor_origin_to_lidar_transform_found": false,
+      "reference_families_with_verified_sensor_origin_to_lidar_transform": 0,
+      "relative_rotation_supported_requirement_ids": [
+        "d435i_imu_relative_rotation"
+      ],
+      "relative_rotations_with_strong_fixed_hypothesis_sensor_content_support": 1,
+      "requirement_count": 9
+    }
+  },
+  "policy": {
+    "author_calibration_modified": false,
+    "automatic_sample_exclusion_rule_created": false,
+    "characterization_only": true,
+    "dataset_calibration_verified": false,
+    "evaluation_ready": false,
+    "historical_manifest_modified": false,
+    "manifest_calibration_status_upgraded": false,
+    "new_calibration_acceptance_tolerance_created": false,
+    "new_calibration_fit_performed": false,
+    "new_lag_fit_performed": false,
+    "new_motion_threshold_created": false,
+    "new_rotation_fit_performed": false,
+    "new_score_threshold_created": false,
+    "new_translation_fit_performed": false,
+    "raw_data_modified": false,
+    "successor_manifest_created": false,
+    "synchronization_verified": false
+  },
+  "remaining_blockers": [
+    "camera_intrinsics_not_independently_verified",
+    "camera_color_to_lidar_extrinsic_not_independently_verified",
+    "handsfree_to_lidar_full_extrinsic_not_independently_verified",
+    "reference_sensor_origin_to_lidar_lever_arms_not_independently_verified",
+    "mocap_to_lidar_extrinsic_not_published_or_independently_verified",
+    "camera_physical_capture_timing_not_independently_verified",
+    "lidar_whole_scan_effective_time_remains_unresolved",
+    "reference_to_estimator_temporal_association_not_independently_verified",
+    "no_validation_calibration_split_for_data_selected_calibration_tolerance"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_CALIBRATION_EVIDENCE_V1",
+  "schema_version": 1,
+  "source_artifacts": {
+    "calibration_requirements_inventory": {
+      "content_sha256": "80bd741e363e9bb2ec4608f7c9db3c5b24955d042546b0e32e0a73530c119c39",
+      "file_sha256": "86aba0afbbf2c7c0279365632379bf5d96b8fc9739a0a025b9a2fde1b1c5cc3a",
+      "relative_path": "audit/calibration_staging/requirements_inventory_v1/calibration_requirements_inventory_v1.json"
+    },
+    "calibration_source_provenance": {
+      "content_sha256": "94880e9d48a91fa610b24b212f2f076a148214eab92aa6dd3fdc6eba5f870915",
+      "file_sha256": "ccc265172ceee536079d55649bbe40901ccaba50c82f5b0362bf2e3b9ac449ab",
+      "relative_path": "audit/calibration_staging/source_provenance_v1/calibration_source_provenance_v1.json"
+    },
+    "phase3d_trajectory_manifest": {
+      "content_sha256": "3daf042328a9c9ee8bab0bbdb777a832bc867075323e39ca1553a6810f975756",
+      "file_sha256": "67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f",
+      "relative_path": "manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json"
+    },
+    "phase3e_reference_temporal_evidence": {
+      "content_sha256": "505c1b63fc7e74907ce915472b243230a2cc86017248edaca255b5be5bc079fd",
+      "file_sha256": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117",
+      "relative_path": "manifests/m2dgr_reference_temporal_association_evidence_v1.json"
+    },
+    "rotation_hypothesis_challenge": {
+      "content_sha256": "f3b01ddd77a013aeb16fddf14fe4b65ffff29525e9fa15b63bb8d4b30951f6a8",
+      "file_sha256": "ab0e4f32ed91ca6045336eec85320108342e7ebc356673a9306ddff6c052b4e2",
+      "relative_path": "audit/calibration_staging/rotation_hypothesis_challenge_v1/calibration_rotation_hypothesis_challenge_v1.json"
+    }
+  }
+}

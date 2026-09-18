@@ -7,13 +7,16 @@ Repository: `muhammadtoqeerali/Trust-Robot`
 This document is the authoritative implementation-state record for the
 TRUST-ROBOT research project.
 
-## Current phase
+## Current evidence gate
 
-Phase 3 — Synchronization Verification
+M2DGR Calibration Verification
 
 Status: IN PROGRESS.
 
-Completed subphases:
+The synchronization-verification evidence gate is complete with a conservative
+negative/unverified outcome.
+
+Completed synchronization checkpoints:
 
 - **Phase 3A — M2DGR Sensor Timing Characterization and Stream Inventory**
 - **Phase 3B — M2DGR Synchronization Evidence and Conservative Clock Semantics**
@@ -25,11 +28,14 @@ Phases 3C–3E characterize the released timing evidence to its defensible
 limits. They do not upgrade physical capture synchronization or
 reference-to-estimator temporal association to verified status.
 
+The active calibration gate now has permanent calibration evidence and hardened
+artifact semantics, but it does not declare the dataset calibration verified.
+
 ## Current validated software state
 
 TRUST-ROBOT unit tests:
 
-**99 PASS.**
+**111 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -69,6 +75,15 @@ Implemented Phase-3 components now include:
   exclusions, association-tolerance freezing, and evaluation readiness
 - explicit contract rule that equal `clock_domain` strings are not
   synchronization proof
+- calibration source-provenance inventory tied to upstream M2DGR revision and
+  calibration-file hashes
+- frozen 28-trajectory fixed-hypothesis D435i-IMU relative-rotation challenge
+- calibration-requirements inventory separating supported versus unresolved
+  intrinsic, extrinsic, and reference-origin quantities
+- explicit calibration-artifact roles separating raw-file integrity,
+  calibration provenance, and sensor-calibration verification
+- permanent M2DGR calibration-evidence schema/validator
+- historical trajectory-manifest serialization preserved byte-for-byte
 
 ## M2DGR stream inventory
 
@@ -520,9 +535,106 @@ Phase-3E conclusion:
 - synchronization verified: FALSE
 - evaluation ready: FALSE
 
+## M2DGR calibration-verification findings
+
+Permanent evidence:
+
+`manifests/m2dgr_calibration_evidence_v1.json`
+
+Content SHA256:
+
+`81b430950c274840c5611f76e9cd0d5be18382f884d1b7870e7d827bd5bdc3b6`
+
+File SHA256:
+
+`dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2`
+
+The permanent evidence binds three frozen calibration staging artifacts:
+
+- source provenance:
+  - content SHA256:
+    `94880e9d48a91fa610b24b212f2f076a148214eab92aa6dd3fdc6eba5f870915`
+  - file SHA256:
+    `ccc265172ceee536079d55649bbe40901ccaba50c82f5b0362bf2e3b9ac449ab`
+- D435i-IMU relative-rotation fixed-hypothesis challenge:
+  - content SHA256:
+    `f3b01ddd77a013aeb16fddf14fe4b65ffff29525e9fa15b63bb8d4b30951f6a8`
+  - file SHA256:
+    `ab0e4f32ed91ca6045336eec85320108342e7ebc356673a9306ddff6c052b4e2`
+- calibration requirements inventory:
+  - content SHA256:
+    `80bd741e363e9bb2ec4608f7c9db3c5b24955d042546b0e32e0a73530c119c39`
+  - file SHA256:
+    `86aba0afbbf2c7c0279365632379bf5d96b8fc9739a0a025b9a2fde1b1c5cc3a`
+
+Upstream calibration provenance is anchored to M2DGR revision
+`5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5`.
+
+The released calibration history contains explicit rectification, and the
+current calibration source retains known source-quality flags. No `/tf`,
+`/tf_static`, `CameraInfo`, or calibration-like ROS topic was found in the 36
+released bags under the frozen connection inventory.
+
+The frozen Phase-3B orientation diagnostic was reused without reopening bags,
+fitting a rotation, fitting a lag, choosing a motion threshold, choosing a
+score threshold, or changing cohort membership.
+
+Across the predeclared 28-trajectory clean IMU cohort:
+
+- published rotation > identity: 28/28
+- published rotation > published-transpose alternative: 28/28
+- published rotation > both fixed alternatives: 28/28
+- published-minus-best-fixed-alternative:
+  - minimum: 0.9030439055777579
+  - median: 0.9901506700620717
+  - maximum: 1.002646689257515
+
+This is independent released sensor-content support for the published D435i-IMU
+relative-rotation convention. It is not full extrinsic-calibration
+verification.
+
+Frozen unresolved calibration state:
+
+- independently verified full extrinsics: 0
+- independently verified camera intrinsic sets: 0
+- independently verified reference sensor-origin-to-LiDAR lever arms: 0
+- strongly sensor-content-supported relative rotations: 1
+- camera intrinsics independently verified: FALSE
+- camera-color ↔ LiDAR extrinsic independently verified: FALSE
+- HandsFree ↔ LiDAR full extrinsic independently verified: FALSE
+- RTK/INS reference lever-arm applicability independently verified: FALSE
+- Leica reference lever-arm applicability independently verified: FALSE
+- published mocap ↔ LiDAR transform found: FALSE
+- dataset calibration verified: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
+The existing 36 trajectory-manifest `calibration_artifacts` entries are raw-bag
+integrity artifacts. Their `verification_status=verified` verifies artifact
+integrity, not sensor calibration.
+
+The hardened contract now distinguishes:
+
+- `artifact_integrity`
+- `calibration_provenance`
+- `sensor_calibration_verification`
+
+Legacy artifacts decode as `artifact_integrity` and do not establish sensor
+calibration. A sensor-calibration verification artifact must be explicitly
+scoped to streams or frames and must have verified status.
+
+No calibration successor trajectory manifest is created. The Phase-3D
+trajectory manifest remains authoritative and byte-identical:
+
+`manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json`
+
+File SHA256:
+
+`67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
+
 ## Synchronization state
 
-At the Phase-3E checkpoint:
+At the calibration-verification checkpoint:
 
 - measurement-time field observed: TRUE
 - trajectory-specific stream presence audited: TRUE
@@ -577,7 +689,7 @@ Do not:
 - infer RTK pose measurement-time semantics merely from broad receiver-UTC
   coordinate overlap.
 
-## Remaining Phase-3 work
+## Remaining calibration/evaluation work
 
 1. Preserve the Phase-3C camera/IMU result as unverified physical capture
    synchronization; do not resume lag tuning without new independent evidence.
@@ -586,11 +698,14 @@ Do not:
 3. Preserve the Phase-3E reference-temporal result as unverified association;
    do not introduce interpolation, lag fitting, or an association tolerance
    without new independent evidence.
-4. Keep synchronization and evaluation readiness false at the Phase-3
-   checkpoint.
-5. Carry calibration verification and any future validation-only tolerance
-   selection into their explicit later evidence gates rather than tuning them
-   on the current all-training release.
+4. Preserve the calibration checkpoint distinction between sensor-content
+   support for one relative rotation and full calibration verification.
+5. Do not fit camera intrinsics, extrinsic translations, reference lever arms,
+   calibration tolerances, or admission thresholds on the current all-training
+   M2DGR release merely to make evaluation computable.
+6. Keep dataset calibration, synchronization, and evaluation readiness false
+   until independent evidence resolves the required estimator/reference
+   calibration and timing blockers.
 
 ## Development rule
 

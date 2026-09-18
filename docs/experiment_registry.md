@@ -328,3 +328,63 @@ Post-checkpoint TRUST-ROBOT test gate:
 - 99 passed;
 - Phase-3D manifest immutability check passed;
 - Phase-3E permanent evidence validation passed.
+
+## M2DGR calibration-verification evidence
+
+M2DGR calibration verification is frozen as a conservative evidence checkpoint.
+
+Permanent evidence:
+
+`manifests/m2dgr_calibration_evidence_v1.json`
+
+Content SHA-256:
+
+`81b430950c274840c5611f76e9cd0d5be18382f884d1b7870e7d827bd5bdc3b6`
+
+File SHA-256:
+
+`dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2`
+
+The evidence binds calibration source provenance, the frozen fixed-hypothesis
+D435i-IMU relative-rotation challenge, the calibration requirements inventory,
+the Phase-3D authoritative trajectory manifest, and Phase-3E reference timing
+evidence.
+
+Frozen D435i-IMU rotation result:
+
+- frozen structurally selected cohort: 28 trajectories;
+- published rotation > identity: 28/28;
+- published rotation > transpose: 28/28;
+- published rotation > both fixed alternatives: 28/28;
+- rotation fitted for this checkpoint: false;
+- lag fitted for this checkpoint: false;
+- motion/score threshold created: false.
+
+Frozen scientific interpretation:
+
+- author calibration provenance is established;
+- author cross-file consistency is established;
+- the published D435i-IMU relative rotation has strong independent released
+  sensor-content support;
+- this support is not full extrinsic verification;
+- independently verified full extrinsics remain 0;
+- independently verified camera intrinsic sets remain 0;
+- independently verified reference sensor-origin-to-LiDAR lever arms remain 0;
+- dataset calibration remains unverified;
+- synchronization remains unverified;
+- evaluation readiness remains false.
+
+Contract hardening in this checkpoint distinguishes raw-file
+`artifact_integrity`, `calibration_provenance`, and scoped
+`sensor_calibration_verification`. Existing historical calibration artifacts
+remain integrity-only and historical manifests remain byte-identical.
+
+No calibration successor trajectory manifest is created.
+
+Post-checkpoint TRUST-ROBOT test gate:
+
+- 111 tests run;
+- 111 passed;
+- Phase-3D trajectory-manifest immutability passed;
+- Phase-3E evidence immutability passed;
+- permanent calibration-evidence validation passed.
