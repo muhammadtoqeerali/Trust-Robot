@@ -1,7 +1,13 @@
 # TRUST-ROBOT Implementation State
 
-Status: Phase 1 in progress
-Protocol state: candidate, not frozen
+Status: HISTORICAL PHASE-1 SNAPSHOT
+Protocol state: superseded by later evidence-gated implementation state
+
+> This file is retained as Phase-1 development provenance. The authoritative
+> current state is `docs/TRUST_ROBOT_PROJECT_STATE.md`. As of 2026-09-18,
+> M2DGR synchronization/reference-timing work has reached the Phase-3E
+> conservative checkpoint with 99 TRUST-ROBOT tests passing; synchronization
+> and evaluation readiness remain unverified/false.
 
 ## Physical deployment target
 

@@ -274,3 +274,57 @@ The machine-readable protocol is
 The human-readable freeze record is
 `docs/operating_point_freeze.md`.
 
+
+## M2DGR Phase-3E reference temporal-association evidence
+
+Phase-3E reference-to-estimator temporal-association characterization is frozen
+as a conservative evidence checkpoint.
+
+Permanent evidence:
+
+`manifests/m2dgr_reference_temporal_association_evidence_v1.json`
+
+Content SHA-256:
+
+`505c1b63fc7e74907ce915472b243230a2cc86017248edaca255b5be5bc079fd`
+
+File SHA-256:
+
+`4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117`
+
+The evidence binds nine frozen Phase-3E staging artifacts covering timestamp
+coordinates, interval overlap, rotation association, translation diagnostics,
+and RTK/INS receiver-UTC coordinate characterization.
+
+The Phase-3D trajectory manifest remains authoritative and byte-identical with
+file SHA-256:
+
+`67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
+
+No Phase-3E successor trajectory manifest exists.
+
+Frozen scientific interpretation:
+
+- numeric timestamp overlap is not synchronization proof;
+- RTK/INS rotation content is strongly consistent at nominal timestamp
+  coordinates across the 16-trajectory cohort;
+- mocap rotation content is weak and heterogeneous across the 9-trajectory
+  cohort;
+- translation-content results are not robust to temporal-support definition;
+- Leica does not support the approximately 100 ms LiDAR-native translation
+  construction without interpolation;
+- RTK/INS reference ranges numerically contain receiver-UTC fix ranges on all
+  16 trajectories, but this does not establish RTK pose measurement-time
+  semantics;
+- no lag search, fixed offset, association tolerance, interpolation policy,
+  evaluation interval, or automatic exclusion rule is selected;
+- reference-to-estimator temporal association remains unverified;
+- synchronization remains unverified;
+- evaluation readiness remains false.
+
+Post-checkpoint TRUST-ROBOT test gate:
+
+- 99 tests run;
+- 99 passed;
+- Phase-3D manifest immutability check passed;
+- Phase-3E permanent evidence validation passed.

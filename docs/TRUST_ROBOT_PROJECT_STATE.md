@@ -1,6 +1,6 @@
 # TRUST-ROBOT Project State
 
-Last Updated: 2026-09-17
+Last Updated: 2026-09-18
 
 Repository: `muhammadtoqeerali/Trust-Robot`
 
@@ -18,14 +18,18 @@ Completed subphases:
 - **Phase 3A — M2DGR Sensor Timing Characterization and Stream Inventory**
 - **Phase 3B — M2DGR Synchronization Evidence and Conservative Clock Semantics**
 - **Phase 3C — M2DGR Camera-Image ↔ D435i-IMU Timing Characterization**
+- **Phase 3D — M2DGR LiDAR ↔ HandsFree-IMU Timing Characterization**
+- **Phase 3E — M2DGR Reference ↔ Estimator Temporal-Association Evidence**
 
-Phase 3C does not complete physical capture-time synchronization verification.
+Phases 3C–3E characterize the released timing evidence to its defensible
+limits. They do not upgrade physical capture synchronization or
+reference-to-estimator temporal association to verified status.
 
 ## Current validated software state
 
 TRUST-ROBOT unit tests:
 
-**89 PASS.**
+**99 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -54,6 +58,15 @@ Implemented Phase-3 components now include:
 - 36-trajectory Phase-3D zero-lag generalization cohort
 - conservative Phase-3D successor-manifest migration
 - reproducible Phase-3D LiDAR/IMU finalizer
+- strict Phase-3E reference temporal-association evidence validator
+- 36-trajectory reference timestamp-coordinate inventory
+- family-specific reference/sensor numeric-overlap characterization
+- 25-trajectory rotation-supported reference/HandsFree content cohort
+- frozen three-trajectory LiDAR ICP translation characterization
+- native-reference/LiDAR translation temporal-support diagnostics
+- 16-trajectory RTK/INS ↔ GNSS receiver-UTC coordinate characterization
+- explicit Phase-3E policy blocking interpolation, lag fitting, automatic
+  exclusions, association-tolerance freezing, and evaluation readiness
 - explicit contract rule that equal `clock_domain` strings are not
   synchronization proof
 
@@ -421,9 +434,95 @@ No LiDAR/IMU offset or synchronization tolerance is frozen.
 LiDAR-to-IMU timing characterization is complete to the limit justified by the
 released evidence, while physical capture synchronization remains unverified.
 
+## Phase-3E reference temporal-association findings
+
+Permanent evidence:
+
+`manifests/m2dgr_reference_temporal_association_evidence_v1.json`
+
+Content SHA256:
+
+`505c1b63fc7e74907ce915472b243230a2cc86017248edaca255b5be5bc079fd`
+
+File SHA256:
+
+`4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117`
+
+The Phase-3D trajectory manifest remains byte-identical and authoritative:
+
+`manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json`
+
+File SHA256:
+
+`67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
+
+No Phase-3E successor trajectory manifest is created because the current
+trajectory-manifest schema has no explicit reference-to-estimator
+temporal-association field. Reusing sensor synchronization fields would
+conflate sensor-to-sensor synchronization with reference timing.
+
+Reference timestamp-coordinate inventory covers all 36 trajectories. All
+references have numeric overlap with the audited HandsFree and LiDAR sensor
+header coordinates, but numeric overlap is not synchronization proof and is
+not an evaluation interval.
+
+For the 25 rotation-supported references, a frame-invariant native-interval
+rotation-rate comparison produced:
+
+- RTK/INS, 16 trajectories, correlation min/median/max:
+  `0.700585994 / 0.970229178 / 0.990359633`
+- mocap, 9 trajectories, correlation min/median/max:
+  `0.091928138 / 0.174282151 / 0.611117285`
+
+The RTK/INS family therefore has strong nominal-coordinate rotational-content
+agreement, while mocap is weak and heterogeneous. Neither result proves
+physical synchronization, and the mocap result does not justify lag tuning.
+
+Translation diagnostics were intentionally limited to `gate_01`, `hall_01`,
+and `room_01` using the frozen Phase-3D LiDAR ICP frontend.
+
+Reference-step/LiDAR-midpoint correlations were:
+
+- `gate_01`: `0.178972065`
+- `hall_01`: `0.707523123`
+- `room_01`: `0.866145937`
+
+When temporal support was instead defined by native LiDAR intervals:
+
+- `gate_01`: `0.369118202`
+- `hall_01`: not computable for any of 299 pairs without interpolation
+- `room_01`: `0.038627360`
+
+The translation result is therefore not robust to a reasonable temporal-support
+definition. Undeskewed whole-scan effective time and the unverified
+reference-to-LiDAR lever arm remain material confounds. No translation lag
+scan is authorized.
+
+Phase 3B independently established that `/ublox/fix` headers exactly reproduce
+GNSS receiver UTC on the GNSS-bearing trajectories. Across all 16 RTK/INS
+reference trajectories, the reference timestamp range contains the full
+receiver-UTC fix range, but zero trajectories have every receiver-UTC fix epoch
+exactly present as a released RTK/INS reference timestamp. Exact per-sample
+identity is not expected under different native sampling and is not itself a
+requirement; the result therefore establishes only broad numeric epoch
+compatibility, not RTK pose measurement-time semantics.
+
+Phase-3E conclusion:
+
+- reference-to-estimator temporal association verified: FALSE
+- one global reference timing policy justified: FALSE
+- reference interpolation authorized: FALSE
+- nearest-neighbor pose association authorized: FALSE
+- reference fixed offset estimated/applied: FALSE
+- association tolerance frozen: FALSE
+- evaluation interval created: FALSE
+- automatic sample exclusion rule created: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
 ## Synchronization state
 
-At the Phase-3D checkpoint:
+At the Phase-3E checkpoint:
 
 - measurement-time field observed: TRUE
 - trajectory-specific stream presence audited: TRUE
@@ -437,6 +536,12 @@ At the Phase-3D checkpoint:
 - camera-image-to-IMU capture timing independently verified: FALSE
 - LiDAR-to-IMU timing characterized to released-evidence limit: TRUE
 - LiDAR-to-IMU capture timing independently verified: FALSE
+- reference timestamp-coordinate inventory complete: TRUE
+- RTK/INS nominal-coordinate rotational-content consistency strong: TRUE
+- mocap rotational-content consistency uniform: FALSE
+- Leica LiDAR-native translation association computable without
+  interpolation: FALSE
+- RTK/INS pose timestamp physical-event semantics independently verified: FALSE
 - reference-to-estimator temporal association verified: FALSE
 - fixed sensor-time offset estimated: FALSE
 - synchronization tolerance frozen: FALSE
@@ -463,7 +568,14 @@ Do not:
 - fabricate missing camera streams for `street_09` or `street_010`;
 - freeze the Phase-3D -35 to -54 ms correlation optima as a LiDAR/IMU clock offset;
 - use LiDAR/IMU correlation magnitude as an automatic timing-validity threshold;
-- widen the LiDAR/IMU lag scan to force a fixed-offset result.
+- widen the LiDAR/IMU lag scan to force a fixed-offset result;
+- treat numeric reference/sensor interval overlap as synchronization proof;
+- turn numeric reference/sensor overlap into an evaluation interval;
+- interpolate Leica reference solely to make a timing diagnostic computable;
+- tune a mocap lag scan around weak/heterogeneous reference content;
+- convert Phase-3E correlation magnitude into an admission threshold;
+- infer RTK pose measurement-time semantics merely from broad receiver-UTC
+  coordinate overlap.
 
 ## Remaining Phase-3 work
 
@@ -471,14 +583,14 @@ Do not:
    synchronization; do not resume lag tuning without new independent evidence.
 2. Preserve the Phase-3D LiDAR/IMU result as unverified physical capture
    synchronization; do not reinterpret whole-scan lag optima as clock offsets.
-3. Establish reference-to-estimator temporal association.
-4. Independently verify calibration needed by evaluation.
-5. Establish a scientifically valid validation/calibration split before any
-   data-selected synchronization tolerance is frozen.
-6. Define explicit handling of structurally invalid timestamps without tuning
-   on confirmation/test data.
-7. Keep synchronization and evaluation readiness false until required evidence
-   is complete.
+3. Preserve the Phase-3E reference-temporal result as unverified association;
+   do not introduce interpolation, lag fitting, or an association tolerance
+   without new independent evidence.
+4. Keep synchronization and evaluation readiness false at the Phase-3
+   checkpoint.
+5. Carry calibration verification and any future validation-only tolerance
+   selection into their explicit later evidence gates rather than tuning them
+   on the current all-training release.
 
 ## Development rule
 

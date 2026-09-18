@@ -24,3 +24,29 @@ This file records the current explicit project sequence. Phase numbering must no
 Every phase follows:
 
 objective -> audit -> protocol -> minimum implementation -> tests -> report -> decision gate
+
+## Current M2DGR synchronization-verification ledger
+
+The high-level table above is retained as original planning provenance. The
+authoritative active implementation state is maintained in
+`docs/TRUST_ROBOT_PROJECT_STATE.md`.
+
+Within the current M2DGR synchronization-verification evidence gate, the
+following checkpoints are complete:
+
+- Phase 3A — sensor timing characterization and stream inventory
+- Phase 3B — synchronization evidence and conservative clock semantics
+- Phase 3C — camera-image ↔ D435i-IMU timing characterization
+- Phase 3D — LiDAR ↔ HandsFree-IMU timing characterization
+- Phase 3E — reference ↔ estimator temporal-association evidence
+
+The Phase-3E checkpoint does not declare synchronization verified. It records
+that the released evidence does not justify a single global reference timing
+policy, fixed reference offset, interpolation policy, association tolerance,
+or evaluation interval.
+
+Later calibration/evaluation gates must preserve these unresolved timing
+semantics unless new independent evidence is introduced.
+
+This ledger is explicit documentation of the active evidence-gated work and
+does not silently renumber the retained high-level historical plan.

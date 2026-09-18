@@ -47,3 +47,31 @@ Reason: Phase 1 contracts are dependency-light; estimator/front-end dependencies
 Decision: Phase-1 protocol/config files use the `_candidate` suffix until local dataset/access evidence and validators are reviewed.
 
 Reason: protocol freezing must follow evidence, not precede it.
+
+## D-009 — Phase-3E does not create a successor trajectory manifest
+
+Decision: retain the Phase-3D trajectory manifest byte-for-byte as the
+authoritative trajectory manifest after the Phase-3E reference temporal
+association checkpoint.
+
+Reason: the current trajectory-manifest schema has no explicit
+reference-to-estimator temporal-association field. Updating per-sensor
+synchronization methods would conflate sensor-to-sensor synchronization with
+reference timing, while adding an ad-hoc reference field would violate the
+schema.
+
+## D-010 — Phase-3E characterization does not authorize timing tuning
+
+Decision: Phase-3E numeric overlap, rotation-content correlation, translation
+diagnostics, and RTK/GNSS receiver-UTC coordinate evidence are
+characterization only.
+
+No reference interpolation, nearest-neighbor pose-admission tolerance, fixed
+reference offset, lag scan, automatic timing-validity threshold, or evaluation
+interval may be derived from these observations.
+
+Reason: the evidence is family- and observable-dependent. Mocap rotational
+agreement is weak/heterogeneous; Leica cannot support the native LiDAR-interval
+translation diagnostic without interpolation; translation results change
+substantially with temporal-support definition; and RTK/INS receiver-UTC
+coordinate compatibility does not establish pose measurement-time semantics.

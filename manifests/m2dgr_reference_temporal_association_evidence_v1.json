@@ -1,0 +1,194 @@
+{
+  "content_sha256": "505c1b63fc7e74907ce915472b243230a2cc86017248edaca255b5be5bc079fd",
+  "dataset_id": "M2DGR",
+  "manifest_semantics": {
+    "phase3d_source_manifest_content_sha256": "3daf042328a9c9ee8bab0bbdb777a832bc867075323e39ca1553a6810f975756",
+    "reason": "The current trajectory-manifest schema has no explicit reference-to-estimator temporal-association field. Updating sensor synchronization methods would conflate sensor-to-sensor synchronization with reference timing, while adding an ad-hoc reference field would violate the schema.",
+    "successor_manifest_created": false,
+    "trajectory_manifest_modified": false
+  },
+  "observations": {
+    "interpretation": {
+      "association_tolerance_supported": false,
+      "evaluation_interval_authorized": false,
+      "fixed_reference_to_estimator_offset_supported": false,
+      "mocap_lag_scan_supported": false,
+      "nearest_neighbor_pose_association_authorized": false,
+      "phase3d_trajectory_manifest_remains_authoritative": true,
+      "reference_interpolation_authorized": false,
+      "reference_to_estimator_temporal_association_verified": false,
+      "single_global_reference_timing_policy_supported": false,
+      "translation_lag_scan_supported": false
+    },
+    "rotation_content_association": {
+      "content_correlation_is_sync_proof": false,
+      "extrinsic_rotation_used": false,
+      "lag_search_performed": false,
+      "method": "native consecutive reference quaternion-step angular-speed magnitude versus native-interval HandsFree gyro-norm mean",
+      "mocap": {
+        "correlation_max": 0.6111172854958059,
+        "correlation_median": 0.17428215147827844,
+        "correlation_min": 0.09192813798397688,
+        "lag_scan_scientifically_justified": false,
+        "nominal_coordinate_content_consistency": "weak_and_heterogeneous",
+        "trajectory_count": 9
+      },
+      "rtk_ins": {
+        "correlation_max": 0.9903596326438343,
+        "correlation_median": 0.9702291782077315,
+        "correlation_min": 0.7005859935637888,
+        "nominal_coordinate_content_consistency": "strong_on_full_cohort",
+        "trajectory_count": 16
+      }
+    },
+    "rtk_receiver_utc_coordinate": {
+      "all_fix_headers_exactly_present_in_reference_coordinate_count": 0,
+      "all_fix_headers_within_reference_coordinate_range_count": 16,
+      "exact_fix_header_match_fraction_max": 0.0,
+      "exact_fix_header_match_fraction_median": 0.0,
+      "exact_fix_header_match_fraction_min": 0.0,
+      "interpretation": "RTK/INS reference timestamps occupy a numeric epoch/range compatible with independently observed GNSS receiver UTC, but no receiver-UTC fix epoch is exactly a released RTK/INS sample timestamp. Different native sampling alone can explain lack of exact sample identity, so neither receiver-UTC pose measurement semantics nor estimator/reference synchronization is established.",
+      "numeric_coordinate_range_overlap_count": 16,
+      "phase3b_fix_headers_exact_receiver_utc": true,
+      "receiver_utc_coordinate_proves_estimator_sensor_sync": false,
+      "receiver_utc_pose_measurement_semantics_verified": false,
+      "trajectory_count": 16
+    },
+    "timestamp_coordinate_inventory": {
+      "family_trajectory_count": {
+        "leica": 11,
+        "mocap": 9,
+        "rtk_ins": 16
+      },
+      "leica_large_early_reference_start_trajectory": "lift_03",
+      "leica_partial_sensor_span_trajectories": [
+        "lift_01",
+        "lift_02"
+      ],
+      "leica_reference_contains_complete_handsfree_and_lidar_header_spans_count": 9,
+      "lift_03_reference_minus_handsfree_start_seconds": -1339.5989968776703,
+      "mocap_reference_contains_complete_handsfree_and_lidar_header_spans_count": 9,
+      "numeric_coordinate_overlap_is_sync_proof": false,
+      "numeric_intersection_is_evaluation_interval": false,
+      "numeric_interval_overlap_with_handsfree_and_lidar_all_trajectories": true,
+      "rtk_reference_contains_complete_handsfree_and_lidar_header_spans_count": 16,
+      "trajectory_count": 36
+    },
+    "translation_content_association": {
+      "hall_01_lidar_interval_candidate_pair_count": 299,
+      "hall_01_lidar_interval_computable_pair_count": 0,
+      "lag_scan_scientifically_justified": false,
+      "lidar_interval_native_reference_method_correlation": {
+        "gate_01": 0.3691182023376034,
+        "hall_01": null,
+        "room_01": 0.0386273599319712
+      },
+      "lidar_whole_scan_effective_time_resolved": false,
+      "pilot_trajectory_ids": [
+        "gate_01",
+        "hall_01",
+        "room_01"
+      ],
+      "reference_interpolation_authorized": false,
+      "reference_step_midpoint_method_correlation": {
+        "gate_01": 0.17897206549726835,
+        "hall_01": 0.7075231233552871,
+        "room_01": 0.8661459366745782
+      },
+      "reference_to_lidar_extrinsic_lever_arm_verified": false,
+      "translation_content_correlation_is_sync_proof": false,
+      "translation_result_robust_to_temporal_support_definition": false
+    }
+  },
+  "policy": {
+    "association_tolerance_frozen": false,
+    "automatic_sample_exclusion_rule_created": false,
+    "characterization_only": true,
+    "evaluation_interval_created": false,
+    "evaluation_ready": false,
+    "fixed_offset_applied": false,
+    "fixed_offset_estimated": false,
+    "lag_search_authorized": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "raw_data_modified": false,
+    "reference_interpolation_authorized": false,
+    "reference_to_estimator_temporal_association_verified": false,
+    "source_manifest_modified": false,
+    "successor_manifest_created": false,
+    "synchronization_verified": false
+  },
+  "remaining_blockers": [
+    "reference_timestamp_physical_measurement_event_semantics_not_independently_verified",
+    "reference_to_estimator_temporal_association_not_independently_verified",
+    "rtk_ins_pose_timestamp_relationship_to_receiver_utc_not_independently_verified",
+    "mocap_rotation_quality_and_temporal_content_agreement_remain_unresolved",
+    "leica_native_cadence_does_not_support_approximately_100ms_lidar_interval_displacement_without_interpolation",
+    "lidar_whole_scan_registration_effective_time_remains_unresolved",
+    "reference_to_lidar_extrinsic_lever_arm_not_independently_verified",
+    "no_validation_calibration_split_for_data_selected_association_tolerance",
+    "calibration_not_independently_verified"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_REFERENCE_TEMPORAL_ASSOCIATION_EVIDENCE_V1",
+  "schema_version": 1,
+  "source_artifacts": {
+    "lidar_icp_translation_pilot": {
+      "content_sha256": "25476a19b5be129a12f6d9cbbc234924bd3656ff7ba28ecff642adce68404461",
+      "file_sha256": "71bcb4af19bd3a028d81a32e2eb03c1e9f16173093be4eb348d43d025bdd0138",
+      "relative_path": "audit/phase3e_staging/lidar_icp_translation_pilot_v1/phase3e_lidar_icp_translation_pilot_v1.json",
+      "size_bytes": 624774
+    },
+    "lidar_interval_native_reference_translation_pilot": {
+      "content_sha256": "b7b230f54e70c9dd9001da466b3cd5918942d152d6d45d0adf8eeb0c48e53645",
+      "file_sha256": "99060b291c24e16ba1812b31419e26c4ae8c9b11dfc8526ca599939b5ad4e446",
+      "relative_path": "audit/phase3e_staging/lidar_interval_native_reference_translation_pilot_v1/phase3e_lidar_interval_native_reference_translation_pilot_v1.json",
+      "size_bytes": 509790
+    },
+    "reference_imu_native_interval_rotation_full_cohort": {
+      "content_sha256": "08f82dcff21f5c07d97a7e7d045ca7fb96dadce1ab24da7398a21974da8a274c",
+      "file_sha256": "13f67d14152c65ddc9b1cadf56a3cee63ce5dc318728300a77893da8bd4daf39",
+      "relative_path": "audit/phase3e_staging/reference_imu_native_interval_rotation_full_cohort_v1/phase3e_reference_imu_native_interval_rotation_full_cohort_v1.json",
+      "size_bytes": 37499
+    },
+    "reference_imu_native_interval_rotation_pilot": {
+      "content_sha256": "0094738f071098160aeb751666770ab15b17d15e28064a65058c70ac97e1e134",
+      "file_sha256": "a6f5c93a66d451302a998f920ce035daef60d967115e789e0c5b8b20594ae2b0",
+      "relative_path": "audit/phase3e_staging/reference_imu_native_interval_rotation_pilot_v1/phase3e_reference_imu_native_interval_rotation_pilot_v1.json",
+      "size_bytes": 4756
+    },
+    "reference_imu_rotation_zero_lag_pilot": {
+      "content_sha256": "9fce6e6398662ce5f7df1df61c8287c1b6c8117bb04fbf21a172ae2f686db38e",
+      "file_sha256": "76bf904aae7b5ed8cbabe08cc4b3bdf268610b7132d546f5d89b83f4ad8fc225",
+      "relative_path": "audit/phase3e_staging/reference_imu_rotation_zero_lag_pilot_v1/phase3e_reference_imu_rotation_zero_lag_pilot_v1.json",
+      "size_bytes": 4271
+    },
+    "reference_lidar_translation_nominal_coordinate_pilot": {
+      "content_sha256": "bb607134eeb5d61133fb5f76e943449db47e547b6f9ec17c35b6e4e60a486fda",
+      "file_sha256": "ab47537dcd74d137a4bef323e6f7f36757a64bb4b88e1b3e386607e3aa8d027a",
+      "relative_path": "audit/phase3e_staging/reference_lidar_translation_nominal_coordinate_pilot_v1/phase3e_reference_lidar_translation_nominal_coordinate_pilot_v1.json",
+      "size_bytes": 479528
+    },
+    "reference_sensor_numeric_interval_overlap": {
+      "content_sha256": "6688342fc491f67bea6614e617db343eef6a234fbec777f4f757fc9fa250d02f",
+      "file_sha256": "c2ae29a81c9c024ff1514b0c44b1a3b821b80acc96e785ae94b5f293da63b4ce",
+      "relative_path": "audit/phase3e_staging/reference_sensor_numeric_interval_overlap_v1/phase3e_reference_sensor_numeric_interval_overlap_v1.json",
+      "size_bytes": 93915
+    },
+    "reference_timestamp_coordinate_inventory": {
+      "content_sha256": "acef06e257971ec31d59f7a27f735d6bbf8c843b79e1a24d612be41d97bdae89",
+      "file_sha256": "717ae73f6cf1477e38d734c61a667a4fa22ea0f736474379b19162592867982e",
+      "relative_path": "audit/phase3e_staging/reference_timestamp_coordinate_inventory_v1/phase3e_reference_timestamp_coordinate_inventory_v1.json",
+      "size_bytes": 110714
+    },
+    "rtk_reference_gnss_receiver_utc_coordinate": {
+      "content_sha256": "c838f2cbcf71b93538c7f7fec3c4209161c5956cb8411f555d39c1e27a5fe8de",
+      "file_sha256": "b9027a99a834f524f9bb0175a89a3ec1c653806b91d700f7b4c153b9c21a0e88",
+      "relative_path": "audit/phase3e_staging/rtk_reference_gnss_receiver_utc_coordinate_v1/phase3e_rtk_reference_gnss_receiver_utc_coordinate_v1.json",
+      "size_bytes": 21983
+    }
+  },
+  "source_manifest": {
+    "content_sha256": "3daf042328a9c9ee8bab0bbdb777a832bc867075323e39ca1553a6810f975756",
+    "file_sha256": "67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f",
+    "relative_path": "manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json"
+  }
+}
