@@ -1,0 +1,187 @@
+{
+  "author_reporting_subset": {
+    "role": "orthogonal_external_reporting_subset",
+    "trajectory_ids": [
+      "door_01",
+      "hall_05",
+      "lift_04",
+      "room_dark_06",
+      "street_02",
+      "street_06",
+      "street_07"
+    ],
+    "used_to_select_split": false
+  },
+  "authorization": {
+    "alignment_mode_selected": false,
+    "association_tolerance_frozen": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_created": false,
+    "evaluation_ready": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "reference_interpolation_authorized": false,
+    "split_frozen": true,
+    "successor_manifest_authorized": true,
+    "synchronization_verified": false
+  },
+  "content_sha256": "bc5699504efda7203165adb9b1ceaa62f2639288011cdb875df0a870ee068a2e",
+  "dataset_id": "M2DGR",
+  "manifest_semantics": {
+    "calibration_changed": false,
+    "changed_trajectory_split_count": 14,
+    "only_split_fields_changed": true,
+    "reference_coverage_changed": false,
+    "reference_semantics_changed": false,
+    "source_manifest_remains_immutable": true,
+    "stream_inventory_changed": false,
+    "successor_manifest": "manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json",
+    "successor_manifest_content_sha256": "3a845fb4545607cad09b8be61d445b6b8a238bd3f346fd6b56c8c630d45141a6",
+    "successor_manifest_created": true,
+    "successor_manifest_file_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+    "synchronization_changed": false
+  },
+  "prospective_holdout_policy": {
+    "confirmation_test_available_for_future_alignment_selection": false,
+    "confirmation_test_available_for_future_association_selection": false,
+    "confirmation_test_available_for_future_model_selection": false,
+    "confirmation_test_available_for_future_protocol_selection": false,
+    "confirmation_test_available_for_future_threshold_selection": false,
+    "confirmation_test_pristine_from_all_prior_dataset_inspection": false,
+    "confirmation_test_used_for_prior_estimator_score_selection": false,
+    "reason_not_pristine": "all 36 trajectories were previously included in dataset-level integrity/timing/LiDAR-IMU characterization, and a 28-trajectory cohort was used for earlier sensor-content calibration evidence",
+    "train_available_for_model_development": true,
+    "validation_calibration_reserved_for_future_selection": true
+  },
+  "reference_family_quotas": {
+    "confirmation_test": {
+      "leica": 2,
+      "mocap": 2,
+      "rtk_ins": 3
+    },
+    "train": {
+      "leica": 7,
+      "mocap": 5,
+      "rtk_ins": 10
+    },
+    "validation_calibration": {
+      "leica": 2,
+      "mocap": 2,
+      "rtk_ins": 3
+    }
+  },
+  "remaining_blockers": [
+    "reference_timestamp_physical_measurement_event_semantics_not_independently_verified",
+    "reference_to_estimator_temporal_association_not_independently_verified",
+    "association_tolerance_not_frozen",
+    "reference_interpolation_not_authorized",
+    "evaluation_interval_not_created",
+    "all_released_reference_frames_remain_unknown",
+    "reference_sensor_origin_to_estimator_frame_relationship_not_independently_verified",
+    "dataset_calibration_not_independently_verified",
+    "synchronization_not_independently_verified",
+    "mocap_rotation_quality_remains_unresolved",
+    "leica_rotation_is_unsupported",
+    "alignment_policy_not_selected"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_SPLIT_FREEZE_EVIDENCE_V1",
+  "schema_version": 1,
+  "selection_policy": {
+    "ATE_used": false,
+    "RPE_used": false,
+    "author_reporting_subset_membership_used": false,
+    "calibration_score_used": false,
+    "candidate_v1_rejected_before_estimator_outcomes": true,
+    "candidate_v1_rejection_reason": "unintended removal of complete scenario and collection-date categories from training",
+    "estimator_outputs_used": false,
+    "future_confirmation_outcomes_used": false,
+    "holdouts_require_complete_current_estimator_inputs": true,
+    "reference_pose_values_used": false,
+    "selected_before_estimator_outcomes": true,
+    "timing_correlation_used": false,
+    "train_retains_all_observed_collection_dates": true,
+    "train_retains_all_observed_scenarios": true
+  },
+  "source_artifacts": {
+    "accepted_metadata_split_candidate_v2": {
+      "content_sha256": "e6904e86b96664f901c81ad7c68e155a5a2433c51ad2388964157468fe966545",
+      "file_sha256": "ef5ab1e050ca22c1c8a1084cabfefaca923476bcefe48b7d0ba6a3fe5529a64a",
+      "text_sha256": "37467c147620687d5daed08a8c6cf69d81155411a8b99c3d43ab02328316921f"
+    },
+    "author_benchmark_provenance": {
+      "content_sha256": "1356545aea9729820f2bc9b6e138ed6ab0fc097759b7d6ee5b710905c90e31f9",
+      "file_sha256": "6e5feb301f02d27fc22fd6af5cdd589fd0e869b1bde5bbe38b92d445856972fd"
+    },
+    "blocked_evaluation_protocol_candidate_v1": {
+      "content_sha256": "cc4400dbdb4726244be39eda42d9870e4ba5917560be66debc46f10e71e2b72a",
+      "file_sha256": "ade74a3e701a35ebf6cb5c65ea76a80030217b94daf45629011f50c438a25666"
+    },
+    "calibration_evidence": {
+      "content_sha256": "81b430950c274840c5611f76e9cd0d5be18382f884d1b7870e7d827bd5bdc3b6",
+      "file_sha256": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2"
+    },
+    "phase3d_trajectory_manifest": {
+      "content_sha256": "3daf042328a9c9ee8bab0bbdb777a832bc867075323e39ca1553a6810f975756",
+      "file_sha256": "67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f"
+    },
+    "phase3e_reference_temporal_association_evidence": {
+      "content_sha256": "505c1b63fc7e74907ce915472b243230a2cc86017248edaca255b5be5bc079fd",
+      "file_sha256": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117"
+    },
+    "rejected_metadata_split_candidate_v1": {
+      "content_sha256": "9ad1f5ae7ffa0a2ed033aab1301d3d00bd0366a80aa72f041f1e89682be5de96",
+      "file_sha256": "689cf184fde6000ba28c174a841b842e029b667d1767e71afc2f210b0eabd88d"
+    }
+  },
+  "source_checkpoint_commit": "c802b01bc2d1b521cf2098860172eb4da899ec74",
+  "split_assignment": {
+    "confirmation_test": [
+      "Circle_02",
+      "gate_02",
+      "hall_02",
+      "lift_01",
+      "room_01",
+      "room_dark_05",
+      "street_06"
+    ],
+    "train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "hall_05",
+      "lift_02",
+      "lift_04",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "room_dark_04",
+      "street_01",
+      "street_010",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "street_09",
+      "walk_01"
+    ],
+    "validation_calibration": [
+      "door_02",
+      "gate_03",
+      "lift_03",
+      "room_03",
+      "room_dark_06",
+      "street_02",
+      "street_08"
+    ]
+  },
+  "split_counts": {
+    "confirmation_test": 7,
+    "train": 22,
+    "validation_calibration": 7
+  },
+  "status": "frozen_prospective_split"
+}

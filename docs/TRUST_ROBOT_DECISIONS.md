@@ -112,3 +112,60 @@ identity and transpose alternatives without fitting a rotation or lag. It
 strongly challenges orientation convention but does not observe the complete
 set of physical calibration quantities required by the estimator/reference
 contract.
+
+## D-013 — Freeze the M2DGR partition prospectively before estimator scoring
+
+Decision: freeze the deterministic metadata-only M2DGR V2 partition as:
+
+- 22 `train`;
+- 7 `validation_calibration`;
+- 7 `confirmation_test`.
+
+Create
+`manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json`
+as the current authoritative trajectory manifest.
+
+The successor differs from the Phase-3D manifest only in the 14 trajectory
+`split` fields that move records out of `train`, plus the manifest digest.
+
+The earlier metadata-split V1 candidate is rejected before estimator outcomes
+because it accidentally removes complete scenario and collection-date
+categories from training.
+
+Reason: future data-selected protocol parameters require a partition that is
+fixed before estimator outcomes are inspected. The accepted V2 split preserves
+all observed scenario and collection-date categories in training and does not
+use estimator errors, ATE, RPE, timing-correlation scores, calibration scores,
+reference pose values, or author-reporting membership to choose membership.
+
+This decision supersedes D-009 only for the identity of the *current*
+authoritative manifest. D-009 remains the historical record that no successor
+manifest was created at the Phase-3E checkpoint.
+
+
+## D-014 — A validation split does not create missing physical evidence
+
+Decision: the frozen `validation_calibration` partition may be used only for
+future choices that are scientifically selectable after their physical
+prerequisites are established.
+
+Its existence does not authorize:
+
+- nearest-neighbor pose association;
+- reference interpolation;
+- a reference-to-estimator fixed offset;
+- an association tolerance;
+- an evaluation interval;
+- SE(3) or Sim(3) alignment;
+- trajectory scoring.
+
+It also cannot establish timestamp physical-event semantics, a common physical
+clock, reference sensor origin, missing extrinsics, continuous reference
+validity, or any other physical fact.
+
+The `confirmation_test` partition is closed to future model, threshold,
+association, alignment, and protocol selection.
+
+Reason: a validation partition prevents outcome leakage when selecting a
+legitimate tunable convention. It cannot transform an unresolved physical
+quantity into a tunable parameter.

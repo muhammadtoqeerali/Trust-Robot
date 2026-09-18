@@ -1,0 +1,247 @@
+{
+  "authorization": {
+    "alignment_execution_authorized": false,
+    "alignment_mode_selected": false,
+    "association_execution_authorized": false,
+    "association_tolerance_frozen": false,
+    "confirmation_test_partition_closed": true,
+    "dataset_calibration_verified": false,
+    "dimension_gating_definition_authorized": true,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_authorized": false,
+    "evaluation_ready": false,
+    "metric_computation_authorized": false,
+    "metric_family_definition_authorized": true,
+    "nearest_neighbor_pose_association_authorized": false,
+    "protocol_schema_definition_authorized": true,
+    "provenance_requirement_definition_authorized": true,
+    "reference_interpolation_authorized": false,
+    "split_selection_complete": true,
+    "synchronization_verified": false,
+    "trajectory_scoring_authorized": false,
+    "validation_calibration_partition_available": true
+  },
+  "content_sha256": "8f60fa3a2303d6a2b8ad8d74719439358e2f7b19ca834c77e6cf09aa1889efbc",
+  "dataset_id": "M2DGR",
+  "dimension_gating": {
+    "leica_rotation_metrics_authorized": false,
+    "mocap_invalid_rotation_samples_may_be_silently_repaired": false,
+    "mocap_invalid_rotation_samples_may_be_silently_scored": false,
+    "rotation_metric_requires_rotation_reference": true,
+    "translation_metric_requires_translation_reference": true
+  },
+  "evaluation_interval": {
+    "automatic_exclusion_rule_authorized": false,
+    "created": false,
+    "numeric_header_range_intersection_is_evaluation_interval": false,
+    "reference_sensor_numeric_overlap_is_evaluation_interval": false,
+    "sample_run_endpoints_imply_continuous_time_coverage": false,
+    "selected_policy": "unselected",
+    "selection_authorized_now": false,
+    "selection_partition": "validation_calibration"
+  },
+  "frame_alignment": {
+    "candidate_modes": [
+      "none",
+      "se3_rigid",
+      "sim3_similarity"
+    ],
+    "confirmation_test_may_select_alignment": false,
+    "reference_frame_semantics_verified": false,
+    "reference_frame_transform_verified": false,
+    "selected_mode": "unselected",
+    "selection_authorized_now": false,
+    "selection_partition": "validation_calibration",
+    "selection_partition_available": true,
+    "sim3_requires_explicit_scale_gauge_justification": true,
+    "test_error_based_alignment_policy_selection_forbidden": true
+  },
+  "manifest_semantics": {
+    "frozen_split_manifest_is_authoritative": true,
+    "split_freeze_does_not_upgrade_calibration": true,
+    "split_freeze_does_not_upgrade_evaluation_readiness": true,
+    "split_freeze_does_not_upgrade_reference_frame_semantics": true,
+    "split_freeze_does_not_upgrade_timing": true,
+    "successor_manifest_created_by_protocol_v2": false,
+    "trajectory_manifest_modified_by_protocol_v2": false
+  },
+  "metric_families": {
+    "absolute_rotation_trajectory_error": {
+      "aggregation": "unselected",
+      "alignment_policy": "unselected",
+      "association_policy": "unselected",
+      "enabled": false,
+      "required_reference_dimensions": [
+        "rotation"
+      ],
+      "short_name": "ATE_rotation"
+    },
+    "absolute_translation_trajectory_error": {
+      "aggregation": "unselected",
+      "alignment_policy": "unselected",
+      "association_policy": "unselected",
+      "enabled": false,
+      "required_reference_dimensions": [
+        "translation"
+      ],
+      "short_name": "ATE_translation"
+    },
+    "relative_rotation_pose_error": {
+      "aggregation": "unselected",
+      "alignment_policy": "unselected",
+      "association_policy": "unselected",
+      "enabled": false,
+      "relative_delta_definition": "unselected",
+      "required_reference_dimensions": [
+        "rotation"
+      ],
+      "short_name": "RPE_rotation"
+    },
+    "relative_translation_pose_error": {
+      "aggregation": "unselected",
+      "alignment_policy": "unselected",
+      "association_policy": "unselected",
+      "enabled": false,
+      "relative_delta_definition": "unselected",
+      "required_reference_dimensions": [
+        "translation"
+      ],
+      "short_name": "RPE_translation"
+    }
+  },
+  "observed_dataset_state": {
+    "confirmation_partition_available": true,
+    "confirmation_partition_closed_to_selection": true,
+    "reference_dimension_counts": {
+      "translation_and_rotation": 25,
+      "translation_only": 11
+    },
+    "reference_frame_counts": {
+      "unknown": 36
+    },
+    "reference_source_counts": {
+      "leica": 11,
+      "mocap": 9,
+      "rtk_ins": 16
+    },
+    "split_counts": {
+      "confirmation_test": 7,
+      "train": 22,
+      "validation_calibration": 7
+    },
+    "split_frozen": true,
+    "trajectory_count": 36,
+    "validation_calibration_partition_available": true
+  },
+  "remaining_blockers": [
+    "reference_timestamp_physical_measurement_event_semantics_not_independently_verified",
+    "reference_to_estimator_temporal_association_not_independently_verified",
+    "rtk_ins_pose_timestamp_relationship_to_receiver_utc_not_independently_verified",
+    "reference_interpolation_not_authorized",
+    "nearest_neighbor_pose_association_not_authorized",
+    "association_tolerance_not_frozen",
+    "evaluation_interval_not_created",
+    "all_36_reference_frames_remain_unknown",
+    "reference_sensor_origin_to_lidar_or_estimator_frame_relationship_not_independently_verified",
+    "camera_intrinsics_not_independently_verified",
+    "camera_color_to_lidar_extrinsic_not_independently_verified",
+    "handsfree_to_lidar_full_extrinsic_not_independently_verified",
+    "dataset_calibration_not_independently_verified",
+    "synchronization_not_independently_verified",
+    "lidar_whole_scan_effective_time_remains_unresolved",
+    "mocap_rotation_quality_remains_unresolved",
+    "leica_rotation_is_unsupported",
+    "alignment_policy_not_selected",
+    "metric_aggregation_not_selected",
+    "rpe_delta_definition_not_selected"
+  ],
+  "required_provenance": {
+    "alignment_mode": true,
+    "alignment_selection_source": true,
+    "association_method": true,
+    "association_selection_source": true,
+    "association_tolerance": true,
+    "estimate_frame_id": true,
+    "estimate_trajectory_identity": true,
+    "evaluation_interval_source": true,
+    "fixed_time_offset": true,
+    "interpolation_method": true,
+    "measurement_time_basis": true,
+    "metric_dimension": true,
+    "protocol_content_sha256": true,
+    "reference_frame_id": true,
+    "reference_trajectory_identity": true,
+    "reference_validity_artifact": true,
+    "split_role": true
+  },
+  "schema": "TRUST_ROBOT_M2DGR_TRAJECTORY_ASSOCIATION_EVALUATION_PROTOCOL_CANDIDATE_V2",
+  "schema_version": 2,
+  "selection_policy": {
+    "confirmation_test_closed_to_future_selection": true,
+    "confirmation_test_partition_frozen": true,
+    "confirmation_test_trajectory_count": 7,
+    "current_split_alone_authorizes_alignment_choice": false,
+    "current_split_alone_authorizes_association_choice": false,
+    "current_split_alone_authorizes_evaluation": false,
+    "data_selected_alignment_policy_requires_validation_calibration": true,
+    "data_selected_association_parameters_require_validation_calibration": true,
+    "data_selected_metric_operating_choices_require_validation_calibration": true,
+    "physical_fact_cannot_be_created_by_validation_selection": true,
+    "validation_calibration_partition_frozen": true,
+    "validation_calibration_trajectory_count": 7
+  },
+  "source_artifacts": {
+    "calibration_evidence": {
+      "content_sha256": "81b430950c274840c5611f76e9cd0d5be18382f884d1b7870e7d827bd5bdc3b6",
+      "file_sha256": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+      "relative_path": "manifests/m2dgr_calibration_evidence_v1.json"
+    },
+    "frozen_split_manifest": {
+      "content_sha256": "3a845fb4545607cad09b8be61d445b6b8a238bd3f346fd6b56c8c630d45141a6",
+      "file_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+      "relative_path": "manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json"
+    },
+    "phase3e_reference_temporal_association_evidence": {
+      "content_sha256": "505c1b63fc7e74907ce915472b243230a2cc86017248edaca255b5be5bc079fd",
+      "file_sha256": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117",
+      "relative_path": "manifests/m2dgr_reference_temporal_association_evidence_v1.json"
+    },
+    "predecessor_protocol_candidate_v1": {
+      "content_sha256": "cc4400dbdb4726244be39eda42d9870e4ba5917560be66debc46f10e71e2b72a",
+      "file_sha256": "ade74a3e701a35ebf6cb5c65ea76a80030217b94daf45629011f50c438a25666",
+      "relative_path": "configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v1.json"
+    },
+    "reference_quality_index": {
+      "content_sha256": "c768e25ca4957280ba042a8dc694990723188ce4032ff09d95a3e1409cae50e0",
+      "file_sha256": "5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77",
+      "relative_path": "manifests/m2dgr_reference_quality_index_v1.json"
+    },
+    "split_freeze_evidence": {
+      "content_sha256": "bc5699504efda7203165adb9b1ceaa62f2639288011cdb875df0a870ee068a2e",
+      "file_sha256": "9b1bddff5685f933372049966d9d72dd1162f66f8abfe29bbc80da3cbe38e9a9",
+      "relative_path": "manifests/m2dgr_split_freeze_evidence_v1.json"
+    }
+  },
+  "source_checkpoint_commit": "c802b01bc2d1b521cf2098860172eb4da899ec74",
+  "status": "blocked_pending_physical_evidence",
+  "temporal_association": {
+    "association_tolerance_seconds": null,
+    "candidate_methods": [
+      "exact_timestamp_identity",
+      "nearest_neighbor",
+      "reference_interpolation"
+    ],
+    "confirmation_test_may_select_association_parameters": false,
+    "fixed_reference_to_estimator_offset_seconds": null,
+    "interpolation_method": "unselected",
+    "lag_search_authorized": false,
+    "nearest_neighbor_authorized": false,
+    "reference_interpolation_authorized": false,
+    "selected_method": "unselected",
+    "selection_authorized_now": false,
+    "selection_partition": "validation_calibration",
+    "selection_partition_available": true,
+    "selection_requires_independent_physical_prerequisites_first": true,
+    "train_may_select_association_parameters": false
+  }
+}

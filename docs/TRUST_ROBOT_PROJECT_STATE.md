@@ -9,33 +9,44 @@ TRUST-ROBOT research project.
 
 ## Current evidence gate
 
-M2DGR Calibration Verification
+M2DGR Trajectory Association and Evaluation Protocol
 
-Status: IN PROGRESS.
+Status: BLOCKED PENDING PHYSICAL EVIDENCE.
 
-The synchronization-verification evidence gate is complete with a conservative
-negative/unverified outcome.
-
-Completed synchronization checkpoints:
+Completed evidence checkpoints include:
 
 - **Phase 3A — M2DGR Sensor Timing Characterization and Stream Inventory**
 - **Phase 3B — M2DGR Synchronization Evidence and Conservative Clock Semantics**
 - **Phase 3C — M2DGR Camera-Image ↔ D435i-IMU Timing Characterization**
 - **Phase 3D — M2DGR LiDAR ↔ HandsFree-IMU Timing Characterization**
 - **Phase 3E — M2DGR Reference ↔ Estimator Temporal-Association Evidence**
+- **M2DGR Calibration Verification**
+- **M2DGR Prospective Split Freeze V1**
+- **M2DGR Trajectory Association / Evaluation Protocol Candidate V2**
 
-Phases 3C–3E characterize the released timing evidence to its defensible
-limits. They do not upgrade physical capture synchronization or
-reference-to-estimator temporal association to verified status.
+The current authoritative trajectory manifest is:
 
-The active calibration gate now has permanent calibration evidence and hardened
-artifact semantics, but it does not declare the dataset calibration verified.
+`manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json`
+
+It contains the prospectively frozen `22 / 7 / 7`
+train / validation-calibration / confirmation-test partition.
+
+The split freeze changes only trajectory `split` fields relative to the
+Phase-3D manifest. It does not upgrade timing, calibration, reference-frame
+semantics, reference coverage, synchronization, or evaluation readiness.
+
+A validation/calibration partition now exists for future protocol choices that
+are scientifically selectable. Its existence cannot establish missing physical
+facts such as timestamp measurement-event semantics, clock synchronization,
+reference sensor origin, extrinsics, or continuous reference validity.
+
+Estimator scoring remains blocked.
 
 ## Current validated software state
 
 TRUST-ROBOT unit tests:
 
-**111 PASS.**
+**132 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -84,6 +95,15 @@ Implemented Phase-3 components now include:
   calibration provenance, and sensor-calibration verification
 - permanent M2DGR calibration-evidence schema/validator
 - historical trajectory-manifest serialization preserved byte-for-byte
+- metadata-only prospective split design with a rejected V1 candidate and
+  accepted deterministic V2 candidate
+- permanent M2DGR split-freeze evidence and successor trajectory manifest
+- 22 train / 7 validation-calibration / 7 confirmation-test frozen partition
+- explicit prospective prohibition on confirmation-test use for model,
+  threshold, association, alignment, or protocol selection
+- blocked trajectory-association/evaluation protocol candidate V2
+- validation/calibration-aware protocol semantics that still require
+  independent physical timing/frame/calibration evidence before selection
 
 ## M2DGR stream inventory
 
@@ -100,11 +120,26 @@ Stream availability:
 
 `street_09` and `street_010` contain neither audited camera stream.
 
-The current Phase-3D successor contains:
+The current split-frozen successor contains:
 
 - 36 trajectory records
 - 140 stream entries
 - 140 synchronization entries
+- 22 `train` trajectories
+- 7 `validation_calibration` trajectories
+- 7 `confirmation_test` trajectories
+
+Authoritative manifest:
+
+`manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json`
+
+Content SHA256:
+
+`3a845fb4545607cad09b8be61d445b6b8a238bd3f346fd6b56c8c630d45141a6`
+
+File SHA256:
+
+`017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f`
 
 ## Measurement-time basis
 
@@ -463,7 +498,8 @@ File SHA256:
 
 `4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117`
 
-The Phase-3D trajectory manifest remains byte-identical and authoritative:
+At the Phase-3E checkpoint, the Phase-3D trajectory manifest remained
+byte-identical and authoritative:
 
 `manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json`
 
@@ -471,10 +507,14 @@ File SHA256:
 
 `67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
 
-No Phase-3E successor trajectory manifest is created because the current
+No Phase-3E successor trajectory manifest was created because the
 trajectory-manifest schema has no explicit reference-to-estimator
 temporal-association field. Reusing sensor synchronization fields would
 conflate sensor-to-sensor synchronization with reference timing.
+
+This historical manifest was later superseded only for prospective split
+assignment by
+`manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json`.
 
 Reference timestamp-coordinate inventory covers all 36 trajectories. All
 references have numeric overlap with the audited HandsFree and LiDAR sensor
@@ -623,14 +663,102 @@ Legacy artifacts decode as `artifact_integrity` and do not establish sensor
 calibration. A sensor-calibration verification artifact must be explicitly
 scoped to streams or frames and must have verified status.
 
-No calibration successor trajectory manifest is created. The Phase-3D
-trajectory manifest remains authoritative and byte-identical:
+No calibration successor trajectory manifest was created. At the
+calibration-verification checkpoint, the Phase-3D trajectory manifest remained
+authoritative and byte-identical:
 
 `manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json`
 
 File SHA256:
 
 `67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
+
+The later split-freeze successor changes only prospective split assignment and
+does not alter any calibration conclusion.
+
+## M2DGR prospective split and evaluation-protocol findings
+
+Permanent split-freeze evidence:
+
+`manifests/m2dgr_split_freeze_evidence_v1.json`
+
+Content SHA256:
+
+`bc5699504efda7203165adb9b1ceaa62f2639288011cdb875df0a870ee068a2e`
+
+File SHA256:
+
+`9b1bddff5685f933372049966d9d72dd1162f66f8abfe29bbc80da3cbe38e9a9`
+
+Current authoritative trajectory manifest:
+
+`manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json`
+
+Content SHA256:
+
+`3a845fb4545607cad09b8be61d445b6b8a238bd3f346fd6b56c8c630d45141a6`
+
+File SHA256:
+
+`017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f`
+
+Frozen split:
+
+- train: 22
+- validation/calibration: 7
+- confirmation test: 7
+
+The split was selected from author metadata, reference family, and current
+estimator-input stream presence before estimator outcomes were used.
+
+The rejected metadata-split V1 candidate was rejected before estimator outcomes
+because it accidentally removed complete scenario and collection-date
+categories from training.
+
+The accepted V2 split retains all nine observed scenario categories and all nine
+observed collection dates in training.
+
+The confirmation partition is not claimed to be pristine from all prior
+dataset-level inspection. All 36 trajectories were previously used for
+structural/timing characterization and a 28-trajectory cohort was used for
+earlier sensor-content evidence.
+
+However, confirmation data had not been used to select estimator scores,
+models, thresholds, association rules, alignment rules, or evaluation protocol
+choices when the split was frozen.
+
+From the freeze onward, confirmation data may not select any of those choices.
+
+Current blocked evaluation-protocol candidate:
+
+`configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json`
+
+Content SHA256:
+
+`8f60fa3a2303d6a2b8ad8d74719439358e2f7b19ca834c77e6cf09aa1889efbc`
+
+File SHA256:
+
+`4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3`
+
+Protocol V2 recognizes the frozen validation/calibration split, but keeps:
+
+- reference interpolation unauthorized;
+- nearest-neighbor pose association unauthorized;
+- association tolerance unset;
+- fixed reference-to-estimator offset unset;
+- evaluation interval uncreated;
+- alignment mode unselected;
+- ATE/RPE metric families disabled;
+- estimator scoring unauthorized;
+- dataset calibration unverified;
+- synchronization unverified;
+- evaluation readiness false.
+
+The presence of validation/calibration data removes only the partition-absence
+blocker. It cannot establish a physical fact that is absent from independent
+evidence.
+
 
 ## Synchronization state
 
@@ -676,7 +804,7 @@ Do not:
 - automatically repair or drop the `hall_05` reversed timestamp;
 - convert the 28-trajectory IMU clean cohort into an evaluation exclusion rule;
 - freeze the observed -4 ms median diagnostic lag as a fixed offset;
-- select an association tolerance from the current all-training manifest;
+- reuse pre-split all-training characterization to select an association tolerance;
 - fabricate missing camera streams for `street_09` or `street_010`;
 - freeze the Phase-3D -35 to -54 ms correlation optima as a LiDAR/IMU clock offset;
 - use LiDAR/IMU correlation magnitude as an automatic timing-validity threshold;
@@ -701,8 +829,8 @@ Do not:
 4. Preserve the calibration checkpoint distinction between sensor-content
    support for one relative rotation and full calibration verification.
 5. Do not fit camera intrinsics, extrinsic translations, reference lever arms,
-   calibration tolerances, or admission thresholds on the current all-training
-   M2DGR release merely to make evaluation computable.
+   or other physical quantities merely because a validation/calibration split
+   now exists. Physical facts are not tunable protocol parameters.
 6. Keep dataset calibration, synchronization, and evaluation readiness false
    until independent evidence resolves the required estimator/reference
    calibration and timing blockers.

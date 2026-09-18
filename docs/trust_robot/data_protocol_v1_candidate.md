@@ -122,7 +122,7 @@ Every admitted dataset must eventually provide:
 7. For audited M2DGR candidate estimator streams, verified sensor `header.stamp` is the measurement-time basis.
 8. For those M2DGR streams, the rosbag record timestamp is retained as transport/provenance diagnostic evidence and must not silently replace sensor `header.stamp` as measurement time.
 9. M2DGR applies no global fixed sensor time offset by default; any future fixed offset requires explicit evidence and versioned provenance.
-10. M2DGR multimodal association and scoring are restricted to the intersection of required-stream sensor-header time coverage and independently valid reference coverage for the required scoring dimensions.
+10. M2DGR evaluation requires an explicitly created evaluation interval supported by independently verified temporal association and reference validity for the required scoring dimensions. Numeric intersection of sensor-header and reference timestamp ranges is not itself an evaluation interval and does not authorize association, interpolation, or scoring.
 
 ## 6. Reference-source rules
 
@@ -157,6 +157,9 @@ Mandatory invariants:
 4. A trajectory record has exactly one split.
 5. Cross-dataset recalibration, when later permitted, uses a calibration-only subset disjoint from final cross-dataset testing.
 6. Zero-shot and recalibrated transfer must be reported separately.
+7. The current M2DGR prospective split is frozen as 22 `train`, 7 `validation_calibration`, and 7 `confirmation_test` trajectories by `manifests/m2dgr_split_freeze_evidence_v1.json`.
+8. M2DGR confirmation-test trajectories may not select models, thresholds, temporal-association parameters, alignment policy, or evaluation-protocol choices after that freeze.
+9. Availability of a validation/calibration partition does not establish missing physical timing, frame, reference-origin, calibration, or continuous-validity evidence.
 
 ## 8. Test-data prohibition
 

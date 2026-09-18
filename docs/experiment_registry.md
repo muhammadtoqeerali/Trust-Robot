@@ -296,12 +296,13 @@ The evidence binds nine frozen Phase-3E staging artifacts covering timestamp
 coordinates, interval overlap, rotation association, translation diagnostics,
 and RTK/INS receiver-UTC coordinate characterization.
 
-The Phase-3D trajectory manifest remains authoritative and byte-identical with
-file SHA-256:
+At the Phase-3E checkpoint, the Phase-3D trajectory manifest remained
+authoritative and byte-identical with file SHA-256:
 
 `67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
 
-No Phase-3E successor trajectory manifest exists.
+No Phase-3E successor trajectory manifest existed. A later prospective split
+freeze supersedes it only for current split assignment.
 
 Frozen scientific interpretation:
 
@@ -347,8 +348,8 @@ File SHA-256:
 
 The evidence binds calibration source provenance, the frozen fixed-hypothesis
 D435i-IMU relative-rotation challenge, the calibration requirements inventory,
-the Phase-3D authoritative trajectory manifest, and Phase-3E reference timing
-evidence.
+the then-authoritative Phase-3D trajectory manifest, and Phase-3E reference
+timing evidence.
 
 Frozen D435i-IMU rotation result:
 
@@ -388,3 +389,87 @@ Post-checkpoint TRUST-ROBOT test gate:
 - Phase-3D trajectory-manifest immutability passed;
 - Phase-3E evidence immutability passed;
 - permanent calibration-evidence validation passed.
+
+## M2DGR prospective split freeze and blocked evaluation protocol
+
+The deterministic metadata-only M2DGR split is frozen before estimator outcomes
+are used for split selection.
+
+Permanent split evidence:
+
+`manifests/m2dgr_split_freeze_evidence_v1.json`
+
+Content SHA-256:
+
+`bc5699504efda7203165adb9b1ceaa62f2639288011cdb875df0a870ee068a2e`
+
+File SHA-256:
+
+`9b1bddff5685f933372049966d9d72dd1162f66f8abfe29bbc80da3cbe38e9a9`
+
+Current authoritative trajectory manifest:
+
+`manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json`
+
+Content SHA-256:
+
+`3a845fb4545607cad09b8be61d445b6b8a238bd3f346fd6b56c8c630d45141a6`
+
+File SHA-256:
+
+`017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f`
+
+Frozen counts:
+
+- train: 22;
+- validation/calibration: 7;
+- confirmation test: 7.
+
+Exactly 14 trajectory `split` fields differ from the Phase-3D source manifest.
+Streams, references, synchronization, calibration artifacts, reference
+coverage, and all other per-trajectory semantics remain unchanged.
+
+The confirmation partition is prospectively closed to model, threshold,
+association, alignment, and protocol selection.
+
+Evaluation protocol candidate V2:
+
+`configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json`
+
+Content SHA-256:
+
+`8f60fa3a2303d6a2b8ad8d74719439358e2f7b19ca834c77e6cf09aa1889efbc`
+
+File SHA-256:
+
+`4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3`
+
+Protocol V2 recognizes that validation/calibration data are now available, but
+does not authorize any association, interpolation, tolerance, evaluation
+interval, alignment, metric computation, or estimator scoring.
+
+Frozen current state:
+
+- split selection complete: true;
+- validation/calibration partition available: true;
+- confirmation-test partition closed to selection: true;
+- reference-to-estimator temporal association verified: false;
+- reference interpolation authorized: false;
+- nearest-neighbor pose association authorized: false;
+- association tolerance frozen: false;
+- evaluation interval created: false;
+- alignment mode selected: false;
+- dataset calibration verified: false;
+- synchronization verified: false;
+- estimator scoring authorized: false;
+- evaluation readiness: false.
+
+Post-checkpoint TRUST-ROBOT test gate:
+
+- 132 tests run;
+- 132 passed;
+- frozen split-manifest validation passed;
+- split-evidence validation passed;
+- evaluation-protocol V1 immutability passed;
+- Phase-3E evidence immutability passed;
+- calibration evidence immutability passed.
