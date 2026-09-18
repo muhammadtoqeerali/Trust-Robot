@@ -48,6 +48,12 @@ Implemented Phase-3 components now include:
 - 28-trajectory Phase-3C zero-lag generalization cohort
 - conservative Phase-3C successor-manifest migration
 - reproducible Phase-3C camera/IMU finalizer
+- strict Phase-3D LiDAR/IMU evidence schema/validator
+- VLP-32C point-time mechanism characterization across all 36 trajectories
+- frozen LiDAR/HandsFree zero-lag rotation association method
+- 36-trajectory Phase-3D zero-lag generalization cohort
+- conservative Phase-3D successor-manifest migration
+- reproducible Phase-3D LiDAR/IMU finalizer
 - explicit contract rule that equal `clock_domain` strings are not
   synchronization proof
 
@@ -66,7 +72,7 @@ Stream availability:
 
 `street_09` and `street_010` contain neither audited camera stream.
 
-The current Phase-3C successor contains:
+The current Phase-3D successor contains:
 
 - 36 trajectory records
 - 140 stream entries
@@ -369,9 +375,55 @@ Camera-image-to-IMU timing characterization is therefore complete to the limit
 supported by released evidence, while physical capture synchronization remains
 unverified.
 
+## Phase-3D LiDAR/IMU findings
+
+The released `/velodyne_points` payload contains a FLOAT32 `time` field.
+
+Across a frozen 36-trajectory payload characterization, its numeric behavior
+strongly matches the public VLP-32C firing-time table and is strongly
+consistent with a last-packet-referenced relative-time construction.
+
+The exact M2DGR Velodyne driver revision/runtime configuration and physical
+PointCloud2-header reference event remain independently unverified.
+
+The frozen LiDAR/HandsFree zero-lag method uses undeskewed whole-scan ICP and
+HandsFree gyro integration between LiDAR header timestamps.
+
+Across all 36 trajectories:
+
+- candidate LiDAR intervals: 10764
+- admitted intervals with real IMU support: 10758
+- unsupported intervals: 6, all leading boundary intervals
+- internal unsupported intervals: 0
+- failed ICP intervals: 0
+- vector-correlation min/median/max:
+  0.798444575 / 0.987891015 / 0.998822853
+- rotation-angle-correlation min/median/max:
+  0.859841312 / 0.988835748 / 0.998959923
+- median rotation-error min/median/max:
+  0.030531038 / 0.083623408 / 0.251305615 degrees
+
+No quality threshold or evaluation exclusion rule is derived from these
+metrics.
+
+A frozen three-trajectory descriptive lag pilot produced vector-correlation
+optima of -46 ms, -35 ms, and -54 ms, while median-error optima were -50 ms,
+-85 ms, and -99 ms.
+
+Because one undeskewed rotating LiDAR scan spans approximately 100 ms, the
+effective temporal support of whole-scan registration confounds interpretation
+of these lags as a hardware clock offset.
+
+No wider lag scan is authorized.
+
+No LiDAR/IMU offset or synchronization tolerance is frozen.
+
+LiDAR-to-IMU timing characterization is complete to the limit justified by the
+released evidence, while physical capture synchronization remains unverified.
+
 ## Synchronization state
 
-At the Phase-3C checkpoint:
+At the Phase-3D checkpoint:
 
 - measurement-time field observed: TRUE
 - trajectory-specific stream presence audited: TRUE
@@ -383,6 +435,7 @@ At the Phase-3C checkpoint:
 - unique nonzero camera/IMU fixed offset identified: FALSE
 - common physical clock independently verified: FALSE
 - camera-image-to-IMU capture timing independently verified: FALSE
+- LiDAR-to-IMU timing characterized to released-evidence limit: TRUE
 - LiDAR-to-IMU capture timing independently verified: FALSE
 - reference-to-estimator temporal association verified: FALSE
 - fixed sensor-time offset estimated: FALSE
@@ -407,13 +460,17 @@ Do not:
 - convert the 28-trajectory IMU clean cohort into an evaluation exclusion rule;
 - freeze the observed -4 ms median diagnostic lag as a fixed offset;
 - select an association tolerance from the current all-training manifest;
-- fabricate missing camera streams for `street_09` or `street_010`.
+- fabricate missing camera streams for `street_09` or `street_010`;
+- freeze the Phase-3D -35 to -54 ms correlation optima as a LiDAR/IMU clock offset;
+- use LiDAR/IMU correlation magnitude as an automatic timing-validity threshold;
+- widen the LiDAR/IMU lag scan to force a fixed-offset result.
 
 ## Remaining Phase-3 work
 
 1. Preserve the Phase-3C camera/IMU result as unverified physical capture
    synchronization; do not resume lag tuning without new independent evidence.
-2. Independently characterize LiDAR-to-IMU physical capture timing.
+2. Preserve the Phase-3D LiDAR/IMU result as unverified physical capture
+   synchronization; do not reinterpret whole-scan lag optima as clock offsets.
 3. Establish reference-to-estimator temporal association.
 4. Independently verify calibration needed by evaluation.
 5. Establish a scientifically valid validation/calibration split before any

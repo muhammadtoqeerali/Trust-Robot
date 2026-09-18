@@ -33,11 +33,12 @@ physical_platform_plan:
 datasets:
   M2DGR:
     proposal_status: core_publicly_available
-    local_readiness: phase3c_camera_imu_characterized_sync_unverified
+    local_readiness: phase3d_lidar_imu_characterized_sync_unverified
     platform: ground_robot_indoor_outdoor
 
     manifest:
-      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3c_camera_imu_sync_evidence.json
+      active_path: manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json
+      phase3c_path: manifests/m2dgr_trajectory_manifest_v1_phase3c_camera_imu_sync_evidence.json
       phase3b_path: manifests/m2dgr_trajectory_manifest_v1_phase3b_sync_evidence.json
       phase2_path: manifests/m2dgr_trajectory_manifest_v1_phase2_audited.json
       legacy_path: manifests/m2dgr_trajectory_manifest_v1.json
@@ -45,15 +46,18 @@ datasets:
       timing_evidence_index_path: manifests/m2dgr_timing_evidence_index_v1.json
       synchronization_evidence_path: manifests/m2dgr_synchronization_evidence_v1.json
       camera_imu_synchronization_evidence_path: manifests/m2dgr_camera_imu_synchronization_evidence_v1.json
+      lidar_imu_synchronization_evidence_path: manifests/m2dgr_lidar_imu_synchronization_evidence_v1.json
       phase3a_path: manifests/m2dgr_trajectory_manifest_v1_phase3_timing_audited.json
       trajectory_count: 36
-      active_schema_status: current_phase3c_camera_imu_sync_evidence_audited
+      active_schema_status: current_phase3d_lidar_imu_sync_evidence_audited
       phase2_schema_status: current_phase2_reference_quality_audited
       legacy_schema_status: legacy_pre_reference_coverage_artifacts
-      active_manifest_content_sha256: f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387
+      active_manifest_content_sha256: 3daf042328a9c9ee8bab0bbdb777a832bc867075323e39ca1553a6810f975756
+      phase3c_manifest_content_sha256: f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387
       phase3b_manifest_content_sha256: 5cf660327636174912d5d304972758c1b230fa4446ab584ca4549c76fdd6f4db
       phase2_manifest_content_sha256: 7183501dba3ee05fd0951424e144b94b7b55ded068434a08e1df174492f06745
-      active_manifest_file_sha256: 4453544d437b31cb0ab16b090dfa2e710fab19cb1b90cb65b53d7651166eb156
+      active_manifest_file_sha256: 67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f
+      phase3c_manifest_file_sha256: 4453544d437b31cb0ab16b090dfa2e710fab19cb1b90cb65b53d7651166eb156
       phase3b_manifest_file_sha256: 95e7c97ae991538c2e7160c935cbaacf784b824eae7feecf1d7b540abe5ebb55
       phase2_manifest_file_sha256: b4bac02cc64592e86fbe105fedd901b20a426463586088015a26b9c295c7fa4f
       legacy_manifest_content_sha256: 6503d8c94147465903b3341e02b317c0de7ab3a5beed1e52336b5f65252bf671
@@ -66,6 +70,8 @@ datasets:
       synchronization_evidence_file_sha256: 58615c56442485fc488eeb47f72dd074f51c05c64cda258a91a8c4937b83ef91
       camera_imu_synchronization_evidence_content_sha256: d765f8ac13ff21dca23e289efef65fed31372189363e7fa61982e122514e190b
       camera_imu_synchronization_evidence_file_sha256: 95ff9fdcaf2b74a9f7b118334f0fe3626bee3afe0916c3e09df4a7451d8425c7
+      lidar_imu_synchronization_evidence_content_sha256: ec5fbed1a386dd17e58fd05df500a45ee0ff4fc1ff40286f08d67410b3ce7c10
+      lidar_imu_synchronization_evidence_file_sha256: 44fe629284cad3f92e3109cec60ee2aab799c69c43eeeb67b5461b781d303f45
       phase3a_manifest_content_sha256: 5f8c4dcb398d684f809333307b2902231e69bb0ab51e596c95b3f62d6f652299
       phase3a_manifest_file_sha256: 5f7f7b14b89c9e9ef8f13aa3ed627c32b0409baca652238cc27c303554c666ea
 
@@ -91,6 +97,13 @@ datasets:
       phase3c_camera_imu_synchronization_evidence_artifact_validated: true
       phase3c_camera_imu_zero_lag_clean_cohort_trajectories: 28
       phase3c_camera_imu_fixed_offset_supported: false
+      phase3d_lidar_imu_synchronization_evidence_artifact_validated: true
+      phase3d_lidar_point_time_candidate_mechanism_characterized: true
+      phase3d_lidar_zero_lag_full_cohort_trajectories: 36
+      phase3d_lidar_zero_lag_candidate_pairs: 10764
+      phase3d_lidar_zero_lag_admitted_pairs: 10758
+      phase3d_lidar_zero_lag_failed_pairs: 0
+      phase3d_lidar_imu_fixed_offset_supported: false
 
     reference_quality_summary:
       rtk_ins_trajectories: 16
@@ -168,6 +181,31 @@ datasets:
       common_nonzero_camera_imu_fixed_offset_supported: false
       camera_image_to_imu_physical_capture_sync_verified: false
 
+    lidar_imu_synchronization_evidence_summary:
+      sensor_model: Velodyne VLP-32C
+      released_raw_velodyne_packets_present: false
+      per_point_time_field_present: true
+      vlp32c_terminal_firing_offset_us: 642.816
+      exact_velodyne_driver_revision_recovered: false
+      exact_velodyne_runtime_configuration_recovered: false
+      zero_lag_full_cohort_trajectories: 36
+      zero_lag_candidate_pairs: 10764
+      zero_lag_admitted_pairs: 10758
+      zero_lag_unsupported_leading_pairs: 6
+      zero_lag_unsupported_internal_pairs: 0
+      zero_lag_failed_pairs: 0
+      zero_lag_vector_correlation_min: 0.798444575
+      zero_lag_vector_correlation_median: 0.987891015
+      zero_lag_vector_correlation_max: 0.998822853
+      zero_lag_rotation_angle_correlation_median: 0.988835748
+      zero_lag_median_rotation_error_deg_median: 0.083623408
+      lag_pilot_gate_01_best_vector_lag_ms: -46
+      lag_pilot_hall_01_best_vector_lag_ms: -35
+      lag_pilot_room_01_best_vector_lag_ms: -54
+      whole_scan_registration_confounds_clock_offset_interpretation: true
+      common_nonzero_lidar_imu_fixed_offset_supported: false
+      lidar_to_imu_physical_capture_sync_verified: false
+
     unresolved:
       synchronization_verified: false
       common_physical_clock_verified: false
@@ -213,6 +251,9 @@ datasets:
       - near_zero_imu_content_association_does_not_freeze_a_fixed_offset
       - camera_visual_frontend_success_is_not_a_timing_validity_mask
       - do_not_expand_camera_imu_lag_search_to_force_a_fixed_offset
+      - do_not_expand_lidar_imu_lag_search_to_force_a_fixed_offset
+      - do_not_interpret_whole_scan_icp_effective_time_as_sensor_clock_offset
+      - do_not_convert_lidar_imu_correlation_into_an_automatic_validity_threshold
       - do_not_fabricate_camera_streams_for_street_09_or_street_010
       - common_header_range_is_diagnostic_not_an_automatic_validity_mask
       - reversed_header_timestamp_evidence_does_not_authorize_automatic_repair

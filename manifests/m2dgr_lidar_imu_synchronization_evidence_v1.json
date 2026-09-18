@@ -1,0 +1,211 @@
+{
+  "content_sha256": "ec5fbed1a386dd17e58fd05df500a45ee0ff4fc1ff40286f08d67410b3ce7c10",
+  "dataset_id": "M2DGR",
+  "manifest_semantics": {
+    "lidar_sync_stream_ids": [
+      "/velodyne_points"
+    ],
+    "only_lidar_sync_method_updates_allowed": true,
+    "phase3c_clock_domains_preserved": true,
+    "phase3c_source_manifest_content_sha256": "f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387"
+  },
+  "observations": {
+    "interpretation": {
+      "common_nonzero_lidar_imu_fixed_offset_supported": false,
+      "full_cohort_results_create_timing_validity_threshold": false,
+      "lag_pilot_identifies_unique_sensor_clock_offset": false,
+      "lower_correlation_trajectories_are_automatically_invalid": false,
+      "primary_lidar_body_rotation_convention_supported_over_raw_icp_convention": true,
+      "released_data_independently_verify_lidar_point_physical_capture_time": false,
+      "released_data_independently_verify_lidar_to_imu_physical_capture_synchronization": false,
+      "zero_header_lag_rotational_content_consistency_generalizes_across_full_cohort": true
+    },
+    "lag_characterization": {
+      "common_nonzero_fixed_offset_supported": false,
+      "deskewing_used": false,
+      "exact_common_primary_best_lag_exists": false,
+      "frontend_changed": false,
+      "grid_expanded_after_results": false,
+      "lag_grid_ms": {
+        "max": 101,
+        "min": -101,
+        "step": 1
+      },
+      "objectives_identify_unique_common_offset": false,
+      "per_trajectory": {
+        "gate_01": {
+          "best_angle_lags_ms": [
+            -46
+          ],
+          "best_minus_zero_vector_correlation": 0.001963775190464312,
+          "best_vector_lags_ms": [
+            -46
+          ],
+          "common_support_pair_count": 298,
+          "minimum_error_lags_ms": [
+            -50
+          ],
+          "zero_lag_vector_correlation": 0.9958789865474188,
+          "zero_minus_best_median_error_deg": 0.017125165301150963
+        },
+        "hall_01": {
+          "best_angle_lags_ms": [
+            -34
+          ],
+          "best_minus_zero_vector_correlation": 0.0021432864591074408,
+          "best_vector_lags_ms": [
+            -35
+          ],
+          "common_support_pair_count": 297,
+          "minimum_error_lags_ms": [
+            -85
+          ],
+          "zero_lag_vector_correlation": 0.9730445246588852,
+          "zero_minus_best_median_error_deg": 0.001665947344617405
+        },
+        "room_01": {
+          "best_angle_lags_ms": [
+            -53
+          ],
+          "best_minus_zero_vector_correlation": 0.004479343045862949,
+          "best_vector_lags_ms": [
+            -54
+          ],
+          "common_support_pair_count": 298,
+          "minimum_error_lags_ms": [
+            -99
+          ],
+          "zero_lag_vector_correlation": 0.9849659868918749,
+          "zero_minus_best_median_error_deg": 0.021413366419384183
+        }
+      },
+      "same_pair_support_every_lag": true,
+      "scan_expansion_scientifically_justified": false,
+      "trajectory_ids": [
+        "gate_01",
+        "hall_01",
+        "room_01"
+      ],
+      "whole_scan_registration_confounds_clock_offset_interpretation": true
+    },
+    "mechanism_evidence": {
+      "exact_m2dgr_velodyne_driver_revision_identified": false,
+      "exact_m2dgr_velodyne_runtime_configuration_identified": false,
+      "header_plus_point_time_independently_verified_as_physical_firing_time": false,
+      "last_packet_reference_independently_verified": false,
+      "released_payload_strongly_consistent_with_last_packet_referenced_relative_point_time": true,
+      "released_payload_strongly_matches_vlp32c_timing_table": true,
+      "released_pointcloud_topic": "/velodyne_points",
+      "released_raw_velodyne_packets_present": false,
+      "sensor_model": "Velodyne VLP-32C"
+    },
+    "zero_lag_full_cohort": {
+      "admitted_pair_count": 10758,
+      "all_primary_vector_correlations_positive": true,
+      "all_raw_icp_vector_correlations_negative": true,
+      "candidate_pair_count": 10764,
+      "deskewing_used": false,
+      "failed_pair_count": 0,
+      "imu_extrapolation_used": false,
+      "median_rotation_error_deg": {
+        "count": 36,
+        "max": 0.25130561528375084,
+        "median": 0.08362340774746069,
+        "min": 0.030531038098304403
+      },
+      "metric_based_pair_exclusion": false,
+      "p95_rotation_error_deg": {
+        "count": 36,
+        "max": 0.46731670881037196,
+        "median": 0.21730138171802968,
+        "min": 0.12725024200755994
+      },
+      "point_time_used": false,
+      "quality_threshold_for_pair_admission": null,
+      "raw_icp_vector_correlation": {
+        "count": 36,
+        "max": -0.798444575053871,
+        "median": -0.9878910152210005,
+        "min": -0.9988228530027167
+      },
+      "rotation_angle_correlation": {
+        "count": 36,
+        "max": 0.998959922791196,
+        "median": 0.9888357475784482,
+        "min": 0.859841311748226
+      },
+      "trajectory_count": 36,
+      "unsupported_internal_pair_count": 0,
+      "unsupported_leading_pair_count": 6,
+      "unsupported_pair_count": 6,
+      "unsupported_trailing_pair_count": 0,
+      "unsupported_trajectories": {
+        "door_02": [
+          0
+        ],
+        "hall_01": [
+          0
+        ],
+        "hall_03": [
+          0
+        ],
+        "lift_02": [
+          0
+        ],
+        "room_dark_06": [
+          0
+        ],
+        "street_08": [
+          0
+        ]
+      },
+      "vector_correlation": {
+        "count": 36,
+        "max": 0.9988228530027167,
+        "median": 0.9878910152210005,
+        "min": 0.798444575053871
+      },
+      "z_component_correlation": {
+        "count": 36,
+        "max": 0.999232592770486,
+        "median": 0.9963856146595323,
+        "min": 0.9583381157997062
+      }
+    }
+  },
+  "policy": {
+    "alignment_based_exclusion_rule_created": false,
+    "automatic_sample_exclusion_rule_created": false,
+    "characterization_only": true,
+    "evaluation_ready": false,
+    "fixed_offset_applied": false,
+    "fixed_offset_estimated": false,
+    "phase3c_manifest_modified": false,
+    "physical_capture_synchronization_verified": false,
+    "raw_data_modified": false,
+    "successor_clock_domains_modified": false,
+    "successor_non_lidar_synchronization_modified": false,
+    "successor_stream_metadata_modified": false,
+    "synchronization_tolerance_frozen": false,
+    "synchronization_verified": false
+  },
+  "remaining_blockers": [
+    "released_bags_do_not_retain_raw_velodyne_packets",
+    "exact_m2dgr_velodyne_driver_revision_not_identified",
+    "exact_m2dgr_velodyne_runtime_configuration_not_identified",
+    "pointcloud_header_physical_reference_event_not_independently_verified",
+    "header_plus_point_time_not_independently_verified_as_physical_firing_time",
+    "whole_scan_registration_effective_time_confounds_lag_interpretation",
+    "handsfree_to_lidar_calibration_not_independently_verified",
+    "unique_lidar_to_imu_fixed_offset_not_identified",
+    "no_validation_calibration_split_for_data_selected_sync_tolerance"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_IMU_SYNCHRONIZATION_EVIDENCE_V1",
+  "schema_version": 1,
+  "staging_source": {
+    "content_sha256": "0d274f0defdc1a2eaeb28c2a7dafe1de1355408dcf8481756fdbd439cbe036f9",
+    "file_sha256": "6ae8e201d0b18a8f9a20f169b9ec4315496d6bde0e86eea3fbc15d1cc835e08c",
+    "relative_path": "audit/phase3d_staging/lidar_imu_synchronization_evidence_v1/phase3d_lidar_imu_synchronization_evidence_v1.json",
+    "size_bytes": 7701
+  }
+}

@@ -32,6 +32,10 @@ from .m2dgr_camera_imu_synchronization_evidence import (
     CAMERA_IMU_STREAM_IDS,
     validate_m2dgr_camera_imu_synchronization_evidence,
 )
+from .m2dgr_lidar_imu_synchronization_evidence import (
+    LIDAR_SYNC_STREAM_IDS,
+    validate_m2dgr_lidar_imu_synchronization_evidence,
+)
 from .reference_quality import (
     load_reference_quality_artifact,
 )
@@ -1025,6 +1029,276 @@ def build_phase3c_camera_imu_successor_payload(
 
     return new
 
+
+
+def build_phase3d_lidar_imu_successor_payload(
+    phase3c_payload: dict,
+    lidar_imu_evidence: dict,
+    evidence_relative_path: str = (
+        "manifests/"
+        "m2dgr_lidar_imu_synchronization_evidence_v1.json"
+    ),
+) -> dict:
+    """Apply Phase-3D LiDAR/IMU evidence conservatively.
+
+    Only the synchronization method for /velodyne_points may change.
+    Streams, clock domains, measurement-time basis, verification status,
+    offsets, tolerances, references, and non-LiDAR synchronization are
+    preserved exactly.
+    """
+
+    validate_manifest_payload(
+        phase3c_payload
+    )
+
+    validate_m2dgr_lidar_imu_synchronization_evidence(
+        lidar_imu_evidence
+    )
+
+    if (
+        phase3c_payload[
+            "dataset_id"
+        ]
+        != DATASET_ID
+    ):
+        raise ValueError(
+            "Phase-3D LiDAR/IMU successor requires M2DGR"
+        )
+
+    semantics = lidar_imu_evidence[
+        "manifest_semantics"
+    ]
+
+    expected_source_sha = semantics[
+        "phase3c_source_manifest_content_sha256"
+    ]
+
+    if (
+        phase3c_payload[
+            "manifest_content_sha256"
+        ]
+        != expected_source_sha
+    ):
+        raise ValueError(
+            "Phase-3D LiDAR/IMU evidence is not bound "
+            "to the supplied Phase-3C manifest"
+        )
+
+    if tuple(
+        semantics[
+            "lidar_sync_stream_ids"
+        ]
+    ) != LIDAR_SYNC_STREAM_IDS:
+        raise ValueError(
+            "Phase-3D evidence contains an unexpected "
+            "LiDAR synchronization stream set"
+        )
+
+    if (
+        semantics[
+            "phase3c_clock_domains_preserved"
+        ] is not True
+        or semantics[
+            "only_lidar_sync_method_updates_allowed"
+        ] is not True
+    ):
+        raise ValueError(
+            "Phase-3D evidence does not permit the expected "
+            "conservative successor operation"
+        )
+
+    if (
+        not evidence_relative_path
+        or Path(
+            evidence_relative_path
+        ).is_absolute()
+    ):
+        raise ValueError(
+            "Phase-3D evidence path must be non-empty and relative"
+        )
+
+    new = deepcopy(
+        phase3c_payload
+    )
+
+    old_by_id = {
+        record[
+            "trajectory_id"
+        ]:
+            record
+        for record in phase3c_payload[
+            "records"
+        ]
+    }
+
+    sync_method = (
+        "Phase-3D LiDAR/IMU synchronization evidence from "
+        f"{evidence_relative_path}; released VLP-32C point-time "
+        "payload strongly matches a last-packet-referenced relative "
+        "timing mechanism and frozen all-trajectory LiDAR/HandsFree "
+        "rotation analysis shows strong zero-header-lag physical-content "
+        "consistency, but the predeclared lag pilot is confounded by "
+        "whole-scan registration effective time and does not identify "
+        "a unique physical sensor-clock offset; exact recorder timing "
+        "semantics remain unresolved; synchronization remains unverified "
+        "and no fixed offset or tolerance is selected"
+    )
+
+    for record in new[
+        "records"
+    ]:
+        trajectory_id = record[
+            "trajectory_id"
+        ]
+
+        old_record = old_by_id[
+            trajectory_id
+        ]
+
+        for key, value in (
+            old_record.items()
+        ):
+            if key == "synchronization":
+                continue
+
+            if record[
+                key
+            ] != value:
+                raise ValueError(
+                    f"{trajectory_id!r}: Phase-3D migration "
+                    f"unexpectedly changed record field {key!r}"
+                )
+
+        old_sync_by_id = {
+            item[
+                "stream_id"
+            ]:
+                item
+            for item in old_record[
+                "synchronization"
+            ]
+        }
+
+        stream_ids = {
+            item[
+                "stream_id"
+            ]
+            for item in old_record[
+                "streams"
+            ]
+        }
+
+        if set(
+            old_sync_by_id
+        ) != stream_ids:
+            raise ValueError(
+                f"{trajectory_id!r}: Phase-3C stream/sync "
+                "inventory mismatch"
+            )
+
+        for sync in record[
+            "synchronization"
+        ]:
+            stream_id = sync[
+                "stream_id"
+            ]
+
+            old_sync = old_sync_by_id[
+                stream_id
+            ]
+
+            if (
+                old_sync[
+                    "verification_status"
+                ]
+                != "unverified"
+            ):
+                raise ValueError(
+                    f"{trajectory_id!r}: source synchronization "
+                    f"is not unverified for {stream_id!r}"
+                )
+
+            if (
+                old_sync[
+                    "measurement_time_basis"
+                ]
+                != "sensor_header_stamp"
+            ):
+                raise ValueError(
+                    f"{trajectory_id!r}: source measurement-time "
+                    f"basis changed for {stream_id!r}"
+                )
+
+            if (
+                old_sync[
+                    "fixed_offset_seconds"
+                ] is not None
+                or old_sync[
+                    "fixed_offset_method"
+                ] is not None
+                or old_sync[
+                    "tolerance_seconds"
+                ] is not None
+                or old_sync[
+                    "tolerance_evidence"
+                ] is not None
+                or old_sync[
+                    "tolerance_selected_on_split"
+                ] is not None
+            ):
+                raise ValueError(
+                    f"{trajectory_id!r}: source manifest already "
+                    f"contains an offset/tolerance decision for "
+                    f"{stream_id!r}"
+                )
+
+            if (
+                stream_id
+                not in LIDAR_SYNC_STREAM_IDS
+            ):
+                if sync != old_sync:
+                    raise ValueError(
+                        f"{trajectory_id!r}: Phase-3D unexpectedly "
+                        f"changed non-LiDAR synchronization for "
+                        f"{stream_id!r}"
+                    )
+
+                continue
+
+            for key, value in (
+                old_sync.items()
+            ):
+                if key == "method":
+                    continue
+
+                if sync[
+                    key
+                ] != value:
+                    raise ValueError(
+                        f"{trajectory_id!r}: Phase-3D unexpectedly "
+                        f"changed {stream_id!r}/{key!r}"
+                    )
+
+            sync[
+                "method"
+            ] = sync_method
+
+    new.pop(
+        "manifest_content_sha256",
+        None,
+    )
+
+    new[
+        "manifest_content_sha256"
+    ] = canonical_digest(
+        new
+    )
+
+    validate_manifest_payload(
+        new
+    )
+
+    return new
 
 
 def build_records(

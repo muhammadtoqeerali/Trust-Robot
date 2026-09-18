@@ -1084,3 +1084,149 @@ Remaining Phase-3 blockers include:
 
 Do not resume camera/IMU lag tuning without new independent evidence that
 resolves the released image-header physical capture semantics.
+
+---
+
+## Phase-3D checkpoint — 2026-09-18
+
+M2DGR LiDAR-to-HandsFree-IMU timing characterization has reached a permanent
+evidence checkpoint.
+
+Released-pointcloud mechanism findings:
+
+- M2DGR identifies the sensor as a Velodyne VLP-32C;
+- `/velodyne_points` contains a FLOAT32 per-point `time` field;
+- raw `/velodyne_packets` are not retained;
+- sampled point-time behavior across all 36 trajectories strongly matches the
+  VLP-32C firing-time table;
+- the maximum observed relative point time reaches the VLP-32C terminal firing
+  offset of 642.816 microseconds;
+- point times are predominantly negative relative to the cloud header;
+- `header + time` forms an internally coherent approximately 100 ms scan
+  coordinate;
+- the payload is strongly consistent with a last-packet-referenced relative
+  timing construction.
+
+This is a dataset-internal mechanism fingerprint.
+
+It does not independently prove the exact M2DGR Velodyne driver revision,
+runtime configuration, timestamp option, PointCloud2 header physical event, or
+`header + time` as physical firing time.
+
+A LiDAR/HandsFree rotational frontend was frozen before lag characterization.
+
+The method uses:
+
+- first 300 LiDAR clouds per trajectory;
+- deterministic trimmed point-to-point ICP;
+- no deskewing;
+- no per-point timing in registration;
+- HandsFree gyro integration on sensor-header timestamps;
+- no gyro-bias fitting;
+- author-provided HandsFree-to-LiDAR rotation;
+- no bag-record timestamps;
+- no fixed temporal offset.
+
+Across the all-36 zero-lag cohort:
+
+- candidate intervals: 10764;
+- admitted intervals: 10758;
+- unsupported intervals: 6, all leading IMU-coverage boundaries;
+- unsupported internal intervals: 0;
+- failed ICP intervals: 0;
+- vector-correlation min/median/max:
+  0.798444575 / 0.987891015 / 0.998822853;
+- angle-correlation min/median/max:
+  0.859841312 / 0.988835748 / 0.998959923;
+- median rotation-error min/median/max:
+  0.030531038 / 0.083623408 / 0.251305615 degrees.
+
+No metric threshold was used for pair admission or converted into an evaluation
+validity rule.
+
+The opposite raw ICP convention remains sign-reversed throughout, supporting
+the frozen LiDAR body-motion convention.
+
+A frozen descriptive lag pilot on `gate_01`, `hall_01`, and `room_01` used a
+predeclared -101 ms to +101 ms grid at 1 ms resolution with common pair support
+for every lag.
+
+Vector-correlation optima were:
+
+- `gate_01`: -46 ms;
+- `hall_01`: -35 ms;
+- `room_01`: -54 ms.
+
+Rotation-angle optima were nearly identical, while median-rotation-error optima
+were:
+
+- `gate_01`: -50 ms;
+- `hall_01`: -85 ms;
+- `room_01`: -99 ms.
+
+Because an undeskewed rotating LiDAR scan spans approximately one 100 ms
+revolution, whole-scan registration effective time confounds interpretation of
+these lag optima as a physical clock offset.
+
+Therefore:
+
+- no common nonzero LiDAR/IMU fixed offset is supported;
+- no wider lag search is authorized;
+- no synchronization tolerance is selected;
+- physical LiDAR-to-IMU capture synchronization remains unverified.
+
+Permanent Phase-3D evidence:
+
+`manifests/m2dgr_lidar_imu_synchronization_evidence_v1.json`
+
+Content SHA256:
+
+`ec5fbed1a386dd17e58fd05df500a45ee0ff4fc1ff40286f08d67410b3ce7c10`
+
+File SHA256:
+
+`44fe629284cad3f92e3109cec60ee2aab799c69c43eeeb67b5461b781d303f45`
+
+Phase-3D successor manifest:
+
+`manifests/m2dgr_trajectory_manifest_v1_phase3d_lidar_imu_sync_evidence.json`
+
+Content SHA256:
+
+`3daf042328a9c9ee8bab0bbdb777a832bc867075323e39ca1553a6810f975756`
+
+File SHA256:
+
+`67fe08bff676689dd212da03dce8e16ecee277c96f38f752d0d38a5e4e54cf6f`
+
+The successor is bound to exact Phase-3C manifest content SHA256:
+
+`f599be5bb1b4d009fe77ff8eb33148880122f92f4bfe00f885ec18015d715387`
+
+The successor contains:
+
+- 36 trajectories;
+- 140 stream entries;
+- 140 synchronization entries;
+- exactly 36 `/velodyne_points` synchronization-method changes.
+
+Clock domains, measurement-time basis, verification state, fixed offsets,
+tolerances, stream metadata, reference metadata, and all non-LiDAR
+synchronization entries are unchanged from Phase 3C.
+
+At the Phase-3D checkpoint:
+
+- camera-image-to-IMU physical capture synchronization: UNVERIFIED;
+- LiDAR-to-IMU physical capture synchronization: UNVERIFIED;
+- common physical clock: UNVERIFIED;
+- fixed temporal offsets: NONE;
+- synchronization tolerance: NONE;
+- calibration independently verified: FALSE;
+- reference-to-estimator temporal association verified: FALSE;
+- evaluation ready: FALSE.
+
+Do not resume camera/IMU or LiDAR/IMU lag tuning without new independent
+physical-timing evidence.
+
+Next Phase-3 work is reference-to-estimator temporal association, followed by
+the calibration evidence required for scientifically valid evaluation.
