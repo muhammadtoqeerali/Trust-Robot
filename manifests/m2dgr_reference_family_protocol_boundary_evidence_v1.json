@@ -1,0 +1,503 @@
+{
+  "common_frozen_protocol_boundary": {
+    "alignment_mode": "unselected",
+    "association_execution_authorized": false,
+    "association_tolerance_seconds": null,
+    "dataset_calibration_verified": false,
+    "dimension_gating_definition_authorized": true,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_policy": "unselected",
+    "evaluation_ready": false,
+    "fixed_reference_to_estimator_offset_seconds": null,
+    "interpolation_method": "unselected",
+    "metric_computation_authorized": false,
+    "metric_family_definition_authorized": true,
+    "protocol_schema_definition_authorized": true,
+    "reference_frame_semantics_verified": false,
+    "reference_frame_transform_verified": false,
+    "synchronization_verified": false,
+    "temporal_association_method": "unselected",
+    "trajectory_scoring_authorized": false
+  },
+  "content_sha256": "87d48c97aeea22cbcba09bda0dfd1e577c0eef9084435cdd44dfc66146b1ec7c",
+  "dataset_id": "M2DGR",
+  "family_dimension_matrix": {
+    "leica": {
+      "family_stats": {
+        "all_reference_frame_ids_known": false,
+        "continuous_time_coverage_verified": false,
+        "rotation_invalid_sample_count_total": 0,
+        "rotation_supported_trajectory_count": 0,
+        "rotation_trajectory_count_with_invalid_samples": 0,
+        "split_counts": {
+          "confirmation_test": 2,
+          "train": 7,
+          "validation_calibration": 2
+        },
+        "trajectory_count": 11,
+        "translation_invalid_sample_count_total": 0,
+        "translation_supported_trajectory_count": 11
+      },
+      "physical_closure": {
+        "exact_reference_physical_origin_verified": false,
+        "family_specific_additional_blockers": [
+          "exact Leica prism reference point unresolved",
+          "reflector model / prism constant / mount unresolved",
+          "published Leica-to-LiDAR candidate applicability unresolved",
+          "rotation reference unsupported"
+        ],
+        "reference_object_or_origin_narrowly_identified": true,
+        "reference_timestamp_physical_measurement_event_verified": false,
+        "reference_timestamp_timebase_export_semantics_verified": false,
+        "reference_to_estimator_temporal_association_verified": false,
+        "reference_to_lidar_transform_applicability_verified": false
+      },
+      "rotation": {
+        "all_audited_samples_structurally_valid": false,
+        "audited_invalid_sample_count_total": null,
+        "blockers": [
+          "rotation reference dimension structurally unsupported",
+          "continuous reference coverage not verified",
+          "reference frame semantics not verified",
+          "reference-frame transform not verified",
+          "exact family physical origin not verified",
+          "family reference-to-LiDAR/estimator transform applicability not verified",
+          "reference timestamp physical-event semantics not verified",
+          "reference timestamp export/timebase semantics not verified",
+          "reference-to-estimator temporal association not verified",
+          "association method unselected",
+          "association tolerance unfrozen",
+          "evaluation interval unselected",
+          "alignment mode unselected",
+          "dataset calibration not independently verified",
+          "synchronization not independently verified",
+          "metric execution/scoring not authorized by Protocol V2",
+          "Leica GT is author-supported as 3D position only",
+          "released zero quaternion columns are not physical rotation"
+        ],
+        "continuous_time_coverage_verified": false,
+        "dimension": "rotation",
+        "exact_reference_physical_origin_verified": false,
+        "reference_timestamp_export_timebase_verified": false,
+        "reference_timestamp_physical_event_verified": false,
+        "reference_transform_applicability_verified": false,
+        "scoring_admissible_under_frozen_protocol_v2_now": false,
+        "structural_dimension_present": false,
+        "temporal_association_verified": false
+      },
+      "translation": {
+        "all_audited_samples_structurally_valid": true,
+        "audited_invalid_sample_count_total": 0,
+        "blockers": [
+          "continuous reference coverage not verified",
+          "reference frame semantics not verified",
+          "reference-frame transform not verified",
+          "exact family physical origin not verified",
+          "family reference-to-LiDAR/estimator transform applicability not verified",
+          "reference timestamp physical-event semantics not verified",
+          "reference timestamp export/timebase semantics not verified",
+          "reference-to-estimator temporal association not verified",
+          "association method unselected",
+          "association tolerance unfrozen",
+          "evaluation interval unselected",
+          "alignment mode unselected",
+          "dataset calibration not independently verified",
+          "synchronization not independently verified",
+          "metric execution/scoring not authorized by Protocol V2"
+        ],
+        "continuous_time_coverage_verified": false,
+        "dimension": "translation",
+        "exact_reference_physical_origin_verified": false,
+        "reference_timestamp_export_timebase_verified": false,
+        "reference_timestamp_physical_event_verified": false,
+        "reference_transform_applicability_verified": false,
+        "scoring_admissible_under_frozen_protocol_v2_now": false,
+        "structural_dimension_present": true,
+        "temporal_association_verified": false
+      }
+    },
+    "mocap": {
+      "family_stats": {
+        "all_reference_frame_ids_known": false,
+        "continuous_time_coverage_verified": false,
+        "rotation_invalid_sample_count_total": 1274,
+        "rotation_supported_trajectory_count": 9,
+        "rotation_trajectory_count_with_invalid_samples": 9,
+        "split_counts": {
+          "confirmation_test": 2,
+          "train": 5,
+          "validation_calibration": 2
+        },
+        "trajectory_count": 9,
+        "translation_invalid_sample_count_total": 0,
+        "translation_supported_trajectory_count": 9
+      },
+      "physical_closure": {
+        "exact_reference_physical_origin_verified": false,
+        "family_specific_additional_blockers": [
+          "tracked-body origin unresolved",
+          "marker pattern and local-axis definition unresolved",
+          "mocap-to-LiDAR relation unresolved",
+          "rotation invalid samples present",
+          "no scientifically specified filter or exclusion rule"
+        ],
+        "reference_object_or_origin_narrowly_identified": false,
+        "reference_timestamp_physical_measurement_event_verified": false,
+        "reference_timestamp_timebase_export_semantics_verified": false,
+        "reference_to_estimator_temporal_association_verified": false,
+        "reference_to_lidar_transform_applicability_verified": false
+      },
+      "rotation": {
+        "all_audited_samples_structurally_valid": false,
+        "audited_invalid_sample_count_total": 1274,
+        "blockers": [
+          "rotation reference contains structurally invalid audited samples",
+          "continuous reference coverage not verified",
+          "reference frame semantics not verified",
+          "reference-frame transform not verified",
+          "exact family physical origin not verified",
+          "family reference-to-LiDAR/estimator transform applicability not verified",
+          "reference timestamp physical-event semantics not verified",
+          "reference timestamp export/timebase semantics not verified",
+          "reference-to-estimator temporal association not verified",
+          "association method unselected",
+          "association tolerance unfrozen",
+          "evaluation interval unselected",
+          "alignment mode unselected",
+          "dataset calibration not independently verified",
+          "synchronization not independently verified",
+          "metric execution/scoring not authorized by Protocol V2",
+          "every mocap trajectory has at least one audited invalid quaternion sample",
+          "no reproducible author filter threshold/window/rule is available",
+          "no prospective mocap invalid-sample exclusion rule has been selected"
+        ],
+        "continuous_time_coverage_verified": false,
+        "dimension": "rotation",
+        "exact_reference_physical_origin_verified": false,
+        "reference_timestamp_export_timebase_verified": false,
+        "reference_timestamp_physical_event_verified": false,
+        "reference_transform_applicability_verified": false,
+        "scoring_admissible_under_frozen_protocol_v2_now": false,
+        "structural_dimension_present": true,
+        "temporal_association_verified": false
+      },
+      "translation": {
+        "all_audited_samples_structurally_valid": true,
+        "audited_invalid_sample_count_total": 0,
+        "blockers": [
+          "continuous reference coverage not verified",
+          "reference frame semantics not verified",
+          "reference-frame transform not verified",
+          "exact family physical origin not verified",
+          "family reference-to-LiDAR/estimator transform applicability not verified",
+          "reference timestamp physical-event semantics not verified",
+          "reference timestamp export/timebase semantics not verified",
+          "reference-to-estimator temporal association not verified",
+          "association method unselected",
+          "association tolerance unfrozen",
+          "evaluation interval unselected",
+          "alignment mode unselected",
+          "dataset calibration not independently verified",
+          "synchronization not independently verified",
+          "metric execution/scoring not authorized by Protocol V2"
+        ],
+        "continuous_time_coverage_verified": false,
+        "dimension": "translation",
+        "exact_reference_physical_origin_verified": false,
+        "reference_timestamp_export_timebase_verified": false,
+        "reference_timestamp_physical_event_verified": false,
+        "reference_transform_applicability_verified": false,
+        "scoring_admissible_under_frozen_protocol_v2_now": false,
+        "structural_dimension_present": true,
+        "temporal_association_verified": false
+      }
+    },
+    "rtk_ins": {
+      "family_stats": {
+        "all_reference_frame_ids_known": false,
+        "continuous_time_coverage_verified": false,
+        "rotation_invalid_sample_count_total": 0,
+        "rotation_supported_trajectory_count": 16,
+        "rotation_trajectory_count_with_invalid_samples": 0,
+        "split_counts": {
+          "confirmation_test": 3,
+          "train": 10,
+          "validation_calibration": 3
+        },
+        "trajectory_count": 16,
+        "translation_invalid_sample_count_total": 0,
+        "translation_supported_trajectory_count": 16
+      },
+      "physical_closure": {
+        "exact_reference_physical_origin_verified": false,
+        "family_specific_additional_blockers": [
+          "exact physical Xsens measurement origin unresolved",
+          "runtime MTi GNSS lever arm unresolved",
+          "published Xsens/GNSS candidate transform applicability unresolved"
+        ],
+        "reference_object_or_origin_narrowly_identified": true,
+        "reference_timestamp_physical_measurement_event_verified": false,
+        "reference_timestamp_timebase_export_semantics_verified": false,
+        "reference_to_estimator_temporal_association_verified": false,
+        "reference_to_lidar_transform_applicability_verified": false
+      },
+      "rotation": {
+        "all_audited_samples_structurally_valid": true,
+        "audited_invalid_sample_count_total": 0,
+        "blockers": [
+          "continuous reference coverage not verified",
+          "reference frame semantics not verified",
+          "reference-frame transform not verified",
+          "exact family physical origin not verified",
+          "family reference-to-LiDAR/estimator transform applicability not verified",
+          "reference timestamp physical-event semantics not verified",
+          "reference timestamp export/timebase semantics not verified",
+          "reference-to-estimator temporal association not verified",
+          "association method unselected",
+          "association tolerance unfrozen",
+          "evaluation interval unselected",
+          "alignment mode unselected",
+          "dataset calibration not independently verified",
+          "synchronization not independently verified",
+          "metric execution/scoring not authorized by Protocol V2"
+        ],
+        "continuous_time_coverage_verified": false,
+        "dimension": "rotation",
+        "exact_reference_physical_origin_verified": false,
+        "reference_timestamp_export_timebase_verified": false,
+        "reference_timestamp_physical_event_verified": false,
+        "reference_transform_applicability_verified": false,
+        "scoring_admissible_under_frozen_protocol_v2_now": false,
+        "structural_dimension_present": true,
+        "temporal_association_verified": false
+      },
+      "translation": {
+        "all_audited_samples_structurally_valid": true,
+        "audited_invalid_sample_count_total": 0,
+        "blockers": [
+          "continuous reference coverage not verified",
+          "reference frame semantics not verified",
+          "reference-frame transform not verified",
+          "exact family physical origin not verified",
+          "family reference-to-LiDAR/estimator transform applicability not verified",
+          "reference timestamp physical-event semantics not verified",
+          "reference timestamp export/timebase semantics not verified",
+          "reference-to-estimator temporal association not verified",
+          "association method unselected",
+          "association tolerance unfrozen",
+          "evaluation interval unselected",
+          "alignment mode unselected",
+          "dataset calibration not independently verified",
+          "synchronization not independently verified",
+          "metric execution/scoring not authorized by Protocol V2"
+        ],
+        "continuous_time_coverage_verified": false,
+        "dimension": "translation",
+        "exact_reference_physical_origin_verified": false,
+        "reference_timestamp_export_timebase_verified": false,
+        "reference_timestamp_physical_event_verified": false,
+        "reference_transform_applicability_verified": false,
+        "scoring_admissible_under_frozen_protocol_v2_now": false,
+        "structural_dimension_present": true,
+        "temporal_association_verified": false
+      }
+    }
+  },
+  "interpretation": {
+    "association_execution_authorized": false,
+    "author_evo_alignment_provenance_does_not_establish_physical_extrinsic": true,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_ready": false,
+    "leica_rotation_metrics_remain_structurally_unsupported": true,
+    "leica_translation_metrics_remain_physical_and_temporal_blocked": true,
+    "metric_computation_authorized": false,
+    "mocap_rotation_metrics_remain_quality_blocked": true,
+    "mocap_translation_metrics_remain_physical_and_temporal_blocked": true,
+    "numeric_timestamp_overlap_does_not_establish_temporal_association": true,
+    "published_candidate_transforms_are_not_promoted_to_verified_applicability": true,
+    "rtk_rotation_metrics_remain_physical_and_temporal_blocked": true,
+    "rtk_translation_metrics_remain_physical_and_temporal_blocked": true,
+    "structural_dimension_availability_is_not_physical_evaluation_readiness": true,
+    "synchronization_verified": false,
+    "trajectory_scoring_authorized": false,
+    "zero_structural_invalid_count_does_not_establish_continuous_reference_coverage": true
+  },
+  "mechanical_inventory": {
+    "continuous_time_coverage_verified": false,
+    "family_split_counts": {
+      "leica": {
+        "confirmation_test": 2,
+        "train": 7,
+        "validation_calibration": 2
+      },
+      "mocap": {
+        "confirmation_test": 2,
+        "train": 5,
+        "validation_calibration": 2
+      },
+      "rtk_ins": {
+        "confirmation_test": 3,
+        "train": 10,
+        "validation_calibration": 3
+      }
+    },
+    "reference_family_counts": {
+      "leica": 11,
+      "mocap": 9,
+      "rtk_ins": 16
+    },
+    "reference_frame_counts": {
+      "unknown": 36
+    },
+    "structural_dimension_counts": {
+      "translation_and_rotation": 25,
+      "translation_only": 11
+    },
+    "trajectory_count": 36
+  },
+  "next_evidence_or_design_requirements": {
+    "additional_for_leica": [
+      "exact released Leica prism reference point",
+      "Leica candidate-transform applicability"
+    ],
+    "additional_for_mocap_rotation": [
+      "tracked-body local-axis definition",
+      "mocap-to-estimator/LiDAR rotation relation",
+      "prospectively justified invalid-rotation handling rule"
+    ],
+    "additional_for_mocap_translation": [
+      "tracked-body origin",
+      "mocap-to-estimator/LiDAR physical relation"
+    ],
+    "additional_for_rtk_ins": [
+      "exact released Xsens GT physical origin",
+      "runtime GNSS lever-arm configuration or equivalent provenance",
+      "published Xsens/GNSS candidate transform applicability"
+    ],
+    "for_physical_scoring": [
+      "family-specific physical origin / estimator-frame relationship closure",
+      "reference timestamp physical-event semantics",
+      "reference timestamp export/timebase semantics",
+      "reference-to-estimator temporal association",
+      "justified association tolerance if non-exact association is required",
+      "evaluation interval definition",
+      "alignment policy justified by the scientific gauge/question"
+    ]
+  },
+  "policy": {
+    "association_execution_authorized": false,
+    "confirmation_test_raw_data_inspected": false,
+    "confirmation_test_used_for_selection": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_ready": false,
+    "frozen_evidence_modified": false,
+    "metric_computation_authorized": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "new_alignment_rule_created": false,
+    "new_calibration_value_created": false,
+    "new_evaluation_interval_created": false,
+    "new_frame_transform_created": false,
+    "new_interpolation_rule_created": false,
+    "new_mocap_filter_created": false,
+    "new_timing_offset_created": false,
+    "new_timing_tolerance_created": false,
+    "raw_data_modified": false,
+    "reference_interpolation_authorized": false,
+    "synchronization_verified": false,
+    "trajectory_scoring_authorized": false
+  },
+  "protocol_boundary_conclusion": {
+    "a_differently_scoped_nonphysical_author_benchmark_replication_would_require_separate_predeclared_protocol": true,
+    "any_reference_family_ate_or_rpe_admissible_now": false,
+    "any_reference_family_rotation_scoring_admissible_now": false,
+    "any_reference_family_translation_scoring_admissible_now": false,
+    "confirmation_test_may_be_used_to_choose_that_future_protocol": false,
+    "dimension_gating_definition_admissible": true,
+    "future_physical_evidence_could_change_boundary": true,
+    "leica_translation_only_restricted_scoring_admissible_now": false,
+    "metric_schema_definition_admissible": true,
+    "mocap_rotation_restricted_scoring_admissible_now": false,
+    "mocap_translation_only_restricted_scoring_admissible_now": false,
+    "non_scoring_structural_inventory_and_provenance_analysis_admissible": true,
+    "physical_evaluation_objective_can_be_completed_from_current_frozen_evidence": false,
+    "protocol_v2_should_remain_byte_identical": true,
+    "rtk_ins_restricted_scoring_admissible_now": false,
+    "this_artifact_authorizes_any_new_association_or_alignment_choice": false,
+    "this_artifact_authorizes_protocol_v3_selection": false
+  },
+  "schema": "TRUST_ROBOT_M2DGR_REFERENCE_FAMILY_PROTOCOL_BOUNDARY_EVIDENCE_V1",
+  "schema_version": 1,
+  "scope": {
+    "alignment_selected": false,
+    "association_method_selected": false,
+    "association_tolerance_selected": false,
+    "confirmation_test_metadata_from_frozen_split_counted": true,
+    "confirmation_test_used_for_parameter_selection": false,
+    "evaluation_interval_selected": false,
+    "fixed_time_offset_selected": false,
+    "interpolation_selected": false,
+    "mocap_filter_selected": false,
+    "mocap_samples_excluded": false,
+    "model_selected": false,
+    "modifies_protocol_v2": false,
+    "new_confirmation_test_raw_data_access": false,
+    "new_raw_dataset_scan": false,
+    "performs_ate_or_rpe": false,
+    "performs_estimator_scoring": false,
+    "performs_metric_computation": false,
+    "preexisting_frozen_reference_quality_index_reused": true,
+    "purpose": "mechanically derive reference-family and metric-dimension execution boundaries from already frozen evidence",
+    "threshold_selected": false,
+    "trajectory_outcomes_used_for_parameter_selection": false,
+    "validation_outcomes_used_for_parameter_selection": false
+  },
+  "source_artifacts": {
+    "calibration_evidence_v1": {
+      "file_sha256": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+      "relative_path": "manifests/m2dgr_calibration_evidence_v1.json"
+    },
+    "gt_recording_stream_v1": {
+      "file_sha256": "f8cbf76663a027e5487737afb6753eeaed1bc75debbc7c1151d949e809aff814",
+      "relative_path": "manifests/m2dgr_gt_recording_stream_provenance_evidence_v1.json"
+    },
+    "indoor_reference_origin_v1": {
+      "file_sha256": "1d08a9c164857c827016545e55d7a495f10557dba7e596d8c2fc071d30cd895d",
+      "relative_path": "manifests/m2dgr_indoor_reference_origin_semantics_evidence_v1.json"
+    },
+    "platform_geometry_v1": {
+      "file_sha256": "e1ba372d38faf32107b2c23ed836ab8a78b783269bab7f89e20f542c57159882",
+      "relative_path": "manifests/m2dgr_platform_geometry_evidence_v1.json"
+    },
+    "protocol_v2": {
+      "file_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+      "relative_path": "configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json"
+    },
+    "reference_physical_semantics_v1": {
+      "file_sha256": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+      "relative_path": "manifests/m2dgr_reference_physical_semantics_evidence_v1.json"
+    },
+    "reference_quality_index_v1": {
+      "file_sha256": "5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77",
+      "relative_path": "manifests/m2dgr_reference_quality_index_v1.json"
+    },
+    "reference_temporal_association_v1": {
+      "file_sha256": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117",
+      "relative_path": "manifests/m2dgr_reference_temporal_association_evidence_v1.json"
+    },
+    "rtk_geometry_timing_v1": {
+      "file_sha256": "1cf9bbade44db2d1c35e49ff89984cb7e9a34fdfe99978f9c0213e306135c42b",
+      "relative_path": "manifests/m2dgr_rtk_reference_geometry_timing_semantics_evidence_v1.json"
+    },
+    "split_evidence_v1": {
+      "file_sha256": "9b1bddff5685f933372049966d9d72dd1162f66f8abfe29bbc80da3cbe38e9a9",
+      "relative_path": "manifests/m2dgr_split_freeze_evidence_v1.json"
+    },
+    "split_manifest_v1": {
+      "file_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+      "relative_path": "manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json"
+    }
+  },
+  "status": "blocked_pending_physical_evidence"
+}

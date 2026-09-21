@@ -1168,6 +1168,118 @@ No confirmation-test trajectory was inspected or used for selection.
 
 This checkpoint is additive. Evaluation Protocol V2 remains byte-identical.
 
+
+## M2DGR reference-family protocol-boundary findings
+
+Permanent additive evidence:
+
+`manifests/m2dgr_reference_family_protocol_boundary_evidence_v1.json`
+
+Content SHA256:
+
+`87d48c97aeea22cbcba09bda0dfd1e577c0eef9084435cdd44dfc66146b1ec7c`
+
+File SHA256:
+
+`7d4cc9e1f7433ddd6b88b391687ca14a245ebf80877c4f4290fc3192ab7494cd`
+
+The frozen 36-trajectory corpus decomposes mechanically into:
+
+- RTK/INS: 16 trajectories
+- Leica: 11 trajectories
+- mocap: 9 trajectories
+
+Frozen split counts by reference family:
+
+- RTK/INS: train 10, validation/calibration 3, confirmation-test 3
+- Leica: train 7, validation/calibration 2, confirmation-test 2
+- mocap: train 5, validation/calibration 2, confirmation-test 2
+
+Structural dimension status:
+
+- RTK/INS translation: present
+- RTK/INS rotation: present
+- Leica translation: present
+- Leica rotation: unsupported
+- mocap translation: present
+- mocap rotation: present
+
+Audited structural invalid samples:
+
+- RTK/INS translation: 0
+- RTK/INS rotation: 0
+- Leica translation: 0
+- mocap translation: 0
+- mocap rotation: 1274 invalid quaternion samples
+- mocap trajectories with invalid rotation samples: 9 of 9
+
+These structural observations do not establish continuous-time coverage or
+physical evaluation readiness.
+
+Current family/dimension scoring boundary under frozen Protocol V2:
+
+- RTK/INS translation scoring admissible: FALSE
+- RTK/INS rotation scoring admissible: FALSE
+- Leica translation-only scoring admissible: FALSE
+- Leica rotation scoring admissible: FALSE
+- mocap translation-only scoring admissible: FALSE
+- mocap rotation scoring admissible: FALSE
+
+Common blockers remain:
+
+- reference frame semantics verified: FALSE
+- reference-frame transform verified: FALSE
+- continuous reference coverage verified: FALSE
+- temporal association method selected: FALSE
+- association tolerance frozen: FALSE
+- fixed reference offset selected: FALSE
+- interpolation method selected: FALSE
+- evaluation interval selected: FALSE
+- alignment mode selected: FALSE
+- dataset calibration independently verified: FALSE
+- synchronization independently verified: FALSE
+- metric computation authorized: FALSE
+- trajectory scoring authorized: FALSE
+- estimator scoring authorized: FALSE
+- evaluation ready: FALSE
+
+Family-specific blockers remain:
+
+RTK/INS:
+- exact released Xsens physical origin unresolved
+- runtime GNSS lever arm unresolved
+- Xsens/GNSS candidate-transform applicability unresolved
+
+Leica:
+- exact released prism reference point unresolved
+- reflector model/prism constant/mount unresolved
+- Leica candidate-transform applicability unresolved
+- rotation reference unsupported
+
+Mocap:
+- tracked-body origin unresolved
+- marker/local-axis configuration unresolved
+- mocap-to-LiDAR/estimator relation unresolved
+- invalid quaternion samples occur in every mocap trajectory
+- no scientifically specified filtering/exclusion rule
+
+Allowed non-scoring work remains:
+
+- structural inventory
+- provenance analysis
+- metric-family schema definition
+- dimension-gating schema definition
+- documentation of unresolved physical requirements
+
+No confirmation-test raw trajectory is inspected by this checkpoint.
+
+No confirmation-test outcome is used for protocol selection.
+
+Protocol V2 remains byte-identical.
+
+This checkpoint does not select Protocol V3 and does not authorize ATE, RPE,
+or estimator scoring.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:
