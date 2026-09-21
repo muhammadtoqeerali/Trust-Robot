@@ -1,0 +1,454 @@
+{
+  "author_supported_reference_provenance": {
+    "issue_123": {
+      "comment_id": 4826354545,
+      "data_imu_described_as_xsens_imu_result": true,
+      "raw_rtk_described_as_not_recorded": true
+    },
+    "issue_4": {
+      "comment_id": 1003003215,
+      "xsens_imu_described_as_used_for_gt_generation": true
+    },
+    "issue_40": {
+      "comment_id": 1231714051,
+      "ros_rtk_output_described_as_absent": true,
+      "xsens_rtk_described_as_software_recorded": true
+    },
+    "issue_62": {
+      "comment_id": 1512758832,
+      "exact_xsens_measurement_origin_defined": false,
+      "gt_described_as": "Xsens 680G pose or Leica prism pose",
+      "independent_physical_verification": false,
+      "interpretation": "The maintainer describes the released GT as the pose of the Xsens 680G or Leica prism. Issue #62 alone does not assign those two reference sources to specific scene families and does not define the exact Xsens measurement origin or exact prism reference point.",
+      "leica_prism_center_explicitly_defined": false,
+      "leica_prism_pose_supported": true,
+      "scene_family_mapping_from_issue_62_alone_supported": false,
+      "xsens_to_handsfree_rotation_described_as_identity_approximation": true
+    },
+    "issue_77": {
+      "author_states_timestamp_difference_calibrated": true,
+      "comment_id": 1515658292,
+      "evaluator_tolerance_claimed": false,
+      "fixed_offset_supported_for_evaluator": false,
+      "gt_described_as_algorithm_fusion_of_imu_and_rtk": true,
+      "hardware_trigger_attempted": true,
+      "hardware_trigger_successful": false,
+      "interpretation": "The maintainer states that ROS hardware triggering was attempted unsuccessfully, MT Manager was used, GT is an algorithmic IMU+RTK fusion result, and timestamp differences were calibrated. No calibration method, numerical value, sign convention, per-sequence/global scope, or reproducible mapping is supplied.",
+      "per_sequence_or_global_calibration_scope_identified": false,
+      "recording_method": "MT Manager",
+      "reproducible_timing_mapping_recovered": false,
+      "single_global_fixed_offset_claimed": false,
+      "timestamp_calibration_method_recovered": false,
+      "timestamp_calibration_scope_recovered": false,
+      "timestamp_calibration_sign_convention_recovered": false,
+      "timestamp_calibration_value_recovered": false
+    }
+  },
+  "content_sha256": "48d3bac20d621d98e0846fd44545efec9080b0795d55682c9494979bae8b9464",
+  "dataset_id": "M2DGR",
+  "interpretation": {
+    "alignment_mode_supported": false,
+    "association_tolerance_supported": false,
+    "author_reports_timestamp_difference_calibrated": true,
+    "author_timestamp_calibration_claim_reproducible_from_released_material": false,
+    "author_timestamp_calibration_claim_scope_verified": false,
+    "author_timestamp_calibration_claim_supports_evaluator_tolerance": false,
+    "author_timestamp_calibration_claim_supports_single_fixed_offset": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_authorized": false,
+    "evaluation_ready": false,
+    "exact_leica_prism_center_verified": false,
+    "exact_xsens_physical_measurement_origin_verified": false,
+    "fixed_reference_offset_supported": false,
+    "issue_62_alone_maps_xsens_leica_to_scene_families": false,
+    "leica_gt_described_as_prism_pose_by_author": true,
+    "mt_manager_recording_author_supported": true,
+    "nearest_neighbor_pose_association_authorized": false,
+    "outdoor_gt_described_as_xsens_680g_pose_by_author": true,
+    "outdoor_xsens_scene_mapping_inherited_from_predecessor_evidence": true,
+    "raw_rtk_stream_available_from_author_statement": false,
+    "reference_interpolation_authorized": false,
+    "reference_timestamp_physical_measurement_event_verified": false,
+    "reference_timestamp_timebase_export_semantics_verified": false,
+    "reference_to_estimator_temporal_association_verified": false,
+    "released_train_data_imu_can_close_gt_timestamp_chain": false,
+    "released_train_data_imu_stream_available": false,
+    "synchronization_verified": false,
+    "timestamp_calibration_method_verified": false,
+    "timestamp_calibration_value_verified": false,
+    "xsens_gt_generated_from_imu_rtk_fusion_author_supported": true
+  },
+  "policy": {
+    "alignment_selected": false,
+    "confirmation_test_used_for_selection": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_ready": false,
+    "historical_evidence_modified": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "new_frame_transform_created": false,
+    "new_timing_offset_created": false,
+    "new_timing_tolerance_created": false,
+    "reference_interpolation_authorized": false,
+    "synchronization_verified": false
+  },
+  "provenance_semantics": {
+    "author_provenance_is_independent_physical_verification": false,
+    "issue_62_alone_maps_reference_source_to_scene_family": false,
+    "issue_77_timestamp_calibration_claim_is_reproducible_from_released_material": false,
+    "issue_and_comment_dates_recorded_when_available": true,
+    "issue_and_comment_urls_recorded": true,
+    "issue_snapshots_hash_bound": true,
+    "issue_statements_treated_as_contemporaneous_runtime_logs": false,
+    "issue_statements_treated_as_later_public_maintainer_provenance": true,
+    "scientific_authorization_changed_by_provenance_hardening": false
+  },
+  "released_train_stream_inventory": {
+    "all_train_rtk_bags_lack_data_imu": true,
+    "confirmation_test_inspected": false,
+    "data_imu_absent_count": 10,
+    "data_imu_present_count": 0,
+    "dataset_wide_data_imu_absence_verified": false,
+    "reference_family": "rtk_ins",
+    "split": "train",
+    "trajectories": [
+      {
+        "bag_file_sha256": "a16a194a1013f149bd2211bd5665ec89c939249b4973cfd384150d147bc05cbf",
+        "bag_relative_path": "raw/rosbags/Circle_01.bag",
+        "bag_size_bytes": 23250587328,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "Circle_01"
+      },
+      {
+        "bag_file_sha256": "88cc41607e93d6284d3efc36678b1da08436e7bbe7a91d82730f2c009a79b157",
+        "bag_relative_path": "raw/rosbags/gate_01.bag",
+        "bag_size_bytes": 16373999247,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "gate_01"
+      },
+      {
+        "bag_file_sha256": "f40c3dc3978f4ae95b9d730233388b2e682d90f2fb9e273e77b6654daf8f1e94",
+        "bag_relative_path": "raw/rosbags/street_01.bag",
+        "bag_size_bytes": 75760411232,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_01"
+      },
+      {
+        "bag_file_sha256": "d3f3f288ac42ad22ea546aab740998b320fe1d0088a000bc2524a4bafe5ec34d",
+        "bag_relative_path": "raw/rosbags/street_03.bag",
+        "bag_size_bytes": 21279882853,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_03"
+      },
+      {
+        "bag_file_sha256": "4974b0bc80c8836d8100185ec0f4303bd2e989a07ca51132705e653e6159d681",
+        "bag_relative_path": "raw/rosbags/street_04.bag",
+        "bag_size_bytes": 48651446875,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_04"
+      },
+      {
+        "bag_file_sha256": "4da5e416700c117a1ffb8507f08e59c3aff4adb5a331e53013bbbeae3780f651",
+        "bag_relative_path": "raw/rosbags/street_05.bag",
+        "bag_size_bytes": 27414820542,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_05"
+      },
+      {
+        "bag_file_sha256": "2badf23d1985da1a32626d904f108ce1db64cd9596e219f702ca48808c23a40f",
+        "bag_relative_path": "raw/rosbags/street_07.bag",
+        "bag_size_bytes": 77191125434,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_07"
+      },
+      {
+        "bag_file_sha256": "4fdfa41df63c15da4ba35f5f7ac79d2c04077f95050ea4562a35b7b911da8194",
+        "bag_relative_path": "raw/rosbags/street_09.bag",
+        "bag_size_bytes": 83180083877,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_09"
+      },
+      {
+        "bag_file_sha256": "f540e7183ac8ad1b925ecc16916d2d97e9bfbab1214cf7ad592a84604bff6d0f",
+        "bag_relative_path": "raw/rosbags/street_010.bag",
+        "bag_size_bytes": 86249828923,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "street_010"
+      },
+      {
+        "bag_file_sha256": "a313a7bf846693ad7fa37c0854f171b178fb0e862401b2233b44ea40df61eeb3",
+        "bag_relative_path": "raw/rosbags/walk_01.bag",
+        "bag_size_bytes": 21523357822,
+        "data_imu_topic_present": false,
+        "imu_like_topics": [
+          "/camera/imu",
+          "/dvs/imu",
+          "/handsfree/imu"
+        ],
+        "trajectory_id": "walk_01"
+      }
+    ],
+    "trajectory_count": 10
+  },
+  "remaining_requirements": [
+    "timestamp-calibration method used between MT Manager GT and SLAM/system-time streams",
+    "timestamp-calibration numerical value or directly reproducible mapping",
+    "timestamp-calibration sign convention and scope",
+    "released GT timestamp physical-event definition",
+    "released GT timestamp source/timebase/export conversion",
+    "exact Xsens measurement origin represented by released GT position",
+    "whether author Xsens/GNSS-to-LiDAR candidates were already applied to GT",
+    "exact Leica prism reference point and candidate-transform applicability",
+    "reference-to-estimator temporal association rule"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_GT_RECORDING_STREAM_PROVENANCE_EVIDENCE_V1",
+  "schema_version": 1,
+  "scope": {
+    "authorizes_reference_interpolation": false,
+    "fits_timing_offset": false,
+    "modifies_historical_frozen_evidence": false,
+    "performs_ate_or_rpe": false,
+    "performs_estimator_scoring": false,
+    "purpose": "additive author/release provenance for GT source, recording path, timing claim, and released Xsens stream availability",
+    "selects_alignment_mode": false,
+    "selects_association_tolerance": false,
+    "uses_confirmation_test_outcomes": false,
+    "uses_validation_outcomes_for_selection": false
+  },
+  "source_artifacts": {
+    "evaluation_protocol_v2": {
+      "file_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+      "relative_path": "configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json"
+    },
+    "issue_snapshots": {
+      "123": {
+        "author_comments": [
+          {
+            "author": "sjtuyinjie",
+            "body": "你好，加速度和角速度信息可以用/data/imu，也就是xsens IMU的结果。原始RTK数据并未录制。",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/4826354545",
+            "comment_created_at": "2026-06-28T14:12:28Z",
+            "comment_id": 4826354545,
+            "comment_updated_at": "2026-06-28T14:12:28Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/123#issuecomment-4826354545",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          }
+        ],
+        "comments_file_sha256": "7f0b09b1678ec0f68b7fa968acee2fe410c495cdc34aabd3d221a44e59f5af35",
+        "contemporaneous_with_dataset_acquisition_verified": false,
+        "issue_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/123",
+        "issue_closed_at": "2026-06-28T14:12:28Z",
+        "issue_created_at": "2026-04-07T05:58:03Z",
+        "issue_file_sha256": "56e2a10803bc461cc6e37c7387ccc510b96e6926d7b8bf0de2038edfc5fcd97c",
+        "issue_number": 123,
+        "issue_updated_at": "2026-06-28T14:12:28Z",
+        "issue_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/123",
+        "question": "我想给RTK/INS的结果也写进rosbag 因为我看rosbag中只有GNSS的话题没有RTK/INS的话题 但是真值中只有里程信息没有RTK/INS的加速度角速度这些信息 可以提供一下原始的RTK/INS数据吗",
+        "repository": "SJTU-ViSYS/M2DGR",
+        "role": "later_public_author_or_maintainer_provenance",
+        "snapshot_comments_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_123_comments.json",
+        "snapshot_issue_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_123.json",
+        "title": "我想给rosbag加话题"
+      },
+      "4": {
+        "author_comments": [
+          {
+            "author": "sjtuyinjie",
+            "body": "As mentioned in my paper, the IMU infomation of XSENS is used for generating GT pose. If you need 9 axis IMU information for LiDAR SLAM, use the topic /handsfree/imu instead.",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1003003215",
+            "comment_created_at": "2021-12-30T12:13:11Z",
+            "comment_id": 1003003215,
+            "comment_updated_at": "2021-12-30T12:13:11Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/4#issuecomment-1003003215",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          },
+          {
+            "author": "sjtuyinjie",
+            "body": "Sorry, the left one of the \"5\" labels should be \"7\". But the handsfree IMU is below the infrared camera as shown in the figure.",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1003042696",
+            "comment_created_at": "2021-12-30T14:04:07Z",
+            "comment_id": 1003042696,
+            "comment_updated_at": "2021-12-30T14:04:07Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/4#issuecomment-1003042696",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          },
+          {
+            "author": "sjtuyinjie",
+            "body": "Maybe the IMU in the VI-sensor (Intel Realsense d435i) is above the infrared.",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1003045791",
+            "comment_created_at": "2021-12-30T14:08:54Z",
+            "comment_id": 1003045791,
+            "comment_updated_at": "2021-12-30T14:08:54Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/4#issuecomment-1003045791",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          },
+          {
+            "author": "sjtuyinjie",
+            "body": "Please describe the detailed process how you got the this result.",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1003299965",
+            "comment_created_at": "2021-12-31T07:53:23Z",
+            "comment_id": 1003299965,
+            "comment_updated_at": "2021-12-31T07:53:23Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/4#issuecomment-1003299965",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          }
+        ],
+        "comments_file_sha256": "42ac2b7183886bde859788ec11ddf2b7af4197d221b9c41fd815c3e8a7f8cc3f",
+        "contemporaneous_with_dataset_acquisition_verified": false,
+        "issue_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/4",
+        "issue_closed_at": "2022-01-04T12:37:22Z",
+        "issue_created_at": "2021-12-30T09:24:50Z",
+        "issue_file_sha256": "22a969cb0f16df2743c667933353397d5e0782dee2641f2d2185df4bc8651952",
+        "issue_number": 4,
+        "issue_updated_at": "2022-01-04T12:37:22Z",
+        "issue_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/4",
+        "question": "",
+        "repository": "SJTU-ViSYS/M2DGR",
+        "role": "later_public_author_or_maintainer_provenance",
+        "snapshot_comments_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_4_comments.json",
+        "snapshot_issue_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_4.json",
+        "title": "xsens mti的IMU数据似乎没有提供"
+      },
+      "40": {
+        "author_comments": [
+          {
+            "author": "sjtuyinjie",
+            "body": "没有RTK输出。xsens用软件录制的RTK。",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1231714051",
+            "comment_created_at": "2022-08-30T14:02:36Z",
+            "comment_id": 1231714051,
+            "comment_updated_at": "2022-08-30T14:02:36Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/40#issuecomment-1231714051",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          }
+        ],
+        "comments_file_sha256": "b0c0b106648368db4d366e504536eb58ba80b07efd50b271ee3f8852cc51bf57",
+        "contemporaneous_with_dataset_acquisition_verified": false,
+        "issue_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/40",
+        "issue_closed_at": "2022-08-30T14:02:38Z",
+        "issue_created_at": "2022-08-26T06:14:45Z",
+        "issue_file_sha256": "ff3100e28b9b1f582cb00ab36d30b51bc27bd04bbc51e7eac23f70a46c85a267",
+        "issue_number": 40,
+        "issue_updated_at": "2022-08-30T14:02:38Z",
+        "issue_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/40",
+        "question": "你好，我想咨询一下，你们的Xsens MTI680G的ros驱动有输出RTK数据么，还是只有imu和Gnss的数据呀",
+        "repository": "SJTU-ViSYS/M2DGR",
+        "role": "later_public_author_or_maintainer_provenance",
+        "snapshot_comments_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_40_comments.json",
+        "snapshot_issue_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_40.json",
+        "title": "想咨询一下Xsens MTI680G的ros驱动问题"
+      },
+      "62": {
+        "author_comments": [
+          {
+            "author": "sjtuyinjie",
+            "body": "真值是xsens 680g的位姿或者莱卡棱镜的位姿。xsens与handsfree imu的旋转可以视作单位矩阵",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1512758832",
+            "comment_created_at": "2023-04-18T09:34:41Z",
+            "comment_id": 1512758832,
+            "comment_updated_at": "2023-04-18T09:34:41Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/62#issuecomment-1512758832",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          }
+        ],
+        "comments_file_sha256": "556f6635c7f453179ace6091824df424aaf757d2ceaed35269f5119b61b04050",
+        "contemporaneous_with_dataset_acquisition_verified": false,
+        "issue_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/62",
+        "issue_closed_at": "2023-04-18T09:34:41Z",
+        "issue_created_at": "2023-01-03T11:40:16Z",
+        "issue_file_sha256": "0a6292e0b20044b2214c32dea18289e4456047292f6a150c69394f07fb89a867",
+        "issue_number": 62,
+        "issue_updated_at": "2023-04-18T09:34:41Z",
+        "issue_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/62",
+        "question": "非常感谢您提供这么全面的数据集，因为想进行姿态与真值的比较，所以想咨询一下 数据集中所提供的真值是表示的谁的位姿？它与Handsfree IMU（或其他传感器）间的外参转换是怎样的？ 谢谢",
+        "repository": "SJTU-ViSYS/M2DGR",
+        "role": "later_public_author_or_maintainer_provenance",
+        "snapshot_comments_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_62_comments.json",
+        "snapshot_issue_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_62.json",
+        "title": "数据集中所提供的真值与Handsfree IMU（或其他传感器）间的外参转换是怎样的"
+      },
+      "77": {
+        "author_comments": [
+          {
+            "author": "SJTU-ViSYS",
+            "body": "ros环境下我尝试过硬触发，但是无奈并未成功，所以使用的是mtmanager。gt是算法耦合imu和rtk后的结果。时间戳的差异是经过标定的",
+            "comment_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/comments/1515658292",
+            "comment_created_at": "2023-04-20T03:22:58Z",
+            "comment_id": 1515658292,
+            "comment_updated_at": "2023-04-20T03:22:58Z",
+            "comment_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/77#issuecomment-1515658292",
+            "contemporaneous_with_dataset_acquisition_verified": false
+          }
+        ],
+        "comments_file_sha256": "2e229b4d61bd103258a5196744702e33c630f31ec895e5576c98335e3cc9778b",
+        "contemporaneous_with_dataset_acquisition_verified": false,
+        "issue_api_url": "https://api.github.com/repos/SJTU-ViSYS/M2DGR/issues/77",
+        "issue_closed_at": "2023-04-20T03:22:58Z",
+        "issue_created_at": "2023-04-19T14:33:30Z",
+        "issue_file_sha256": "67c09ee24c9b274f929560461d3dea84f1c82fdf5c61d2b116da3fd4cf3c7118",
+        "issue_number": 77,
+        "issue_updated_at": "2023-04-20T03:22:58Z",
+        "issue_web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/77",
+        "question": "非常感谢您优秀的作品。我想问的是，您使用mti-680g时可以在ros环境中获得rtk纠正以后的经纬高信息吗。还是您在mtmanager软件中启用ntrip后进行记录的。您的groundtruth是使用imu+rtk进行耦合的吗？您如何保证和slam的时间同步呢？非常感谢您！",
+        "repository": "SJTU-ViSYS/M2DGR",
+        "role": "later_public_author_or_maintainer_provenance",
+        "snapshot_comments_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_77_comments.json",
+        "snapshot_issue_relative_path": "audit/evaluation_protocol_staging/gt_recording_stream_provenance_v1/source_snapshots/issues/issue_77.json",
+        "title": "mti"
+      }
+    },
+    "reference_physical_semantics_v1": {
+      "file_sha256": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+      "relative_path": "manifests/m2dgr_reference_physical_semantics_evidence_v1.json"
+    },
+    "rtk_geometry_timing_semantics_v1": {
+      "file_sha256": "1cf9bbade44db2d1c35e49ff89984cb7e9a34fdfe99978f9c0213e306135c42b",
+      "relative_path": "manifests/m2dgr_rtk_reference_geometry_timing_semantics_evidence_v1.json"
+    }
+  },
+  "status": "blocked_pending_physical_evidence"
+}

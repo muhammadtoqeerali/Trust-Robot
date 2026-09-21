@@ -914,6 +914,89 @@ Current RTK/INS conclusion:
 This checkpoint is additive. The frozen physical-semantics evidence and
 Evaluation Protocol V2 remain byte-identical.
 
+
+## M2DGR GT recording/released-stream provenance findings
+
+Permanent additive evidence:
+
+`manifests/m2dgr_gt_recording_stream_provenance_evidence_v1.json`
+
+Content SHA256:
+
+`48d3bac20d621d98e0846fd44545efec9080b0795d55682c9494979bae8b9464`
+
+File SHA256:
+
+`f8cbf76663a027e5487737afb6753eeaed1bc75debbc7c1151d949e809aff814`
+
+Later public M2DGR maintainer replies add useful GT recording provenance.
+
+The maintainer describes GT as the pose of the Xsens 680G or Leica prism.
+Separate predecessor evidence supplies the outdoor-Xsens scene-family mapping;
+issue 62 alone does not map those reference sources to scene families.
+
+The maintainer also states that:
+
+- Xsens IMU information was used to generate GT;
+- ROS hardware triggering for the Xsens path was attempted but unsuccessful;
+- MT Manager was used;
+- GT is an algorithmic IMU+RTK fusion result;
+- timestamp differences were calibrated.
+
+The public evidence still does not provide the timestamp-calibration method,
+numerical value, sign convention, per-sequence/global scope, or a reproducible
+mapping usable by the evaluator.
+
+A later maintainer reply identifies `/data/imu` as the Xsens IMU result and
+states that raw RTK was not recorded.
+
+All ten RTK/INS-family trajectories in the already frozen training split were
+checked directly:
+
+- train RTK/INS bags checked: `10`
+- `/data/imu` present: `0`
+- `/data/imu` absent: `10`
+
+This is explicitly a training-split observation, not a dataset-wide absence
+claim. Confirmation-test trajectories were not inspected.
+
+Current interpretation:
+
+- outdoor GT described as Xsens 680G pose by author: TRUE
+- Leica GT described as prism pose by author: TRUE
+- Xsens IMU used for GT generation according to author: TRUE
+- GT described as algorithmic IMU+RTK fusion: TRUE
+- MT Manager recording author-supported: TRUE
+- author reports timestamp differences calibrated: TRUE
+- issue 62 alone maps Xsens/Leica to scene families: FALSE
+- exact Xsens physical measurement origin verified: FALSE
+- exact Leica prism center verified: FALSE
+- timestamp-calibration method verified: FALSE
+- timestamp-calibration numerical value verified: FALSE
+- timestamp-calibration scope verified: FALSE
+- author timing claim supports a single fixed evaluator offset: FALSE
+- author timing claim supports an evaluator tolerance: FALSE
+- author timing claim reproducible from released material: FALSE
+- released train `/data/imu` available: FALSE
+- GT timestamp physical-event semantics verified: FALSE
+- GT timestamp timebase/export semantics verified: FALSE
+- reference-to-estimator temporal association verified: FALSE
+- reference interpolation authorized: FALSE
+- nearest-neighbor association authorized: FALSE
+- association tolerance supported: FALSE
+- evaluation interval authorized: FALSE
+- alignment selected: FALSE
+- estimator scoring authorized: FALSE
+- dataset calibration verified: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
+The issue snapshots are treated as later public maintainer provenance, not
+contemporaneous runtime logs.
+
+This checkpoint is additive. Evaluation Protocol V2 and all predecessor
+physical/timing/calibration/split evidence remain byte-identical.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:
