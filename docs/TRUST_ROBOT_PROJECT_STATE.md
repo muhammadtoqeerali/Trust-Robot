@@ -1280,6 +1280,65 @@ Protocol V2 remains byte-identical.
 This checkpoint does not select Protocol V3 and does not authorize ATE, RPE,
 or estimator scoring.
 
+
+## M2DGR fail-closed evaluator architecture implementation
+
+After the permanent reference-family protocol-boundary checkpoint, evaluator
+implementation may proceed only in non-scoring, fail-closed form.
+
+Implementation:
+
+`src/trust_robot/m2dgr_evaluator_gate.py`
+
+Tests:
+
+`tests/trust_robot/test_m2dgr_evaluator_gate.py`
+
+Audit:
+
+`docs/audits/trust_robot/M2DGR_EVALUATOR_FAIL_CLOSED_ARCHITECTURE_V1.md`
+
+The implementation provides:
+
+- Protocol V2 metric-family definitions;
+- reference-family/dimension gate inspection;
+- permanent boundary-artifact validation;
+- explicit fail-closed metric-execution guards;
+- explicit fail-closed estimator-scoring guards.
+
+It intentionally does not implement:
+
+- trajectory association;
+- interpolation;
+- time-offset estimation;
+- evaluation-interval construction;
+- frame alignment;
+- ATE computation;
+- RPE computation;
+- aggregation;
+- trajectory scoring;
+- estimator scoring.
+
+Current frozen family/dimension state remains:
+
+- RTK/INS translation structurally present: TRUE
+- RTK/INS rotation structurally present: TRUE
+- Leica translation structurally present: TRUE
+- Leica rotation structurally present: FALSE
+- mocap translation structurally present: TRUE
+- mocap rotation structurally present: TRUE
+- mocap audited invalid quaternion samples: 1274
+
+All current family/metric execution requests must fail closed.
+
+Protocol V2 remains byte-identical.
+
+No raw confirmation-test trajectory is inspected.
+
+No confirmation-test outcome is used for implementation parameter selection.
+
+No physical-evaluation authorization is changed.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:
