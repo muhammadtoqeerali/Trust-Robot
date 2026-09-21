@@ -1339,6 +1339,175 @@ No confirmation-test outcome is used for implementation parameter selection.
 
 No physical-evaluation authorization is changed.
 
+
+## M2DGR non-executable evaluation-plan implementation
+
+The promoted fail-closed evaluator gate is extended with deterministic
+provenance-record and non-executable evaluation-plan objects.
+
+Implementation:
+
+`src/trust_robot/m2dgr_evaluation_plan.py`
+
+Tests:
+
+`tests/trust_robot/test_m2dgr_evaluation_plan.py`
+
+Audit:
+
+`docs/audits/trust_robot/M2DGR_NONEXECUTABLE_EVALUATION_PLAN_V1.md`
+
+The plan binds repository-relative identities and SHA256 values for:
+
+- Evaluation Protocol V2
+- permanent reference-family protocol-boundary evidence
+- frozen split manifest
+- split-freeze evidence
+- promoted fail-closed evaluator-gate implementation
+
+The plan records Protocol V2 required-provenance field names but does not invent
+future per-trajectory values.
+
+Current plan state remains:
+
+- association method: unselected
+- association tolerance: null
+- fixed reference offset: null
+- interpolation method: unselected
+- evaluation interval: unselected
+- alignment mode: unselected
+- metric computation authorized: FALSE
+- trajectory scoring authorized: FALSE
+- estimator scoring authorized: FALSE
+- evaluation ready: FALSE
+- per-trajectory provenance populated: FALSE
+- estimator trajectory bound: FALSE
+- reference trajectory bound: FALSE
+- raw confirmation-test data accessed: FALSE
+- confirmation-test used for selection: FALSE
+
+The plan contains only provenance, requirements, blockers, and gate state.
+
+It contains no trajectory samples and performs no trajectory mathematics.
+
+Protocol V2 remains byte-identical.
+
+The permanent reference-family boundary remains byte-identical.
+
+
+## M2DGR evaluation readiness diagnostics implementation
+
+The local non-executable evaluation-plan phase now also includes:
+
+`src/trust_robot/m2dgr_evaluation_readiness.py`
+
+and:
+
+`tests/trust_robot/test_m2dgr_evaluation_readiness.py`
+
+The plan layer now supports deterministic immutable JSON persistence and
+validated loading.
+
+The readiness layer provides:
+
+- required-provenance field-name completeness reporting;
+- unknown/missing provenance-field reporting;
+- global execution-readiness diagnostics;
+- explicit fail-closed execution requests.
+
+The provenance diagnostic accepts field names only and does not accept or infer
+physical/evaluation parameter values.
+
+Even if all 17 required provenance field names are present:
+
+- provenance semantics verified: FALSE
+- executable metric entries: 0
+- scoreable metric entries: 0
+- evaluation ready: FALSE
+
+This does not change Protocol V2, the permanent family boundary, association,
+alignment, calibration, synchronization, or scoring authorization.
+
+
+## M2DGR metadata-only evaluation inspection interface
+
+The current local evaluator-plumbing phase additionally implements:
+
+`src/trust_robot/m2dgr_evaluation_request.py`
+
+with tests:
+
+`tests/trust_robot/test_m2dgr_evaluation_request.py`
+
+and a local diagnostic CLI:
+
+`scripts/trust_robot/inspect_m2dgr_evaluation_readiness.py`
+
+An inspection request accepts only:
+
+- reference family
+- metric family
+- names of provenance fields reported present
+
+It does not accept trajectory samples, trajectory paths, timestamps, timing
+offsets, tolerances, transforms, alignment parameters, or metric values.
+
+The inspection report exposes the existing frozen gate state and blockers.
+
+It cannot authorize execution.
+
+Current expected result for every defined family/metric pair remains:
+
+- metric enabled: FALSE
+- execution authorized: FALSE
+- scoring authorized: FALSE
+- evaluation ready: FALSE
+
+Leica rotation additionally remains structurally unsupported.
+
+Complete presence of all 17 provenance field names still does not establish
+provenance semantic validity and does not change readiness.
+
+The CLI is local diagnostic plumbing only and performs no trajectory
+mathematics.
+
+
+## M2DGR local evaluator-plumbing phase consolidation
+
+The current unpromoted local evaluator-plumbing phase now includes an
+end-to-end integration suite:
+
+`tests/trust_robot/test_m2dgr_evaluator_plumbing_integration.py`
+
+The integration layer verifies the complete local chain:
+
+- Protocol V2
+- permanent reference-family boundary
+- fail-closed evaluator gate
+- non-executable plan
+- immutable plan persistence
+- provenance completeness reporting
+- readiness reporting
+- metadata-only family/metric inspection
+
+All twelve family/metric pairs remain blocked both with zero provenance field
+names and with all seventeen required field names present.
+
+Complete field-name presence remains schema completeness only; it does not
+establish semantic validity.
+
+A ten-case tamper matrix is required to remain fail-closed.
+
+Deterministic local phase artifacts are generated only under the dataset audit
+staging directory.
+
+No estimator/reference trajectory samples are included.
+
+No association, tolerance, offset, interval, alignment, ATE, RPE, aggregation,
+trajectory scoring, or estimator scoring is selected or executed.
+
+This phase remains local and unpromoted pending final consolidation review.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:
