@@ -760,6 +760,80 @@ blocker. It cannot establish a physical fact that is absent from independent
 evidence.
 
 
+
+## M2DGR reference physical-semantics findings
+
+Permanent additive evidence:
+
+`manifests/m2dgr_reference_physical_semantics_evidence_v1.json`
+
+Content SHA256:
+
+`559598c00c8246c1626ae2e01279b59d7baad724a7919df3d4c7a5d5b96ca0a0`
+
+File SHA256:
+
+`afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a`
+
+Public author provenance now narrows the outdoor reference interpretation:
+
+- the maintainer states that outdoor GT coordinates are ECEF rather than ENU;
+- the maintainer states that all outdoor GT frames refer to the Xsens frame;
+- the maintainer states that outdoor GT comes from the Xsens MTi 680G
+  GNSS-IMU suite.
+
+These are author statements, not independent calibration verification.
+
+They do not establish the exact physical Xsens origin represented by each
+released position, whether a published Xsens/GNSS-to-LiDAR candidate transform
+applies to the released pose fields, whether such a correction was already
+applied, or the physical event/timebase represented by the released timestamps.
+
+The author calibration source still provides a Leica-to-LiDAR candidate
+translation, and the paper states that a prism reflector was mounted on the
+robot for Leica tracking. The released Leica position is not independently
+verified to be exactly that prism-center coordinate, and applicability of the
+published candidate transform remains unverified.
+
+For mocap, the maintainer confirms that Room and Roomdark GT comes from mocap
+and that occasional tracking loss can produce abrupt quaternion changes.
+No published mocap-to-LiDAR transform was identified, no tracked-body origin is
+verified, and the maintainer's filtering recommendation does not define an
+admissible prospective filter or exclusion rule.
+
+The author-linked toolkit was inspected at commit
+`46e75065b45c640e7018443656514c8fbe1bf88b`, tree
+`043390ad06e79534a98667d46bcd9ce23c55452c`. Its `export_tum.py`
+uses ROS image-message header timestamps but does not export GT poses. No
+GT-generation/export path was identified there.
+
+The upstream-repository `hall_03.txt` and downloaded released
+`raw/ground_truth/hall_03.txt` are byte-identical with SHA256
+`679f821e27f253fc8655f4232aaa39eb635705d42c87e9062cc1d5410940abab`.
+
+Current physical-semantics conclusion:
+
+- outdoor ECEF coordinate representation author-supported: TRUE
+- outdoor Xsens GT frame author-supported: TRUE
+- exact RTK/INS physical origin verified: FALSE
+- RTK/INS reference-to-LiDAR transform applicability verified: FALSE
+- Leica tracked-point semantics verified: FALSE
+- Leica reference-to-LiDAR transform applicability verified: FALSE
+- mocap tracked-body origin verified: FALSE
+- mocap-to-LiDAR transform verified: FALSE
+- reference timestamp physical-event semantics verified: FALSE
+- reference-to-estimator temporal association verified: FALSE
+- reference interpolation authorized: FALSE
+- association tolerance selected: FALSE
+- alignment mode selected: FALSE
+- estimator scoring authorized: FALSE
+- dataset calibration verified: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
+The checkpoint is additive. Frozen Phase-3E, calibration, split-freeze, and
+Evaluation Protocol V2 bytes are unchanged.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:
