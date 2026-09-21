@@ -834,6 +834,86 @@ Current physical-semantics conclusion:
 The checkpoint is additive. Frozen Phase-3E, calibration, split-freeze, and
 Evaluation Protocol V2 bytes are unchanged.
 
+
+## M2DGR RTK reference geometry/timing-semantics findings
+
+Permanent additive evidence:
+
+`manifests/m2dgr_rtk_reference_geometry_timing_semantics_evidence_v1.json`
+
+Content SHA256:
+
+`84dd60b2b886f01e2377df777b629c360d982bab0737aaa55fa342f59791d201`
+
+File SHA256:
+
+`1cf9bbade44db2d1c35e49ff89984cb7e9a34fdfe99978f9c0213e306135c42b`
+
+A frozen author cross-file check now supports one narrow transform-convention
+statement.
+
+The author calibration entry `Handsfree IMU [to LIDAR]` is exactly equal to the
+inverse of the author's LIO-SAM transform explicitly labeled
+`lidar -> IMU`.
+
+Maximum matrix residual:
+
+`0.0`
+
+This supports the author transform-direction convention for the cross-checked
+HandsFree IMU block only.
+
+It is not independent physical calibration verification and is not generalized
+to the Xsens IMU, GNSS, Leica, or other calibration blocks.
+
+The author-published Xsens IMU and GNSS candidate translations differ by:
+
+`[-0.2573, 0.00515, 0.89497] m`
+
+with norm:
+
+`0.9312363359534465 m`.
+
+This is author candidate geometry only. It is not promoted to the actual
+MTi-680G runtime GNSS lever arm.
+
+Hash-bound Xsens manufacturer documentation establishes that the MTi-680G can
+be configured with a GNSS lever arm defined from the MT device measurement
+origin to the GPS antenna, and that the algorithm can use it to correct
+position and velocity. It also documents an optional position/velocity
+smoother.
+
+The actual M2DGR runtime lever-arm value/configuration and smoother setting
+remain unknown.
+
+Manufacturer low-level documentation distinguishes `XDI_UtcTime`,
+`XDI_SampleTimeFine`, and `XDI_SampleTimeCoarse`. The released M2DGR RTK/INS
+GT timestamp source/export path remains unidentified.
+
+Current RTK/INS conclusion:
+
+- HandsFree-block author direction convention cross-file supported: TRUE
+- HandsFree physical extrinsic independently verified by this result: FALSE
+- all calibration blocks cross-file direction verified: FALSE
+- exact released RTK/INS physical origin verified: FALSE
+- RTK/INS candidate transform applicability verified: FALSE
+- runtime Xsens GNSS lever arm verified: FALSE
+- runtime Xsens smoother setting verified: FALSE
+- RTK/INS GT timestamp physical-event semantics verified: FALSE
+- RTK/INS GT timestamp timebase/export semantics verified: FALSE
+- reference-to-estimator temporal association verified: FALSE
+- reference interpolation authorized: FALSE
+- association tolerance selected: FALSE
+- evaluation interval created: FALSE
+- alignment mode selected: FALSE
+- estimator scoring authorized: FALSE
+- dataset calibration verified: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
+This checkpoint is additive. The frozen physical-semantics evidence and
+Evaluation Protocol V2 remain byte-identical.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:

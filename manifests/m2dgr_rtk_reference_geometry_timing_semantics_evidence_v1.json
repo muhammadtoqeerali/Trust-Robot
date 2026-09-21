@@ -1,0 +1,186 @@
+{
+  "author_transform_convention": {
+    "cross_file_support_scope": "HandsFree IMU block only",
+    "exact_cross_file_match": true,
+    "generalization_to_xsens_gnss_leica_blocks_supported": false,
+    "handsfree_config_inverse_translation": [
+      -0.27255,
+      0.00053,
+      -0.17954
+    ],
+    "handsfree_config_label": "Extrinsics (lidar -> IMU)",
+    "handsfree_config_translation": [
+      0.27255,
+      -0.00053,
+      0.17954
+    ],
+    "interpretation": "For the HandsFree IMU block only, the author's calibration entry labeled '[to LIDAR]' is exactly consistent with the inverse of the author's LIO-SAM transform explicitly labeled 'lidar -> IMU'. This supports the transform-direction convention for that cross-checked HandsFree block. It does not independently verify the HandsFree physical extrinsic and does not by itself establish the direction or applicability of the Xsens IMU, GNSS, Leica, or other calibration blocks.",
+    "inverse_config_vs_published_max_abs_residual": 0.0,
+    "published_handsfree_to_lidar_translation": [
+      -0.27255,
+      0.00053,
+      -0.17954
+    ]
+  },
+  "content_sha256": "84dd60b2b886f01e2377df777b629c360d982bab0737aaa55fa342f59791d201",
+  "dataset_id": "M2DGR",
+  "interpretation": {
+    "alignment_mode_supported": false,
+    "all_author_calibration_blocks_direction_convention_cross_file_supported": false,
+    "association_tolerance_supported": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_authorized": false,
+    "evaluation_ready": false,
+    "handsfree_to_lidar_direction_convention_cross_file_supported": true,
+    "handsfree_to_lidar_direction_convention_independently_calibrated": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "reference_interpolation_authorized": false,
+    "reference_timestamp_physical_measurement_event_verified": false,
+    "reference_timestamp_timebase_export_semantics_verified": false,
+    "reference_to_estimator_temporal_association_verified": false,
+    "rtk_ins_reference_exact_physical_origin_verified": false,
+    "rtk_ins_reference_to_lidar_transform_applicability_verified": false,
+    "runtime_xsens_lever_arm_verified": false,
+    "runtime_xsens_smoother_configuration_verified": false,
+    "synchronization_verified": false
+  },
+  "manufacturer_semantics": {
+    "algorithm_can_use_lever_arm_to_correct_position_and_velocity": true,
+    "distinct_timestamp_outputs_documented": [
+      "XDI_UtcTime",
+      "XDI_SampleTimeFine",
+      "XDI_SampleTimeCoarse"
+    ],
+    "lever_arm_definition": "GPS antenna position with respect to MT device origin of measurement",
+    "lever_arm_runtime_configuration_for_m2dgr_verified": false,
+    "m2dgr_released_gt_timestamp_source_identified": false,
+    "m2dgr_smoother_configuration_verified": false,
+    "manufacturer_documentation_is_dataset_export_provenance": false,
+    "mti_680g_gnss_lever_arm_definition_observed": true,
+    "optional_position_velocity_smoother_documented": true,
+    "sample_time_fine_clock": "10 kHz clock ticks",
+    "utc_time_is_distinct_from_device_sample_time": true
+  },
+  "policy": {
+    "alignment_selected": false,
+    "confirmation_test_used_for_selection": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_ready": false,
+    "historical_evidence_modified": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "new_calibration_value_created": false,
+    "new_frame_transform_created": false,
+    "new_timing_tolerance_created": false,
+    "raw_data_modified": false,
+    "reference_interpolation_authorized": false,
+    "synchronization_verified": false
+  },
+  "provenance_semantics": {
+    "author_sources_are_independent_verification": false,
+    "manufacturer_documentation_is_dataset_gt_export_provenance": false,
+    "manufacturer_documentation_is_dataset_runtime_configuration": false,
+    "scientific_interpretation_changed_by_provenance_hardening": false,
+    "source_snapshots_hash_bound": true,
+    "upstream_author_revision_frozen": true
+  },
+  "released_dataset_limitations": {
+    "gt_export_path_found_in_frozen_source_metadata": false,
+    "released_bag_can_directly_recover_xsens_gt_output_fields": false,
+    "released_readme_lists_xsens_fused_navigation_topic": false,
+    "runtime_xsens_configuration_found_in_frozen_source_metadata": false
+  },
+  "remaining_rtk_physical_evidence_requirements": [
+    "actual MTi-680G runtime GNSS lever-arm configuration used by M2DGR",
+    "whether MTi position/velocity smoothing was enabled for M2DGR",
+    "exact physical Xsens origin represented by released GT position",
+    "whether published Xsens/GNSS-to-LiDAR candidate transform applies to released GT position/orientation fields",
+    "whether any reference-origin correction was already applied during GT export",
+    "released GT timestamp physical measurement event",
+    "released GT timestamp source/timebase/export conversion",
+    "released GT pose transform direction convention if needed beyond the author-frame statement",
+    "reference-to-estimator temporal association"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_RTK_REFERENCE_GEOMETRY_TIMING_SEMANTICS_EVIDENCE_V1",
+  "schema_version": 1,
+  "scope": {
+    "authorizes_reference_interpolation": false,
+    "fits_calibration": false,
+    "fits_timing_offset": false,
+    "modifies_historical_frozen_evidence": false,
+    "modifies_split_membership": false,
+    "performs_ate_or_rpe": false,
+    "performs_estimator_scoring": false,
+    "purpose": "additive evidence for author calibration transform convention and MTi-680G timing/lever-arm semantics",
+    "selects_alignment_mode": false,
+    "selects_association_tolerance": false,
+    "uses_confirmation_test_outcomes": false
+  },
+  "source_artifacts": {
+    "author_calibration_results": {
+      "file_sha256": "e515207fcf53668953a21a2e4d990643007a3a12ad54b91c456a8ee8a8100a90",
+      "relative_path": "audit/evaluation_protocol_staging/rtk_reference_geometry_timing_semantics_v1/source_snapshots/author/calibration_results.txt",
+      "role": "author_calibration_provenance",
+      "source_url": "https://raw.githubusercontent.com/SJTU-ViSYS/M2DGR/5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5/calibration_results.txt",
+      "upstream_repository": "SJTU-ViSYS/M2DGR",
+      "upstream_revision": "5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5"
+    },
+    "author_lio_config": {
+      "file_sha256": "95429a4cf76f1b712b2038d8c993530529070fcacd4195c51c750e396bf84bf9",
+      "relative_path": "audit/evaluation_protocol_staging/rtk_reference_geometry_timing_semantics_v1/source_snapshots/author/my_params_lidar.yaml",
+      "role": "author_configuration_provenance",
+      "source_url": "https://raw.githubusercontent.com/SJTU-ViSYS/M2DGR/5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5/my_params_lidar.yaml",
+      "upstream_repository": "SJTU-ViSYS/M2DGR",
+      "upstream_revision": "5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5"
+    },
+    "evaluation_protocol_v2": {
+      "file_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+      "relative_path": "configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json",
+      "role": "frozen_blocked_evaluation_protocol"
+    },
+    "physical_semantics_v1": {
+      "file_sha256": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+      "relative_path": "manifests/m2dgr_reference_physical_semantics_evidence_v1.json",
+      "role": "permanent_predecessor_evidence"
+    },
+    "xsens_low_level_documentation_snapshot": {
+      "contemporaneous_with_dataset_collection_verified": false,
+      "file_sha256": "f0a00a2e20e53feb2d07544015a006efb47bc14e356a06149f02aad9e481f568",
+      "relative_path": "audit/evaluation_protocol_staging/rtk_reference_geometry_timing_semantics_v1/source_snapshots/manufacturer/MT_Low_Level_Documentation.pdf",
+      "role": "manufacturer_documentation_snapshot",
+      "source_url": "https://www.xsens.com/hubfs/Downloads/Manuals/MT_Low-Level_Documentation.pdf"
+    },
+    "xsens_mti_600_series_datasheet_snapshot": {
+      "contemporaneous_with_dataset_collection_verified": false,
+      "file_sha256": "27f483571786d449592104437790f63bc6ee8f201fb419e6c20503126127b4d3",
+      "relative_path": "audit/evaluation_protocol_staging/rtk_reference_geometry_timing_semantics_v1/source_snapshots/manufacturer/MTi_600_series_Datasheet.pdf",
+      "role": "manufacturer_documentation_snapshot",
+      "source_url": "https://www.xsens.com/hubfs/Downloads/Leaflets/MTi%20600-series%20Datasheet.pdf"
+    }
+  },
+  "status": "blocked_pending_physical_evidence",
+  "xsens_gnss_candidate_geometry": {
+    "candidate_origin_separation_m": 0.9312363359534465,
+    "derived_from_author_published_candidate_transforms_only": true,
+    "gnss_origin_relative_to_xsens_origin_candidate": [
+      -0.2573,
+      0.00515,
+      0.89497
+    ],
+    "published_candidate_transform_applicability_to_released_gt_verified": false,
+    "published_gnss_to_lidar_translation": [
+      -0.09825,
+      0.00582,
+      0.72673
+    ],
+    "published_xsens_imu_to_lidar_translation": [
+      0.15905,
+      0.00067,
+      -0.16824
+    ],
+    "released_gt_origin_identified": false,
+    "runtime_mti_gnss_lever_arm_enabled_verified": false,
+    "runtime_mti_gnss_lever_arm_verified": false
+  }
+}
