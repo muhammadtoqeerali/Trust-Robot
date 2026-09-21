@@ -1093,6 +1093,81 @@ Current interpretation:
 
 This checkpoint is additive. Evaluation Protocol V2 remains byte-identical.
 
+
+## M2DGR indoor reference-origin semantics findings
+
+Permanent additive evidence:
+
+`manifests/m2dgr_indoor_reference_origin_semantics_evidence_v1.json`
+
+Content SHA256:
+
+`a2044a4ca875618210843bc42ec0eedad0bc4026ebe258099b30cd6733153cd4`
+
+File SHA256:
+
+`1d08a9c164857c827016545e55d7a495f10557dba7e596d8c2fc071d30cd895d`
+
+Public maintainer and manufacturer evidence now constrains the two indoor
+reference families more clearly.
+
+Leica:
+
+- maintainer states Leica tracks 3D position rather than 6D pose: TRUE
+- maintainer identifies the Leica prism as a GT reference object: TRUE
+- Leica released zero quaternion columns are physical rotation: FALSE
+- generic Leica reflector standing-axis semantics documented: TRUE
+- exact M2DGR prism reference point verified: FALSE
+- M2DGR reflector model verified: FALSE
+- M2DGR prism constant verified: FALSE
+- M2DGR reflector mount/standing-axis configuration verified: FALSE
+- Leica candidate-transform applicability verified: FALSE
+
+A direct public question asking for the Leica GT to HandsFree IMU extrinsic
+(issue 84) has no recovered maintainer answer. That absence is not treated as
+proof that the extrinsic does not exist.
+
+Mocap:
+
+- Room/Roomdark reference comes from mocap according to maintainer: TRUE
+- maintainer acknowledges tracking loss can cause abrupt quaternion changes:
+  TRUE
+- maintainer recommends filtering: TRUE
+- exact filter algorithm specified: FALSE
+- filter threshold/window specified: FALSE
+- prospective sample-exclusion rule specified: FALSE
+- mocap tracked-body origin verified: FALSE
+- mocap marker pattern recovered: FALSE
+- mocap volume origin recovered: FALSE
+- mocap-to-LiDAR physical transform verified: FALSE
+
+Vicon manufacturer documentation establishes that tracked-object origin,
+tracked-object alignment, and capture-volume origin can be configurable.
+
+The snapshotted Vicon guide is not asserted to be the exact M2DGR runtime
+software version or configuration.
+
+No M2DGR Vicon `.vsk`, `.xcp`, marker-pattern definition, tracked-object origin,
+or volume-origin configuration was recovered from the inspected public/local
+source material.
+
+Current protocol interpretation remains:
+
+- temporal association verified: FALSE
+- interpolation authorized: FALSE
+- nearest-neighbor pose association authorized: FALSE
+- association tolerance supported: FALSE
+- evaluation interval authorized: FALSE
+- alignment selected: FALSE
+- estimator scoring authorized: FALSE
+- dataset calibration verified: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
+No confirmation-test trajectory was inspected or used for selection.
+
+This checkpoint is additive. Evaluation Protocol V2 remains byte-identical.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:

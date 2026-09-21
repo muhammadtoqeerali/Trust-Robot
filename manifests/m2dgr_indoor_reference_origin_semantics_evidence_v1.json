@@ -1,0 +1,475 @@
+{
+  "author_comment_provenance": {
+    "issue_10_leica_3d_only": {
+      "author_login": "sjtuyinjie",
+      "comment_id": 1019076282,
+      "created_at": "2022-01-22T06:37:48Z",
+      "does_not_support": [
+        "Leica rotational ground truth",
+        "physical meaning of zero quaternion columns as a rotation",
+        "exact prism standing axis or glass-center identity"
+      ],
+      "supports": [
+        "Leica tracks 3D position rather than 6D position and pose"
+      ]
+    },
+    "issue_54_mocap_tracking_loss": {
+      "author_login": "sjtuyinjie",
+      "comment_id": 1303089808,
+      "created_at": "2022-11-04T07:59:49Z",
+      "does_not_support": [
+        "filter algorithm",
+        "filter threshold",
+        "filter window",
+        "prospective invalid-sample exclusion rule"
+      ],
+      "supports": [
+        "mocap sometimes might not track the robot well",
+        "tracking failure can cause abrupt quaternion changes",
+        "author recommends filtering for more accurate data"
+      ]
+    },
+    "issue_62_reference_object": {
+      "author_login": "sjtuyinjie",
+      "comment_id": 1512758832,
+      "created_at": "2023-04-18T09:34:41Z",
+      "does_not_support": [
+        "Leica reflector model",
+        "Leica prism constant",
+        "exact prism standing axis represented in released files",
+        "Leica-to-LiDAR applicability"
+      ],
+      "supports": [
+        "GT is described as Xsens 680G pose or Leica prism pose"
+      ]
+    },
+    "issue_84_leica_extrinsic_question": {
+      "absence_of_answer_treated_as_nonexistence_proof": false,
+      "direct_question": "extrinsic between Leica GT and HandsFree IMU",
+      "issue_closed_at": "2023-09-21T06:59:17Z",
+      "issue_created_at": "2023-06-15T17:07:22Z",
+      "maintainer_answer_recovered": false,
+      "maintainer_comment_count": 0
+    },
+    "issue_9_room_roomdark_mocap": {
+      "author_login": "sjtuyinjie",
+      "comment_id": 1015447312,
+      "created_at": "2022-01-18T14:09:48Z",
+      "does_not_support": [
+        "mocap tracked-body origin",
+        "mocap-to-LiDAR metric lever arm",
+        "physical equivalence of EVO alignment and sensor extrinsic calibration"
+      ],
+      "supports": [
+        "Room and Roomdark ground truth obtained by Mocap",
+        "author evaluation procedure uses EVO -a alignment",
+        "author states they did not specially calibrate LiDAR-Mocap extrinsics for evaluation"
+      ]
+    }
+  },
+  "author_supported_leica_semantics": {
+    "issue_10": {
+      "leica_tracks_3d_position": true,
+      "leica_tracks_6d_pose": false,
+      "released_leica_rotation_supported": false,
+      "released_zero_quaternion_columns_are_not_physical_rotation": true
+    },
+    "issue_62": {
+      "exact_prism_reference_axis_or_point_defined": false,
+      "gt_described_as_xsens_or_leica_prism_pose": true,
+      "leica_prism_is_named_reference_object": true,
+      "prism_model_identified": false,
+      "prism_mount_identified": false
+    },
+    "issue_84": {
+      "absence_of_answer_proves_extrinsic_does_not_exist": false,
+      "maintainer_answer_count": 0,
+      "maintainer_extrinsic_answer_recovered": false,
+      "question_requests_leica_gt_to_handsfree_extrinsic": true
+    }
+  },
+  "author_supported_mocap_semantics": {
+    "issue_54": {
+      "filter_algorithm_specified": false,
+      "filter_threshold_specified": false,
+      "filter_window_specified": false,
+      "maintainer_acknowledges_tracking_loss": true,
+      "maintainer_recommends_filter": true,
+      "prospective_exclusion_rule_specified": false,
+      "tracking_loss_can_cause_abrupt_quaternion_changes": true
+    },
+    "issue_9": {
+      "evo_alignment_is_physical_extrinsic_verification": false,
+      "maintainer_evaluation_provenance_uses_evo_alignment": true,
+      "maintainer_provides_mocap_to_lidar_extrinsic": false,
+      "mocap_rotation_extrinsic_resolved": false,
+      "mocap_translation_lever_arm_resolved": false,
+      "room_and_roomdark_gt_from_mocap": true
+    }
+  },
+  "content_sha256": "a2044a4ca875618210843bc42ec0eedad0bc4026ebe258099b30cd6733153cd4",
+  "dataset_id": "M2DGR",
+  "interpretation": {
+    "alignment_mode_supported": false,
+    "association_tolerance_supported": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_authorized": false,
+    "evaluation_ready": false,
+    "evo_alignment_is_physical_origin_verification": false,
+    "exact_leica_prism_reference_point_verified": false,
+    "exact_leica_reflector_standing_axis_verified": false,
+    "leica_gt_translation_only_author_supported": true,
+    "leica_prism_constant_verified": false,
+    "leica_prism_named_as_gt_reference_object_author_supported": true,
+    "leica_reference_to_lidar_transform_applicability_verified": false,
+    "leica_reflector_model_verified": false,
+    "mocap_filter_required_by_author_recommendation": false,
+    "mocap_filter_rule_scientifically_specified": false,
+    "mocap_marker_pattern_verified": false,
+    "mocap_room_roomdark_reference_author_supported": true,
+    "mocap_to_lidar_transform_verified": false,
+    "mocap_tracked_body_origin_verified": false,
+    "mocap_tracking_loss_author_supported": true,
+    "mocap_volume_origin_verified": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "reference_interpolation_authorized": false,
+    "reference_timestamp_physical_measurement_event_verified": false,
+    "reference_timestamp_timebase_export_semantics_verified": false,
+    "reference_to_estimator_temporal_association_verified": false,
+    "synchronization_verified": false
+  },
+  "local_source_search_interpretation": {
+    "dedicated_leica_prism_constant_configuration_recovered": false,
+    "dedicated_leica_reflector_configuration_recovered": false,
+    "dedicated_vicon_vsk_recovered": false,
+    "dedicated_vicon_xcp_recovered": false,
+    "mocap_marker_pattern_configuration_recovered": false,
+    "mocap_object_origin_configuration_recovered": false,
+    "search_absence_treated_as_dataset_wide_nonexistence_proof": false,
+    "search_snapshot_sha256": "740f558ffeb5e91638ffa17b0f6c4e9dce1f3ffe3a1acf515a44ef97a3b12aaa",
+    "unique_matching_file_count": 2,
+    "unique_matching_files": [
+      "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/source_metadata/upstream_repo/calibration_results.txt",
+      "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/source_metadata/upstream_repo/README.md"
+    ]
+  },
+  "manufacturer_leica_semantics": {
+    "edm_measurements_referenced_to_reflector_standing_axis": true,
+    "leica_prism_constant_used_to_relate_measurement_to_standing_axis": true,
+    "leica_reflector_standing_axis_described_as_coincident_with_central_symmetric_or_virtual_prism_center": true,
+    "m2dgr_mount_and_standing_axis_verified": false,
+    "m2dgr_prism_constant_verified": false,
+    "m2dgr_reflector_is_verified_leica_standard_reflector": false,
+    "m2dgr_reflector_model_verified": false,
+    "manufacturer_semantics_alone_identify_released_gt_point": false
+  },
+  "manufacturer_provenance_scope": {
+    "leica": {
+      "document_establishes_m2dgr_prism_constant": false,
+      "document_establishes_released_gt_reference_point": false,
+      "document_examples_include_specific_standard_reflectors": true,
+      "document_is_m2dgr_runtime_configuration": false,
+      "document_role": "generic Leica Geosystems reflector measurement semantics",
+      "examples_identify_m2dgr_reflector_model": false,
+      "prism_constant_semantics_supported": true,
+      "snapshot_sha256": "57be9998360665d3f6ab63309471d475b13c5d207657431420f0234f4ff86813",
+      "standing_axis_semantics_supported": true,
+      "virtual_prism_center_semantics_supported": true
+    },
+    "vicon": {
+      "document_establishes_m2dgr_marker_pattern": false,
+      "document_establishes_m2dgr_object_origin": false,
+      "document_establishes_m2dgr_volume_origin": false,
+      "document_is_contemporaneous_m2dgr_runtime_log": false,
+      "document_is_verified_m2dgr_software_version": false,
+      "document_revision_text": "Vicon Tracker 4.1, 15 February 2024, Revision 2",
+      "document_role": "manufacturer evidence that tracked-object local origin/alignment and volume origin are configurable",
+      "object_alignment_configurability_supported": true,
+      "object_origin_configurability_supported": true,
+      "snapshot_sha256": "6a8082d7a2994b9fb47b5c825c87a3591943d130b767686c3666bf27010ac385",
+      "volume_origin_configurability_supported": true
+    }
+  },
+  "manufacturer_vicon_semantics": {
+    "global_volume_origin_is_configurable": true,
+    "m2dgr_marker_pattern_configuration_recovered": false,
+    "m2dgr_object_origin_configuration_recovered": false,
+    "m2dgr_used_this_exact_tracker_version_verified": false,
+    "m2dgr_volume_origin_configuration_recovered": false,
+    "manufacturer_semantics_alone_identify_released_mocap_body_origin": false,
+    "object_local_coordinate_alignment_is_configurable": true,
+    "object_origin_defined_relative_to_marker_pattern": true,
+    "tracker_documentation_allows_object_origin_to_be_changed": true
+  },
+  "policy": {
+    "alignment_selected": false,
+    "confirmation_test_inspected": false,
+    "confirmation_test_used_for_selection": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_ready": false,
+    "manufacturer_default_assumed_as_dataset_configuration": false,
+    "mocap_filter_selected": false,
+    "mocap_samples_excluded": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "new_extrinsic_created": false,
+    "new_leica_origin_created": false,
+    "new_mocap_origin_created": false,
+    "new_timing_offset_created": false,
+    "new_timing_tolerance_created": false,
+    "reference_interpolation_authorized": false,
+    "synchronization_verified": false,
+    "unanswered_issue_treated_as_proof_of_nonexistence": false
+  },
+  "remaining_requirements": [
+    "M2DGR Leica reflector/prism model and mount configuration",
+    "exact Leica reflector standing axis or reference point exported as GT",
+    "M2DGR Leica prism constant or equivalent target configuration",
+    "applicability of published Leica-to-LiDAR candidate transform to released Leica GT",
+    "M2DGR Vicon tracked-object/rigid-body origin configuration",
+    "M2DGR mocap marker pattern or rigid-body definition",
+    "M2DGR mocap global volume-origin configuration if required for intended physical interpretation",
+    "mocap-to-LiDAR physical transform if metric lever-arm correction is required",
+    "prospectively justified mocap invalid-sample handling rule, if any",
+    "reference timestamp physical-event semantics",
+    "reference timestamp export/timebase semantics",
+    "reference-to-estimator temporal association rule"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_INDOOR_REFERENCE_ORIGIN_SEMANTICS_EVIDENCE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "evaluation_authorization_changed": false,
+    "leica_exact_origin_upgrade_authorized": false,
+    "leica_positive_narrow_claim": "released Leica-family GT is author-supported as 3D position of a Leica prism reference object",
+    "leica_reason_exact_origin_remains_blocked": "M2DGR reflector model, prism constant, mount/standing-axis configuration, and exact released reference-point mapping are unrecovered",
+    "mocap_exact_origin_upgrade_authorized": false,
+    "mocap_filter_reason": "author recommendation contains no reproducible algorithm, threshold, window, or prospective exclusion rule",
+    "mocap_filter_upgrade_authorized": false,
+    "mocap_positive_narrow_claim": "Room/Roomdark reference is author-supported as mocap and tracking failures can cause abrupt quaternion changes",
+    "mocap_reason_exact_origin_remains_blocked": "tracked-object origin, marker pattern, local-axis alignment, volume origin, and mocap-to-LiDAR relation are unrecovered"
+  },
+  "scope": {
+    "confirmation_test_inspected": false,
+    "confirmation_test_outcomes_used": false,
+    "mocap_filter_rule_selected": false,
+    "modifies_frozen_predecessor_evidence": false,
+    "new_extrinsic_estimated": false,
+    "performs_ate_or_rpe": false,
+    "performs_estimator_scoring": false,
+    "purpose": "additive author and manufacturer provenance for Leica and mocap reference-origin semantics",
+    "trajectory_outcomes_used_for_selection": false,
+    "transform_fitting_used": false,
+    "validation_outcomes_used_for_selection": false
+  },
+  "source_artifacts": {
+    "issue_snapshots": {
+      "10": {
+        "closed_at": "2022-01-22T06:42:27Z",
+        "comments_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_10_comments.json",
+        "comments_snapshot_sha256": "060f228875feb0201dab8c1a242b1e57feb57e380fa85ee3ced502a479430283",
+        "contemporaneous_acquisition_log": false,
+        "created_at": "2022-01-21T02:32:26Z",
+        "issue_number": 10,
+        "issue_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_10.json",
+        "issue_snapshot_sha256": "f100d6d592c4a762581745052582887c152e120e48d27e290aef32105a978648",
+        "maintainer_comment_count": 3,
+        "maintainer_comments": [
+          {
+            "author_login": "sjtuyinjie",
+            "body": "Good question. Leica can only track 3D position rather than 6D position and pose. As for GT problem, sorry for my oversight. I will double check it right now.",
+            "comment_id": 1019076282,
+            "created_at": "2022-01-22T06:37:48Z",
+            "updated_at": "2022-01-22T06:37:48Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/10#issuecomment-1019076282"
+          },
+          {
+            "author_login": "sjtuyinjie",
+            "body": "I have re-uploaded GT file of Hall03 here in the link https://github.com/SJTU-ViSYS/M2DGR/blob/main/hall_03.txt",
+            "comment_id": 1019076823,
+            "created_at": "2022-01-22T06:42:23Z",
+            "updated_at": "2022-01-22T06:42:23Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/10#issuecomment-1019076823"
+          },
+          {
+            "author_login": "sjtuyinjie",
+            "body": "It's okay now. Contact me if any new questions.",
+            "comment_id": 1019857127,
+            "created_at": "2022-01-24T08:51:34Z",
+            "updated_at": "2022-01-24T08:51:34Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/10#issuecomment-1019857127"
+          }
+        ],
+        "question": "Hi, Thanks for your great job! I found that the quaternion of the ground truth which is provided by the Leica is all 0. Is it for Leica only provides 3 DOF position estimation? Another problem is that some GT link is wrong. For example the GT link of hall_03 will guild you to the hall_02. I suggest to check those links again. Thanks and wait for your kind response!",
+        "role": "later_public_author_or_maintainer_provenance",
+        "state": "closed",
+        "title": "The quaternion of the ground-truth is all 0 and wrong GT link",
+        "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/10"
+      },
+      "54": {
+        "closed_at": "2022-11-04T07:59:49Z",
+        "comments_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_54_comments.json",
+        "comments_snapshot_sha256": "7b14cd62bec5f4ea1c76c6622676c7ec6d5e19198016f6d7f607a123e511cd17",
+        "contemporaneous_acquisition_log": false,
+        "created_at": "2022-11-03T04:32:35Z",
+        "issue_number": 54,
+        "issue_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_54.json",
+        "issue_snapshot_sha256": "8d2ced4b544c4a6b0481b511d9cd5412721f15309a8e1249a6c57fc7fbedf315",
+        "maintainer_comment_count": 1,
+        "maintainer_comments": [
+          {
+            "author_login": "sjtuyinjie",
+            "body": "Thanks for your comment. The mocap system sometimes might not track the robot well, leading to an abrupt change in quaternions. It is strongly recommended that you use a filter for more accurate data",
+            "comment_id": 1303089808,
+            "created_at": "2022-11-04T07:59:49Z",
+            "updated_at": "2022-11-04T07:59:49Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/54#issuecomment-1303089808"
+          }
+        ],
+        "question": "Hi, Thank you for providing this dataset. I am interested in using the MoCap and IMU data for the indoor part of the dataset. I have noticed that the MoCap data randomly experiences large jumps in values of the quaternion rotations. Are these errors due to the MoCap system? Or is there some sporadic gimbal lock phenomenon I should account for? Once specific instance is on lines 150-165 of the ground truth data for `room_01.txt`. See the below lines in the screen shot: ![image](https://user-images.githubusercontent.com/21183560/199646671-42ff9e48-c46a-4087-9fff-f7099792addc.png) This is not the only instance for that trajectory. There are many instances of such jumps in this trajectory as well as all trajectories using the MoCap for ground truth. Here I have plotted the positions of the MoCap frame and Realsense 435i IMU frame. You can see the MoCap frame (green) is steady while the Realsense 435i IMU frame (red) jumps randomly above and below the MoCap frame. ![mocap_no_filter_room_01](https://user-images.githubusercontent.com/21183560/199647008-6243fb0f-8e60-4f48-80b1-eacc96b8d611.png) I am more certain this is not an error in my code. If I add a simple filter that removes the MoCap data which sporadically jumps using the following lines of code... ![image (1)](https://user-images.githubusercontent.com/21183560/199647167-81372ca3-908f-4965-adea-3d82dcf00f36.png) ... then the trajectories align well: ![mocap_with_filter_room_01_b](https://user-images.githubusercontent.com/21183560/199647948-952a04b3-30ed-49a6-afc8-e1adde0381b3.png) Since I would prefer to keep these data points, is there some issue with the MoCap that you know of which I can account for this using a few lines of code? I am considering trying some guesses at 180 degree rotations until I find a close enough rotational alignment with the trajectory. Thanks for your time and efforts!! Angel",
+        "role": "later_public_author_or_maintainer_provenance",
+        "state": "closed",
+        "title": "Quaternion rotation jumps in MoCap data",
+        "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/54"
+      },
+      "62": {
+        "closed_at": "2023-04-18T09:34:41Z",
+        "comments_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_62_comments.json",
+        "comments_snapshot_sha256": "556f6635c7f453179ace6091824df424aaf757d2ceaed35269f5119b61b04050",
+        "contemporaneous_acquisition_log": false,
+        "created_at": "2023-01-03T11:40:16Z",
+        "issue_number": 62,
+        "issue_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_62.json",
+        "issue_snapshot_sha256": "0a6292e0b20044b2214c32dea18289e4456047292f6a150c69394f07fb89a867",
+        "maintainer_comment_count": 1,
+        "maintainer_comments": [
+          {
+            "author_login": "sjtuyinjie",
+            "body": "真值是xsens 680g的位姿或者莱卡棱镜的位姿。xsens与handsfree imu的旋转可以视作单位矩阵",
+            "comment_id": 1512758832,
+            "created_at": "2023-04-18T09:34:41Z",
+            "updated_at": "2023-04-18T09:34:41Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/62#issuecomment-1512758832"
+          }
+        ],
+        "question": "非常感谢您提供这么全面的数据集，因为想进行姿态与真值的比较，所以想咨询一下 数据集中所提供的真值是表示的谁的位姿？它与Handsfree IMU（或其他传感器）间的外参转换是怎样的？ 谢谢",
+        "role": "later_public_author_or_maintainer_provenance",
+        "state": "closed",
+        "title": "数据集中所提供的真值与Handsfree IMU（或其他传感器）间的外参转换是怎样的",
+        "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/62"
+      },
+      "84": {
+        "closed_at": "2023-09-21T06:59:17Z",
+        "comments_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_84_comments.json",
+        "comments_snapshot_sha256": "6ead49f930d81f9283c56ca5f47dbb3fa44a2ce54fe12adc3eabb4b47e5349ea",
+        "contemporaneous_acquisition_log": false,
+        "created_at": "2023-06-15T17:07:22Z",
+        "issue_number": 84,
+        "issue_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_84.json",
+        "issue_snapshot_sha256": "bfee21a711a0c7c5098b3db7b4be46a62ab381c56a41efd8732922a4185f25cb",
+        "maintainer_comment_count": 0,
+        "maintainer_comments": [],
+        "question": "First, thank you for providing the dataset! I am trying to compare GT and LiO-SAM pose results using hall data. I would like to compare the pose results with respect to the IMU coordinate system. So, can you give me the extrinsic between GT (Leica) and handsfree IMU? For example, translational and rotational parameters. Thanks.",
+        "role": "later_public_author_or_maintainer_provenance",
+        "state": "closed",
+        "title": "What is the extrinsic of imu and gt (Leica) in hall data?",
+        "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/84"
+      },
+      "9": {
+        "closed_at": "2022-01-19T03:39:46Z",
+        "comments_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_9_comments.json",
+        "comments_snapshot_sha256": "e5d695c3d79540f632033fb22e2491b2897e6e56ec03b56a837b5a5fbd941158",
+        "contemporaneous_acquisition_log": false,
+        "created_at": "2022-01-18T06:01:47Z",
+        "issue_number": 9,
+        "issue_snapshot_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/issues/issue_9.json",
+        "issue_snapshot_sha256": "a7ebf6228e2d2165e1dcb2d87069ada04ae9e72c1630b7aefcbd25ea89892024",
+        "maintainer_comment_count": 2,
+        "maintainer_comments": [
+          {
+            "author_login": "sjtuyinjie",
+            "body": "As mentioned in the paper, the ground truth trajectories of Room and Roomdark sequences are obtained by Mocap. In fact, Mocap paremeters are not necessary, because when you evaluate your SLAM result, the \"-a\" command of EVO will align the GT with your trajectories. We do not have to specially calibrate the extrinsics between LiDAR and Mocap.",
+            "comment_id": 1015447312,
+            "created_at": "2022-01-18T14:09:48Z",
+            "updated_at": "2022-01-18T14:09:48Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/9#issuecomment-1015447312"
+          },
+          {
+            "author_login": "sjtuyinjie",
+            "body": "OK. If any other questions, feel free to propose issues.",
+            "comment_id": 1016050321,
+            "created_at": "2022-01-19T03:39:40Z",
+            "updated_at": "2022-01-19T03:39:40Z",
+            "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/9#issuecomment-1016050321"
+          }
+        ],
+        "question": "Hi, thanks for your great job! I am going to use the room data to test my algorithm. As is mentioned in the paper, the groundtruth is provided by a Mocap. But I cant find the related extrinsic parameter of this sensor. Would you mind updating the calibration_results.txt as soon as possible to provide this necessary extrinsic parameter? Or can I get the extrinsic parameter by calculating other extrinsic parameters? Thank you in advance!",
+        "role": "later_public_author_or_maintainer_provenance",
+        "state": "closed",
+        "title": "Lack of Extrinsic Parameter from Mocap to Lidar",
+        "web_url": "https://github.com/SJTU-ViSYS/M2DGR/issues/9"
+      }
+    },
+    "leica_surveying_reflectors_snapshot": {
+      "extract_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/manufacturer/leica_relevant_extract.txt",
+      "extract_sha256": "df9625e11a35dbd84a9ceadea18b6b0bd4704668fbd28fe97531b869a5885554",
+      "m2dgr_specific_runtime_configuration": false,
+      "pdf_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/manufacturer/leica_surveying_reflectors.pdf",
+      "pdf_sha256": "57be9998360665d3f6ab63309471d475b13c5d207657431420f0234f4ff86813",
+      "role": "manufacturer_reflector_measurement_semantics",
+      "source": "Leica Geosystems Surveying Reflectors white paper",
+      "source_url": "https://leica-geosystems.com/-/media/files/leicageosystems/products/white-papers/leica_surveying_reflectors-_wp.ashx?hash=54E98DB9E41C27068BE5C2ED81344F0C&la=en",
+      "text_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/manufacturer/leica_surveying_reflectors.txt",
+      "text_sha256": "3a5adec6bd7cf54add7c065e654ac1627f11354be756a28e7cb86ba0f20ce1e4"
+    },
+    "local_source_config_search": {
+      "file_sha256": "740f558ffeb5e91638ffa17b0f6c4e9dce1f3ffe3a1acf515a44ef97a3b12aaa",
+      "relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/local_search/leica_mocap_config_search.txt",
+      "role": "local_available_source_inventory_search"
+    },
+    "predecessors": {
+      "calibration_evidence_v1": {
+        "file_sha256": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+        "relative_path": "manifests/m2dgr_calibration_evidence_v1.json"
+      },
+      "evaluation_protocol_v2": {
+        "file_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+        "relative_path": "configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json"
+      },
+      "gt_recording_stream_provenance_v1": {
+        "file_sha256": "f8cbf76663a027e5487737afb6753eeaed1bc75debbc7c1151d949e809aff814",
+        "relative_path": "manifests/m2dgr_gt_recording_stream_provenance_evidence_v1.json"
+      },
+      "platform_geometry_evidence_v1": {
+        "file_sha256": "e1ba372d38faf32107b2c23ed836ab8a78b783269bab7f89e20f542c57159882",
+        "relative_path": "manifests/m2dgr_platform_geometry_evidence_v1.json"
+      },
+      "reference_physical_semantics_v1": {
+        "file_sha256": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+        "relative_path": "manifests/m2dgr_reference_physical_semantics_evidence_v1.json"
+      },
+      "reference_temporal_association_evidence_v1": {
+        "file_sha256": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117",
+        "relative_path": "manifests/m2dgr_reference_temporal_association_evidence_v1.json"
+      },
+      "rtk_geometry_timing_semantics_v1": {
+        "file_sha256": "1cf9bbade44db2d1c35e49ff89984cb7e9a34fdfe99978f9c0213e306135c42b",
+        "relative_path": "manifests/m2dgr_rtk_reference_geometry_timing_semantics_evidence_v1.json"
+      }
+    },
+    "vicon_tracker_user_guide_snapshot": {
+      "extract_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/manufacturer/vicon_relevant_extract.txt",
+      "extract_sha256": "7c23a13a46ceb571d30953651b17e4b9e0fd347ca8e4875814f6c24c2690d1cd",
+      "m2dgr_specific_runtime_configuration": false,
+      "m2dgr_specific_software_version_verified": false,
+      "pdf_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/manufacturer/vicon_tracker_user_guide.pdf",
+      "pdf_sha256": "6a8082d7a2994b9fb47b5c825c87a3591943d130b767686c3666bf27010ac385",
+      "role": "manufacturer_object_origin_configurability_semantics",
+      "source": "Vicon Tracker User Guide",
+      "source_url": "https://help.vicon.com/download/attachments/14320520/Vicon%20Tracker%20User%20Guide.pdf",
+      "text_relative_path": "audit/evaluation_protocol_staging/indoor_reference_origin_semantics_v1/source_snapshots/manufacturer/vicon_tracker_user_guide.txt",
+      "text_sha256": "af7c4e111a7289cc9e0e9a67955be8e05adac8558e4eff6395902d4076ac64b1"
+    }
+  },
+  "status": "blocked_pending_physical_evidence"
+}
