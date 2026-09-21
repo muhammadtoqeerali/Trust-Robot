@@ -997,6 +997,102 @@ contemporaneous runtime logs.
 This checkpoint is additive. Evaluation Protocol V2 and all predecessor
 physical/timing/calibration/split evidence remain byte-identical.
 
+
+## M2DGR platform-geometry evidence findings
+
+Permanent additive evidence:
+
+`manifests/m2dgr_platform_geometry_evidence_v1.json`
+
+Content SHA256:
+
+`6886f60101055363d8aac710d66ebb3b6013226e743071dcc4d1051b5a2ff8e2`
+
+File SHA256:
+
+`e1ba372d38faf32107b2c23ed836ab8a78b783269bab7f89e20f542c57159882`
+
+A hash-bound historical author platform drawing now provides qualitative
+physical-layout evidence independent of trajectory outcomes.
+
+The associated author page states:
+
+- drawing units are centimeters;
+- red arrows denote X;
+- green arrows denote Y;
+- blue arrows denote Z.
+
+Relevant drawing labels are:
+
+- `3`: LIDAR;
+- `4`: GNSS-IMU;
+- `5`: IMU;
+- `6`: Antenna.
+
+The drawing explicitly distinguishes GNSS-IMU `#4` from Antenna `#6`.
+
+Explicit annotations include:
+
+- LiDAR height annotation above the middle deck: `15 cm`;
+- middle-deck width/depth: `58 cm` / `44 cm`;
+- LiDAR center dimension from the left middle-deck boundary: `29 cm`;
+- GNSS-IMU `#4` and LiDAR `#3` share the drawn dashed planar centerline;
+- upper-platform width/depth: `70 cm` / `50 cm`;
+- Antenna `#6` dimension from the left boundary: `42 cm`;
+- Antenna `#6` centerline dimension from the top boundary: `25 cm`.
+
+These are preserved as explicit author drawing annotations only.
+
+They are not converted into a new sensor transform.
+
+The `15 cm` drawing annotation is not declared equal to the published
+Xsens-to-LiDAR candidate vertical component of `-16.824 cm`.
+
+The drawn centerline is not promoted to an exact zero translation component.
+
+The sensor-axis arrows are not promoted to a calibrated rotation matrix.
+
+Antenna `#6` is not identified as the MTi-680G GNSS antenna or as a GNSS phase
+center.
+
+Current interpretation:
+
+- historical author platform drawing hash verified: TRUE
+- centimeter drawing units author-supported: TRUE
+- axis-color semantics author-supported: TRUE
+- GNSS-IMU and antenna are distinct labeled components: TRUE
+- explicit LiDAR `15 cm` annotation present: TRUE
+- explicit middle-deck `58 cm` / `44 cm` dimensions present: TRUE
+- explicit LiDAR `29 cm` center dimension present: TRUE
+- GNSS-IMU and LiDAR share drawn planar centerline: TRUE
+- qualitative platform-layout support: TRUE
+- drawing is independent physical calibration verification: FALSE
+- exact Xsens physical measurement origin verified: FALSE
+- Xsens-to-LiDAR candidate translation verified: FALSE
+- Xsens-to-LiDAR candidate rotation verified: FALSE
+- runtime Xsens GNSS lever arm verified: FALSE
+- Antenna `#6` identified as MTi-680G GNSS antenna: FALSE
+- GNSS antenna phase center verified: FALSE
+- GNSS candidate-transform applicability verified: FALSE
+- Leica prism reference point verified: FALSE
+- Leica candidate-transform applicability verified: FALSE
+- mocap body origin verified: FALSE
+- GT timestamp physical-event semantics verified: FALSE
+- GT timestamp export/timebase semantics verified: FALSE
+- reference temporal association verified: FALSE
+- fixed reference offset supported: FALSE
+- interpolation authorized: FALSE
+- nearest-neighbor association authorized: FALSE
+- association tolerance supported: FALSE
+- evaluation interval authorized: FALSE
+- alignment selected: FALSE
+- estimator scoring authorized: FALSE
+- dataset calibration verified: FALSE
+- synchronization verified: FALSE
+- evaluation ready: FALSE
+
+This checkpoint is additive. Evaluation Protocol V2 remains byte-identical.
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:

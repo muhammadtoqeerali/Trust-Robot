@@ -1,0 +1,333 @@
+{
+  "content_sha256": "6886f60101055363d8aac710d66ebb3b6013226e743071dcc4d1051b5a2ff8e2",
+  "dataset_id": "M2DGR",
+  "drawing_claim_scope": {
+    "antenna_6_identity_as_generic_legend_antenna_supported": true,
+    "antenna_6_identity_as_xsens_mti_680g_gnss_antenna_supported": false,
+    "antenna_6_phase_center_supported": false,
+    "axis_arrow_agreement_accepted_as_numeric_rotation_calibration": false,
+    "axis_arrow_agreement_accepted_as_qualitative_orientation_layout": true,
+    "drawn_centerline_coincidence_accepted_as_qualitative_layout": true,
+    "drawn_centerline_coincidence_accepted_as_zero_metric_translation_component": false,
+    "explicit_metric_annotations_accepted_as_author_drawing_annotations": true,
+    "explicit_metric_annotations_accepted_as_sensor_origin_transforms": false,
+    "fifteen_cm_annotation_accepted_as_lidar_height_annotation": true,
+    "fifteen_cm_annotation_accepted_as_xsens_to_lidar_z_extrinsic": false,
+    "leica_prism_geometry_present": false,
+    "mocap_geometry_present": false
+  },
+  "explicit_visual_observations": {
+    "cross_panel_constraints": {
+      "cross_panel_coordinate_frames_explicitly_registered": false,
+      "cross_panel_dimension_subtraction_authorized": false,
+      "cross_panel_origin_correspondence_explicitly_defined": false
+    },
+    "legend": {
+      "3": "LIDAR",
+      "4": "GNSS-IMU",
+      "5": "IMU",
+      "6": "Antenna"
+    },
+    "panel_a_side_view": {
+      "gnss_imu_measurement_origin_explicitly_marked": false,
+      "gnss_imu_number": 4,
+      "gnss_imu_to_lidar_full_3d_translation_explicitly_dimensioned": false,
+      "imu_number": 5,
+      "lidar_measurement_origin_explicitly_defined_by_text": false,
+      "lidar_number": 3,
+      "lidar_vertical_dimension_above_middle_deck_cm": 15.0,
+      "lidar_vertical_dimension_is_explicit_annotation": true
+    },
+    "panel_b_upper_platform_top_view": {
+      "antenna_6_is_identified_as_xsens_mti_680g_gnss_antenna": false,
+      "antenna_6_is_physically_distinct_from_gnss_imu_4_in_legend": true,
+      "antenna_center_from_left_platform_boundary_cm": 42.0,
+      "antenna_centerline_from_top_platform_boundary_cm": 25.0,
+      "antenna_dimensions_are_explicit_annotations": true,
+      "antenna_number": 6,
+      "antenna_phase_center_explicitly_marked": false,
+      "gnss_imu_to_antenna_vector_explicitly_dimensioned": false,
+      "outer_platform_depth_cm": 50.0,
+      "outer_platform_width_cm": 70.0
+    },
+    "panel_c_middle_deck_top_view": {
+      "gnss_imu_4_and_lidar_3_lie_on_same_drawn_dashed_centerline": true,
+      "gnss_imu_and_lidar_axis_arrows_depicted_with_same_planar_direction": true,
+      "gnss_imu_to_lidar_distance_explicitly_dimensioned": false,
+      "lidar_centerline_dimension_is_explicit_annotation": true,
+      "lidar_centerline_from_left_platform_boundary_cm": 29.0,
+      "outer_platform_depth_cm": 44.0,
+      "outer_platform_width_cm": 58.0
+    },
+    "sensor_identity_distinctions": {
+      "gnss_imu_4_and_antenna_6_are_separately_labeled": true,
+      "leica_prism_is_explicitly_labeled_in_drawing": false,
+      "lidar_3_and_gnss_imu_4_are_separately_labeled": true,
+      "lidar_3_and_imu_5_are_separately_labeled": true,
+      "mocap_body_origin_is_explicitly_labeled_in_drawing": false
+    }
+  },
+  "historical_page_statements": {
+    "axis_color_legend": {
+      "blue": "Z",
+      "green": "Y",
+      "red": "X"
+    },
+    "drawing_is_physical_robot_drawing_or_schematic": true,
+    "drawing_units_are_centimeters": true,
+    "gnss_imu_device_named": "Xsens Mti 680G",
+    "leica_device_named": "Leica MS60",
+    "lidar_device_named": "Velodyne VLP-32C",
+    "sensor_direction_colors_documented": true
+  },
+  "interpretation": {
+    "alignment_mode_supported": false,
+    "association_tolerance_supported": false,
+    "dataset_calibration_verified": false,
+    "drawing_axis_color_semantics_author_supported": true,
+    "drawing_centimeter_units_author_supported": true,
+    "drawing_identifies_antenna_6_as_mti_680g_gnss_antenna": false,
+    "drawing_identifies_gnss_antenna_phase_center": false,
+    "drawing_is_independent_physical_calibration_verification": false,
+    "drawing_verifies_exact_xsens_measurement_origin": false,
+    "drawing_verifies_gnss_candidate_transform_applicability": false,
+    "drawing_verifies_leica_candidate_transform_applicability": false,
+    "drawing_verifies_leica_prism_reference_point": false,
+    "drawing_verifies_mocap_body_origin": false,
+    "drawing_verifies_xsens_gnss_runtime_lever_arm": false,
+    "drawing_verifies_xsens_to_lidar_candidate_rotation": false,
+    "drawing_verifies_xsens_to_lidar_candidate_translation": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_interval_authorized": false,
+    "evaluation_ready": false,
+    "exact_leica_prism_center_verified": false,
+    "exact_xsens_physical_measurement_origin_verified": false,
+    "fixed_reference_offset_supported": false,
+    "gnss_imu_and_antenna_are_distinct_labeled_components": true,
+    "gnss_imu_and_lidar_share_drawn_planar_centerline": true,
+    "historical_author_platform_drawing_hash_verified": true,
+    "lidar_15cm_middle_deck_vertical_annotation_present": true,
+    "lidar_centered_across_58cm_middle_deck_width_by_explicit_29cm_dimension": true,
+    "nearest_neighbor_pose_association_authorized": false,
+    "reference_interpolation_authorized": false,
+    "reference_timestamp_physical_measurement_event_verified": false,
+    "reference_timestamp_timebase_export_semantics_verified": false,
+    "reference_to_estimator_temporal_association_verified": false,
+    "rtk_ins_reference_to_lidar_transform_applicability_verified": false,
+    "runtime_xsens_lever_arm_verified": false,
+    "separate_author_source_supports_qualitative_sensor_layout": true,
+    "synchronization_verified": false
+  },
+  "policy": {
+    "alignment_selected": false,
+    "confirmation_test_inspected": false,
+    "confirmation_test_used_for_selection": false,
+    "cross_panel_geometry_fitted": false,
+    "dataset_calibration_verified": false,
+    "estimator_scoring_authorized": false,
+    "evaluation_ready": false,
+    "historical_evidence_modified": false,
+    "nearest_neighbor_pose_association_authorized": false,
+    "new_calibration_value_created": false,
+    "new_frame_transform_created": false,
+    "new_timing_offset_created": false,
+    "new_timing_tolerance_created": false,
+    "pixel_derived_metric_measurement_created": false,
+    "raw_dataset_modified": false,
+    "reference_interpolation_authorized": false,
+    "synchronization_verified": false
+  },
+  "provenance_semantics": {
+    "drawing_commit_date_recorded": true,
+    "drawing_commit_metadata_hash_bound": true,
+    "drawing_hash_bound": true,
+    "drawing_treated_as_author_platform_geometry_source": true,
+    "drawing_treated_as_gt_export_provenance": false,
+    "drawing_treated_as_independent_physical_calibration": false,
+    "drawing_treated_as_runtime_mti_configuration": false,
+    "drawing_treated_as_timestamp_calibration_provenance": false,
+    "historical_page_commit_date_recorded": true,
+    "historical_page_commit_metadata_hash_bound": true,
+    "historical_page_hash_bound": true,
+    "historical_page_treated_as_author_description_of_drawing": true,
+    "scientific_authorization_changed_by_provenance_hardening": false
+  },
+  "published_candidate_geometry_context": {
+    "absolute_xsens_to_lidar_candidate_vertical_component_cm": 16.824,
+    "candidate_rotation_numerically_verified_by_drawing": false,
+    "candidate_translation_numerically_verified_by_drawing": false,
+    "candidate_xsens_gnss_origin_separation_cm": 93.12363359534464,
+    "candidate_xsens_gnss_origin_separation_m": 0.9312363359534465,
+    "drawing_15cm_annotation_declared_equal_to_candidate_vertical_component": false,
+    "drawing_lidar_vertical_dimension_cm": 15.0,
+    "drawing_used_to_create_new_transform": false,
+    "drawing_used_to_fit_candidate_transform": false,
+    "gnss_origin_relative_to_xsens_origin_candidate_m": [
+      -0.2573,
+      0.00515,
+      0.89497
+    ],
+    "gnss_to_lidar_translation_cm": [
+      -9.825000000000001,
+      0.582,
+      72.673
+    ],
+    "gnss_to_lidar_translation_m": [
+      -0.09825,
+      0.00582,
+      0.72673
+    ],
+    "handsfree_imu_to_lidar_translation_m": [
+      -0.27255,
+      0.00053,
+      -0.17954
+    ],
+    "leica_to_lidar_translation_m": [
+      -0.21374,
+      0.00146,
+      0.68356
+    ],
+    "xsens_imu_to_lidar_translation_cm": [
+      15.905,
+      0.067,
+      -16.824
+    ],
+    "xsens_imu_to_lidar_translation_m": [
+      0.15905,
+      0.00067,
+      -0.16824
+    ],
+    "xsens_to_lidar_candidate_vertical_component_cm": -16.824
+  },
+  "remaining_requirements": [
+    "exact physical Xsens measurement origin represented by released RTK/INS GT",
+    "runtime MTi-680G GNSS lever-arm configuration",
+    "identity and phase-center semantics of the antenna used by the MTi-680G solution",
+    "whether published Xsens/GNSS-to-LiDAR candidate transforms were applied to released GT",
+    "timestamp-calibration method between MT Manager GT and released SLAM/system-time streams",
+    "timestamp-calibration numerical mapping, sign convention, and scope",
+    "released GT timestamp physical-event and export/timebase semantics",
+    "exact Leica prism reference point represented by Leica GT",
+    "Leica candidate-transform applicability",
+    "mocap tracked-body origin and mocap-to-estimator-frame relation",
+    "reference-to-estimator temporal association rule"
+  ],
+  "schema": "TRUST_ROBOT_M2DGR_PLATFORM_GEOMETRY_EVIDENCE_V1",
+  "schema_version": 1,
+  "scope": {
+    "confirmation_test_inspected": false,
+    "confirmation_test_outcomes_used": false,
+    "image_registration_used": false,
+    "modifies_historical_frozen_evidence": false,
+    "performs_ate_or_rpe": false,
+    "performs_estimator_scoring": false,
+    "pixel_scale_metric_inference_used": false,
+    "purpose": "additive author platform-drawing evidence for qualitative sensor layout and explicit figure dimensions",
+    "trajectory_outcomes_used": false,
+    "transform_fitting_used": false,
+    "validation_outcomes_used_for_selection": false,
+    "visual_review_method": "manual visual reading of explicit labels, dimension arrows, platform boundaries, centerlines, and axis arrows",
+    "visual_review_subject_sha256": "07336e365b8b0e0067e2b29862bddf4f0227b5befc530541a29206a6cc939d01"
+  },
+  "source_artifacts": {
+    "author_calibration_results": {
+      "file_sha256": "e515207fcf53668953a21a2e4d990643007a3a12ad54b91c456a8ee8a8100a90",
+      "relative_path": "source_metadata/upstream_repo/calibration_results.txt",
+      "role": "candidate_transform_context_only"
+    },
+    "author_platform_drawing": {
+      "commit_metadata": {
+        "author_date": "2021-12-19T10:25:35Z",
+        "author_login": "sjtuyinjie",
+        "author_name": "Yin Jie",
+        "commit_message": "Add files via upload",
+        "html_url": "https://github.com/sjtuyinjie/mypics/commit/e33e5ca6d1f914885c409be8b30c89a62500ca2e",
+        "sha": "e33e5ca6d1f914885c409be8b30c89a62500ca2e",
+        "snapshot_sha256": "796a00bc5c63b5b28a798fd08841702e5cf3e3c370e275fedbc72cf8a5038b36"
+      },
+      "commit_metadata_snapshot_relative_path": "audit/evaluation_protocol_staging/platform_geometry_evidence_v1/source_snapshots/provenance/mypics_newcar4_commit.json",
+      "commit_metadata_snapshot_sha256": "796a00bc5c63b5b28a798fd08841702e5cf3e3c370e275fedbc72cf8a5038b36",
+      "contemporaneous_with_dataset_acquisition_verified": false,
+      "file_sha256": "07336e365b8b0e0067e2b29862bddf4f0227b5befc530541a29206a6cc939d01",
+      "git_blob_sha1": "b14648570f8993e037f4e5dc8fab1e8c335fb061",
+      "image_height_px": 898,
+      "image_width_px": 1893,
+      "independent_physical_calibration_source": false,
+      "role": "historical_author_platform_geometry_source",
+      "size_bytes": 827095,
+      "snapshot_relative_path": "audit/evaluation_protocol_staging/platform_geometry_evidence_v1/source_snapshots/author/newcar4.png",
+      "source_commit": "e33e5ca6d1f914885c409be8b30c89a62500ca2e",
+      "source_commit_author_date": "2021-12-19T10:25:35Z",
+      "source_commit_author_login": "sjtuyinjie",
+      "source_commit_author_name": "Yin Jie",
+      "source_commit_message": "Add files via upload",
+      "source_repository": "sjtuyinjie/mypics",
+      "source_url": "https://raw.githubusercontent.com/sjtuyinjie/mypics/e33e5ca6d1f914885c409be8b30c89a62500ca2e/newcar4.png",
+      "visual_interpretation_scope": "explicit legend labels, dimension text, dimension arrows, drawn dashed centerlines, platform boundaries, and sensor-axis arrows only"
+    },
+    "calibration_evidence_v1": {
+      "file_sha256": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+      "relative_path": "manifests/m2dgr_calibration_evidence_v1.json"
+    },
+    "evaluation_protocol_v2": {
+      "file_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+      "relative_path": "configs/trust_robot/m2dgr_trajectory_association_evaluation_protocol_candidate_v2.json"
+    },
+    "gt_recording_stream_provenance_v1": {
+      "file_sha256": "f8cbf76663a027e5487737afb6753eeaed1bc75debbc7c1151d949e809aff814",
+      "relative_path": "manifests/m2dgr_gt_recording_stream_provenance_evidence_v1.json"
+    },
+    "historical_sensor_setup_page": {
+      "commit_metadata": {
+        "author_date": "2023-04-12T13:58:41Z",
+        "author_login": "SJTU-ViSYS",
+        "author_name": "SJTU-ViSYS",
+        "commit_message": "Update sensor_calibration.md",
+        "html_url": "https://github.com/SJTU-ViSYS/M2DGR/commit/011685e529a8ef1ffabb031922853fde3599521c",
+        "sha": "011685e529a8ef1ffabb031922853fde3599521c",
+        "snapshot_sha256": "a85ff30813d22d24a3a149c6b7587cf13a06cd86f45530ea6e3fd092fd27dc8d"
+      },
+      "commit_metadata_snapshot_relative_path": "audit/evaluation_protocol_staging/platform_geometry_evidence_v1/source_snapshots/provenance/m2dgr_sensor_calibration_commit.json",
+      "commit_metadata_snapshot_sha256": "a85ff30813d22d24a3a149c6b7587cf13a06cd86f45530ea6e3fd092fd27dc8d",
+      "contemporaneous_with_dataset_acquisition_verified": false,
+      "file_sha256": "394792f5ebf338527bc8a9fdd88930bbcd32ba9197a545b0bad49337ac7d5f6e",
+      "git_blob_sha1": "920d953b15e22525d62e205fde3266c615dba453",
+      "role": "historical_author_description_of_platform_drawing",
+      "size_bytes": 2219,
+      "snapshot_relative_path": "audit/evaluation_protocol_staging/platform_geometry_evidence_v1/source_snapshots/author/sensor_calibration.md",
+      "source_commit": "011685e529a8ef1ffabb031922853fde3599521c",
+      "source_commit_author_date": "2023-04-12T13:58:41Z",
+      "source_commit_author_login": "SJTU-ViSYS",
+      "source_commit_message": "Update sensor_calibration.md",
+      "source_repository": "SJTU-ViSYS/M2DGR",
+      "source_url": "https://raw.githubusercontent.com/SJTU-ViSYS/M2DGR/011685e529a8ef1ffabb031922853fde3599521c/sensor_calibration.md"
+    },
+    "reference_physical_semantics_v1": {
+      "file_sha256": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+      "relative_path": "manifests/m2dgr_reference_physical_semantics_evidence_v1.json"
+    },
+    "rtk_geometry_timing_semantics_v1": {
+      "file_sha256": "1cf9bbade44db2d1c35e49ff89984cb7e9a34fdfe99978f9c0213e306135c42b",
+      "relative_path": "manifests/m2dgr_rtk_reference_geometry_timing_semantics_evidence_v1.json"
+    }
+  },
+  "status": "blocked_pending_physical_evidence",
+  "visual_review_provenance": {
+    "antenna_graphic_center_assumed_as_phase_center": false,
+    "cross_panel_registration_used": false,
+    "geometric_fit_to_calibration_results_used": false,
+    "manual_visual_review_limited_to_explicit_annotations": true,
+    "manual_visual_review_performed": true,
+    "ocr_used_for_metric_evidence": false,
+    "pixel_coordinate_measurement_used": false,
+    "pixel_scale_conversion_used": false,
+    "review_subject_dimensions_px": [
+      1893,
+      898
+    ],
+    "review_subject_file_sha256": "07336e365b8b0e0067e2b29862bddf4f0227b5befc530541a29206a6cc939d01",
+    "review_subject_git_blob_sha1": "b14648570f8993e037f4e5dc8fab1e8c335fb061",
+    "sensor_enclosure_center_assumed_as_measurement_origin": false,
+    "visual_claims_are_independent_of_trajectory_outcomes": true
+  }
+}
