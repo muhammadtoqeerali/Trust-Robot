@@ -1,0 +1,98 @@
+{
+  "content_sha256": "65ee14b055961ebec9ba49088468e59194230b465f1f5ea80b231af32bc42ea6",
+  "execution_policy": {
+    "corruption_rerun": false,
+    "feature_values_may_create_health_label": false,
+    "feature_values_may_modify_corruption_spec": false,
+    "feature_values_may_select_threshold": false,
+    "phase3_receipt_is_read_only_source": true,
+    "pointcloud_decoded": false,
+    "registration_rerun": false,
+    "ros_bag_opened": false,
+    "source_registration_diagnostics_are_nonscoring": true
+  },
+  "existing_train_validation": {
+    "config_content_sha256": "3940d4340444741da6d37552d270c523dd64bdd584db83d8361c5a51b8f8f49e",
+    "config_file": "configs/trust_robot/phase4_lidar_train_diagnostic_artifacts_v1.json",
+    "config_file_sha256": "1cba3d90b1539486b9f35fdd649f1bdaf0d8434c1e3a03502355fe60e59297fc",
+    "feature_extraction_aggregate_sha256": "42658bdb5739200f02dc1397f753b78ca60eb22f6bc5d913e42c6a208fc61020",
+    "validated_train_diagnostic_record_count": 90992,
+    "validated_train_trajectory_count": 22
+  },
+  "expected_registration_topology": {
+    "clean_origin_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "clean_registration_count": 2,
+    "corrupt_origin_pairs": [
+      [
+        0,
+        2
+      ]
+    ],
+    "corrupt_registration_count": 1
+  },
+  "feature_contract": {
+    "accuracy_score_emitted": false,
+    "clean_corrupt_numeric_difference_computed": false,
+    "descriptive_statistics_computed": false,
+    "extractor_id": "trust_robot_phase4_lidar_registration_diagnostics_v1",
+    "fault_label_emitted": false,
+    "health_label_emitted": false,
+    "normalization_applied": false,
+    "numeric_feature_order": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "reliability_score_emitted": false,
+    "same_extractor_for_clean_and_corrupt": true,
+    "threshold_applied": false,
+    "transformation": "identity_direct_field_extraction",
+    "window_aggregation_applied": false
+  },
+  "phase": {
+    "exit_evidence": "Validated diagnostic feature extraction",
+    "exit_evidence_satisfied": false,
+    "number": 4,
+    "objective": "Per-modality diagnostics"
+  },
+  "schema": "TRUST_ROBOT_PHASE4_LIDAR_PAIRED_DIAGNOSTICS_V1",
+  "schema_version": 1,
+  "scientific_scope": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "clean_corrupt_accuracy_comparison_performed": false,
+    "confirmation_test_data_used": false,
+    "diagnostic_threshold_selected": false,
+    "estimator_scoring_performed": false,
+    "ground_truth_association_performed": false,
+    "health_model_trained": false,
+    "health_threshold_selected": false,
+    "phase4_exit_evidence_satisfied": false,
+    "reference_data_used": false,
+    "rpe_computed": false
+  },
+  "source": {
+    "corruption_family": "EVENT_GAP",
+    "corruption_injection_id": "TRC_INJ_2413029fc605422de2dd737f",
+    "corruption_spec_id": "TRC_SPEC_d7fdcb5f67999476d8f0391d",
+    "dataset_id": "M2DGR",
+    "file": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/phase3_lidar_paired_estimator_registration_v1/paired_registration_receipt.json",
+    "file_sha256": "2ac381057b5a1c05cc9164ad8f7d7c4e4f81ad1d7d196eb78b97e3f340eaf2c2",
+    "receipt_content_sha256": "cfdf32763db47d9f00ceeea9790d7d5bd1905f190cbce43f3887f649e0ec791e",
+    "split": "train",
+    "trajectory": "Circle_01",
+    "type": "existing_frozen_phase3_paired_registration_receipt"
+  },
+  "status": "prospectively_bound_existing_phase3_registration_receipt"
+}

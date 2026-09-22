@@ -1,0 +1,110 @@
+{
+  "artifact_policy": {
+    "aggregate_temporal_windows": false,
+    "apply_thresholds": false,
+    "compute_descriptive_statistics": false,
+    "copy_source_pose_estimates": false,
+    "decode_new_pointclouds": false,
+    "emit_accuracy_scores": false,
+    "emit_fault_labels": false,
+    "emit_health_labels": false,
+    "emit_reliability_scores": false,
+    "normalize_features": false,
+    "open_ros_bags": false,
+    "persist_feature_record_hashes": true,
+    "persist_raw_diagnostic_features": true,
+    "persist_source_record_hashes": true,
+    "rerun_estimator": false
+  },
+  "content_sha256": "3940d4340444741da6d37552d270c523dd64bdd584db83d8361c5a51b8f8f49e",
+  "extractor_binding": {
+    "config_file_sha256": "7fdebd1484e04ce640cb9696bd697178c1d4f28b32be01dad1246ad3ee69a092",
+    "extractor_id": "trust_robot_phase4_lidar_registration_diagnostics_v1",
+    "feature_order": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "feature_units": [
+      "count",
+      "count",
+      "count",
+      "count",
+      "m"
+    ],
+    "transformation": "identity_direct_field_extraction"
+  },
+  "phase": {
+    "exit_evidence": "Validated diagnostic feature extraction",
+    "exit_evidence_satisfied": false,
+    "number": 4,
+    "objective": "Per-modality diagnostics"
+  },
+  "preflight_binding": {
+    "expected_feature_extraction_aggregate_sha256": "42658bdb5739200f02dc1397f753b78ca60eb22f6bc5d913e42c6a208fc61020",
+    "report_sha256": "3c1665cf4a33f2d20f94b86e6e87f8d727eddf86f0b82a2fc72fd4618b47cdce",
+    "unique_diagnostic_path_count": 1,
+    "validated_record_count": 90992
+  },
+  "schema": "TRUST_ROBOT_PHASE4_LIDAR_TRAIN_DIAGNOSTIC_ARTIFACTS_V1",
+  "schema_version": 1,
+  "scientific_scope": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "diagnostic_threshold_selected": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready_changed": false,
+    "fault_threshold_selected": false,
+    "ground_truth_association_performed": false,
+    "health_threshold_selected": false,
+    "reference_data_used": false,
+    "rpe_computed": false
+  },
+  "source": {
+    "dataset_id": "M2DGR",
+    "diagnostic_record_count": 90992,
+    "jsonl_diagnostic_path": [
+      "diagnostics"
+    ],
+    "per_trajectory_diagnostic_counts": {
+      "Circle_01": 2338,
+      "door_01": 4605,
+      "gate_01": 1721,
+      "hall_01": 3510,
+      "hall_03": 1644,
+      "hall_04": 1812,
+      "hall_05": 4016,
+      "lift_02": 4872,
+      "lift_04": 2985,
+      "room_02": 751,
+      "room_dark_01": 1111,
+      "room_dark_02": 1646,
+      "room_dark_03": 1158,
+      "room_dark_04": 1434,
+      "street_01": 10269,
+      "street_010": 9086,
+      "street_03": 3534,
+      "street_04": 8567,
+      "street_05": 4686,
+      "street_07": 9275,
+      "street_09": 9059,
+      "walk_01": 2913
+    },
+    "phase2_run_id": "phase2_clean_lidar_train_run_v1",
+    "relative_pose_record_type": "relative_pose",
+    "scan_count": 91014,
+    "split": "train",
+    "trajectory_count": 22
+  },
+  "source_core_artifact_sha256": {
+    "SUCCESS": "0f6e4691fcbf861c4e92ced826a2b81acbda3f3aae44212670469a180783ac91",
+    "progress.json": "f844ec45d484cae689eca936caa70070f7c8474b95e0d67a33950ad56944560b",
+    "run.log": "0db8c8caea4f42d566873bf0de5a193ac83a23cea3b205f60462d6411ffaa45d",
+    "run_manifest.json": "3fccd2c4a189e6a0dfec1759338794c10e1c23c9714e583ca338d98752a25f71",
+    "summary.json": "c3e5107bc7855d8493d9781874e54a3549da535423fc026a11bbac4b90877c30"
+  },
+  "status": "prospectively_frozen_real_train_artifact_extraction"
+}

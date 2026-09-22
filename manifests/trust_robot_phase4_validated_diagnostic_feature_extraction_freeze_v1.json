@@ -1,0 +1,327 @@
+{
+  "closure_decision": {
+    "component_preclosure_records_rewritten": false,
+    "corrected_persistent_feature_directory": "features",
+    "diagnostic_feature_extraction_frozen": true,
+    "freeze_failure_layout_preflight_sha256": "a6e7b7e0a03f08f3f8d536a60a27da3c9e4ec13cc0f8d90921b19f273b479d89",
+    "full_regression_passed": true,
+    "full_regression_test_count": 344,
+    "phase4_complete_for_current_frozen_estimator_scope": true,
+    "read_only_closure_review_sha256": "b817fd424ed09d17dafed304f7c8168d62c5865fd3b42985db1c8bc41ad179dc"
+  },
+  "closure_interpretation": {
+    "all_modalities_complete": false,
+    "future_scope_extension_requires_new_validation": true,
+    "phase4_exit_evidence_satisfied": true,
+    "phase5_health_model_complete": false,
+    "phase5_may_begin_after_repository_promotion": true,
+    "satisfied_for_current_frozen_estimator_scope": true
+  },
+  "component_config_content_sha256": {
+    "base_diagnostic_contract": "16d618410585ac9491c2ded95d00802b0b80ae2fdb4565caebf98c58b93a274c",
+    "paired_diagnostic_contract": "65ee14b055961ebec9ba49088468e59194230b465f1f5ea80b231af32bc42ea6",
+    "train_artifact_contract": "3940d4340444741da6d37552d270c523dd64bdd584db83d8361c5a51b8f8f49e"
+  },
+  "content_sha256": "95dee1917b5181ec4a24d556b0b7cf92c4b71e76f3156e20276a760c00d46d74",
+  "controlled_corruption_validation": {
+    "clean_origin_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "clean_registration_count": 2,
+    "corrupt_origin_pairs": [
+      [
+        0,
+        2
+      ]
+    ],
+    "corrupt_registration_count": 1,
+    "corruption_family": "EVENT_GAP",
+    "corruption_injection_id": "TRC_INJ_2413029fc605422de2dd737f",
+    "corruption_spec_id": "TRC_SPEC_d7fdcb5f67999476d8f0391d",
+    "paired_diagnostic_artifact_content_sha256": "fd7dc88a1def8d860a9cacc80e3f692ece56fc363c673c884367971e4cb7154c",
+    "paired_diagnostic_artifact_file_sha256": "703027952960011602a5dc3cc4a4d38d6e19ce79ed9231064e06dfc5d8d7b53d",
+    "run_manifest_content_sha256": "8a61b16ec5af11ed4c761f5652d51aaff6e16d2efc446e41a7dea12dcfc842ee",
+    "run_manifest_file_sha256": "995af271a401628e2b201c6a0abdc013ca2ccf00f16d9d8b6feae7c4e548d7b6",
+    "same_extractor_used_for_clean_and_corrupt": true,
+    "source": "existing_phase3_paired_registration_receipt",
+    "success_marker_sha256": "898757edc490c9d21a8769215aa5f26455ba07567839e8feedf2296cb7a0a749",
+    "summary_content_sha256": "3fd531488a96584911a04e8687b8a2c301dc7de17842228f4351ffbbded03180",
+    "summary_file_sha256": "1bef18a7d6dae2ddbf9efefa9ce97c515b63422f96d07a68d9c8e999539dfcfb"
+  },
+  "diagnostic_interpretation": {
+    "accuracy_score_emitted": false,
+    "clean_corrupt_numeric_difference_computed": false,
+    "descriptive_statistics_used_for_decision": false,
+    "diagnostic_threshold_selected": false,
+    "fault_label_emitted": false,
+    "features_are_descriptive_estimator_internal_observables": true,
+    "health_label_emitted": false,
+    "health_threshold_selected": false,
+    "nearest_neighbor_rmse_is_ground_truth_error": false,
+    "normalization_applied": false,
+    "reliability_score_emitted": false,
+    "temporal_window_aggregation_applied": false
+  },
+  "framework_identity": {
+    "extractor_id": "trust_robot_phase4_lidar_registration_diagnostics_v1",
+    "feature_order": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "feature_units": [
+      "count",
+      "count",
+      "count",
+      "count",
+      "m"
+    ],
+    "frozen_estimator_variant": "trust_robot_phase2_clean_lidar_baseline_v1",
+    "modality": "lidar",
+    "name": "trust_robot_phase4_lidar_validated_diagnostic_feature_extraction_v1",
+    "source_type": "LidarRegistrationDiagnostics",
+    "transformation": "identity_direct_field_extraction"
+  },
+  "phase": {
+    "exit_evidence": "Validated diagnostic feature extraction",
+    "exit_evidence_satisfied": true,
+    "number": 4,
+    "objective": "Per-modality diagnostics",
+    "satisfied_scope": "current_frozen_lidar_estimator"
+  },
+  "phase_plan_binding": {
+    "explicit_all_modalities_required_before_phase4_closure": false,
+    "file": "docs/TRUST_ROBOT_PHASE_PLAN.md",
+    "file_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3",
+    "phase4_row": "| 4 | Per-modality diagnostics | Validated diagnostic feature extraction |",
+    "phase5_row": "| 5 | Three-state modality-health model | Healthy/degraded/unusable classifier |"
+  },
+  "project_state_preclosure_sha256": "4f6da7705d533a4eae2d4a64aa98f111ab48474b5480c099bd585d2e2813aca5",
+  "real_train_validation": {
+    "all_frozen_train_records_extracted": true,
+    "dataset_id": "M2DGR",
+    "diagnostic_record_count": 90992,
+    "extractor_failures": 0,
+    "feature_directory": "features",
+    "feature_extraction_aggregate_sha256": "42658bdb5739200f02dc1397f753b78ca60eb22f6bc5d913e42c6a208fc61020",
+    "run_manifest_content_sha256": "f227c05b3ada993cf5f323d37c394d429ccab95c21522f5636ab97e6f41f10e7",
+    "run_manifest_file_sha256": "110e0174ae3ce818e680e5f2eca7e7a691516d44dd89464860efa49861defd5d",
+    "split": "train",
+    "success_marker_sha256": "ba50ebbfadbc706c2c1c7a664b8dda0127184e8f3dad76f007226683999135f8",
+    "summary_content_sha256": "d710e9cf2fc5ee8b102da88e23e7205655a02acecd35c069751359f4df9b1484",
+    "summary_file_sha256": "e80ae59cae145e100c4aad21ef85b77bbff609986d363aa45250b185b4e58916",
+    "trajectory_artifacts": {
+      "Circle_01": {
+        "diagnostic_record_count": 2338,
+        "feature_jsonl_sha256": "d967f8e041cc256e83398b3177d36fe56d4aa9838fa3290fa856883718c161f7",
+        "feature_relative_path": "features/Circle_01.jsonl",
+        "source_phase2_jsonl_sha256": "4b45f0405a0f6461deba648d014ac98279872db87c34ec6e9988e234fa5fc2ee",
+        "source_phase2_relative_path": "trajectories/Circle_01.jsonl"
+      },
+      "door_01": {
+        "diagnostic_record_count": 4605,
+        "feature_jsonl_sha256": "eccb280c91e30cff6ccf2a3c5da5654356ae505411576f3a655bc391cdfc2337",
+        "feature_relative_path": "features/door_01.jsonl",
+        "source_phase2_jsonl_sha256": "283491433d1da4384a9a1ea39ff8edcb891ffcff383e7dd1aaf915103e91bcaf",
+        "source_phase2_relative_path": "trajectories/door_01.jsonl"
+      },
+      "gate_01": {
+        "diagnostic_record_count": 1721,
+        "feature_jsonl_sha256": "8402a2779d33cc11ff0631042206187e55a4d21726b361d994e00c77ba1dea0b",
+        "feature_relative_path": "features/gate_01.jsonl",
+        "source_phase2_jsonl_sha256": "6de89070743d693e2153c2de251bbaafd744847e2eca744098caa2bba9161bce",
+        "source_phase2_relative_path": "trajectories/gate_01.jsonl"
+      },
+      "hall_01": {
+        "diagnostic_record_count": 3510,
+        "feature_jsonl_sha256": "521fadc7d6dee66f9a163f7bc7cc7f2c5f39e51fdd5aa5e5b3a24b33a87e9443",
+        "feature_relative_path": "features/hall_01.jsonl",
+        "source_phase2_jsonl_sha256": "089522912dfe0df229d321d8eb26d3fc13b6f348110814e65949bb91db6632cc",
+        "source_phase2_relative_path": "trajectories/hall_01.jsonl"
+      },
+      "hall_03": {
+        "diagnostic_record_count": 1644,
+        "feature_jsonl_sha256": "472a2834f1218a199e49aa1900e2e4f537fb5f5e92a8d6bdf26377e93f88116a",
+        "feature_relative_path": "features/hall_03.jsonl",
+        "source_phase2_jsonl_sha256": "f8be8fb72f19b062e4f0570912fc82e2394710407f4621a6f88af4c1f500f4c8",
+        "source_phase2_relative_path": "trajectories/hall_03.jsonl"
+      },
+      "hall_04": {
+        "diagnostic_record_count": 1812,
+        "feature_jsonl_sha256": "78f88fb4287a8ca4d2cdaef67e0d321c288411a997a91f32b207a5849ae28bf0",
+        "feature_relative_path": "features/hall_04.jsonl",
+        "source_phase2_jsonl_sha256": "375d705b55344683ff9f815774aa3dd2196b7adebc9edd3eeb8abe4f1fc7d0b1",
+        "source_phase2_relative_path": "trajectories/hall_04.jsonl"
+      },
+      "hall_05": {
+        "diagnostic_record_count": 4016,
+        "feature_jsonl_sha256": "872e0b009d9c81e6cc957a42ec175c312d205182be82daccb58709d7ceff97c0",
+        "feature_relative_path": "features/hall_05.jsonl",
+        "source_phase2_jsonl_sha256": "b7ca19a642de0061afbe3cae2d2ef83a11b0a9876a20dbe12dd229e1273baa97",
+        "source_phase2_relative_path": "trajectories/hall_05.jsonl"
+      },
+      "lift_02": {
+        "diagnostic_record_count": 4872,
+        "feature_jsonl_sha256": "bec1585af5ad4c9b8e513bc357140bde71941c09235f42dd242a290a96c3bd3c",
+        "feature_relative_path": "features/lift_02.jsonl",
+        "source_phase2_jsonl_sha256": "cfc6e91d8ab522152932e97294e51154ca049713ca761dff38cfc63c9ce23c6c",
+        "source_phase2_relative_path": "trajectories/lift_02.jsonl"
+      },
+      "lift_04": {
+        "diagnostic_record_count": 2985,
+        "feature_jsonl_sha256": "de87c4c84332f2c9bd7913d728b8e8df8ed6f7925ae7b4939a9a6810c15e3208",
+        "feature_relative_path": "features/lift_04.jsonl",
+        "source_phase2_jsonl_sha256": "76135bbae3a93c3506585a160a6e0e5e60aba686c45d6088f3678c70795a6517",
+        "source_phase2_relative_path": "trajectories/lift_04.jsonl"
+      },
+      "room_02": {
+        "diagnostic_record_count": 751,
+        "feature_jsonl_sha256": "322610e738fdfd4c77a3489a6f012c6084e5e084ff69db5d0a3c7610f9753b17",
+        "feature_relative_path": "features/room_02.jsonl",
+        "source_phase2_jsonl_sha256": "9e835831531c798e868f49dbea659bdb2f403c6efdc74ca4352489c8fd2c720c",
+        "source_phase2_relative_path": "trajectories/room_02.jsonl"
+      },
+      "room_dark_01": {
+        "diagnostic_record_count": 1111,
+        "feature_jsonl_sha256": "bffb03ea82cd075442de4eb19971b7d418d014d4edbd26f52cc803507c3a4ed5",
+        "feature_relative_path": "features/room_dark_01.jsonl",
+        "source_phase2_jsonl_sha256": "59ddae6c4d2f61916218aad4e4c8f7a7ab1ebde321f5196a226aae77b1abb58e",
+        "source_phase2_relative_path": "trajectories/room_dark_01.jsonl"
+      },
+      "room_dark_02": {
+        "diagnostic_record_count": 1646,
+        "feature_jsonl_sha256": "3d95dedae8bbed10bc6a20d049a14ce6dc38d40738e7869ffc96b46579d2fff5",
+        "feature_relative_path": "features/room_dark_02.jsonl",
+        "source_phase2_jsonl_sha256": "257a92222c360061b0ebe1ff66d5a3f191c7fbdffd2321c2332656cfe75e282c",
+        "source_phase2_relative_path": "trajectories/room_dark_02.jsonl"
+      },
+      "room_dark_03": {
+        "diagnostic_record_count": 1158,
+        "feature_jsonl_sha256": "6826866ba4d78b937d25ef5a71c8e16255a5b6ef81c4e4962834d18c95971be5",
+        "feature_relative_path": "features/room_dark_03.jsonl",
+        "source_phase2_jsonl_sha256": "242a80a1a9d751cb2dbbff94393bbc464377bfd2c921c7f2c6bb025c6909e06b",
+        "source_phase2_relative_path": "trajectories/room_dark_03.jsonl"
+      },
+      "room_dark_04": {
+        "diagnostic_record_count": 1434,
+        "feature_jsonl_sha256": "0a91eb822fdf7a36df5ffc41c7ac62260141772c108faa76829f484083fac3f3",
+        "feature_relative_path": "features/room_dark_04.jsonl",
+        "source_phase2_jsonl_sha256": "e48c90995b89291c26df4be9e513277aa2f5f4b243b8a9bf609a05687589026f",
+        "source_phase2_relative_path": "trajectories/room_dark_04.jsonl"
+      },
+      "street_01": {
+        "diagnostic_record_count": 10269,
+        "feature_jsonl_sha256": "09e9a3703323e1e14fb2abd30836a044ab50e577c8022743489d81f499dc6112",
+        "feature_relative_path": "features/street_01.jsonl",
+        "source_phase2_jsonl_sha256": "a534b86fe2ff190deca264ba921047243729e9f8cb1ba8dd0614e7532f5d1781",
+        "source_phase2_relative_path": "trajectories/street_01.jsonl"
+      },
+      "street_010": {
+        "diagnostic_record_count": 9086,
+        "feature_jsonl_sha256": "f1d8becffe0f75b9e562051eb1e3adce4df2ff8ea397cf0832667606c4f3d5fe",
+        "feature_relative_path": "features/street_010.jsonl",
+        "source_phase2_jsonl_sha256": "5b1fc7cbc4ac1844c48985330d451f71ea1edd7aa36743176650b57780bde8e5",
+        "source_phase2_relative_path": "trajectories/street_010.jsonl"
+      },
+      "street_03": {
+        "diagnostic_record_count": 3534,
+        "feature_jsonl_sha256": "9c76ec3b83800e8b78b76d7d10a17e5863a9f74378e87a49fbb3f55a79733d1b",
+        "feature_relative_path": "features/street_03.jsonl",
+        "source_phase2_jsonl_sha256": "a0abc03f1adea122648d49bafedd7f48058dcc624f349f0399ecaffb80dd643f",
+        "source_phase2_relative_path": "trajectories/street_03.jsonl"
+      },
+      "street_04": {
+        "diagnostic_record_count": 8567,
+        "feature_jsonl_sha256": "aa5fd5747d80fdd5d8650f9d9cb61cdac81033f36465b7ede3752147a6808232",
+        "feature_relative_path": "features/street_04.jsonl",
+        "source_phase2_jsonl_sha256": "8e09845e87c22c00e1a91edfe29c32a53649a4201610f93397dcdfd41d20936e",
+        "source_phase2_relative_path": "trajectories/street_04.jsonl"
+      },
+      "street_05": {
+        "diagnostic_record_count": 4686,
+        "feature_jsonl_sha256": "c39bda6b2fe3872f1b2822123dddd9ccba1b8cb8b8a2466e95e5fa9c8e6b43fe",
+        "feature_relative_path": "features/street_05.jsonl",
+        "source_phase2_jsonl_sha256": "0df722f38673e49e8900f5aee7e908fee3d22f05a107fb5be1f000fe8c483010",
+        "source_phase2_relative_path": "trajectories/street_05.jsonl"
+      },
+      "street_07": {
+        "diagnostic_record_count": 9275,
+        "feature_jsonl_sha256": "15ab6dd3eaa0eee8243082bf370160824cc43998cef71cd75ed075dd071723ae",
+        "feature_relative_path": "features/street_07.jsonl",
+        "source_phase2_jsonl_sha256": "54f4cb59aa12609e36f75a8e1ee5fe09b87c784bc99a8359b1f5a267c391214e",
+        "source_phase2_relative_path": "trajectories/street_07.jsonl"
+      },
+      "street_09": {
+        "diagnostic_record_count": 9059,
+        "feature_jsonl_sha256": "faa77bdbf9ef76dcb93a32e4aa04558ab30e619ca58b75ab221da8a60a944d78",
+        "feature_relative_path": "features/street_09.jsonl",
+        "source_phase2_jsonl_sha256": "c9b726dc99963e50405d128183cfe6372ae06c9842f526826a94e56fdf8ed9ff",
+        "source_phase2_relative_path": "trajectories/street_09.jsonl"
+      },
+      "walk_01": {
+        "diagnostic_record_count": 2913,
+        "feature_jsonl_sha256": "89eaa501848c68934f137c74b88ae36c600b42fdc0d6989be1a58628ef90a88b",
+        "feature_relative_path": "features/walk_01.jsonl",
+        "source_phase2_jsonl_sha256": "10363a152364347347b8f1868384d3c6bea484329db8c6a34d58064d65d6ada2",
+        "source_phase2_relative_path": "trajectories/walk_01.jsonl"
+      }
+    },
+    "trajectory_count": 22
+  },
+  "repo_component_sha256": {
+    "configs/trust_robot/phase4_lidar_paired_diagnostics_v1.json": "a5d27b075c833787fbf234c539e8b11dc7018bd4f76dc42bf2458f7e25fad87c",
+    "configs/trust_robot/phase4_lidar_registration_diagnostics_candidate_v1.json": "7fdebd1484e04ce640cb9696bd697178c1d4f28b32be01dad1246ad3ee69a092",
+    "configs/trust_robot/phase4_lidar_train_diagnostic_artifacts_v1.json": "1cba3d90b1539486b9f35fdd649f1bdaf0d8434c1e3a03502355fe60e59297fc",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE4_LIDAR_PAIRED_DIAGNOSTICS_V1.md": "b72dba7593550fdfb025c1a72c2dcece58e40deeee6b4645ba52421e465be064",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE4_LIDAR_REGISTRATION_DIAGNOSTICS_V1.md": "59801729dfa3ada78fc7f5f9008b387f15bf65b1203942e9fc0152a26d9560c9",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE4_LIDAR_TRAIN_DIAGNOSTIC_ARTIFACTS_V1.md": "4282e620bee8e989e9fc9afadcac3638366ed09c0d513261b09cc0aef2e64c1b",
+    "scripts/trust_robot/run_phase4_lidar_paired_diagnostics_v1.py": "08f542fb452f51ad1b04c092cf58ec441b1d6b2e39850a930410118b797b369b",
+    "scripts/trust_robot/run_phase4_lidar_train_diagnostics_v1.py": "c82f5c6ced301b0823d9421820bbfe992146fdaad3f32a7a1dd90ef76ac9eb82",
+    "src/trust_robot/diagnostic_artifacts.py": "d0d56acebde78d770d3efb27d3ef8c58d69050c415ffaea7063a821ba3f624ff",
+    "src/trust_robot/diagnostics.py": "b5332ffdfec5f7ef18b74f4f96bccfe6cf9d256300ee8f42916acb6217cd0ad2",
+    "src/trust_robot/paired_diagnostic_artifacts.py": "0bf0cf9015003adc584fd8c9dd639d5983f188481558a64662fa00d16a23f900",
+    "tests/trust_robot/test_diagnostic_artifacts.py": "1f44a49164aaf167242902e36b5b97a19a744f52545db6abf25c1afa946b87af",
+    "tests/trust_robot/test_diagnostics.py": "ed7cfa8cf2da6cf7332a52c37666cce3ac9b9d2968f6c33d84cb02572094001e",
+    "tests/trust_robot/test_paired_diagnostic_artifacts.py": "e2f0738c8f9219d2208204508c473af4450ddc97bb8ff6d8105790a439daa29e"
+  },
+  "schema": "TRUST_ROBOT_PHASE4_VALIDATED_DIAGNOSTIC_FEATURE_EXTRACTION_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "clean_corrupt_accuracy_comparison_performed": false,
+    "confirmation_test_data_used": false,
+    "estimator_scoring_authorized": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "ground_truth_association_performed": false,
+    "metric_computation_authorized": false,
+    "modality_suppression_authorized": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "synchronization_verified": false,
+    "trajectory_scoring_authorized": false,
+    "trajectory_scoring_performed": false
+  },
+  "scope_limitations": {
+    "all_possible_sensor_modalities_validated": false,
+    "camera_diagnostics_validated": false,
+    "complete_multimodal_diagnostic_library_claimed": false,
+    "current_validated_estimator_modality": "lidar",
+    "depth_diagnostics_validated": false,
+    "future_non_lidar_estimator_paths_require_validated_diagnostics": true,
+    "gnss_diagnostics_validated": false,
+    "imu_diagnostics_validated": false,
+    "phase5_health_classifier_implemented": false
+  },
+  "status": "frozen_phase4_current_estimator_scope"
+}

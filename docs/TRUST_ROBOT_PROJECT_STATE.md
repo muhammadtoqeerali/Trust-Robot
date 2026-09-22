@@ -46,7 +46,7 @@ Estimator scoring remains blocked.
 
 TRUST-ROBOT unit tests:
 
-**306 PASS.**
+**344 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -2072,6 +2072,254 @@ phase-level satisfaction record.
 
 The Git commit containing this closure section and freeze manifest is the
 authoritative Phase-3 repository promotion checkpoint.
+
+
+## Phase-4 first native diagnostic feature extractor
+
+Phase 4 is now active.
+
+Objective:
+
+**Per-modality diagnostics.**
+
+Required exit evidence:
+
+**Validated diagnostic feature extraction.**
+
+Candidate contract:
+
+`configs/trust_robot/phase4_lidar_registration_diagnostics_candidate_v1.json`
+
+Implementation:
+
+`src/trust_robot/diagnostics.py`
+
+Tests:
+
+`tests/trust_robot/test_diagnostics.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE4_LIDAR_REGISTRATION_DIAGNOSTICS_V1.md`
+
+The first native extractor consumes the frozen Phase-2
+`LidarRegistrationDiagnostics` object without modifying or rerunning the
+registration algorithm.
+
+It extracts exactly five descriptive numeric observables:
+
+- source point count;
+- target point count;
+- fixed-point iteration count;
+- final correspondence count;
+- final nearest-neighbor RMSE in metres.
+
+The frozen convergence rule, correspondence-rejection flag and
+voxel-downsampling flag are retained as categorical metadata.
+
+No inherited `src/imu_reliability` runtime decision or threshold machinery is
+a dependency of this implementation.
+
+Historical threshold values remain inventory evidence only.
+
+No diagnostic normalization, aggregation, thresholding, health classification,
+fault classification, reliability score or localization-accuracy score is
+produced.
+
+No reference or confirmation-test data are used.
+
+No ATE/RPE or estimator scoring is performed.
+
+Phase-4 exit evidence remains **NOT YET SATISFIED**. This first contract must
+still be validated on the frozen real-data diagnostic path before any
+Phase-4 closure decision.
+
+
+## Phase-4 persistent real TRAIN diagnostic artifacts
+
+The native Phase-4 LiDAR diagnostic extractor has now been applied to the
+complete already-frozen Phase-2 TRAIN registration artifact set.
+
+Persistent extraction contract:
+
+`configs/trust_robot/phase4_lidar_train_diagnostic_artifacts_v1.json`
+
+Artifact adapter:
+
+`src/trust_robot/diagnostic_artifacts.py`
+
+Runner:
+
+`scripts/trust_robot/run_phase4_lidar_train_diagnostics_v1.py`
+
+Tests:
+
+`tests/trust_robot/test_diagnostic_artifacts.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE4_LIDAR_TRAIN_DIAGNOSTIC_ARTIFACTS_V1.md`
+
+The source contains 22 TRAIN trajectories and 90,992 frozen consecutive LiDAR
+registration records.
+
+Every source `relative_pose` record contains exactly one diagnostic mapping at
+top-level `diagnostics`.
+
+All 90,992 records were converted into deterministic persistent feature
+records using the five-value identity/direct extractor.
+
+The persistent extraction reproduces the preflight provenance identity:
+
+`42658bdb5739200f02dc1397f753b78ca60eb22f6bc5d913e42c6a208fc61020`
+
+This digest is provenance evidence only and is not a score or threshold.
+
+The extraction did not open ROS bags, decode new PointCloud2 messages or rerun
+the estimator.
+
+No descriptive statistics, normalization, temporal aggregation, thresholding,
+health state, fault label, reliability score or localization-accuracy score
+was produced.
+
+No reference or confirmation-test data were used.
+
+No ATE/RPE or estimator scoring was performed.
+
+Phase-4 exit evidence remains **NOT YET SATISFIED** pending validation against
+the already-frozen paired clean/corrupt registration evidence and a final
+Phase-4 closure review.
+
+
+## Phase-4 paired clean/corrupt diagnostic extraction
+
+The native LiDAR diagnostic extractor has now been validated on both sides of
+the already-frozen real TRAIN Phase-3 clean/corrupt registration receipt.
+
+Contract:
+
+`configs/trust_robot/phase4_lidar_paired_diagnostics_v1.json`
+
+Adapter:
+
+`src/trust_robot/paired_diagnostic_artifacts.py`
+
+Runner:
+
+`scripts/trust_robot/run_phase4_lidar_paired_diagnostics_v1.py`
+
+Tests:
+
+`tests/trust_robot/test_paired_diagnostic_artifacts.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE4_LIDAR_PAIRED_DIAGNOSTICS_V1.md`
+
+The frozen source contains clean registration origin pairs:
+
+- `[0, 1]`
+- `[1, 2]`
+
+and paired EVENT_GAP registration origin pair:
+
+- `[0, 2]`
+
+The same five-feature identity/direct extractor is used on all three
+registration diagnostics.
+
+No estimator or corruption is rerun.
+
+No clean-versus-corrupt numeric difference, descriptive statistic, threshold,
+health state, fault state, reliability score or accuracy score is computed.
+
+This complements the already-materialized validation across all 90,992 frozen
+clean TRAIN registration diagnostics.
+
+No reference or confirmation-test data are used.
+
+No ATE/RPE or estimator scoring is performed.
+
+The subsequent Phase-4 closure-scope review found the required exit evidence
+satisfied for the current frozen LiDAR estimator scope. The aggregate Phase-4
+freeze manifest is the authoritative phase-level closure record.
+
+
+## Phase-4 validated diagnostic feature extraction closure
+
+Phase 4 is complete for the current frozen estimator scope.
+
+Objective:
+
+**Per-modality diagnostics.**
+
+Required exit evidence:
+
+**Validated diagnostic feature extraction.**
+
+Current phase-level status:
+
+**SATISFIED FOR CURRENT FROZEN ESTIMATOR SCOPE.**
+
+Frozen diagnostic identity:
+
+`trust_robot_phase4_lidar_validated_diagnostic_feature_extraction_v1`
+
+Authoritative freeze manifest:
+
+`manifests/trust_robot_phase4_validated_diagnostic_feature_extraction_freeze_v1.json`
+
+Closure audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE4_VALIDATED_DIAGNOSTIC_FEATURE_EXTRACTION_FREEZE_V1.md`
+
+The frozen Phase-2 estimator path is LiDAR.
+
+The Phase-4 extractor preserves exactly five registration observables:
+
+- source point count;
+- target point count;
+- fixed-point iteration count;
+- final correspondence count;
+- final nearest-neighbor RMSE in metres.
+
+Validation covers all 90,992 frozen TRAIN registration diagnostics across all
+22 TRAIN trajectories.
+
+Persistent Phase-4 feature artifacts are stored under
+`features/<trajectory>.jsonl` and are individually SHA-bound to their frozen
+Phase-2 source trajectory artifacts.
+
+The same extractor is also validated on the frozen Phase-3 clean/corrupt
+EVENT_GAP registration paths.
+
+No normalization, temporal aggregation, thresholding, health classification,
+fault classification, reliability scoring or localization-accuracy scoring is
+performed.
+
+This closure does not claim a complete diagnostic library for every sensor
+modality.
+
+Future non-LiDAR estimator paths require their own validated diagnostic
+extraction before entering health modelling or health-aware estimator logic.
+
+The healthy/degraded/unusable classifier remains Phase 5.
+
+No reference or confirmation-test data are used.
+
+No association, alignment, ATE, RPE, trajectory scoring or estimator scoring
+is performed.
+
+Synchronization remains unverified.
+
+M2DGR evaluation readiness remains false.
+
+Existing Phase-4 component configs retain their historical pre-closure status
+fields. The aggregate Phase-4 freeze manifest is the authoritative phase-level
+closure record.
+
+The Git commit containing this closure and freeze manifest will be the
+authoritative Phase-4 promotion checkpoint.
 
 ## Synchronization state
 

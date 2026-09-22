@@ -1,0 +1,87 @@
+{
+  "content_sha256": "16d618410585ac9491c2ded95d00802b0b80ae2fdb4565caebf98c58b93a274c",
+  "feature_contract": {
+    "accuracy_score_emitted": false,
+    "categorical_metadata": [
+      "convergence_rule",
+      "correspondence_rejection_used",
+      "voxel_downsampling_used"
+    ],
+    "expected_convergence_rule": "exact_nearest_neighbor_assignment_unchanged",
+    "expected_correspondence_rejection_used": false,
+    "expected_voxel_downsampling_used": false,
+    "extractor_id": "trust_robot_phase4_lidar_registration_diagnostics_v1",
+    "fault_label_emitted": false,
+    "feature_units": {
+      "final_correspondence_count": "count",
+      "final_nearest_neighbor_rmse_m": "m",
+      "fixed_point_iterations": "count",
+      "source_point_count": "count",
+      "target_point_count": "count"
+    },
+    "health_label_emitted": false,
+    "normalization_applied": false,
+    "numeric_feature_order": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "reliability_score_emitted": false,
+    "threshold_applied": false,
+    "transformation": "identity_direct_field_extraction",
+    "window_aggregation_applied": false
+  },
+  "frontier_audit": {
+    "decision": "Implement a TRUST-ROBOT-native threshold-free diagnostic feature contract around frozen estimator observables.",
+    "historical_health_labels_adopted": false,
+    "historical_runtime_code_adopted": false,
+    "historical_thresholds_adopted": false,
+    "historical_trust_states_adopted": false,
+    "report_sha256": "0ec8a8cffecfe1bbddd7a83674f7069945689b4652e03b72fc8f38dab41c6c8c"
+  },
+  "interpretation_policy": {
+    "correspondence_count_is_health_score": false,
+    "feature_values_authorize_estimator_scoring": false,
+    "feature_values_authorize_modality_suppression": false,
+    "feature_values_define_fault_thresholds": false,
+    "feature_values_define_health_thresholds": false,
+    "iteration_count_is_health_score": false,
+    "nearest_neighbor_rmse_is_ground_truth_error": false,
+    "nearest_neighbor_rmse_is_registration_diagnostic": true,
+    "point_count_is_health_score": false
+  },
+  "phase": {
+    "exit_evidence": "Validated diagnostic feature extraction",
+    "exit_evidence_satisfied": false,
+    "number": 4,
+    "objective": "Per-modality diagnostics"
+  },
+  "schema": "TRUST_ROBOT_PHASE4_LIDAR_REGISTRATION_DIAGNOSTICS_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_scope": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "corruption_execution_performed": false,
+    "dataset_execution_performed": false,
+    "diagnostic_threshold_selected": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready_changed": false,
+    "fault_threshold_selected": false,
+    "ground_truth_association_performed": false,
+    "health_model_trained": false,
+    "health_threshold_selected": false,
+    "reference_data_used": false,
+    "rpe_computed": false
+  },
+  "source_contract": {
+    "frozen_estimator_variant": "trust_robot_phase2_clean_lidar_baseline_v1",
+    "module": "src/trust_robot/lidar_frontend.py",
+    "module_sha256": "c1aac98d3081d338036a7ae9fd4ffd5c8f345f217ca8dbfa6426b0ac4e65cf7a",
+    "source_function": "register_current_scan_to_previous",
+    "source_type": "LidarRegistrationDiagnostics"
+  },
+  "status": "candidate_first_native_phase4_extractor"
+}
