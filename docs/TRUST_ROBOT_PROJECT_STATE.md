@@ -1,6 +1,6 @@
 # TRUST-ROBOT Project State
 
-Last Updated: 2026-09-18
+Last Updated: 2026-09-22
 
 Repository: `muhammadtoqeerali/Trust-Robot`
 
@@ -46,7 +46,7 @@ Estimator scoring remains blocked.
 
 TRUST-ROBOT unit tests:
 
-**132 PASS.**
+**231 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -1506,7 +1506,220 @@ No estimator/reference trajectory samples are included.
 No association, tolerance, offset, interval, alignment, ATE, RPE, aggregation,
 trajectory scoring, or estimator scoring is selected or executed.
 
-This phase remains local and unpromoted pending final consolidation review.
+This evaluator-plumbing phase was promoted as checkpoint `0aabeca605e69aa56aa5dffc6ce70f76350dc80b`.
+
+
+## Phase-2 clean localization backbone implementation
+
+Phase-2 implementation has started.
+
+Objective:
+
+**Fixed clean localization/state-estimation backbone.**
+
+Exit evidence remains:
+
+**Reproducible clean 6-DoF baseline.**
+
+Current implementation:
+
+`src/trust_robot/clean_backbone.py`
+
+Tests:
+
+`tests/trust_robot/test_clean_backbone.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE2_CLEAN_BACKBONE_KERNEL_V1.md`
+
+The implemented kernel is a deterministic SE(3) pose-chain backend with an
+explicit transform convention:
+
+`prev_body_T_current_body`
+
+It provides:
+
+- explicit world/body frame identifiers;
+- one fixed relative-pose source per configuration;
+- deterministic rigid-transform composition and inversion;
+- strict monotonically increasing state timestamps;
+- deterministic 6-DoF state propagation;
+- deterministic run serialization/content identity.
+
+The inherited `src/imu_reliability` package remains historical/reference code
+and is not silently reclassified as the Phase-2 localization backbone.
+
+This checkpoint does **not** yet satisfy Phase-2 exit evidence.
+
+Still required before Phase 2 can close:
+
+- select and implement/adopt one fixed clean sensor frontend without using
+  confirmation-test outcomes;
+- connect that frontend to the SE(3) backbone;
+- execute a reproducible clean real-data trajectory run;
+- preserve exact estimator input/frame/calibration/timing provenance.
+
+The current clean-backbone kernel does not use reference trajectories and does
+not alter the blocked M2DGR evaluation protocol.
+
+It performs no health weighting, corruption injection, ATE, RPE, alignment,
+trajectory scoring, or estimator scoring.
+
+
+## Phase-2 LiDAR frontend candidate
+
+The TRAIN-only structural preflight supports a first real clean frontend
+candidate based on Velodyne LiDAR.
+
+Across all 22 frozen TRAIN trajectories:
+
+- `/velodyne_points` coverage: 22/22
+- message type: `sensor_msgs/msg/PointCloud2`
+- frame ID: `velodyne` on 22/22
+- field names: `x,y,z,intensity,ring,time`
+
+The candidate is selected on structural/engineering grounds only.
+
+No reference-error comparison or estimator scoring was used.
+
+Current implementation:
+
+`src/trust_robot/lidar_frontend.py`
+
+Frozen candidate contract:
+
+`configs/trust_robot/phase2_clean_lidar_frontend_candidate_v1.json`
+
+Tests:
+
+`tests/trust_robot/test_lidar_frontend.py`
+
+Mechanical smoke script:
+
+`scripts/trust_robot/run_phase2_lidar_pair_smoke.py`
+
+The candidate registers every current scan directly to the previous scan in the
+Velodyne frame using exact nearest-neighbor fixed-point Kabsch registration.
+
+It deliberately uses no:
+
+- voxel-size parameter;
+- correspondence-distance threshold;
+- outlier threshold;
+- keyframe threshold;
+- numeric convergence tolerance;
+- performance-selected parameter.
+
+The trajectory therefore remains `world_T_velodyne` with the first LiDAR scan
+as the arbitrary local origin.
+
+No LiDAR-to-base transform is assumed.
+
+PointCloud2 header stamps are used only as ordering/state timestamps. Their
+physical scan-reference semantics remain unverified. Per-point time is not
+used and deskew is not performed.
+
+Phase-2 exit evidence remains unsatisfied pending reproducible real-data
+trajectory execution and review.
+
+
+## Phase-2 detached full-TRAIN LiDAR execution
+
+A fail-closed full-TRAIN execution runner now exists:
+
+`scripts/trust_robot/run_phase2_lidar_train_v1.py`
+
+with artifact helpers:
+
+`src/trust_robot/lidar_train_run.py`
+
+and tests:
+
+`tests/trust_robot/test_lidar_train_run.py`
+
+The runner is restricted to the 22 already-frozen TRAIN trajectories and reads
+only `/velodyne_points`.
+
+It executes trajectories sequentially and writes persistent dataset-local
+progress and trajectory artifacts.
+
+It performs no automatic scan skipping, trajectory skipping, residual
+thresholding, registration timeout, iteration cap, or exclusion rule.
+
+Any input or registration failure terminates the run fail-closed.
+
+The execution does not use reference trajectories or confirmation-test data and
+does not compute ATE/RPE or estimator scores.
+
+The full-TRAIN execution is a long workstation job and is launched detached
+with a persistent PID and log.
+
+Phase-2 exit evidence remains unsatisfied until the resulting real-data
+trajectories are reviewed and the remaining timing/deskew limitations are
+handled explicitly.
+
+
+## Phase-2 clean LiDAR baseline freeze
+
+Phase 2 is locally complete.
+
+Objective:
+
+**Fixed clean localization/state-estimation backbone.**
+
+Exit evidence:
+
+**Reproducible clean 6-DoF baseline.**
+
+Current exit-evidence status:
+
+**SATISFIED.**
+
+Frozen baseline identity:
+
+`trust_robot_phase2_clean_lidar_baseline_v1`
+
+Freeze manifest:
+
+`manifests/trust_robot_phase2_clean_lidar_baseline_freeze_v1.json`
+
+Closure audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE2_CLEAN_LIDAR_BASELINE_FREEZE_V1.md`
+
+The real-data execution completed all 22 frozen TRAIN trajectories:
+
+- 91,014 Velodyne scans;
+- 90,992 consecutive-scan 6-DoF increments;
+- zero skipped scans;
+- zero skipped trajectories;
+- zero fail-closed execution events.
+
+Every Velodyne scan reported by bag metadata was consumed exactly once by the
+frozen execution.
+
+No reference trajectory or confirmation-test data were used.
+
+No ground-truth association, alignment, ATE, RPE, trajectory scoring, or
+estimator scoring was performed.
+
+The baseline remains in the `velodyne` frame with the first LiDAR scan as its
+local trajectory origin.
+
+The PointCloud2 header timestamp is used only for state ordering/labeling.
+Its physical scan-reference meaning remains unverified.
+
+Per-point timing is not used and deskew is not performed.
+
+Those limitations are part of the frozen Phase-2 baseline definition. They do
+not constitute synchronization evidence and do not authorize timing-sensitive
+evaluation or multi-sensor fusion assumptions.
+
+The M2DGR evaluation protocol remains blocked and unchanged.
+
+Phase-2 closure is frozen. The Git commit containing this section and the
+Phase-2 freeze manifest is the authoritative repository promotion checkpoint.
 
 ## Synchronization state
 

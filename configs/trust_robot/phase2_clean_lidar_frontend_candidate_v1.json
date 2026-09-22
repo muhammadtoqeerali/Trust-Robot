@@ -1,0 +1,78 @@
+{
+  "content_sha256": "6779688102558fff120856352fee78d1a10c5d6911a6a131fb32ddd03abbc7f9",
+  "input_contract": {
+    "expected_field_names": [
+      "x",
+      "y",
+      "z",
+      "intensity",
+      "ring",
+      "time"
+    ],
+    "frame_id": "velodyne",
+    "height": 1,
+    "is_bigendian": false,
+    "is_dense": true,
+    "msgtype": "sensor_msgs/msg/PointCloud2",
+    "point_step_bytes": 22,
+    "topic": "/velodyne_points"
+  },
+  "output_contract": {
+    "body_frame_id": "velodyne",
+    "initial_pose": "identity",
+    "relative_pose_source_id": "m2dgr_velodyne_exact_nn_fixed_point_v1",
+    "trajectory_world_frame": "phase2_lidar_first_scan_origin",
+    "transform_convention": "prev_body_T_current_body"
+  },
+  "registration_contract": {
+    "convergence_rule": "exact_nearest_neighbor_assignment_unchanged",
+    "correspondence_distance_threshold": null,
+    "cycle_policy": "raise_error",
+    "initialization": "identity",
+    "keyframe_rule": null,
+    "max_iterations": null,
+    "method": "exact_nearest_neighbor_fixed_point_kabsch",
+    "nearest_neighbor_workers": 1,
+    "numeric_convergence_tolerance": null,
+    "outlier_rejection": null,
+    "source_scan": "current",
+    "target_scan": "previous",
+    "uses_all_points": true,
+    "voxel_downsampling": null
+  },
+  "schema": "TRUST_ROBOT_PHASE2_CLEAN_LIDAR_FRONTEND_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_scope": {
+    "alignment_used": false,
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "frontend_finalized": false,
+    "phase2_exit_evidence_satisfied": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "trajectory_scoring_performed": false
+  },
+  "selection_basis": {
+    "confirmation_test_used": false,
+    "performance_metric_used": false,
+    "pointcloud_train_coverage": 22,
+    "reason": [
+      "one stable PointCloud2 stream exists on all frozen TRAIN trajectories",
+      "topic is /velodyne_points on all 22 TRAIN trajectories",
+      "frame_id is velodyne on all 22 TRAIN trajectories",
+      "field names are x,y,z,intensity,ring,time",
+      "numpy and scipy.spatial are already available",
+      "no LiDAR-to-body extrinsic is required when output remains in the Velodyne frame"
+    ],
+    "reference_trajectory_used": false,
+    "train_structural_preflight_only": true,
+    "train_trajectory_count": 22
+  },
+  "status": "candidate_not_phase2_exit",
+  "timestamp_contract": {
+    "deskew_performed": false,
+    "ordering_source": "PointCloud2.header.stamp",
+    "per_point_time_field_used": false,
+    "physical_scan_reference_verified": false
+  }
+}
