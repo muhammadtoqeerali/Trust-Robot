@@ -1,0 +1,114 @@
+{
+  "adoption_decision": {
+    "concepts_adopted": [
+      "immutable corruption specification",
+      "clean/corrupt pairing",
+      "copy-on-corrupt semantics",
+      "deterministic SHA-derived identifiers",
+      "clean-origin index preservation",
+      "no-op rejection",
+      "immutable manifest writing",
+      "synthetic truth separated from runtime causal evidence"
+    ],
+    "historical_final_test_outcomes_used": false,
+    "historical_numeric_severity_values_adopted": false,
+    "historical_package_imported": false,
+    "historical_runtime_dependency": false,
+    "historical_seed_grid_adopted": false,
+    "historical_thresholds_adopted": false
+  },
+  "content_sha256": "12919ab9de6d7ec85b4aab81c98a47f4edb3a5b286ac7a0423b560ad4fbc0388",
+  "execution_policy": {
+    "clean_input_mutation_allowed": false,
+    "confirmation_test_access_by_kernel": false,
+    "deterministic_identifiers": "sha256",
+    "estimator_scoring_by_kernel": false,
+    "manifest_content_digest": "sha256",
+    "paired_clean_corrupt_output": true,
+    "reference_data_access_by_kernel": false,
+    "silent_inadmissible_case_replacement_allowed": false,
+    "silent_noop_allowed": false,
+    "silent_parameter_substitution_allowed": false,
+    "split_before_corruption": true
+  },
+  "future_candidate_mechanisms_not_implemented": [
+    "additive_noise",
+    "burst_noise",
+    "bias_or_drift",
+    "scale_error",
+    "range_clip",
+    "channel_or_feature_freeze",
+    "lidar_point_dropout",
+    "lidar_geometric_perturbation",
+    "camera_occlusion",
+    "camera_blur",
+    "camera_exposure_degradation",
+    "packet_reordering",
+    "replay",
+    "cross_modal_delay",
+    "calibration_perturbation",
+    "threat_model_bounded_spoofing"
+  ],
+  "implemented_mechanisms": {
+    "EVENT_GAP": {
+      "description": "Remove an explicit contiguous event range while preserving clean-origin mapping.",
+      "level": "event_stream",
+      "numeric_severity_selected": false
+    },
+    "EVENT_REPEAT": {
+      "description": "Replace explicit event payloads with the immediately preceding clean payload while metadata progression is preserved.",
+      "level": "event_payload",
+      "numeric_severity_selected": false
+    },
+    "TIMESTAMP_STEP_SHIFT": {
+      "description": "Apply an explicitly supplied non-zero integer nanosecond offset from one internal event boundary onward.",
+      "level": "event_timestamp",
+      "numeric_severity_selected": false
+    }
+  },
+  "modalities": [
+    "imu",
+    "camera",
+    "lidar",
+    "depth",
+    "gnss",
+    "wheel_odometry",
+    "proprioception",
+    "other"
+  ],
+  "parameter_policy": {
+    "attack_budgets": null,
+    "confirmation_test_may_select_parameters": false,
+    "default_numeric_corruption_magnitude": null,
+    "drift_rate": null,
+    "dropout_probability": null,
+    "engine_may_invent_missing_parameters": false,
+    "fault_magnitudes": null,
+    "noise_distribution_parameters": null,
+    "selection_source": "unselected",
+    "severity_grid": null,
+    "timing_jitter_distribution": null
+  },
+  "phase": {
+    "exit_evidence": "Deterministic paired corruption framework",
+    "exit_evidence_satisfied": false,
+    "number": 3,
+    "objective": "Multimodal fault/degradation/attack taxonomy and corruption engine"
+  },
+  "schema": "TRUST_ROBOT_PHASE3_CORRUPTION_TAXONOMY_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ate_or_rpe_authorized": false,
+    "evaluation_ready_changed": false,
+    "synchronization_verified_changed": false,
+    "synthetic_truth_is_malicious_intent_proof": false,
+    "synthetic_truth_is_physical_fault_proof": false,
+    "synthetic_truth_is_runtime_causal_evidence": false
+  },
+  "status": "candidate_kernel_not_phase3_exit",
+  "taxonomy_layers": {
+    "mechanism": "what the controlled transform changes; this is experimental synthetic truth",
+    "runtime_causal_evidence": "separate future evidence layer; synthetic corruption truth does not automatically populate it",
+    "scenario_context": "unattributed, fault, environmental_degradation, or attack; scenario context does not establish a real-world physical cause"
+  }
+}

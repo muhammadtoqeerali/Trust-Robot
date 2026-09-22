@@ -1,0 +1,67 @@
+{
+  "bindings": {
+    "phase2_registration_function": "register_current_scan_to_previous",
+    "phase2_registration_module": "src/trust_robot/lidar_frontend.py",
+    "phase2_registration_module_sha256": "c1aac98d3081d338036a7ae9fd4ffd5c8f345f217ca8dbfa6426b0ac4e65cf7a",
+    "real_gap_config_content_sha256": "40fbc49c500ecb9c7bfdc09b684d1786399a1f612bc6b61d90dcd2861ec9d399",
+    "real_gap_config_file": "configs/trust_robot/phase3_lidar_event_gap_real_smoke_v1.json",
+    "real_gap_config_file_sha256": "d270febc19c8ab3a64bd8dbcbddae5cc6861ff00bf1075e26a43b8a41b9479c0"
+  },
+  "content_sha256": "19027fc414ebaecb4d6f8b16326e8dfd308b38049d61e0e95916096a8c9cdd77",
+  "expected_path_topology": {
+    "clean_origin_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "corrupt_origin_pairs": [
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "output_policy": {
+    "clean_corrupt_error_metric_computed": false,
+    "diagnostics_are_scoring_metrics": false,
+    "output_may_modify_current_corruption_spec": false,
+    "output_may_select_attack_budget": false,
+    "output_may_select_evaluation_protocol": false,
+    "output_may_select_future_severity": false,
+    "registration_diagnostics_recorded": true,
+    "registration_pose_recorded": true
+  },
+  "purpose": "Run clean and paired EVENT_GAP LiDAR EventStreams through the same frozen Phase-2 registration kernel without reference scoring.",
+  "schema": "TRUST_ROBOT_PHASE3_LIDAR_PAIRED_ESTIMATOR_REGISTRATION_V1",
+  "schema_version": 1,
+  "scientific_scope": {
+    "accuracy_comparison_performed": false,
+    "alignment_performed": false,
+    "ate_computed": false,
+    "attack_budget_selection_performed": false,
+    "confirmation_test_data_used": false,
+    "controlled_corruption_used": true,
+    "estimator_scoring_performed": false,
+    "ground_truth_association_performed": false,
+    "phase3_exit_evidence_satisfied": false,
+    "real_train_data_used": true,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "severity_selection_performed": false,
+    "synchronization_verified": false,
+    "trajectory_scoring_performed": false
+  },
+  "source": {
+    "dataset_id": "M2DGR",
+    "event_slice": "first_three_velodyne_messages_in_bag_order",
+    "split": "train",
+    "topic": "/velodyne_points",
+    "trajectory": "Circle_01"
+  },
+  "status": "prospectively_frozen_mechanical_estimator_plumbing"
+}

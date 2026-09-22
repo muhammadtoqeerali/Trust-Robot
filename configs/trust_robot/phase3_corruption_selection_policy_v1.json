@@ -1,0 +1,79 @@
+{
+  "allowed_magnitude_selection_sources": [
+    "explicit_pre_execution_literal",
+    "external_independent_specification"
+  ],
+  "allowed_target_selection_sources": [
+    "explicit_pre_execution_literal",
+    "deterministic_train_metadata_rule",
+    "external_independent_specification"
+  ],
+  "content_sha256": "9a2836d4977eec9aa7ca984ac8bcffb9451f4870a3decb431dc420e1701cd022",
+  "execution_lock": {
+    "corruption_spec_content_must_be_explicit": true,
+    "observed_execution_output_may_modify_frozen_spec": false,
+    "observed_execution_output_may_modify_selection_record": false,
+    "selection_record_content_digest": "sha256",
+    "selection_record_required_before_execution": true
+  },
+  "existing_real_smoke_binding": {
+    "config_content_sha256": "40fbc49c500ecb9c7bfdc09b684d1786399a1f612bc6b61d90dcd2861ec9d399",
+    "config_file": "configs/trust_robot/phase3_lidar_event_gap_real_smoke_v1.json",
+    "config_file_sha256": "d270febc19c8ab3a64bd8dbcbddae5cc6861ff00bf1075e26a43b8a41b9479c0",
+    "confirmation_test_used": false,
+    "estimator_output_used": false,
+    "magnitude_selection_rationale": "length=1 is the prospectively declared minimal non-zero discrete EVENT_GAP mechanical smoke instance.",
+    "magnitude_selection_source": "explicit_pre_execution_literal",
+    "reference_data_used": false,
+    "registration_diagnostic_used": false,
+    "selection_locked_before_execution": true,
+    "target_selection_rationale": "Within the prospectively fixed three-event smoke slice, clean event index 1 is the unique internal event.",
+    "target_selection_source": "deterministic_train_metadata_rule",
+    "validation_metric_used": false
+  },
+  "forbidden_selection_inputs": [
+    "estimator_output",
+    "registration_diagnostic",
+    "reference_trajectory",
+    "reference_error",
+    "ground_truth_metric",
+    "validation_metric",
+    "confirmation_test",
+    "ate",
+    "rpe",
+    "final_score"
+  ],
+  "governing_rule": "A corruption target and corruption magnitude/condition must be declared and provenance-bound before the corresponding execution. Observed estimator or reference performance cannot retroactively change that declaration.",
+  "parameter_policy": {
+    "confirmation_test_may_select_corruption_conditions": false,
+    "engine_may_choose_attack_budget": false,
+    "engine_may_choose_delay": false,
+    "engine_may_choose_event_duration": false,
+    "engine_may_choose_event_location": false,
+    "engine_may_choose_noise_magnitude": false,
+    "missing_parameter_default_allowed": false,
+    "performance_based_corruption_selection_allowed": false,
+    "silent_attack_budget_default_allowed": false,
+    "silent_severity_default_allowed": false,
+    "validation_metric_may_select_corruption_conditions": false
+  },
+  "phase": {
+    "exit_evidence": "Deterministic paired corruption framework",
+    "exit_evidence_satisfied": false,
+    "number": 3,
+    "objective": "Multimodal fault/degradation/attack taxonomy and corruption engine"
+  },
+  "schema": "TRUST_ROBOT_PHASE3_CORRUPTION_SELECTION_POLICY_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "confirmation_test_data_used": false,
+    "policy_authorizes_accuracy_evaluation": false,
+    "policy_authorizes_ate": false,
+    "policy_authorizes_rpe": false,
+    "policy_changes_evaluation_ready": false,
+    "policy_changes_synchronization_verified": false,
+    "policy_selects_attack_budget": false,
+    "policy_selects_numeric_severity": false
+  },
+  "status": "prospective_policy_candidate"
+}

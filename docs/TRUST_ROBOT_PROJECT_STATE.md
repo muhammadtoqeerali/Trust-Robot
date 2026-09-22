@@ -46,7 +46,7 @@ Estimator scoring remains blocked.
 
 TRUST-ROBOT unit tests:
 
-**231 PASS.**
+**306 PASS.**
 
 Implemented Phase-3 components now include:
 
@@ -1720,6 +1720,358 @@ The M2DGR evaluation protocol remains blocked and unchanged.
 
 Phase-2 closure is frozen. The Git commit containing this section and the
 Phase-2 freeze manifest is the authoritative repository promotion checkpoint.
+
+
+## Phase-3 deterministic corruption kernel
+
+Phase 3 is now under local implementation.
+
+Objective:
+
+**Multimodal fault/degradation/attack taxonomy and corruption engine.**
+
+Exit evidence:
+
+**Deterministic paired corruption framework.**
+
+Current exit-evidence status:
+
+**SATISFIED by the Phase-3 framework closure manifest.**
+
+New local candidate taxonomy:
+
+`configs/trust_robot/phase3_corruption_taxonomy_candidate_v1.json`
+
+New native corruption kernel:
+
+`src/trust_robot/corruption.py`
+
+Tests:
+
+`tests/trust_robot/test_corruption.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE3_CORRUPTION_KERNEL_V1.md`
+
+The adoption audit found useful historical design concepts in
+`src/imu_reliability/injection`, including immutable paired clean/corrupt
+streams, deterministic SHA identities, no-op rejection, origin mapping, and
+immutable manifests.
+
+Those concepts are reimplemented behind a new TRUST-ROBOT-native contract.
+
+The new kernel does not import `imu_reliability` and does not inherit its
+historical IMU/HAR corruption severity grids, seed grids, thresholds, or
+final-test outcomes.
+
+The V1 native kernel provides deterministic structural corruption mechanisms:
+
+- `EVENT_GAP`;
+- `EVENT_REPEAT`;
+- `TIMESTAMP_STEP_SHIFT`.
+
+The kernel is modality-labelled and supports arbitrary numerical event payload
+shapes so future adapters can represent IMU vectors, camera images, LiDAR point
+clouds, depth data, and other modalities without forcing every modality into a
+fixed two-dimensional sample matrix.
+
+No severity grid, fault magnitude, attack budget, stochastic-noise parameter,
+dropout probability, drift rate, or jitter distribution is selected by this
+kernel.
+
+Synthetic mechanism truth remains explicitly separate from physical/runtime
+causal evidence.
+
+No real M2DGR corruption has yet been generated.
+
+No confirmation-test data are used.
+
+Phase-2 remains frozen and unchanged.
+
+M2DGR evaluation readiness remains false and no ATE/RPE is authorized.
+
+
+## Phase-3 LiDAR clean EventStream adapter
+
+A native clean adapter now connects frozen Phase-2 M2DGR Velodyne input
+semantics to the Phase-3 generic paired-corruption architecture.
+
+Implementation:
+
+`src/trust_robot/lidar_corruption_adapter.py`
+
+Tests:
+
+`tests/trust_robot/test_lidar_corruption_adapter.py`
+
+Real TRAIN mechanical smoke:
+
+`scripts/trust_robot/run_phase3_lidar_clean_adapter_smoke.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE3_LIDAR_CLEAN_ADAPTER_V1.md`
+
+The adapter reuses the exact frozen Phase-2 functions:
+
+- `decode_m2dgr_velodyne_xyz`;
+- `pointcloud_header_stamp_ns`;
+- `pointcloud_field_descriptors`.
+
+It does not duplicate PointCloud2 XYZ parsing.
+
+One PointCloud2 scan becomes one LiDAR `EventStream` event whose payload is
+the exact Phase-2 decoded contiguous `float64` XYZ array.
+
+A deterministic adapter receipt preserves structural PointCloud2 metadata,
+raw PointCloud2 data hashes, decoded XYZ hashes, and the resulting clean
+EventStream fingerprint.
+
+Raw PointCloud2 provenance bytes are accessed through the buffer protocol,
+matching the byte-buffer semantics already accepted by the frozen decoder.
+
+The first three `/velodyne_points` messages from frozen TRAIN `Circle_01`
+serve only as a clean mechanical reproducibility smoke.
+
+No corruption is applied in that proof.
+
+The PointCloud2 header timestamp remains only an event/state label. Its
+physical scan-reference meaning is still unverified.
+
+Per-point time is not used and no deskew is performed.
+
+No reference or confirmation-test data are accessed.
+
+This layer alone did not satisfy Phase-3 exit evidence; the final Phase-3 framework closure manifest records phase-level satisfaction.
+
+
+## Phase-3 first real controlled LiDAR corruption
+
+The Phase-3 deterministic corruption framework has now produced its first real
+TRAIN clean/corrupt pair.
+
+Prospective configuration:
+
+`configs/trust_robot/phase3_lidar_event_gap_real_smoke_v1.json`
+
+Runner:
+
+`scripts/trust_robot/run_phase3_lidar_event_gap_real_smoke_v1.py`
+
+Tests:
+
+`tests/trust_robot/test_lidar_event_gap_real_smoke.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE3_LIDAR_EVENT_GAP_REAL_SMOKE_V1.md`
+
+The real source is the already-inspected first three `/velodyne_points`
+messages from TRAIN `Circle_01`.
+
+The first corruption is `EVENT_GAP` removing clean event index 1.
+
+For the fixed three-event smoke slice, index 1 is the only internal event.
+The one-event gap is the minimal non-zero discrete mechanism instance and is
+used only to prove real-data corruption plumbing.
+
+It is not a selected benchmark severity and no severity grid has been chosen.
+
+The corrupted EventStream retains clean-origin indices `[0, 2]`.
+
+The source PointCloud2 bytes and clean EventStream remain unchanged.
+
+Repeated application of the same frozen corruption specification reproduces
+the same corrupted EventStream and corruption manifest.
+
+Real TRAIN data are used, but no reference trajectory or confirmation-test data
+are used.
+
+The estimator is not executed in this smoke.
+
+No ground-truth association, alignment, ATE, RPE, trajectory scoring, or
+estimator scoring is performed.
+
+This layer alone did not satisfy Phase-3 exit evidence; the final Phase-3 framework closure manifest records phase-level satisfaction.
+
+
+## Phase-3 paired clean/corrupt frozen estimator registration
+
+The first real paired clean/corrupt LiDAR EventStreams now pass through the
+same frozen Phase-2 registration kernel.
+
+Contract:
+
+`configs/trust_robot/phase3_lidar_paired_estimator_registration_v1.json`
+
+Implementation:
+
+`src/trust_robot/lidar_corruption_estimator.py`
+
+Runner:
+
+`scripts/trust_robot/run_phase3_lidar_paired_estimator_registration_v1.py`
+
+Tests:
+
+`tests/trust_robot/test_lidar_corruption_estimator.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE3_LIDAR_PAIRED_ESTIMATOR_REGISTRATION_V1.md`
+
+The frozen Phase-2 function used is:
+
+`register_current_scan_to_previous`
+
+The clean three-event stream reaches the registration kernel through origin
+pairs:
+
+- `[0, 1]`
+- `[1, 2]`
+
+The paired `EVENT_GAP` stream reaches the same kernel through:
+
+- `[0, 2]`
+
+This proves the controlled corruption changes estimator input topology as
+intended.
+
+Registration poses and internal diagnostics are execution evidence only.
+They are not localization accuracy scores and may not retroactively modify the
+frozen corruption specification.
+
+No clean-versus-corrupt error metric is calculated.
+
+No reference or confirmation-test data are used.
+
+No association, alignment, ATE, RPE, trajectory scoring, estimator scoring,
+severity selection, or attack-budget selection is performed.
+
+This layer alone did not satisfy Phase-3 exit evidence; the final Phase-3 framework closure manifest records phase-level satisfaction.
+
+
+## Phase-3 prospective corruption selection policy
+
+Phase 3 now has an explicit prospective policy controlling how corruption
+instances may be selected.
+
+Policy:
+
+`configs/trust_robot/phase3_corruption_selection_policy_v1.json`
+
+Implementation:
+
+`src/trust_robot/corruption_selection.py`
+
+Tests:
+
+`tests/trust_robot/test_corruption_selection.py`
+
+Audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE3_CORRUPTION_SELECTION_POLICY_V1.md`
+
+Every future controlled corruption must bind both target selection and
+magnitude/condition selection before execution.
+
+The corruption engine cannot invent missing event locations, durations,
+magnitudes, delays, noise levels, or attack budgets.
+
+Estimator outputs, registration diagnostics, reference trajectories,
+ground-truth errors, validation performance metrics, confirmation-test
+outcomes, ATE, RPE, and final scores are forbidden as inputs for selecting the
+corruption experimental condition.
+
+The existing real TRAIN `EVENT_GAP` smoke is bound to the policy as a
+prospectively declared mechanical instance.
+
+Its observed registration outputs cannot retroactively change the corruption
+specification.
+
+No new severity or attack budget is selected by this policy.
+
+No reference or confirmation-test data are used.
+
+No evaluation authorization changes.
+
+The subsequent comprehensive Phase-3 closure review found the framework exit
+evidence satisfied; the Phase-3 freeze manifest is the authoritative
+phase-level closure record.
+
+
+## Phase-3 deterministic paired corruption framework closure
+
+Phase 3 is complete and frozen.
+
+Objective:
+
+**Multimodal fault/degradation/attack taxonomy and corruption engine.**
+
+Exit evidence:
+
+**Deterministic paired corruption framework.**
+
+Current phase-level status:
+
+**SATISFIED.**
+
+Frozen framework identity:
+
+`trust_robot_phase3_deterministic_paired_corruption_framework_v1`
+
+Authoritative freeze manifest:
+
+`manifests/trust_robot_phase3_deterministic_paired_corruption_framework_freeze_v1.json`
+
+Closure audit:
+
+`docs/audits/trust_robot/TRUST_ROBOT_PHASE3_DETERMINISTIC_PAIRED_CORRUPTION_FRAMEWORK_FREEZE_V1.md`
+
+The framework provides immutable multimodal event streams, explicit paired
+clean/corrupt outputs, deterministic SHA specification and injection
+identities, origin-index provenance, no-op rejection, immutable manifests and
+prospective corruption-selection provenance.
+
+Generic structural mechanisms currently implemented are:
+
+- `EVENT_GAP`;
+- `EVENT_REPEAT`;
+- `TIMESTAMP_STEP_SHIFT`.
+
+The generic framework is modality-labelled across camera, depth, GNSS, IMU,
+LiDAR, proprioception, wheel odometry and other numerical event streams.
+
+The real-data integration proof is currently LiDAR.
+
+A prospectively frozen TRAIN `Circle_01` `EVENT_GAP` instance reproduced
+exactly and preserved clean-source immutability.
+
+The paired clean/corrupt EventStreams also reproduced exactly through the same
+frozen Phase-2 registration kernel.
+
+Phase-3 closure does not claim a complete modality-specific physical fault or
+attack library.
+
+Future modality-specific corruption models require their own prospective
+specifications.
+
+No reference or confirmation-test data were used.
+
+No association, alignment, ATE, RPE, trajectory scoring, estimator scoring or
+clean-versus-corrupt localization accuracy metric was performed.
+
+Synchronization remains unverified.
+
+M2DGR evaluation readiness remains false.
+
+The existing component artifacts retain their historical pre-closure status
+fields; the Phase-3 freeze manifest is the authoritative aggregate
+phase-level satisfaction record.
+
+The Git commit containing this closure section and freeze manifest is the
+authoritative Phase-3 repository promotion checkpoint.
 
 ## Synchronization state
 

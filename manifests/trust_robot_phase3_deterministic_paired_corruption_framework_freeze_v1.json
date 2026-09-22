@@ -1,0 +1,188 @@
+{
+  "closure_decision": {
+    "component_preclosure_records_rewritten": false,
+    "framework_frozen": true,
+    "full_regression_passed": true,
+    "full_regression_test_count": 306,
+    "phase3_complete": true,
+    "read_only_closure_review_sha256": "23ab9ced889f472c84e0555990c2ca1f008479533c327df7fa83da54a3b46c95",
+    "reason_component_records_not_rewritten": "Component artifacts retain the historical scope/status they had when created; this aggregate closure manifest is the authoritative phase-level satisfaction record."
+  },
+  "closure_interpretation": {
+    "all_possible_corruption_models_implemented": false,
+    "future_modality_specific_models_require_new_prospective_specs": true,
+    "phase3_exit_evidence_satisfied": true,
+    "phase3_framework_frozen": true,
+    "phase4_authorized_to_begin_after_repository_promotion": true,
+    "real_lidar_integration_required_for_framework_evidence": true,
+    "real_non_lidar_integration_required_for_this_exit_evidence": false
+  },
+  "component_config_content_sha256": {
+    "paired_estimator_registration": "19027fc414ebaecb4d6f8b16326e8dfd308b38049d61e0e95916096a8c9cdd77",
+    "real_event_gap": "40fbc49c500ecb9c7bfdc09b684d1786399a1f612bc6b61d90dcd2861ec9d399",
+    "selection_policy": "9a2836d4977eec9aa7ca984ac8bcffb9451f4870a3decb431dc420e1701cd022",
+    "taxonomy": "12919ab9de6d7ec85b4aab81c98a47f4edb3a5b286ac7a0423b560ad4fbc0388"
+  },
+  "content_sha256": "860f2b5f995a3f65951314b3bfaf6aa5576300b4f7a4c91c52cccbe3a5920270",
+  "declared_modalities": [
+    "camera",
+    "depth",
+    "gnss",
+    "imu",
+    "lidar",
+    "other",
+    "proprioception",
+    "wheel_odometry"
+  ],
+  "framework_identity": {
+    "copy_on_corrupt": true,
+    "deterministic_identity_digest": "sha256",
+    "generic_event_representation": "EventStream",
+    "immutable_manifest_semantics": true,
+    "name": "trust_robot_phase3_deterministic_paired_corruption_framework_v1",
+    "no_op_rejection": true,
+    "origin_index_provenance": true,
+    "paired_representation": "PairedCorruption",
+    "synthetic_truth_separate_from_runtime_causal_evidence": true
+  },
+  "frozen_estimator_plumbing_evidence": {
+    "clean_corrupt_accuracy_metric_computed": false,
+    "clean_origin_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "clean_stream_unchanged": true,
+    "corrupt_origin_pairs": [
+      [
+        0,
+        2
+      ]
+    ],
+    "corrupt_stream_unchanged": true,
+    "paired_execution_repeated_exactly": true,
+    "paired_registration_receipt_content_sha256": "cfdf32763db47d9f00ceeea9790d7d5bd1905f190cbce43f3887f649e0ec791e",
+    "paired_registration_receipt_file_sha256": "2ac381057b5a1c05cc9164ad8f7d7c4e4f81ad1d7d196eb78b97e3f340eaf2c2",
+    "phase2_registration_function": "register_current_scan_to_previous",
+    "registration_outputs_are_accuracy_scores": false,
+    "registration_path_changed_by_corruption": true,
+    "success_marker_sha256": "367a5da6e4fa4fe028504981bdf10a89cc97a00dd2c40967b5789dea7dcc6b65"
+  },
+  "implemented_generic_mechanisms": [
+    "EVENT_GAP",
+    "EVENT_REPEAT",
+    "TIMESTAMP_STEP_SHIFT"
+  ],
+  "phase": {
+    "exit_evidence": "Deterministic paired corruption framework",
+    "exit_evidence_satisfied": true,
+    "number": 3,
+    "objective": "Multimodal fault/degradation/attack taxonomy and corruption engine"
+  },
+  "prospective_selection_policy": {
+    "confirmation_test_selection_allowed": false,
+    "content_sha256": "9a2836d4977eec9aa7ca984ac8bcffb9451f4870a3decb431dc420e1701cd022",
+    "engine_missing_parameter_defaults_allowed": false,
+    "file_sha256": "df130b8b06831c443b7027dbf70e521a7969c558e628adaf95f87184fbe5a9f6",
+    "performance_based_corruption_selection_allowed": false,
+    "selection_record_required_before_execution": true,
+    "validation_metric_selection_allowed": false
+  },
+  "real_train_corruption_evidence": {
+    "clean_adapter_receipt_content_sha256": "cf46963a8e3f4cb9afa03cc8c68629baa467fc9f44794a4557f435d9f36715a4",
+    "clean_adapter_receipt_file_sha256": "d3b41b988f952a43b620cc8351920d060939a7877109b454a53f8bc98152ae4d",
+    "clean_event_count": 3,
+    "clean_eventstream_fingerprint_sha256": "5f00afdc680c93a61ba806d8f7c787825706f8c0a81a4c9b5f899fe74a4b0b87",
+    "clean_origin_indices": [
+      0,
+      1,
+      2
+    ],
+    "clean_stream_unchanged": true,
+    "corrupt_event_count": 2,
+    "corrupt_eventstream_fingerprint_sha256": "a2eeec22644551be0e261858765f56930a744b7218a11fbdef4c7b44c764d48a",
+    "corrupt_origin_indices": [
+      0,
+      2
+    ],
+    "corruption_pair_manifest_content_sha256": "2ce40ac2793a3060c84b26f1dea21aab8fcf9ef3b87c6cb400f543c3b5d39f1d",
+    "corruption_pair_manifest_file_sha256": "b2695f07f749576e23ac864aa2fd81db997ee37c538e762f7bfd48d5da2f6f74",
+    "dataset_id": "M2DGR",
+    "injection_id": "TRC_INJ_2413029fc605422de2dd737f",
+    "raw_source_bytes_unchanged": true,
+    "removed_clean_origin_indices": [
+      1
+    ],
+    "repeated_corruption_exact": true,
+    "smoke_receipt_content_sha256": "62e869a14de25ebddc0c337dfbca05f166f4a6fedb55a2e61b954521cc9b45e5",
+    "smoke_receipt_file_sha256": "5fedd0cb9e6e4cfd1c4acb657d6bded71d34182fac08457555bc80a51b55c717",
+    "spec_id": "TRC_SPEC_d7fdcb5f67999476d8f0391d",
+    "split": "train",
+    "success_marker_sha256": "3d1ff8214baf03f7efcbf76072f5847f56c511479e9a629771ea5291518579b7",
+    "topic": "/velodyne_points",
+    "trajectory": "Circle_01"
+  },
+  "repo_component_sha256": {
+    "configs/trust_robot/phase3_corruption_selection_policy_v1.json": "df130b8b06831c443b7027dbf70e521a7969c558e628adaf95f87184fbe5a9f6",
+    "configs/trust_robot/phase3_corruption_taxonomy_candidate_v1.json": "f8a572fc3c25b0effc9f5d0f5fd084a69fc712953f5ae51c0ad3a06a773c02a7",
+    "configs/trust_robot/phase3_lidar_event_gap_real_smoke_v1.json": "d270febc19c8ab3a64bd8dbcbddae5cc6861ff00bf1075e26a43b8a41b9479c0",
+    "configs/trust_robot/phase3_lidar_paired_estimator_registration_v1.json": "8842b3fdddc49ae077fdd9902ddb3cb5a821d2567b33e4ef0fca8d95a8195963",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE3_CORRUPTION_KERNEL_V1.md": "948957b2d7207cc7b5a074f93c3e58e2ce3009c987ff7ef56109a400689bae09",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE3_CORRUPTION_SELECTION_POLICY_V1.md": "26cbf9731d7b35f0725e3ca0a4f743ab63f68738bc885b2516ccddaa02e0dc2e",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE3_LIDAR_CLEAN_ADAPTER_V1.md": "6fe40bf1b7945c66b9848807eb660e642bf2ef9f2a46a9b500715d49c9ba1c4a",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE3_LIDAR_EVENT_GAP_REAL_SMOKE_V1.md": "a7ea813bf360ccdd9fee5815da1cb604e0081d48b52004e4b32722abb4744bf0",
+    "docs/audits/trust_robot/TRUST_ROBOT_PHASE3_LIDAR_PAIRED_ESTIMATOR_REGISTRATION_V1.md": "cd24db93309c9d4e0d09f2a4004bf4dcec97776a64da6c8e185e753a8b2f9431",
+    "scripts/trust_robot/run_phase3_lidar_clean_adapter_smoke.py": "87889df6d0d5743eaa7ba1a90636e7de11caba6a84a8b9b73be2f6d8f691784e",
+    "scripts/trust_robot/run_phase3_lidar_event_gap_real_smoke_v1.py": "af2b3795d187586051d5ac250ddcf24bb5f6729b836e4ff25fcd536e6c9445a4",
+    "scripts/trust_robot/run_phase3_lidar_paired_estimator_registration_v1.py": "1f45db3539aa05bd0f32629ab11d12f50b38adcb35f61c0ea9cd7e5add887ce3",
+    "src/trust_robot/corruption.py": "4913cf258fb51c2205c56a7b23852b9cb48781b4370af30b69ec05633947ebcc",
+    "src/trust_robot/corruption_selection.py": "acf334e8db7db8cb8dd7fdedc87c1c6eee60f89e01e4e72e148639c879a7e700",
+    "src/trust_robot/lidar_corruption_adapter.py": "cd5b6c9d47c183261404f154585dd4d5dffe89bc27c03d037101877111764a3c",
+    "src/trust_robot/lidar_corruption_estimator.py": "8c47194fae1d22cc6ae80ae463477412628d5ea8184fb4056c517dd4961fe4ff",
+    "tests/trust_robot/test_corruption.py": "e0c5a11e8da2833017c43aa4a0737f4bf58ce0c43482903b5c7e8003a0c1708c",
+    "tests/trust_robot/test_corruption_selection.py": "4aad6d1ab2399c61d28bb9c65ed6a31281951fe38aba2ae6ac3fe1de9804a83c",
+    "tests/trust_robot/test_lidar_corruption_adapter.py": "9e30a5067b59b998167d4b970431e7001afd77e69e79c140c556a32084ba9b99",
+    "tests/trust_robot/test_lidar_corruption_estimator.py": "30700daddfe76c20d466b692ba4d76b13f9186545e951637e91adc2813ab3bfd",
+    "tests/trust_robot/test_lidar_event_gap_real_smoke.py": "74c037d876b924f4af82d18de7ad142af898b2aced96e7dd972bd7df47dc8671"
+  },
+  "schema": "TRUST_ROBOT_PHASE3_DETERMINISTIC_PAIRED_CORRUPTION_FRAMEWORK_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "accuracy_comparison_performed": false,
+    "alignment_performed": false,
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "estimator_scoring_authorized": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "ground_truth_association_performed": false,
+    "metric_computation_authorized": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "synchronization_verified": false,
+    "trajectory_scoring_authorized": false,
+    "trajectory_scoring_performed": false
+  },
+  "scope_limitations": {
+    "attack_budget_selected": false,
+    "attack_library_complete": false,
+    "camera_specific_physical_corruption_models_complete": false,
+    "depth_specific_physical_corruption_models_complete": false,
+    "generic_framework_is_multimodal": true,
+    "gnss_specific_physical_corruption_models_complete": false,
+    "imu_specific_physical_corruption_models_complete": false,
+    "malicious_intent_claimed": false,
+    "modality_specific_fault_library_complete": false,
+    "numeric_severity_grid_selected": false,
+    "physical_fault_cause_claimed": false,
+    "real_data_integration_demonstrated_modalities": [
+      "lidar"
+    ]
+  },
+  "status": "frozen_phase3_framework"
+}

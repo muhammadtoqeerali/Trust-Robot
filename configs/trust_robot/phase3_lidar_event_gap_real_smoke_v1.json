@@ -1,0 +1,83 @@
+{
+  "content_sha256": "40fbc49c500ecb9c7bfdc09b684d1786399a1f612bc6b61d90dcd2861ec9d399",
+  "corruption_spec": {
+    "family": "EVENT_GAP",
+    "length": 1,
+    "modality": "lidar",
+    "parameters": {},
+    "scenario_context": "unattributed",
+    "seed": null,
+    "severity_id": null,
+    "start_index": 1,
+    "threat_model_id": null
+  },
+  "expected_structural_result": {
+    "clean_event_count": 3,
+    "corrupt_event_count": 2,
+    "corrupt_timestamps_equal_clean_indices": [
+      0,
+      2
+    ],
+    "removed_clean_origin_indices": [
+      1
+    ],
+    "surviving_clean_origin_indices": [
+      0,
+      2
+    ]
+  },
+  "prospective_selection_rationale": {
+    "chosen_from_confirmation_test": false,
+    "chosen_from_estimator_output": false,
+    "chosen_from_reference_error": false,
+    "chosen_from_reference_trajectory": false,
+    "chosen_from_validation_metric": false,
+    "event_location_rule": "the only internal event in the prospectively fixed three-event smoke slice",
+    "intended_as_localization_accuracy_experiment": false,
+    "mechanism_instance_rule": "minimal nonzero discrete event removal",
+    "performance_condition_selected": false,
+    "severity_grid_selected": false
+  },
+  "purpose": "real-data clean-to-corrupt deterministic integration proof",
+  "schema": "TRUST_ROBOT_PHASE3_LIDAR_EVENT_GAP_REAL_SMOKE_V1",
+  "schema_version": 1,
+  "scientific_scope": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "attack_budget_selected": false,
+    "confirmation_test_data_used": false,
+    "deskew_performed": false,
+    "estimator_executed": false,
+    "estimator_scoring_performed": false,
+    "ground_truth_association_performed": false,
+    "phase3_exit_evidence_satisfied": false,
+    "physical_scan_timestamp_reference_verified": false,
+    "real_train_data_used": true,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "severity_selected": false,
+    "synchronization_verified": false,
+    "trajectory_scoring_performed": false
+  },
+  "source": {
+    "dataset_id": "M2DGR",
+    "expected_header_stamps_ns": [
+      1627958500502942562,
+      1627958500603148460,
+      1627958500703351736
+    ],
+    "expected_raw_pointcloud_data_sha256": [
+      "d336057fb42e7b9e22a0a7dc1e1957648f40d75eb7f66e2d810d77f079f4471a",
+      "273c3677ac7c375642a7e0678d6bd48a085c5ecc3b556c49de0b563762796233",
+      "cfe5052c555debe4362c25909ac262e2afcced4433ab875c28a46f6c2e83e93c"
+    ],
+    "frame_id": "velodyne",
+    "msgtype": "sensor_msgs/msg/PointCloud2",
+    "slice_selection_rule": "first_three_velodyne_messages_in_bag_order",
+    "source_event_count": 3,
+    "split": "train",
+    "topic": "/velodyne_points",
+    "trajectory": "Circle_01"
+  },
+  "status": "prospectively_frozen_real_train_mechanical_smoke"
+}
