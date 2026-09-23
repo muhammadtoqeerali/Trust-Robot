@@ -1,0 +1,71 @@
+{
+  "frozen_split_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+  "output_contract": {
+    "first_last_header_stamp_when_present": true,
+    "first_last_record_time": true,
+    "missing_stream_preserved_as_absent": true,
+    "per_message_raw_payload_written": false,
+    "per_message_receipt_written": false,
+    "stream_level_aggregate_receipt_digest": true,
+    "stream_message_count": true,
+    "stream_total_serialized_bytes": true
+  },
+  "reader": {
+    "interface": "rosbags.highlevel.AnyReader",
+    "package": "rosbags"
+  },
+  "run_id": "trust_robot_phase5_m2dgr_camera_imu_train_ingestion_v1",
+  "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_TRAIN_INGESTION_V1",
+  "scientific_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "camera_feature_contract_selected": false,
+    "classifier_training_authorized": false,
+    "confirmation_bag_open_authorized": false,
+    "feature_extraction_performed": false,
+    "final_scoring_authorized": false,
+    "fixed_offset_selected": false,
+    "health_label_assigned": false,
+    "health_probability_emitted": false,
+    "health_threshold_selected": false,
+    "imu_feature_contract_selected": false,
+    "interpolation_rule_selected": false,
+    "physical_measurement_time_selected": false,
+    "reference_data_read": false,
+    "shared_clock_domain_verified": false
+  },
+  "split_role": "train",
+  "supported_streams": {
+    "camera": [
+      "/camera/color/image_raw/compressed"
+    ],
+    "imu": [
+      "/camera/imu",
+      "/handsfree/imu"
+    ]
+  },
+  "train_trajectories": [
+    "Circle_01",
+    "door_01",
+    "gate_01",
+    "hall_01",
+    "hall_03",
+    "hall_04",
+    "hall_05",
+    "lift_02",
+    "lift_04",
+    "room_02",
+    "room_dark_01",
+    "room_dark_02",
+    "room_dark_03",
+    "room_dark_04",
+    "street_01",
+    "street_010",
+    "street_03",
+    "street_04",
+    "street_05",
+    "street_07",
+    "street_09",
+    "walk_01"
+  ],
+  "train_trajectory_count": 22
+}

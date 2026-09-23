@@ -1,0 +1,104 @@
+{
+  "artifact_receipt_requirements": {
+    "acquisition_session_identity_required": true,
+    "artifact_identity_required": true,
+    "capture_metadata_preserved_required": true,
+    "capture_metadata_sha256_required": true,
+    "host_capture_end_ns_required": true,
+    "host_capture_start_ns_required": true,
+    "host_clock_identity_required": true,
+    "host_times_transport_provenance_only_required": true,
+    "raw_byte_count_required": true,
+    "raw_bytes_preserved_required": true,
+    "raw_sha256_required": true,
+    "source_identifier_required": true,
+    "split_role_required": true
+  },
+  "authorization": {
+    "calibration": false,
+    "classifier_training": false,
+    "controlled_corruption_generation": false,
+    "health_label_generation": false,
+    "live_sensor_probe": false
+  },
+  "content_sha256": "2b1263faf9a8355a8855e53c6f4a7822548019ab66a4af6b82d2ddf41453d100",
+  "evidence_sha256": {
+    "acquisition_feasibility_receipt": "f7a7332b7ab0b518d8186522b0cde9a61cf3e4aa26a7829c4980f1fc1a8bb754",
+    "baseline_nominality_protocol": "3e54df63f06875c3764c130922d6b967ac94075fc414510240a35e0397b89f00",
+    "vlp32c_manufacturer_manual_text": "c10cb2f734229ccafb1ab95458b27a990b47a0e86de6a7ca0e0a57c3267ff1be"
+  },
+  "explicit_nonclaims": {
+    "host_capture_time_is_physical_measurement_time": false,
+    "raw_capture_accepts_supervision_source": false,
+    "raw_capture_assigns_health_state": false,
+    "raw_capture_establishes_baseline_nominality": false,
+    "raw_capture_establishes_interval_binding": false,
+    "raw_capture_selects_capture_mechanism": false,
+    "raw_capture_selects_fixed_offset": false,
+    "raw_capture_selects_interpolation": false,
+    "raw_capture_selects_network_address": false,
+    "raw_capture_selects_timing_tolerance": false
+  },
+  "manufacturer_grounded_candidate_channels": {
+    "position_packet": {
+      "selected_for_live_capture": false,
+      "thermal_status_field_offset": "0xCB",
+      "thermal_status_value_0": "Ok",
+      "thermal_status_value_1": "Thermal shutdown"
+    },
+    "sensor_diagnostic": {
+      "documented_interface_path": "cgi/diag.json",
+      "selected_for_live_capture": false
+    },
+    "sensor_status": {
+      "documented_interface_path": "cgi/status.json",
+      "laser_state_semantics_documented": true,
+      "motor_state_semantics_documented": true,
+      "selected_for_live_capture": false,
+      "thermal_status_explicitly_bound_in_http_section": false
+    }
+  },
+  "raw_artifact_kinds": [
+    "measurement",
+    "sensor_status",
+    "sensor_diagnostic",
+    "position_packet"
+  ],
+  "schema": "TRUST_ROBOT_PHASE5_BASELINE_NOMINALITY_RAW_CAPTURE_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "phase4_feature_contract_reopened": false,
+    "reference_data_used": false,
+    "rpe_computed": false
+  },
+  "scope": {
+    "hardware_model": "VLP-32C",
+    "hardware_vendor": "Velodyne",
+    "modality": "lidar",
+    "purpose": "Preserve raw prospective measurement and operational evidence before any parsing, interval binding, source acceptance or health labeling."
+  },
+  "selection_status": {
+    "capture_mechanism_selected": false,
+    "fixed_offset_selected": false,
+    "interpolation_selected": false,
+    "interval_binding_mechanism_selected": false,
+    "live_sensor_reachability_tested": false,
+    "measurement_capture_mechanism_selected": false,
+    "sensor_network_address_selected": false,
+    "status_polling_period_selected": false,
+    "thermal_capture_mechanism_selected": false,
+    "timing_tolerance_selected": false
+  },
+  "source_acceptance_status": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "candidate_nominality_receipt_created": false,
+    "raw_capture_artifact_count": 0,
+    "real_health_label_count": 0
+  },
+  "status": "prospective_format_no_live_capture_no_interval_binding"
+}

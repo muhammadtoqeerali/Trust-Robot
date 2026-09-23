@@ -1,0 +1,123 @@
+{
+  "availability_boundary": {
+    "availability_is_health_label": false,
+    "missing_measurement_encoded_as_zero_feature_vector": false
+  },
+  "confirmation_boundary": {
+    "confirmation_closed": true,
+    "confirmation_selection_authorized": false
+  },
+  "diagnostic_inputs": {
+    "camera": {
+      "exact_feature_names": [],
+      "feature_contract_selected": false,
+      "required_channel_kinds": [
+        "low_level_signal_summary",
+        "frontend_diagnostic",
+        "residual_history"
+      ]
+    },
+    "gnss": {
+      "exact_feature_names": [],
+      "feature_contract_selected": false,
+      "role": "optional"
+    },
+    "imu": {
+      "exact_feature_names": [],
+      "feature_contract_selected": false,
+      "required_channel_kinds": [
+        "low_level_signal_summary",
+        "frontend_diagnostic",
+        "residual_history"
+      ]
+    },
+    "lidar": {
+      "feature_contract_status": "validated_phase4",
+      "features": [
+        {
+          "name": "source_point_count",
+          "unit": "count"
+        },
+        {
+          "name": "target_point_count",
+          "unit": "count"
+        },
+        {
+          "name": "fixed_point_iterations",
+          "unit": "count"
+        },
+        {
+          "name": "final_correspondence_count",
+          "unit": "count"
+        },
+        {
+          "name": "final_nearest_neighbor_rmse_m",
+          "unit": "m"
+        }
+      ],
+      "phase4_feature_contract_reopened": false
+    }
+  },
+  "evidence_gate": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "camera_feature_contract_selected": false,
+    "classifier_training_authorized": false,
+    "health_inference_authorized": false,
+    "imu_feature_contract_selected": false,
+    "lidar_phase4_feature_contract_validated": true,
+    "physical_validation_deferred": true,
+    "real_health_label_count": 0
+  },
+  "health_states": [
+    "healthy",
+    "degraded",
+    "unusable"
+  ],
+  "lifecycle_status": "interface_implemented_evidence_blocked",
+  "modalities": {
+    "core": [
+      "camera",
+      "imu",
+      "lidar"
+    ],
+    "optional": [
+      "gnss"
+    ]
+  },
+  "model_selection": {
+    "calibration_parameter": null,
+    "calibration_parameter_selected": false,
+    "classifier_architecture": "unselected",
+    "classifier_architecture_selected": false,
+    "health_threshold": null,
+    "health_threshold_selected": false,
+    "trained_model_artifact_sha256": null
+  },
+  "runtime_output": {
+    "health_probability_output": "disabled",
+    "health_state_output": "disabled",
+    "inference_authorized": false,
+    "training_authorized": false
+  },
+  "schema": "TRUST_ROBOT_PHASE5_MULTIMODAL_HEALTH_MODEL_INTERFACE_V1",
+  "scientific_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "cross_modal_synchronization_selected": false,
+    "current_innovation_selected_as_persistent_health_input": false,
+    "final_localization_error_used_as_health_supervision": false,
+    "final_scoring_authorized": false,
+    "physical_measurement_time_selected": false,
+    "reference_data_used": false,
+    "validation_data_used_for_current_model_selection": false
+  },
+  "source_bindings": {
+    "diagnostic_channel_config_sha256": "de6656d35e24162dcd3ff489f21b735396c2457dae526a13be9790bb88bdf485",
+    "health_semantics_config_sha256": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+    "health_supervision_config_sha256": "08d65e6bca3a87df8d23cb2992bdb84544c66c51df764d3539ceac0fb6a95adc",
+    "multimodal_foundation_config_sha256": "37cba4494f1d84b16d3d84d106303bf649874bb3fb58c6b626ea6b5aeb1ce8a3",
+    "phase4_lidar_freeze_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+    "train_source_evidence_manifest_sha256": "d4d2a73ddbcf73102cec0d0d4556fa65786a408217fefe1dece0f4d402cce675"
+  }
+}

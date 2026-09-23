@@ -1,0 +1,85 @@
+{
+  "authorization": {
+    "calibration": false,
+    "classifier_training": false,
+    "controlled_corruption_generation": false,
+    "health_label_generation": false
+  },
+  "content_sha256": "63568f35b3f63c90d4289fec6210b4e2c1f702fc95dd973ec9e3fe735e8f767c",
+  "evidence_sha256": {
+    "baseline_nominality_frontier_audit": "2dd32af12def25703c57bad5064e72010df6ed5e744444efd6a153e155c9b610",
+    "controlled_availability_protocol": "364d2c4d043c5a99e969ea3406d8bb338931705a236b169249b1c06c294f0361",
+    "vlp32c_manufacturer_manual_text": "c10cb2f734229ccafb1ab95458b27a990b47a0e86de6a7ca0e0a57c3267ff1be"
+  },
+  "insufficient_evidence_by_itself": {
+    "absence_of_known_fault_annotation": true,
+    "clean_branch_identity": true,
+    "frontend_structural_admissibility": true,
+    "manufacturer_manual_without_runtime_observation": true,
+    "operator_assumption_without_receipt": true,
+    "phase4_diagnostics": true,
+    "pointcloud_presence": true,
+    "registration_success": true,
+    "source_byte_integrity": true
+  },
+  "manufacturer_grounded_operational_evidence": {
+    "laser_state_required": "ON",
+    "manual_alone_proves_runtime_status": false,
+    "motor_state_required": "ON",
+    "numeric_diagnostic_ranges_adopted": false,
+    "operating_ranges_adopted": false,
+    "requirements_are_discrete_status_semantics_not_numeric_thresholds": true,
+    "thermal_status_required": "Ok"
+  },
+  "prospective_acquisition_requirements": {
+    "acquisition_session_identity_required": true,
+    "confirmation_test_independence_required": true,
+    "final_estimator_score_independence_required": true,
+    "interpolation_selected": false,
+    "interval_binding_receipt_required": true,
+    "interval_binding_semantics_must_be_explicit": true,
+    "measurement_interval_identity_required": true,
+    "no_deliberate_availability_intervention_receipt_required": true,
+    "phase4_feature_independence_required": true,
+    "prospective_declaration_required": true,
+    "raw_operational_status_evidence_required": true,
+    "raw_operational_status_sha256_required": true,
+    "reference_trajectory_independence_required": true,
+    "source_measurement_identity_required": true,
+    "source_measurement_sha256_required": true,
+    "timing_offset_selected": false,
+    "timing_tolerance_selected": false
+  },
+  "schema": "TRUST_ROBOT_PHASE5_BASELINE_NOMINALITY_PROTOCOL_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "diagnostic_threshold_selected": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "health_threshold_selected": false,
+    "phase4_feature_contract_reopened": false,
+    "real_data_health_label_assigned": false,
+    "reference_data_used": false,
+    "rpe_computed": false
+  },
+  "scope": {
+    "general_physical_health_claim": false,
+    "hardware_model": "VLP-32C",
+    "hardware_vendor": "Velodyne",
+    "modality": "lidar",
+    "purpose": "Independent interval-bound positive evidence of nominal LiDAR operation for future controlled-supervision baselines."
+  },
+  "source_acceptance_status": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_baseline_nominality_source_ids": [],
+    "accepted_health_supervision_source_count": 0,
+    "candidate_nominality_receipt_created": false,
+    "candidate_source_declared": false,
+    "interval_binding_mechanism_selected": false,
+    "prospective_acquisition_mechanism_selected": false,
+    "real_health_label_count": 0
+  },
+  "status": "prospective_protocol_no_candidate_acquisition_no_accepted_source"
+}

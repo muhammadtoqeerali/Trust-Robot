@@ -1,0 +1,90 @@
+{
+  "candidate_command_primitives": {
+    "bounded_process_tool": "timeout",
+    "candidate_only_not_live_execution_selection": true,
+    "http_read_tool": "curl",
+    "http_requests_are_one_shot_plan_primitives": true,
+    "status_polling_period_selected": false,
+    "udp_packet_capture_tool": "tcpdump"
+  },
+  "content_sha256": "a7b37c4d6765ea883de42b5b8546d8c6c18b329ef13d02a8e049078da6273a10",
+  "current_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "classifier_selected": false,
+    "device_identity_receipt_count": 0,
+    "live_plan_instance_count": 0,
+    "no_intervention_declaration_count": 0,
+    "raw_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "sensor_network_address_selected": false
+  },
+  "evidence_sha256": {
+    "raw_capture_protocol": "9d71073e3620e1b3447a9bc11952c1a3a909ec7b14fa14cfda075f8d3fdbc5a7",
+    "session_provenance_protocol": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b"
+  },
+  "execution_boundary": {
+    "capture_order_selected": false,
+    "live_execution_authorized": false,
+    "network_io_implemented": false,
+    "plan_generation_authorized": true,
+    "sensor_reachability_probe_implemented": false,
+    "status_polling_period_selected": false,
+    "subprocess_execution_implemented": false
+  },
+  "manufacturer_fixed_read_only_paths": {
+    "diagnostic": "/cgi/diag.json",
+    "identity": "/cgi/info.json",
+    "status": "/cgi/status.json"
+  },
+  "non_adopted_defaults": {
+    "capture_duration_default_adopted": false,
+    "capture_interface_default_adopted": false,
+    "manufacturer_default_data_port_adopted": false,
+    "manufacturer_default_telemetry_port_adopted": false,
+    "manufacturer_example_ipv4_adopted": false
+  },
+  "raw_evidence_outputs": {
+    "diagnostic_body": "diagnostic.json",
+    "diagnostic_headers": "diagnostic.headers",
+    "identity_body": "info.json",
+    "identity_headers": "info.headers",
+    "measurement_packets": "measurement_packets.pcap",
+    "position_packets": "position_packets.pcap",
+    "status_body": "status.json",
+    "status_headers": "status.headers"
+  },
+  "required_runtime_inputs_no_defaults": {
+    "acquisition_session_id": true,
+    "capture_duration_seconds": true,
+    "capture_interface": true,
+    "data_udp_port": true,
+    "output_directory": true,
+    "sensor_ipv4": true,
+    "split": true,
+    "telemetry_udp_port": true
+  },
+  "schema": "TRUST_ROBOT_PHASE5_LIVE_ACQUISITION_PLAN_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_nonclaims": {
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "fixed_offset_selected": false,
+    "host_capture_time_is_physical_measurement_time": false,
+    "http_status_establishes_health_label": false,
+    "interpolation_selected": false,
+    "packet_capture_establishes_baseline_nominality": false,
+    "plan_accepts_supervision_source": false,
+    "raw_capture_establishes_interval_binding": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "timing_tolerance_selected": false
+  },
+  "scope": {
+    "hardware_model": "VLP-32C",
+    "hardware_vendor": "Velodyne",
+    "modality": "lidar",
+    "purpose": "Construct a deterministic candidate argv plan for future raw evidence acquisition without performing network or sensor operations."
+  },
+  "status": "non_executing_parameterized_plan_no_live_sensor_contact"
+}

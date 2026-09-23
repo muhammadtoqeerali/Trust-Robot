@@ -1,0 +1,139 @@
+{
+  "contract_id": "trust_robot_phase5_multimodal_diagnostic_foundation_v1",
+  "frozen_lidar_binding": {
+    "feature_contract_id": "trust_robot_phase4_validated_lidar_diagnostic_feature_contract_v1",
+    "feature_names": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "feature_selection_reopened": false,
+    "feature_units": [
+      "count",
+      "count",
+      "count",
+      "count",
+      "m"
+    ],
+    "phase4_freeze_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88"
+  },
+  "modality_contracts": [
+    {
+      "feature_contract_id": null,
+      "feature_contract_status": "interface_only_feature_contract_unselected",
+      "feature_specs": [],
+      "health_training_authorized": false,
+      "known_source_stream_candidates": [
+        "/camera/color/image_raw/compressed"
+      ],
+      "modality": "camera",
+      "physical_validation_deferred": true,
+      "role": "core",
+      "selected_source_stream_id": null
+    },
+    {
+      "feature_contract_id": null,
+      "feature_contract_status": "interface_only_feature_contract_unselected",
+      "feature_specs": [],
+      "health_training_authorized": false,
+      "known_source_stream_candidates": [
+        "/camera/imu",
+        "/handsfree/imu"
+      ],
+      "modality": "imu",
+      "physical_validation_deferred": true,
+      "role": "core",
+      "selected_source_stream_id": null
+    },
+    {
+      "feature_contract_id": "trust_robot_phase4_validated_lidar_diagnostic_feature_contract_v1",
+      "feature_contract_status": "validated_phase4_feature_contract",
+      "feature_specs": [
+        {
+          "name": "source_point_count",
+          "unit": "count"
+        },
+        {
+          "name": "target_point_count",
+          "unit": "count"
+        },
+        {
+          "name": "fixed_point_iterations",
+          "unit": "count"
+        },
+        {
+          "name": "final_correspondence_count",
+          "unit": "count"
+        },
+        {
+          "name": "final_nearest_neighbor_rmse_m",
+          "unit": "m"
+        }
+      ],
+      "health_training_authorized": false,
+      "known_source_stream_candidates": [
+        "/velodyne_points"
+      ],
+      "modality": "lidar",
+      "physical_validation_deferred": true,
+      "role": "core",
+      "selected_source_stream_id": "/velodyne_points"
+    },
+    {
+      "feature_contract_id": null,
+      "feature_contract_status": "interface_only_feature_contract_unselected",
+      "feature_specs": [],
+      "health_training_authorized": false,
+      "known_source_stream_candidates": [
+        "/ublox/fix",
+        "/ublox/navstatus"
+      ],
+      "modality": "gnss",
+      "physical_validation_deferred": true,
+      "role": "optional",
+      "selected_source_stream_id": null
+    }
+  ],
+  "physical_validation": {
+    "camera": "deferred",
+    "gnss": "optional_deferred",
+    "imu": "deferred",
+    "lidar": "phase4_diagnostic_contract_validated_health_supervision_deferred"
+  },
+  "schema": "TRUST_ROBOT_PHASE5_MULTIMODAL_DIAGNOSTIC_FOUNDATION_V1",
+  "scientific_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "calibration_temperature_selected": false,
+    "camera_feature_contract_selected": false,
+    "classifier_model_selected": false,
+    "classifier_training_authorized": false,
+    "confirmation_data_selection_authorized": false,
+    "final_localization_error_used_as_health_supervision": false,
+    "gnss_feature_contract_selected": false,
+    "health_probability_output_enabled": false,
+    "health_state_output_enabled": false,
+    "health_threshold_selected": false,
+    "imu_feature_contract_selected": false,
+    "lidar_feature_contract_changed": false,
+    "real_health_label_count": 0
+  },
+  "scope": {
+    "availability_is_health_label": false,
+    "core_modalities": [
+      "camera",
+      "imu",
+      "lidar"
+    ],
+    "do_not_fabricate_missing_modalities": true,
+    "optional_modalities": [
+      "gnss"
+    ],
+    "shared_health_states": [
+      "healthy",
+      "degraded",
+      "unusable"
+    ]
+  }
+}

@@ -2321,6 +2321,593 @@ closure record.
 The Git commit containing this closure and freeze manifest will be the
 authoritative Phase-4 promotion checkpoint.
 
+
+## Phase-5 prospective three-state health semantics
+
+Phase 5 is the active implementation frontier.
+
+Objective:
+
+**Three-state modality-health model.**
+
+Required exit evidence:
+
+**Healthy/degraded/unusable classifier.**
+
+The Phase-5 frontier audit found no existing native TRUST-ROBOT three-state
+health vocabulary or classifier suitable for adoption.
+
+The inherited `imu_reliability` runtime trust-state and numeric policy are not
+adopted as TRUST-ROBOT defaults.
+
+A new prospective semantic contract now defines exactly three states:
+
+- `healthy`;
+- `degraded`;
+- `unusable`.
+
+These states are semantic health categories, not localization-accuracy scores,
+diagnostic thresholds, reliability scores, factor weights or suppression
+commands.
+
+Future real-data health labels require explicit prospective provenance
+independent of final estimator scoring and confirmation-test outcomes.
+
+Clean-branch identity alone is not a healthy label.
+
+Synthetic corruption identity alone is not a degraded or unusable label.
+
+A diagnostic value or diagnostic threshold alone is not a health label.
+
+No existing Phase-4 diagnostic record has been health-labelled.
+
+No classifier structure, training-label source, diagnostic threshold, health
+threshold, model or calibration has been selected.
+
+The frozen Phase-4 five-feature LiDAR diagnostic contract is unchanged.
+
+No reference or confirmation-test data are used.
+
+No association, alignment, ATE, RPE or estimator scoring is performed.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this semantic layer:
+
+**378 / 378 PASS.**
+
+
+## Phase-5 prospective health-supervision source protocol
+
+The prospective Phase-5 semantic contract remains label-free.
+
+A subsequent read-only provenance audit found:
+
+- runtime health-label provenance instances: 0;
+- real healthy/degraded/unusable assignments: 0;
+- accepted health-label supervision sources: 0.
+
+A native supervision-source protocol now defines what any future candidate
+source must provide before acceptance can even be considered.
+
+Required candidate evidence includes explicit source identity, modality,
+measurement role, source kind, evidence description, supported health states
+and documented state criteria.
+
+Candidate evidence must be prospectively declared, grounded in the modality's
+measurement role, independent of final estimator scoring and independent of
+confirmation-test outcomes.
+
+Clean identity alone is insufficient.
+
+Corruption identity alone is insufficient.
+
+A diagnostic value or threshold alone is insufficient.
+
+Reference metrics and ATE/RPE are prohibited health-label bases.
+
+Historical `imu_reliability` policy remains non-adopted.
+
+A classifier's own output cannot serve as its supervision.
+
+Passing the candidate-source validator does not accept a source and does not
+assign a label.
+
+The current accepted supervision-source count remains **0**.
+
+The current real health-label count remains **0**.
+
+No classifier structure, feature selection, threshold, model or calibration
+has been selected.
+
+The frozen Phase-4 five-feature LiDAR diagnostic contract is unchanged.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this protocol layer:
+
+**378 / 378 PASS.**
+
+
+## Phase-5 prospective controlled measurement-availability supervision
+
+The frozen LiDAR frontend has an explicitly audited structural
+measurement-role boundary:
+
+- XYZ shape `(N,3)`;
+- finite values;
+- at least 3 points.
+
+The `N >= 3` rule is algorithmic structural admissibility and is **not** a
+health threshold.
+
+Phase-4 remains exactly five features.
+
+Missing modality evidence may not be represented by a fabricated zero feature
+vector.
+
+A prospective controlled measurement-availability supervision protocol now
+defines three experimental evidence relations:
+
+- `full`: exact preservation of independently verified nominal source
+  measurement evidence;
+- `partial`: independently verified removal of a nonempty strict proper
+  subset while retained evidence remains structurally admissible;
+- `absent`: independently verified complete measurement absence.
+
+If a future supervision source is separately reviewed and accepted, these
+relations prospectively map to:
+
+- `full` -> `healthy`;
+- `partial` -> `degraded`;
+- `absent` -> `unusable`.
+
+Independent baseline nominality is mandatory.
+
+Therefore absence of an intervention alone does not make an arbitrary M2DGR
+clean record healthy.
+
+Existing M2DGR clean branches remain unlabelled.
+
+No baseline-nominality source has been selected.
+
+No concrete partial intervention mechanism has been selected.
+
+No complete-unavailability intervention mechanism has been selected.
+
+No retained fraction, point count, ring count, azimuth width or other numeric
+severity has been selected.
+
+Accepted supervision-source count remains **0**.
+
+Real health-label count remains **0**.
+
+The five-feature Phase-4 contract remains unchanged.
+
+A fail-closed missing-record branch around the eventual five-feature
+classifier remains an architectural possibility, not a selected
+implementation.
+
+No classifier structure, threshold, model or calibration has been selected.
+
+No reference or confirmation-test data are used.
+
+No ATE/RPE or estimator scoring is performed.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this protocol layer:
+
+**398 / 398 PASS.**
+
+
+## Phase-5 prospective baseline-nominality evidence protocol
+
+The existing evidence audit found no accepted independent interval-bound
+baseline-nominality source for the LiDAR modality.
+
+A new prospective evidence protocol therefore defines what a future source
+must prove before a controlled `full` condition can contribute a healthy
+training label.
+
+For the currently bound Velodyne VLP-32C hardware, the candidate requires
+manufacturer-grounded positive operational evidence:
+
+- Motor State = `ON`;
+- Laser State = `ON`;
+- Thermal Status = `Ok`.
+
+Those discrete operational states are **not** numeric Phase-5 thresholds and
+do not make the manufacturer manual itself a runtime receipt.
+
+The candidate additionally requires exact source-measurement identity,
+acquisition-session provenance, interval provenance, raw status evidence,
+explicit interval-binding evidence and a no-deliberate-intervention receipt.
+
+No temporal tolerance, fixed offset, interpolation or nearest-neighbor
+association is selected by this protocol.
+
+The concrete acquisition mechanism remains unselected.
+
+The concrete interval-binding mechanism remains unselected.
+
+No candidate baseline-nominality receipt exists yet.
+
+Accepted baseline-nominality source count remains **0**.
+
+Accepted health-supervision source count remains **0**.
+
+Real health-label count remains **0**.
+
+Controlled corruption generation remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+Classifier training remains unauthorized.
+
+No Phase-4 diagnostic value, localization score, reference trajectory or
+confirmation-test result can establish baseline nominality.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this protocol layer:
+
+**416 / 416 PASS.**
+
+
+## Phase-5 prospective baseline-nominality raw-capture format
+
+The offline acquisition-feasibility audit found that the local environment has
+basic raw-acquisition primitives, while live hardware and interval binding
+remain unverified.
+
+A prospective raw-capture format now defines four evidence artifact kinds:
+
+- measurement;
+- sensor status;
+- sensor diagnostic;
+- position packet.
+
+The multi-artifact design is deliberate.
+
+The manufacturer documents `cgi/status.json` for motor/laser state, while
+Thermal Status is documented in the position packet at offset `0xCB`.
+
+The audit did not establish an explicit Thermal Status field in the HTTP
+status or diagnostic sections.
+
+Each raw artifact receipt preserves exact raw-byte and capture-metadata
+SHA-256 identities plus host capture start/end observations.
+
+Host capture timestamps remain transport/provenance evidence only.
+
+They are not treated as physical LiDAR measurement timestamps.
+
+No interval association mechanism is selected.
+
+No timing tolerance, fixed offset or interpolation is selected.
+
+No sensor network address is selected.
+
+No live capture mechanism is selected.
+
+No live sensor has been contacted.
+
+No raw capture artifact exists yet.
+
+No candidate baseline-nominality receipt exists yet.
+
+Accepted baseline-nominality source count remains **0**.
+
+Accepted health-supervision source count remains **0**.
+
+Real health-label count remains **0**.
+
+Raw evidence capture alone does not establish baseline nominality or health.
+
+Controlled corruption generation remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+Classifier training remains unauthorized.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this raw-capture format layer:
+
+**436 / 436 PASS.**
+
+
+## Phase-5 prospective acquisition-session provenance
+
+The manufacturer identity audit establishes that the VLP-32C information
+interface `/cgi/info.json` exposes sensor model, serial number and firmware
+versions.
+
+The manufacturer also states that each sensor has a unique factory-assigned
+Serial Number that cannot be changed.
+
+The prospective session-provenance format therefore selects the manufacturer
+serial number as the primary physical-device identity field.
+
+The active MAC address is not used as primary identity because the manual
+documents a user-configurable MAC override.
+
+A network address is not treated as physical-device identity.
+
+Firmware versions are preserved only as runtime/configuration context.
+
+The manufacturer snapshot `info.serial` field is available as optional future
+corroboration but is not required or selected for live capture.
+
+A separate prospective no-intervention declaration format is also defined.
+
+That declaration records that the intended baseline condition is `full` and
+that no deliberate availability intervention has been applied before the
+controlled-intervention phase.
+
+The declaration is procedural provenance, not physical health truth.
+
+No live sensor has been contacted.
+
+No `/cgi/info.json` response has been captured.
+
+No real serial number has been observed.
+
+No network address has been selected.
+
+Device-identity receipt count remains **0**.
+
+No-intervention declaration count remains **0**.
+
+Session-provenance bundle count remains **0**.
+
+Accepted baseline-nominality source count remains **0**.
+
+Accepted health-supervision source count remains **0**.
+
+Real health-label count remains **0**.
+
+No interval binding, timing tolerance, fixed offset or interpolation is
+selected.
+
+Controlled corruption generation remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+Classifier training remains unauthorized.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this provenance layer:
+
+**458 / 458 PASS.**
+
+
+## Phase-5 non-executing parameterized live-acquisition plan
+
+A deterministic plan-only tool now exists for a future VLP-32C raw-evidence
+acquisition.
+
+The tool requires the future operator to provide explicitly:
+
+- sensor IPv4 address;
+- capture interface;
+- data UDP port;
+- telemetry UDP port;
+- capture duration;
+- output directory;
+- acquisition-session identity;
+- TRAIN or VALIDATION split.
+
+The manufacturer example/default address and packet-port defaults are not
+adopted by the protocol.
+
+The plan emits argv arrays for read-only `/cgi/info.json`,
+`/cgi/status.json`, `/cgi/diag.json`, measurement-packet capture and
+position-packet capture.
+
+The implementation performs no subprocess execution and no network I/O.
+
+No sensor has been contacted.
+
+No real sensor address has been selected.
+
+No capture order is selected.
+
+No status polling period is selected.
+
+No interval binding, timing tolerance, fixed offset or interpolation is
+selected.
+
+Generating a plan does not establish baseline nominality, accepted
+supervision or a health label.
+
+Raw capture artifact count remains **0**.
+
+Device-identity receipt count remains **0**.
+
+No-intervention declaration count remains **0**.
+
+Accepted baseline-nominality source count remains **0**.
+
+Accepted health-supervision source count remains **0**.
+
+Real health-label count remains **0**.
+
+Live execution remains unauthorized.
+
+Controlled corruption generation remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+Classifier training remains unauthorized.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this plan-only layer:
+
+**484 / 484 PASS.**
+
+
+## Phase-5 live-executor safety contract
+
+The offline execution-readiness audit exposed four unresolved engineering
+boundaries: actual capture permission, crash-safe output publication, bounded
+HTTP requests and packet-capture finalization semantics.
+
+A non-networked executor-safety contract now selects a fail-closed local
+publication policy.
+
+A future executor must use an explicitly supplied absolute output root and
+reserve a fresh acquisition-session directory.
+
+Session-directory collisions are rejected.
+
+Artifacts must be written first to same-directory `.partial` files.
+
+Files are fsynced and hashed before publication, atomically published, the
+directory is fsynced, and final SHA-256 must match the prepublication hash.
+
+Existing final artifacts may not be overwritten.
+
+A future invocation must explicitly supply HTTP connection and total-request
+timeout values.
+
+No numeric HTTP timeout values are selected by the protocol.
+
+Those engineering bounds are not sensor-time or evaluation-association
+tolerances.
+
+A deterministic classic-PCAP structural validation policy is also defined.
+
+Raw PCAP evidence requires recognized PCAP structure, complete packet-record
+boundaries and at least one complete packet.
+
+This structural rule does not establish sensor health.
+
+Process return code, deadline expiry, SIGINT request and kill-after-grace
+state are preserved separately in a future finalization receipt.
+
+GNU timeout return code `124` alone establishes neither successful nor failed
+capture.
+
+Actual tcpdump capture permission remains unverified.
+
+Actual tcpdump SIGINT finalization remains unverified.
+
+Network execution is not implemented.
+
+Subprocess execution is not implemented.
+
+No real output root is selected.
+
+No capture interface is selected.
+
+No sensor network address is selected.
+
+Raw capture artifact count remains **0**.
+
+Accepted baseline-nominality source count remains **0**.
+
+Accepted health-supervision source count remains **0**.
+
+Real health-label count remains **0**.
+
+Live executor implementation ready remains **false**.
+
+Live execution remains unauthorized.
+
+No interval binding, timing tolerance, fixed offset or interpolation is
+selected.
+
+Health-label generation remains unauthorized.
+
+Classifier training remains unauthorized.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this safety-contract layer:
+
+**512 / 512 PASS.**
+
+
+## Phase-5 unprivileged dual-UDP receiver
+
+The workstation packet-sniffing path is privilege-blocked for the current
+account, but a separate loopback audit verified ordinary user-space
+`AF_INET` / `SOCK_DGRAM` reception for two simultaneous UDP streams.
+
+A pure user-space dual-UDP receiver is now implemented.
+
+It requires explicit future values for acquisition-session identity, TRAIN
+or VALIDATION split, local bind IPv4 address, measurement UDP destination
+port, position UDP destination port, capture duration and absolute output
+root.
+
+No actual VLP-32C address, port or workstation bind address is selected by
+this implementation.
+
+The receiver preserves exact delivered UDP payload bytes in per-stream
+archives.
+
+Per-datagram JSONL metadata preserves payload boundaries, SHA-256, source
+IPv4/UDP endpoint and host userspace receive timestamps.
+
+Host receive timestamps remain transport provenance only.
+
+Ethernet, IP and UDP headers are not preserved because this is endpoint UDP
+reception rather than passive interface sniffing.
+
+Receipt of datagrams does not prove absence of packet loss.
+
+No packet-rate, packet-count or timing health threshold is introduced.
+
+Successful stream artifacts use the frozen same-directory partial-file,
+fsync, SHA-256 and atomic-publication contract.
+
+A stream with zero received datagrams is not published as raw evidence by
+this receiver; this is fail-closed acquisition handling and not a health
+label.
+
+The first targeted test run reached 27/28 PASS. Its sole failure was a test
+false positive caused by searching source text for the word `sudo`, which
+also occurs in the intended `requires_sudo: false` metadata declaration.
+
+The receiver module and configuration were not changed during recovery. The
+test was corrected to validate the actual socket constructor structurally:
+`AF_INET` plus `SOCK_DGRAM`, with `SOCK_RAW` and `AF_PACKET` prohibited.
+
+Loopback receiver execution is verified.
+
+Real VLP-32C receiver execution remains unverified.
+
+No real sensor has been contacted.
+
+Raw real-sensor capture artifact count remains **0**.
+
+Accepted baseline-nominality source count remains **0**.
+
+Accepted health-supervision source count remains **0**.
+
+Real health-label count remains **0**.
+
+No interval binding, timing tolerance, fixed offset or interpolation is
+selected.
+
+Health-label generation remains unauthorized.
+
+Classifier training remains unauthorized.
+
+Real-sensor execution remains unauthorized.
+
+Phase-5 exit evidence remains **NOT YET SATISFIED**.
+
+Current TRUST-ROBOT regression after this receiver layer and targeted test
+recovery:
+
+**540 / 540 PASS.**
+
 ## Synchronization state
 
 At the calibration-verification checkpoint:
@@ -2402,3 +2989,326 @@ Long workstation scans must use a detached process with PID and persistent log.
 
 Short metadata validation, finalization, and unit-test commands may run
 interactively.
+
+## Phase 5 multimodal diagnostic foundation candidate V1
+
+Status: **implemented locally; not promoted; empirical health training and
+physical multimodal validation remain blocked/deferred.**
+
+The Phase-5 architecture is now explicitly multimodal around the project core:
+
+- camera / vision;
+- IMU;
+- LiDAR / depth;
+- GNSS as optional/platform-dependent input.
+
+A common modality adapter and measurement-availability contract is implemented
+without creating health labels from mere stream presence or absence.
+
+The frozen Phase-4 LiDAR diagnostic feature contract remains unchanged and is
+bound by its existing freeze SHA-256. Camera, IMU and GNSS diagnostic feature
+contracts remain intentionally unselected pending their own validated
+diagnostic evidence.
+
+No classifier architecture, learned weights, health threshold, calibration
+temperature or real healthy/degraded/unusable assignment has been selected.
+Classifier training remains unauthorized. Confirmation-test data remain closed
+to model/threshold/calibration/supervision selection. No ATE/RPE or final
+trajectory scoring has been performed.
+
+Physical hardware integration is deferred. Later hardware work should populate
+the existing adapter/evidence interfaces rather than redefine the common
+Phase-5 health architecture.
+
+Artifacts:
+
+- `configs/trust_robot/phase5_multimodal_diagnostic_foundation_candidate_v1.json`
+  SHA-256 `37cba4494f1d84b16d3d84d106303bf649874bb3fb58c6b626ea6b5aeb1ce8a3`
+- `src/trust_robot/multimodal_diagnostic_foundation.py`
+  SHA-256 `429778265826f839bd685a93d77b55d4bb0c18a2aa843c8947af28fef9916b43`
+- `tests/trust_robot/test_multimodal_diagnostic_foundation.py`
+  SHA-256 `81c6cbe04cb7487d16e56816c1e73229a0e509edc1fbd224c1cdc010373fd471`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_MULTIMODAL_DIAGNOSTIC_FOUNDATION_V1.md`
+  SHA-256 `3a16c724647ad7c862c0c10c4953e7705df0b7491515734d47ae7df5ab90d858`
+
+Scientific counters remain:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real healthy/degraded/unusable assignments: 0;
+- classifier training authorized: false.
+
+## Phase 5 camera / IMU raw observation adapter candidate V1
+
+Status: **implemented locally; not promoted; camera/IMU diagnostic feature
+selection remains intentionally deferred.**
+
+The common Phase-5 multimodal foundation now has a concrete raw-observation
+adapter for the M2DGR camera and IMU streams:
+
+- `/camera/color/image_raw/compressed`;
+- `/camera/imu`;
+- `/handsfree/imu`.
+
+The adapter preserves serialized-message digest/size, source stream, split role,
+message index, caller-supplied message type, bag record time and optional header
+timestamp. It does not decode the payload or select diagnostic features.
+
+Bag record time remains transport/container time only. Header timestamp
+presence does not prove physical capture-time semantics, a shared clock,
+synchronization, fixed offset or interpolation rule.
+
+No camera or IMU health label, probability, threshold, model, calibration
+parameter or training action is enabled. Confirmation-test data remain
+prohibited for feature/model/threshold/calibration/supervision selection.
+
+Artifacts:
+
+- `configs/trust_robot/phase5_camera_imu_observation_adapter_candidate_v1.json`
+  SHA-256 `1dd104b036e46b94990600e5484a465081a7f7f95adaa2b17b634838f222d8cd`
+- `src/trust_robot/camera_imu_observation_adapter.py`
+  SHA-256 `1ef9e34e4309fb420d05a8e14671803e5591b1efe7f07257a60ece8d9c611a92`
+- `tests/trust_robot/test_camera_imu_observation_adapter.py`
+  SHA-256 `97ea89e262ef26ab92fe66a0529f9e6439c023b7d34a8352117bf796df0e6b11`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_OBSERVATION_ADAPTER_V1.md`
+  SHA-256 `4814bf4035bb1ea4fdda8e8c1a356c86fd0cc0dee2f90666e23f50defe5766f5`
+
+Scientific counters remain unchanged:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real healthy/degraded/unusable assignments: 0;
+- classifier training authorized: false.
+
+## Phase 5 camera / IMU TRAIN ingestion runner candidate V1
+
+Status: **implemented locally; not promoted; complete 22-trajectory TRAIN
+execution remains pending.**
+
+A deterministic real-M2DGR ingestion runner now exists for the Phase-5 camera
+and IMU raw-observation adapter.
+
+Its execution population is exactly the 22 frozen TRAIN trajectories. It reads
+only:
+
+- `/camera/color/image_raw/compressed`;
+- `/camera/imu`;
+- `/handsfree/imu`.
+
+It does not open validation or confirmation-test bags and does not read
+reference/GT/GNSS/pose/odometry/TF streams.
+
+Per-message raw receipts are aggregated into deterministic stream digests plus
+counts/byte totals and directly represented first/last timing fields. Missing
+streams remain explicit rather than being fabricated.
+
+No camera/IMU feature contract, health label, probability, threshold,
+classifier, synchronization offset, interpolation rule, ATE/RPE or final score
+is selected or computed.
+
+Artifacts:
+
+- `configs/trust_robot/phase5_camera_imu_train_ingestion_candidate_v1.json`
+  SHA-256 `4a1794c81528bcd04165e4da52b60e10b5140a0a276452aa2cf269a4d66c3b9b`
+- `src/trust_robot/camera_imu_train_ingestion.py`
+  SHA-256 `9d5e75a3122be841cc9e4dfd952e4c97d92769fd2a9ab4e81bd93c213f5681bd`
+- `scripts/trust_robot/run_phase5_camera_imu_train_ingestion_v1.py`
+  SHA-256 `10c6ecd8d89eb21ae3aa48a4b500ce241ae2ca5621f8de0f48cb84746f454f9d`
+- `tests/trust_robot/test_camera_imu_train_ingestion.py`
+  SHA-256 `e49fb96f679cc93eefc40446b71656083aea2c37b484d0eb04077c13d2e2955e`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_TRAIN_INGESTION_V1.md`
+  SHA-256 `e931a45690b0edc5e293aa7f6f289bab1e3d6c0e5f413122bfe043040413ae2d`
+
+Scientific counters remain unchanged:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real healthy/degraded/unusable assignments: 0;
+- classifier training authorized: false.
+
+## Phase 5 camera / IMU frozen TRAIN source evidence V1
+
+Status: **verified real TRAIN source evidence frozen locally; not promoted;
+camera/IMU diagnostic feature selection remains pending.**
+
+The complete camera/IMU TRAIN ingestion finished and was independently
+verified across all 22 frozen TRAIN trajectories.
+
+Verified total:
+
+- 2,816,957 selected camera/IMU observations;
+- 4,320,203,720 serialized payload bytes.
+
+Camera `/camera/color/image_raw/compressed` and D435i `/camera/imu` are present
+on 20/22 TRAIN trajectories and absent on `street_010` and `street_09`.
+
+HandsFree `/handsfree/imu` is present on 22/22 TRAIN trajectories.
+
+Representative feasibility inspection additionally established successful
+Pillow decoding for 20/20 inspected TRAIN JPEG camera observations and finite
+representative inertial fields for both IMU streams.
+
+These observations are source/feasibility evidence only. They do not select a
+camera or IMU feature vector and do not create healthy/degraded/unusable
+labels.
+
+Artifacts:
+
+- `manifests/trust_robot_phase5_camera_imu_train_source_evidence_v1.json`
+  SHA-256 `d4d2a73ddbcf73102cec0d0d4556fa65786a408217fefe1dece0f4d402cce675`
+- `src/trust_robot/camera_imu_train_source_evidence.py`
+  SHA-256 `4fc2321532b7889d1b356919ee60d9036e4171221607c90d0e34f7ef9e213a73`
+- `tests/trust_robot/test_camera_imu_train_source_evidence.py`
+  SHA-256 `62eaa35c7ef2c2f89f2f23d4eae5e84185bf64c122fa9e191a3ee1200b4ae3b8`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_TRAIN_SOURCE_EVIDENCE_V1.md`
+  SHA-256 `6e42f8545369337b832a63d0b372dbdabbd5d85854a4e9d5621b423a2c578a62`
+
+Scientific counters remain:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real healthy/degraded/unusable assignments: 0;
+- classifier training authorized: false.
+
+## Phase 5 camera / IMU diagnostic channel contract V1
+
+Status: **diagnostic-channel architecture implemented locally; exact
+camera/IMU numeric feature vectors intentionally remain unselected.**
+
+The project-supported persistent health evidence architecture is now explicit
+for both camera and IMU:
+
+1. low-level signal summaries;
+2. front-end diagnostics;
+3. residual-history evidence.
+
+The feature-basis audit did not identify a project-frozen exact numeric
+camera/IMU low-level feature vector. Therefore brightness, blur scores,
+acceleration norms, jerk, covariance entries, or similar quantities have not
+been silently promoted into the health contract.
+
+Camera visual relative-motion/reprojection diagnostics and IMU preintegration
+diagnostics are represented as required interfaces but are not falsely claimed
+as implemented.
+
+Phase-3 camera blur/exposure and IMU bias/drift remain controlled stressor
+families, not health features or labels.
+
+Current innovation remains explicitly separated from persistent modality health
+and reserved for the later short-horizon factor-conditioning pathway.
+
+Artifacts:
+
+- `configs/trust_robot/phase5_camera_imu_diagnostic_channel_contract_candidate_v1.json`
+  SHA-256 `de6656d35e24162dcd3ff489f21b735396c2457dae526a13be9790bb88bdf485`
+- `src/trust_robot/camera_imu_diagnostic_channels.py`
+  SHA-256 `72dd6e4a945dbd90eb84366248bcb4d3460f934b4c5875a541166aaef3282fbf`
+- `tests/trust_robot/test_camera_imu_diagnostic_channels.py`
+  SHA-256 `161fceb7c3b6498413e7ea247217405b4e181f7da5857f0544023c3ba521b3c8`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_DIAGNOSTIC_CHANNEL_CONTRACT_V1.md`
+  SHA-256 `9c9f44477c157f3bae53608c29fa5b21b37bfef9c813187065c36e9af839fb0a`
+
+Scientific counters remain:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real healthy/degraded/unusable assignments: 0;
+- classifier training authorized: false.
+
+## Phase 5 multimodal health-model software interface V1
+
+Status: **software interface implemented locally; empirical health-model
+selection/training/calibration remains evidence-blocked and deferred.**
+
+The Phase-5 three-state multimodal health-model interface now binds camera,
+IMU and LiDAR as core modalities and GNSS as optional.
+
+LiDAR retains its frozen validated Phase-4 five-feature diagnostic contract.
+
+Camera and IMU bind the three persistent-health evidence channels already
+implemented by the diagnostic-channel contract, while their exact numeric
+feature sets remain intentionally unselected.
+
+The model layer fails closed:
+
+- classifier architecture unselected;
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real health labels: 0;
+- classifier training unauthorized;
+- calibration parameter unselected;
+- health threshold unselected;
+- health inference unauthorized;
+- health-state output disabled;
+- health-probability output disabled.
+
+Availability remains distinct from health state, missing measurements are not
+zero vectors, current innovation remains separate from persistent health, and
+confirmation-test data remain closed.
+
+Artifacts:
+
+- `configs/trust_robot/phase5_multimodal_health_model_interface_candidate_v1.json`
+  SHA-256 `aa48c67cdcd19aa5af2a297f42b20d1bb4369b5dcd38bdc2c2ca9ae68ceb4ea3`
+- `src/trust_robot/multimodal_health_model.py`
+  SHA-256 `03a5575ea69631273037db6364ab3b31dc02d27e08a65627246bf92a1dc53871`
+- `tests/trust_robot/test_multimodal_health_model.py`
+  SHA-256 `c0566dd76b23d93a769ffe72f98b4d23412a7ab967eea8ab73a70976bd94215a`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_MULTIMODAL_HEALTH_MODEL_INTERFACE_V1.md`
+  SHA-256 `4d6e003bd94fc29c2dcd816c63f7838078c64aa3c90eb9dcd2c9336bbbfb3727`
+
+This establishes an implemented-but-evidence-blocked Phase-5 software
+architecture. It does not claim an empirically trained health classifier.
+
+## Phase 5 multimodal software architecture freeze V1
+
+Status: **software architecture frozen for checkpoint promotion; empirical
+health-model completion explicitly deferred.**
+
+The comprehensive Phase-5 closure audit passed with the exact expected
+63-path pre-freeze worktree and a 770-test regression.
+
+The repository-resident freeze records:
+
+- camera, IMU and LiDAR as core modalities;
+- GNSS as optional;
+- healthy/degraded/unusable semantics;
+- frozen Phase-4 LiDAR diagnostics unchanged;
+- explicit camera/IMU low-level, front-end and residual-history channels;
+- fail-closed health-model training and inference gates;
+- verified real camera/IMU TRAIN ingestion evidence.
+
+This is not a claim that an empirical health classifier has been trained.
+
+Current empirical gate remains:
+
+- camera exact feature contract selected: false;
+- IMU exact feature contract selected: false;
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real health labels: 0;
+- classifier architecture selected: false;
+- classifier training authorized: false;
+- calibration parameter selected: false;
+- health threshold selected: false;
+- health inference authorized: false;
+- physical validation deferred: true.
+
+Confirmation remains closed.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase5_multimodal_software_architecture_freeze_v1.json`
+  SHA-256 `457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a`
+- `tests/trust_robot/test_phase5_multimodal_software_architecture_freeze.py`
+  SHA-256 `f41493d1644f9343e495a2397c405a5a32cdbb30581933566f19b8879759740a`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE5_MULTIMODAL_SOFTWARE_ARCHITECTURE_FREEZE_V1.md`
+  SHA-256 `fa02bdd438473a52603c3280040c7bc64ee0511420fef62f899d37407f01cba9`
+
+Closure evidence:
+
+- report SHA-256 `997640c0a4ba316fbaa505f65a959501f2c6e142dfcc9388b716a84458f2a699`
+- JSON SHA-256 `07ddfacf44d53788f68147702eafdff5da0d0399e829cedb6a1417869028ca85`
+
+After promotion, Phase-6 software work may proceed behind these gates.
+

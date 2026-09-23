@@ -1,0 +1,149 @@
+{
+  "controlled_stressor_families": {
+    "camera": [
+      {
+        "is_diagnostic_feature": false,
+        "is_health_label": false,
+        "name": "camera_blur",
+        "role": "controlled_stressor_only"
+      },
+      {
+        "is_diagnostic_feature": false,
+        "is_health_label": false,
+        "name": "camera_exposure_degradation",
+        "role": "controlled_stressor_only"
+      }
+    ],
+    "imu": [
+      {
+        "is_diagnostic_feature": false,
+        "is_health_label": false,
+        "name": "bias_or_drift",
+        "role": "controlled_stressor_only"
+      }
+    ]
+  },
+  "current_innovation_separation": {
+    "numeric_definition_selected_here": false,
+    "persistent_health_input_selected": false,
+    "role": "short_horizon_factor_conditioning_only",
+    "separation_required": true
+  },
+  "estimator_state_concepts": {
+    "bias_state_is_automatically_health_feature": false,
+    "bias_state_is_automatically_health_label": false,
+    "imu_accelerometer_bias_named_by_project": true,
+    "imu_gyroscope_bias_named_by_project": true,
+    "imu_preintegration_named_by_project": true,
+    "visual_relative_motion_reprojection_named_by_project": true
+  },
+  "feature_selection_boundary": {
+    "camera_exact_feature_names": [],
+    "camera_feature_contract_selected": false,
+    "camera_numeric_low_level_summary_selected": false,
+    "camera_residual_history_implemented": false,
+    "current_innovation_selected_as_persistent_health_input": false,
+    "imu_exact_feature_names": [],
+    "imu_feature_contract_selected": false,
+    "imu_numeric_low_level_summary_selected": false,
+    "imu_preintegration_diagnostics_implemented": false,
+    "imu_residual_history_implemented": false,
+    "visual_frontend_diagnostics_implemented": false
+  },
+  "persistent_health_evidence_channels": {
+    "camera": [
+      {
+        "basis": "project design requires appropriate low-level signal summaries; no exact camera scalar feature set is specified",
+        "channel_kind": "low_level_signal_summary",
+        "evidence_use_role": "persistent_health_input_candidate",
+        "exact_feature_names": [],
+        "implementation_status": "basis_supported_features_unselected",
+        "modality": "camera"
+      },
+      {
+        "basis": "project design names visual relative-motion / reprojection information; no validated visual front-end diagnostic implementation exists in the current TRUST-ROBOT frontier",
+        "channel_kind": "frontend_diagnostic",
+        "evidence_use_role": "persistent_health_input_candidate",
+        "exact_feature_names": [],
+        "implementation_status": "required_interface_not_implemented",
+        "modality": "camera"
+      },
+      {
+        "basis": "project design requires residual-history evidence; camera residual-history implementation is not yet present",
+        "channel_kind": "residual_history",
+        "evidence_use_role": "persistent_health_input_candidate",
+        "exact_feature_names": [],
+        "implementation_status": "required_interface_not_implemented",
+        "modality": "camera"
+      }
+    ],
+    "imu": [
+      {
+        "basis": "project design requires appropriate low-level signal summaries; no exact IMU scalar feature set is specified",
+        "channel_kind": "low_level_signal_summary",
+        "evidence_use_role": "persistent_health_input_candidate",
+        "exact_feature_names": [],
+        "implementation_status": "basis_supported_features_unselected",
+        "modality": "imu"
+      },
+      {
+        "basis": "project design names IMU preintegration; no validated IMU-preintegration diagnostic implementation exists in the current TRUST-ROBOT frontier",
+        "channel_kind": "frontend_diagnostic",
+        "evidence_use_role": "persistent_health_input_candidate",
+        "exact_feature_names": [],
+        "implementation_status": "required_interface_not_implemented",
+        "modality": "imu"
+      },
+      {
+        "basis": "project design requires residual-history evidence; IMU residual-history implementation is not yet present",
+        "channel_kind": "residual_history",
+        "evidence_use_role": "persistent_health_input_candidate",
+        "exact_feature_names": [],
+        "implementation_status": "required_interface_not_implemented",
+        "modality": "imu"
+      }
+    ],
+    "required_channel_kinds": [
+      "low_level_signal_summary",
+      "frontend_diagnostic",
+      "residual_history"
+    ]
+  },
+  "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_DIAGNOSTIC_CHANNEL_CONTRACT_V1",
+  "scientific_boundary": {
+    "ate_rpe_computed": false,
+    "calibration_parameter_selected": false,
+    "classifier_model_selected": false,
+    "classifier_training_authorized": false,
+    "confirmation_data_used": false,
+    "cross_modal_synchronization_selected": false,
+    "final_score_computed": false,
+    "health_label_assigned": false,
+    "health_probability_emitted": false,
+    "health_threshold_selected": false,
+    "physical_measurement_time_selected": false,
+    "reference_data_used": false,
+    "validation_data_used": false
+  },
+  "scope": {
+    "camera_imu_contract_scope": [
+      "camera",
+      "imu"
+    ],
+    "core_modalities": [
+      "camera",
+      "imu",
+      "lidar"
+    ],
+    "gnss_optional_contract_changed": false,
+    "lidar_phase4_contract_reopened": false
+  },
+  "source_bindings": {
+    "feature_basis_json_sha256": "508814c7978e62edfd18c14c8369e700889871f1588b8e668ab983d97a6fb6e9",
+    "feature_basis_report_sha256": "3acf4739e53f7c832c46fe29f6be1537c4e511618437959545c178c31a03d1bd",
+    "phase3_corruption_taxonomy_sha256": "f8a572fc3c25b0effc9f5d0f5fd084a69fc712953f5ae51c0ad3a06a773c02a7",
+    "phase4_lidar_freeze_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+    "train_source_evidence_content_sha256": "60f7e92316192a28ce20221497921a2583c5413d331a803601c06bcbe256f8df",
+    "train_source_evidence_manifest_sha256": "d4d2a73ddbcf73102cec0d0d4556fa65786a408217fefe1dece0f4d402cce675"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "content_sha256": "c77078ee3ac2b189e6600ce4941abb1c1c6d372feb3fddbe2a9c85bbf81b44bd",
+  "current_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "classifier_training_authorized": false,
+    "interval_binding_selected": false,
+    "raw_capture_artifact_count": 0,
+    "real_health_label_count": 0
+  },
+  "evidence_sha256": {
+    "live_executor_safety_contract": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a",
+    "unprivileged_udp_feasibility_audit": "1d3cf0e3a7ddced3be1f4b16360208c141b4bda6ceafdd1a2596d9c2e68831af",
+    "unprivileged_udp_loopback_harness": "07373e9d5e67e6cc02637384aab86b723644d9a260e437c84c3bb05a4a3661dc"
+  },
+  "execution_boundary": {
+    "actual_bind_ipv4_selected": false,
+    "actual_measurement_udp_port_selected": false,
+    "actual_position_udp_port_selected": false,
+    "actual_sensor_ipv4_selected": false,
+    "actual_vlp32c_destination_configuration_verified": false,
+    "loopback_receiver_execution_verified": true,
+    "real_sensor_execution_authorized": false,
+    "real_sensor_receiver_execution_verified": false
+  },
+  "payload_archive_contract": {
+    "ethernet_headers_preserved": false,
+    "host_userspace_receive_monotonic_ns_recorded": true,
+    "host_userspace_receive_wall_time_ns_recorded": true,
+    "ip_headers_preserved": false,
+    "measurement_metadata": "measurement_datagrams.jsonl",
+    "measurement_payload_archive": "measurement_payloads.bin",
+    "payload_archive_contains_udp_payload_bytes_only": true,
+    "per_datagram_boundaries_preserved_by_metadata_offset_and_length": true,
+    "per_datagram_sha256_required": true,
+    "position_metadata": "position_datagrams.jsonl",
+    "position_payload_archive": "position_payloads.bin",
+    "source_ipv4_recorded": true,
+    "source_udp_port_recorded": true,
+    "udp_headers_preserved": false
+  },
+  "publication_policy": {
+    "atomic_publication_required": true,
+    "existing_final_artifact_overwrite_allowed": false,
+    "fresh_session_directory_required": true,
+    "same_directory_partial_files_required": true,
+    "sha256_before_and_after_publication_required": true
+  },
+  "receiver_semantics": {
+    "passive_interface_sniffing": false,
+    "receives_only_datagrams_delivered_to_bound_udp_socket": true,
+    "requires_cap_net_raw": false,
+    "requires_root": false,
+    "requires_sudo": false,
+    "socket_family": "AF_INET",
+    "socket_type": "SOCK_DGRAM",
+    "uses_raw_packet_socket": false,
+    "uses_tcpdump": false
+  },
+  "required_runtime_inputs_no_defaults": {
+    "absolute_output_root": true,
+    "acquisition_session_id": true,
+    "bind_ipv4": true,
+    "capture_duration_seconds": true,
+    "measurement_udp_port": true,
+    "position_udp_port": true,
+    "split": true
+  },
+  "schema": "TRUST_ROBOT_PHASE5_UNPRIVILEGED_UDP_RECEIVER_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_nonclaims": {
+    "health_label_assigned": false,
+    "source_endpoint_is_physical_device_identity": false,
+    "udp_receive_establishes_baseline_nominality": false,
+    "udp_receive_establishes_interval_binding": false,
+    "udp_receive_establishes_sensor_health": false,
+    "udp_receive_proves_no_packet_loss": false,
+    "userspace_receive_time_is_physical_measurement_time": false
+  },
+  "scope": {
+    "hardware_model": "VLP-32C",
+    "hardware_vendor": "Velodyne",
+    "modality": "lidar",
+    "purpose": "Preserve UDP datagram payload bytes delivered to two ordinary user-space sockets without packet-sniffing privileges."
+  },
+  "status": "user_space_dual_udp_receiver_loopback_verified_real_sensor_unverified"
+}

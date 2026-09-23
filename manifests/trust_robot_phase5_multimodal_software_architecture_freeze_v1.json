@@ -1,0 +1,173 @@
+{
+  "checkpoint_semantics": {
+    "confirmation_remains_closed": true,
+    "empirical_completion_claimed": false,
+    "empirical_health_model_complete": false,
+    "phase": 5,
+    "physical_validation_deferred": true,
+    "software_architecture_implemented": true,
+    "status": "software_architecture_frozen_empirical_obligations_deferred"
+  },
+  "closure_evidence": {
+    "closure_finding": "PHASE5_MULTIMODAL_SOFTWARE_ARCHITECTURE_READY_FOR_CHECKPOINT_EMPIRICAL_OBLIGATIONS_DEFERRED",
+    "closure_json_sha256": "07ddfacf44d53788f68147702eafdff5da0d0399e829cedb6a1417869028ca85",
+    "closure_report_sha256": "997640c0a4ba316fbaa505f65a959501f2c6e142dfcc9388b716a84458f2a699",
+    "pre_freeze_artifact_sha256": {
+      "configs/trust_robot/phase5_acquisition_session_provenance_candidate_v1.json": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b",
+      "configs/trust_robot/phase5_baseline_nominality_protocol_candidate_v1.json": "3e54df63f06875c3764c130922d6b967ac94075fc414510240a35e0397b89f00",
+      "configs/trust_robot/phase5_baseline_nominality_raw_capture_candidate_v1.json": "9d71073e3620e1b3447a9bc11952c1a3a909ec7b14fa14cfda075f8d3fdbc5a7",
+      "configs/trust_robot/phase5_camera_imu_diagnostic_channel_contract_candidate_v1.json": "de6656d35e24162dcd3ff489f21b735396c2457dae526a13be9790bb88bdf485",
+      "configs/trust_robot/phase5_camera_imu_observation_adapter_candidate_v1.json": "1dd104b036e46b94990600e5484a465081a7f7f95adaa2b17b634838f222d8cd",
+      "configs/trust_robot/phase5_camera_imu_train_ingestion_candidate_v1.json": "4a1794c81528bcd04165e4da52b60e10b5140a0a276452aa2cf269a4d66c3b9b",
+      "configs/trust_robot/phase5_controlled_availability_supervision_candidate_v1.json": "364d2c4d043c5a99e969ea3406d8bb338931705a236b169249b1c06c294f0361",
+      "configs/trust_robot/phase5_health_semantics_candidate_v1.json": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+      "configs/trust_robot/phase5_health_supervision_protocol_candidate_v1.json": "08d65e6bca3a87df8d23cb2992bdb84544c66c51df764d3539ceac0fb6a95adc",
+      "configs/trust_robot/phase5_live_acquisition_plan_candidate_v1.json": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+      "configs/trust_robot/phase5_live_executor_safety_candidate_v1.json": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a",
+      "configs/trust_robot/phase5_multimodal_diagnostic_foundation_candidate_v1.json": "37cba4494f1d84b16d3d84d106303bf649874bb3fb58c6b626ea6b5aeb1ce8a3",
+      "configs/trust_robot/phase5_multimodal_health_model_interface_candidate_v1.json": "aa48c67cdcd19aa5af2a297f42b20d1bb4369b5dcd38bdc2c2ca9ae68ceb4ea3",
+      "configs/trust_robot/phase5_unprivileged_udp_receiver_candidate_v1.json": "96cd1be3cf9ec3a55721cb496cac32a61279682bdf2d11d16b479568435c3b90",
+      "docs/TRUST_ROBOT_PROJECT_STATE.md": "89ab49a3c7c9d59e75248cad5c77f0a6c1cd991272a60f60ba18326e02a78403",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_ACQUISITION_SESSION_PROVENANCE_V1.md": "f20b34b32bf59dcc2cd467d18a4048f37af9facaac87cf82329f1657393f7204",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_BASELINE_NOMINALITY_PROTOCOL_V1.md": "3c2c8f342441e02bae675d4107775ef3f61bf08a7100bfb3fe1e3383b2912088",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_BASELINE_NOMINALITY_RAW_CAPTURE_V1.md": "77585933a1b217a88da8a19ce7b2a0347517ba34e7c5070e92d1fcc605f6ff31",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_DIAGNOSTIC_CHANNEL_CONTRACT_V1.md": "9c9f44477c157f3bae53608c29fa5b21b37bfef9c813187065c36e9af839fb0a",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_OBSERVATION_ADAPTER_V1.md": "4814bf4035bb1ea4fdda8e8c1a356c86fd0cc0dee2f90666e23f50defe5766f5",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_TRAIN_INGESTION_V1.md": "e931a45690b0edc5e293aa7f6f289bab1e3d6c0e5f413122bfe043040413ae2d",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CAMERA_IMU_TRAIN_SOURCE_EVIDENCE_V1.md": "6e42f8545369337b832a63d0b372dbdabbd5d85854a4e9d5621b423a2c578a62",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_CONTROLLED_AVAILABILITY_SUPERVISION_V1.md": "129e7447059cc2ffd8ebf67b1bf360dd4f4c8a7e975628f9af29d3a548881ada",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_HEALTH_SEMANTICS_V1.md": "bb16987cd5d89c6ec76e48fefdacfa257a4ad63c9dfc66c4dbbda9b7dd7881f9",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_HEALTH_SUPERVISION_PROTOCOL_V1.md": "a626d9d4730905eb8f95d2a109bad3e71cd1a4f89bbb1306e2b42e4436e5f460",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_LIVE_ACQUISITION_PLAN_V1.md": "6756c9527a00ae394b075314721d77b2ec52224194a9fff20a4d974f34259052",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_LIVE_EXECUTOR_SAFETY_V1.md": "36f28ff3e5a2800c85ef80545535c36e0d77ca734f4675aa524f64bb0a545e02",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_MULTIMODAL_DIAGNOSTIC_FOUNDATION_V1.md": "3a16c724647ad7c862c0c10c4953e7705df0b7491515734d47ae7df5ab90d858",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_MULTIMODAL_HEALTH_MODEL_INTERFACE_V1.md": "4d6e003bd94fc29c2dcd816c63f7838078c64aa3c90eb9dcd2c9336bbbfb3727",
+      "docs/audits/trust_robot/TRUST_ROBOT_PHASE5_UNPRIVILEGED_UDP_RECEIVER_V1.md": "e1e1c10f77eef88f48800e21c12157f2b3e6cd4f3e4bcdfa68fb7aa2c3981183",
+      "manifests/trust_robot_phase5_camera_imu_train_source_evidence_v1.json": "d4d2a73ddbcf73102cec0d0d4556fa65786a408217fefe1dece0f4d402cce675",
+      "scripts/trust_robot/plan_phase5_vlp32c_live_acquisition.py": "94f23ca0a270aa140f79ecdc06c371e3459570cb456a3ac78879575c173204e4",
+      "scripts/trust_robot/run_phase5_camera_imu_train_ingestion_v1.py": "10c6ecd8d89eb21ae3aa48a4b500ce241ae2ca5621f8de0f48cb84746f454f9d",
+      "src/trust_robot/acquisition_session_provenance.py": "ff79ccf0ea68355028ef9fd3fa76f431479a9a7f2fba6b60a34d75bd9bf3cf20",
+      "src/trust_robot/baseline_nominality.py": "e8cf8033800973545853fda90c234ada4caffe874be3520ba431f7aef9a86117",
+      "src/trust_robot/baseline_nominality_capture.py": "8c6402afde41e95f98a6e71a9ed557d6edb9bf34adbbce9f6ce00c573440e140",
+      "src/trust_robot/camera_imu_diagnostic_channels.py": "72dd6e4a945dbd90eb84366248bcb4d3460f934b4c5875a541166aaef3282fbf",
+      "src/trust_robot/camera_imu_observation_adapter.py": "1ef9e34e4309fb420d05a8e14671803e5591b1efe7f07257a60ece8d9c611a92",
+      "src/trust_robot/camera_imu_train_ingestion.py": "9d5e75a3122be841cc9e4dfd952e4c97d92769fd2a9ab4e81bd93c213f5681bd",
+      "src/trust_robot/camera_imu_train_source_evidence.py": "4fc2321532b7889d1b356919ee60d9036e4171221607c90d0e34f7ef9e213a73",
+      "src/trust_robot/controlled_availability_supervision.py": "460c61b15a215a9fca36162aec7644a9f565731716e5f32d727a71d2101a6040",
+      "src/trust_robot/health_semantics.py": "3499dbe9951db232b04f5b5e90e4e584f8fcd1af1906de3a64769da0972d68a4",
+      "src/trust_robot/health_supervision.py": "f1ffa072c43998b750804a5ec606570504a27c9f6c60a6aa93b4b8e02bfb1be5",
+      "src/trust_robot/live_acquisition_plan.py": "196a88bde3f96c98985121c13444190984c1622dceb648817ead8ef3320956a6",
+      "src/trust_robot/live_executor_safety.py": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+      "src/trust_robot/multimodal_diagnostic_foundation.py": "429778265826f839bd685a93d77b55d4bb0c18a2aa843c8947af28fef9916b43",
+      "src/trust_robot/multimodal_health_model.py": "03a5575ea69631273037db6364ab3b31dc02d27e08a65627246bf92a1dc53871",
+      "src/trust_robot/unprivileged_udp_receiver.py": "05e40722e15434b92d0f8aad93e4a6a9aef71a38dcd8d97e8bddc4f5ec3a385d",
+      "tests/trust_robot/test_acquisition_session_provenance.py": "a3a60a686ef1f7c9b277a858a695cea51565995c5c337183a5981e6a20471bfa",
+      "tests/trust_robot/test_baseline_nominality.py": "63934892451a6e243630fb521433423e24bc4ddd50a0df2ea23bad76834aa398",
+      "tests/trust_robot/test_baseline_nominality_capture.py": "2aa9a711f40f502970b70fd07e90bf7a672998b8147c0d877c3883c423f0547a",
+      "tests/trust_robot/test_camera_imu_diagnostic_channels.py": "161fceb7c3b6498413e7ea247217405b4e181f7da5857f0544023c3ba521b3c8",
+      "tests/trust_robot/test_camera_imu_observation_adapter.py": "97ea89e262ef26ab92fe66a0529f9e6439c023b7d34a8352117bf796df0e6b11",
+      "tests/trust_robot/test_camera_imu_train_ingestion.py": "e49fb96f679cc93eefc40446b71656083aea2c37b484d0eb04077c13d2e2955e",
+      "tests/trust_robot/test_camera_imu_train_source_evidence.py": "62eaa35c7ef2c2f89f2f23d4eae5e84185bf64c122fa9e191a3ee1200b4ae3b8",
+      "tests/trust_robot/test_controlled_availability_supervision.py": "962fb1aa7b6fd3cbd0e4db39a2852b22e08848664173e0674e968f29014a41f1",
+      "tests/trust_robot/test_health_semantics.py": "51cdb912d1aeba6808ab026eb96d0157de464ea09e5257fe9845ecdb259deb5c",
+      "tests/trust_robot/test_health_supervision.py": "932b35e389b8527f92d427fc1440fb0ed45c4d1597381b9e6899e2b24766c3c1",
+      "tests/trust_robot/test_live_acquisition_plan.py": "5d003fed18862030e4ed6ed6cf501b8dcfb706dec90b6a16bef3133230933e1d",
+      "tests/trust_robot/test_live_executor_safety.py": "1b77f4ab13404602bd245e21909027b31f36b38e7f2ceb5c821dd4b5998679d4",
+      "tests/trust_robot/test_multimodal_diagnostic_foundation.py": "81c6cbe04cb7487d16e56816c1e73229a0e509edc1fbd224c1cdc010373fd471",
+      "tests/trust_robot/test_multimodal_health_model.py": "c0566dd76b23d93a769ffe72f98b4d23412a7ab967eea8ab73a70976bd94215a",
+      "tests/trust_robot/test_unprivileged_udp_receiver.py": "a3b04c6e2c6b82388c02f2e57ac303d5bf1f1bc30871f5fd84165a922e967e68"
+    },
+    "pre_freeze_repository_path_count": 63
+  },
+  "content_sha256": "1c205188ae190864e2e9849c5750f408f4138300b250869c3e6f7d550640f7de",
+  "current_empirical_gate": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "calibration_parameter_selected": false,
+    "camera_exact_feature_contract_selected": false,
+    "classifier_architecture_selected": false,
+    "classifier_training_authorized": false,
+    "health_inference_authorized": false,
+    "health_threshold_selected": false,
+    "imu_exact_feature_contract_selected": false,
+    "real_health_label_count": 0
+  },
+  "deferred_empirical_obligations": [
+    "select and validate the exact camera diagnostic feature contract using admissible evidence",
+    "select and validate the exact IMU diagnostic feature contract using admissible evidence",
+    "obtain an accepted independent baseline-nominality source",
+    "obtain accepted prospective health-supervision sources",
+    "collect real healthy/degraded/unusable supervision under the frozen provenance rules",
+    "select classifier architecture using TRAIN/VALIDATION only after supervision becomes admissible",
+    "train the health classifier only after the training gate opens",
+    "select calibration parameters and health thresholds using VALIDATION only",
+    "perform required physical sensor and robot validation",
+    "keep confirmation_test closed until all permitted model and protocol choices are frozen"
+  ],
+  "multimodal_architecture": {
+    "camera_persistent_health_channels": [
+      "low_level_signal_summary",
+      "frontend_diagnostic",
+      "residual_history"
+    ],
+    "core_modalities": [
+      "camera",
+      "imu",
+      "lidar"
+    ],
+    "health_states": [
+      "healthy",
+      "degraded",
+      "unusable"
+    ],
+    "imu_persistent_health_channels": [
+      "low_level_signal_summary",
+      "frontend_diagnostic",
+      "residual_history"
+    ],
+    "lidar_phase4_feature_contract_reopened": false,
+    "lidar_phase4_feature_contract_validated": true,
+    "optional_modalities": [
+      "gnss"
+    ]
+  },
+  "next_phase_policy": {
+    "deferred_phase5_empirical_work_remains_binding": true,
+    "phase6_may_assume_empirical_phase5_completion": false,
+    "phase6_must_fail_closed_when_empirical_health_outputs_are_unavailable": true,
+    "phase6_software_architecture_may_proceed": true
+  },
+  "parent_frontier": {
+    "commit": "78537609beacf47fd38031a0b1f3b21e9d880fde",
+    "evaluation_protocol_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+    "phase2_freeze_sha256": "4f1daa871be72714bd257e22b43e551259d989c391230edfaac3c95f579d9da0",
+    "phase3_freeze_sha256": "330c5041cb27b9460cb2502aa3ea32b5b4e565facfa2fe5b1bc30554257189f0",
+    "phase4_freeze_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+    "prospective_split_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+    "tree": "a93ae4caa5f1d180d5c998732af3a734fcfdb0c0"
+  },
+  "protected_scientific_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "availability_is_health_label": false,
+    "confirmation_selection_authorized": false,
+    "cross_modal_synchronization_selected": false,
+    "current_innovation_selected_as_persistent_health_input": false,
+    "final_localization_error_used_as_health_supervision": false,
+    "final_scoring_authorized": false,
+    "missing_measurement_encoded_as_zero_feature_vector": false,
+    "physical_measurement_time_selected": false
+  },
+  "real_train_camera_imu_evidence": {
+    "aggregate_trajectory_record_sha256": "7deb9f57739bc75bb675114fdf1187c5d0421a252a2d4935356474a62951818c",
+    "confirmation_bags_opened": false,
+    "reference_data_read": false,
+    "run_manifest_file_sha256": "530b00d4134dd4b26043891d51e262a4ab3a2af025e740bb6bf2ab1f9b35edc7",
+    "selected_serialized_payload_bytes": 4320203720,
+    "selected_stream_message_count": 2816957,
+    "source_evidence_content_sha256": "60f7e92316192a28ce20221497921a2583c5413d331a803601c06bcbe256f8df",
+    "success_file_sha256": "2ca5852695cb80999e337b7b3df16f385a3dfda25160647ea3edcb1b0d5fa653",
+    "train_trajectory_count": 22,
+    "validation_bags_opened": false
+  },
+  "schema": "TRUST_ROBOT_PHASE5_MULTIMODAL_SOFTWARE_ARCHITECTURE_FREEZE_V1"
+}

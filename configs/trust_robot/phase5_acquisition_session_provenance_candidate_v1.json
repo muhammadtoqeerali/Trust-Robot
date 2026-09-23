@@ -1,0 +1,98 @@
+{
+  "authorization": {
+    "calibration": false,
+    "classifier_training": false,
+    "controlled_corruption_generation": false,
+    "health_label_generation": false,
+    "live_sensor_probe": false,
+    "raw_live_acquisition": false
+  },
+  "content_sha256": "1eb025e8da12d75ea4399433a103efc100a958985f23920624fc93dd1d448755",
+  "device_identity_source": {
+    "active_mac_primary_identity_allowed": false,
+    "live_network_address_selected": false,
+    "manufacturer_interface_path": "/cgi/info.json",
+    "manufacturer_returns_firmware_versions": true,
+    "manufacturer_returns_model": true,
+    "manufacturer_returns_serial_number": true,
+    "network_address_primary_identity_allowed": false,
+    "parsed_firmware_context_required": true,
+    "parsed_model_required": true,
+    "parsed_serial_required": true,
+    "primary_physical_device_identifier": "serial",
+    "raw_info_response_required": true,
+    "raw_info_response_sha256_required": true,
+    "serial_semantics": "unique_factory_assigned_not_changeable"
+  },
+  "evidence_sha256": {
+    "device_identity_feasibility_audit": "5eb9f3a591ff55d4d8a7f165303ab7821b04fdc2d2c776d805e4b3cbd615128c",
+    "raw_capture_protocol": "9d71073e3620e1b3447a9bc11952c1a3a909ec7b14fa14cfda075f8d3fdbc5a7",
+    "vlp32c_manufacturer_manual_text": "c10cb2f734229ccafb1ab95458b27a990b47a0e86de6a7ca0e0a57c3267ff1be"
+  },
+  "host_time_boundary": {
+    "fixed_offset_selected": false,
+    "host_capture_times_transport_provenance_only": true,
+    "host_time_establishes_interval_binding": false,
+    "interpolation_selected": false,
+    "timing_tolerance_selected": false
+  },
+  "no_intervention_declaration": {
+    "acquisition_session_identity_required": true,
+    "baseline_condition_required": "full",
+    "declaration_artifact_sha256_required": true,
+    "deliberate_availability_intervention_applied_required": false,
+    "format_selected": true,
+    "procedural_attestation_alone_establishes_baseline_nominality": false,
+    "procedural_attestation_is_physical_sensor_health_truth": false,
+    "prospective_before_controlled_intervention_phase_required": true,
+    "separate_artifact_required": true,
+    "split_role_required": true
+  },
+  "optional_identity_corroboration": {
+    "active_mac_required": false,
+    "snapshot_interface_path": "/cgi/snapshot.hdl",
+    "snapshot_required": false,
+    "snapshot_selected_for_live_capture": false,
+    "snapshot_serial_field": "info.serial"
+  },
+  "receipt_status": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "candidate_nominality_receipt_count": 0,
+    "device_identity_receipt_count": 0,
+    "no_intervention_declaration_count": 0,
+    "real_health_label_count": 0,
+    "session_provenance_bundle_count": 0
+  },
+  "schema": "TRUST_ROBOT_PHASE5_ACQUISITION_SESSION_PROVENANCE_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "firmware_version_is_health_truth": false,
+    "no_intervention_declaration_is_health_truth": false,
+    "phase4_feature_contract_reopened": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "serial_identity_is_health_truth": false
+  },
+  "scope": {
+    "hardware_model": "VLP-32C",
+    "hardware_vendor": "Velodyne",
+    "modality": "lidar",
+    "purpose": "Bind a future controlled acquisition session to a manufacturer-grounded physical-device serial identity and a separate prospective no-intervention declaration."
+  },
+  "selection_status": {
+    "device_identity_receipt_format_selected": true,
+    "identity_observation_interface_selected": "/cgi/info.json",
+    "interval_binding_mechanism_selected": false,
+    "live_identity_capture_executed": false,
+    "live_sensor_reachability_tested": false,
+    "primary_identity_field_selected": "serial",
+    "sensor_network_address_selected": false,
+    "snapshot_corroboration_selected": false
+  },
+  "status": "prospective_format_no_live_receipt_no_health_label"
+}

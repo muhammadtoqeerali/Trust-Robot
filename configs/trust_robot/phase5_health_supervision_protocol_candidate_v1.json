@@ -1,0 +1,82 @@
+{
+  "classifier_status": {
+    "calibration_performed": false,
+    "classifier_implemented": false,
+    "classifier_structure_selected": false,
+    "diagnostic_threshold_selected": false,
+    "feature_selection_performed": false,
+    "health_threshold_selected": false,
+    "model_trained": false
+  },
+  "content_sha256": "6ad10f14b59d3258b7e1e047c6dae69dd1c983eae5ce79fef380b8227652832a",
+  "frozen_inputs": {
+    "health_semantics_config_content_sha256": "183d8947abecb0a0a141d414717227c5db93ba761e7663c5d088ce607eb87d99",
+    "health_semantics_config_file_sha256": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+    "health_semantics_module_sha256": "3499dbe9951db232b04f5b5e90e4e584f8fcd1af1906de3a64769da0972d68a4",
+    "phase4_freeze_file_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+    "supervision_provenance_audit_sha256": "1b288d76ad91678d650c9ae6c7ce443e409824d425c7c60bcff7650d931427bb"
+  },
+  "phase": {
+    "exit_evidence": "Healthy/degraded/unusable classifier",
+    "exit_evidence_satisfied": false,
+    "number": 5,
+    "objective": "Three-state modality-health model"
+  },
+  "prohibited_label_basis": {
+    "ate_or_rpe": true,
+    "classifier_output_as_its_own_supervision": true,
+    "clean_identity_alone": true,
+    "confirmation_test_outcome": true,
+    "corruption_identity_alone": true,
+    "diagnostic_value_or_threshold_alone": true,
+    "final_estimator_score": true,
+    "historical_imu_reliability_policy": true,
+    "reference_trajectory_metric": true
+  },
+  "protocol_interpretation": {
+    "source_protocol_is_classifier": false,
+    "source_protocol_reopens_phase4_features": false,
+    "source_protocol_selects_threshold": false,
+    "valid_candidate_source_assigns_labels": false,
+    "valid_candidate_source_is_automatically_accepted": false
+  },
+  "schema": "TRUST_ROBOT_PHASE5_HEALTH_SUPERVISION_PROTOCOL_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "classifier_selected": false,
+    "confirmation_test_data_used": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "ground_truth_association_performed": false,
+    "real_health_label_assigned": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "supervision_source_accepted": false,
+    "threshold_selected": false,
+    "trajectory_scoring_performed": false
+  },
+  "source_acceptance_status": {
+    "accepted_source_count": 0,
+    "accepted_source_ids": [],
+    "candidate_source_declared": false,
+    "real_dataset_health_labels_assigned": false,
+    "real_health_label_count": 0,
+    "training_label_source_selected": false
+  },
+  "status": "prospective_protocol_no_accepted_supervision_source",
+  "supervision_source_requirements": {
+    "explicit_evidence_description_required": true,
+    "explicit_measurement_role_required": true,
+    "explicit_modality_required": true,
+    "explicit_source_id_required": true,
+    "explicit_source_kind_required": true,
+    "explicit_state_criteria_required": true,
+    "explicit_supported_states_required": true,
+    "independence_from_confirmation_test_required": true,
+    "independence_from_final_estimator_scoring_required": true,
+    "measurement_role_grounding_required": true,
+    "prospective_declaration_required": true
+  }
+}

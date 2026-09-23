@@ -1,0 +1,104 @@
+{
+  "content_sha256": "2ae3455b5a9d7e6438a5e2d09bbee0597547a28341c4a6dcd585b5c6a353a01c",
+  "current_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "actual_packet_capture_permission_verified": false,
+    "capture_interface_selected": false,
+    "classifier_selected": false,
+    "device_identity_receipt_count": 0,
+    "no_intervention_declaration_count": 0,
+    "raw_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "real_output_root_selected": false,
+    "sensor_network_address_selected": false
+  },
+  "evidence_sha256": {
+    "live_acquisition_plan": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+    "live_execution_readiness_receipt": "15e44e2937709e7b74328ff60b804ac5926444bc9b54661b9e4ab77508de8f83"
+  },
+  "execution_boundary": {
+    "actual_packet_capture_implemented": false,
+    "filesystem_safety_primitives_implemented": true,
+    "live_execution_authorized": false,
+    "live_executor_implementation_ready": false,
+    "live_sensor_probe_implemented": false,
+    "network_execution_implemented": false,
+    "subprocess_execution_implemented": false
+  },
+  "http_execution_policy": {
+    "connect_timeout_required": true,
+    "connect_timeout_value_selected_by_protocol": false,
+    "future_invocation_must_supply_values_explicitly": true,
+    "polling_period_selected": false,
+    "request_order_selected": false,
+    "retry_policy_selected": false,
+    "total_timeout_required": true,
+    "total_timeout_value_selected_by_protocol": false
+  },
+  "output_safety_policy": {
+    "absolute_output_root_required": true,
+    "atomic_replace_required": true,
+    "direct_write_to_final_artifact_path_allowed": false,
+    "directory_fsync_after_publish_required": true,
+    "existing_final_artifact_overwrite_allowed": false,
+    "file_fsync_before_publish_required": true,
+    "fresh_session_directory_required": true,
+    "pre_and_post_publish_sha256_must_match": true,
+    "same_directory_partial_file_required": true,
+    "session_directory_collision_rejected": true,
+    "sha256_after_publish_required": true,
+    "sha256_before_publish_required": true
+  },
+  "pcap_completion_policy": {
+    "actual_packet_capture_permission_verified": false,
+    "actual_tcpdump_sigint_finalization_verified": false,
+    "at_least_one_packet_required_for_raw_evidence_publication": true,
+    "classic_pcap_structural_validation_selected": true,
+    "complete_global_header_required": true,
+    "complete_packet_record_boundaries_required": true,
+    "kill_after_grace_receipt_required": true,
+    "process_terminal_state_receipt_required": true,
+    "recognized_magic_required": true,
+    "sigint_request_receipt_required": true,
+    "timeout_124_alone_determines_failure": false,
+    "timeout_124_alone_determines_success": false,
+    "timeout_return_code_alone_determines_validity": false
+  },
+  "required_future_runtime_parameters_no_defaults": {
+    "absolute_output_root": true,
+    "acquisition_session_id": true,
+    "capture_duration_seconds": true,
+    "capture_interface": true,
+    "capture_shutdown_grace_seconds": true,
+    "data_udp_port": true,
+    "http_connect_timeout_seconds": true,
+    "http_total_timeout_seconds": true,
+    "sensor_ipv4": true,
+    "split": true,
+    "telemetry_udp_port": true
+  },
+  "schema": "TRUST_ROBOT_PHASE5_LIVE_EXECUTOR_SAFETY_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_nonclaims": {
+    "ate_computed": false,
+    "confirmation_test_data_used": false,
+    "engineering_http_timeout_is_sensor_timing_tolerance": false,
+    "health_label_assigned": false,
+    "host_time_is_physical_measurement_time": false,
+    "pcap_nonzero_packet_count_establishes_healthy": false,
+    "pcap_structure_establishes_sensor_health": false,
+    "raw_capture_establishes_baseline_nominality": false,
+    "raw_capture_establishes_interval_binding": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "source_acceptance_performed": false
+  },
+  "scope": {
+    "hardware_model": "VLP-32C",
+    "hardware_vendor": "Velodyne",
+    "modality": "lidar",
+    "purpose": "Define fail-closed local filesystem, bounded-request and capture-finalization rules for a future live executor without executing any sensor or packet-capture operation."
+  },
+  "status": "offline_executor_safety_contract_no_live_execution"
+}

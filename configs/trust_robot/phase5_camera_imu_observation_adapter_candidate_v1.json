@@ -1,0 +1,43 @@
+{
+  "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+  "diagnostic_boundary": {
+    "aggregation_performed": false,
+    "camera_feature_contract_selected": false,
+    "feature_extraction_performed": false,
+    "imu_feature_contract_selected": false,
+    "normalization_performed": false
+  },
+  "health_boundary": {
+    "classifier_training_authorized": false,
+    "confirmation_selection_authorized": false,
+    "final_localization_error_used_as_supervision": false,
+    "health_probability_output_enabled": false,
+    "health_state_output_enabled": false,
+    "health_threshold_selected": false,
+    "real_health_label_count": 0
+  },
+  "raw_observation_contract": {
+    "bag_record_time_preserved": true,
+    "header_stamp_preserved_when_supplied": true,
+    "payload_decoding_required": false,
+    "serialized_payload_preserved_by_sha256": true,
+    "serialized_payload_size_preserved": true
+  },
+  "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_OBSERVATION_ADAPTER_CANDIDATE_V1",
+  "supported_streams": {
+    "camera": [
+      "/camera/color/image_raw/compressed"
+    ],
+    "imu": [
+      "/camera/imu",
+      "/handsfree/imu"
+    ]
+  },
+  "timing_boundary": {
+    "bag_record_time_is_physical_measurement_time": false,
+    "fixed_offset_selected": false,
+    "header_stamp_physical_capture_semantics_verified": false,
+    "interpolation_rule_selected": false,
+    "shared_clock_domain_verified": false
+  }
+}

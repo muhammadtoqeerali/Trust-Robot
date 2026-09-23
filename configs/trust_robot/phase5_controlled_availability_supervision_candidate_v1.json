@@ -1,0 +1,128 @@
+{
+  "anti_leakage": {
+    "confirmation_test_permitted_for_model_selection": false,
+    "confirmation_test_permitted_for_source_definition": false,
+    "confirmation_test_permitted_for_threshold_selection": false,
+    "train_permitted_for_model_construction": true,
+    "validation_permitted_for_selection_where_authorized": true
+  },
+  "baseline_nominality_requirement": {
+    "absence_of_controlled_intervention_alone_proves_healthy": false,
+    "confirmation_test_may_prove_baseline_nominality": false,
+    "existing_m2dgr_clean_branch_automatically_healthy": false,
+    "final_estimator_score_may_prove_baseline_nominality": false,
+    "independent_baseline_nominality_receipt_required": true,
+    "phase4_diagnostic_values_may_prove_baseline_nominality": false
+  },
+  "content_sha256": "91d6ae3a4a202bc690bb29e53c22ddbe82743000d8324bd427288829035f1344",
+  "controlled_conditions": {
+    "absent": {
+      "baseline_nominality_required": true,
+      "criterion": "An independently verified intervention yields complete measurement absence for a prospectively declared interval relative to an independently verified nominal baseline.",
+      "measurement_evidence_relation": "none",
+      "prospective_state_if_source_is_accepted": "unusable",
+      "retained_measurement_present": false,
+      "retained_measurement_structurally_admissible": false,
+      "specific_intervention_mechanism_selected": false,
+      "zero_feature_vector_permitted": false
+    },
+    "full": {
+      "baseline_nominality_required": true,
+      "criterion": "Independently verified nominal baseline measurement evidence is preserved exactly under the prospectively declared no-availability-intervention control.",
+      "measurement_evidence_relation": "identical",
+      "prospective_state_if_source_is_accepted": "healthy",
+      "retained_measurement_present": true,
+      "retained_measurement_structurally_admissible": true
+    },
+    "partial": {
+      "azimuth_width_selected": false,
+      "baseline_nominality_required": true,
+      "criterion": "An independently verified intervention removes a nonempty strict proper subset of independently verified nominal source measurement evidence while the retained measurement remains structurally admissible to the already-frozen frontend.",
+      "measurement_evidence_relation": "strict_proper_subset",
+      "point_count_selected": false,
+      "prospective_state_if_source_is_accepted": "degraded",
+      "retained_fraction_selected": false,
+      "retained_measurement_present": true,
+      "retained_measurement_structurally_admissible": true,
+      "ring_or_channel_count_selected": false,
+      "specific_intervention_mechanism_selected": false
+    }
+  },
+  "evidence_sha256": {
+    "health_semantics": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+    "health_supervision": "08d65e6bca3a87df8d23cb2992bdb84544c66c51df764d3539ceac0fb6a95adc",
+    "manufacturer_availability_semantics_receipt": "515608b99c453fd98013a5d71c77f936237b3dae3b8cb9b439722ad98f054a3c",
+    "measurement_role_validity_receipt": "f9816b68ed73a536d3666ce648b8bf5fa88a752ea2b2def3c6ef75900e354649",
+    "phase4_freeze": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88"
+  },
+  "frozen_structural_boundary": {
+    "finite_xyz_required": true,
+    "minimum_point_count": 3,
+    "minimum_point_count_is_health_threshold": false,
+    "missing_measurement_encoded_as_zero_feature_vector": false,
+    "phase4_feature_contract_reopened": false,
+    "phase4_feature_count": 5,
+    "xyz_shape": "(N, 3)"
+  },
+  "health_model_architecture_status": {
+    "available_record_classifier_selected": false,
+    "calibration_performed": false,
+    "classifier_structure_selected": false,
+    "health_threshold_selected": false,
+    "missing_record_fail_closed_branch_selected": false,
+    "model_trained": false
+  },
+  "phase": {
+    "exit_evidence": "Healthy/degraded/unusable classifier",
+    "exit_evidence_satisfied": false,
+    "number": 5,
+    "objective": "Three-state modality-health model"
+  },
+  "receipt_requirements": {
+    "baseline_nominality_receipt_required": true,
+    "confirmation_test_independence_required": true,
+    "final_estimator_scoring_independence_required": true,
+    "interval_provenance_required": true,
+    "intervention_execution_receipt_required": true,
+    "measurement_relation_verification_receipt_required": true,
+    "phase4_feature_independence_required": true,
+    "source_measurement_digest_required": true,
+    "source_measurement_identity_required": true,
+    "split_role_required": true
+  },
+  "schema": "TRUST_ROBOT_PHASE5_CONTROLLED_AVAILABILITY_SUPERVISION_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "accepted_supervision_source": false,
+    "alignment_performed": false,
+    "ate_computed": false,
+    "classifier_selected": false,
+    "confirmation_test_data_used": false,
+    "diagnostic_threshold_selected": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "health_label_assigned_to_real_data": false,
+    "health_threshold_selected": false,
+    "reference_data_used": false,
+    "rpe_computed": false
+  },
+  "scope": {
+    "controlled_supervision_kind": "measurement_availability",
+    "current_hardware_identity": "Velodyne VLP-32C",
+    "general_physical_lidar_health_claim": false,
+    "measurement_role": "finite structurally admissible LiDAR range-measurement evidence delivered to the frozen frontend",
+    "modality": "lidar"
+  },
+  "source_acceptance_status": {
+    "accepted_source_count": 0,
+    "accepted_source_ids": [],
+    "baseline_nominality_source_selected": false,
+    "candidate_source_declared": false,
+    "numeric_severity_selected": false,
+    "real_dataset_health_labels_assigned": false,
+    "real_health_label_count": 0,
+    "specific_absence_intervention_selected": false,
+    "specific_partial_intervention_selected": false
+  },
+  "status": "prospective_protocol_no_accepted_source_no_real_labels"
+}

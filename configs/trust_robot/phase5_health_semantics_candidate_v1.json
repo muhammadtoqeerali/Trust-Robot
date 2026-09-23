@@ -1,0 +1,87 @@
+{
+  "classifier_status": {
+    "calibration_performed": false,
+    "classifier_implemented": false,
+    "classifier_structure_selected": false,
+    "diagnostic_threshold_selected": false,
+    "health_threshold_selected": false,
+    "model_trained": false,
+    "real_dataset_health_labels_assigned": false,
+    "training_label_source_selected": false
+  },
+  "content_sha256": "183d8947abecb0a0a141d414717227c5db93ba761e7663c5d088ce607eb87d99",
+  "frontier_audit": {
+    "exact_three_state_literal_occurrence_count_before_phase5": 0,
+    "historical_health_candidate_file_count": 11,
+    "historical_numeric_policy_adopted": false,
+    "historical_policy_assignment_count": 8,
+    "historical_trust_state_adopted": false,
+    "native_health_named_declaration_count_before_phase5": 0,
+    "report_sha256": "979132ce20a68039711a8db2450abb68911ef1f670a72b91392a5c1b95786693"
+  },
+  "frozen_input": {
+    "current_validated_modality": "lidar",
+    "phase4_feature_contract_reopened": false,
+    "phase4_freeze_file": "manifests/trust_robot_phase4_validated_diagnostic_feature_extraction_freeze_v1.json",
+    "phase4_freeze_file_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88"
+  },
+  "label_provenance_policy": {
+    "clean_branch_identity_is_sufficient_label_basis": false,
+    "confirmation_test_outcome_is_permitted_label_basis": false,
+    "corruption_identity_is_sufficient_label_basis": false,
+    "current_phase4_records_automatically_labeled": false,
+    "diagnostic_value_or_threshold_is_sufficient_label_basis": false,
+    "explicit_justification_required": true,
+    "explicit_source_id_required": true,
+    "explicit_source_kind_required": true,
+    "independence_from_confirmation_test_required": true,
+    "independence_from_final_estimator_scoring_required": true,
+    "prospective_declaration_required": true,
+    "reference_trajectory_metric_is_permitted_label_basis": false
+  },
+  "phase": {
+    "exit_evidence": "Healthy/degraded/unusable classifier",
+    "exit_evidence_satisfied": false,
+    "number": 5,
+    "objective": "Three-state modality-health model"
+  },
+  "phase_separation": {
+    "phase5_state_implies_estimator_accuracy": false,
+    "phase5_state_implies_phase8_factor_weight": false,
+    "phase5_state_implies_phase9_suppression_action": false
+  },
+  "schema": "TRUST_ROBOT_PHASE5_HEALTH_SEMANTICS_CANDIDATE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "alignment_performed": false,
+    "ate_computed": false,
+    "classifier_selected": false,
+    "confirmation_test_data_used": false,
+    "estimator_scoring_performed": false,
+    "evaluation_ready": false,
+    "ground_truth_association_performed": false,
+    "health_label_assigned_to_real_data": false,
+    "reference_data_used": false,
+    "rpe_computed": false,
+    "threshold_selected": false,
+    "trajectory_scoring_performed": false
+  },
+  "state_vocabulary": {
+    "degraded": {
+      "definition": "An accepted, prospectively declared health-label provenance source identifies a non-nominal impairment of the modality's declared measurement role, without identifying that role as unusable during the labeled interval.",
+      "is_localization_accuracy_score": false,
+      "is_suppression_command": false
+    },
+    "healthy": {
+      "definition": "An accepted, prospectively declared health-label provenance source identifies the modality as nominal for its declared measurement role during the labeled interval.",
+      "is_localization_accuracy_score": false,
+      "is_suppression_command": false
+    },
+    "unusable": {
+      "definition": "An accepted, prospectively declared health-label provenance source identifies the modality as unable to provide measurement information suitable for its declared measurement role during the labeled interval.",
+      "is_localization_accuracy_score": false,
+      "is_suppression_command": false
+    }
+  },
+  "status": "prospective_semantics_only_no_dataset_labels"
+}
