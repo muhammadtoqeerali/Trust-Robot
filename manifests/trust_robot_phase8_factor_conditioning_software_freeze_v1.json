@@ -1,0 +1,112 @@
+{
+  "authoritative_equations": {
+    "factor_scale": "lambda_m = clip(w_m * q_m, epsilon_m, 1)",
+    "health_weight": "w_m(t) = p_H_m(t) + alpha_m * p_D_m(t)"
+  },
+  "checkpoint_semantics": {
+    "confirmation_remains_closed": true,
+    "empirical_completion_claimed": false,
+    "estimator_factor_modified": false,
+    "numeric_factor_conditioning_complete": false,
+    "numeric_factor_conditioning_executed": false,
+    "phase": 8,
+    "software_architecture_implemented": true,
+    "status": "factor_conditioning_software_architecture_frozen_numeric_execution_deferred"
+  },
+  "content_sha256": "8791f93c9b74191c669cf0b02d8c5cdfa54268d466167121990bcbab4c5f9a37",
+  "current_numeric_gate": {
+    "alpha_selected": false,
+    "calibrated_health_probability_input_available": false,
+    "covariance_inflation_authorized": false,
+    "epsilon_selected": false,
+    "factor_scale_execution_authorized": false,
+    "factor_scale_value_available": false,
+    "health_probability_input_available": false,
+    "information_rescaling_authorized": false,
+    "q_definition_selected": false,
+    "q_value_available": false,
+    "standardized_innovation_definition_selected": false
+  },
+  "deferred_obligations": [
+    "complete admissible Phase-5 empirical health inference",
+    "complete admissible Phase-6 probability calibration",
+    "obtain runtime calibrated health probabilities",
+    "select alpha_m using validation data only",
+    "define and freeze standardized innovation without confirmation leakage",
+    "define and freeze bounded short-horizon q_m",
+    "select and justify epsilon_m using an admissible pre-confirmation procedure",
+    "authorize lambda_m execution only after all required inputs exist",
+    "implement information rescaling or equivalent covariance inflation only after factor-scale execution is authorized",
+    "keep Phase-9 suppression/recovery/status separate from factor conditioning",
+    "keep confirmation_test closed until all permitted Phase-8 selections are frozen"
+  ],
+  "estimator_conditioning": {
+    "covariance_inflation_implemented": false,
+    "equivalent_covariance_inflation_named_by_project": true,
+    "estimator_factor_modified": false,
+    "factor_information_rescaling_named_by_project": true,
+    "information_rescaling_implemented": false
+  },
+  "evidence": {
+    "closure_json_sha256": "0218adda03ef707e06365a9fc07d2ef55717ac0d02b74c41833ee2ae793040b4",
+    "closure_report_sha256": "af74baecc4127c48cd1eb4be642d3c8e9428250c4b3f712a67823d0260842ccf",
+    "frontier_json_sha256": "e171714edcc448c206cadcfb517ca6e9980f09aa352991c622afa7db257eb833",
+    "frontier_report_sha256": "fdd91cac466e01306369e8e312d6ac576cd89f0e8edb2e57bd0113116c0f4819",
+    "implementation_report_sha256": "5105ef97113bf2ff6b347b68ca649a83d792c846ae66e685ec63921836941f3c"
+  },
+  "next_phase_policy": {
+    "deferred_phase5_phase6_phase7_phase8_empirical_obligations_remain_binding": true,
+    "phase9_may_assume_phase8_numeric_factor_scale_available": false,
+    "phase9_must_fail_closed_when_phase8_factor_scale_is_unavailable": true,
+    "phase9_software_architecture_may_proceed": true
+  },
+  "parameter_semantics": {
+    "alpha_selection_partition": "validation",
+    "alpha_value": null,
+    "default_alpha_created": false,
+    "default_epsilon_created": false,
+    "default_q_created": false,
+    "epsilon_selection_policy": "unselected",
+    "epsilon_value": null,
+    "q_definition": "unselected",
+    "q_value": null,
+    "standardized_innovation_definition": "unselected",
+    "upper_clip_bound_from_authoritative_equation": 1
+  },
+  "parent_frontier": {
+    "commit": "be7e7394a5afe5ea80369e155013d60b82cf4dd0",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase6_freeze_sha256": "a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6",
+    "phase7_freeze_sha256": "5f416186ee8d8b226f0f88c70a0553cf80fe5213592b8df9b07fc1b5503b7280",
+    "tree": "24d0a7d110e29dcce7d86f94881055200bcaabf7"
+  },
+  "pathway_separation": {
+    "collapse_to_single_unexplained_reliability_score_allowed": false,
+    "current_innovation_pathway": true,
+    "persistent_health_pathway": true
+  },
+  "phase8_contract_artifacts": {
+    "audit_sha256": "0d357d0f1919f43d4f26a1763b4191e2216f5afcfecbb62162384b9a6ffeae8f",
+    "config_sha256": "cbd137977060f961fb14feaeed6194de40b4e4338e5f6c303edc1993110ea5c2",
+    "module_sha256": "96d3c179d1690aa75edd0c6a6d8ce8a14d079da02ab225d1da9ffe2bc4a97b6a",
+    "project_state_pre_freeze_sha256": "4689cd334243a14ce0e556da61ba459b041866c2ec1661c25d892ea41af32823",
+    "tests_sha256": "b457e2d26cc3a4a9a381016094a7eeee1acfb77cd8867d147c07d879adfae3cd"
+  },
+  "protected_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "final_scoring_authorized": false,
+    "health_threshold_selected": false,
+    "new_interpolation_rule_selected": false,
+    "new_sync_parameter_selected": false,
+    "new_transform_selected": false,
+    "phase7_numeric_auxiliary_evidence_assumed": false,
+    "phase9_suppression_recovery_status_implemented": false,
+    "validation_data_opened": false
+  },
+  "schema": "TRUST_ROBOT_PHASE8_FACTOR_CONDITIONING_SOFTWARE_FREEZE_V1",
+  "upstream_bindings": {
+    "health_model_config_sha256": "aa48c67cdcd19aa5af2a297f42b20d1bb4369b5dcd38bdc2c2ca9ae68ceb4ea3",
+    "probabilistic_calibration_config_sha256": "7761cf8c39620d7166c88092470aeb09e2f5b1120cd0d4be3e1c11118822f367"
+  }
+}

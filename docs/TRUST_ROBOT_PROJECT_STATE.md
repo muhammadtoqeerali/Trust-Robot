@@ -3582,3 +3582,106 @@ Closure evidence:
 After promotion, Phase-8 software architecture may proceed but must not assume
 that numerical Phase-7 auxiliary consistency evidence exists.
 
+## Phase 8 factor-conditioning contract V1
+
+Status: **fail-closed factor-conditioning software architecture implemented
+locally; numerical factor conditioning remains disabled.**
+
+The authoritative conceptual equations are preserved:
+
+- `w_m(t) = p_H_m(t) + alpha_m * p_D_m(t)`
+- `lambda_m = clip(w_m * q_m, epsilon_m, 1)`
+
+The persistent-health and current-innovation pathways remain scientifically
+separate.
+
+Current state:
+
+- empirical Phase-5 health probabilities available: false;
+- calibrated Phase-6 health probabilities available: false;
+- Phase-7 numerical auxiliary evidence available: false;
+- `alpha_m` selected: false;
+- numerical standardized-innovation definition selected: false;
+- `q_m` definition selected: false;
+- `epsilon_m` selected: false;
+- factor-scale execution authorized: false;
+- factor-information rescaling implemented: false;
+- covariance inflation implemented: false.
+
+`alpha_m` remains reserved for validation selection as required by the project.
+
+No selection policy for `epsilon_m` is invented.
+
+No numerical definition for `q_m` is invented.
+
+No factor in the estimator is modified.
+
+Phase-9 suppression/recovery/status behavior remains outside this
+implementation.
+
+Artifacts:
+
+- `configs/trust_robot/phase8_factor_conditioning_contract_candidate_v1.json`
+  SHA-256 `cbd137977060f961fb14feaeed6194de40b4e4338e5f6c303edc1993110ea5c2`
+- `src/trust_robot/factor_conditioning.py`
+  SHA-256 `96d3c179d1690aa75edd0c6a6d8ce8a14d079da02ab225d1da9ffe2bc4a97b6a`
+- `tests/trust_robot/test_factor_conditioning.py`
+  SHA-256 `b457e2d26cc3a4a9a381016094a7eeee1acfb77cd8867d147c07d879adfae3cd`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE8_FACTOR_CONDITIONING_CONTRACT_V1.md`
+  SHA-256 `0d357d0f1919f43d4f26a1763b4191e2216f5afcfecbb62162384b9a6ffeae8f`
+
+Frontier evidence:
+
+- report SHA-256 `fdd91cac466e01306369e8e312d6ac576cd89f0e8edb2e57bd0113116c0f4819`
+- JSON SHA-256 `e171714edcc448c206cadcfb517ca6e9980f09aa352991c622afa7db257eb833`
+
+Validation remains unopened and confirmation remains closed.
+No ATE/RPE or final scoring is performed.
+
+## Phase 8 factor-conditioning software freeze V1
+
+Status: **factor-conditioning software architecture frozen for checkpoint
+promotion; numerical factor conditioning and estimator modification remain
+deferred.**
+
+The authoritative conceptual equations remain:
+
+- `w_m(t) = p_H_m(t) + alpha_m * p_D_m(t)`
+- `lambda_m = clip(w_m * q_m, epsilon_m, 1)`
+
+The persistent-health and current-innovation pathways remain distinct.
+
+Current numeric state:
+
+- runtime health probabilities available: false;
+- calibrated runtime health probabilities available: false;
+- `alpha_m` selected: false;
+- standardized-innovation definition selected: false;
+- `q_m` definition selected: false;
+- `epsilon_m` selected: false;
+- factor-scale execution authorized: false;
+- factor-information rescaling authorized: false;
+- covariance inflation authorized: false;
+- estimator factor modified: false.
+
+No default values are invented for `alpha_m`, `q_m`, or `epsilon_m`.
+
+Phase-9 suppression/recovery/status behavior remains outside this checkpoint.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase8_factor_conditioning_software_freeze_v1.json`
+  SHA-256 `9b4934404b97f1726b0acbd1e8b6eaa77bc2c3cb6ab6be38b4eb87a0800c337c`
+- `tests/trust_robot/test_phase8_factor_conditioning_software_freeze.py`
+  SHA-256 `39d9bb5d06ae54642b0516ded5632f9908330018fc34c92e259af866ddf1e9ee`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE8_FACTOR_CONDITIONING_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `9ae6c034f88d0691d283d2bb61d7ce1a3fa245af4bb207b710b69d701714744c`
+
+Closure evidence:
+
+- report SHA-256 `af74baecc4127c48cd1eb4be642d3c8e9428250c4b3f712a67823d0260842ccf`
+- JSON SHA-256 `0218adda03ef707e06365a9fc07d2ef55717ac0d02b74c41833ee2ae793040b4`
+
+After promotion, Phase-9 software architecture may proceed but must not assume
+that a numerical Phase-8 factor scale exists.
+

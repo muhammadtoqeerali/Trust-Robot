@@ -1,0 +1,127 @@
+{
+  "authoritative_equations": {
+    "factor_scale_equation_is_conceptual": true,
+    "final_factor_scale": "lambda_m = clip(w_m * q_m, epsilon_m, 1)",
+    "health_weight": "w_m(t) = p_H_m(t) + alpha_m * p_D_m(t)",
+    "health_weight_equation_is_conceptual": true,
+    "numeric_execution_authorized": false
+  },
+  "current_innovation_pathway": {
+    "default_q_created": false,
+    "q_definition": "unselected",
+    "q_definition_selected": false,
+    "q_symbol": "q_m",
+    "q_value": null,
+    "q_value_available": false,
+    "role": "bounded_short_horizon_factor_conditioning",
+    "standardized_innovation_definition": "unselected",
+    "standardized_innovation_definition_selected": false,
+    "standardized_innovation_named_by_project": true
+  },
+  "estimator_conditioning_semantics": {
+    "covariance_inflation_authorized": false,
+    "covariance_inflation_implemented": false,
+    "equivalent_covariance_inflation_named_by_project": true,
+    "estimator_factor_modified": false,
+    "factor_information_rescaling_named_by_project": true,
+    "information_rescaling_authorized": false,
+    "information_rescaling_implemented": false
+  },
+  "factor_scale": {
+    "default_epsilon_created": false,
+    "epsilon_selected": false,
+    "epsilon_selection_policy": "unselected",
+    "epsilon_symbol": "epsilon_m",
+    "epsilon_value": null,
+    "factor_scale_execution_authorized": false,
+    "factor_scale_value_available": false,
+    "lambda_symbol": "lambda_m",
+    "upper_clip_bound_from_authoritative_equation": 1
+  },
+  "lifecycle_status": "contract_implemented_inputs_unavailable",
+  "pathway_separation": {
+    "collapse_to_single_unexplained_reliability_score_allowed": false,
+    "current_innovation_pathway_distinct": true,
+    "pathways": [
+      "persistent_health",
+      "current_innovation"
+    ],
+    "persistent_health_pathway_distinct": true
+  },
+  "persistent_health_pathway": {
+    "alpha_selected": false,
+    "alpha_selection_partition": "validation",
+    "alpha_symbol": "alpha_m",
+    "alpha_value": null,
+    "calibrated_health_probability_input_available": false,
+    "default_alpha_created": false,
+    "degraded_probability_symbol": "p_D_m(t)",
+    "health_probability_input_available": false,
+    "health_weight_value_available": false,
+    "healthy_probability_symbol": "p_H_m(t)",
+    "requires_calibrated_health_probabilities_for_runtime": true,
+    "requires_health_probabilities": true
+  },
+  "phase9_boundary": {
+    "estimator_status_logic_implemented": false,
+    "fallback_threshold_selected": false,
+    "hysteresis_implemented": false,
+    "modality_recovery_implemented": false,
+    "modality_suppression_implemented": false,
+    "recovery_threshold_selected": false,
+    "suppression_threshold_selected": false
+  },
+  "phase_scope": {
+    "historical_reliability_weighting_adopted": false,
+    "name": "factor_conditioning",
+    "phase": 8,
+    "phase9_suppression_recovery_status_in_scope": false,
+    "purpose": "health_aware_factor_weighting_with_bounded_innovation_conditioning"
+  },
+  "runtime_output": {
+    "covariance_inflation_output": "disabled",
+    "factor_scale_output": "disabled",
+    "health_weight_output": "disabled",
+    "information_rescaling_output": "disabled",
+    "innovation_conditioning_output": "disabled"
+  },
+  "schema": "TRUST_ROBOT_PHASE8_FACTOR_CONDITIONING_CONTRACT_V1",
+  "scientific_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "final_scoring_authorized": false,
+    "health_state_threshold_selected": false,
+    "new_interpolation_rule_selected": false,
+    "new_sync_parameter_selected": false,
+    "new_transform_selected": false,
+    "source_attribution_performed": false
+  },
+  "selection_boundary": {
+    "alpha_selected_on_validation": false,
+    "confirmation_data_used": false,
+    "confirmation_may_select_alpha": false,
+    "confirmation_may_select_epsilon": false,
+    "confirmation_may_select_q_definition": false,
+    "epsilon_selection_policy_selected": false,
+    "q_definition_selected": false,
+    "standardized_innovation_definition_selected": false,
+    "validation_data_opened": false
+  },
+  "source_bindings": {
+    "calibration_config_sha256": "7761cf8c39620d7166c88092470aeb09e2f5b1120cd0d4be3e1c11118822f367",
+    "frontier_json_sha256": "e171714edcc448c206cadcfb517ca6e9980f09aa352991c622afa7db257eb833",
+    "frontier_report_sha256": "fdd91cac466e01306369e8e312d6ac576cd89f0e8edb2e57bd0113116c0f4819",
+    "health_model_config_sha256": "aa48c67cdcd19aa5af2a297f42b20d1bb4369b5dcd38bdc2c2ca9ae68ceb4ea3",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase6_freeze_sha256": "a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6",
+    "phase7_freeze_sha256": "5f416186ee8d8b226f0f88c70a0553cf80fe5213592b8df9b07fc1b5503b7280",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3"
+  },
+  "upstream_evidence_gate": {
+    "phase5_empirical_health_model_complete": false,
+    "phase6_empirical_probability_calibration_complete": false,
+    "phase7_numeric_auxiliary_evidence_available": false,
+    "runtime_calibrated_health_probabilities_available": false,
+    "runtime_health_probabilities_available": false
+  }
+}
