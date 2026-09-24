@@ -1,0 +1,133 @@
+{
+  "attribution_semantics": {
+    "ambiguous_case_must_remain_explicit": true,
+    "estimator_degraded_reporting_named_by_project": true,
+    "fabricated_confident_label_allowed": false,
+    "pairwise_disagreement_alone_sufficient_for_attribution": false,
+    "phase7_estimator_status_logic_implemented": false,
+    "required_support_may_include": [
+      "modality_specific_diagnostics",
+      "another_sufficiently_informative_modality",
+      "trusted_physical_constraint"
+    ],
+    "source_attribution_authorized_in_current_state": false
+  },
+  "data_boundary": {
+    "confirmation_data_used": false,
+    "physical_hardware_accessed": false,
+    "reference_data_used": false,
+    "train_data_used_for_numeric_measure_selection": false,
+    "validation_data_opened": false
+  },
+  "evidence_families": [
+    {
+      "applicability": "where_applicable",
+      "execution_authorized": false,
+      "family": "visual_motion_vs_lidar_motion",
+      "numeric_measure": null,
+      "numeric_measure_selected": false
+    },
+    {
+      "applicability": "where_applicable",
+      "execution_authorized": false,
+      "family": "inertial_propagation_vs_exteroceptive_odometry",
+      "numeric_measure": null,
+      "numeric_measure_selected": false
+    },
+    {
+      "applicability": "where_applicable",
+      "execution_authorized": false,
+      "family": "temporal_pose_continuity",
+      "numeric_measure": null,
+      "numeric_measure_selected": false
+    },
+    {
+      "applicability": "where_applicable",
+      "execution_authorized": false,
+      "family": "kinematic_proprioceptive_motion",
+      "numeric_measure": null,
+      "numeric_measure_selected": false
+    },
+    {
+      "applicability": "where_applicable",
+      "execution_authorized": false,
+      "family": "platform_motion_bounds",
+      "numeric_measure": null,
+      "numeric_measure_selected": false
+    },
+    {
+      "applicability": "where_applicable",
+      "execution_authorized": false,
+      "family": "residual_histories",
+      "numeric_measure": null,
+      "numeric_measure_selected": false
+    }
+  ],
+  "inconsistency_semantics": {
+    "pairwise_disagreement_alone_identifies_responsible_modality": false,
+    "pairwise_disagreement_establishes_inconsistency": true,
+    "pairwise_disagreement_is_health_label": false,
+    "pairwise_disagreement_is_suppression_command": false
+  },
+  "lifecycle_status": "contract_implemented_measures_unselected",
+  "measurement_definition_gate": {
+    "consistency_execution_authorized": false,
+    "cross_modal_transform_selected": false,
+    "interpolation_selected": false,
+    "kinematic_model_selected": false,
+    "numeric_consistency_measure_selected": false,
+    "residual_history_definition_selected": false,
+    "source_attribution_authorized": false,
+    "temporal_tolerance_selected": false,
+    "time_offset_selected": false,
+    "trusted_platform_motion_bound_selected": false
+  },
+  "phase_boundary": {
+    "covariance_inflation_implemented_here": false,
+    "current_standardized_innovation_consumed_here": false,
+    "estimator_availability_logic_implemented_here": false,
+    "factor_information_rescaling_implemented_here": false,
+    "fallback_threshold_selected_here": false,
+    "health_aware_factor_weight_selected_here": false,
+    "hysteresis_implemented_here": false,
+    "recovery_threshold_selected_here": false,
+    "suppression_threshold_selected_here": false
+  },
+  "phase_scope": {
+    "evidence_only": true,
+    "gnss_remains_optional": true,
+    "gnss_role_changed": false,
+    "health_model_replacement": false,
+    "historical_imu_reliability_choices_adopted": false,
+    "name": "auxiliary_consistency",
+    "ood_method_in_scope": false,
+    "phase": 7,
+    "phase8_factor_conditioning_in_scope": false,
+    "phase9_suppression_recovery_status_in_scope": false,
+    "purpose": "cross_modal_temporal_kinematic_consistency_evidence"
+  },
+  "schema": "TRUST_ROBOT_PHASE7_AUXILIARY_CONSISTENCY_CONTRACT_V1",
+  "scientific_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "cross_modal_alignment_selected": false,
+    "final_scoring_authorized": false,
+    "health_label_assigned": false,
+    "numeric_residual_threshold_selected": false,
+    "phase5_empirical_health_completion_assumed": false,
+    "phase6_empirical_calibration_completion_assumed": false,
+    "physical_measurement_time_selected": false,
+    "responsible_modality_inferred": false,
+    "sync_proven": false
+  },
+  "source_bindings": {
+    "authoritative_scope_json_sha256": "0cd1258c3389643d6a0295dfa84cdd9bf10ac74211e4c04f4f77281ff97c67f5",
+    "authoritative_scope_report_sha256": "5b23f88b200c263f98232eb290dd6faed8e1eee584efe26ea414c5cb60ce6d49",
+    "frontier_json_sha256": "6a4fb99843600674b963f484f70bb245ec0758aa7139fa46101a1ce7cab8599a",
+    "frontier_report_sha256": "21dee84f459f7c50d637826dffd7b237aa8b640e07f13e859f62063b246db54a",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase5_diagnostic_channel_config_sha256": "de6656d35e24162dcd3ff489f21b735396c2457dae526a13be9790bb88bdf485",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase6_freeze_sha256": "a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3"
+  }
+}

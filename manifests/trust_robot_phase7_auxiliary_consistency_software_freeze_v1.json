@@ -1,0 +1,114 @@
+{
+  "authoritative_evidence_families": [
+    "visual_motion_vs_lidar_motion",
+    "inertial_propagation_vs_exteroceptive_odometry",
+    "temporal_pose_continuity",
+    "kinematic_proprioceptive_motion",
+    "platform_motion_bounds",
+    "residual_histories"
+  ],
+  "checkpoint_semantics": {
+    "confirmation_remains_closed": true,
+    "empirical_completion_claimed": false,
+    "empirical_consistency_evidence_complete": false,
+    "numeric_consistency_execution_performed": false,
+    "phase": 7,
+    "six_family_prerequisite_registry_implemented": true,
+    "software_architecture_implemented": true,
+    "status": "auxiliary_consistency_architecture_and_prerequisite_registry_frozen_numeric_execution_deferred"
+  },
+  "closure_evidence": {
+    "phase7_closure_json_sha256": "504a9fbd1ad3335d5128415db484c33d504b46c455bee2834222a70253657f08",
+    "phase7_closure_report_sha256": "5c773ee3987f7fc9763a55cba9a306785b04d650425dc385c34e2501801a807e",
+    "prerequisite_audit_json_sha256": "6e4a0103b4ce3434beed301377c0487d8ddac065a4598ec40da2623f35f671d8",
+    "prerequisite_audit_report_sha256": "64c6def9e8449b39eaac4a86aed205ca431179569c6297426c2dd3b210811fb8"
+  },
+  "content_sha256": "4caa31f16304c009481ec32a2c9740e7ee632e76f71a46f1e3874eea026e01e7",
+  "current_prerequisite_gate": {
+    "alignment_execution_authorized": false,
+    "camera_residual_history_implemented": false,
+    "cross_modal_transform_selected": false,
+    "imu_preintegration_diagnostics_implemented": false,
+    "imu_residual_history_implemented": false,
+    "interpolation_selected": false,
+    "kinematic_model_selected": false,
+    "residual_history_definition_selected": false,
+    "synchronization_selected": false,
+    "temporal_tolerance_selected": false,
+    "time_offset_selected": false,
+    "trusted_platform_motion_bound_selected": false,
+    "visual_frontend_diagnostics_implemented": false
+  },
+  "deferred_empirical_obligations": [
+    "validate a visual relative-motion or reprojection frontend before visual-versus-LiDAR consistency execution",
+    "validate IMU preintegration or inertial-propagation evidence before inertial-versus-exteroceptive consistency execution",
+    "resolve admissible measurement-time and synchronization semantics",
+    "select any required temporal tolerance, fixed offset, and interpolation only from admissible evidence",
+    "resolve required cross-modal frame relations before cross-frame comparisons",
+    "verify actual proprioceptive robot streams before kinematic consistency execution",
+    "select and justify any kinematic model from admissible platform evidence",
+    "obtain trusted numeric platform motion limits before bound-consistency execution",
+    "implement and freeze admissible residual-history definitions before residual-history consistency execution",
+    "define numeric consistency measures without confirmation-test leakage",
+    "retain ambiguous attribution when evidence is insufficient",
+    "keep confirmation_test closed until all permitted Phase-7 choices are frozen"
+  ],
+  "implementation_decision": {
+    "inertial_exteroceptive_adapter_implemented": false,
+    "new_numeric_consistency_adapter_implemented": false,
+    "platform_bound_adapter_implemented": false,
+    "proprioceptive_consistency_adapter_implemented": false,
+    "residual_history_adapter_implemented": false,
+    "temporal_continuity_adapter_implemented": false,
+    "visual_lidar_adapter_implemented": false
+  },
+  "inconsistency_and_attribution_semantics": {
+    "ambiguous_case_must_remain_explicit": true,
+    "fabricated_confident_label_allowed": false,
+    "pairwise_disagreement_alone_identifies_responsible_modality": false,
+    "pairwise_disagreement_establishes_inconsistency": true,
+    "source_attribution_authorized": false
+  },
+  "next_phase_policy": {
+    "deferred_phase5_phase6_phase7_empirical_obligations_remain_binding": true,
+    "phase8_may_assume_phase7_numeric_consistency_evidence_available": false,
+    "phase8_must_fail_closed_when_phase7_auxiliary_evidence_is_unavailable": true,
+    "phase8_software_architecture_may_proceed": true
+  },
+  "parent_frontier": {
+    "commit": "4c3bb89430774441817991da421856bc9dd0b55c",
+    "evaluation_protocol_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+    "phase2_lidar_freeze_sha256": "4f1daa871be72714bd257e22b43e551259d989c391230edfaac3c95f579d9da0",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase6_freeze_sha256": "a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6",
+    "tree": "3f21ee420f737df34162f4883b88da405147f1fb"
+  },
+  "phase7_contract_artifacts": {
+    "audit_sha256": "f685dfdd64f49db72b95b53e28739e34d9cc895ff0db247600f08613b49891ca",
+    "config_sha256": "79eb3151344c5dd9e4f4212467f24cc2e956ce16689e808ae1008539f80efce6",
+    "module_sha256": "72e999b63950ff8070a978bcfac81cb54c598d97c0e539c28bfd92648a34124a",
+    "tests_sha256": "c18ea0c3a1c914d1f7915a8fed6ef56e477d7e42ea9f01c3140e5e1264eb382b"
+  },
+  "prerequisite_registry": {
+    "audit_sha256": "2f01f3517bf8e8af39b5bab4061337dc96f29c98cefd782b4df427fad78468ad",
+    "execution_ready_family_count": 0,
+    "family_count": 6,
+    "manifest_content_sha256": "4a72b93635407033217f21ed0895f6f27c5544662afb6502d63e77c2a3cd8126",
+    "manifest_sha256": "0bef183cdfc960ef4d8f0917d28ff927b4a21e925dd6425a489b91021041c7dd",
+    "numeric_measure_selected_family_count": 0,
+    "source_attribution_authorized": false,
+    "tests_sha256": "d5b1ae76e87cf4d46a5442876b43d53c1c8632ea0ae90f8867da982e2be320cd"
+  },
+  "protected_scientific_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "final_scoring_authorized": false,
+    "health_label_assigned": false,
+    "phase8_factor_conditioning_implemented": false,
+    "phase9_suppression_recovery_status_implemented": false,
+    "reference_data_used": false,
+    "responsible_modality_inferred": false,
+    "validation_data_opened": false
+  },
+  "schema": "TRUST_ROBOT_PHASE7_AUXILIARY_CONSISTENCY_SOFTWARE_FREEZE_V1"
+}

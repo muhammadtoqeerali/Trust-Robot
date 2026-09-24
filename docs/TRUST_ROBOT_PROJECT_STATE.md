@@ -3412,3 +3412,173 @@ Closure evidence:
 After promotion, Phase-7 software work may proceed behind these gates without
 assuming that empirical Phase-6 calibration has been completed.
 
+## Phase 7 auxiliary consistency contract V1
+
+Status: **auxiliary-consistency software architecture implemented locally;
+numeric/physical consistency definitions and empirical evidence remain
+unselected/deferred.**
+
+Phase 7 is bound to the authoritative project scope:
+
+- visual motion versus LiDAR motion;
+- inertial propagation versus exteroceptive odometry;
+- temporal pose continuity;
+- kinematic/proprioceptive motion;
+- platform motion bounds;
+- residual histories.
+
+Pairwise disagreement establishes inconsistency but does not by itself identify
+the responsible modality.
+
+Responsible-modality attribution may require modality-specific diagnostics,
+another sufficiently informative modality, or a trusted physical constraint.
+
+Ambiguous cases must remain explicit rather than receive fabricated confident
+attribution.
+
+Current unresolved definitions remain:
+
+- numeric consistency measure;
+- temporal tolerance;
+- time offset;
+- interpolation;
+- cross-modal transform;
+- kinematic model;
+- trusted platform motion bounds;
+- residual-history definition.
+
+Accordingly, numeric consistency execution and source attribution fail closed.
+
+Phase-8 factor conditioning and Phase-9 suppression/recovery/status remain
+strictly outside this implementation.
+
+Historical IMU-HAR OOD choices are not adopted, and GNSS remains optional.
+
+Artifacts:
+
+- `configs/trust_robot/phase7_auxiliary_consistency_contract_candidate_v1.json`
+  SHA-256 `79eb3151344c5dd9e4f4212467f24cc2e956ce16689e808ae1008539f80efce6`
+- `src/trust_robot/auxiliary_consistency.py`
+  SHA-256 `72e999b63950ff8070a978bcfac81cb54c598d97c0e539c28bfd92648a34124a`
+- `tests/trust_robot/test_auxiliary_consistency.py`
+  SHA-256 `c18ea0c3a1c914d1f7915a8fed6ef56e477d7e42ea9f01c3140e5e1264eb382b`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE7_AUXILIARY_CONSISTENCY_CONTRACT_V1.md`
+  SHA-256 `f685dfdd64f49db72b95b53e28739e34d9cc895ff0db247600f08613b49891ca`
+
+Authoritative scope evidence:
+
+- report SHA-256 `5b23f88b200c263f98232eb290dd6faed8e1eee584efe26ea414c5cb60ce6d49`
+- JSON SHA-256 `0cd1258c3389643d6a0295dfa84cdd9bf10ac74211e4c04f4f77281ff97c67f5`
+
+No validation or confirmation data are opened.
+No ATE/RPE or final scoring is performed.
+
+## Phase 7 six-family consistency prerequisite registry V1
+
+Status: **family-by-family prerequisites frozen locally; zero of six auxiliary
+consistency families are currently authorized for numerical execution.**
+
+No additional numerical consistency adapter is implemented because each
+authoritative family still has unresolved scientific prerequisites.
+
+The six registered families are:
+
+- visual motion versus LiDAR motion;
+- inertial propagation versus exteroceptive odometry;
+- temporal pose continuity;
+- kinematic/proprioceptive motion;
+- platform motion bounds;
+- residual histories.
+
+Global state:
+
+- execution-ready families: 0;
+- numeric consistency measures selected: 0;
+- source attribution authorized: false;
+- synchronization selected/verified: false;
+- temporal tolerance selected: false;
+- fixed offset selected: false;
+- interpolation selected: false;
+- alignment execution authorized: false;
+- visual frontend diagnostics implemented: false;
+- IMU preintegration diagnostics implemented: false;
+- camera residual history implemented: false;
+- IMU residual history implemented: false.
+
+Repository candidate matches are not treated as validated prerequisites.
+
+Optional proprioception still requires verified actual robot streams.
+
+Platform-bound mentions are not treated as trusted numeric motion limits.
+
+The prerequisite audit's narrow LiDAR source string indicator was false, but
+this does not invalidate the frozen Phase-2 LiDAR baseline.
+
+Artifacts:
+
+- `manifests/trust_robot_phase7_consistency_prerequisite_registry_v1.json`
+  SHA-256 `0bef183cdfc960ef4d8f0917d28ff927b4a21e925dd6425a489b91021041c7dd`
+- `tests/trust_robot/test_phase7_consistency_prerequisite_registry.py`
+  SHA-256 `d5b1ae76e87cf4d46a5442876b43d53c1c8632ea0ae90f8867da982e2be320cd`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE7_CONSISTENCY_PREREQUISITE_REGISTRY_V1.md`
+  SHA-256 `2f01f3517bf8e8af39b5bab4061337dc96f29c98cefd782b4df427fad78468ad`
+
+Prerequisite audit evidence:
+
+- report SHA-256 `64c6def9e8449b39eaac4a86aed205ca431179569c6297426c2dd3b210811fb8`
+- JSON SHA-256 `6e4a0103b4ce3434beed301377c0487d8ddac065a4598ec40da2623f35f671d8`
+
+No validation or confirmation data are opened.
+No Phase-8 or Phase-9 behavior is introduced.
+
+## Phase 7 auxiliary consistency software freeze V1
+
+Status: **auxiliary-consistency software architecture and six-family
+prerequisite registry frozen for checkpoint promotion; numerical/empirical
+consistency execution remains deferred.**
+
+The Phase-7 closure passed with the exact eight-path pre-freeze worktree and
+928/928 tests.
+
+Frozen authoritative evidence families:
+
+1. visual motion versus LiDAR motion;
+2. inertial propagation versus exteroceptive odometry;
+3. temporal pose continuity;
+4. kinematic/proprioceptive motion;
+5. platform motion bounds;
+6. residual histories.
+
+Current family state:
+
+- execution-ready families: 0;
+- selected numeric consistency measures: 0;
+- source attribution authorized: false;
+- new numeric consistency adapter implemented: false.
+
+Pairwise disagreement may establish inconsistency but does not by itself
+identify a responsible modality.
+
+Unresolved prerequisites remain explicitly recorded rather than filled with
+arbitrary timing, transform, kinematic, physical-bound or residual choices.
+
+Phase-8 factor conditioning and Phase-9 suppression/recovery/status remain
+outside this checkpoint.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase7_auxiliary_consistency_software_freeze_v1.json`
+  SHA-256 `5f416186ee8d8b226f0f88c70a0553cf80fe5213592b8df9b07fc1b5503b7280`
+- `tests/trust_robot/test_phase7_auxiliary_consistency_software_freeze.py`
+  SHA-256 `a34da8d993491a5b15dd169abe261d984a19b5a70be1868b156bfb99d4a14c3c`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE7_AUXILIARY_CONSISTENCY_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `836628959c6199249bf1b366222311dc3352cc3f330394222626b95639494014`
+
+Closure evidence:
+
+- report SHA-256 `5c773ee3987f7fc9763a55cba9a306785b04d650425dc385c34e2501801a807e`
+- JSON SHA-256 `504a9fbd1ad3335d5128415db484c33d504b46c455bee2834222a70253657f08`
+
+After promotion, Phase-8 software architecture may proceed but must not assume
+that numerical Phase-7 auxiliary consistency evidence exists.
+
