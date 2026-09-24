@@ -3910,3 +3910,129 @@ Closure evidence:
 After promotion, Phase-11 software architecture may proceed but must not assume
 that Phase-10 experiments were executed or that RQ1/RQ2 answers exist.
 
+## Phase 11 cross-dataset compatibility contract V1
+
+Status: **fail-closed cross-dataset compatibility software architecture
+implemented locally; secondary-dataset readiness and evaluation remain
+disabled.**
+
+Phase-11 scope is `Cross-dataset evaluation` with
+`Generalization/stress evidence`.
+
+Dataset-role boundary:
+
+- M2DGR remains the primary development benchmark;
+- EuRoC is project-declared for camera-IMU controlled testing and
+  different-platform comparison;
+- TUM-VI is project-declared for supplementary camera-IMU cross-dataset stress
+  testing;
+- proposal-level role is not local readiness;
+- proposal-level role is not evaluation authorization.
+
+Current readiness:
+
+- EuRoC local readiness verified: false;
+- EuRoC local path present: false;
+- TUM-VI local readiness verified: false;
+- TUM-VI local path present: false;
+- secondary dataset selected for evaluation: false;
+- secondary dataset data opened: false.
+
+Compatibility:
+
+- proposal-level common camera/IMU overlap named: true;
+- proposal overlap proves modality compatibility: false;
+- modality compatibility verified: false;
+- reference compatibility verified: false;
+- timing semantics verified: false;
+- frame semantics verified: false;
+- cross-dataset adapter implemented: false.
+
+Transfer/evaluation:
+
+- secondary dataset split selected: false;
+- cross-dataset recalibration authorized: false;
+- model refit authorized: false;
+- threshold refit authorized: false;
+- probability-calibration refit authorized: false;
+- alignment selected: false;
+- association selected: false;
+- interpolation selected: false;
+- cross-dataset evaluation authorized: false.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Artifacts:
+
+- `configs/trust_robot/phase11_cross_dataset_compatibility_contract_candidate_v1.json`
+  SHA-256 `45e4ed026fb0555e2be8ff7498ec3289ca99e51fd38bf066a26f530d4359e7bf`
+- `src/trust_robot/cross_dataset_compatibility.py`
+  SHA-256 `93e2e8d8879e346b41bc9bd19daf34c04f88f7ad1e55dace9f3e189be5be63cc`
+- `tests/trust_robot/test_cross_dataset_compatibility.py`
+  SHA-256 `909e1f0e6e973c35bc0ddce1edf860283ec5073699c12e5ddd35f9090dc51f65`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE11_CROSS_DATASET_COMPATIBILITY_CONTRACT_V1.md`
+  SHA-256 `d0102ea90cf44886eb1b5e5269e8fb7cde3d124c73a630f29becc4a8c52a2561`
+
+Frontier evidence:
+
+- report SHA-256 `1fd1a54297c0915aac9b57d91b464b9748a52f93b6cd32aee17aec73009d8b75`
+- JSON SHA-256 `5b8e55c7deff85fea4c9e0394c8504709802f9ac9a4cc5764481ca160b1e5eeb`
+
+Dataset-role evidence:
+
+- report SHA-256 `c87c02ebe731be0598e2b38200eaa47af7a72b5f01a0fbe2409ce77cbfd81df1`
+- JSON SHA-256 `72b194c713893dac372f83d8c44c3ab153a64ba000f655baebf964b356f6194b`
+
+## Phase 11 cross-dataset compatibility software freeze V1
+
+Status: **cross-dataset compatibility software architecture frozen for
+checkpoint promotion; secondary-dataset access and empirical evaluation remain
+deferred.**
+
+Dataset roles:
+
+- M2DGR remains the primary development benchmark;
+- EuRoC remains declared for camera-IMU controlled testing and
+  different-platform comparison;
+- TUM-VI remains declared for supplementary cross-dataset stress testing.
+
+Current state:
+
+- EuRoC local readiness verified: false;
+- EuRoC evaluation available: false;
+- TUM-VI local readiness verified: false;
+- TUM-VI evaluation available: false;
+- secondary dataset selected: false;
+- secondary dataset data opened: false;
+- modality compatibility verified: false;
+- reference compatibility verified: false;
+- cross-dataset adapter implemented: false;
+- timing semantics verified: false;
+- frame semantics verified: false;
+- secondary dataset split selected: false;
+- cross-dataset recalibration authorized: false;
+- model refit authorized: false;
+- threshold refit authorized: false;
+- probability-calibration refit authorized: false;
+- cross-dataset evaluation authorized: false.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase11_cross_dataset_compatibility_software_freeze_v1.json`
+  SHA-256 `842860e2fb17079853f6a07877b4b717deb16c5425bdcf3aefaa9314294bbc61`
+- `tests/trust_robot/test_phase11_cross_dataset_compatibility_software_freeze.py`
+  SHA-256 `b36e99715b6c4ce6ca4f2025898821be35b902a91fababbad4df694c01bd178d`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE11_CROSS_DATASET_COMPATIBILITY_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `6ab092f9e23e548825ae1caa9cb1c256eed627990747d34c5eb8c99f22efc168`
+
+Closure evidence:
+
+- report SHA-256 `e90a796b9b08f1ee95d24ae42367c5f4ac7a644f684f597ee32c4ce24808bd0e`
+- JSON SHA-256 `c007b99915eb57488f193ac309d5a61544f05842c8dca0fa545fdf38aaf1072b`
+
+After promotion, Phase-12 software architecture may proceed but must not assume
+that Phase-11 cross-dataset evaluation, EuRoC evaluation, or TUM-VI evaluation
+is available.
+

@@ -1,0 +1,159 @@
+{
+  "adapter_time_frame_boundary": {
+    "alignment_selected": false,
+    "association_selected": false,
+    "cross_dataset_adapter_implemented": false,
+    "frame_semantics_verified": false,
+    "future_adapter_must_preserve_raw_timestamps": true,
+    "interpolation_selected": false,
+    "timing_semantics_verified": false,
+    "unknown_clock_conversion_may_be_assumed": false,
+    "unknown_time_offset_may_be_assumed": false
+  },
+  "checkpoint_semantics": {
+    "confirmation_remains_closed": true,
+    "cross_dataset_evaluation_executed": false,
+    "empirical_completion_claimed": false,
+    "empirical_cross_dataset_evidence_complete": false,
+    "euroc_evaluation_available": false,
+    "phase": 11,
+    "software_architecture_implemented": true,
+    "status": "cross_dataset_compatibility_software_architecture_frozen_secondary_dataset_evaluation_deferred",
+    "tum_vi_evaluation_available": false
+  },
+  "content_sha256": "f442f86ccdca9dfa45693f1bc370df3e970fde7e3d1f7b35db5fbfff6359d0e7",
+  "dataset_role_separation": {
+    "dataset_role_binding_is_experiment_selection": false,
+    "proposal_level_role_equals_evaluation_authorization": false,
+    "proposal_level_role_equals_local_readiness": false
+  },
+  "dataset_roles": {
+    "EuRoC": {
+      "data_opened": false,
+      "evaluation_selected": false,
+      "local_path_present": false,
+      "local_readiness_verified": false,
+      "roles": [
+        "camera_imu_controlled_testing",
+        "different_platform_comparison"
+      ]
+    },
+    "M2DGR": {
+      "local_path_present": true,
+      "phase11_secondary_dataset": false,
+      "role": "primary_development_benchmark"
+    },
+    "TUM_VI": {
+      "data_opened": false,
+      "evaluation_selected": false,
+      "explicit_cross_dataset_stress_role": true,
+      "local_path_present": false,
+      "local_readiness_verified": false,
+      "roles": [
+        "cross_dataset_stress_test"
+      ]
+    }
+  },
+  "deferred_obligations": [
+    "establish local readiness for any secondary dataset before opening its data",
+    "freeze the secondary dataset identity before cross-dataset execution",
+    "implement a dataset adapter that preserves raw timestamps",
+    "verify modality and sensor-role compatibility independently of proposal-level overlap",
+    "verify reference coverage and supported metric dimensions",
+    "verify timing and frame semantics before association or alignment",
+    "freeze a leakage-safe secondary-dataset split before evaluation",
+    "report zero-shot and recalibrated transfer separately",
+    "use only a disjoint calibration-only subset if recalibration is later authorized",
+    "do not silently refit models, thresholds, or calibration on final cross-dataset test data",
+    "keep confirmation_test closed until all permitted selections are frozen",
+    "do not compute ATE/RPE or final scores until evaluator authorization exists"
+  ],
+  "evidence": {
+    "closure_json_sha256": "c007b99915eb57488f193ac309d5a61544f05842c8dca0fa545fdf38aaf1072b",
+    "closure_report_sha256": "e90a796b9b08f1ee95d24ae42367c5f4ac7a644f684f597ee32c4ce24808bd0e",
+    "frontier_json_sha256": "5b8e55c7deff85fea4c9e0394c8504709802f9ac9a4cc5764481ca160b1e5eeb",
+    "frontier_report_sha256": "1fd1a54297c0915aac9b57d91b464b9748a52f93b6cd32aee17aec73009d8b75",
+    "implementation_report_sha256": "062818ad7203f704882baceeec2995ebcbeb4543a046979caaca903b51923d19",
+    "role_resolution_json_sha256": "72b194c713893dac372f83d8c44c3ab153a64ba000f655baebf964b356f6194b",
+    "role_resolution_report_sha256": "c87c02ebe731be0598e2b38200eaa47af7a72b5f01a0fbe2409ce77cbfd81df1"
+  },
+  "execution_gate": {
+    "cross_dataset_adapter_implemented": false,
+    "cross_dataset_evaluation_authorized": false,
+    "cross_dataset_evaluation_executed": false,
+    "frame_semantics_verified": false,
+    "modality_compatibility_verified": false,
+    "reference_compatibility_verified": false,
+    "secondary_dataset_data_open_authorized": false,
+    "secondary_dataset_selected": false,
+    "secondary_dataset_split_selected": false,
+    "timing_semantics_verified": false
+  },
+  "modality_compatibility_boundary": {
+    "lidar_common_to_declared_nonprimary_datasets": false,
+    "modality_compatibility_verified": false,
+    "proposal_level_common_modalities": [
+      "camera",
+      "imu"
+    ],
+    "proposal_overlap_is_verified_compatibility": false,
+    "sensor_role_mapping_selected": false
+  },
+  "next_phase_policy": {
+    "deferred_phase5_through_phase11_empirical_obligations_remain_binding": true,
+    "phase12_may_assume_euroc_evaluation_available": false,
+    "phase12_may_assume_phase11_cross_dataset_evaluation_executed": false,
+    "phase12_may_assume_tum_vi_evaluation_available": false,
+    "phase12_software_architecture_may_proceed": true
+  },
+  "parent_frontier": {
+    "commit": "673620584e26ff4317500159cf0237a374a183f0",
+    "phase10_freeze_sha256": "23a69b642fc0e4bd878c7323aeb2975f4eba4e65e6b017ff78f219019ce2a470",
+    "tree": "1cac289e347bee586e4144c8c99ea50325655ebf"
+  },
+  "phase11_contract_artifacts": {
+    "audit_sha256": "d0102ea90cf44886eb1b5e5269e8fb7cde3d124c73a630f29becc4a8c52a2561",
+    "config_sha256": "45e4ed026fb0555e2be8ff7498ec3289ca99e51fd38bf066a26f530d4359e7bf",
+    "module_sha256": "93e2e8d8879e346b41bc9bd19daf34c04f88f7ad1e55dace9f3e189be5be63cc",
+    "project_state_pre_freeze_sha256": "93f013a5d077e4e97c6c17ecf9040953e98ec0e773fddf830d3a8fe054233f9b",
+    "tests_sha256": "909e1f0e6e973c35bc0ddce1edf860283ec5073699c12e5ddd35f9090dc51f65"
+  },
+  "protected_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "cross_dataset_generalization_is_automatically_ood": false,
+    "final_scoring_authorized": false,
+    "phase10_rq1_answer_assumed": false,
+    "phase10_rq2_answer_assumed": false,
+    "validation_data_opened": false
+  },
+  "reference_boundary": {
+    "euroc_leica_rotation_may_be_treated_as_ground_truth": false,
+    "reference_compatibility_verified": false,
+    "reference_family_selected": false,
+    "reference_stream_may_be_estimator_input_without_independence": false,
+    "score_only_supported_intervals_and_dimensions": true,
+    "tum_vi_partial_reference_may_be_treated_as_full_reference": false
+  },
+  "schema": "TRUST_ROBOT_PHASE11_CROSS_DATASET_COMPATIBILITY_SOFTWARE_FREEZE_V1",
+  "source_bindings": {
+    "data_protocol_sha256": "ffee2e1daea71318f649564c0c48da71a5e26d6ad89a82544e5f216e0ffc2485",
+    "dataset_registry_sha256": "dec39d6ad8a084df99bcaa1ff1705dd1bf4a823709baa09e99ea86080738d4b2",
+    "decisions_sha256": "ed1022f6de6879acab192e5dc122997c9fb0915fb4d76b4c61b9e55e88449bcb",
+    "local_paths_example_sha256": "16f5e3e50dd77bc3cea50b4b68f4f43d6418786c7a783be420f3580e657f069a",
+    "local_paths_sha256": "5fd782cfc06a435dcaa111e4da19b7185136b906ff00d0be01e919e9537d4d39",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3"
+  },
+  "split_transfer_boundary": {
+    "cross_dataset_calibration_refit_authorized": false,
+    "cross_dataset_model_refit_authorized": false,
+    "cross_dataset_recalibration_authorized": false,
+    "cross_dataset_threshold_refit_authorized": false,
+    "later_recalibration_requires_calibration_only_subset": true,
+    "recalibrated_transfer_reported_separately": true,
+    "recalibration_subset_disjoint_from_final_cross_dataset_testing": true,
+    "secondary_dataset_split_selected": false,
+    "zero_shot_transfer_reported_separately": true
+  }
+}

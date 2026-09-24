@@ -1,0 +1,143 @@
+{
+  "adapter_and_time_boundary": {
+    "alignment_selected": false,
+    "association_selected": false,
+    "cross_dataset_adapter_implemented": false,
+    "frame_semantics_verified": false,
+    "future_adapter_must_preserve_raw_timestamps": true,
+    "interpolation_may_be_assumed": false,
+    "interpolation_selected": false,
+    "timing_semantics_verified": false,
+    "unknown_clock_conversion_may_be_assumed": false,
+    "unknown_time_offset_may_be_assumed": false
+  },
+  "dataset_role_separation": {
+    "dataset_role_binding_is_experiment_selection": false,
+    "proposal_level_role_equals_evaluation_authorization": false,
+    "proposal_level_role_equals_local_readiness": false
+  },
+  "declared_nonprimary_datasets": {
+    "EuRoC": {
+      "candidate_input_modalities": [
+        "camera",
+        "imu"
+      ],
+      "data_opened": false,
+      "evaluation_selected": false,
+      "explicit_cross_dataset_stress_role": false,
+      "local_path_present": false,
+      "local_readiness": "unverified",
+      "project_role": [
+        "camera_imu_controlled_testing",
+        "different_platform_comparison"
+      ],
+      "proposal_status": "core_publicly_available",
+      "reference_notes": [
+        "Vicon-room sequences may support 6-DoF pose reference",
+        "machine-hall Leica reference is position-only for evaluation semantics"
+      ]
+    },
+    "TUM_VI": {
+      "candidate_input_modalities": [
+        "camera",
+        "imu"
+      ],
+      "data_opened": false,
+      "evaluation_selected": false,
+      "explicit_cross_dataset_stress_role": true,
+      "local_path_present": false,
+      "local_readiness": "unverified",
+      "project_role": [
+        "cross_dataset_stress_test"
+      ],
+      "proposal_status": "supplementary_publicly_available",
+      "reference_notes": [
+        "room sequences have full-trajectory motion-capture reference",
+        "many longer sequences have only partial start/end reference"
+      ]
+    }
+  },
+  "execution_gate": {
+    "cross_dataset_adapter_implemented": false,
+    "cross_dataset_evaluation_authorized": false,
+    "cross_dataset_evaluation_executed": false,
+    "frame_semantics_verified": false,
+    "modality_compatibility_verified": false,
+    "reference_compatibility_verified": false,
+    "secondary_dataset_data_open_authorized": false,
+    "secondary_dataset_selected": false,
+    "secondary_dataset_split_selected": false,
+    "timing_semantics_verified": false
+  },
+  "lifecycle_status": "contract_implemented_local_readiness_unverified",
+  "phase_scope": {
+    "evidence_role": "generalization_stress_evidence",
+    "name": "cross_dataset_evaluation",
+    "phase": 11
+  },
+  "primary_dataset": {
+    "candidate_input_modalities": [
+      "camera",
+      "lidar",
+      "imu"
+    ],
+    "dataset_id": "M2DGR",
+    "local_path_present": true,
+    "phase11_secondary_dataset": false,
+    "role": "primary_development_benchmark"
+  },
+  "proposal_level_modality_overlap": {
+    "common_modalities_are_verified_cross_dataset_compatibility": false,
+    "common_modalities_named": [
+      "camera",
+      "imu"
+    ],
+    "lidar_common_to_declared_nonprimary_datasets": false,
+    "modality_compatibility_verified": false,
+    "sensor_role_mapping_selected": false
+  },
+  "protected_scientific_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "cross_dataset_generalization_is_automatically_ood": false,
+    "final_scoring_authorized": false,
+    "phase10_rq1_answer_assumed": false,
+    "phase10_rq2_answer_assumed": false,
+    "secondary_dataset_data_opened": false,
+    "validation_data_opened": false
+  },
+  "reference_compatibility_boundary": {
+    "eu_ro_c_leica_rotation_may_be_treated_as_ground_truth": false,
+    "reference_compatibility_verified": false,
+    "reference_family_selected": false,
+    "reference_stream_may_also_be_estimator_input_without_independence": false,
+    "score_only_supported_intervals_and_dimensions": true,
+    "tum_vi_partial_reference_may_be_treated_as_full_trajectory_reference": false
+  },
+  "schema": "TRUST_ROBOT_PHASE11_CROSS_DATASET_COMPATIBILITY_CONTRACT_V1",
+  "source_bindings": {
+    "data_protocol_sha256": "ffee2e1daea71318f649564c0c48da71a5e26d6ad89a82544e5f216e0ffc2485",
+    "dataset_registry_sha256": "dec39d6ad8a084df99bcaa1ff1705dd1bf4a823709baa09e99ea86080738d4b2",
+    "decisions_sha256": "ed1022f6de6879acab192e5dc122997c9fb0915fb4d76b4c61b9e55e88449bcb",
+    "frontier_json_sha256": "5b8e55c7deff85fea4c9e0394c8504709802f9ac9a4cc5764481ca160b1e5eeb",
+    "frontier_report_sha256": "1fd1a54297c0915aac9b57d91b464b9748a52f93b6cd32aee17aec73009d8b75",
+    "local_paths_example_sha256": "16f5e3e50dd77bc3cea50b4b68f4f43d6418786c7a783be420f3580e657f069a",
+    "local_paths_sha256": "5fd782cfc06a435dcaa111e4da19b7185136b906ff00d0be01e919e9537d4d39",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase10_freeze_sha256": "23a69b642fc0e4bd878c7323aeb2975f4eba4e65e6b017ff78f219019ce2a470",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3",
+    "role_resolution_json_sha256": "72b194c713893dac372f83d8c44c3ab153a64ba000f655baebf964b356f6194b",
+    "role_resolution_report_sha256": "c87c02ebe731be0598e2b38200eaa47af7a72b5f01a0fbe2409ce77cbfd81df1"
+  },
+  "split_and_transfer_boundary": {
+    "cross_dataset_calibration_refit_authorized": false,
+    "cross_dataset_model_refit_authorized": false,
+    "cross_dataset_recalibration_authorized": false,
+    "cross_dataset_threshold_refit_authorized": false,
+    "recalibrated_transfer_defined_as_separate_reported_condition": true,
+    "recalibration_if_later_allowed_requires_calibration_only_subset": true,
+    "recalibration_subset_must_be_disjoint_from_final_cross_dataset_testing": true,
+    "secondary_dataset_split_selected": false,
+    "zero_shot_transfer_defined_as_separate_reported_condition": true
+  }
+}
