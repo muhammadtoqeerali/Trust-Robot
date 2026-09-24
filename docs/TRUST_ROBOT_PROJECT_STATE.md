@@ -4529,3 +4529,131 @@ After promotion, Phase-15 software preparation may proceed, but confirmation
 execution remains closed until the deferred empirical obligations from
 Phases 5 through 14 are satisfied and all permitted selections are frozen.
 
+## Software Evidence Completion Track — SE0 plan V1
+
+Status: **SE0–SE10 software evidence-completion governance implemented
+locally; SE1 deterministic multimodal replay is the next execution stage.**
+
+Purpose:
+
+- complete deferred empirical obligations from Phases 5–14 using recorded
+  datasets as virtual sensors;
+- train, validate and test without partition leakage;
+- obtain quantitative software-level health, robustness, localization and
+  resource evidence before physical hardware integration;
+- keep final confirmation closed until all permitted choices are frozen.
+
+Frozen M2DGR split:
+
+- TRAIN: 22 trajectories;
+- VALIDATION/CALIBRATION: 7 trajectories;
+- CONFIRMATION/TEST: 7 trajectories;
+- trajectory overlap: none.
+
+Current execution state:
+
+- SE0 readiness audit: complete;
+- SE0 plan implementation: complete locally;
+- SE1 replay execution: not started;
+- model training: not executed;
+- validation selection: not executed;
+- probability calibration: not executed;
+- threshold selection: not executed;
+- end-to-end numerical runtime: not executed;
+- controlled fault/ablation experiments: not executed;
+- attack experiments: not executed;
+- cross-dataset evaluation: not executed;
+- TRUST-ROBOT resource benchmark: not executed;
+- confirmation opened: false;
+- ATE/RPE computed: false;
+- final score computed: false.
+
+Health-supervision protections:
+
+- availability is not a health label;
+- clean data is not automatically healthy;
+- synthetic corruption identity is not automatically a health label;
+- final localization error may not define health supervision.
+
+SE1 may use TRAIN to implement deterministic virtual-sensor replay.
+
+SE1 may not open validation or confirmation, train the health model, select
+scientific thresholds, or compute final localization scores.
+
+SE9 remains closed until all confirmation-visible choices and evaluation rules
+are frozen.
+
+Software-level success will not be relabeled as physical robot evidence.
+
+Artifacts:
+
+- `configs/trust_robot/software_evidence_completion_plan_v1.json`
+  SHA-256 `5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb`
+- `src/trust_robot/software_evidence_completion.py`
+  SHA-256 `35c2a01e72bbd4ca74e99bbe4a2652a3c63af70e6b2092a56220de68520dd458`
+- `tests/trust_robot/test_software_evidence_completion.py`
+  SHA-256 `d1fe55fc862c5e2a30926d4dafee33bb77bde999853efddf1118de7dede395cf`
+- `docs/TRUST_ROBOT_SOFTWARE_EVIDENCE_COMPLETION_PLAN.md`
+  SHA-256 `c6803fa0c08c5f2117e702d075db9cb5dde8190d990f480f0f783a4c9d963ab4`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE0_SOFTWARE_EVIDENCE_COMPLETION_PLAN_V1.md`
+  SHA-256 `95260e519ee5af50627f8a69119fca681ecff55f5a0420fce20a2eec3c82ca4d`
+
+SE0 readiness evidence:
+
+- report SHA-256 `152bad0555eab25c98fed494739479f1c2a33aa2fa75b9d8bff7665f84146496`
+- JSON SHA-256 `dbdf2fbde4ae6aed2f0867fbca8587f8fef64bda8ceb056566c2926aeb662b20`
+
+## SE0 software evidence completion plan freeze V1
+
+Status: **software evidence-completion governance plan frozen for checkpoint
+promotion; SE1 deterministic TRAIN-only replay may proceed after promotion.**
+
+Frozen stage order:
+
+`SE0 -> SE1 -> SE2 -> SE3 -> SE4 -> SE5 -> SE6 -> SE7 -> SE8 -> SE9 -> SE10`
+
+Current boundary:
+
+- TRAIN trajectories: 22;
+- VALIDATION_CALIBRATION trajectories: 7;
+- CONFIRMATION_TEST trajectories: 7;
+- partition overlap: false;
+- SE1 TRAIN access: true;
+- SE1 validation access: false;
+- SE1 confirmation access: false;
+- SE1 model training authorized: false;
+- SE1 feature selection authorized: false;
+- SE1 threshold selection authorized: false;
+- SE1 probability calibration authorized: false;
+- SE1 ATE/RPE authorized: false;
+- SE1 final scoring authorized: false;
+- SE9 confirmation execution authorized: false.
+
+Clean data is not automatically a healthy label.
+
+Synthetic corruption identity is not automatically a health label.
+
+SE2 health-supervision resolution is required before SE4 model training.
+
+Confirmation remains closed and cannot select model, features, calibration,
+thresholds, fault severity, attack budgets, alignment, association,
+interpolation, evaluation intervals, or metric operating choices.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_se0_software_evidence_completion_plan_freeze_v1.json`
+  SHA-256 `62838e41f0ffb47c02c517ac302a127b4cc2aba13ef86b7979c4d1e92bc20b33`
+- `tests/trust_robot/test_se0_software_evidence_completion_plan_freeze.py`
+  SHA-256 `1995ecb7ad90587c67a570e19867b67f82dd271005e6a0e34ad76dc3060de8c1`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE0_SOFTWARE_EVIDENCE_COMPLETION_PLAN_FREEZE_V1.md`
+  SHA-256 `d9fa287dc345dbb5cc91ed36503ac76de9f662b7e1518c63a99dab1306c69844`
+
+Closure evidence:
+
+- report SHA-256 `72ffdd32cbbecb664cf0be6ac97c008a4884a2fe6e4dbe427ec9ec6eded91970`
+- JSON SHA-256 `e804f0cb019ed96b15f3bda0c63efadd0c0fdf6dc666ecc563973ee344d1d0a9`
+
+After promotion, SE1 may implement deterministic multimodal dataset replay
+against TRAIN only. It may not perform scientific model/feature/threshold
+selection or access VALIDATION_CALIBRATION or CONFIRMATION_TEST.
+

@@ -1,0 +1,171 @@
+{
+  "SE1_entry_gate": {
+    "ate_rpe_authorized": false,
+    "confirmation_access_authorized": false,
+    "feature_selection_authorized": false,
+    "final_scoring_authorized": false,
+    "model_training_authorized": false,
+    "phase4_real_lidar_diagnostics_present": true,
+    "phase5_real_camera_imu_ingestion_present": true,
+    "phase5_through_phase14_architecture_frozen": true,
+    "probability_calibration_authorized": false,
+    "scope": "deterministic_multimodal_dataset_replay",
+    "threshold_selection_authorized": false,
+    "train_access_authorized": true,
+    "validation_access_authorized": false
+  },
+  "SE9_opening_gate": {
+    "confirmation_execution_authorized": false,
+    "confirmation_may_reopen_selection_after_results": false,
+    "requires_all_confirmation_visible_choices_frozen": true,
+    "requires_calibration_and_thresholds_frozen": true,
+    "requires_evaluation_protocol_frozen": true,
+    "requires_fault_attack_operating_points_frozen": true,
+    "requires_feature_contracts_frozen": true,
+    "requires_health_supervision_frozen": true,
+    "requires_model_training_complete": true,
+    "status": "closed"
+  },
+  "checkpoint_semantics": {
+    "SE1_may_proceed_after_checkpoint": true,
+    "actual_plan_schema_validated": true,
+    "ate_rpe_computed": false,
+    "confirmation_opened": false,
+    "confirmation_used": false,
+    "final_score_computed": false,
+    "model_training_executed": false,
+    "software_evidence_completion_plan_implemented": true,
+    "stage": "SE0",
+    "stage_count": 11,
+    "stage_name": "scientific_readiness_and_plan_freeze",
+    "status": "governance_plan_frozen_ready_for_SE1",
+    "track": "software_evidence_completion",
+    "validation_selection_executed": false
+  },
+  "content_sha256": "b5ffadb2537688af1dab44640ddd2d1c2ca22cb0df8760e036dfaf348f1d98be",
+  "evidence": {
+    "closure_json_sha256": "e804f0cb019ed96b15f3bda0c63efadd0c0fdf6dc666ecc563973ee344d1d0a9",
+    "closure_report_sha256": "72ffdd32cbbecb664cf0be6ac97c008a4884a2fe6e4dbe427ec9ec6eded91970",
+    "implementation_report_sha256": "0a1b1dd11a3beb392c49d4767b6bc111c736bf559fb5be7ded1ea68a21442add",
+    "readiness_json_sha256": "dbdf2fbde4ae6aed2f0867fbca8587f8fef64bda8ceb056566c2926aeb662b20",
+    "readiness_report_sha256": "152bad0555eab25c98fed494739479f1c2a33aa2fa75b9d8bff7665f84146496",
+    "schema_inspection_report_sha256": "d26bf5825b64ced1f2fb79bba90b0575b6dae91755957f3728a0087ec3884adb"
+  },
+  "execution_status": {
+    "ate_rpe_computed": false,
+    "attack_experiment_executed": false,
+    "confirmation_data_opened": false,
+    "confirmation_data_used": false,
+    "cross_dataset_evaluation_executed": false,
+    "fault_experiment_executed": false,
+    "feature_selection_executed": false,
+    "final_score_computed": false,
+    "model_training_executed": false,
+    "probability_calibration_executed": false,
+    "resource_benchmark_executed": false,
+    "threshold_selection_executed": false,
+    "validation_selection_executed": false
+  },
+  "hardware_boundary": {
+    "hardware_integration_deferred": true,
+    "software_evidence_track_requires_hardware_to_begin": false,
+    "software_success_equals_physical_hardware_validation": false
+  },
+  "health_supervision_boundary": {
+    "SE2_required_before_health_model_training": true,
+    "clean_data_automatically_means_healthy": false,
+    "health_supervision_protocol_resolved": false,
+    "synthetic_corruption_identity_automatically_means_health_label": false
+  },
+  "next_stage_policy": {
+    "SE1_may_compute_ATE_RPE": false,
+    "SE1_may_compute_final_score": false,
+    "SE1_may_fit_probability_calibration": false,
+    "SE1_may_proceed": true,
+    "SE1_may_read_confirmation_partition": false,
+    "SE1_may_read_train_partition": true,
+    "SE1_may_read_validation_partition": false,
+    "SE1_may_select_features": false,
+    "SE1_may_select_thresholds": false,
+    "SE1_may_train_health_model": false,
+    "SE1_scope": "deterministic_multimodal_dataset_replay",
+    "next_stage": "SE1"
+  },
+  "parent_frontier": {
+    "commit": "74755ec4dc43a6eec0833ef4d815630a84a8c5c6",
+    "tree": "90c4e864babe08e3a51278e7c5915657581c3b8c"
+  },
+  "partition_contract": {
+    "base_trajectory_derivatives_remain_with_base_partition": true,
+    "confirmation_count": 7,
+    "confirmation_role": "confirmation_test",
+    "corruption_seeds_may_be_reused_across_partitions": false,
+    "partition_overlap": false,
+    "train_count": 22,
+    "train_role": "train",
+    "validation_count": 7,
+    "validation_role": "validation_calibration"
+  },
+  "plan_artifacts": {
+    "audit_sha256": "95260e519ee5af50627f8a69119fca681ecff55f5a0420fce20a2eec3c82ca4d",
+    "config_sha256": "5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb",
+    "module_sha256": "35c2a01e72bbd4ca74e99bbe4a2652a3c63af70e6b2092a56220de68520dd458",
+    "plan_document_sha256": "c6803fa0c08c5f2117e702d075db9cb5dde8190d990f480f0f783a4c9d963ab4",
+    "project_state_pre_freeze_sha256": "e8778e72cb3d67f42716e746a7e4e58e002d2bcf5d7136ab71be863c154398d6",
+    "tests_sha256": "d1fe55fc862c5e2a30926d4dafee33bb77bde999853efddf1118de7dede395cf"
+  },
+  "schema": "TRUST_ROBOT_SE0_SOFTWARE_EVIDENCE_COMPLETION_PLAN_FREEZE_V1",
+  "selection_contract": {
+    "confirmation_for_selection": false,
+    "confirmation_may_select_alignment": false,
+    "confirmation_may_select_association": false,
+    "confirmation_may_select_attack_budget": false,
+    "confirmation_may_select_calibration": false,
+    "confirmation_may_select_evaluation_interval": false,
+    "confirmation_may_select_fault_severity": false,
+    "confirmation_may_select_features": false,
+    "confirmation_may_select_interpolation": false,
+    "confirmation_may_select_metric_operating_choices": false,
+    "confirmation_may_select_model": false,
+    "confirmation_may_select_thresholds": false,
+    "train_for_model_construction": true,
+    "train_internal_grouped_selection_may_be_defined_where_scientifically_authorized": true,
+    "validation_access_before_authorized_stage": false,
+    "validation_for_authorized_selection_only": true
+  },
+  "source_bindings": {
+    "data_protocol_sha256": "ffee2e1daea71318f649564c0c48da71a5e26d6ad89a82544e5f216e0ffc2485",
+    "evaluation_protocol_v2_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase14_freeze_sha256": "65bc22d6bd627c13edc20f9d671f59dc557e24b2de9f0560580b2354ca1d3d7d",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3",
+    "split_evidence_sha256": "9b1bddff5685f933372049966d9d72dd1162f66f8abfe29bbc80da3cbe38e9a9",
+    "split_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "stage_names": [
+    "scientific_readiness_and_plan_freeze",
+    "deterministic_multimodal_dataset_replay",
+    "health_supervision_protocol",
+    "multimodal_feature_pipeline",
+    "health_model_training",
+    "validation_selection_and_probability_calibration",
+    "end_to_end_runtime_assembly",
+    "controlled_fault_attack_and_ablation_evaluation",
+    "localization_cross_dataset_and_resource_evaluation",
+    "frozen_software_confirmation",
+    "dashboard_and_reproducibility_package"
+  ],
+  "stage_order": [
+    "SE0",
+    "SE1",
+    "SE2",
+    "SE3",
+    "SE4",
+    "SE5",
+    "SE6",
+    "SE7",
+    "SE8",
+    "SE9",
+    "SE10"
+  ]
+}
