@@ -3793,3 +3793,120 @@ After promotion, Phase-10 software architecture may proceed but must not assume
 that Phase-9 runtime suppression, recovery, or estimator-status execution is
 available.
 
+## Phase 10 controlled-fault / causal-ablation contract V1
+
+Status: **fail-closed same-backbone RQ1/RQ2 controlled-fault and causal-ablation
+software architecture implemented locally; experiment execution remains
+disabled.**
+
+Phase-10 scope is `Causal ablations and controlled faults`, with
+`Same-backbone RQ1/RQ2 evidence`.
+
+Current state:
+
+- same-backbone operational definition selected: false;
+- ablation variants selected: false;
+- RQ1 proxy reliability definition selected: false;
+- RQ1 executable: false;
+- RQ2 executable: false;
+- numeric fault severity selected: false;
+- severity grid selected: false;
+- attack budget selected: false;
+- fault schedule selected: false;
+- partition seed schedule selected: false;
+- controlled fault execution authorized: false;
+- physical fault execution authorized: false.
+
+The frozen Phase-3 native mechanisms are named as:
+
+- `EVENT_GAP`;
+- `EVENT_REPEAT`;
+- `TIMESTAMP_STEP_SHIFT`.
+
+They are bound as admissible native mechanism identities only. No Phase-10
+fault execution occurs.
+
+Synthetic corruption truth is not promoted to a health label, physical-fault
+proof, or runtime causal evidence.
+
+The Phase-5 controlled-availability interface is retained as a potential
+evidence interface, but it is not an accepted health-supervision source and
+contains zero real health labels.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Artifacts:
+
+- `configs/trust_robot/phase10_controlled_fault_ablation_contract_candidate_v1.json`
+  SHA-256 `7739dfd406635ec55cce54a0c58af02f1da427d768d41361232aa3ac2546eb99`
+- `src/trust_robot/controlled_fault_ablations.py`
+  SHA-256 `4322842cce824ad933c4ac0388142408a986877ac743a367a31251b7e7bd83b4`
+- `tests/trust_robot/test_controlled_fault_ablations.py`
+  SHA-256 `fbaebd2618b368d09d17eeb8ad11cad930135cacaa048291af36bbd1b3222586`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE10_CONTROLLED_FAULT_ABLATION_CONTRACT_V1.md`
+  SHA-256 `224740abed83226c1c79946a780a3069d99099408047d2331f00411f4aad3ad2`
+
+Scope-resolution evidence:
+
+- report SHA-256 `960f298aa8159ad4c4a0a57c9b7fa2a77e7b5e99c43d4be9c2f21ead7a955eb3`
+- JSON SHA-256 `ab5655fd1f2844dcad76c100d36d48085c65ad019aa9a024a77ebe61d2855ae7`
+
+RQ1/RQ2 basis evidence:
+
+- report SHA-256 `d3939b9f3af7f90cfc16f715b09562cac99215e94e4cc2162c24368b88ea5ef8`
+- JSON SHA-256 `64e13c8e7b015aadbe43cecbfeaa5a9b7fde3193810a7fc728875cfed2f1923a`
+
+## Phase 10 controlled-fault / causal-ablation software freeze V1
+
+Status: **same-backbone RQ1/RQ2 controlled-fault and causal-ablation software
+architecture frozen for checkpoint promotion; empirical experiment execution
+remains deferred.**
+
+Current state:
+
+- same-backbone operational definition selected: false;
+- ablation variants selected: false;
+- RQ1 proxy reliability definition selected: false;
+- RQ1 executable: false;
+- RQ1 answer available: false;
+- RQ2 executable: false;
+- RQ2 answer available: false;
+- new fault family selected: false;
+- numeric fault severity selected: false;
+- severity grid selected: false;
+- attack budget selected: false;
+- fault schedule selected: false;
+- partition seed schedule selected: false;
+- controlled-fault execution authorized: false;
+- physical-fault execution authorized: false.
+
+Frozen native Phase-3 identities remain:
+
+- `EVENT_GAP`;
+- `EVENT_REPEAT`;
+- `TIMESTAMP_STEP_SHIFT`.
+
+Synthetic corruption truth remains distinct from health labels, physical-fault
+proof, and runtime causal evidence.
+
+Validation remains unopened and confirmation remains closed.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase10_controlled_fault_ablation_software_freeze_v1.json`
+  SHA-256 `23a69b642fc0e4bd878c7323aeb2975f4eba4e65e6b017ff78f219019ce2a470`
+- `tests/trust_robot/test_phase10_controlled_fault_ablation_software_freeze.py`
+  SHA-256 `340769212254269fae9769c0cc5ca3a4d2e345932751ac95e46d550e02e01ffb`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE10_CONTROLLED_FAULT_ABLATION_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `1609c3fb3c54a02f68550c42995fe04b456d93dee6c16ecf96d3405ea55ba766`
+
+Closure evidence:
+
+- report SHA-256 `c570b2600b4bdb43d5db7b0a31614c54c8f0d609476b2fe16b7f99c41df96772`
+- JSON SHA-256 `a2b9a3d02e545245a17341549c291e80db4698887a5f682f65a6d4bdb4ebd1b2`
+
+After promotion, Phase-11 software architecture may proceed but must not assume
+that Phase-10 experiments were executed or that RQ1/RQ2 answers exist.
+

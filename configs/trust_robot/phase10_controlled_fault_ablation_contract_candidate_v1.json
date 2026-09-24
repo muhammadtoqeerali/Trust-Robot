@@ -1,0 +1,140 @@
+{
+  "controlled_availability_binding": {
+    "absence_of_intervention_alone_proves_healthy": false,
+    "accepted_health_supervision_source": false,
+    "controlled_supervision_kind": "measurement_availability",
+    "execution_authorized": false,
+    "interface_named": true,
+    "real_health_label_count": 0
+  },
+  "data_selection_boundary": {
+    "confirmation_data_used": false,
+    "confirmation_may_select_ablation_variants": false,
+    "confirmation_may_select_fault_schedule": false,
+    "confirmation_may_select_fault_severity": false,
+    "confirmation_may_select_seed_schedule": false,
+    "confirmation_may_select_severity_grid": false,
+    "validation_data_opened": false,
+    "validation_metric_may_select_corruption_conditions": false
+  },
+  "evaluation_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "calibration_quality_separate": true,
+    "controlled_fault_robustness_separate": true,
+    "estimator_availability_failure_separate": true,
+    "final_scoring_authorized": false,
+    "graceful_degradation_separate": true,
+    "localization_state_estimation_separate": true,
+    "modality_health_discrimination_separate": true,
+    "single_undocumented_aggregate_score_allowed": false
+  },
+  "execution_gate": {
+    "causal_ablation_executed": false,
+    "controlled_availability_execution_authorized": false,
+    "controlled_fault_experiment_executed": false,
+    "native_phase3_fault_execution_authorized": false,
+    "phase10_experiment_execution_authorized": false,
+    "physical_fault_executed": false,
+    "physical_fault_execution_authorized": false
+  },
+  "fault_injection_rules": {
+    "clean_and_corrupted_derivatives_remain_same_partition": true,
+    "held_out_test_may_select_attack_budgets": false,
+    "held_out_test_may_select_severity_levels": false,
+    "random_seeds_may_be_reused_across_partitions": false,
+    "raw_sensor_and_factor_level_corruption_equivalent": false,
+    "scientifically_appropriate_layer_required": true
+  },
+  "fault_parameter_boundary": {
+    "attack_budget": null,
+    "attack_budget_selected": false,
+    "fault_duration": null,
+    "fault_duration_selected": false,
+    "fault_probability": null,
+    "fault_probability_selected": false,
+    "fault_schedule": null,
+    "fault_schedule_selected": false,
+    "numeric_fault_severity": null,
+    "numeric_fault_severity_selected": false,
+    "partition_seed_schedule": null,
+    "partition_seed_schedule_selected": false,
+    "performance_based_corruption_selection_allowed": false,
+    "severity_grid": null,
+    "severity_grid_selected": false,
+    "silent_attack_budget_default_allowed": false,
+    "silent_severity_default_allowed": false
+  },
+  "lifecycle_status": "contract_implemented_experiments_unselected",
+  "native_phase3_binding": {
+    "execution_authorized": false,
+    "native_families": [
+      "EVENT_GAP",
+      "EVENT_REPEAT",
+      "TIMESTAMP_STEP_SHIFT"
+    ],
+    "native_family_expansion_selected": false,
+    "selection_policy_bound": true,
+    "synthetic_truth_is_health_label": false,
+    "synthetic_truth_is_physical_fault_proof": false,
+    "synthetic_truth_is_runtime_causal_evidence": false
+  },
+  "phase_scope": {
+    "evidence_role": "same_backbone_RQ1_RQ2_evidence",
+    "name": "causal_ablations_and_controlled_faults",
+    "numbered_master_section_10_is_phase_plan_phase10": false,
+    "numbered_master_section_10_role": "safety_supervision_conceptual_section",
+    "phase": 10
+  },
+  "research_questions": {
+    "RQ1": "Can explicitly supervised and calibrated healthy/degraded/unusable modality probabilities outperform fair validation-calibrated proxy reliability scores?",
+    "RQ2": "Does health-aware factor weighting improve localization/state-estimation robustness and graceful degradation under increasing fault severity?"
+  },
+  "rq1_ablation_boundary": {
+    "comparison_variants_selected": false,
+    "empirical_phase5_health_model_available": false,
+    "empirical_phase6_calibration_available": false,
+    "fair_validation_calibrated_proxy_path_named": true,
+    "proxy_reliability_definition": "unselected",
+    "proxy_reliability_definition_selected": false,
+    "rq1_executable": false,
+    "supervised_calibrated_health_probability_path_named": true
+  },
+  "rq2_ablation_boundary": {
+    "comparison_variants_selected": false,
+    "health_aware_factor_weighting_named": true,
+    "increasing_fault_severity_named": true,
+    "phase8_numeric_factor_conditioning_available": false,
+    "phase9_runtime_estimator_status_available": false,
+    "phase9_runtime_recovery_available": false,
+    "phase9_runtime_suppression_available": false,
+    "rq2_executable": false
+  },
+  "same_backbone_boundary": {
+    "ablation_variants": [],
+    "ablation_variants_selected": false,
+    "operational_definition": "unselected",
+    "operational_definition_selected": false,
+    "requirement_named_by_phase_plan": true,
+    "undeclared_pipeline_changes_allowed": false
+  },
+  "schema": "TRUST_ROBOT_PHASE10_CONTROLLED_FAULT_ABLATION_CONTRACT_V1",
+  "source_bindings": {
+    "controlled_availability_audit_sha256": "129e7447059cc2ffd8ebf67b1bf360dd4f4c8a7e975628f9af29d3a548881ada",
+    "controlled_availability_config_sha256": "364d2c4d043c5a99e969ea3406d8bb338931705a236b169249b1c06c294f0361",
+    "controlled_availability_module_sha256": "460c61b15a215a9fca36162aec7644a9f565731716e5f32d727a71d2101a6040",
+    "frontier_json_sha256": "fc355c5405841147bbdd85898b13a1c871c8d106d67efa44e0dc73dbafcd3f34",
+    "frontier_report_sha256": "af8940cc5eb3b28123d90a75c82489f1b96b28fbeb2cc2bfb1d0ff7ab4475d41",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase3_freeze_sha256": "330c5041cb27b9460cb2502aa3ea32b5b4e565facfa2fe5b1bc30554257189f0",
+    "phase3_module_sha256": "4913cf258fb51c2205c56a7b23852b9cb48781b4370af30b69ec05633947ebcc",
+    "phase3_selection_module_sha256": "acf334e8db7db8cb8dd7fdedc87c1c6eee60f89e01e4e72e148639c879a7e700",
+    "phase3_selection_sha256": "df130b8b06831c443b7027dbf70e521a7969c558e628adaf95f87184fbe5a9f6",
+    "phase3_taxonomy_sha256": "f8a572fc3c25b0effc9f5d0f5fd084a69fc712953f5ae51c0ad3a06a773c02a7",
+    "phase9_freeze_sha256": "9c84e85ed6789e01e6eb8d6d25cf40bcdec8b436af879cf54aa3e1b1df80122d",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3",
+    "rq_basis_json_sha256": "64e13c8e7b015aadbe43cecbfeaa5a9b7fde3193810a7fc728875cfed2f1923a",
+    "rq_basis_report_sha256": "d3939b9f3af7f90cfc16f715b09562cac99215e94e4cc2162c24368b88ea5ef8",
+    "scope_json_sha256": "ab5655fd1f2844dcad76c100d36d48085c65ad019aa9a024a77ebe61d2855ae7",
+    "scope_report_sha256": "960f298aa8159ad4c4a0a57c9b7fa2a77e7b5e99c43d4be9c2f21ead7a955eb3"
+  }
+}
