@@ -4182,3 +4182,176 @@ After promotion, Phase-13 software architecture may proceed but must not assume
 that Phase-12 attack evaluation was executed, that RQ3 was answered, or that
 an attack-resilience/source-attribution claim is available.
 
+## Phase 13 resource-evaluation contract V1
+
+Status: **fail-closed resource-evaluation software architecture implemented
+locally; concrete measurement policy and empirical resource claims remain
+deferred.**
+
+Authoritative cost views:
+
+- complete-system cost;
+- incremental trust-layer overhead.
+
+Required future resource evidence:
+
+- mean latency;
+- P95 latency;
+- deadline misses;
+- throughput;
+- processor utilization where measurable;
+- peak memory;
+- storage;
+- average power;
+- peak power;
+- energy per update or trajectory.
+
+Required future measurement metadata:
+
+- hardware versions;
+- software versions;
+- power/clock mode;
+- sensor rates;
+- estimator window size;
+- warm-up policy;
+- measurement method.
+
+Current state:
+
+- exact latency definition selected: false;
+- timing clock source selected: false;
+- deadline definition selected: false;
+- throughput definition selected: false;
+- processor-utilization measurement selected: false;
+- peak-memory measurement selected: false;
+- storage scope selected: false;
+- power measurement method selected: false;
+- energy measurement method selected: false;
+- update-vs-trajectory energy scope selected: false;
+- measurement scope selected: false;
+- warm-up policy selected: false;
+- repetition policy selected: false;
+- aggregation policy selected: false;
+- hardware profile frozen: false;
+- software runtime profile frozen: false;
+- power/clock mode frozen: false;
+- sensor-rate profile frozen: false;
+- estimator window size frozen: false;
+- measurement method frozen: false;
+- CPU-specific metric selected: false;
+- GPU-specific metric selected: false;
+- real-time acceptance threshold selected: false;
+- resource measurement execution authorized: false;
+- resource claim authorized: false;
+- RQ4 resource answer available: false.
+
+Historical \`RUNTIME_RESOURCE_OVERHEAD_PROTOCOL_V1\` exists but is not adopted as
+TRUST-ROBOT Phase-13 policy.
+
+Historical warm-up counts, repetition counts, timing clock, median-primary
+statistic, RSS/tracemalloc policy, latency targets, and reference-host results
+remain non-adopted.
+
+Reference-host evidence may not be relabeled as onboard-robot or STM32
+resource evidence.
+
+Target-specific claims require target-specific measurement.
+
+The closed-loop safety component of RQ4 remains deferred to Phase 14.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Artifacts:
+
+- `configs/trust_robot/phase13_resource_evaluation_contract_candidate_v1.json`
+  SHA-256 `999034456e4ab8eb62e36f08e769e670a8777d52f60876856f1bdc8caa71040b`
+- `src/trust_robot/resource_evaluation.py`
+  SHA-256 `409b84eccba8d89009c5311ba4727ec3479a7bc55fc2881dd28b72b5adfb9620`
+- `tests/trust_robot/test_resource_evaluation.py`
+  SHA-256 `76371bbb25b84053be2263a659067b0d3a24017fc9345fc8f71bf6f6239739ae`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE13_RESOURCE_EVALUATION_CONTRACT_V1.md`
+  SHA-256 `ecd20f6b6689982f7075c4fe2670c58b5eba7475cd77324d4429d525520cffad`
+
+Frontier evidence:
+
+- report SHA-256 `4120763b090e7b2e3a1d0bdf92aa55323abb675e261d07ebde94f27f6268077b`
+- JSON SHA-256 `71a8ea7d900a72780a06c9d1d174c2a43df79dd462d6064279c56b97cc075bdb`
+
+Resource-measurement basis evidence:
+
+- report SHA-256 `222661b5977a371d11d332f9e53d2ea147d87791d8f8db4d8f47f29b4a92e5c1`
+- JSON SHA-256 `7eca5a47174e29f77b739bcc6a8552b29940ac98e56eedca11e713cb87062147`
+
+## Phase 13 resource-evaluation software freeze V1
+
+Status: **resource-evaluation software architecture frozen for checkpoint
+promotion; concrete measurement policy and empirical resource evidence remain
+deferred.**
+
+Frozen requirements:
+
+- cost views: complete-system cost and incremental trust-layer overhead;
+- ten resource evidence families;
+- seven mandatory future measurement metadata categories.
+
+Current state:
+
+- exact latency definition selected: false;
+- timing clock source selected: false;
+- deadline definition selected: false;
+- throughput definition selected: false;
+- processor-utilization measurement selected: false;
+- peak-memory measurement selected: false;
+- storage scope selected: false;
+- power measurement method selected: false;
+- energy measurement method selected: false;
+- warm-up policy selected: false;
+- repetition policy selected: false;
+- aggregation policy selected: false;
+- hardware profile frozen: false;
+- software runtime profile frozen: false;
+- power/clock mode frozen: false;
+- sensor-rate profile frozen: false;
+- estimator-window size frozen: false;
+- measurement method frozen: false;
+- CPU/GPU-specific metrics selected: false;
+- real-time acceptance threshold selected: false;
+- historical resource protocol adopted: false;
+- historical reference-host results adopted: false;
+- resource measurement execution authorized: false;
+- resource claim authorized: false;
+- RQ4 resource answer available: false.
+
+Reference-host evidence is not onboard-robot evidence.
+
+Host/native evidence is not STM32 evidence.
+
+Target-specific resource claims require target-specific measurements.
+
+The guarded closed-loop safety component of RQ4 remains deferred to Phase 14.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase13_resource_evaluation_software_freeze_v1.json`
+  SHA-256 `18e8ae494281a3d20567aa7e7404909ccccc832c7426cf0b0ba5ff683f9ffac8`
+- `tests/trust_robot/test_phase13_resource_evaluation_software_freeze.py`
+  SHA-256 `262812bdaad349a6b8c4b08fe45e8923526f4764bd4260b740afed4f0dc9c71a`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE13_RESOURCE_EVALUATION_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `dd87afa202bb9d26e08b32b0f1d9471f4de8569007bd8a274f9939344b58ac1b`
+
+Closure evidence:
+
+- report SHA-256 `09cec194a9db777f8175f6ae32651b042abb39a983eb1c74ce4cc788a49597cb`
+- JSON SHA-256 `6dc463bc22e7dc80dfed37ff12c814e53f78ab7e4fc3582417a72c7a3dcc05eb`
+
+After promotion, Phase-14 software architecture may proceed but must not assume
+that Phase-13 resource measurement was executed, that onboard resource
+constraints were verified, that fallback thresholds were frozen, or that the
+RQ4 resource component was answered.
+

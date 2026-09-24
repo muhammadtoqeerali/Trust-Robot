@@ -1,0 +1,176 @@
+{
+  "cost_views": {
+    "complete_system_cost_measurement_available": false,
+    "incremental_trust_layer_overhead_measurement_available": false,
+    "required": [
+      "complete_system_cost",
+      "incremental_trust_layer_overhead"
+    ],
+    "required_count": 2
+  },
+  "evaluation_family_boundary": {
+    "may_be_collapsed_into_undocumented_aggregate_score": false,
+    "resource_evidence_is_separate_evaluation_family": true
+  },
+  "execution_gate": {
+    "empirical_resource_evidence_complete": false,
+    "measurement_environment_frozen": false,
+    "measurement_policy_complete": false,
+    "resource_claim_authorized": false,
+    "resource_measurement_executed": false,
+    "resource_measurement_execution_authorized": false
+  },
+  "historical_resource_reuse_boundary": {
+    "historical_latency_clock_method_adopted": false,
+    "historical_median_primary_statistic_adopted": false,
+    "historical_numeric_latency_targets_adopted": false,
+    "historical_project_latency_targets_adopted": false,
+    "historical_protocol_exists": true,
+    "historical_protocol_identity": "RUNTIME_RESOURCE_OVERHEAD_PROTOCOL_V1",
+    "historical_protocol_is_TRUST_ROBOT_phase13_protocol": false,
+    "historical_reference_host_results_adopted": false,
+    "historical_repetition_count_adopted": false,
+    "historical_rss_method_adopted": false,
+    "historical_stm32_claims_adopted": false,
+    "historical_tracemalloc_method_adopted": false,
+    "historical_warmup_iteration_count_adopted": false,
+    "legacy_IMU_HAR_resource_semantics_adopted": false,
+    "legacy_instrumentation_may_inform_future_engineering_implementation_only_after_explicit_phase13_binding": true
+  },
+  "lifecycle_status": "contract_implemented_measurement_policy_unselected",
+  "measurement_environment_boundary": {
+    "estimator_window_size": null,
+    "estimator_window_size_frozen": false,
+    "hardware_profile": null,
+    "hardware_profile_frozen": false,
+    "measurement_method": null,
+    "measurement_method_frozen": false,
+    "power_clock_mode": null,
+    "power_clock_mode_frozen": false,
+    "sensor_rate_profile": null,
+    "sensor_rate_profile_frozen": false,
+    "software_runtime_profile": null,
+    "software_runtime_profile_frozen": false
+  },
+  "measurement_metadata_schema": {
+    "required_field_count": 7,
+    "required_fields": [
+      "hardware_versions",
+      "software_versions",
+      "power_clock_mode",
+      "sensor_rates",
+      "estimator_window_size",
+      "warmup_policy",
+      "measurement_method"
+    ],
+    "values_currently_frozen": false
+  },
+  "measurement_policy_boundary": {
+    "aggregation_policy": null,
+    "aggregation_policy_selected": false,
+    "cpu_specific_metric": null,
+    "cpu_specific_metric_selected": false,
+    "deadline_definition": null,
+    "deadline_definition_selected": false,
+    "energy_measurement_method": null,
+    "energy_measurement_method_selected": false,
+    "energy_unit_scope_update_vs_trajectory": null,
+    "energy_unit_scope_update_vs_trajectory_selected": false,
+    "exact_latency_definition": null,
+    "exact_latency_definition_selected": false,
+    "gpu_specific_metric": null,
+    "gpu_specific_metric_selected": false,
+    "measurement_scope_boundaries": null,
+    "measurement_scope_boundaries_selected": false,
+    "peak_memory_measurement": null,
+    "peak_memory_measurement_selected": false,
+    "power_measurement_method": null,
+    "power_measurement_method_selected": false,
+    "processor_utilization_measurement": null,
+    "processor_utilization_measurement_selected": false,
+    "real_time_acceptance_threshold": null,
+    "real_time_acceptance_threshold_selected": false,
+    "repetition_policy": null,
+    "repetition_policy_selected": false,
+    "storage_scope": null,
+    "storage_scope_selected": false,
+    "throughput_definition": null,
+    "throughput_definition_selected": false,
+    "timing_clock_source": null,
+    "timing_clock_source_selected": false,
+    "warmup_policy": null,
+    "warmup_policy_selected": false
+  },
+  "phase_scope": {
+    "evidence_role": "latency_memory_throughput_power_and_computational_resource_evidence",
+    "name": "resource_evaluation",
+    "phase": 13
+  },
+  "platform_claim_boundary": {
+    "host_python_or_native_measurement_may_be_relabelled_as_stm32": false,
+    "onboard_robot_resource_claim_requires_onboard_robot_measurement": true,
+    "reference_host_measurement_equals_onboard_robot_measurement": false,
+    "reference_host_measurement_equals_stm32_measurement": false,
+    "stm32_cycles_claim_authorized": false,
+    "stm32_energy_claim_authorized": false,
+    "stm32_flash_claim_authorized": false,
+    "stm32_latency_claim_authorized": false,
+    "stm32_ram_claim_authorized": false,
+    "target_specific_resource_claim_requires_target_specific_measurement": true
+  },
+  "protected_scientific_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "final_scoring_authorized": false,
+    "phase12_attack_results_assumed": false,
+    "phase14_closed_loop_safety_results_assumed": false,
+    "validation_data_opened": false
+  },
+  "resource_evidence_schema": {
+    "families_are_measurement_results": false,
+    "families_define_required_future_evidence": true,
+    "processor_utilization_is_conditional_where_measurable": true,
+    "required_families": [
+      "mean_latency",
+      "p95_latency",
+      "deadline_misses",
+      "throughput",
+      "processor_utilization_where_measurable",
+      "peak_memory",
+      "storage",
+      "average_power",
+      "peak_power",
+      "energy_per_update_or_trajectory"
+    ],
+    "required_family_count": 10
+  },
+  "rq4_boundary": {
+    "closed_loop_safety_component_deferred_to_phase14": true,
+    "closed_loop_safety_evidence_assumed": false,
+    "fallback_thresholds_frozen": false,
+    "onboard_resource_constraints_instantiated": false,
+    "question": "Can the trust layer meet onboard resource constraints and improve guarded closed-loop safety when fallback thresholds are frozen before physical tests?",
+    "resource_answer_available": false,
+    "resource_component_in_phase13": true
+  },
+  "schema": "TRUST_ROBOT_PHASE13_RESOURCE_EVALUATION_CONTRACT_V1",
+  "source_bindings": {
+    "basis_json_sha256": "7eca5a47174e29f77b739bcc6a8552b29940ac98e56eedca11e713cb87062147",
+    "basis_report_sha256": "222661b5977a371d11d332f9e53d2ea147d87791d8f8db4d8f47f29b4a92e5c1",
+    "embedded_build_blocker_sha256": "b8ee7a7e1d568c3d4ea0b46cb0c5434a73edeafaae1d72410e36422d7e1d4c58",
+    "embedded_evidence_ledger_sha256": "d58f375362fe0936bb8f153ad4a82693980b9ca2c6894ab2e91117ee021987a7",
+    "embedded_reference_path_sha256": "175059822fa16314e5117fa56557280aec831ed8b1c551cee1163e627d1d9d4f",
+    "frontier_json_sha256": "71a8ea7d900a72780a06c9d1d174c2a43df79dd462d6064279c56b97cc075bdb",
+    "frontier_report_sha256": "4120763b090e7b2e3a1d0bdf92aa55323abb675e261d07ebde94f27f6268077b",
+    "historical_project_config_sha256": "a96dfe8aca5c1983cfc87182cda9c18b83251199ca8e5bc7d9dbe91f8ccda948",
+    "historical_resource_benchmark_sha256": "a140daa5d12f86709aa3105b28facb43d7fb64e2e4dc59cbd78163c223d4174a",
+    "historical_resource_protocol_builder_sha256": "6d157e7cd207ba5611874de618254473f38638fb2ccbf3071d076748a11b10ac",
+    "historical_runtime_integration_sha256": "332beb6b99c73f6c4c153bcc21a05ab38e42516d1505c2c4f5f28f6ee5b3cf11",
+    "historical_runtime_resource_protocol_sha256": "2063c44ba8108f1875e902fe112ee1c764155a347dbb2f9d6618cacfaaf9ba87",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "paper_claim_matrix_sha256": "cdc262aeeef4b309002d84136099ce3280a5981cfd2110206a8a521069f6fa5a",
+    "phase12_freeze_sha256": "bf95425b257d486510c16cdea1d2907d64480bc00a6fe07b088316c4333bbf05",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3",
+    "portable_c_contract_sha256": "bfe2d56e998150b5109462ae81be5e788c9fed28b1a290a9ef3adbebe6dbd831"
+  }
+}
