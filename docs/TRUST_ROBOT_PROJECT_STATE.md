@@ -4036,3 +4036,149 @@ After promotion, Phase-12 software architecture may proceed but must not assume
 that Phase-11 cross-dataset evaluation, EuRoC evaluation, or TUM-VI evaluation
 is available.
 
+## Phase 12 threat-model contract V1
+
+Status: **fail-closed explicit attack / threat-model software architecture
+implemented locally; no attack protocol is instantiated and no attack
+execution is authorized.**
+
+Phase-12 scope is `Explicit attack evaluation` with
+`Threat-model-bounded RQ3 evidence`.
+
+Planned attack taxonomy:
+
+- false-data injection / spoofing;
+- bounded adversarial image or point-cloud perturbation;
+- replay;
+- timestamp manipulation;
+- coordinated two-modality corruption;
+- adaptive white-box digital evasion.
+
+These are planned taxonomy identities, not executable protocols.
+
+Every eventual attack protocol must bind attacker knowledge, writable
+modalities, writable fields, duration, magnitude/rate/norm budget, objective,
+protected-source assumptions, and identifiability assumptions.
+
+Current state:
+
+- instantiated attack protocol count: 0;
+- threat model selected: false;
+- attacker knowledge model selected: false;
+- writable modalities selected: false;
+- writable fields selected: false;
+- attack objective selected: false;
+- protected-source assumptions selected: false;
+- identifiability assumptions selected: false;
+- attack family selected: false;
+- attack target pipeline layer selected: false;
+- attack duration selected: false;
+- attack budget selected: false;
+- attack magnitude/rate/norm selected: false;
+- attack schedule selected: false;
+- attack threshold selected: false;
+- single-sensor operational definition selected: false;
+- coordinated operational definition selected: false;
+- adaptive operational definition selected: false;
+- RQ3 executable: false;
+- RQ3 answer available: false;
+- synthetic attack execution authorized: false;
+- physical attack execution authorized: false;
+- attack evaluation authorized: false.
+
+Fault, environmental degradation, and attack evidence remain distinct.
+
+Phase-3 taxonomy identity does not establish Phase-12 attack execution.
+Phase-10 controlled-fault evidence does not establish Phase-12 attack evidence.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Artifacts:
+
+- `configs/trust_robot/phase12_threat_model_contract_candidate_v1.json`
+  SHA-256 `b81f4fa6ddeac61775fdc017dc70effa875ceeffe4c017c7b57489f0aa431e73`
+- `src/trust_robot/attack_threat_model.py`
+  SHA-256 `03b7ebcc468b8b798f9240e8105ceec88b3c2b919a5bc78dad6d6554617d5983`
+- `tests/trust_robot/test_attack_threat_model.py`
+  SHA-256 `e663bd9fb3cedd0a80615bc3844c4a91af8ebc4b41f6e0475d18bf2c32ad5bdc`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE12_THREAT_MODEL_CONTRACT_V1.md`
+  SHA-256 `2fe029e5ee3d0d8310f72d00e68d0d4fff214ea7766fd0a68d3e582e7a0ebc7c`
+
+Frontier evidence:
+
+- report SHA-256 `5fca5b0e4d9822381190a98faa14abeffa9247a2e400c3225fc7bc844a3eb959`
+- JSON SHA-256 `9944764551a402cad59b3c7bb1c26b29d08ab9bde3250b6ea45eb7b484033da9`
+
+Attack-protocol basis evidence:
+
+- report SHA-256 `4eb113eab4a8c4290922ec903afaad6b046c8853d2a903c218ee222c467cbd78`
+- JSON SHA-256 `409a9c94dbfcb6d998e7d9f974426c7b7b58bc25e7908c66ec8e1a134873b00c`
+
+## Phase 12 threat-model software freeze V1
+
+Status: **explicit threat-model / attack-evaluation software architecture
+frozen for checkpoint promotion; attack-protocol instantiation and empirical
+attack evaluation remain deferred.**
+
+Current state:
+
+- planned attack taxonomy bound: true;
+- planned attack identity count: 6;
+- mandatory protocol field count: 8;
+- instantiated attack protocol count: 0;
+- threat model selected: false;
+- attacker knowledge model selected: false;
+- writable modalities selected: false;
+- writable fields selected: false;
+- attack objective selected: false;
+- protected-source assumptions selected: false;
+- identifiability assumptions selected: false;
+- attack family selected: false;
+- attack target pipeline layer selected: false;
+- attack duration selected: false;
+- attack budget selected: false;
+- attack magnitude/rate/norm selected: false;
+- attack schedule selected: false;
+- attack threshold selected: false;
+- single-sensor operational definition selected: false;
+- coordinated operational definition selected: false;
+- adaptive operational definition selected: false;
+- RQ3 executable: false;
+- RQ3 answer available: false;
+- synthetic attack execution authorized: false;
+- physical attack execution authorized: false;
+- attack evaluation authorized: false;
+- attack-resilience claim authorized: false;
+- source-attribution claim authorized: false.
+
+Fault, environmental degradation, and attack evidence remain distinct.
+
+Phase-3 taxonomy identity does not establish a Phase-12 executable attack
+protocol.
+
+Phase-10 controlled-fault truth does not establish Phase-12 attack truth.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase12_threat_model_software_freeze_v1.json`
+  SHA-256 `bf95425b257d486510c16cdea1d2907d64480bc00a6fe07b088316c4333bbf05`
+- `tests/trust_robot/test_phase12_threat_model_software_freeze.py`
+  SHA-256 `be86a3b2d1e57553cbbcfbff2bcff3fe347177ec46f8ef7a845694360b79368a`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE12_THREAT_MODEL_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `c12f3453eafec187fdb0a5a83bbcd7ff81579eaa030e6a5b4d43da872b8a6240`
+
+Closure evidence:
+
+- report SHA-256 `75ecde459bb64245a4a61bc49eb33244eb0bab9fa375c6864ec38a10033f928a`
+- JSON SHA-256 `53e84343a7ae9f6bf6608c675661d183b359943061f6aed7f711cc8309244b54`
+
+After promotion, Phase-13 software architecture may proceed but must not assume
+that Phase-12 attack evaluation was executed, that RQ3 was answered, or that
+an attack-resilience/source-attribution claim is available.
+

@@ -1,0 +1,213 @@
+{
+  "attack_operating_point_boundary": {
+    "attack_budget": null,
+    "attack_budget_selected": false,
+    "attack_duration": null,
+    "attack_duration_selected": false,
+    "attack_magnitude": null,
+    "attack_magnitude_selected": false,
+    "attack_norm": null,
+    "attack_norm_selected": false,
+    "attack_rate": null,
+    "attack_rate_selected": false,
+    "attack_schedule": null,
+    "attack_schedule_selected": false,
+    "attack_seed_schedule": null,
+    "attack_seed_schedule_selected": false,
+    "attack_threshold": null,
+    "attack_threshold_selected": false,
+    "budgets_and_thresholds_must_be_fixed_before_held_out_testing": true,
+    "held_out_testing_may_select_attack_budget": false,
+    "held_out_testing_may_select_attack_threshold": false
+  },
+  "attack_protocol_schema": {
+    "complete_explicit_threat_model_required_before_execution": true,
+    "instantiated_protocol_count": 0,
+    "instantiated_protocols": [],
+    "required_field_count": 8,
+    "required_fields": [
+      "attacker knowledge",
+      "writable modality/modalities",
+      "writable fields",
+      "attack duration",
+      "magnitude/rate/norm budget",
+      "objective",
+      "protected-source assumptions",
+      "identifiability assumptions"
+    ]
+  },
+  "checkpoint_semantics": {
+    "attack_evaluation_executed": false,
+    "attack_resilience_claim_available": false,
+    "confirmation_remains_closed": true,
+    "empirical_attack_evidence_complete": false,
+    "empirical_completion_claimed": false,
+    "instantiated_attack_protocol_count": 0,
+    "phase": 12,
+    "rq3_answer_available": false,
+    "software_architecture_implemented": true,
+    "source_attribution_claim_available": false,
+    "status": "explicit_attack_threat_model_software_architecture_frozen_attack_execution_deferred"
+  },
+  "content_sha256": "98818374d2013d59beda9b5cfa906c35701d720813c75e8dd2aea57475903152",
+  "deferred_obligations": [
+    "instantiate an explicit threat model before any attack execution",
+    "bind attacker knowledge before attack execution",
+    "bind writable modalities and writable fields before attack execution",
+    "bind attack objective before attack execution",
+    "bind protected-source assumptions before attack execution",
+    "bind identifiability assumptions before RQ3 evaluation",
+    "freeze single-sensor coordinated and adaptive operational definitions before RQ3 execution",
+    "freeze attack duration and magnitude/rate/norm budgets before held-out testing",
+    "freeze attack schedules and seed schedules prospectively",
+    "do not import historical attack severity grids or budgets",
+    "keep fault environmental-degradation and attack evidence categories distinct",
+    "do not treat Phase-3 taxonomy identity as an executable Phase-12 protocol",
+    "do not treat Phase-10 controlled-fault truth as attack truth",
+    "do not claim source attribution without sufficient uncompromised information",
+    "keep confirmation_test closed until all permitted selections are frozen",
+    "do not compute ATE/RPE or final scores until evaluator authorization exists"
+  ],
+  "evidence": {
+    "basis_json_sha256": "409a9c94dbfcb6d998e7d9f974426c7b7b58bc25e7908c66ec8e1a134873b00c",
+    "basis_report_sha256": "4eb113eab4a8c4290922ec903afaad6b046c8853d2a903c218ee222c467cbd78",
+    "closure_json_sha256": "53e84343a7ae9f6bf6608c675661d183b359943061f6aed7f711cc8309244b54",
+    "closure_report_sha256": "75ecde459bb64245a4a61bc49eb33244eb0bab9fa375c6864ec38a10033f928a",
+    "frontier_json_sha256": "9944764551a402cad59b3c7bb1c26b29d08ab9bde3250b6ea45eb7b484033da9",
+    "frontier_report_sha256": "5fca5b0e4d9822381190a98faa14abeffa9247a2e400c3225fc7bc844a3eb959",
+    "implementation_report_sha256": "2fafe9051394c78fe5dcb90493b341492d09901ca18b331eb96d716244b1e9c6"
+  },
+  "evidence_category_separation": {
+    "controlled_fault_truth_is_attack_truth": false,
+    "environmental_nonattack_degradation_separate_from_attack_evaluation": true,
+    "fault_evaluation_separate_from_attack_evaluation": true,
+    "synthetic_corruption_identity_is_attack_identity": false
+  },
+  "execution_gate": {
+    "attack_evaluation_authorized": false,
+    "attack_evaluation_executed": false,
+    "complete_threat_model_instantiated": false,
+    "physical_attack_executed": false,
+    "physical_attack_execution_authorized": false,
+    "synthetic_attack_executed": false,
+    "synthetic_attack_execution_authorized": false
+  },
+  "next_phase_policy": {
+    "deferred_phase5_through_phase12_empirical_obligations_remain_binding": true,
+    "phase13_may_assume_attack_resilience_claim_available": false,
+    "phase13_may_assume_phase12_attack_evaluation_executed": false,
+    "phase13_may_assume_rq3_answer_available": false,
+    "phase13_software_architecture_may_proceed": true
+  },
+  "parent_frontier": {
+    "commit": "104bba978b746a0c90ba5655ae778bae105c3e68",
+    "phase11_freeze_sha256": "842860e2fb17079853f6a07877b4b717deb16c5425bdcf3aefaa9314294bbc61",
+    "tree": "e8ff4e2f01f4eccb681b21b330cb21a58b27d422"
+  },
+  "phase10_reuse_boundary": {
+    "phase10_controlled_fault_reuse_authorized": false,
+    "phase10_experiment_results_available": false,
+    "phase10_fault_truth_is_phase12_attack_truth": false
+  },
+  "phase12_contract_artifacts": {
+    "audit_sha256": "2fe029e5ee3d0d8310f72d00e68d0d4fff214ea7766fd0a68d3e582e7a0ebc7c",
+    "config_sha256": "b81f4fa6ddeac61775fdc017dc70effa875ceeffe4c017c7b57489f0aa431e73",
+    "module_sha256": "03b7ebcc468b8b798f9240e8105ceec88b3c2b919a5bc78dad6d6554617d5983",
+    "project_state_pre_freeze_sha256": "448a0d0fec7ab6631dc21c73d716155785da85727a6c5f5281602dc875d573d2",
+    "tests_sha256": "e663bd9fb3cedd0a80615bc3844c4a91af8ebc4b41f6e0475d18bf2c32ad5bdc"
+  },
+  "phase3_reuse_boundary": {
+    "currently_frozen_native_families": [
+      "EVENT_GAP",
+      "EVENT_REPEAT",
+      "TIMESTAMP_STEP_SHIFT"
+    ],
+    "future_attack_related_candidate_mechanisms_not_implemented": [
+      "lidar_geometric_perturbation",
+      "replay",
+      "calibration_perturbation",
+      "threat_model_bounded_spoofing"
+    ],
+    "native_phase3_family_execution_authorized_for_phase12": false,
+    "phase3_attack_context_requires_explicit_threat_model": true,
+    "phase3_corruption_reuse_authorized": false,
+    "phase3_selection_policy_is_phase12_threat_model": false,
+    "phase3_taxonomy_identity_is_phase12_protocol": false
+  },
+  "phase_scope": {
+    "evidence_role": "threat_model_bounded_RQ3_evidence",
+    "name": "explicit_attack_evaluation"
+  },
+  "planned_attack_taxonomy": {
+    "identities": [
+      "false-data injection / spoofing",
+      "bounded adversarial image or point-cloud perturbation",
+      "replay",
+      "timestamp manipulation",
+      "coordinated two-modality corruption",
+      "adaptive white-box digital evasion"
+    ],
+    "identity_count": 6,
+    "taxonomy_identity_is_empirical_attack_evidence": false,
+    "taxonomy_identity_is_executable_attack_protocol": false,
+    "taxonomy_is_selected_threat_model": false
+  },
+  "protected_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "attack_resilience_claim_authorized": false,
+    "confirmation_data_used": false,
+    "final_scoring_authorized": false,
+    "phase11_cross_dataset_evidence_assumed": false,
+    "source_attribution_claim_authorized": false,
+    "validation_data_opened": false
+  },
+  "rq3_boundary": {
+    "adaptive_operational_definition_selected": false,
+    "attack_classes": [
+      "single_sensor",
+      "coordinated",
+      "adaptive"
+    ],
+    "coordinated_operational_definition_selected": false,
+    "identifiability_assumptions_required": true,
+    "phase7_numeric_auxiliary_consistency_available": false,
+    "rq3_answer_available": false,
+    "rq3_executable": false,
+    "single_sensor_operational_definition_selected": false
+  },
+  "schema": "TRUST_ROBOT_PHASE12_THREAT_MODEL_SOFTWARE_FREEZE_V1",
+  "selection_boundary": {
+    "attack_family": null,
+    "attack_family_selected": false,
+    "attack_goal": null,
+    "attack_goal_selected": false,
+    "attack_target_pipeline_layer": null,
+    "attack_target_pipeline_layer_selected": false,
+    "attacker_knowledge_model": null,
+    "attacker_knowledge_model_selected": false,
+    "identifiability_assumptions": [],
+    "identifiability_assumptions_selected": false,
+    "protected_source_assumptions": [],
+    "protected_source_assumptions_selected": false,
+    "threat_model": null,
+    "threat_model_selected": false,
+    "writable_fields": [],
+    "writable_fields_selected": false,
+    "writable_modalities": [],
+    "writable_modalities_selected": false
+  },
+  "source_attribution_boundary": {
+    "source_attribution_claim_authorized": false,
+    "sufficient_uncompromised_information_verified": false
+  },
+  "source_bindings": {
+    "data_protocol_sha256": "ffee2e1daea71318f649564c0c48da71a5e26d6ad89a82544e5f216e0ffc2485",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase10_contract_sha256": "7739dfd406635ec55cce54a0c58af02f1da427d768d41361232aa3ac2546eb99",
+    "phase10_freeze_sha256": "23a69b642fc0e4bd878c7323aeb2975f4eba4e65e6b017ff78f219019ce2a470",
+    "phase3_freeze_sha256": "330c5041cb27b9460cb2502aa3ea32b5b4e565facfa2fe5b1bc30554257189f0",
+    "phase3_selection_sha256": "df130b8b06831c443b7027dbf70e521a7969c558e628adaf95f87184fbe5a9f6",
+    "phase3_taxonomy_sha256": "f8a572fc3c25b0effc9f5d0f5fd084a69fc712953f5ae51c0ad3a06a773c02a7",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3"
+  }
+}
