@@ -1,0 +1,119 @@
+{
+  "execution_gate": {
+    "hard_suppression_performed": false,
+    "phase8_numeric_factor_scale_available": false,
+    "recovery_execution_authorized": false,
+    "recovery_performed": false,
+    "runtime_status_execution_authorized": false,
+    "suppression_execution_authorized": false,
+    "unusable_probability_input_available": false
+  },
+  "fallback_boundary": {
+    "fallback_appears_in_broader_project_safety_context": true,
+    "fallback_defined_by_authoritative_phase9_section": false,
+    "fallback_executed": false,
+    "fallback_execution_authorized": false,
+    "fallback_policy": "unselected",
+    "fallback_policy_selected": false,
+    "fallback_threshold": null,
+    "fallback_threshold_selected": false
+  },
+  "health_availability_separation": {
+    "availability_is_health_label": false,
+    "missing_measurement_is_health_state": false,
+    "phase5_health_state_is_suppression_command": false,
+    "suppression_action_requires_phase9_policy": true
+  },
+  "hysteresis_architecture": {
+    "default_threshold_created": false,
+    "default_window_count_created": false,
+    "entry_consecutive_window_count": null,
+    "entry_consecutive_window_count_selected": false,
+    "entry_signal": "unusable_probability",
+    "entry_threshold_selected": false,
+    "entry_threshold_value": null,
+    "hysteresis_numeric_execution_authorized": false,
+    "recovery_consecutive_window_count": null,
+    "recovery_consecutive_window_count_selected": false,
+    "recovery_threshold_relation_to_entry": "lower",
+    "recovery_threshold_selected": false,
+    "recovery_threshold_value": null,
+    "single_frame_hard_suppression_allowed": false
+  },
+  "insufficient_support_reporting": {
+    "degraded_vs_unavailable_rule": "unselected",
+    "degraded_vs_unavailable_rule_selected": false,
+    "nominal_estimate_may_be_forced_when_support_insufficient": false,
+    "required_reporting_options": [
+      "degraded_estimator_state",
+      "unavailable_estimator_state"
+    ],
+    "runtime_status_execution_authorized": false,
+    "runtime_status_output": "disabled"
+  },
+  "lifecycle_status": "contract_implemented_parameters_unselected",
+  "phase_scope": {
+    "estimator_support_status_in_scope": true,
+    "fallback_policy_defined_by_authoritative_phase9_section": false,
+    "hard_suppression_in_scope": true,
+    "name": "suppression_recovery_status",
+    "phase": 9,
+    "purpose": "hysteretic_modality_availability_and_estimator_status",
+    "recovery_in_scope": true
+  },
+  "protected_scientific_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "fallback_policy_invented": false,
+    "final_scoring_authorized": false,
+    "new_sync_parameter_selected": false,
+    "new_transform_selected": false,
+    "nominal_estimate_forced_under_insufficient_support": false,
+    "phase8_numeric_factor_scale_assumed": false,
+    "timeout_selected": false,
+    "unsupported_observability_guarantee_claimed": false
+  },
+  "remaining_factor_support": {
+    "assessment_available": false,
+    "assessment_definition": "unselected",
+    "assessment_definition_selected": false,
+    "assessment_required_before_hard_suppression": true,
+    "minimum_active_modality_count": null,
+    "minimum_active_modality_count_selected": false,
+    "observability_test": "unselected",
+    "observability_test_selected": false,
+    "unsupported_observability_guarantee_allowed": false
+  },
+  "runtime_outputs": {
+    "estimator_support_status_output": "disabled",
+    "fallback_output": "disabled",
+    "modality_recovery_output": "disabled",
+    "modality_suppression_output": "disabled"
+  },
+  "schema": "TRUST_ROBOT_PHASE9_SUPPRESSION_RECOVERY_STATUS_CONTRACT_V1",
+  "selection_boundary": {
+    "confirmation_data_used": false,
+    "confirmation_may_select_recovery_threshold": false,
+    "confirmation_may_select_support_rule": false,
+    "confirmation_may_select_suppression_threshold": false,
+    "confirmation_may_select_window_counts": false,
+    "degraded_vs_unavailable_rule_selected": false,
+    "recovery_threshold_selected": false,
+    "recovery_window_count_selected": false,
+    "remaining_support_definition_selected": false,
+    "suppression_entry_threshold_selected": false,
+    "suppression_entry_window_count_selected": false,
+    "validation_data_opened": false
+  },
+  "source_bindings": {
+    "frontier_json_sha256": "3d3612e34bac2ef08469f0a4942ad9b49cb78b064fa6c1711766729ef9fb2be7",
+    "frontier_report_sha256": "b2b7eedc7ccbd50af8ef2d05e66ccbccf0ee9c2f6ef5e9015f68537723c0ac24",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase5_health_semantics_sha256": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+    "phase6_freeze_sha256": "a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6",
+    "phase7_freeze_sha256": "5f416186ee8d8b226f0f88c70a0553cf80fe5213592b8df9b07fc1b5503b7280",
+    "phase8_factor_conditioning_config_sha256": "cbd137977060f961fb14feaeed6194de40b4e4338e5f6c303edc1993110ea5c2",
+    "phase8_freeze_sha256": "9b4934404b97f1726b0acbd1e8b6eaa77bc2c3cb6ab6be38b4eb87a0800c337c",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3"
+  }
+}

@@ -3685,3 +3685,111 @@ Closure evidence:
 After promotion, Phase-9 software architecture may proceed but must not assume
 that a numerical Phase-8 factor scale exists.
 
+## Phase 9 suppression/recovery/status contract V1
+
+Status: **fail-closed hysteretic suppression/recovery and estimator-status
+software architecture implemented locally; runtime decisions remain
+disabled.**
+
+The authoritative Phase-9 structure requires:
+
+- unusable-probability entry threshold;
+- consecutive-window entry requirement;
+- lower recovery threshold;
+- consecutive-window recovery requirement;
+- remaining-factor-support assessment before hard suppression.
+
+No numeric threshold or window count is selected.
+
+No single-frame arbitrary hard suppression is allowed.
+
+Remaining-factor-support sufficiency remains undefined and no minimum modality
+count or observability test is invented.
+
+When support is insufficient, the project requires a degraded or unavailable
+estimator state rather than forcing a nominal estimate.
+
+The degraded-versus-unavailable decision rule remains unselected.
+
+Current state:
+
+- Phase-8 numeric factor scale available: false;
+- suppression entry threshold selected: false;
+- entry consecutive-window count selected: false;
+- recovery threshold selected: false;
+- recovery consecutive-window count selected: false;
+- remaining-support definition selected: false;
+- suppression execution authorized: false;
+- recovery execution authorized: false;
+- estimator-status execution authorized: false.
+
+Fallback appears elsewhere in broader project safety planning but is not
+defined by the authoritative Phase-9 section. No fallback policy or threshold
+is invented here.
+
+Artifacts:
+
+- `configs/trust_robot/phase9_suppression_recovery_status_contract_candidate_v1.json`
+  SHA-256 `41be6fd118e99c2e990462c54aad44edba67d80b109ee4c756f6bd750546f1a1`
+- `src/trust_robot/suppression_recovery_status.py`
+  SHA-256 `38122e409875700f04a26b41420ed45485393ca1f9a35b89e3bc41a496fa0471`
+- `tests/trust_robot/test_suppression_recovery_status.py`
+  SHA-256 `21422eee6b518b30dd073f1911a4ecf9443e8e606b9ac88043fdfeeec5ae9edb`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE9_SUPPRESSION_RECOVERY_STATUS_CONTRACT_V1.md`
+  SHA-256 `89b979eb930f65f58f9fdf259397532b10da7ef951449c9073ae712c2b5a4b27`
+
+Frontier evidence:
+
+- report SHA-256 `b2b7eedc7ccbd50af8ef2d05e66ccbccf0ee9c2f6ef5e9015f68537723c0ac24`
+- JSON SHA-256 `3d3612e34bac2ef08469f0a4942ad9b49cb78b064fa6c1711766729ef9fb2be7`
+
+Validation remains unopened and confirmation remains closed.
+No ATE/RPE or final scoring is performed.
+
+## Phase 9 suppression/recovery/status software freeze V1
+
+Status: **hysteretic suppression/recovery and estimator-status software
+architecture frozen for checkpoint promotion; runtime execution and numerical
+operating points remain deferred.**
+
+Authoritative Phase-9 structure:
+
+- hard suppression cannot be a single-frame arbitrary decision;
+- entry uses unusable probability;
+- an entry threshold is required but remains unselected;
+- a consecutive-window entry requirement is required but remains unselected;
+- recovery requires a lower threshold, still unselected;
+- recovery requires a consecutive-window requirement, still unselected;
+- remaining factor support must be assessed before hard suppression.
+
+Current runtime state:
+
+- hard suppression executed: false;
+- recovery executed: false;
+- estimator-status execution authorized: false;
+- remaining-support definition selected: false;
+- degraded-versus-unavailable rule selected: false;
+- unsupported observability guarantee claimed: false;
+- nominal estimate forced under insufficient support: false.
+
+Fallback remains outside the authoritative Phase-9 section and no fallback
+policy or threshold is introduced.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase9_suppression_recovery_status_software_freeze_v1.json`
+  SHA-256 `9c84e85ed6789e01e6eb8d6d25cf40bcdec8b436af879cf54aa3e1b1df80122d`
+- `tests/trust_robot/test_phase9_suppression_recovery_status_software_freeze.py`
+  SHA-256 `bf76f8a41924a87d8e0faf3d9449b21aade29f4b86388e92e0d3b7632f8a2bb9`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE9_SUPPRESSION_RECOVERY_STATUS_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `c39fa9b3c927189c78c799a8592a4a8e624e531657d12261a94a00ee32e314b9`
+
+Closure evidence:
+
+- report SHA-256 `7bf66483f9cd1f5e1dd33a8490ed9c50c520fc1653707d0e2c4e28e6309ced8a`
+- JSON SHA-256 `d442efa2e590a5d10852d1ae7b6759dbb32175eac66faf1d045c9ff3717fdb9f`
+
+After promotion, Phase-10 software architecture may proceed but must not assume
+that Phase-9 runtime suppression, recovery, or estimator-status execution is
+available.
+

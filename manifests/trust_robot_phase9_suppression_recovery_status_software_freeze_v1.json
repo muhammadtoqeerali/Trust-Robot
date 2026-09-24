@@ -1,0 +1,131 @@
+{
+  "authoritative_hysteresis": {
+    "entry_consecutive_window_count": null,
+    "entry_consecutive_window_count_selected": false,
+    "entry_signal": "unusable_probability",
+    "entry_threshold": null,
+    "entry_threshold_selected": false,
+    "recovery_consecutive_window_count": null,
+    "recovery_consecutive_window_count_selected": false,
+    "recovery_threshold": null,
+    "recovery_threshold_relation_to_entry": "lower",
+    "recovery_threshold_selected": false,
+    "single_frame_hard_suppression_allowed": false
+  },
+  "checkpoint_semantics": {
+    "confirmation_remains_closed": true,
+    "empirical_completion_claimed": false,
+    "phase": 9,
+    "runtime_estimator_status_complete": false,
+    "runtime_execution_performed": false,
+    "runtime_recovery_complete": false,
+    "runtime_suppression_complete": false,
+    "software_architecture_implemented": true,
+    "status": "suppression_recovery_status_software_architecture_frozen_runtime_execution_deferred"
+  },
+  "content_sha256": "ad6eac23f7aff352ede2676034e5d5c6a95cb9895fd1ecb392f95f1bf4760e01",
+  "deferred_obligations": [
+    "obtain admissible unusable-probability runtime input",
+    "select suppression entry threshold without confirmation leakage",
+    "select consecutive-window entry requirement",
+    "select a strictly lower recovery threshold",
+    "select consecutive-window recovery requirement",
+    "define and validate remaining-factor-support sufficiency",
+    "define degraded-versus-unavailable estimator-status rule",
+    "authorize suppression only after hysteresis and support requirements are satisfied",
+    "authorize recovery only after recovery hysteresis is selected",
+    "do not claim unsupported observability",
+    "do not force nominal estimator state when remaining support is insufficient",
+    "keep fallback policy separate unless independently specified and frozen",
+    "keep confirmation_test closed until all permitted Phase-9 choices are frozen"
+  ],
+  "evidence": {
+    "closure_json_sha256": "d442efa2e590a5d10852d1ae7b6759dbb32175eac66faf1d045c9ff3717fdb9f",
+    "closure_report_sha256": "7bf66483f9cd1f5e1dd33a8490ed9c50c520fc1653707d0e2c4e28e6309ced8a",
+    "frontier_json_sha256": "3d3612e34bac2ef08469f0a4942ad9b49cb78b064fa6c1711766729ef9fb2be7",
+    "frontier_report_sha256": "b2b7eedc7ccbd50af8ef2d05e66ccbccf0ee9c2f6ef5e9015f68537723c0ac24",
+    "implementation_report_sha256": "7f68270820fab82555dfda73d75a175ba46c9cce5782c18d536da4b4076a59c3"
+  },
+  "fallback_boundary": {
+    "fallback_defined_by_authoritative_phase9_section": false,
+    "fallback_executed": false,
+    "fallback_execution_authorized": false,
+    "fallback_policy": "unselected",
+    "fallback_policy_selected": false,
+    "fallback_threshold": null,
+    "fallback_threshold_selected": false
+  },
+  "health_action_separation": {
+    "availability_is_health_label": false,
+    "missing_measurement_is_health_state": false,
+    "phase5_health_state_is_suppression_command": false,
+    "suppression_requires_explicit_phase9_policy": true
+  },
+  "insufficient_support_reporting": {
+    "degraded_vs_unavailable_rule": "unselected",
+    "degraded_vs_unavailable_rule_selected": false,
+    "nominal_estimate_may_be_forced_when_support_insufficient": false,
+    "reporting_options": [
+      "degraded_estimator_state",
+      "unavailable_estimator_state"
+    ],
+    "runtime_status_execution_authorized": false
+  },
+  "next_phase_policy": {
+    "deferred_phase5_phase6_phase7_phase8_phase9_empirical_obligations_remain_binding": true,
+    "phase10_may_assume_phase9_estimator_status_execution_available": false,
+    "phase10_may_assume_phase9_runtime_recovery_available": false,
+    "phase10_may_assume_phase9_runtime_suppression_available": false,
+    "phase10_software_architecture_may_proceed": true
+  },
+  "parent_frontier": {
+    "commit": "26e3de5b80e3cc74454ddfbfd8b9a34854ca726b",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase6_freeze_sha256": "a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6",
+    "phase7_freeze_sha256": "5f416186ee8d8b226f0f88c70a0553cf80fe5213592b8df9b07fc1b5503b7280",
+    "phase8_freeze_sha256": "9b4934404b97f1726b0acbd1e8b6eaa77bc2c3cb6ab6be38b4eb87a0800c337c",
+    "tree": "9cd5de2a9c7a8574b808231beb4866f51d218c7f"
+  },
+  "phase9_contract_artifacts": {
+    "audit_sha256": "89b979eb930f65f58f9fdf259397532b10da7ef951449c9073ae712c2b5a4b27",
+    "config_sha256": "41be6fd118e99c2e990462c54aad44edba67d80b109ee4c756f6bd750546f1a1",
+    "module_sha256": "38122e409875700f04a26b41420ed45485393ca1f9a35b89e3bc41a496fa0471",
+    "project_state_pre_freeze_sha256": "45823f6cffd59bf9124017485f2e3c843a4b79b8494b427ba5bbfef45375e83f",
+    "tests_sha256": "21422eee6b518b30dd073f1911a4ecf9443e8e606b9ac88043fdfeeec5ae9edb"
+  },
+  "protected_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "final_scoring_authorized": false,
+    "nominal_estimate_forced_under_insufficient_support": false,
+    "phase8_numeric_factor_scale_assumed": false,
+    "timeout_selected": false,
+    "unsupported_observability_guarantee_claimed": false,
+    "validation_data_opened": false
+  },
+  "remaining_factor_support": {
+    "assessment_available": false,
+    "assessment_definition": "unselected",
+    "assessment_definition_selected": false,
+    "assessment_required_before_hard_suppression": true,
+    "minimum_active_modality_count": null,
+    "minimum_active_modality_count_selected": false,
+    "observability_test": "unselected",
+    "observability_test_selected": false,
+    "unsupported_observability_guarantee_allowed": false
+  },
+  "runtime_execution_gate": {
+    "hard_suppression_performed": false,
+    "phase8_numeric_factor_scale_available": false,
+    "recovery_execution_authorized": false,
+    "recovery_performed": false,
+    "runtime_status_execution_authorized": false,
+    "suppression_execution_authorized": false,
+    "unusable_probability_input_available": false
+  },
+  "schema": "TRUST_ROBOT_PHASE9_SUPPRESSION_RECOVERY_STATUS_SOFTWARE_FREEZE_V1",
+  "upstream_bindings": {
+    "phase5_health_semantics_sha256": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+    "phase8_factor_conditioning_config_sha256": "cbd137977060f961fb14feaeed6194de40b4e4338e5f6c303edc1993110ea5c2"
+  }
+}
