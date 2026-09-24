@@ -4355,3 +4355,177 @@ that Phase-13 resource measurement was executed, that onboard resource
 constraints were verified, that fallback thresholds were frozen, or that the
 RQ4 resource component was answered.
 
+## Phase 14 supervisory / physical-integration contract V1
+
+Status: **fail-closed guarded supervisory / physical-integration software
+architecture implemented locally; robot action semantics and empirical
+physical testing remain deferred.**
+
+Authoritative supervisor-input identities:
+
+- calibrated modality-health probabilities;
+- estimator covariance/status;
+- tracking availability;
+- residual consistency;
+- solver validity;
+- frozen validation-selected thresholds.
+
+Planned policy-comparison identities:
+
+- nominal continuation;
+- always-stop;
+- health-triggered policy;
+- oracle-health policy.
+
+These names do not define robot commands and do not select an operational
+policy.
+
+Current state:
+
+- learned health model is robot controller: false;
+- separate rule-based supervisory layer required: true;
+- all candidate supervisor inputs runtime verified: false;
+- operational supervisory policy selected: false;
+- controller interface selected: false;
+- robot action mapping selected: false;
+- safe-stop definition present: false;
+- emergency definition present: false;
+- stopping-distance definition present: false;
+- control-command semantics present: false;
+- fallback threshold selected: false;
+- safety threshold selected: false;
+- physical-test protocol selected: false;
+- physical-test partition instantiated: false;
+- actual quadruped identity frozen: false;
+- physical compute hardware frozen: false;
+- physical sensor suite frozen: false;
+- physical calibration frozen: false;
+- physical synchronization frozen: false;
+- physical reference instrumentation frozen: false;
+- physical controller semantics verified: false;
+- proprioception verified: false;
+- robot integration execution authorized: false;
+- physical test execution authorized: false;
+- closed-loop safety measurement authorized: false;
+- closed-loop safety claim authorized: false;
+- guarded physical test executed: false;
+- RQ4 closed-loop safety answer available: false;
+- full RQ4 answer available: false.
+
+The eventual primary physical platform remains the local quadruped and the
+provisional dataset identity remains `KIOS_QUADRUPED`, whose current local
+readiness is `not_collected`.
+
+Final held-out physical data may not select models, calibration, thresholds,
+fault/attack operating points, fallback policy, or safety operating points.
+
+Phase-9 runtime suppression/recovery/status execution remains unavailable.
+
+Phase-13 empirical resource measurements and verified onboard constraints
+remain unavailable.
+
+Phase-5 acquisition/filesystem safety and inherited IMU runtime safety are not
+adopted as Phase-14 robot supervisory semantics.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Artifacts:
+
+- `configs/trust_robot/phase14_supervisory_physical_integration_contract_candidate_v1.json`
+  SHA-256 `d5bfc1cd75a2a2dfcc41954856b10163ca9c6f8f66f44b454c88a037269907e3`
+- `src/trust_robot/supervisory_physical_integration.py`
+  SHA-256 `e0a89e0e69bb8c58d7e754569a341010543b7dc6e674129995f2df7c8f7eb9c1`
+- `tests/trust_robot/test_supervisory_physical_integration.py`
+  SHA-256 `cbcf423ff43140b4b68cab1826b5b359e92b4a61c0561d428749091802fa48c1`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE14_SUPERVISORY_PHYSICAL_INTEGRATION_CONTRACT_V1.md`
+  SHA-256 `3635e8fbc941edebe074e4115c8ca82ccf1d68f8f0388ec89ff467a481b75410`
+
+Frontier evidence:
+
+- report SHA-256 `34e307d58a03a612c95caece4cb9b5f7ce1670b333e8c66aba3543256e626942`
+- JSON SHA-256 `ee4e7be9b62fe4a2126f1f7758b837ff031928ec00d9867efc8b800109a96627`
+
+Supervisory-basis evidence:
+
+- report SHA-256 `3c139828a42d4607136c77f04d1df60adf0a422544f98e7d51493f9e7c8c89d1`
+- JSON SHA-256 `88d1378dffa70ce512ae7d84b59f3e15e11cef11a270b94ff1a931415bb60899`
+
+After a future Phase-14 checkpoint, Phase-15 software preparation may proceed,
+but final confirmation execution remains closed until all upstream empirical
+obligations and permitted selections are complete and frozen.
+
+## Phase 14 supervisory / physical-integration software freeze V1
+
+Status: **guarded supervisory / physical-integration software architecture
+frozen for checkpoint promotion; empirical physical execution remains
+deferred.**
+
+Frozen architectural requirements:
+
+- the learned health model is not the robot controller;
+- the safety response is a separate rule-based supervisory layer;
+- six authoritative candidate supervisor-input identities are bound;
+- four planned policy-comparison identities are bound;
+- physical experiments must remain guarded and progressively validated;
+- final held-out physical data cannot select model/calibration/threshold or
+  safety operating-point parameters.
+
+Current state:
+
+- all candidate supervisor inputs runtime verified: false;
+- operational policy selected: false;
+- controller interface selected: false;
+- robot action mapping selected: false;
+- safe-stop semantics selected: false;
+- emergency semantics selected: false;
+- stopping-distance metric selected: false;
+- fallback threshold selected: false;
+- safety threshold selected: false;
+- actual physical robot identity frozen: false;
+- physical compute hardware frozen: false;
+- physical sensor suite frozen: false;
+- physical calibration frozen: false;
+- physical synchronization frozen: false;
+- physical reference instrumentation frozen: false;
+- physical-test protocol selected: false;
+- physical-test partition instantiated: false;
+- robot integration execution authorized: false;
+- physical test execution authorized: false;
+- closed-loop safety measurement authorized: false;
+- closed-loop safety claim authorized: false;
+- RQ4 closed-loop safety answer available: false;
+- full RQ4 answer available: false;
+- final confirmation execution authorized: false.
+
+The eventual platform role remains `local_quadruped_robot`; the provisional
+dataset identity remains `KIOS_QUADRUPED`; local readiness remains
+`not_collected`.
+
+Phase-9 runtime actions are not assumed.
+
+Phase-13 resource measurements/onboard constraints are not assumed.
+
+Validation remains unopened and confirmation remains closed.
+
+No ATE/RPE or final scoring is performed.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase14_supervisory_physical_integration_software_freeze_v1.json`
+  SHA-256 `65bc22d6bd627c13edc20f9d671f59dc557e24b2de9f0560580b2354ca1d3d7d`
+- `tests/trust_robot/test_phase14_supervisory_physical_integration_software_freeze.py`
+  SHA-256 `224e885ce18a8da5252fb3c64e3de4f3186f80b5e1202a78a8234f0e8ee26351`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE14_SUPERVISORY_PHYSICAL_INTEGRATION_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `0b33b9c23aee31eae4aabab743e0f0aca3bee243e1cade8289f1096ee7e91c1e`
+
+Closure evidence:
+
+- report SHA-256 `646a5428ad293fdad659234ad61e3c3edd6f5c7e6e21515a9540c3a4a48df3a7`
+- JSON SHA-256 `09b7a5e571049a618927606cf58ca5aa31fd27751880703c057be002d62fc1a5`
+
+After promotion, Phase-15 software preparation may proceed, but confirmation
+execution remains closed until the deferred empirical obligations from
+Phases 5 through 14 are satisfied and all permitted selections are frozen.
+
