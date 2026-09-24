@@ -1,0 +1,113 @@
+{
+  "calibration_contract": {
+    "calibration_quality_metrics": [],
+    "input_representation": "unselected",
+    "kind": "modality_health_probability",
+    "mechanism_selected_from_validation_outcomes": false,
+    "optimization_objective": "unselected",
+    "parameter_fit_performed": false,
+    "proposal_mechanism": "temperature_scaling",
+    "proposal_mechanism_declared": true,
+    "temperature_parameter": null,
+    "temperature_parameter_selected": false,
+    "temperature_scope": "unselected"
+  },
+  "checkpoint_semantics": {
+    "confirmation_remains_closed": true,
+    "empirical_calibration_complete": false,
+    "empirical_completion_claimed": false,
+    "phase": 6,
+    "software_architecture_implemented": true,
+    "status": "validation_only_probabilistic_calibration_architecture_frozen_empirical_fitting_deferred",
+    "temperature_fitting_performed": false,
+    "validation_bags_opened": false
+  },
+  "closure_evidence": {
+    "closure_json_sha256": "eadfefa1a3267a26cfbc06e0d2f877c6872cc67df643ba66c1c380bec29ff204",
+    "closure_report_sha256": "2342ee541365c179d89d09ecc3de4ee75b17a8075257d4cc6d5f4a418be41f68",
+    "implementation_report_sha256": "b3ce5e19e9de3626712a8f90d73d23d08dcae8c4d90694c7f1e3625da3785f8c"
+  },
+  "confirmation_boundary": {
+    "closed": true,
+    "may_select_health_threshold": false,
+    "may_select_temperature_parameter": false,
+    "partition": "confirmation_test",
+    "selection_authorized": false,
+    "trajectory_count": 7
+  },
+  "content_sha256": "255a6430ad2ae40c9fdfdeb2dbe6ce949a652a95695209788b629ca349a69c08",
+  "current_empirical_gate": {
+    "admissible_health_labels_available": false,
+    "calibrated_output_authorized": false,
+    "calibration_execution_authorized": false,
+    "calibration_objective_selected": false,
+    "calibration_quality_metrics_selected": false,
+    "phase5_empirical_health_model_complete": false,
+    "temperature_parameter_selected": false,
+    "temperature_scope_selected": false,
+    "trained_health_model_available": false,
+    "uncalibrated_health_outputs_available": false,
+    "validation_calibration_inputs_available": false
+  },
+  "deferred_empirical_obligations": [
+    "complete the admissible Phase-5 empirical health model",
+    "produce uncalibrated health-model outputs under the frozen model contract",
+    "obtain admissible health labels for validation calibration",
+    "select the calibration optimization objective without confirmation-test leakage",
+    "select any calibration-quality metric before inspecting confirmation-test outcomes",
+    "select the temperature scope using validation_calibration only",
+    "fit the temperature parameter using validation_calibration only",
+    "freeze the calibrated probability artifact and provenance receipt",
+    "keep health/suppression/recovery/fallback operating-point selection separate from temperature calibration",
+    "keep confirmation_test closed until all permitted calibration and operating-point choices are frozen"
+  ],
+  "next_phase_policy": {
+    "deferred_phase5_and_phase6_empirical_obligations_remain_binding": true,
+    "phase7_may_assume_empirical_phase6_calibration_complete": false,
+    "phase7_must_fail_closed_if_calibrated_health_outputs_are_unavailable": true,
+    "phase7_software_architecture_may_proceed": true
+  },
+  "operating_point_separation": {
+    "fallback_safety_threshold_selected": false,
+    "health_threshold_selected": false,
+    "recovery_threshold_selected": false,
+    "suppression_threshold_selected": false,
+    "threshold_selection_is_not_temperature_calibration": true
+  },
+  "parent_frontier": {
+    "commit": "6c82b68a2086e140379f283bfdd4110437555ec1",
+    "evaluation_protocol_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "prospective_split_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+    "tree": "d082d7a643ec44026b1b9acd4d0e6f5b15ac1487"
+  },
+  "phase6_contract_artifacts": {
+    "audit_sha256": "dd98159a45ee29c2b98ec18e7eeda7bcb835fcb327be8b6d937d052ab352c1a5",
+    "config_sha256": "7761cf8c39620d7166c88092470aeb09e2f5b1120cd0d4be3e1c11118822f367",
+    "module_sha256": "81c22be62a4dec6e37cb0a7c5dda90b1b300f6b3a5234c7a605d176c652f23ab",
+    "project_state_pre_freeze_sha256": "516018aefea52d8d7ebf4a5539707fa0b3f1805458929cb55bf1dc1eed654107",
+    "tests_sha256": "ba998071f7dc8cd549b1de139fe51e32ed979a3ab710adb8a93449985d8b1b65"
+  },
+  "protected_scientific_boundaries": {
+    "ate_rpe_computation_authorized": false,
+    "camera_intrinsic_calibration_modified": false,
+    "confirmation_selection_authorized": false,
+    "final_localization_error_used_for_calibration": false,
+    "final_scoring_authorized": false,
+    "health_labels_created_by_calibration": false,
+    "reference_data_used": false,
+    "reference_frame_alignment_modified": false,
+    "sensor_extrinsic_calibration_modified": false,
+    "sensor_geometry_calibration_modified": false,
+    "temporal_synchronization_modified": false
+  },
+  "schema": "TRUST_ROBOT_PHASE6_PROBABILISTIC_CALIBRATION_SOFTWARE_FREEZE_V1",
+  "selection_partition": {
+    "bags_opened": false,
+    "calibration_execution_authorized": false,
+    "partition": "validation_calibration",
+    "partition_frozen": true,
+    "trajectory_count": 7,
+    "validation_only_selection_required": true
+  }
+}

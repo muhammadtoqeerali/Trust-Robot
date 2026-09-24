@@ -1,0 +1,98 @@
+{
+  "calibration_scope": {
+    "camera_intrinsic_calibration_modified": false,
+    "kind": "modality_health_probability",
+    "probabilistic_health_output_calibration": true,
+    "reference_frame_alignment_modified": false,
+    "sensor_extrinsic_calibration_modified": false,
+    "sensor_geometry_calibration": false,
+    "temporal_synchronization_modified": false
+  },
+  "confirmation_boundary": {
+    "closed": true,
+    "may_select_calibration_mechanism": false,
+    "may_select_calibration_objective": false,
+    "may_select_health_threshold": false,
+    "may_select_temperature_parameter": false,
+    "may_select_temperature_scope": false,
+    "partition": "confirmation_test",
+    "selection_authorized": false,
+    "trajectory_count": 7
+  },
+  "current_evidence_gate": {
+    "admissible_health_labels_available": false,
+    "calibrated_output_authorized": false,
+    "calibration_execution_authorized": false,
+    "calibration_objective_selected": false,
+    "phase5_empirical_health_model_complete": false,
+    "temperature_parameter_selected": false,
+    "temperature_scope_selected": false,
+    "trained_health_model_available": false,
+    "uncalibrated_health_model_outputs_available": false,
+    "validation_calibration_inputs_available": false
+  },
+  "lifecycle_status": "contract_implemented_inputs_unavailable",
+  "operating_point_separation": {
+    "fallback_safety_threshold_selected": false,
+    "health_threshold": null,
+    "health_threshold_selected": false,
+    "recovery_threshold_selected": false,
+    "suppression_threshold_selected": false,
+    "threshold_selection_is_not_temperature_calibration": true
+  },
+  "proposal_mechanism_contract": {
+    "calibration_quality_metrics": [],
+    "candidate_method_comparison_performed": false,
+    "historical_imu_reliability_calibrator_adopted": false,
+    "historical_ood_calibrator_adopted": false,
+    "input_representation": "unselected",
+    "mechanism": "temperature_scaling",
+    "mechanism_selected_from_validation_outcomes": false,
+    "mechanism_source": "TRUST_ROBOT project proposal/master context",
+    "optimization_objective": "unselected",
+    "parameter_fit_performed": false,
+    "proposal_mechanism_declared": true,
+    "temperature_parameter": null,
+    "temperature_parameter_selected": false,
+    "temperature_scope": "unselected"
+  },
+  "runtime_output": {
+    "calibrated_health_probability_output": "disabled",
+    "calibration_artifact_sha256": null,
+    "calibration_receipt_sha256": null,
+    "uncalibrated_health_probability_input_available": false
+  },
+  "schema": "TRUST_ROBOT_PHASE6_PROBABILISTIC_CALIBRATION_CONTRACT_V1",
+  "scientific_boundary": {
+    "ate_rpe_computation_authorized": false,
+    "confirmation_data_used": false,
+    "cross_modal_synchronization_selected": false,
+    "final_localization_error_used_for_calibration": false,
+    "final_scoring_authorized": false,
+    "health_labels_created_by_calibration": false,
+    "physical_measurement_time_selected": false,
+    "reference_data_used": false
+  },
+  "selection_partition": {
+    "bags_open_authorized_in_current_state": false,
+    "calibration_execution_authorized": false,
+    "partition": "validation_calibration",
+    "partition_frozen": true,
+    "physical_fact_cannot_be_created_by_validation_selection": true,
+    "selection_requires_admissible_health_labels": true,
+    "selection_requires_trained_health_model": true,
+    "selection_requires_uncalibrated_health_model_outputs": true,
+    "trajectory_count": 7,
+    "validation_only_selection_required": true
+  },
+  "source_bindings": {
+    "evaluation_protocol_sha256": "4aaec974d9d7b7f0f057a8991dc0486654d58de5f8c2e6ebf239d5d3d313d6d3",
+    "master_context_sha256": "84a4dfebc38cb38d9d3d91bb20ce4134b53d03843108433adee468a995ca4e48",
+    "phase5_freeze_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+    "phase5_health_model_config_sha256": "aa48c67cdcd19aa5af2a297f42b20d1bb4369b5dcd38bdc2c2ca9ae68ceb4ea3",
+    "phase6_frontier_json_sha256": "4c0eae88b55b9dc14b2e376fa4f6fda329da7edde86236fb05825246afe66310",
+    "phase6_frontier_report_sha256": "903652150452ec9c006dbbd14981056afd3525f06844358ee2b9437c210db522",
+    "phase_plan_sha256": "de26e1f0dd5029b014b9ac2412f21543ce782a4f22141d0f63f534d2763633b3",
+    "prospective_split_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  }
+}

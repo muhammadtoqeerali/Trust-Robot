@@ -3312,3 +3312,103 @@ Closure evidence:
 
 After promotion, Phase-6 software work may proceed behind these gates.
 
+## Phase 6 probabilistic calibration contract V1
+
+Status: **probabilistic calibration software contract implemented locally;
+empirical calibration remains evidence-blocked.**
+
+Phase 6 is explicitly separated from physical sensor/geometric calibration.
+
+The project proposal specifies validation-only probabilistic calibration and
+names temperature scaling as the current mechanism. The contract therefore
+records `temperature_scaling` as the proposal-defined mechanism without
+claiming that any temperature has been fitted or selected.
+
+The frozen `validation_calibration` partition contains seven trajectories and
+is the only permitted future data-selection partition for this calibration.
+
+The `confirmation_test` partition remains closed to calibration selection.
+
+Current empirical gate:
+
+- Phase-5 empirical health model complete: false;
+- trained health model available: false;
+- uncalibrated health-model outputs available: false;
+- admissible health labels available: false;
+- calibration objective selected: false;
+- temperature scope selected: false;
+- temperature parameter selected: false;
+- calibration execution authorized: false;
+- calibrated probability output authorized: false.
+
+No health, suppression, recovery or fallback threshold is selected by this
+contract.
+
+Artifacts:
+
+- `configs/trust_robot/phase6_probabilistic_calibration_contract_candidate_v1.json`
+  SHA-256 `7761cf8c39620d7166c88092470aeb09e2f5b1120cd0d4be3e1c11118822f367`
+- `src/trust_robot/probabilistic_calibration.py`
+  SHA-256 `81c22be62a4dec6e37cb0a7c5dda90b1b300f6b3a5234c7a605d176c652f23ab`
+- `tests/trust_robot/test_probabilistic_calibration.py`
+  SHA-256 `ba998071f7dc8cd549b1de139fe51e32ed979a3ab710adb8a93449985d8b1b65`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE6_PROBABILISTIC_CALIBRATION_CONTRACT_V1.md`
+  SHA-256 `dd98159a45ee29c2b98ec18e7eeda7bcb835fcb327be8b6d937d052ab352c1a5`
+
+Frontier audit evidence:
+
+- report SHA-256 `903652150452ec9c006dbbd14981056afd3525f06844358ee2b9437c210db522`
+- JSON SHA-256 `4c0eae88b55b9dc14b2e376fa4f6fda329da7edde86236fb05825246afe66310`
+
+No validation or confirmation trajectory is opened by this implementation.
+No calibration parameter is selected or fitted.
+
+## Phase 6 probabilistic calibration software freeze V1
+
+Status: **validation-only probabilistic-calibration software architecture
+frozen for checkpoint promotion; empirical calibration remains deferred.**
+
+The Phase-6 closure audit passed with the exact five-path pre-freeze worktree
+and an 838-test regression.
+
+The freeze records temperature scaling as the proposal-defined probabilistic
+calibration mechanism without fitting or selecting a temperature.
+
+Current empirical state remains:
+
+- empirical Phase-5 health model available: false;
+- uncalibrated health-model probabilities available: false;
+- admissible calibration labels available: false;
+- calibration objective selected: false;
+- calibration-quality metrics selected: false;
+- temperature scope selected: false;
+- temperature parameter selected: false;
+- parameter fitting performed: false;
+- validation bags opened for calibration: false;
+- calibrated health-probability output authorized: false.
+
+The frozen validation_calibration partition contains seven trajectories but
+remains unopened for empirical calibration in the present evidence state.
+
+The confirmation_test partition remains closed.
+
+Health/suppression/recovery/fallback thresholds remain separate from
+temperature calibration and are unselected.
+
+Freeze artifacts:
+
+- `manifests/trust_robot_phase6_probabilistic_calibration_software_freeze_v1.json`
+  SHA-256 `a022c1923d340bb2fc40a2c7515199ab92d7745f95546ca055ee63fb11f1f2e6`
+- `tests/trust_robot/test_phase6_probabilistic_calibration_software_freeze.py`
+  SHA-256 `6632e0c164e7af0ca92b681ed9a6d8299c4ce94ce05d18a05c6c6419e5f1bbce`
+- `docs/audits/trust_robot/TRUST_ROBOT_PHASE6_PROBABILISTIC_CALIBRATION_SOFTWARE_FREEZE_V1.md`
+  SHA-256 `2838337dcbc9d3cc2f8b7616ea78d5896df898d2c00e27c1eb1054ed816b2a42`
+
+Closure evidence:
+
+- report SHA-256 `2342ee541365c179d89d09ecc3de4ee75b17a8075257d4cc6d5f4a418be41f68`
+- JSON SHA-256 `eadfefa1a3267a26cfbc06e0d2f877c6872cc67df643ba66c1c380bec29ff204`
+
+After promotion, Phase-7 software work may proceed behind these gates without
+assuming that empirical Phase-6 calibration has been completed.
+
