@@ -1,0 +1,121 @@
+{
+  "binding_contract": {
+    "all_required_fields_have_no_protocol_default": true,
+    "binding_is_execution_authorization": false,
+    "binding_is_hash_addressed": true,
+    "binding_must_exist_before_network_execution": true,
+    "binding_schema": "TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_CANDIDATE_V2",
+    "explicit_HTTP_port_required": true,
+    "protocol_supplies_physical_HTTP_port_default": false,
+    "required_field_count": 16,
+    "required_fields": [
+      "acquisition_session_id",
+      "split",
+      "bind_ipv4",
+      "measurement_udp_port",
+      "position_udp_port",
+      "sensor_ipv4",
+      "capture_duration_seconds",
+      "http_port",
+      "absolute_output_root",
+      "http_connect_timeout_seconds",
+      "http_total_timeout_seconds",
+      "vlp32c_destination_ipv4",
+      "vlp32c_measurement_destination_udp_port",
+      "vlp32c_position_destination_udp_port",
+      "vlp32c_destination_configuration_verified",
+      "declared_before_execution"
+    ],
+    "runtime_values_must_be_externally_supplied": true,
+    "split_must_be_exactly": "TRAIN"
+  },
+  "content_sha256": "ee328f84b5a2886b0a9139c1ec6e88ec6968b3833e62c456d24d5c8e8cdf24a5",
+  "current_binding_state": {
+    "absolute_output_root": null,
+    "acquisition_session_id": null,
+    "bind_ipv4": null,
+    "capture_duration_seconds": null,
+    "http_connect_timeout_seconds": null,
+    "http_port": null,
+    "http_total_timeout_seconds": null,
+    "measurement_udp_port": null,
+    "position_udp_port": null,
+    "real_binding_sha256": null,
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "sensor_ipv4": null,
+    "vlp32c_destination_configuration_verified": false,
+    "vlp32c_destination_ipv4": null,
+    "vlp32c_measurement_destination_udp_port": null,
+    "vlp32c_position_destination_udp_port": null
+  },
+  "frozen_input_sha256": {
+    "HTTP_executor_config": "51f98b3424d1db7bd2706f49e399954b007dfd8c2897d495462c7c7edd921aac",
+    "HTTP_executor_freeze": "29639601503a8d7c0b9db879939a8960b2f0a69ca10e378fc07f0b031aeadc10",
+    "HTTP_executor_module": "98d82acca2308aea76537de4a9cc4fa0eb94e8fd9bc4aa9bde048382f5b69dd9",
+    "runtime_binding_v1_config": "ff293fa62bab7d1ce72f8a2f130130c5b66826c74a8d1853a7f1ac63e9fc14e7",
+    "runtime_binding_v1_freeze": "28bf88aa87f6c527f16fa3144e94d70fadc64379f0e90529f04c46e7364d6afc",
+    "runtime_binding_v1_module": "1c9626481d4f01be63c4c7e9d833cc32dcc4b17c07c90611be2a6a671c47597f"
+  },
+  "parent_contract": {
+    "HTTP_executor_freeze_sha256": "29639601503a8d7c0b9db879939a8960b2f0a69ca10e378fc07f0b031aeadc10",
+    "V1_preserved_unchanged": true,
+    "V2_contract_delta": [
+      "http_port"
+    ],
+    "runtime_binding_V1_freeze_sha256": "28bf88aa87f6c527f16fa3144e94d70fadc64379f0e90529f04c46e7364d6afc"
+  },
+  "protocol_id": "trust_robot_se4_real_train_runtime_input_binding_v2",
+  "schema": "TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_PROTOCOL_V2",
+  "schema_version": 2,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_access": false,
+    "interval_binding_established": false,
+    "network_IO_executed": false,
+    "physical_measurement_time_established": false,
+    "protocol_selects_physical_runtime_values": false,
+    "raw_real_sensor_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "reference_data_used": false,
+    "sensor_contact_executed": false,
+    "validation_access": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "status": "HTTP_port_cross_contract_gap_resolved_zero_real_bindings",
+    "sub_frontier": "real_TRAIN_runtime_input_binding_V2"
+  },
+  "transition_policy": {
+    "HTTP_execution_software_implemented": true,
+    "HTTP_port_cross_contract_gap_resolved": true,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "confirmation_remains_closed": true,
+    "health_label_generation_authorized": false,
+    "next_required_physical_event": "After software orchestration is frozen, provide one real operator-supplied TRAIN V2 binding and separately authorize bounded real-sensor execution.",
+    "next_required_software_event": "Resolve the composite real TRAIN live-session orchestrator against this V2 binding contract.",
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "runtime_input_binding_V2_resolved": true,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  },
+  "validation_rules": {
+    "HTTP_timeouts": "positive exact integers; total >= connect",
+    "UDP_ports": "exact integers 1..65535 and distinct",
+    "VLP32C_destination_configuration_verified": "explicit true required",
+    "absolute_output_root": "absolute path with no parent traversal",
+    "acquisition_session_id": "safe single path component",
+    "capture_duration_seconds": "positive exact integer",
+    "declared_before_execution": "explicit true required",
+    "http_port": "exact integer 1..65535; required; no physical default",
+    "sensor_ipv4": "valid non-loopback non-multicast non-unspecified IPv4"
+  }
+}

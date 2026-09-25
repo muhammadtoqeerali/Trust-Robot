@@ -1,0 +1,144 @@
+{
+  "HTTP_executor_dependency": {
+    "config_sha256": "51f98b3424d1db7bd2706f49e399954b007dfd8c2897d495462c7c7edd921aac",
+    "explicit_HTTP_port_required": true,
+    "freeze_sha256": "29639601503a8d7c0b9db879939a8960b2f0a69ca10e378fc07f0b031aeadc10",
+    "module_sha256": "98d82acca2308aea76537de4a9cc4fa0eb94e8fd9bc4aa9bde048382f5b69dd9",
+    "physical_HTTP_port_default_permitted": false
+  },
+  "V2_binding_contract": {
+    "HTTP_port_validation": "exact integer 1..65535",
+    "all_required_fields_have_no_protocol_default": true,
+    "binding_hash_required": true,
+    "binding_is_execution_authorization": false,
+    "binding_required_before_network_execution": true,
+    "explicit_HTTP_port_required": true,
+    "protocol_supplies_physical_HTTP_port_default": false,
+    "required_field_count": 16,
+    "required_fields": [
+      "acquisition_session_id",
+      "split",
+      "bind_ipv4",
+      "measurement_udp_port",
+      "position_udp_port",
+      "sensor_ipv4",
+      "capture_duration_seconds",
+      "http_port",
+      "absolute_output_root",
+      "http_connect_timeout_seconds",
+      "http_total_timeout_seconds",
+      "vlp32c_destination_ipv4",
+      "vlp32c_measurement_destination_udp_port",
+      "vlp32c_position_destination_udp_port",
+      "vlp32c_destination_configuration_verified",
+      "declared_before_execution"
+    ],
+    "runtime_values_must_be_externally_supplied": true,
+    "split": "TRAIN"
+  },
+  "closure_interpretation": {
+    "physical_runtime_values_fabricated": false,
+    "this_is_V2_binding_contract_freeze": true,
+    "this_is_not_SE4_completion": true,
+    "this_is_not_a_real_runtime_binding": true,
+    "this_is_not_live_execution": true,
+    "this_is_not_orchestrator_resolution": true,
+    "this_is_not_source_acceptance": true
+  },
+  "content_sha256": "d24957ec3b3bac688793d0a8ffe167a9e7810e710f25a9d4b8c01c4b256b5fe9",
+  "contract_delta": {
+    "V1_required_field_count": 15,
+    "V2_required_field_count": 16,
+    "added_required_fields": [
+      "http_port"
+    ],
+    "other_physical_runtime_contract_changes": [],
+    "removed_required_fields": []
+  },
+  "current_real_binding_state": {
+    "absolute_output_root": null,
+    "acquisition_session_id": null,
+    "bind_ipv4": null,
+    "capture_duration_seconds": null,
+    "http_connect_timeout_seconds": null,
+    "http_port": null,
+    "http_total_timeout_seconds": null,
+    "measurement_udp_port": null,
+    "position_udp_port": null,
+    "real_binding_sha256": null,
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "sensor_ipv4": null,
+    "vlp32c_destination_configuration_verified": false,
+    "vlp32c_destination_ipv4": null,
+    "vlp32c_measurement_destination_udp_port": null,
+    "vlp32c_position_destination_udp_port": null
+  },
+  "historical_V1": {
+    "config_sha256": "ff293fa62bab7d1ce72f8a2f130130c5b66826c74a8d1853a7f1ac63e9fc14e7",
+    "freeze_sha256": "28bf88aa87f6c527f16fa3144e94d70fadc64379f0e90529f04c46e7364d6afc",
+    "module_sha256": "1c9626481d4f01be63c4c7e9d833cc32dcc4b17c07c90611be2a6a671c47597f",
+    "preserved_unchanged": true
+  },
+  "implementation": {
+    "config": "configs/trust_robot/se4_real_train_runtime_input_binding_v2.json",
+    "config_content_sha256": "ee328f84b5a2886b0a9139c1ec6e88ec6968b3833e62c456d24d5c8e8cdf24a5",
+    "config_sha256": "740705b97fa088f31efe3e603e9c25d3c005d9cae1b757479377cc7aabe517fb",
+    "module": "src/trust_robot/se4_real_train_runtime_input_binding_v2.py",
+    "module_sha256": "f00fb0571a9fb4ac1a078a6789941741b68bbf066a7a6f01028f2450bc820212",
+    "test": "tests/trust_robot/test_se4_real_train_runtime_input_binding_v2.py",
+    "test_sha256": "86c574577b4c6c4cb85b2181ee41ae41304b73b36f32df545737d301d32a1f8e"
+  },
+  "parent_frontier": {
+    "commit": "3638917d7a2761a9d339e31f796af019aef752ec",
+    "tree": "2c5f95c269283901c83c1ac23356167b2cbcaa3c"
+  },
+  "project_state_pre_freeze_sha256": "88fba70566f20f606f074e21b2f33fdca8e28f66cd4a56e172fab9197ce8e66c",
+  "remaining_orchestration_frontier": {
+    "composite_binding_HTTP_UDP_live_session_orchestrator_resolved": false,
+    "composite_live_session_execution_authorized": false,
+    "reason": "V2 resolves the HTTP-port binding-schema prerequisite only; binding, HTTP and UDP execution are not yet composed into one fail-closed real TRAIN session orchestrator."
+  },
+  "schema": "TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_V2_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_access": false,
+    "interval_binding_established": false,
+    "network_IO_executed": false,
+    "physical_measurement_time_established": false,
+    "protocol_selects_physical_runtime_values": false,
+    "raw_real_sensor_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "reference_data_used": false,
+    "sensor_contact_executed": false,
+    "validation_access": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "status": "HTTP_port_cross_contract_gap_resolved_zero_real_bindings",
+    "sub_frontier": "real_TRAIN_runtime_input_binding_V2"
+  },
+  "transition_policy": {
+    "HTTP_port_cross_contract_gap_resolved": true,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "SE9_remains_closed": true,
+    "confirmation_remains_closed": true,
+    "health_label_generation_authorized": false,
+    "historical_V1_preserved": true,
+    "next_required_physical_event": "Only after the composite orchestrator is frozen: provide one trustworthy operator-supplied real TRAIN V2 runtime binding and separately authorize bounded real-sensor execution.",
+    "next_required_software_event": "Resolve and loopback-test a fail-closed composite real TRAIN live-session orchestrator that consumes one validated V2 runtime binding and composes the frozen HTTP executor with the selected unprivileged dual-UDP receiver.",
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "runtime_input_binding_V2_resolved": true,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  }
+}

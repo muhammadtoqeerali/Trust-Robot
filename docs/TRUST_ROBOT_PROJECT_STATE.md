@@ -5341,3 +5341,92 @@ Frozen HTTP executor artifacts:
   SHA-256 `226a9b1e447b81ec7017effbf12a914c44e43f928bdee678fc25e16d5b77134c`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_HTTP_EVIDENCE_EXECUTOR_FREEZE_V1.md`
   SHA-256 `3754d7c73076ad544db7f5ce0abeb906a2f5bf42bec4aba2d1112a2a8217f786`
+
+## SE4 real TRAIN runtime-input binding V2 freeze V1
+
+Status: **V2 runtime-binding contract resolved; HTTP-port cross-contract gap closed; no real runtime binding exists.**
+
+The previously promoted V1 runtime-binding protocol remains historical and
+unchanged.
+
+The promoted HTTP executor later established that real HTTP execution requires
+an explicit HTTP port and that no physical HTTP-port default may be supplied.
+
+The V1 runtime-binding schema had 15 required fields and could not represent
+that value.
+
+V2 adds exactly one required field:
+
+- `http_port`.
+
+The V2 required-field count is 16.
+
+No V1 required field was removed.
+
+No other physical runtime field was changed.
+
+`http_port` must be externally supplied and must be an exact integer in
+`1..65535`.
+
+The V2 protocol supplies no physical HTTP-port default.
+
+Real V2 runtime bindings remain 0.
+
+Real runtime values bound remain false.
+
+No real HTTP port is selected.
+
+No real sensor IPv4 is selected.
+
+No network I/O occurred.
+
+No sensor was contacted.
+
+Raw real-sensor capture artifacts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Interval binding remains unestablished.
+
+Physical measurement time remains unestablished.
+
+A V2 binding is not execution authorization.
+
+A V2 binding is not source acceptance.
+
+A V2 binding is not a health label.
+
+The composite binding + HTTP + UDP live-session orchestrator remains unresolved.
+
+Real-sensor execution remains unauthorized.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen V2 runtime-binding artifacts:
+
+- `src/trust_robot/se4_real_train_runtime_input_binding_v2.py`
+  SHA-256 `f00fb0571a9fb4ac1a078a6789941741b68bbf066a7a6f01028f2450bc820212`
+- `configs/trust_robot/se4_real_train_runtime_input_binding_v2.json`
+  SHA-256 `740705b97fa088f31efe3e603e9c25d3c005d9cae1b757479377cc7aabe517fb`
+- `tests/trust_robot/test_se4_real_train_runtime_input_binding_v2.py`
+  SHA-256 `86c574577b4c6c4cb85b2181ee41ae41304b73b36f32df545737d301d32a1f8e`
+- `manifests/trust_robot_se4_real_train_runtime_input_binding_v2_freeze_v1.json`
+  SHA-256 `81f1d22674a4ca1ef4a8b5c9c4d16e446423eb3e6a76981fa7d6f99b08477388`
+- `tests/trust_robot/test_se4_real_train_runtime_input_binding_v2_freeze.py`
+  SHA-256 `7238f8e7f9f8bd6ddd638e997badbdcf69b87edf9a869eb97afc2945aac96a3e`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_V2_FREEZE_V1.md`
+  SHA-256 `215aa5d13bf53befe4de4501ab3521dee7f7708ddfc6070a546fc7ca9c0a3ed1`
