@@ -5141,3 +5141,100 @@ Frozen live-execution transport artifacts:
   SHA-256 `baec23676142c09b1cb06029b848f54c6d829d3aa56e35e0f094a59b2c30f684`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_LIVE_EXECUTION_TRANSPORT_FREEZE_V1.md`
   SHA-256 `9680ddea2c4d3c1902c9b74c7e616489ac8a0caf2fd7f1be4508ddacd4926a3c`
+
+## SE4 real TRAIN runtime-input binding freeze V1
+
+Status: **runtime-input binding protocol resolved; no real physical runtime values are bound.**
+
+A deterministic no-default protocol now defines how one future operator-supplied
+real TRAIN runtime binding must be represented and hash-addressed before any
+network or sensor execution.
+
+A real binding must explicitly supply:
+
+- acquisition-session identity;
+- TRAIN split role;
+- receiver bind IPv4;
+- measurement and position UDP ports;
+- sensor IPv4;
+- capture duration;
+- absolute output root;
+- HTTP connect and total timeout values;
+- VLP-32C destination IPv4;
+- VLP-32C measurement and position destination ports;
+- explicit VLP-32C destination-configuration verification;
+- prospective declaration before execution.
+
+The protocol supplies no physical defaults.
+
+Each valid binding receives a canonical SHA-256 digest.
+
+A valid binding is still not execution authorization, physical evidence,
+interval binding, baseline nominality, health supervision or a health label.
+
+Real runtime bindings remain 0.
+
+Real runtime values bound remain false.
+
+No bind IPv4 is selected.
+
+No measurement or position UDP ports are selected.
+
+No sensor IPv4 is selected.
+
+No capture duration is selected.
+
+No output root is selected.
+
+No acquisition-session identity is selected.
+
+No HTTP timeout values are selected.
+
+No VLP-32C destination configuration is verified.
+
+No network I/O occurred.
+
+No sensor was contacted.
+
+Raw real-sensor capture artifacts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Interval binding remains unestablished.
+
+Real-sensor execution remains unauthorized.
+
+Source acceptance remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen runtime-input binding artifacts:
+
+- `src/trust_robot/se4_real_train_runtime_input_binding.py`
+  SHA-256 `1c9626481d4f01be63c4c7e9d833cc32dcc4b17c07c90611be2a6a671c47597f`
+- `configs/trust_robot/se4_real_train_runtime_input_binding_v1.json`
+  SHA-256 `ff293fa62bab7d1ce72f8a2f130130c5b66826c74a8d1853a7f1ac63e9fc14e7`
+- `tests/trust_robot/test_se4_real_train_runtime_input_binding.py`
+  SHA-256 `326a00e41d67c4804277b1e5d11ff873539eac4737570129e158be589d7d9566`
+- `manifests/trust_robot_se4_real_train_runtime_input_binding_freeze_v1.json`
+  SHA-256 `28bf88aa87f6c527f16fa3144e94d70fadc64379f0e90529f04c46e7364d6afc`
+- `tests/trust_robot/test_se4_real_train_runtime_input_binding_freeze.py`
+  SHA-256 `9fb09cbfef05c61b008e4a494eac0a827c8b0ecf5ed8e416b288b671be9ec04a`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_FREEZE_V1.md`
+  SHA-256 `aefbe1912759aee6932c04d1ea5f757d1379350e555eca305c81828c49ec0c11`
