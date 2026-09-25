@@ -1,0 +1,66 @@
+{
+  "content_sha256": "9105dbf61d9dd5df4ccd1edb07efebb01974cab1949c1842be71b1f02e6fc70d",
+  "lane_A_contract": {
+    "invokes_SE2_training_guard": true,
+    "invokes_SE4_training_guard": true,
+    "invokes_SE5_entry_guard": true,
+    "real_D435i_IMU_feature_extraction": true,
+    "real_HandsFree_IMU_feature_extraction": true,
+    "real_LiDAR_replay_observation": true,
+    "real_camera_feature_extraction": true,
+    "replay_is_run_twice_for_bounded_digest_comparison": true,
+    "reruns_full_SE3_LiDAR_registration_pipeline": false,
+    "uses_SE1_deterministic_replay": true,
+    "uses_frozen_M2DGR_TRAIN": true
+  },
+  "lane_B_contract": {
+    "authorization_record_is_real_grounded_authorization": false,
+    "real_network_IO": false,
+    "real_sensor_contact": false,
+    "uses_V2_binding_builder": true,
+    "uses_file_driven_dispatch_gate": true,
+    "uses_file_input_validator": true,
+    "uses_hash_bound_authorization_builder": true,
+    "uses_injected_composite_orchestrator": true,
+    "uses_synthetic_HTTP_component": true,
+    "uses_synthetic_UDP_component": true,
+    "uses_synthetic_authorization_record": true,
+    "uses_synthetic_documentation_only_network_values": true
+  },
+  "qualification_interpretation": {
+    "demonstrates_current_software_stack_integration": true,
+    "proves_health_labels": false,
+    "proves_health_model": false,
+    "proves_real_sensor_system": false,
+    "replaces_future_hardware_validation": false,
+    "replaces_future_scientific_validation": false
+  },
+  "qualification_scope": {
+    "real_network_IO_allowed": false,
+    "real_sensor_contact_allowed": false,
+    "representative_TRAIN_trajectory": "room_02",
+    "representative_real_data_lane": true,
+    "representative_selection_is_scientific_sampling_claim": false,
+    "software_only": true,
+    "synthetic_live_software_lane": true
+  },
+  "resolution_id": "trust_robot_se4_software_only_end_to_end_qualification_resolution_v1",
+  "schema": "TRUST_ROBOT_SE4_SOFTWARE_ONLY_END_TO_END_QUALIFICATION_RESOLUTION_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_open": false,
+    "grounded_authorization_record_count": 0,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "real_execution_authorization_count": 0,
+    "real_health_label_count": 0,
+    "real_runtime_binding_count": 0,
+    "validation_open": false
+  }
+}

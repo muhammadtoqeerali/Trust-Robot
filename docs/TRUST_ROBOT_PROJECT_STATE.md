@@ -5641,3 +5641,123 @@ Frozen file-driven runner artifacts:
   SHA-256 `4d4f397e6d9d3798b5ab7a574fdbc3f24576bdf78de7c49f680b1bc216aa771e`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_REAL_TRAIN_EXECUTION_RUNNER_FREEZE_V1.md`
   SHA-256 `ee63d73d22dadcbf3f60c0f29d1acaf514b8492a32d52e8f7e088fb7a88e94e2`
+
+## SE4 software-only end-to-end qualification freeze V1
+
+Status: **software-only end-to-end qualification passed.**
+
+The current implementable software stack operates end-to-end without
+fabricating physical or health evidence.
+
+A bounded real-data software demonstration used frozen TRAIN trajectory
+`room_02`.
+
+The bag size was 15,162,620,712 bytes.
+
+SE1 deterministic replay observed all four estimator-input streams within
+45 emitted records.
+
+The bounded replay was repeated and produced the same reader-order digest:
+
+`68cda190573e34204567407a7783b7ba028696f9d21d10e72a149c7508e2904e`
+
+Real camera features were produced.
+
+Real D435i IMU features were produced.
+
+Real HandsFree IMU features were produced.
+
+A real `/velodyne_points` payload was observed.
+
+The observed serialized LiDAR payload contained 1,121,202 bytes with SHA-256
+`adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd`.
+
+The full frozen SE3 LiDAR registration pipeline was not rerun.
+
+The software-only synthetic live lane exercised:
+
+- V2 binding construction;
+- authorization-record hashing;
+- hash-bound synthetic authorization;
+- file-driven input validation;
+- explicit dispatch gating;
+- composite orchestration;
+- synthetic UDP evidence;
+- identity HTTP evidence;
+- status HTTP evidence;
+- diagnostic HTTP evidence;
+- composite receipt publication.
+
+The observed synthetic execution order was:
+
+`UDP -> HTTP:identity -> HTTP:status -> HTTP:diagnostic`
+
+No real network I/O occurred.
+
+No real sensor contact occurred.
+
+The synthetic authorization record is not grounded real authorization.
+
+SE2 health-model training remained blocked.
+
+SE4 training execution remained blocked.
+
+SE5 entry remained blocked.
+
+Real runtime bindings remain 0.
+
+Real execution authorizations remain 0.
+
+Grounded authorization records remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Interval binding remains unestablished.
+
+Physical measurement time remains unestablished.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+No reference trajectory was used.
+
+No ATE/RPE was computed.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+This checkpoint establishes software-level integration qualification only.
+
+It does not prove physical sensor operation.
+
+It does not prove a trained health model.
+
+It does not replace hardware or scientific validation.
+
+At the software boundary, no additional integration software is required before
+the physical-evidence frontier.
+
+Frozen qualification artifacts:
+
+- `src/trust_robot/se4_software_only_end_to_end_qualification.py`
+  SHA-256 `69e14919f97fc109fee7575802696c7ff60f6005163a4e95903fcde6f72b1ede`
+- `scripts/trust_robot/run_se4_software_only_end_to_end_qualification_v1.py`
+  SHA-256 `19fac616d1c528bf97870518c46f8b995fcc38e4994064602253fc0485b61000`
+- `configs/trust_robot/se4_software_only_end_to_end_qualification_resolution_v1.json`
+  SHA-256 `84dd194051f948b4b20949db6566889de1c6ddfd6f254db1ac42fbe5b2d434bc`
+- `tests/trust_robot/test_se4_software_only_end_to_end_qualification.py`
+  SHA-256 `260d9a460d0aecb2ae2e31c3ce6bfd2123905986d204d7436638fc4f69ae8d44`
+- `manifests/trust_robot_se4_software_only_end_to_end_qualification_freeze_v1.json`
+  SHA-256 `0017b8036c4fbf0627eb93bad34a5070de02082707959348dff3be8a7d81a2d1`
+- `tests/trust_robot/test_se4_software_only_end_to_end_qualification_freeze.py`
+  SHA-256 `75d292393daa7d643260390bded8e96c26cc34a920799f3a6516e51ae0f119e5`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_SOFTWARE_ONLY_END_TO_END_QUALIFICATION_FREEZE_V1.md`
+  SHA-256 `1c139187c13a1edd0dcf7cf4def913d53b374a3313b4b653a2453aac114e74e4`

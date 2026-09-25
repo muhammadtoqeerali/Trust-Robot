@@ -1,0 +1,165 @@
+{
+  "content_sha256": "0f099e5f7afe04d45c9ac4c1d58404e34f12f03991614ee9bcab25b2b85e69f1",
+  "implementation": {
+    "config": "configs/trust_robot/se4_software_only_end_to_end_qualification_resolution_v1.json",
+    "config_content_sha256": "9105dbf61d9dd5df4ccd1edb07efebb01974cab1949c1842be71b1f02e6fc70d",
+    "config_sha256": "84dd194051f948b4b20949db6566889de1c6ddfd6f254db1ac42fbe5b2d434bc",
+    "implementation_test_count": 48,
+    "module": "src/trust_robot/se4_software_only_end_to_end_qualification.py",
+    "module_sha256": "69e14919f97fc109fee7575802696c7ff60f6005163a4e95903fcde6f72b1ede",
+    "runner": "scripts/trust_robot/run_se4_software_only_end_to_end_qualification_v1.py",
+    "runner_sha256": "19fac616d1c528bf97870518c46f8b995fcc38e4994064602253fc0485b61000",
+    "test": "tests/trust_robot/test_se4_software_only_end_to_end_qualification.py",
+    "test_sha256": "260d9a460d0aecb2ae2e31c3ce6bfd2123905986d204d7436638fc4f69ae8d44"
+  },
+  "next_frontier": {
+    "accepted_health_supervision_required_before_model_training": true,
+    "additional_software_integration_required_before_physical_boundary": false,
+    "grounded_real_authorization_required_for_real_execution": true,
+    "real_physical_runtime_values_required_for_real_execution": true
+  },
+  "observed_qualification_receipt": {
+    "receipt_content_sha256": "5b82e5bc482376ff2b099ee9cf58d2432067b8277f472c9946f9e258e3b52974",
+    "receipt_file_sha256": "ce5ea8d5adcd6b8a8a304c661242b3ff5260189495ec959209fd6ec89ce8f988",
+    "receipt_hashes_are_required_to_repeat_across_future_runs": false,
+    "receipt_hashes_are_run_specific_evidence": true
+  },
+  "parent_frontier": {
+    "commit": "1ff236023c4c5ca717d8fa7655dc4a3a775db8e9",
+    "tree": "bef32ed2b71476316668181bedde79ab872ca236"
+  },
+  "qualification_conclusion": {
+    "current_implementable_software_stack_operates_end_to_end": true,
+    "physical_or_health_evidence_fabricated": false,
+    "proves_health_model": false,
+    "proves_real_sensor_operation": false,
+    "replaces_hardware_validation": false,
+    "replaces_scientific_validation": false,
+    "software_level_qualification_passed": true
+  },
+  "real_data_lane": {
+    "bag_file_size_bytes": 15162620712,
+    "bag_relative_path": "raw/rosbags/room_02.bag",
+    "bounded_replay_deterministic": true,
+    "bounded_replay_digest_sha256": "68cda190573e34204567407a7783b7ba028696f9d21d10e72a149c7508e2904e",
+    "bounded_replay_message_count": 45,
+    "dataset": "M2DGR",
+    "real_stream_count": 4,
+    "real_stream_ids": [
+      "/camera/color/image_raw/compressed",
+      "/camera/imu",
+      "/handsfree/imu",
+      "/velodyne_points"
+    ],
+    "representative_selection_is_scientific_sampling_claim": false,
+    "representative_trajectory": "room_02",
+    "split": "TRAIN",
+    "split_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "real_feature_observations": {
+    "camera": {
+      "bag_timestamp_ns": 1627643739533299874,
+      "feature_names": [
+        "gray_mean_intensity_8bit",
+        "gray_std_intensity_8bit",
+        "gray_mean_abs_neighbor_difference_8bit"
+      ],
+      "feature_values": [
+        118.984404296875,
+        67.17714891875188,
+        4.872886772762849
+      ]
+    },
+    "camera_imu": {
+      "bag_timestamp_ns": 1627643739482808635,
+      "feature_names": [
+        "angular_speed_norm_rad_s",
+        "linear_acceleration_norm_m_s2"
+      ],
+      "feature_values": [
+        0.0034743013743035868,
+        9.76639145189828
+      ]
+    },
+    "handsfree_imu": {
+      "bag_timestamp_ns": 1627643739487759438,
+      "feature_names": [
+        "angular_speed_norm_rad_s",
+        "linear_acceleration_norm_m_s2"
+      ],
+      "feature_values": [
+        0.0021029424511825835,
+        10.04871765839132
+      ]
+    },
+    "velodyne": {
+      "bag_timestamp_ns": 1627643739605994074,
+      "frozen_SE3_lidar_feature_contract": [
+        "source_point_count",
+        "target_point_count",
+        "fixed_point_iterations",
+        "final_correspondence_count",
+        "final_nearest_neighbor_rmse_m"
+      ],
+      "full_lidar_registration_rerun": false,
+      "serialized_payload_bytes": 1121202,
+      "serialized_payload_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd"
+    }
+  },
+  "schema": "TRUST_ROBOT_SE4_SOFTWARE_ONLY_END_TO_END_QUALIFICATION_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_access": false,
+    "grounded_authorization_record_count": 0,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "real_execution_authorization_count": 0,
+    "real_health_label_count": 0,
+    "real_runtime_binding_count": 0,
+    "real_sensor_contact": false,
+    "real_sensor_network_IO_executed": false,
+    "reference_trajectory_accessed": false,
+    "validation_access": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "stage_id": "SE4",
+    "status": "software_only_E2E_qualification_verified",
+    "sub_frontier": "software_only_end_to_end_qualification"
+  },
+  "synthetic_live_lane": {
+    "authorization_record_is_grounded_real_authorization": false,
+    "composite_orchestrator_executed": true,
+    "dispatch_gate_executed": true,
+    "execution_order": [
+      "UDP",
+      "HTTP:identity",
+      "HTTP:status",
+      "HTTP:diagnostic"
+    ],
+    "file_validation_executed": true,
+    "real_network_IO_executed": false,
+    "real_sensor_contact": false,
+    "run_specific_composite_receipt_sha256": "2692942fa3c8e0f65b3eb4ed75e40c7d658dba27682c1ec2fbd083bff0b3bb9f",
+    "run_specific_hash_is_replay_stability_requirement": false,
+    "synthetic_HTTP_diagnostic_receipt_produced": true,
+    "synthetic_HTTP_identity_receipt_produced": true,
+    "synthetic_HTTP_status_receipt_produced": true,
+    "synthetic_UDP_receipt_produced": true,
+    "synthetic_composite_receipt_produced": true
+  },
+  "training_and_stage_guards": {
+    "SE2_health_model_training_blocked": true,
+    "SE4_training_execution_blocked": true,
+    "SE5_entry_blocked": true,
+    "health_label_generated": false
+  }
+}
