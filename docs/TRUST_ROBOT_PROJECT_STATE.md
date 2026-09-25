@@ -5065,3 +5065,79 @@ Frozen acquisition-mechanism artifacts:
   SHA-256 `e4eec16c925386e1a1d0b72be58ab869c64de2b397642c0986f977bbbcfc83d1`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_SUPERVISION_ACQUISITION_MECHANISM_FREEZE_V1.md`
   SHA-256 `27f6c9ee0c5e90990f61c4ca610cbec836af6989ed5e340e79d8c8be0e9e9a97`
+
+## SE4 live-execution transport freeze V1
+
+Status: **future executable UDP transport resolved; real-sensor execution remains unauthorized.**
+
+The future executable VLP-32C UDP payload-acquisition transport is now the
+existing ordinary user-space dual UDP receiver.
+
+The selected receiver uses `AF_INET` / `SOCK_DGRAM` sockets and does not
+require passive interface sniffing, raw packet sockets, `tcpdump`, root,
+sudo, or `CAP_NET_RAW`.
+
+Loopback dual-stream execution is already verified.
+
+Real VLP-32C execution is not yet verified.
+
+The earlier classic-PCAP / `tcpdump` acquisition mechanism remains historical
+and hash-frozen and is not rewritten.
+
+The selected ordinary UDP receiver preserves exact delivered UDP payload
+bytes, datagram boundaries, per-datagram SHA-256, stream identity, source
+endpoint, destination bind endpoint, and host userspace receive timestamps.
+
+It does not preserve Ethernet, IP or UDP headers and does not prove zero
+packet loss.
+
+Host receive timestamps remain transport provenance only and do not establish
+physical measurement time or interval binding.
+
+No real bind IPv4, VLP-32C ports, sensor IPv4, capture duration, output root,
+session identity, HTTP timeout values or destination configuration is selected.
+
+No network or sensor execution occurred in this resolution.
+
+Raw real-sensor capture artifacts remain 0.
+
+Device identity receipts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Real-sensor execution remains unauthorized.
+
+Source acceptance remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen live-execution transport artifacts:
+
+- `src/trust_robot/se4_live_execution_transport_resolution.py`
+  SHA-256 `f02709f221148f68351aebdc2bbbf8fd567acf13d09e2f5d568ebe2a465d5c9c`
+- `configs/trust_robot/se4_live_execution_transport_resolution_v1.json`
+  SHA-256 `ee737340b0b6d2d262b39ce05bd3a23dc9bf2b082e3ad974a5c7e413a044ee64`
+- `tests/trust_robot/test_se4_live_execution_transport_resolution.py`
+  SHA-256 `ba08f31a4d7e9c77af99102282fcf7757ffeecd0afcc93c06b5794eb0680adfb`
+- `manifests/trust_robot_se4_live_execution_transport_freeze_v1.json`
+  SHA-256 `c086398420cf9187aba0defaa3fce54a34eb5f57dbef457aa30e3fae290cd0b0`
+- `tests/trust_robot/test_se4_live_execution_transport_freeze.py`
+  SHA-256 `baec23676142c09b1cb06029b848f54c6d829d3aa56e35e0f094a59b2c30f684`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_LIVE_EXECUTION_TRANSPORT_FREEZE_V1.md`
+  SHA-256 `9680ddea2c4d3c1902c9b74c7e616489ac8a0caf2fd7f1be4508ddacd4926a3c`

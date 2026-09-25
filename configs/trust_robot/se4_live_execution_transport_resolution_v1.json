@@ -1,0 +1,140 @@
+{
+  "HTTP_transport": {
+    "HTTP_execution_authorized": false,
+    "HTTP_execution_implemented_by_this_resolution": false,
+    "diagnostic_path": "/cgi/diag.json",
+    "identity_path": "/cgi/info.json",
+    "one_shot_requests_selected": true,
+    "status_path": "/cgi/status.json"
+  },
+  "content_sha256": "5f61bf82990a57fae6914b52ed3a580ecf513492c2fcfe40efa7285539d4890e",
+  "frozen_input_sha256": {
+    "SE4_acquisition_mechanism_config": "6150971b4a16e5ba2ad51c754174a7fd37df287763559f1fc4f60b481758e464",
+    "SE4_acquisition_mechanism_freeze": "18df2dd2a88d60939f31b844f584a21d090f3a15026369e511c2cb4d39dd20f4",
+    "live_executor_safety_module": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+    "phase5_live_executor_safety": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a",
+    "phase5_unprivileged_udp_receiver_config": "96cd1be3cf9ec3a55721cb496cac32a61279682bdf2d11d16b479568435c3b90",
+    "unprivileged_udp_receiver_audit": "e1e1c10f77eef88f48800e21c12157f2b3e6cd4f3e4bcdfa68fb7aa2c3981183",
+    "unprivileged_udp_receiver_module": "05e40722e15434b92d0f8aad93e4a6a9aef71a38dcd8d97e8bddc4f5ec3a385d",
+    "unprivileged_udp_receiver_test": "a3b04c6e2c6b82388c02f2e57ac303d5bf1f1bc30871f5fd84165a922e967e68"
+  },
+  "future_UDP_output_contract": {
+    "capture_receipt": "capture_receipt.json",
+    "measurement_metadata": "measurement_datagrams.jsonl",
+    "measurement_payload_archive": "measurement_payloads.bin",
+    "position_metadata": "position_datagrams.jsonl",
+    "position_payload_archive": "position_payloads.bin"
+  },
+  "historical_transport": {
+    "historical_freeze_remains_hash_frozen": true,
+    "historical_freeze_rewritten": false,
+    "prior_mechanism": "passive_classic_pcap_via_tcpdump",
+    "reason_not_selected_for_future_executable_UDP_path": "An already-implemented ordinary user-space dual UDP receiver provides the prospective executable payload transport without passive packet-sniffing privileges.",
+    "selected_for_future_executable_UDP_path": false
+  },
+  "not_preserved_by_selected_UDP_transport": {
+    "IP_headers": false,
+    "UDP_headers": false,
+    "ethernet_headers": false,
+    "passively_observed_interface_packets": false,
+    "proof_of_zero_packet_loss": false
+  },
+  "preserved_UDP_evidence": {
+    "datagram_index_preserved": true,
+    "destination_UDP_port_preserved": true,
+    "destination_bind_IPv4_preserved": true,
+    "exact_UDP_payload_bytes": true,
+    "host_userspace_monotonic_receive_ns_preserved": true,
+    "host_userspace_wall_time_ns_preserved": true,
+    "payload_length_preserved": true,
+    "payload_offset_preserved": true,
+    "per_datagram_SHA256_required": true,
+    "per_datagram_boundaries_preserved": true,
+    "source_IPv4_preserved": true,
+    "source_UDP_port_preserved": true,
+    "stream_identity_preserved": true
+  },
+  "publication_contract": {
+    "SHA256_after_publication_required": true,
+    "SHA256_before_publication_required": true,
+    "absolute_output_root_required": true,
+    "atomic_publication_required": true,
+    "existing_final_artifact_overwrite_allowed": false,
+    "fresh_session_directory_required": true,
+    "pre_post_SHA256_equality_required": true,
+    "same_directory_partial_files_required": true
+  },
+  "resolution_id": "trust_robot_se4_live_execution_transport_resolution_v1",
+  "runtime_values_intentionally_unselected": {
+    "HTTP_connect_timeout_seconds": null,
+    "HTTP_total_timeout_seconds": null,
+    "VLP32C_destination_configuration": null,
+    "absolute_output_root": null,
+    "acquisition_session_id": null,
+    "bind_IPv4": null,
+    "capture_duration_seconds": null,
+    "measurement_UDP_port": null,
+    "position_UDP_port": null,
+    "sensor_IPv4": null
+  },
+  "schema": "TRUST_ROBOT_SE4_LIVE_EXECUTION_TRANSPORT_RESOLUTION_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "UDP_receive_establishes_baseline_nominality": false,
+    "UDP_receive_establishes_health_supervision": false,
+    "UDP_receive_establishes_sensor_health": false,
+    "UDP_receive_proves_no_packet_loss": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_access": false,
+    "device_identity_receipt_count": 0,
+    "interval_binding_established": false,
+    "network_IO_executed": false,
+    "raw_real_sensor_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "real_sensor_receiver_execution_verified": false,
+    "reference_data_used": false,
+    "sensor_contact_executed": false,
+    "userspace_receive_time_is_physical_measurement_time": false,
+    "validation_access": false
+  },
+  "selected_future_UDP_transport": {
+    "implementation_exists": true,
+    "loopback_execution_verified": true,
+    "passive_interface_sniffing": false,
+    "raw_packet_socket": false,
+    "real_sensor_execution_verified": false,
+    "receives_only_datagrams_delivered_to_bound_UDP_socket": true,
+    "requires_CAP_NET_RAW": false,
+    "requires_root": false,
+    "requires_sudo": false,
+    "selected": true,
+    "socket_family": "AF_INET",
+    "socket_type": "SOCK_DGRAM",
+    "transport_id": "phase5_unprivileged_dual_udp_receiver_v1",
+    "uses_tcpdump": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "sub_frontier": "future_live_execution_transport"
+  },
+  "transition_policy": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "confirmation_remains_closed": true,
+    "future_UDP_execution_transport_resolved": true,
+    "health_label_generation_authorized": false,
+    "next_required_event": "Resolve explicit real TRAIN bind address, VLP-32C UDP destination ports, sensor address, acquisition duration, output root and session identity, then separately authorize and verify real-sensor acquisition.",
+    "packet_sniffing_permission_required_for_selected_UDP_transport": false,
+    "real_sensor_execution_authorized": false,
+    "runtime_environment_values_resolved": false,
+    "source_acceptance_authorized": false,
+    "tcpdump_required_for_selected_UDP_transport": false,
+    "unprivileged_receiver_selected": true,
+    "validation_remains_closed": true
+  }
+}
