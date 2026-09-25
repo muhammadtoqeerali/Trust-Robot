@@ -4741,3 +4741,62 @@ SE2 may use TRAIN only at this frontier. Validation and confirmation remain
 closed. Model training remains deferred to the later authorized stage.
 
 SE9 confirmation remains closed and cannot reopen selection after results.
+
+## SE2 health supervision protocol freeze V1
+
+Status: **SE2 health-supervision protocol resolved and frozen locally for checkpoint promotion.**
+
+SE2 freezes the admissibility rules for `healthy`, `degraded`, and
+`unusable` health supervision.
+
+The protocol requires prospective, measurement-role-grounded, explicitly
+provenance-bound evidence independent of diagnostic features, reference
+trajectories, final estimator scoring, and confirmation-test outcomes.
+
+Availability is not a health label.
+
+Clean data are not automatically healthy.
+
+Synthetic corruption identity is not automatically a health label.
+
+Missing measurement is not a zero feature vector.
+
+Final localization error may not define health supervision.
+
+Current empirical readiness remains intentionally fail-closed:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real health labels: 0;
+- health-label generation authorized: false;
+- empirical health supervision available: false.
+
+SE2 did not open validation or confirmation, did not read reference
+trajectories, did not assign health labels, and did not perform feature
+selection, model training, probability calibration, threshold selection,
+ATE/RPE, or final scoring.
+
+SE2 implementation:
+
+- `src/trust_robot/health_supervision_resolution.py`
+- `configs/trust_robot/se2_health_supervision_protocol_v1.json`
+- `tests/trust_robot/test_se2_health_supervision_protocol.py`
+
+SE2 freeze artifacts:
+
+- `manifests/trust_robot_se2_health_supervision_protocol_freeze_v1.json`
+  SHA-256 `63da52c788208ae715abc7e0b8eb0ba6777cc16d33d90466332779c630618230`
+- `tests/trust_robot/test_se2_health_supervision_protocol_freeze.py`
+  SHA-256 `911bb403c7f5593c7eb94ce77821828baf418217dcb0b559195a69a538cdfdb4`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE2_HEALTH_SUPERVISION_PROTOCOL_FREEZE_V1.md`
+  SHA-256 `24514683c55f382c696f5f664c48c0f35593d8df9699fcf03b0adad25a3a182e`
+
+SE3 `multimodal_feature_pipeline` is the next software-evidence stage and may
+proceed TRAIN-only.
+
+SE4 health-model training remains blocked until admissible empirical TRAIN
+supervision and real health labels are available.
+
+Validation and confirmation remain closed.
+
+SE9 remains closed.

@@ -1,0 +1,122 @@
+{
+  "admissible_supervision": {
+    "candidate_shape_validity_implies_source_acceptance": false,
+    "current_concrete_candidate_class": "controlled_measurement_availability",
+    "current_concrete_candidate_modality": "lidar",
+    "current_concrete_candidate_protocol_is_prospective_only": true,
+    "explicit_interval_provenance_required": true,
+    "explicit_source_identity_required": true,
+    "explicit_state_criteria_required": true,
+    "independent_baseline_nominality_required": true,
+    "independent_intervention_or_state_evidence_required": true,
+    "independent_measurement_relation_verification_required": true,
+    "independent_of_confirmation_test_required": true,
+    "independent_of_diagnostic_features_required": true,
+    "independent_of_final_estimator_scoring_required": true,
+    "independent_of_reference_trajectory_required": true,
+    "measurement_role_grounding_required": true,
+    "prospective_declaration_required": true
+  },
+  "content_sha256": "a8e2bcd428281e9c4beb78c39dd592d77d3956bc3c5d3f711442167aa4748799",
+  "controlled_availability_mapping": {
+    "absent": "unusable",
+    "availability_identity_alone_is_health_label": false,
+    "full": "healthy",
+    "mapping_applies_only_after_source_acceptance": true,
+    "missing_measurement_encoded_as_zero_feature_vector": false,
+    "partial": "degraded"
+  },
+  "current_empirical_readiness": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "baseline_nominality_receipt_available": false,
+    "controlled_intervention_receipt_available": false,
+    "empirical_health_supervision_available": false,
+    "health_label_generation_authorized": false,
+    "live_sensor_execution_authorized": false,
+    "live_sensor_execution_performed": false,
+    "measurement_relation_verification_receipt_available": false,
+    "real_health_label_count": 0,
+    "training_label_source_selected": false
+  },
+  "execution_boundary": {
+    "ate_rpe_computed": false,
+    "feature_selection_executed": false,
+    "final_scoring_executed": false,
+    "health_label_assignment_executed": false,
+    "model_training_executed": false,
+    "probability_calibration_executed": false,
+    "reference_association_executed": false,
+    "threshold_selection_executed": false
+  },
+  "frozen_input_sha256": {
+    "acquisition_session_provenance_config": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b",
+    "acquisition_session_provenance_module": "ff79ccf0ea68355028ef9fd3fa76f431479a9a7f2fba6b60a34d75bd9bf3cf20",
+    "baseline_nominality_config": "3e54df63f06875c3764c130922d6b967ac94075fc414510240a35e0397b89f00",
+    "baseline_nominality_module": "e8cf8033800973545853fda90c234ada4caffe874be3520ba431f7aef9a86117",
+    "baseline_raw_capture_config": "9d71073e3620e1b3447a9bc11952c1a3a909ec7b14fa14cfda075f8d3fdbc5a7",
+    "baseline_raw_capture_module": "8c6402afde41e95f98a6e71a9ed557d6edb9bf34adbbce9f6ce00c573440e140",
+    "controlled_availability_config": "364d2c4d043c5a99e969ea3406d8bb338931705a236b169249b1c06c294f0361",
+    "controlled_availability_module": "460c61b15a215a9fca36162aec7644a9f565731716e5f32d727a71d2101a6040",
+    "health_semantics_config": "dc77b600b7306eb146f4ab901e7beca26f1075a6befee5d977a0f0e43070dc22",
+    "health_semantics_module": "3499dbe9951db232b04f5b5e90e4e584f8fcd1af1906de3a64769da0972d68a4",
+    "health_supervision_config": "08d65e6bca3a87df8d23cb2992bdb84544c66c51df764d3539ceac0fb6a95adc",
+    "health_supervision_module": "f1ffa072c43998b750804a5ec606570504a27c9f6c60a6aa93b4b8e02bfb1be5",
+    "live_acquisition_plan_config": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+    "live_executor_safety_config": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a",
+    "se1_freeze_manifest": "46224af94a07787883b9bd76e0df88cb43f60e834484add04b64933afdbafb02",
+    "software_evidence_completion_plan": "5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb"
+  },
+  "partition_access": {
+    "confirmation_authorized": false,
+    "cross_partition_supervision_allowed": false,
+    "reference_trajectory_authorized": false,
+    "train_authorized": true,
+    "validation_authorized": false
+  },
+  "prohibited_label_basis": {
+    "ate_or_rpe": true,
+    "classifier_output_as_own_supervision": true,
+    "clean_dataset_identity_alone": true,
+    "confirmation_test_outcome": true,
+    "diagnostic_value_or_threshold_alone": true,
+    "final_estimator_score": true,
+    "final_localization_error": true,
+    "historical_imu_reliability_policy": true,
+    "measurement_availability_identity_alone": true,
+    "reference_trajectory_metric": true,
+    "synthetic_corruption_identity_alone": true
+  },
+  "protocol_id": "trust_robot_se2_health_supervision_protocol_v1",
+  "schema": "TRUST_ROBOT_SE2_HEALTH_SUPERVISION_PROTOCOL_V1",
+  "schema_version": 1,
+  "stage": {
+    "purpose": "Resolve admissible healthy/degraded/unusable supervision without converting availability, clean or corruption identity, diagnostic values, reference metrics, or final localization error into health labels.",
+    "stage_id": "SE2",
+    "stage_name": "health_supervision_protocol",
+    "status": "protocol_resolved_no_accepted_empirical_source_ready_for_SE3",
+    "track": "software_evidence_completion"
+  },
+  "state_semantics": {
+    "degraded": "Non-nominal impairment of the declared measurement role while the role remains usable during the labeled interval according to an accepted supervision source.",
+    "healthy": "Nominal for the declared measurement role during the labeled interval according to an accepted, prospective, measurement-role-grounded supervision source.",
+    "unusable": "Unable to provide measurement information suitable for the declared measurement role during the labeled interval according to an accepted supervision source."
+  },
+  "state_vocabulary": [
+    "healthy",
+    "degraded",
+    "unusable"
+  ],
+  "transition_policy": {
+    "SE2_protocol_definition_resolved": true,
+    "SE3_may_proceed": true,
+    "SE3_scope": "multimodal_feature_pipeline",
+    "SE3_train_access_only": true,
+    "SE4_blocker": "No accepted empirical TRAIN health-supervision source and no real health labels are currently available.",
+    "SE4_health_model_training_may_proceed": false,
+    "SE4_requires_admissible_train_supervision": true,
+    "SE9_remains_closed": true,
+    "confirmation_remains_closed": true,
+    "validation_remains_closed": true
+  }
+}
