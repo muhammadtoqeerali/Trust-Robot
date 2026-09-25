@@ -4908,3 +4908,83 @@ Empirical run bindings:
   `e6d62f4441ede9db4d4f5947234a279b8998f2d6a2c61e5f717770023082c28d`
 - aggregate trajectory-record SHA-256:
   `61be2e163607ee7984c1e6a1fa13c0386802d78e5f406a7edf1643e43e37060c`
+
+## SE4 health-model training blocked-frontier freeze V1
+
+Status: **SE4 blocked frontier frozen; SE4 remains incomplete.**
+
+SE4 is the stage intended to train the actual healthy/degraded/unusable
+modality-health model using admissible TRAIN supervision.
+
+Training cannot currently execute because the frozen admissibility state is:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real health labels: 0;
+- empirical health supervision available: false.
+
+The exact camera and IMU feature contracts from the promoted SE3 freeze are
+now bound prospectively as the SE4 diagnostic inputs.
+
+Camera features:
+
+- `gray_mean_intensity_8bit`
+- `gray_std_intensity_8bit`
+- `gray_mean_abs_neighbor_difference_8bit`
+
+IMU features:
+
+- `angular_speed_norm_rad_s`
+- `linear_acceleration_norm_m_s2`
+
+The frozen Phase-4 LiDAR contract remains unchanged.
+
+The historical Phase-5 health-model interface is not rewritten. It predates
+SE3 exact camera/IMU feature resolution and remains hash-frozen in its
+historical evidence-blocked form.
+
+At this frontier:
+
+- classifier architecture selected: false;
+- model-family selection executed: false;
+- hyperparameter selection executed: false;
+- model training authorized: false;
+- model training executed: false;
+- trained model artifact: none;
+- health inference authorized: false;
+- probability calibration executed: false;
+- threshold selection executed: false.
+
+No validation or confirmation data was opened.
+
+No reference trajectory or localization score was used as supervision.
+
+SE4 remains incomplete.
+
+SE5 remains blocked because no legitimate frozen TRAIN health-model output
+exists.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+The required next event is admissible empirical TRAIN health-supervision
+evidence and real healthy/degraded/unusable labels satisfying the frozen SE2
+protocol.
+
+SE4 blocked-frontier artifacts:
+
+- `src/trust_robot/se4_health_model_training_resolution.py`
+  SHA-256 `38105bdeff480e627506f63a5f4e932b0ffed2243c86246f98dee360b9a1dfc3`
+- `configs/trust_robot/se4_health_model_training_resolution_v1.json`
+  SHA-256 `8d68167359b95d978ad9c39b8c9cfc87204b28def090f0fb3c2c640b61d4cfaa`
+- `tests/trust_robot/test_se4_health_model_training_resolution.py`
+  SHA-256 `8e9f8430c117afcae8724719f28ed0e70a49ffa8b52b1de9e7520673d79743be`
+- `manifests/trust_robot_se4_health_model_training_blocked_frontier_freeze_v1.json`
+  SHA-256 `8ced2b97595a541fb152b5fd012d83c6c8d8b99a770a0cd1e1a6e7c55d6f248d`
+- `tests/trust_robot/test_se4_health_model_training_blocked_frontier_freeze.py`
+  SHA-256 `a96e43d9110b2bab6d865f52e43aeadddf0c74151ff8d9f8a0f64139c27e3bab`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_HEALTH_MODEL_TRAINING_BLOCKED_FRONTIER_FREEZE_V1.md`
+  SHA-256 `23cae48ecda67e4073141baa2a4e74a047fd692e9cfca9bff25408d58bbca65d`

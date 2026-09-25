@@ -1,0 +1,157 @@
+{
+  "closure_interpretation": {
+    "software_blocker_resolution_equals_trained_model": false,
+    "software_success_equals_physical_validation": false,
+    "this_does_not_authorize_SE5": true,
+    "this_does_not_authorize_confirmation_access": true,
+    "this_does_not_authorize_validation_access": true,
+    "this_is_a_blocked_frontier_freeze": true,
+    "this_is_not_SE4_completion": true
+  },
+  "content_sha256": "a1cba866967ed7da07b9603b7f0fc1f7a1e59a2d588b933078e6a03b5985f852",
+  "diagnostic_input_binding": {
+    "camera": {
+      "contract_source": "SE3 freeze",
+      "feature_names": [
+        "gray_mean_intensity_8bit",
+        "gray_std_intensity_8bit",
+        "gray_mean_abs_neighbor_difference_8bit"
+      ],
+      "health_semantics": false
+    },
+    "gnss": {
+      "feature_contract_resolved": false,
+      "feature_names": [],
+      "role": "optional"
+    },
+    "imu": {
+      "contract_source": "SE3 freeze",
+      "feature_names": [
+        "angular_speed_norm_rad_s",
+        "linear_acceleration_norm_m_s2"
+      ],
+      "health_semantics": false,
+      "source_streams": [
+        "/camera/imu",
+        "/handsfree/imu"
+      ],
+      "streams_kept_separate": true
+    },
+    "lidar": {
+      "contract_source": "Phase-4 validated freeze",
+      "feature_names": [
+        "source_point_count",
+        "target_point_count",
+        "fixed_point_iterations",
+        "final_correspondence_count",
+        "final_nearest_neighbor_rmse_m"
+      ],
+      "health_semantics": false,
+      "phase4_contract_reopened": false
+    }
+  },
+  "execution_status": {
+    "SE3_feature_contracts_reopened": false,
+    "ate_rpe_computed": false,
+    "confirmation_access": false,
+    "final_scoring_executed": false,
+    "health_label_assignment_executed": false,
+    "health_threshold_selection_executed": false,
+    "model_training_executed": false,
+    "probability_calibration_executed": false,
+    "reference_association_executed": false,
+    "reference_trajectory_access": false,
+    "supervised_feature_selection_executed": false,
+    "train_access": true,
+    "validation_access": false
+  },
+  "frozen_input_bindings": {
+    "SE2_health_supervision_freeze": {
+      "file_sha256": "63da52c788208ae715abc7e0b8eb0ba6777cc16d33d90466332779c630618230",
+      "path": "manifests/trust_robot_se2_health_supervision_protocol_freeze_v1.json"
+    },
+    "SE3_multimodal_feature_pipeline_freeze": {
+      "content_sha256": "ce68cfa263e31b20060d92af48b4eba6f82cc5b706bc7f3108c3ac2c6448bb90",
+      "file_sha256": "a987f9793b60ea674991577a189711f2e535961796b1d74dfd6454e60de8e994",
+      "path": "manifests/trust_robot_se3_multimodal_feature_pipeline_freeze_v1.json"
+    },
+    "historical_phase5_health_model_interface": {
+      "file_sha256": "aa48c67cdcd19aa5af2a297f42b20d1bb4369b5dcd38bdc2c2ca9ae68ceb4ea3",
+      "path": "configs/trust_robot/phase5_multimodal_health_model_interface_candidate_v1.json",
+      "rewritten": false
+    },
+    "phase5_multimodal_software_architecture_freeze": {
+      "file_sha256": "457a42c3778731307b1371208407fca6d7cf8e604718f81138034479deb0d09a",
+      "path": "manifests/trust_robot_phase5_multimodal_software_architecture_freeze_v1.json"
+    },
+    "software_evidence_completion_plan": {
+      "file_sha256": "5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb",
+      "path": "configs/trust_robot/software_evidence_completion_plan_v1.json"
+    }
+  },
+  "future_training_requirements": {
+    "admissible_TRAIN_supervision_required": true,
+    "classifier_output_as_own_supervision_forbidden": true,
+    "confirmation_for_model_selection_forbidden": true,
+    "cross_partition_training_forbidden": true,
+    "derivative_lineage_grouping_required": true,
+    "diagnostic_feature_value_as_health_label_forbidden": true,
+    "final_localization_error_as_health_label_forbidden": true,
+    "real_health_labels_required": true,
+    "trajectory_grouping_required": true,
+    "validation_may_not_supply_training_labels": true
+  },
+  "implementation": {
+    "config": "configs/trust_robot/se4_health_model_training_resolution_v1.json",
+    "config_content_sha256": "4f22fdbcbd1ab8c77fb62086649bb622ffa833b18e7dba03c42d112d35d04bd9",
+    "config_sha256": "8d68167359b95d978ad9c39b8c9cfc87204b28def090f0fb3c2c640b61d4cfaa",
+    "module": "src/trust_robot/se4_health_model_training_resolution.py",
+    "module_sha256": "38105bdeff480e627506f63a5f4e932b0ffed2243c86246f98dee360b9a1dfc3",
+    "test": "tests/trust_robot/test_se4_health_model_training_resolution.py",
+    "test_sha256": "8e9f8430c117afcae8724719f28ed0e70a49ffa8b52b1de9e7520673d79743be"
+  },
+  "model_state": {
+    "classifier_architecture": "unselected",
+    "classifier_architecture_selected": false,
+    "classifier_training_authorized": false,
+    "health_inference_authorized": false,
+    "health_probability_output_enabled": false,
+    "health_state_output_enabled": false,
+    "hyperparameter_selection_executed": false,
+    "model_family_selection_executed": false,
+    "model_training_executed": false,
+    "trained_model_artifact_sha256": null
+  },
+  "parent_frontier": {
+    "commit": "fedbd59d9ffb5e596cb78c710e5781735a7d956a",
+    "tree": "e5a1f8d50db0c6b848096e19a15e0f300acc909c"
+  },
+  "project_state_pre_freeze_sha256": "0815e7330fca7ae19163840f4e8a199d3cee05cf6c3bbd81090159425f96cc36",
+  "schema": "TRUST_ROBOT_SE4_HEALTH_MODEL_TRAINING_BLOCKED_FRONTIER_FREEZE_V1",
+  "schema_version": 1,
+  "stage": {
+    "SE4_complete": false,
+    "stage_id": "SE4",
+    "stage_name": "health_model_training",
+    "status": "blocked_frontier_frozen_no_admissible_train_supervision",
+    "track": "software_evidence_completion"
+  },
+  "supervision_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "empirical_health_supervision_available": false,
+    "health_label_generation_authorized": false,
+    "real_health_label_count": 0,
+    "training_label_source_selected": false
+  },
+  "transition_policy": {
+    "SE4_complete": false,
+    "SE4_training_may_execute": false,
+    "SE5_blocked_pending_frozen_train_model_output": true,
+    "SE5_may_proceed": false,
+    "SE9_remains_closed": true,
+    "confirmation_remains_closed": true,
+    "required_next_event": "Acceptance of admissible empirical TRAIN health-supervision evidence and real healthy/degraded/unusable labels under the frozen SE2 protocol.",
+    "validation_remains_closed": true
+  }
+}
