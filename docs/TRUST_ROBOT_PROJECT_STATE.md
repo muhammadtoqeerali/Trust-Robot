@@ -4800,3 +4800,111 @@ supervision and real health labels are available.
 Validation and confirmation remain closed.
 
 SE9 remains closed.
+
+## SE3 multimodal feature pipeline freeze V1
+
+Status: **SE3 exact multimodal diagnostic feature contracts resolved, complete
+frozen-TRAIN extraction empirically validated, and stage frozen locally for
+checkpoint promotion.**
+
+SE3 preserves the frozen Phase-4 LiDAR diagnostic feature contract unchanged
+and prospectively resolves exact camera and IMU low-level diagnostic feature
+contracts.
+
+Camera features per message:
+
+- `gray_mean_intensity_8bit`;
+- `gray_std_intensity_8bit`;
+- `gray_mean_abs_neighbor_difference_8bit`.
+
+IMU features per message, with D435i and HandsFree streams kept separate:
+
+- `angular_speed_norm_rad_s`;
+- `linear_acceleration_norm_m_s2`.
+
+IMU orientation and covariance are excluded from the SE3 vector.
+
+The complete frozen 22-trajectory TRAIN extraction produced:
+
+- 2,816,957 total feature records;
+- 107,675 camera records;
+- 1,404,805 D435i IMU records;
+- 1,304,477 HandsFree IMU records;
+- 4,320,203,720 source serialized payload bytes.
+
+Camera and D435i IMU remain absent on `street_010` and `street_09`.
+HandsFree IMU is present on all 22 TRAIN trajectories.
+
+Missing measurements remain absent and are not converted to zero vectors or
+cross-modal imputations.
+
+The empirical population exactly matches the previously frozen Phase-5
+camera/IMU TRAIN source evidence.
+
+All emitted feature JSONL hashes and line counts were independently validated,
+and all feature values/statistics are finite.
+
+SE3 used TRAIN only.
+
+Validation remained closed.
+
+Confirmation remained closed.
+
+Reference trajectories were not read.
+
+No cross-modal alignment or physical synchronization inference was performed.
+
+No health labels, health probabilities, supervised feature selection,
+classifier training, probability calibration, threshold selection, ATE/RPE or
+final scoring was performed.
+
+Health-supervision state remains:
+
+- accepted baseline-nominality sources: 0;
+- accepted health-supervision sources: 0;
+- real health labels: 0.
+
+SE3 is complete.
+
+SE4 `health_model_training` is the next stage in the frozen stage order, but
+SE4 health-model training remains blocked until admissible empirical TRAIN
+supervision and real health labels are available.
+
+Validation and confirmation remain closed.
+
+SE9 remains closed.
+
+The prospective SE3 component config retains its historical
+`SE3_complete=false` value. It is not rewritten after the fact. The aggregate
+SE3 freeze manifest is the authoritative stage-level closure record.
+
+SE3 implementation artifacts:
+
+- `configs/trust_robot/se3_multimodal_feature_contract_v1.json`
+- `src/trust_robot/se3_multimodal_feature_contract.py`
+- `tests/trust_robot/test_se3_multimodal_feature_contract.py`
+- `src/trust_robot/se3_multimodal_feature_extraction.py`
+- `scripts/trust_robot/run_se3_multimodal_feature_extraction_v1.py`
+- `tests/trust_robot/test_se3_multimodal_feature_extraction.py`
+
+SE3 freeze artifacts:
+
+- `manifests/trust_robot_se3_multimodal_feature_pipeline_freeze_v1.json`
+  SHA-256 `a987f9793b60ea674991577a189711f2e535961796b1d74dfd6454e60de8e994`
+- `tests/trust_robot/test_se3_multimodal_feature_pipeline_freeze.py`
+  SHA-256 `d91e8b8a657561a4d0319b0b14e60494bd077a1dcae341cda3a382fa8ac148d5`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE3_MULTIMODAL_FEATURE_PIPELINE_FREEZE_V1.md`
+  SHA-256 `e82eec77ec79b35de3df08f73fa0eab80dc87580492467612622dcbb0848bbcd`
+
+Empirical run bindings:
+
+- candidate file SHA-256:
+  `04e6a6c452a69cce672571e162962cf97f4bcb487e962bf70dd0209c7e8feae5`
+- run manifest file SHA-256:
+  `c8eba6d6798ca66a341adc3a872fe53f0268968d903f211b0142e25a3270ad7e`
+- run manifest content SHA-256:
+  `e3461848f32033f4f44e4226c4ec88506c7fee9906e40929c96b0a4de94f53e4`
+- SUCCESS file SHA-256:
+  `e6d62f4441ede9db4d4f5947234a279b8998f2d6a2c61e5f717770023082c28d`
+- aggregate trajectory-record SHA-256:
+  `61be2e163607ee7984c1e6a1fa13c0386802d78e5f406a7edf1643e43e37060c`

@@ -1,0 +1,149 @@
+{
+  "camera": {
+    "contract_id": "trust_robot_se3_camera_low_level_feature_contract_v1",
+    "decoded_representation": "Pillow_L_uint8_grayscale",
+    "feature_count": 3,
+    "feature_specs": [
+      {
+        "definition": "Arithmetic mean of all pixels after deterministic Pillow conversion of the compressed image to 8-bit grayscale.",
+        "name": "gray_mean_intensity_8bit",
+        "unit": "gray_level"
+      },
+      {
+        "definition": "Population standard deviation of all pixels after deterministic conversion to 8-bit grayscale; ddof=0.",
+        "name": "gray_std_intensity_8bit",
+        "unit": "gray_level"
+      },
+      {
+        "definition": "Mean absolute intensity difference over all horizontally and vertically adjacent grayscale pixel pairs, pooling both directions by pair count.",
+        "name": "gray_mean_abs_neighbor_difference_8bit",
+        "unit": "gray_level"
+      }
+    ],
+    "health_semantics": "none",
+    "message_type": "sensor_msgs/msg/CompressedImage",
+    "normalization": "none",
+    "source_stream": "/camera/color/image_raw/compressed",
+    "temporal_aggregation": "none_per_message",
+    "thresholding": "none"
+  },
+  "content_sha256": "323ce690d0cd563d8af798f5ca8291bfc6eb9f0556e21a90d20d6310e4e27528",
+  "contract_id": "trust_robot_se3_multimodal_feature_contract_v1",
+  "empirical_status": {
+    "SE3_complete": false,
+    "camera_exact_contract_resolved": true,
+    "camera_train_source_evidence_available": true,
+    "full_train_camera_feature_extraction_completed": false,
+    "full_train_imu_feature_extraction_completed": false,
+    "imu_exact_contract_resolved": true,
+    "imu_train_source_evidence_available": true,
+    "lidar_frozen_contract_preserved": true
+  },
+  "imu": {
+    "contract_id": "trust_robot_se3_imu_low_level_feature_contract_v1",
+    "covariance_used": false,
+    "feature_count": 2,
+    "feature_specs": [
+      {
+        "definition": "Euclidean norm sqrt(wx^2 + wy^2 + wz^2) of the directly recorded angular_velocity vector.",
+        "name": "angular_speed_norm_rad_s",
+        "unit": "rad/s"
+      },
+      {
+        "definition": "Euclidean norm sqrt(ax^2 + ay^2 + az^2) of the directly recorded linear_acceleration vector.",
+        "name": "linear_acceleration_norm_m_s2",
+        "unit": "m/s^2"
+      }
+    ],
+    "health_semantics": "none",
+    "message_type": "sensor_msgs/msg/Imu",
+    "normalization": "none",
+    "orientation_used": false,
+    "raw_axes_emitted_as_features": false,
+    "source_streams": [
+      "/camera/imu",
+      "/handsfree/imu"
+    ],
+    "temporal_aggregation": "none_per_message",
+    "thresholding": "none"
+  },
+  "lidar": {
+    "contract_changed": false,
+    "contract_id": "trust_robot_phase4_validated_lidar_diagnostic_feature_contract_v1",
+    "feature_count": 5,
+    "feature_names": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "feature_reselection_performed": false,
+    "feature_units": [
+      "count",
+      "count",
+      "count",
+      "count",
+      "m"
+    ],
+    "phase4_freeze_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+    "source_stream": "/velodyne_points"
+  },
+  "missing_measurement_policy": {
+    "cross_modal_imputation_authorized": false,
+    "missing_measurement_preserved_as_absent": true,
+    "missing_record_is_zero_vector": false,
+    "missing_stream_is_zero_vector": false
+  },
+  "next_action": {
+    "SE4_model_training_authorized": false,
+    "action": "execute_and_validate_exact_features_on_frozen_TRAIN_only",
+    "stage": "SE3"
+  },
+  "resolution_basis": {
+    "confirmation_used": false,
+    "final_localization_error_used": false,
+    "health_labels_used": false,
+    "historical_missing_feature_basis_artifacts_reconstructed": false,
+    "historical_phase5_unselected_contract_overwritten": false,
+    "mode": "prospective_measurement_semantics",
+    "reference_trajectory_used": false,
+    "supervised_feature_ranking_used": false,
+    "validation_used": false
+  },
+  "schema": "TRUST_ROBOT_SE3_MULTIMODAL_FEATURE_CONTRACT_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ate_rpe_computed": false,
+    "classifier_model_selected": false,
+    "classifier_training_authorized": false,
+    "confirmation_access": false,
+    "final_scoring_performed": false,
+    "health_label_assigned": false,
+    "health_probability_emitted": false,
+    "health_threshold_selected": false,
+    "parameter_tuning_performed": false,
+    "reference_data_access": false,
+    "supervised_feature_selection_performed": false,
+    "validation_access": false
+  },
+  "source_bindings": {
+    "SE2_freeze_sha256": "63da52c788208ae715abc7e0b8eb0ba6777cc16d33d90466332779c630618230",
+    "phase4_lidar_freeze_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+    "phase5_camera_imu_diagnostic_channel_contract_sha256": "de6656d35e24162dcd3ff489f21b735396c2457dae526a13be9790bb88bdf485",
+    "phase5_camera_imu_train_source_evidence_sha256": "d4d2a73ddbcf73102cec0d0d4556fa65786a408217fefe1dece0f4d402cce675"
+  },
+  "stage": {
+    "stage_id": "SE3",
+    "stage_name": "multimodal_feature_pipeline",
+    "status": "exact_camera_imu_contracts_resolved_train_extraction_pending"
+  },
+  "timing_boundary": {
+    "bag_record_time_is_physical_measurement_time": false,
+    "cross_modal_synchronization_selected": false,
+    "feature_extraction_requires_cross_modal_alignment": false,
+    "fixed_offset_selected": false,
+    "header_stamp_proves_shared_clock": false,
+    "interpolation_selected": false
+  }
+}

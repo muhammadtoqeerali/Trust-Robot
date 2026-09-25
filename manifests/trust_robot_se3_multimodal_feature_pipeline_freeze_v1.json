@@ -1,0 +1,226 @@
+{
+  "closure_interpretation": {
+    "SE3_closure_authorizes_confirmation_access": false,
+    "SE3_closure_authorizes_model_training": false,
+    "SE3_closure_authorizes_validation_access": false,
+    "aggregate_freeze_manifest_is_authoritative_stage_closure": true,
+    "component_contract_historical_SE3_complete_false_is_preserved": true,
+    "software_success_equals_physical_validation": false
+  },
+  "content_sha256": "ce68cfa263e31b20060d92af48b4eba6f82cc5b706bc7f3108c3ac2c6448bb90",
+  "empirical_train_validation": {
+    "D435i_IMU_feature_records": 1404805,
+    "D435i_IMU_present_trajectory_count": 20,
+    "HandsFree_IMU_feature_records": 1304477,
+    "HandsFree_IMU_present_trajectory_count": 22,
+    "aggregate_trajectory_record_sha256": "61be2e163607ee7984c1e6a1fa13c0386802d78e5f406a7edf1643e43e37060c",
+    "all_JSONL_line_counts_verified": true,
+    "all_feature_file_hashes_verified": true,
+    "all_feature_records_finite": true,
+    "camera_feature_records": 107675,
+    "camera_present_trajectory_count": 20,
+    "candidate_contract_content_sha256": "7e32be1f930d36fad7f269c03fa2c450da0c9a1b29543ed2261267c4aba5ac7c",
+    "candidate_contract_file_sha256": "04e6a6c452a69cce672571e162962cf97f4bcb487e962bf70dd0209c7e8feae5",
+    "dataset_local_output_relative_path": "audit/se3_multimodal_feature_extraction_v1",
+    "execution_log_sha256": "548b8135d22f96493bff235c186880450cd21ce1bb6a49c6a88791d22e623ae2",
+    "output_file_count": 87,
+    "output_total_bytes": 977541077,
+    "phase5_source_message_totals_match": true,
+    "phase5_source_payload_byte_totals_match": true,
+    "run_manifest_content_sha256": "e3461848f32033f4f44e4226c4ec88506c7fee9906e40929c96b0a4de94f53e4",
+    "run_manifest_file_sha256": "c8eba6d6798ca66a341adc3a872fe53f0268968d903f211b0142e25a3270ad7e",
+    "success_file_sha256": "e6d62f4441ede9db4d4f5947234a279b8998f2d6a2c61e5f717770023082c28d",
+    "total_IMU_feature_records": 2709282,
+    "total_feature_records": 2816957,
+    "total_source_serialized_payload_bytes": 4320203720,
+    "train_trajectory_count": 22
+  },
+  "execution_status": {
+    "ate_rpe_computed": false,
+    "confirmation_access": false,
+    "cross_modal_alignment_executed": false,
+    "feature_contract_definition_executed": true,
+    "final_scoring_executed": false,
+    "health_label_assignment_executed": false,
+    "model_training_executed": false,
+    "probability_calibration_executed": false,
+    "reference_trajectory_access": false,
+    "supervised_feature_selection_executed": false,
+    "threshold_selection_executed": false,
+    "train_access": true,
+    "train_feature_extraction_executed": true,
+    "validation_access": false
+  },
+  "feature_contracts": {
+    "camera": {
+      "features": [
+        {
+          "definition": "arithmetic mean of decoded uint8 grayscale pixels",
+          "name": "gray_mean_intensity_8bit",
+          "unit": "gray_level"
+        },
+        {
+          "definition": "population standard deviation of decoded uint8 grayscale pixels with ddof=0",
+          "name": "gray_std_intensity_8bit",
+          "unit": "gray_level"
+        },
+        {
+          "definition": "mean absolute horizontal and vertical neighboring-pixel intensity differences pooled by pair count",
+          "name": "gray_mean_abs_neighbor_difference_8bit",
+          "unit": "gray_level"
+        }
+      ],
+      "health_semantics": false,
+      "normalization": false,
+      "representation": "per_message_decoded_uint8_grayscale",
+      "stream": "/camera/color/image_raw/compressed",
+      "temporal_aggregation": false,
+      "threshold": null
+    },
+    "imu": {
+      "covariance_excluded": true,
+      "features": [
+        {
+          "definition": "Euclidean norm of directly recorded angular_velocity xyz",
+          "name": "angular_speed_norm_rad_s",
+          "unit": "rad/s"
+        },
+        {
+          "definition": "Euclidean norm of directly recorded linear_acceleration xyz",
+          "name": "linear_acceleration_norm_m_s2",
+          "unit": "m/s^2"
+        }
+      ],
+      "health_semantics": false,
+      "normalization": false,
+      "orientation_excluded": true,
+      "raw_axes_emitted_as_feature_vector": false,
+      "streams": [
+        "/camera/imu",
+        "/handsfree/imu"
+      ],
+      "streams_kept_separate": true,
+      "temporal_aggregation": false,
+      "threshold": null
+    },
+    "lidar": {
+      "contract_id": "trust_robot_phase4_validated_lidar_diagnostic_feature_contract_v1",
+      "features_in_order": [
+        "source_point_count",
+        "target_point_count",
+        "fixed_point_iterations",
+        "final_correspondence_count",
+        "final_nearest_neighbor_rmse_m"
+      ],
+      "frozen_phase4_contract_unchanged": true,
+      "health_semantics": false,
+      "normalization": false,
+      "source_stream": "/velodyne_points",
+      "temporal_aggregation": false,
+      "threshold": null,
+      "transformation": "identity/direct field extraction"
+    }
+  },
+  "health_supervision_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "empirical_health_supervision_available": false,
+    "health_label_generation_authorized": false,
+    "real_health_label_count": 0
+  },
+  "implementation": {
+    "feature_contract_config": "configs/trust_robot/se3_multimodal_feature_contract_v1.json",
+    "feature_contract_config_sha256": "a71c85965b16c642adc81a190447d8935fed55c7c02a84505d0b298efeb3ef5b",
+    "feature_contract_content_sha256": "323ce690d0cd563d8af798f5ca8291bfc6eb9f0556e21a90d20d6310e4e27528",
+    "feature_contract_module": "src/trust_robot/se3_multimodal_feature_contract.py",
+    "feature_contract_module_sha256": "f43c93c761a4e8af94bb1d472ddd90dbf11c81ef4abf78a7401b29f535e98531",
+    "feature_contract_test": "tests/trust_robot/test_se3_multimodal_feature_contract.py",
+    "feature_contract_test_sha256": "7044ef30af0c406f7fd2c66c1faa8ff20e60c11150ac7681419a40bf5e6af699",
+    "feature_extraction_module": "src/trust_robot/se3_multimodal_feature_extraction.py",
+    "feature_extraction_module_sha256": "72a17462fb7476e11ad4eb7ac01c8e02b79c50c4e41a759c405cbd0b543e9091",
+    "feature_extraction_runner": "scripts/trust_robot/run_se3_multimodal_feature_extraction_v1.py",
+    "feature_extraction_runner_sha256": "dc26b1d8dadeee5b6729c7e8ba50483bbcd1255495d9bf74237f42f37c766b00",
+    "feature_extraction_test": "tests/trust_robot/test_se3_multimodal_feature_extraction.py",
+    "feature_extraction_test_sha256": "b291e3f00d4fb977b5973f6121dda1c1d022940682eb84dae3e3c7a218892fc6"
+  },
+  "missing_measurement_policy": {
+    "cross_modal_imputation": false,
+    "missing_D435i_IMU_train_trajectories": [
+      "street_010",
+      "street_09"
+    ],
+    "missing_HandsFree_IMU_train_trajectories": [],
+    "missing_camera_train_trajectories": [
+      "street_010",
+      "street_09"
+    ],
+    "missing_measurement_is_zero_feature_vector": false,
+    "preserve_observed_absence": true
+  },
+  "parent_frontier": {
+    "commit": "48c334f161783ffbbba76c39fae7e083526804a4",
+    "subject": "Checkpoint SE2 health supervision protocol",
+    "tree": "9fa29880729cadcfe1029a9535d2d465b11117c5"
+  },
+  "project_state_pre_freeze_sha256": "3e75e0745fe87967b29a055b6fcd25d6d244364de441488146ab5be85d5d5f74",
+  "schema": "TRUST_ROBOT_SE3_MULTIMODAL_FEATURE_PIPELINE_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_resolution": {
+    "IMU_covariance_used": false,
+    "IMU_orientation_used": false,
+    "SE3_exact_IMU_feature_contract_resolved": true,
+    "SE3_exact_camera_feature_contract_resolved": true,
+    "bag_record_time_used_as_physical_capture_time": false,
+    "camera_orientation_semantics_assumed": false,
+    "diagnostic_threshold_selected": false,
+    "feature_values_are_health_labels": false,
+    "feature_values_are_health_probabilities": false,
+    "full_frozen_TRAIN_feature_extraction_validated": true,
+    "header_timestamp_presence_used_as_shared_clock_proof": false,
+    "phase4_LiDAR_feature_contract_preserved": true,
+    "physical_capture_synchronization_inferred": false
+  },
+  "source_bindings": {
+    "SE2_health_supervision_freeze": {
+      "content_sha256": "4dba6de872f3f65bee2ccf526cbc126192c6ea0e06274017332c914a610f38ab",
+      "file_sha256": "63da52c788208ae715abc7e0b8eb0ba6777cc16d33d90466332779c630618230",
+      "path": "manifests/trust_robot_se2_health_supervision_protocol_freeze_v1.json"
+    },
+    "frozen_split_manifest": {
+      "file_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+      "path": "manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json"
+    },
+    "phase4_lidar_feature_freeze": {
+      "content_sha256": "95dee1917b5181ec4a24d556b0b7cf92c4b71e76f3156e20276a760c00d46d74",
+      "file_sha256": "09a05d8491c7af7cd8122ee58d9f485d21f03d2cd50f44764d57d48726d08e88",
+      "path": "manifests/trust_robot_phase4_validated_diagnostic_feature_extraction_freeze_v1.json"
+    },
+    "phase5_camera_imu_train_source_evidence": {
+      "content_sha256": "60f7e92316192a28ce20221497921a2583c5413d331a803601c06bcbe256f8df",
+      "file_sha256": "d4d2a73ddbcf73102cec0d0d4556fa65786a408217fefe1dece0f4d402cce675",
+      "path": "manifests/trust_robot_phase5_camera_imu_train_source_evidence_v1.json"
+    },
+    "software_evidence_completion_plan": {
+      "file_sha256": "5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb",
+      "path": "configs/trust_robot/software_evidence_completion_plan_v1.json"
+    }
+  },
+  "stage": {
+    "stage_id": "SE3",
+    "stage_name": "multimodal_feature_pipeline",
+    "status": "feature_contracts_resolved_and_empirically_validated_frozen_SE4_blocked",
+    "track": "software_evidence_completion"
+  },
+  "transition_policy": {
+    "SE3_complete": true,
+    "SE4_blocked_pending_admissible_train_supervision": true,
+    "SE4_model_training_authorized": false,
+    "SE4_requires_admissible_train_supervision": true,
+    "SE4_requires_real_health_labels": true,
+    "SE9_remains_closed": true,
+    "confirmation_remains_closed": true,
+    "next_stage": "SE4",
+    "next_stage_name": "health_model_training",
+    "validation_remains_closed": true
+  }
+}
