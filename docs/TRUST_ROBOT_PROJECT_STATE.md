@@ -4988,3 +4988,80 @@ SE4 blocked-frontier artifacts:
   SHA-256 `a96e43d9110b2bab6d865f52e43aeadddf0c74151ff8d9f8a0f64139c27e3bab`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_HEALTH_MODEL_TRAINING_BLOCKED_FRONTIER_FREEZE_V1.md`
   SHA-256 `23cae48ecda67e4073141baa2a4e74a047fd692e9cfca9bff25408d58bbca65d`
+
+## SE4 supervision acquisition mechanism freeze V1
+
+Status: **prospective software acquisition mechanism resolved; live execution remains unauthorized.**
+
+The software mechanism for future prospective LiDAR TRAIN supervision-evidence
+acquisition is now frozen.
+
+Selected future raw-evidence mechanisms are:
+
+- one-shot HTTP GET `/cgi/info.json` for manufacturer-grounded device identity;
+- one-shot HTTP GET `/cgi/status.json` for raw sensor status;
+- one-shot HTTP GET `/cgi/diag.json` for raw diagnostic evidence;
+- bounded classic-PCAP capture of measurement UDP packets;
+- bounded classic-PCAP capture of position/telemetry UDP packets.
+
+The physical-device primary identity remains manufacturer serial.
+
+No real sensor IPv4 address, capture interface, UDP ports, capture duration,
+output root, HTTP timeout values, shutdown grace, polling period, retry policy,
+capture order, timing tolerance, fixed offset, interpolation or physical
+interval-binding mechanism is selected.
+
+Those values require a future real TRAIN execution environment and are not
+inferred or fabricated from software evidence.
+
+No network I/O was executed.
+
+No subprocess was executed.
+
+No sensor was contacted.
+
+Raw capture artifacts remain 0.
+
+Device identity receipts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Raw status, diagnostics and packet capture are not automatically health truth.
+
+Host capture timestamps remain transport provenance only and do not establish
+physical measurement time.
+
+Live execution remains unauthorized.
+
+Source acceptance remains unauthorized.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen acquisition-mechanism artifacts:
+
+- `src/trust_robot/se4_supervision_acquisition_mechanism_resolution.py`
+  SHA-256 `4c63e450facef3353d0ae1b3cd16eefd66bc14c9e6ddc04ef9dcd4df68ec6869`
+- `configs/trust_robot/se4_supervision_acquisition_mechanism_resolution_v1.json`
+  SHA-256 `6150971b4a16e5ba2ad51c754174a7fd37df287763559f1fc4f60b481758e464`
+- `tests/trust_robot/test_se4_supervision_acquisition_mechanism_resolution.py`
+  SHA-256 `84a2dd880aa2e83a74acf903705cda2241eb17b3701fd88c241f1f376c8e33dd`
+- `manifests/trust_robot_se4_supervision_acquisition_mechanism_freeze_v1.json`
+  SHA-256 `18df2dd2a88d60939f31b844f584a21d090f3a15026369e511c2cb4d39dd20f4`
+- `tests/trust_robot/test_se4_supervision_acquisition_mechanism_freeze.py`
+  SHA-256 `e4eec16c925386e1a1d0b72be58ab869c64de2b397642c0986f977bbbcfc83d1`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_SUPERVISION_ACQUISITION_MECHANISM_FREEZE_V1.md`
+  SHA-256 `27f6c9ee0c5e90990f61c4ca610cbec836af6989ed5e340e79d8c8be0e9e9a97`

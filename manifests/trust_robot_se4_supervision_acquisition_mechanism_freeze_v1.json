@@ -1,0 +1,131 @@
+{
+  "closure_interpretation": {
+    "physical_evidence_fabricated": false,
+    "this_does_not_authorize_SE5": true,
+    "this_is_not_SE4_completion": true,
+    "this_is_not_live_execution": true,
+    "this_is_not_source_acceptance": true,
+    "this_is_software_mechanism_resolution": true
+  },
+  "content_sha256": "5e78f33ee30ed2be3af23401d3ac25059a8bb372ab71558ac0502f83742eb6e7",
+  "empirical_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "device_identity_receipt_count": 0,
+    "interval_binding_established": false,
+    "live_sensor_probe_executed": false,
+    "network_IO_executed": false,
+    "raw_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "subprocess_executed": false
+  },
+  "frozen_input_sha256": {
+    "SE4_blocked_frontier_freeze": "8ced2b97595a541fb152b5fd012d83c6c8d8b99a770a0cd1e1a6e7c55d6f248d",
+    "live_acquisition_plan_module": "196a88bde3f96c98985121c13444190984c1622dceb648817ead8ef3320956a6",
+    "live_executor_safety_module": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+    "phase5_acquisition_session_provenance": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b",
+    "phase5_baseline_nominality_raw_capture": "9d71073e3620e1b3447a9bc11952c1a3a909ec7b14fa14cfda075f8d3fdbc5a7",
+    "phase5_live_acquisition_plan": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+    "phase5_live_executor_safety": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a"
+  },
+  "implementation": {
+    "config": "configs/trust_robot/se4_supervision_acquisition_mechanism_resolution_v1.json",
+    "config_content_sha256": "01b5d5a593c1927e861fb69d6ec61ec223d335b14d99f986cfeef89f58bdc7b9",
+    "config_sha256": "6150971b4a16e5ba2ad51c754174a7fd37df287763559f1fc4f60b481758e464",
+    "module": "src/trust_robot/se4_supervision_acquisition_mechanism_resolution.py",
+    "module_sha256": "4c63e450facef3353d0ae1b3cd16eefd66bc14c9e6ddc04ef9dcd4df68ec6869",
+    "test": "tests/trust_robot/test_se4_supervision_acquisition_mechanism_resolution.py",
+    "test_sha256": "84a2dd880aa2e83a74acf903705cda2241eb17b3701fd88c241f1f376c8e33dd"
+  },
+  "parent_frontier": {
+    "commit": "9ff7782f08212c4e5192d6189a8ecabc9d9490e5",
+    "tree": "4d8ce9fddb17ed35fcd84c0de1479ae33537807a"
+  },
+  "project_state_pre_freeze_sha256": "578099c8183067034a3016788c829c05de6afeacfbc57b2580b6838e6c9a11cb",
+  "provenance_and_safety_requirements": {
+    "TRAIN_split_required": true,
+    "acquisition_session_identity_required": true,
+    "atomic_publication_required": true,
+    "capture_metadata_sha256_required": true,
+    "device_primary_identity_field": "serial",
+    "fresh_session_directory_required": true,
+    "host_capture_times_transport_provenance_only": true,
+    "pcap_finalization_receipts_required": true,
+    "pcap_structural_validation_required": true,
+    "pre_and_post_publish_sha256_must_match": true,
+    "prospective_no_intervention_declaration_required": true,
+    "raw_artifact_sha256_required": true
+  },
+  "raw_output_contract": {
+    "diagnostic_body": "diagnostic.json",
+    "diagnostic_headers": "diagnostic.headers",
+    "identity_body": "info.json",
+    "identity_headers": "info.headers",
+    "measurement_packets": "measurement_packets.pcap",
+    "position_packets": "position_packets.pcap",
+    "status_body": "status.json",
+    "status_headers": "status.headers"
+  },
+  "runtime_values_intentionally_unselected": {
+    "absolute_output_root": null,
+    "capture_duration_seconds": null,
+    "capture_interface": null,
+    "capture_order": null,
+    "capture_shutdown_grace_seconds": null,
+    "data_udp_port": null,
+    "fixed_time_offset": null,
+    "http_connect_timeout_seconds": null,
+    "http_total_timeout_seconds": null,
+    "interpolation": null,
+    "physical_interval_binding_mechanism": null,
+    "retry_policy": null,
+    "sensor_ipv4": null,
+    "status_polling_period_seconds": null,
+    "telemetry_udp_port": null,
+    "timing_tolerance": null
+  },
+  "schema": "TRUST_ROBOT_SE4_SUPERVISION_ACQUISITION_MECHANISM_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "HTTP_diagnostic_is_health_label": false,
+    "HTTP_status_is_health_label": false,
+    "confirmation_access": false,
+    "final_localization_scoring_performed": false,
+    "host_capture_time_is_physical_measurement_time": false,
+    "raw_packet_capture_is_baseline_nominality": false,
+    "raw_packet_capture_is_health_supervision": false,
+    "reference_data_used": false,
+    "validation_access": false
+  },
+  "selected_acquisition_mechanisms": {
+    "UDP_capture_tool": "tcpdump",
+    "bounded_process_tool": "timeout",
+    "device_identity_HTTP_GET": "/cgi/info.json",
+    "measurement_UDP_preservation": "classic_pcap",
+    "position_UDP_preservation": "classic_pcap",
+    "sensor_diagnostic_HTTP_GET": "/cgi/diag.json",
+    "sensor_status_HTTP_GET": "/cgi/status.json"
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "status": "software_mechanism_resolved_live_execution_still_blocked",
+    "sub_frontier": "prospective_supervision_acquisition_mechanism"
+  },
+  "transition_policy": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "SE9_remains_closed": true,
+    "acquisition_mechanism_resolved": true,
+    "confirmation_remains_closed": true,
+    "health_label_generation_authorized": false,
+    "live_execution_authorized": false,
+    "next_required_event": "Resolve explicit real TRAIN runtime environment values and a separately authorized live acquisition execution path. Any resulting raw evidence must still pass independent interval-binding, baseline-nominality and supervision-source acceptance requirements before health labels can exist.",
+    "prospective_acquisition_mechanism_selected": true,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "content_sha256": "01b5d5a593c1927e861fb69d6ec61ec223d335b14d99f986cfeef89f58bdc7b9",
+  "executor_safety_binding": {
+    "absolute_output_root_required": true,
+    "directory_fsync_after_publish_required": true,
+    "existing_final_artifact_overwrite_allowed": false,
+    "file_fsync_before_publish_required": true,
+    "fresh_session_directory_required": true,
+    "kill_after_grace_receipt_required": true,
+    "pcap_structural_validation_required": true,
+    "pre_and_post_publish_sha256_must_match": true,
+    "process_terminal_state_receipt_required": true,
+    "same_directory_partial_file_required": true,
+    "sha256_after_publish_required": true,
+    "sha256_before_publish_required": true,
+    "sigint_request_receipt_required": true
+  },
+  "explicitly_unselected_runtime_values": {
+    "absolute_output_root": null,
+    "capture_duration_seconds": null,
+    "capture_interface": null,
+    "capture_order": null,
+    "capture_shutdown_grace_seconds": null,
+    "data_udp_port": null,
+    "fixed_time_offset": null,
+    "http_connect_timeout_seconds": null,
+    "http_total_timeout_seconds": null,
+    "interpolation": null,
+    "physical_interval_binding_mechanism": null,
+    "retry_policy": null,
+    "sensor_ipv4": null,
+    "status_polling_period_seconds": null,
+    "telemetry_udp_port": null,
+    "timing_tolerance": null
+  },
+  "frozen_input_sha256": {
+    "SE4_blocked_frontier_freeze": "8ced2b97595a541fb152b5fd012d83c6c8d8b99a770a0cd1e1a6e7c55d6f248d",
+    "live_acquisition_plan_module": "196a88bde3f96c98985121c13444190984c1622dceb648817ead8ef3320956a6",
+    "live_executor_safety_module": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+    "phase5_acquisition_session_provenance": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b",
+    "phase5_baseline_nominality_raw_capture": "9d71073e3620e1b3447a9bc11952c1a3a909ec7b14fa14cfda075f8d3fdbc5a7",
+    "phase5_live_acquisition_plan": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+    "phase5_live_executor_safety": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a"
+  },
+  "hardware_scope": {
+    "modality": "lidar",
+    "model": "VLP-32C",
+    "vendor": "Velodyne"
+  },
+  "provenance_requirements": {
+    "acquisition_session_identity_required": true,
+    "capture_metadata_sha256_required": true,
+    "device_serial_identity_required": true,
+    "host_capture_end_ns_required": true,
+    "host_capture_start_ns_required": true,
+    "host_times_transport_provenance_only": true,
+    "prospective_no_intervention_declaration_required": true,
+    "raw_artifact_sha256_required": true,
+    "raw_info_response_required": true,
+    "raw_info_response_sha256_required": true,
+    "split_role_required": true
+  },
+  "raw_output_contract": {
+    "diagnostic_body": "diagnostic.json",
+    "diagnostic_headers": "diagnostic.headers",
+    "identity_body": "info.json",
+    "identity_headers": "info.headers",
+    "measurement_packets": "measurement_packets.pcap",
+    "position_packets": "position_packets.pcap",
+    "status_body": "status.json",
+    "status_headers": "status.headers"
+  },
+  "required_future_runtime_parameters": {
+    "absolute_output_root": "required_no_default",
+    "acquisition_session_id": "required_no_default",
+    "capture_duration_seconds": "required_no_default",
+    "capture_interface": "required_no_default",
+    "capture_shutdown_grace_seconds": "required_no_default",
+    "data_udp_port": "required_no_default",
+    "http_connect_timeout_seconds": "required_no_default",
+    "http_total_timeout_seconds": "required_no_default",
+    "sensor_ipv4": "required_no_default",
+    "split": "required_must_be_TRAIN",
+    "telemetry_udp_port": "required_no_default"
+  },
+  "resolution_id": "trust_robot_se4_supervision_acquisition_mechanism_resolution_v1",
+  "schema": "TRUST_ROBOT_SE4_SUPERVISION_ACQUISITION_MECHANISM_RESOLUTION_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "baseline_nominality_source_accepted": false,
+    "classifier_training_authorized": false,
+    "confirmation_access": false,
+    "device_identity_receipt_count": 0,
+    "health_label_generation_authorized": false,
+    "health_supervision_source_accepted": false,
+    "interval_binding_established": false,
+    "live_sensor_probe_executed": false,
+    "network_IO_executed": false,
+    "physical_measurement_time_selected": false,
+    "raw_capture_artifact_count": 0,
+    "real_health_label_count": 0,
+    "reference_data_used": false,
+    "subprocess_executed": false,
+    "validation_access": false
+  },
+  "selected_acquisition_mechanisms": {
+    "device_identity": {
+      "execution_shape": "one_shot",
+      "method": "GET",
+      "primary_identity_field": "serial",
+      "raw_body_preserved": true,
+      "raw_headers_preserved": true,
+      "request_path": "/cgi/info.json",
+      "selected": true,
+      "transport": "HTTP"
+    },
+    "measurement_packets": {
+      "at_least_one_packet_required_for_publication": true,
+      "bounded_process_tool": "timeout",
+      "capture_interface_selected": false,
+      "capture_tool": "tcpdump",
+      "duration_bounded": true,
+      "port_value_selected": false,
+      "preservation": "classic_pcap",
+      "selected": true,
+      "transport": "UDP"
+    },
+    "position_packets": {
+      "at_least_one_packet_required_for_publication": true,
+      "bounded_process_tool": "timeout",
+      "capture_interface_selected": false,
+      "capture_tool": "tcpdump",
+      "duration_bounded": true,
+      "port_value_selected": false,
+      "preservation": "classic_pcap",
+      "selected": true,
+      "transport": "UDP"
+    },
+    "sensor_diagnostic": {
+      "establishes_health_label": false,
+      "execution_shape": "one_shot",
+      "method": "GET",
+      "raw_body_preserved": true,
+      "raw_headers_preserved": true,
+      "request_path": "/cgi/diag.json",
+      "selected": true,
+      "transport": "HTTP"
+    },
+    "sensor_status": {
+      "establishes_health_label": false,
+      "execution_shape": "one_shot",
+      "method": "GET",
+      "raw_body_preserved": true,
+      "raw_headers_preserved": true,
+      "request_path": "/cgi/status.json",
+      "selected": true,
+      "transport": "HTTP"
+    }
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "purpose": "Resolve deterministic prospective raw-evidence acquisition mechanisms needed before admissible TRAIN health supervision can exist.",
+    "stage_id": "SE4"
+  },
+  "transition_policy": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "acquisition_mechanism_resolved": true,
+    "confirmation_remains_closed": true,
+    "live_execution_authorized": false,
+    "next_required_evidence": "Explicit real TRAIN acquisition runtime values and authorized execution producing raw provenance-preserved evidence; raw capture alone still does not establish baseline nominality or health supervision.",
+    "next_unresolved_runtime_inputs_include_physical_environment_values": true,
+    "validation_remains_closed": true
+  }
+}
