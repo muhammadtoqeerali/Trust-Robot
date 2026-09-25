@@ -5536,3 +5536,108 @@ Frozen composite-orchestrator artifacts:
   SHA-256 `820a16e1e633b01f532b83c36e8d236d016edeb810a69cfc85cb779f2311fde2`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_COMPOSITE_LIVE_SESSION_ORCHESTRATOR_FREEZE_V1.md`
   SHA-256 `3fab86846cafac1ad54f84045ec84a5cc83c3d71e8fde7ac14184ec4ae65a6cd`
+
+## SE4 file-driven real TRAIN execution runner freeze V1
+
+Status: **file-driven runner software resolved; real runtime inputs and grounded authorization remain external blockers.**
+
+The file-driven real TRAIN execution runner software is resolved.
+
+It consumes exactly three externally supplied files:
+
+- V2 runtime-binding JSON;
+- execution-authorization JSON;
+- authorization-record file.
+
+The runner does not manufacture physical runtime values.
+
+The runner does not manufacture execution authorization.
+
+Validation-only is the default mode.
+
+Validation-only performs no network I/O.
+
+Validation-only does not contact the sensor.
+
+The authorization-record file SHA-256 must match the digest in the execution
+authorization.
+
+That SHA-256 match proves file integrity only.
+
+It does not establish that the record came from a trustworthy authority.
+
+Real dispatch additionally requires an explicit real-execution switch and the
+exact frozen network-I/O acknowledgement.
+
+Those CLI gates do not replace the separate externally grounded execution
+authorization.
+
+Real V2 runtime values remain unresolved.
+
+The grounded authorization-record source remains unresolved.
+
+Real runtime bindings remain 0.
+
+Real runtime values bound remain false.
+
+Real execution authorizations remain 0.
+
+Grounded authorization records remain 0.
+
+Real-sensor execution remains unauthorized.
+
+Real sensor network I/O remains false.
+
+Real sensor contact remains false.
+
+Real session executions remain 0.
+
+Raw real-sensor capture artifacts remain 0.
+
+Real composite session receipts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Interval binding remains unestablished.
+
+Physical measurement time remains unestablished.
+
+Host-discovered network values are not automatically selected runtime values.
+
+Successful file validation is not source acceptance.
+
+Even future successful real execution would not automatically establish health
+supervision.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen file-driven runner artifacts:
+
+- `src/trust_robot/se4_real_train_execution_runner.py`
+  SHA-256 `614dbd271f320aa8a3de9eaf2b891bf6a53bb578cad4c50b7119912d65a287eb`
+- `scripts/trust_robot/run_se4_real_train_live_session_v1.py`
+  SHA-256 `3c4bfb8984579a06c084a657c60342c94d9292c52ccda57a911492476712e833`
+- `configs/trust_robot/se4_real_train_execution_runner_resolution_v1.json`
+  SHA-256 `2e0f2589975410c5ddb41809397b4b6c371dc1abf6e5745ba5b6b83ac2173341`
+- `tests/trust_robot/test_se4_real_train_execution_runner.py`
+  SHA-256 `3ec0cd8fe5a3fd2b18f48173a7e65744c1cf35adfa6bba48a10351269b26b2f8`
+- `manifests/trust_robot_se4_real_train_execution_runner_freeze_v1.json`
+  SHA-256 `f4b3e59947f49ecc1c4581e4514dfed123605c34df1b377bb92a7fbbc5fb04d3`
+- `tests/trust_robot/test_se4_real_train_execution_runner_freeze.py`
+  SHA-256 `4d4f397e6d9d3798b5ab7a574fdbc3f24576bdf78de7c49f680b1bc216aa771e`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_REAL_TRAIN_EXECUTION_RUNNER_FREEZE_V1.md`
+  SHA-256 `ee63d73d22dadcbf3f60c0f29d1acaf514b8492a32d52e8f7e088fb7a88e94e2`

@@ -1,0 +1,94 @@
+{
+  "content_sha256": "4b728df7792bed95826689f9ed50d62e141b682618e5df2f5c1093540b1492ae",
+  "current_real_state": {
+    "grounded_authorization_record_count": 0,
+    "raw_real_sensor_capture_artifact_count": 0,
+    "real_execution_authorization_count": 0,
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "real_session_execution_count": 0
+  },
+  "execution_gates": {
+    "default_mode": "validation_only",
+    "exact_network_IO_acknowledgement_required": true,
+    "explicit_execute_real_switch_required": true,
+    "network_IO_acknowledgement": "I_AUTHORIZE_THIS_BOUND_REAL_SENSOR_NETWORK_IO",
+    "validated_external_execution_authorization_still_required": true,
+    "validation_only_contacts_sensor": false,
+    "validation_only_performs_network_IO": false
+  },
+  "frozen_input_sha256": {
+    "composite_orchestrator_config": "1564aaa7c261d37219ede56d42daa428a754c089a420d988b2cfb5c818eb41ff",
+    "composite_orchestrator_freeze": "7ee319bc88c33541923df1d73971a8703af29d177f98a05160a99655a9b51e04",
+    "composite_orchestrator_module": "ca23e6a2cca37c3af5ebeeae39bfdf6cc4ba4b9669b4a25135e6e15810081b2d",
+    "runtime_binding_v2_freeze": "81f1d22674a4ca1ef4a8b5c9c4d16e446423eb3e6a76981fa7d6f99b08477388",
+    "runtime_binding_v2_module": "f00fb0571a9fb4ac1a078a6789941741b68bbf066a7a6f01028f2450bc820212"
+  },
+  "input_contract": {
+    "authorization_record_digest_alone_proves_authority_or_trust": false,
+    "authorization_record_file_SHA256_must_match_authorization": true,
+    "execution_authorization_must_bind_exact_runtime_binding": true,
+    "execution_authorization_must_validate": true,
+    "input_files_must_be_absolute_regular_non_symlink_files": true,
+    "input_files_must_be_distinct": true,
+    "required_external_files": [
+      "runtime_binding_file",
+      "execution_authorization_file",
+      "authorization_record_file"
+    ],
+    "runner_manufactures_execution_authorization": false,
+    "runner_manufactures_runtime_values": false,
+    "runtime_binding_must_validate_as_V2": true
+  },
+  "resolution_id": "trust_robot_se4_real_train_execution_runner_resolution_v1",
+  "schema": "TRUST_ROBOT_SE4_REAL_TRAIN_EXECUTION_RUNNER_RESOLUTION_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "authorization_record_hash_match_is_proof_of_authority": false,
+    "confirmation_access": false,
+    "host_discovery_is_runtime_binding": false,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "real_health_label_count": 0,
+    "reference_data_used": false,
+    "runner_software_is_execution_authorization": false,
+    "successful_execution_is_automatic_source_acceptance": false,
+    "validation_access": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "status": "software_implemented_validation_only_verified_real_inputs_absent",
+    "sub_frontier": "file_driven_real_TRAIN_live_execution_runner"
+  },
+  "transition_policy": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "confirmation_remains_closed": true,
+    "file_driven_real_execution_runner_software_resolved": true,
+    "grounded_execution_authorization_resolved": false,
+    "health_label_generation_authorized": false,
+    "next_required_event": "Obtain externally grounded real TRAIN V2 runtime values and a trustworthy authorization record; construct their separate hash-bound JSON artifacts before any real run.",
+    "real_execution_authorization_count": 0,
+    "real_input_source_resolved": false,
+    "real_runtime_binding_count": 0,
+    "real_sensor_execution_authorized": false,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  },
+  "verification_state": {
+    "file_input_validation_software_verified": true,
+    "injected_execution_dispatch_is_real_sensor_execution": false,
+    "injected_execution_dispatch_verified": true,
+    "real_file_input_set_count": 0,
+    "real_sensor_contact_executed": false,
+    "real_sensor_execution_verified": false,
+    "real_sensor_network_IO_executed": false
+  }
+}
