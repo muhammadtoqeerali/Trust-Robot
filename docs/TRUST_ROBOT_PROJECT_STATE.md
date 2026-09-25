@@ -4657,3 +4657,87 @@ After promotion, SE1 may implement deterministic multimodal dataset replay
 against TRAIN only. It may not perform scientific model/feature/threshold
 selection or access VALIDATION_CALIBRATION or CONFIRMATION_TEST.
 
+
+## SE1 deterministic multimodal dataset replay freeze V1
+
+Status: **SE1 deterministic TRAIN-only virtual-sensor replay complete and frozen locally for checkpoint promotion.**
+
+The exact frozen 22-trajectory M2DGR TRAIN partition was replayed using
+`rosbags.highlevel.AnyReader` without opening validation or confirmation.
+
+The completed empirical run contains:
+
+- 22 TRAIN trajectories;
+- 2,907,971 selected replay messages;
+- 103,450,808,700 serialized replay payload bytes;
+- 20 four-stream trajectories;
+- 2 reduced-stream trajectories: `street_010` and `street_09`.
+
+The two reduced trajectories contain only HandsFree IMU and Velodyne among the
+SE1-supported replay streams. Camera and D435i IMU remain absent and are not
+fabricated.
+
+The replay preserves reader emission order, per-stream message order, raw
+serialized payload identity, source topic/modality identity, bag provenance,
+bag record time as transport provenance, and directly represented header
+timestamps when structurally present.
+
+Bag record time is not physical capture-time proof.
+
+Header timestamp presence is not shared-clock or synchronization proof.
+
+No timestamp sorting, synchronization fitting, fixed offset, interpolation,
+reference association, health labelling, feature selection, model training,
+probability calibration, threshold selection, ATE/RPE, or final scoring was
+performed.
+
+Availability is not a health label.
+
+Missing measurement is not a zero feature vector.
+
+Clean data is not automatically healthy.
+
+Synthetic corruption identity is not automatically a health label.
+
+Final localization error may not define health supervision.
+
+Empirical replay bindings:
+
+- candidate contract file SHA-256:
+  `866059a3f15a05b21f76acc9fafffa531aa460f55c4e4447a04ff2ad4b2ca53d`
+- run manifest file SHA-256:
+  `3fcb3ce8a6698545be7b18774d3cf666bb3a8174e08321ca3a868ecd9f351d0f`
+- run manifest content SHA-256:
+  `1eeb1704a16631e9a47f4263a659ffcbdd6c8e3e6496f1d1f7924fb6559f7e37`
+- SUCCESS file SHA-256:
+  `4ec6ec05aa51188d1aa2938815f3da2c4e817b2f046bcd1187010b9c2a6d9d07`
+- aggregate trajectory-record SHA-256:
+  `28812bc95af309184aaa3530d4fbfa5ebcc83713589f81b143047cf1e544be3d`
+
+Repository implementation:
+
+- `src/trust_robot/deterministic_multimodal_dataset_replay.py`
+- `src/trust_robot/deterministic_multimodal_dataset_replay_run.py`
+- `scripts/trust_robot/run_se1_deterministic_multimodal_dataset_replay_v1.py`
+- `tests/trust_robot/test_deterministic_multimodal_dataset_replay.py`
+- `tests/trust_robot/test_deterministic_multimodal_dataset_replay_run.py`
+
+Freeze artifacts:
+
+- `manifests/trust_robot_se1_deterministic_multimodal_dataset_replay_freeze_v1.json`
+  SHA-256 `46224af94a07787883b9bd76e0df88cb43f60e834484add04b64933afdbafb02`
+- `tests/trust_robot/test_se1_deterministic_multimodal_dataset_replay_freeze.py`
+  SHA-256 `5c8968e1999583eac802e7e19ed6553f7ce1f1e668936c6c6d12e885fb875499`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE1_DETERMINISTIC_MULTIMODAL_DATASET_REPLAY_FREEZE_V1.md`
+  SHA-256 `ac525bd4ee6471ffc29efeb48e98ab476df2ce198329eb9882795c9da34799dd`
+
+Pre-freeze regression:
+
+**1506 / 1506 PASS.**
+
+SE2 `health_supervision_protocol` is the next software-evidence stage.
+
+SE2 may use TRAIN only at this frontier. Validation and confirmation remain
+closed. Model training remains deferred to the later authorized stage.
+
+SE9 confirmation remains closed and cannot reopen selection after results.

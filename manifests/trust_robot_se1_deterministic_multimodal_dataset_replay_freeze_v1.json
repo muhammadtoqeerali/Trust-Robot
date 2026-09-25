@@ -1,0 +1,168 @@
+{
+  "SE2_entry_gate": {
+    "SE2_may_proceed": true,
+    "ate_rpe_authorized": false,
+    "confirmation_access_authorized": false,
+    "final_scoring_authorized": false,
+    "model_training_authorized": false,
+    "parameter_selection_authorized": false,
+    "probability_calibration_authorized": false,
+    "scope": "health_supervision_protocol",
+    "train_access_authorized": true,
+    "validation_access_authorized": false
+  },
+  "SE9_opening_gate": {
+    "confirmation_execution_authorized": false,
+    "confirmation_may_reopen_selection_after_results": false,
+    "requires_all_confirmation_visible_choices_frozen": true,
+    "status": "closed"
+  },
+  "checkpoint_semantics": {
+    "ate_rpe_computed": false,
+    "confirmation_opened": false,
+    "empirical_artifact_verification_passed": true,
+    "final_score_computed": false,
+    "full_regression_pre_freeze_passed": true,
+    "full_regression_pre_freeze_test_count": 1506,
+    "model_training_executed": false,
+    "stage": "SE1",
+    "stage_name": "deterministic_multimodal_dataset_replay",
+    "status": "deterministic_train_replay_complete_ready_for_SE2",
+    "track": "software_evidence_completion",
+    "train_replay_executed": true,
+    "train_replay_implemented": true,
+    "validation_selection_executed": false
+  },
+  "content_sha256": "893809090b03d4bd02e18fbdfe3d91f972330650967cb9ff8a5bd95fddc2c65e",
+  "empirical_run": {
+    "aggregate_trajectory_record_sha256": "28812bc95af309184aaa3530d4fbfa5ebcc83713589f81b143047cf1e544be3d",
+    "atomic_final_output_present": true,
+    "candidate_contract_content_sha256": "3766fe64942f0d0c41890a46bb2b3fffeb9a3a7ddb78329be127530f3c259c14",
+    "candidate_contract_file_sha256": "866059a3f15a05b21f76acc9fafffa531aa460f55c4e4447a04ff2ad4b2ca53d",
+    "dataset_audit_relative_path": "audit/se1_deterministic_multimodal_dataset_replay_v1",
+    "dataset_id": "M2DGR",
+    "execution_log_sha256": "50e46094eed00c3136f9f59aabf9e4062fe628228944847eb7b5d9ff1a89e6b5",
+    "partial_output_absent_after_success": true,
+    "run_id": "trust_robot_se1_m2dgr_deterministic_multimodal_dataset_replay_v1",
+    "run_manifest_content_sha256": "1eeb1704a16631e9a47f4263a659ffcbdd6c8e3e6496f1d1f7924fb6559f7e37",
+    "run_manifest_file_sha256": "3fcb3ce8a6698545be7b18774d3cf666bb3a8174e08321ca3a868ecd9f351d0f",
+    "split_role": "train",
+    "success_file_sha256": "4ec6ec05aa51188d1aa2938815f3da2c4e817b2f046bcd1187010b9c2a6d9d07",
+    "success_marker_present": true,
+    "total_selected_replay_messages": 2907971,
+    "total_selected_serialized_payload_bytes": 103450808700,
+    "trajectory_count": 22,
+    "trajectory_order": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "hall_05",
+      "lift_02",
+      "lift_04",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "room_dark_04",
+      "street_01",
+      "street_010",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "street_09",
+      "walk_01"
+    ]
+  },
+  "execution_status": {
+    "ate_rpe_computed": false,
+    "confirmation_partition_opened": false,
+    "feature_extraction_executed": false,
+    "feature_selection_executed": false,
+    "final_score_computed": false,
+    "health_label_assignment_executed": false,
+    "health_probability_inference_executed": false,
+    "health_supervision_executed": false,
+    "model_training_executed": false,
+    "probability_calibration_executed": false,
+    "reference_data_read": false,
+    "threshold_selection_executed": false,
+    "train_partition_opened": true,
+    "validation_partition_opened": false
+  },
+  "health_supervision_boundary": {
+    "SE2_required_before_health_model_training": true,
+    "availability_is_health_label": false,
+    "clean_data_automatically_means_healthy": false,
+    "final_localization_error_may_define_health_label": false,
+    "synthetic_corruption_identity_automatically_means_health_label": false
+  },
+  "implementation_artifacts": {
+    "replay_module_sha256": "0f73282a65367a22b49b38c5de0012172873f59d4744ac781edda218e3a25d28",
+    "replay_run_module_sha256": "599bbbf9626279d3841c5459ebca3d31a6c342bf72adfea236ff65e05b889ac5",
+    "replay_run_tests_sha256": "086711637f75465ed33e9c34df7bd5f7f41583c1f4b831a53cc9949d18247589",
+    "replay_tests_sha256": "b656d181e09ea0e457b5223584f75ed21711bb6c558214825f854c7bae263584",
+    "runner_sha256": "2ea62d94f7cc44024b7d5c6c7d8c8e5c045367746ef59a7cbbc26e766a7e776a"
+  },
+  "next_stage_policy": {
+    "SE2_may_compute_ATE_RPE": false,
+    "SE2_may_compute_final_score": false,
+    "SE2_may_proceed_after_SE1_checkpoint": true,
+    "SE2_may_read_confirmation_partition": false,
+    "SE2_may_read_train_partition": true,
+    "SE2_may_read_validation_partition": false,
+    "SE2_may_train_health_model": false,
+    "next_stage": "SE2",
+    "next_stage_name": "health_supervision_protocol"
+  },
+  "parent_frontier": {
+    "commit": "4a0dbddfcc0bc610a79e91a60ae587cc6ad19976",
+    "tree": "50fafbfcf82e3b4d89d6e32608f955b82d1e9d7a"
+  },
+  "project_state_pre_freeze_sha256": "87f57c9aa2e26cce9ec0ad1b688999668a81c3cdc1b96039ff1f60f724788c4c",
+  "replay_semantics": {
+    "bag_record_time_preserved_as_transport_provenance": true,
+    "bag_record_time_proves_physical_capture_time": false,
+    "cross_stream_synchronization_performed": false,
+    "direct_header_stamp_preserved_when_structurally_present": true,
+    "fixed_time_offset_selected": false,
+    "header_stamp_proves_shared_physical_clock": false,
+    "interpolation_performed": false,
+    "modality_identity_preserved": true,
+    "partition_role_preserved": true,
+    "reader_emission_order_preserved": true,
+    "reference_association_performed": false,
+    "timestamp_sort_performed": false,
+    "topic_identity_preserved": true,
+    "trajectory_identity_preserved": true
+  },
+  "schema": "TRUST_ROBOT_SE1_DETERMINISTIC_MULTIMODAL_DATASET_REPLAY_FREEZE_V1",
+  "source_bindings": {
+    "se0_freeze_manifest_sha256": "62838e41f0ffb47c02c517ac302a127b4cc2aba13ef86b7979c4d1e92bc20b33",
+    "software_evidence_governance_module_sha256": "35c2a01e72bbd4ca74e99bbe4a2652a3c63af70e6b2092a56220de68520dd458",
+    "software_evidence_plan_config_sha256": "5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb",
+    "split_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "stream_availability_contract": {
+    "availability_is_health_label": false,
+    "fabricated_missing_streams": false,
+    "full_four_stream_trajectory_count": 20,
+    "missing_measurement_is_zero_feature_vector": false,
+    "reduced_streams_absent": [
+      "/camera/color/image_raw/compressed",
+      "/camera/imu"
+    ],
+    "reduced_streams_present": [
+      "/handsfree/imu",
+      "/velodyne_points"
+    ],
+    "reduced_two_stream_trajectories": [
+      "street_010",
+      "street_09"
+    ],
+    "reduced_two_stream_trajectory_count": 2
+  }
+}
