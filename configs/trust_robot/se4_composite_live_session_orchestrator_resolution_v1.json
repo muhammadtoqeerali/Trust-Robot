@@ -1,0 +1,118 @@
+{
+  "authorization_contract": {
+    "authorization_artifact_format_selected": true,
+    "authorization_hash_bound_to_V2_binding": true,
+    "authorization_is_health_label": false,
+    "authorization_is_source_acceptance": false,
+    "external_authorization_record_digest_required": true,
+    "real_sensor_execution_authorized": false,
+    "repository_real_authorization_artifact_count": 0,
+    "schema": "TRUST_ROBOT_SE4_LIVE_SESSION_EXECUTION_AUTHORIZATION_V1"
+  },
+  "composition_contract": {
+    "HTTP_UDP_concurrency_required": false,
+    "HTTP_executor_requires_returned_existing_session_directory": true,
+    "HTTP_order": [
+      "identity",
+      "status",
+      "diagnostic"
+    ],
+    "UDP_receiver_owns_session_directory_creation": true,
+    "authorization_must_precede_UDP_invocation": true,
+    "component_dependency_injection_supported_for_software_tests": true,
+    "selected_execution_order": [
+      "validate_V2_binding",
+      "validate_execution_authorization",
+      "filesystem_preflight",
+      "invoke_UDP_receiver",
+      "validate_returned_session_directory",
+      "execute_identity_HTTP",
+      "execute_status_HTTP",
+      "execute_diagnostic_HTTP",
+      "publish_composite_session_receipt"
+    ],
+    "separate_hash_bound_execution_authorization_required": true,
+    "software_test_injection_is_real_sensor_execution": false,
+    "validated_V2_binding_required": true
+  },
+  "content_sha256": "d7bfe642e6ffc05cbac55984c0450b33ee5cda45daa88bd897342013c73b3e99",
+  "current_real_state": {
+    "real_execution_authorization_count": 0,
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "real_session_execution_count": 0
+  },
+  "filesystem_contract": {
+    "HTTP_orchestrator_precreates_session_directory": false,
+    "absolute_output_root_must_exist_before_UDP_invocation": true,
+    "composite_receipt": "composite_session_receipt.json",
+    "existing_final_overwrite_allowed": false,
+    "expected_session_directory_must_not_exist_before_UDP_invocation": true,
+    "failure_receipt": "composite_session_failure.json",
+    "receipt_publication_uses_same_directory_atomic_helper": true,
+    "returned_session_directory_must_equal_binding_derived_path": true
+  },
+  "frozen_input_sha256": {
+    "HTTP_executor_config": "51f98b3424d1db7bd2706f49e399954b007dfd8c2897d495462c7c7edd921aac",
+    "HTTP_executor_freeze": "29639601503a8d7c0b9db879939a8960b2f0a69ca10e378fc07f0b031aeadc10",
+    "HTTP_executor_module": "98d82acca2308aea76537de4a9cc4fa0eb94e8fd9bc4aa9bde048382f5b69dd9",
+    "UDP_receiver_config": "96cd1be3cf9ec3a55721cb496cac32a61279682bdf2d11d16b479568435c3b90",
+    "UDP_receiver_module": "05e40722e15434b92d0f8aad93e4a6a9aef71a38dcd8d97e8bddc4f5ec3a385d",
+    "live_executor_safety_module": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+    "runtime_binding_v2_config": "740705b97fa088f31efe3e603e9c25d3c005d9cae1b757479377cc7aabe517fb",
+    "runtime_binding_v2_freeze": "81f1d22674a4ca1ef4a8b5c9c4d16e446423eb3e6a76981fa7d6f99b08477388",
+    "runtime_binding_v2_module": "f00fb0571a9fb4ac1a078a6789941741b68bbf066a7a6f01028f2450bc820212"
+  },
+  "resolution_id": "trust_robot_se4_composite_live_session_orchestrator_resolution_v1",
+  "schema": "TRUST_ROBOT_SE4_COMPOSITE_LIVE_SESSION_ORCHESTRATOR_RESOLUTION_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "HTTP_evidence_is_automatically_health_supervision": false,
+    "UDP_capture_is_automatically_baseline_nominality": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "component_injection_test_is_physical_sensor_evidence": false,
+    "confirmation_access": false,
+    "host_times_are_physical_measurement_time": false,
+    "interval_binding_established": false,
+    "orchestration_software_is_execution_authorization": false,
+    "physical_measurement_time_established": false,
+    "real_health_label_count": 0,
+    "reference_data_used": false,
+    "session_order_establishes_interval_binding": false,
+    "validation_access": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "status": "software_implemented_injected_execution_verified_real_execution_blocked",
+    "sub_frontier": "composite_binding_HTTP_UDP_live_session_orchestration"
+  },
+  "transition_policy": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "component_injection_orchestration_verified": true,
+    "composite_live_session_orchestrator_software_implemented": true,
+    "confirmation_remains_closed": true,
+    "health_label_generation_authorized": false,
+    "next_required_event": "Freeze and promote this orchestrator software. After that, obtain one trustworthy operator-supplied real TRAIN V2 runtime binding plus a separately grounded execution authorization before any real sensor network I/O.",
+    "real_execution_authorization_count": 0,
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  },
+  "verification_state": {
+    "component_injection_orchestration_verified": true,
+    "raw_real_sensor_capture_artifact_count": 0,
+    "real_composite_session_receipt_count": 0,
+    "real_sensor_contact_executed": false,
+    "real_sensor_execution_verified": false,
+    "real_sensor_network_IO_executed": false
+  }
+}

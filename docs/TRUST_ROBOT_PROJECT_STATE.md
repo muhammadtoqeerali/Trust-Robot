@@ -5430,3 +5430,109 @@ Frozen V2 runtime-binding artifacts:
   SHA-256 `7238f8e7f9f8bd6ddd638e997badbdcf69b87edf9a869eb97afc2945aac96a3e`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_V2_FREEZE_V1.md`
   SHA-256 `215aa5d13bf53befe4de4501ab3521dee7f7708ddfc6070a546fc7ca9c0a3ed1`
+
+## SE4 composite live-session orchestrator freeze V1
+
+Status: **composite orchestration software resolved; injected software-only execution order verified; real execution remains blocked.**
+
+The composite binding + HTTP + UDP orchestration software is resolved.
+
+A validated V2 real TRAIN runtime binding is required.
+
+A separate execution-authorization artifact is required and must be SHA-256
+bound to that exact runtime binding.
+
+Authorization must be established before the UDP receiver is invoked.
+
+The UDP receiver remains the owner of fresh session-directory creation.
+
+The orchestrator does not pre-create the session directory.
+
+The HTTP executor consumes the existing directory returned by the UDP receiver.
+
+The frozen sequential execution order is:
+
+1. validate V2 runtime binding;
+2. validate execution authorization;
+3. filesystem preflight;
+4. invoke dual-UDP receiver;
+5. validate returned session directory;
+6. identity HTTP;
+7. status HTTP;
+8. diagnostic HTTP;
+9. publish composite session receipt.
+
+HTTP/UDP concurrency is not required.
+
+Successful execution selects `composite_session_receipt.json`.
+
+Post-session failure selects a best-effort
+`composite_session_failure.json`.
+
+Software verification uses injected non-network component functions.
+
+No literal loopback real-binding bypass is used because the frozen V2 real TRAIN
+binding correctly rejects loopback physical endpoints.
+
+Component injection is not real sensor execution and is not physical evidence.
+
+Real runtime bindings remain 0.
+
+Real runtime values bound remain false.
+
+Real execution authorizations remain 0.
+
+Real-sensor execution remains unauthorized.
+
+Real sensor network I/O remains false.
+
+Real sensor contact remains false.
+
+Raw real-sensor capture artifacts remain 0.
+
+Real composite session receipts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Interval binding remains unestablished.
+
+Physical measurement time remains unestablished.
+
+Execution authorization does not authorize source acceptance.
+
+Execution authorization does not authorize health-label generation.
+
+UDP capture is not automatically baseline nominality.
+
+HTTP evidence is not automatically health supervision.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen composite-orchestrator artifacts:
+
+- `src/trust_robot/se4_composite_live_session_orchestrator.py`
+  SHA-256 `ca23e6a2cca37c3af5ebeeae39bfdf6cc4ba4b9669b4a25135e6e15810081b2d`
+- `configs/trust_robot/se4_composite_live_session_orchestrator_resolution_v1.json`
+  SHA-256 `1564aaa7c261d37219ede56d42daa428a754c089a420d988b2cfb5c818eb41ff`
+- `tests/trust_robot/test_se4_composite_live_session_orchestrator.py`
+  SHA-256 `a7a8e2804afaa0040a5486ca3c7f4d64abc6b037c0cfcbba7d533025432715e2`
+- `manifests/trust_robot_se4_composite_live_session_orchestrator_freeze_v1.json`
+  SHA-256 `7ee319bc88c33541923df1d73971a8703af29d177f98a05160a99655a9b51e04`
+- `tests/trust_robot/test_se4_composite_live_session_orchestrator_freeze.py`
+  SHA-256 `820a16e1e633b01f532b83c36e8d236d016edeb810a69cfc85cb779f2311fde2`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_COMPOSITE_LIVE_SESSION_ORCHESTRATOR_FREEZE_V1.md`
+  SHA-256 `3fab86846cafac1ad54f84045ec84a5cc83c3d71e8fde7ac14184ec4ae65a6cd`
