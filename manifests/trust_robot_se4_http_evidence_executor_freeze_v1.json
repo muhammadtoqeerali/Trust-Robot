@@ -1,0 +1,136 @@
+{
+  "HTTP_execution_contract": {
+    "HTTP_port_default_sentinel": null,
+    "diagnostic_path": "/cgi/diag.json",
+    "endpoint_allowlist_enforced": true,
+    "explicit_HTTP_port_required": true,
+    "explicit_connect_timeout_required": true,
+    "explicit_total_timeout_required": true,
+    "identity_path": "/cgi/info.json",
+    "implementation_transport": "curl_subprocess",
+    "method": "GET",
+    "protocol_supplies_physical_HTTP_port_default": false,
+    "read_only": true,
+    "redirect_following_enabled": false,
+    "shell_execution": false,
+    "status_path": "/cgi/status.json"
+  },
+  "closure_interpretation": {
+    "physical_runtime_values_fabricated": false,
+    "this_is_HTTP_execution_software_freeze": true,
+    "this_is_loopback_software_verification": true,
+    "this_is_not_SE4_completion": true,
+    "this_is_not_a_real_runtime_binding": true,
+    "this_is_not_real_sensor_execution": true,
+    "this_is_not_source_acceptance": true
+  },
+  "content_sha256": "3eaba4fa7b25be4343ca42533ff2e1aeddebda8d03209aa6812569c5ed4bd559",
+  "empirical_state": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "raw_real_sensor_HTTP_artifact_count": 0,
+    "real_device_identity_receipt_count": 0,
+    "real_health_label_count": 0,
+    "real_sensor_contact_executed": false,
+    "real_sensor_network_IO_executed": false
+  },
+  "frozen_input_sha256": {
+    "SE4_runtime_binding_config": "ff293fa62bab7d1ce72f8a2f130130c5b66826c74a8d1853a7f1ac63e9fc14e7",
+    "SE4_runtime_binding_freeze": "28bf88aa87f6c527f16fa3144e94d70fadc64379f0e90529f04c46e7364d6afc",
+    "acquisition_session_provenance_module": "ff79ccf0ea68355028ef9fd3fa76f431479a9a7f2fba6b60a34d75bd9bf3cf20",
+    "live_acquisition_plan_module": "196a88bde3f96c98985121c13444190984c1622dceb648817ead8ef3320956a6",
+    "live_executor_safety_module": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+    "phase5_acquisition_session_provenance": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b",
+    "phase5_live_acquisition_plan": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+    "phase5_live_executor_safety": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a"
+  },
+  "implementation": {
+    "config": "configs/trust_robot/se4_http_evidence_executor_resolution_v1.json",
+    "config_content_sha256": "e339c2b10dc9fa60956efe3179479f0de8830fc860c4e7984ace6540f65edf7e",
+    "config_sha256": "51f98b3424d1db7bd2706f49e399954b007dfd8c2897d495462c7c7edd921aac",
+    "module": "src/trust_robot/se4_http_evidence_executor.py",
+    "module_sha256": "98d82acca2308aea76537de4a9cc4fa0eb94e8fd9bc4aa9bde048382f5b69dd9",
+    "test": "tests/trust_robot/test_se4_http_evidence_executor.py",
+    "test_sha256": "5af405448611cf616a95078fc5ab96f7bb02d13f82a99eece57758c9b3493dad"
+  },
+  "parent_frontier": {
+    "commit": "8109f17ec5ee4add6e4ca08575f22a78cbabb4be",
+    "tree": "79d05d6525cf80c24591d7d27796b594ab063d48"
+  },
+  "project_state_pre_freeze_sha256": "4d8f9d3473e0873a7676c894bdbca885258b40b03692474f1b2b7c1b97177a7f",
+  "raw_artifact_contract": {
+    "body_and_headers_preserved_separately": true,
+    "diagnostic_body": "diagnostic.json",
+    "diagnostic_headers": "diagnostic.headers",
+    "directory_fsync_after_publish": true,
+    "existing_final_overwrite_allowed": false,
+    "file_fsync_before_publish": true,
+    "identity_body": "info.json",
+    "identity_headers": "info.headers",
+    "pre_post_publish_SHA256_equality_required": true,
+    "same_directory_partial_files": true,
+    "status_body": "status.json",
+    "status_headers": "status.headers"
+  },
+  "real_runtime_state": {
+    "real_HTTP_connect_timeout_seconds": null,
+    "real_HTTP_total_timeout_seconds": null,
+    "real_acquisition_session_id": null,
+    "real_output_root": null,
+    "real_runtime_binding_count": 0,
+    "real_runtime_values_bound": false,
+    "real_sensor_HTTP_port": null,
+    "real_sensor_IPv4": null
+  },
+  "schema": "TRUST_ROBOT_SE4_HTTP_EVIDENCE_EXECUTOR_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "HTTP_diagnostic_is_health_label": false,
+    "HTTP_execution_establishes_interval_binding": false,
+    "HTTP_identity_is_baseline_nominality": false,
+    "HTTP_receive_time_is_physical_measurement_time": false,
+    "HTTP_response_is_physical_health_truth": false,
+    "HTTP_software_implementation_is_execution_authorization": false,
+    "HTTP_status_is_health_label": false,
+    "HTTP_timeout_is_sensor_timing_tolerance": false,
+    "confirmation_access": false,
+    "final_localization_scoring_performed": false,
+    "loopback_verification_is_physical_sensor_evidence": false,
+    "reference_data_used": false,
+    "validation_access": false
+  },
+  "software_verification": {
+    "loopback_HTTP_port_is_ephemeral_test_value": true,
+    "loopback_HTTP_port_is_real_runtime_selection": false,
+    "loopback_execution_verified": true,
+    "loopback_only": true,
+    "real_sensor_execution_verified": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "status": "HTTP_software_implemented_loopback_verified_real_sensor_blocked",
+    "sub_frontier": "HTTP_evidence_execution_software"
+  },
+  "transition_policy": {
+    "HTTP_execution_software_implemented": true,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "SE9_remains_closed": true,
+    "confirmation_remains_closed": true,
+    "explicit_HTTP_port_required": true,
+    "health_label_generation_authorized": false,
+    "loopback_HTTP_execution_verified": true,
+    "next_required_event": "Provide and hash-bind one real operator-supplied TRAIN runtime binding, including an explicit real HTTP port, then separately authorize bounded real-sensor execution. Any resulting HTTP evidence remains raw evidence and must still satisfy independent source-acceptance requirements.",
+    "protocol_physical_HTTP_port_default": false,
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  }
+}

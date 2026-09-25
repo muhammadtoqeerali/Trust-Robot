@@ -5238,3 +5238,106 @@ Frozen runtime-input binding artifacts:
   SHA-256 `9fb09cbfef05c61b008e4a494eac0a827c8b0ecf5ed8e416b288b671be9ec04a`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_REAL_TRAIN_RUNTIME_INPUT_BINDING_FREEZE_V1.md`
   SHA-256 `aefbe1912759aee6932c04d1ea5f757d1379350e555eca305c81828c49ec0c11`
+
+## SE4 HTTP evidence executor freeze V1
+
+Status: **HTTP execution software implemented and loopback verified; real-sensor execution remains unauthorized.**
+
+The software-only HTTP execution gap is now resolved for the frozen VLP-32C
+read-only evidence endpoints:
+
+- `/cgi/info.json`;
+- `/cgi/status.json`;
+- `/cgi/diag.json`.
+
+The executor uses one-shot `GET` requests via `curl` with `shell=False`.
+
+HTTP connect timeout is explicit.
+
+HTTP total timeout is explicit.
+
+HTTP port is explicit.
+
+The protocol supplies no physical HTTP-port default.
+
+The executor's `None` port value is fail-closed and is rejected before network
+execution.
+
+No real HTTP port is selected.
+
+Response body and response headers are preserved separately, hash-verified,
+fsynced and atomically published without overwriting existing final artifacts.
+
+Loopback HTTP execution is verified.
+
+Loopback ports are ephemeral software-test values only and are not real runtime
+selections.
+
+No real VLP-32C HTTP execution occurred.
+
+Real runtime bindings remain 0.
+
+Real runtime values bound remain false.
+
+No real sensor IPv4 is selected.
+
+No real HTTP port is selected.
+
+Real-sensor network I/O remains false.
+
+Real-sensor contact remains false.
+
+Raw real-sensor HTTP artifacts remain 0.
+
+Real device identity receipts remain 0.
+
+Accepted baseline-nominality sources remain 0.
+
+Accepted health-supervision sources remain 0.
+
+Real health labels remain 0.
+
+Interval binding remains unestablished.
+
+Physical measurement time remains unestablished.
+
+HTTP implementation is not execution authorization.
+
+Loopback verification is not physical evidence.
+
+HTTP status and diagnostics are not health labels.
+
+HTTP identity evidence is not automatically baseline nominality.
+
+Real-sensor HTTP execution remains unauthorized.
+
+Source acceptance remains unauthorized.
+
+Health-label generation remains unauthorized.
+
+SE4 remains incomplete.
+
+SE4 model training remains unauthorized.
+
+SE5 remains blocked.
+
+Validation remains closed.
+
+Confirmation remains closed.
+
+SE9 remains closed.
+
+Frozen HTTP executor artifacts:
+
+- `src/trust_robot/se4_http_evidence_executor.py`
+  SHA-256 `98d82acca2308aea76537de4a9cc4fa0eb94e8fd9bc4aa9bde048382f5b69dd9`
+- `configs/trust_robot/se4_http_evidence_executor_resolution_v1.json`
+  SHA-256 `51f98b3424d1db7bd2706f49e399954b007dfd8c2897d495462c7c7edd921aac`
+- `tests/trust_robot/test_se4_http_evidence_executor.py`
+  SHA-256 `5af405448611cf616a95078fc5ab96f7bb02d13f82a99eece57758c9b3493dad`
+- `manifests/trust_robot_se4_http_evidence_executor_freeze_v1.json`
+  SHA-256 `29639601503a8d7c0b9db879939a8960b2f0a69ca10e378fc07f0b031aeadc10`
+- `tests/trust_robot/test_se4_http_evidence_executor_freeze.py`
+  SHA-256 `226a9b1e447b81ec7017effbf12a914c44e43f928bdee678fc25e16d5b77134c`
+- `docs/audits/trust_robot/TRUST_ROBOT_SE4_HTTP_EVIDENCE_EXECUTOR_FREEZE_V1.md`
+  SHA-256 `3754d7c73076ad544db7f5ce0abeb906a2f5bf42bec4aba2d1112a2a8217f786`

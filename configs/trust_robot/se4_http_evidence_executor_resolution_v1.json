@@ -1,0 +1,102 @@
+{
+  "HTTP_execution_software": {
+    "body_and_headers_preserved_separately": true,
+    "directory_fsync_after_publish": true,
+    "endpoint_allowlist_enforced": true,
+    "existing_final_overwrite_allowed": false,
+    "explicit_connect_timeout_required": true,
+    "explicit_http_port_required": true,
+    "explicit_total_timeout_required": true,
+    "file_fsync_before_publish": true,
+    "implementation_transport": "curl_subprocess",
+    "implemented": true,
+    "pre_post_publish_SHA256_equality_required": true,
+    "protocol_supplies_http_port_default": false,
+    "read_only_GET_only": true,
+    "redirect_following_enabled": false,
+    "same_directory_partial_files": true,
+    "shell_execution": false
+  },
+  "authorization_boundary": {
+    "HTTP_implementation_is_execution_authorization": false,
+    "loopback_test_requires_explicit_authorization": true,
+    "real_sensor_execution_authorized": false,
+    "real_sensor_execution_requires_explicit_authorization": true,
+    "runtime_binding_required_before_real_sensor_execution": true
+  },
+  "content_sha256": "e339c2b10dc9fa60956efe3179479f0de8830fc860c4e7984ace6540f65edf7e",
+  "endpoints": {
+    "diagnostic": {
+      "body_filename": "diagnostic.json",
+      "headers_filename": "diagnostic.headers",
+      "path": "/cgi/diag.json"
+    },
+    "identity": {
+      "body_filename": "info.json",
+      "headers_filename": "info.headers",
+      "path": "/cgi/info.json"
+    },
+    "status": {
+      "body_filename": "status.json",
+      "headers_filename": "status.headers",
+      "path": "/cgi/status.json"
+    }
+  },
+  "frozen_input_sha256": {
+    "SE4_runtime_binding_config": "ff293fa62bab7d1ce72f8a2f130130c5b66826c74a8d1853a7f1ac63e9fc14e7",
+    "SE4_runtime_binding_freeze": "28bf88aa87f6c527f16fa3144e94d70fadc64379f0e90529f04c46e7364d6afc",
+    "acquisition_session_provenance_module": "ff79ccf0ea68355028ef9fd3fa76f431479a9a7f2fba6b60a34d75bd9bf3cf20",
+    "live_acquisition_plan_module": "196a88bde3f96c98985121c13444190984c1622dceb648817ead8ef3320956a6",
+    "live_executor_safety_module": "6dcb292355ba17ec8a563b1183e0279b40559ec0467dd8dc9fbba5a2e674e26a",
+    "phase5_acquisition_session_provenance": "08b691bcc0eb3db7d9b0059608f8134b7b6086f526b6c11e64cf03ac3efa763b",
+    "phase5_live_acquisition_plan": "9988bf72a341a045831b2efe49d393f6886075ca179034ceecf4a191b4f8992d",
+    "phase5_live_executor_safety": "9370692895bc156552a664b23fd84445a32a3b20ead8c1d1c4f495c31e6dca6a"
+  },
+  "resolution_id": "trust_robot_se4_http_evidence_executor_resolution_v1",
+  "schema": "TRUST_ROBOT_SE4_HTTP_EVIDENCE_EXECUTOR_RESOLUTION_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "HTTP_diagnostic_is_health_label": false,
+    "HTTP_execution_establishes_interval_binding": false,
+    "HTTP_identity_is_baseline_nominality": false,
+    "HTTP_receive_time_is_physical_measurement_time": false,
+    "HTTP_response_is_physical_health_truth": false,
+    "HTTP_status_is_health_label": false,
+    "HTTP_timeout_is_sensor_timing_tolerance": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_access": false,
+    "real_health_label_count": 0,
+    "reference_data_used": false,
+    "validation_access": false
+  },
+  "stage_context": {
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "stage_id": "SE4",
+    "sub_frontier": "HTTP_evidence_execution_software"
+  },
+  "transition_policy": {
+    "HTTP_execution_software_implemented": true,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "confirmation_remains_closed": true,
+    "health_label_generation_authorized": false,
+    "loopback_HTTP_execution_verified": true,
+    "next_required_event": "Create one real operator-supplied TRAIN runtime binding and separately authorize a bounded real-sensor execution. HTTP software implementation alone does not authorize network access or create health supervision.",
+    "real_runtime_values_bound": false,
+    "real_sensor_execution_authorized": false,
+    "source_acceptance_authorized": false,
+    "validation_remains_closed": true
+  },
+  "verification_state": {
+    "loopback_execution_verified": true,
+    "raw_real_sensor_HTTP_artifact_count": 0,
+    "real_device_identity_receipt_count": 0,
+    "real_sensor_contact_executed": false,
+    "real_sensor_execution_verified": false,
+    "real_sensor_network_IO_executed": false
+  }
+}
