@@ -1,0 +1,63 @@
+{
+  "accessibility": {
+    "aria_current_navigation": true,
+    "keyboard_navigation": true,
+    "semantic_main": true,
+    "skip_link": true
+  },
+  "browser_evidence": {
+    "desktop_screenshot": true,
+    "mobile_screenshot": true,
+    "screenshots_are_scientific_evidence": false,
+    "screenshots_are_UI_qualification_evidence": true
+  },
+  "browser_runtime": {
+    "repository_dependency_added": false,
+    "runtime_location": "temporary_external_tooling",
+    "tool": "Playwright Chromium"
+  },
+  "desktop": {
+    "height": 900,
+    "horizontal_page_overflow_allowed": false,
+    "width": 1440
+  },
+  "error_behavior": {
+    "fabricated_fallback_values_allowed": false,
+    "snapshot_failure_visible": true
+  },
+  "live_behavior": {
+    "manual_refresh_qualified": true,
+    "SSE_request_qualified": true,
+    "transport_timestamp_may_be_sensor_measurement_time": false
+  },
+  "mobile": {
+    "height": 844,
+    "horizontal_page_overflow_allowed": false,
+    "mobile_navigation_qualified": true,
+    "width": 390
+  },
+  "schema": "TRUST_ROBOT_UI7_BROWSER_QUALIFICATION_CONTRACT_V1",
+  "scientific_boundary": {
+    "ATE_RPE_available": false,
+    "confirmation_open": false,
+    "real_sensor_contact": false,
+    "real_sensor_session_count": 0,
+    "SE4_complete": false,
+    "SE5_may_proceed": false,
+    "validation_open": false
+  },
+  "security": {
+    "content_security_policy_required": true,
+    "frame_denial_required": true,
+    "no_store_required": true,
+    "nosniff_required": true
+  },
+  "views": [
+    "overview",
+    "dataset",
+    "features",
+    "operations",
+    "evidence",
+    "health"
+  ]
+}

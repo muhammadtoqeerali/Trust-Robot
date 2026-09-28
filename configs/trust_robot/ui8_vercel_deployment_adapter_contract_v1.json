@@ -1,0 +1,47 @@
+{
+  "api": {
+    "framework": "FastAPI",
+    "same_origin": true,
+    "write_routes": 0
+  },
+  "deployment": {
+    "entrypoint": "app.py",
+    "git_repository_required_at_runtime": false,
+    "local_dataset_required_at_runtime": false,
+    "platform": "vercel",
+    "production_dependency_manifest": "requirements.txt",
+    "real_sensor_network_required_at_runtime": false,
+    "snapshot_artifact": "deploy/vercel/dashboard_snapshot_v1.json"
+  },
+  "frontend": {
+    "existing_browser_qualified_frontend_reused": true,
+    "static_directory": "src/trust_robot/dashboard_web"
+  },
+  "git_metadata": {
+    "branch_environment_variable": "VERCEL_GIT_COMMIT_REF",
+    "commit_environment_variable": "VERCEL_GIT_COMMIT_SHA",
+    "tree_available_from_vercel_runtime": false,
+    "worktree_clean_available_from_vercel_runtime": false
+  },
+  "live_updates": {
+    "endpoint": "/api/v1/events",
+    "model": "single-event EventSource reconnect",
+    "transport_time_is_sensor_measurement_time": false
+  },
+  "schema": "TRUST_ROBOT_UI8_VERCEL_DEPLOYMENT_ADAPTER_CONTRACT_V1",
+  "scientific_boundary": {
+    "ATE_RPE_available": false,
+    "confirmation_open": false,
+    "real_sensor_contact": false,
+    "real_sensor_network_IO": false,
+    "real_sensor_session_count": 0,
+    "SE4_complete": false,
+    "SE5_may_proceed": false,
+    "validation_open": false
+  },
+  "state": {
+    "deployment_snapshot_is_read_only": true,
+    "deployment_snapshot_is_software_only": true,
+    "server_writable_state": false
+  }
+}

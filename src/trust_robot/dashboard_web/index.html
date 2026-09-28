@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta
+    name="description"
+    content="TRUST-ROBOT read-only operations and scientific evidence dashboard."
+  >
+  <title>TRUST-ROBOT Operations</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="module" src="/assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to dashboard content</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Dashboard navigation">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span>T</span>
+        </div>
+        <div class="brand-copy">
+          <strong>TRUST-ROBOT</strong>
+          <span>Operations Console</span>
+        </div>
+      </div>
+
+      <div class="mode-card">
+        <span class="eyebrow">Current mode</span>
+        <div class="mode-line">
+          <span class="status-dot status-dot--amber" aria-hidden="true"></span>
+          <strong id="sidebar-mode">Loading…</strong>
+        </div>
+        <span class="mode-caption">Read-only evidence shell</span>
+      </div>
+
+      <nav class="nav-list" aria-label="Primary">
+        <a class="nav-item is-active" href="#overview" data-view="overview">
+          <span class="nav-icon" aria-hidden="true">01</span>
+          <span>Overview</span>
+        </a>
+        <a class="nav-item" href="#dataset" data-view="dataset">
+          <span class="nav-icon" aria-hidden="true">02</span>
+          <span>Dataset &amp; Replay</span>
+        </a>
+        <a class="nav-item" href="#features" data-view="features">
+          <span class="nav-icon" aria-hidden="true">03</span>
+          <span>Feature Signals</span>
+        </a>
+        <a class="nav-item" href="#operations" data-view="operations">
+          <span class="nav-icon" aria-hidden="true">04</span>
+          <span>Sensor Operations</span>
+        </a>
+        <a class="nav-item" href="#evidence" data-view="evidence">
+          <span class="nav-icon" aria-hidden="true">05</span>
+          <span>Evidence</span>
+        </a>
+        <a class="nav-item" href="#health" data-view="health">
+          <span class="nav-icon" aria-hidden="true">06</span>
+          <span>Health &amp; Boundaries</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div>
+          <span class="eyebrow">Interface policy</span>
+          <strong>Observe, never invent</strong>
+        </div>
+        <p>
+          Synthetic evidence is labeled. Missing scientific evidence remains
+          unavailable.
+        </p>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button
+          class="mobile-menu-button"
+          id="mobile-menu-button"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="topbar-context">
+          <span class="eyebrow">TRUST-ROBOT / DASHBOARD</span>
+          <h1 id="page-title">Overview</h1>
+        </div>
+
+        <div class="topbar-status">
+          <div class="connection-state" id="connection-state" role="status">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Connecting to local API</span>
+          </div>
+
+          <div
+            class="live-update-chip"
+            id="live-update-chip"
+            aria-live="polite"
+          >
+            <span class="live-update-dot" aria-hidden="true"></span>
+            <div>
+              <strong id="live-channel-state">Starting</strong>
+              <small id="last-update-age">No update yet</small>
+            </div>
+          </div>
+
+          <button
+            class="refresh-button"
+            id="refresh-button"
+            type="button"
+            aria-label="Refresh dashboard state"
+          >
+            Refresh
+          </button>
+
+          <div class="commit-chip">
+            <span>HEAD</span>
+            <code id="commit-short">loading</code>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <div
+          id="dashboard-alert"
+          class="alert-banner is-hidden"
+          role="alert"
+          aria-live="assertive"
+        ></div>
+
+        <section class="view is-active" data-panel="overview" aria-labelledby="overview-heading">
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <span class="eyebrow">System qualification</span>
+              <h2 id="overview-heading">
+                Software stack visible from one trustworthy surface.
+              </h2>
+              <p>
+                This console projects frozen repository evidence and current
+                scientific blockers without creating sensor evidence,
+                authorization, labels, or scoring.
+              </p>
+            </div>
+
+            <div class="hero-state">
+              <span class="hero-state-label">Software E2E</span>
+              <strong id="software-qualification">Loading</strong>
+              <span id="frontier-label">Reading scientific frontier…</span>
+            </div>
+          </div>
+
+          <div class="metric-grid" aria-label="System summary">
+            <article class="metric-card">
+              <span class="metric-label">TRAIN trajectories</span>
+              <strong class="metric-value" id="metric-train">—</strong>
+              <span class="metric-foot">Frozen development partition</span>
+            </article>
+
+            <article class="metric-card">
+              <span class="metric-label">Observed streams</span>
+              <strong class="metric-value" id="metric-streams">—</strong>
+              <span class="metric-foot">Representative real-data run</span>
+            </article>
+
+            <article class="metric-card">
+              <span class="metric-label">Replay records</span>
+              <strong class="metric-value" id="metric-replay">—</strong>
+              <span class="metric-foot">Until all four streams observed</span>
+            </article>
+
+            <article class="metric-card metric-card--blocked">
+              <span class="metric-label">Real health labels</span>
+              <strong class="metric-value" id="metric-labels">—</strong>
+              <span class="metric-foot">Training remains fail-closed</span>
+            </article>
+          </div>
+
+          <div class="content-grid content-grid--two">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Scientific progression</span>
+                  <h3>Current project boundary</h3>
+                </div>
+                <span class="badge badge--amber">Fail-closed</span>
+              </div>
+
+              <div class="stage-stack">
+                <div class="stage-row stage-row--complete">
+                  <span class="stage-index">A</span>
+                  <div>
+                    <strong>Software qualification</strong>
+                    <span>Real M2DGR replay + software-only integration</span>
+                  </div>
+                  <span class="stage-status">Passed</span>
+                </div>
+
+                <div class="stage-row stage-row--blocked">
+                  <span class="stage-index">B</span>
+                  <div>
+                    <strong>SE4 health-model training</strong>
+                    <span>Requires accepted health supervision</span>
+                  </div>
+                  <span class="stage-status">Blocked</span>
+                </div>
+
+                <div class="stage-row stage-row--locked">
+                  <span class="stage-index">C</span>
+                  <div>
+                    <strong>SE5 progression</strong>
+                    <span>Closed until SE4 is legitimately complete</span>
+                  </div>
+                  <span class="stage-status">Locked</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Acquisition readiness</span>
+                  <h3>Sensor boundary</h3>
+                </div>
+                <span class="badge badge--neutral" id="sensor-badge">Not executed</span>
+              </div>
+
+              <div class="signal-list">
+                <div class="signal-row">
+                  <span>Real sensor contact</span>
+                  <strong id="signal-sensor-contact">—</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Runtime bindings</span>
+                  <strong id="signal-runtime-bindings">—</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Grounded authorization</span>
+                  <strong id="signal-grounded-auth">—</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Synthetic stack qualification</span>
+                  <strong id="signal-synthetic">—</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="panel digest-panel">
+            <div>
+              <span class="eyebrow">Deterministic replay evidence</span>
+              <h3>Bounded replay digest</h3>
+            </div>
+            <code id="replay-digest">Loading…</code>
+          </article>
+        </section>
+
+        <section class="view" data-panel="dataset" aria-labelledby="dataset-heading">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Frozen partition contract</span>
+              <h2 id="dataset-heading">Dataset &amp; Replay</h2>
+            </div>
+            <span class="badge badge--green">Real M2DGR evidence</span>
+          </div>
+
+          <div class="split-grid">
+            <article class="split-card">
+              <span>TRAIN</span>
+              <strong id="dataset-train-count">—</strong>
+              <div class="split-bar"><span class="split-bar-fill split-bar-fill--train"></span></div>
+              <p>Open for current development evidence.</p>
+            </article>
+            <article class="split-card split-card--closed">
+              <span>VALIDATION</span>
+              <strong id="dataset-validation-count">—</strong>
+              <div class="split-bar"><span class="split-bar-fill split-bar-fill--validation"></span></div>
+              <p>Closed by scientific policy.</p>
+            </article>
+            <article class="split-card split-card--closed">
+              <span>CONFIRMATION</span>
+              <strong id="dataset-confirmation-count">—</strong>
+              <div class="split-bar"><span class="split-bar-fill split-bar-fill--confirmation"></span></div>
+              <p>Closed by scientific policy.</p>
+            </article>
+          </div>
+
+          <div class="content-grid content-grid--two">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Representative run</span>
+                  <h3 id="trajectory-name">Loading…</h3>
+                </div>
+                <span class="badge badge--green">TRAIN</span>
+              </div>
+              <div class="signal-list">
+                <div class="signal-row">
+                  <span>Replay deterministic</span>
+                  <strong id="dataset-deterministic">—</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Messages observed</span>
+                  <strong id="dataset-message-count">—</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Stream count</span>
+                  <strong id="dataset-stream-count">—</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Bag size</span>
+                  <strong id="dataset-bag-size">—</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Partition access</span>
+                  <h3>Scientific locks</h3>
+                </div>
+              </div>
+              <div class="lock-grid">
+                <div class="lock-item">
+                  <span>Validation</span>
+                  <strong id="validation-lock">—</strong>
+                </div>
+                <div class="lock-item">
+                  <span>Confirmation</span>
+                  <strong id="confirmation-lock">—</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="content-grid content-grid--two">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Trajectory browser</span>
+                  <h3>Frozen partition membership</h3>
+                </div>
+              </div>
+
+              <div class="trajectory-groups">
+                <div class="trajectory-group">
+                  <div class="trajectory-group-heading">
+                    <strong>TRAIN</strong>
+                    <span id="train-list-count">—</span>
+                  </div>
+                  <div class="trajectory-list" id="train-trajectory-list"></div>
+                </div>
+
+                <div class="trajectory-group">
+                  <div class="trajectory-group-heading">
+                    <strong>VALIDATION</strong>
+                    <span id="validation-list-count">—</span>
+                  </div>
+                  <div class="trajectory-list" id="validation-trajectory-list"></div>
+                </div>
+
+                <div class="trajectory-group">
+                  <div class="trajectory-group-heading">
+                    <strong>CONFIRMATION</strong>
+                    <span id="confirmation-list-count">—</span>
+                  </div>
+                  <div class="trajectory-list" id="confirmation-trajectory-list"></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Replay evidence</span>
+                  <h3>Observed input streams</h3>
+                </div>
+                <span class="badge badge--green">Deterministic</span>
+              </div>
+
+              <div class="replay-stream-list" id="replay-stream-list"></div>
+
+              <div class="replay-path">
+                <span>Bag source</span>
+                <code id="replay-bag-path">Loading…</code>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" data-panel="features" aria-labelledby="features-heading">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Observed software evidence</span>
+              <h2 id="features-heading">Feature Signals</h2>
+            </div>
+            <span class="badge badge--neutral">Not health labels</span>
+          </div>
+
+          <div class="feature-grid" id="feature-grid">
+            <article class="feature-card">
+              <span class="feature-type">Camera</span>
+              <h3>Compressed image</h3>
+              <div id="camera-feature-values" class="feature-values"></div>
+            </article>
+
+            <article class="feature-card">
+              <span class="feature-type">D435i IMU</span>
+              <h3>/camera/imu</h3>
+              <div id="d435i-feature-values" class="feature-values"></div>
+            </article>
+
+            <article class="feature-card">
+              <span class="feature-type">HandsFree IMU</span>
+              <h3>/handsfree/imu</h3>
+              <div id="handsfree-feature-values" class="feature-values"></div>
+            </article>
+
+            <article class="feature-card">
+              <span class="feature-type">Velodyne</span>
+              <h3>/velodyne_points</h3>
+              <div id="velodyne-feature-values" class="feature-values"></div>
+            </article>
+          </div>
+
+          <div class="info-callout">
+            <strong>Interpretation boundary</strong>
+            <p>
+              These are observed feature values and payload evidence. The
+              dashboard does not present them as health labels, health
+              predictions, or ground-truth localization error.
+            </p>
+          </div>
+        </section>
+
+        <section class="view" data-panel="operations" aria-labelledby="operations-heading">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Future live-sensor workspace</span>
+              <h2 id="operations-heading">Sensor Operations</h2>
+            </div>
+            <span class="badge badge--amber">Software-only</span>
+          </div>
+
+          <div class="operations-banner">
+            <div>
+              <span class="eyebrow">Real sensor state</span>
+              <strong id="operations-real-state">Not executed</strong>
+            </div>
+            <p>
+              This workspace is observability-only. Real addresses, ports,
+              authorization, sessions, and sensor evidence remain unavailable
+              until legitimate physical inputs exist.
+            </p>
+          </div>
+
+          <div class="operations-readiness-grid">
+            <article class="operations-readiness-card">
+              <span>Runtime binding</span>
+              <strong id="operations-binding-readiness">0 / 16</strong>
+              <small>Real fields bound</small>
+            </article>
+
+            <article class="operations-readiness-card">
+              <span>Execution authorization</span>
+              <strong id="operations-auth-count">0</strong>
+              <small>Real records</small>
+            </article>
+
+            <article class="operations-readiness-card">
+              <span>Grounded authorization</span>
+              <strong id="operations-grounded-auth-count">0</strong>
+              <small>Grounded records</small>
+            </article>
+
+            <article class="operations-readiness-card">
+              <span>Real session</span>
+              <strong id="operations-session-state">Not started</strong>
+              <small id="operations-session-id">ID unavailable</small>
+            </article>
+          </div>
+
+          <div class="content-grid content-grid--two">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Runtime readiness</span>
+                  <h3>Binding requirements</h3>
+                </div>
+                <span class="badge badge--neutral">16 required</span>
+              </div>
+
+              <div
+                class="binding-field-grid"
+                id="binding-field-grid"
+                aria-label="Required runtime binding fields"
+              ></div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Session lifecycle</span>
+                  <h3>Real acquisition progression</h3>
+                </div>
+                <span class="badge badge--amber">Waiting</span>
+              </div>
+
+              <ol
+                class="operations-lifecycle"
+                id="operations-lifecycle"
+              ></ol>
+            </article>
+          </div>
+
+          <article class="panel operations-channel-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Transport and evidence channels</span>
+                <h3>Future real sensor endpoints</h3>
+              </div>
+              <span class="badge badge--neutral">Values unavailable</span>
+            </div>
+
+            <div class="table-wrap">
+              <table class="channel-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Protocol</th>
+                    <th scope="col">Purpose / path</th>
+                    <th scope="col">Real endpoint</th>
+                    <th scope="col">Execution</th>
+                    <th scope="col">Evidence</th>
+                  </tr>
+                </thead>
+                <tbody id="operations-channel-body"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <div class="content-grid content-grid--two">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Qualified software behavior</span>
+                  <h3>Synthetic acquisition chain</h3>
+                </div>
+                <span class="badge badge--synthetic">Synthetic</span>
+              </div>
+
+              <ol class="execution-flow" id="execution-flow"></ol>
+
+              <div class="synthetic-receipt-grid">
+                <div>
+                  <span>UDP receipt</span>
+                  <strong id="synthetic-udp-receipt">—</strong>
+                </div>
+                <div>
+                  <span>Identity receipt</span>
+                  <strong id="synthetic-identity-receipt">—</strong>
+                </div>
+                <div>
+                  <span>Status receipt</span>
+                  <strong id="synthetic-status-receipt">—</strong>
+                </div>
+                <div>
+                  <span>Diagnostic receipt</span>
+                  <strong id="synthetic-diagnostic-receipt">—</strong>
+                </div>
+                <div>
+                  <span>Composite receipt</span>
+                  <strong id="synthetic-composite-receipt">—</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Hard safety boundary</span>
+                  <h3>Dashboard permissions</h3>
+                </div>
+              </div>
+
+              <div class="operations-permission-list">
+                <div>
+                  <span>Execute real sensor</span>
+                  <strong id="permission-real-execution">—</strong>
+                </div>
+                <div>
+                  <span>Edit runtime binding</span>
+                  <strong id="permission-binding-edit">—</strong>
+                </div>
+                <div>
+                  <span>Create authorization</span>
+                  <strong id="permission-create-auth">—</strong>
+                </div>
+                <div>
+                  <span>Create health label</span>
+                  <strong id="permission-health-label">—</strong>
+                </div>
+                <div>
+                  <span>Modify scientific parameters</span>
+                  <strong id="permission-science-write">—</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="panel session-history-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Observed software history</span>
+                <h3>Session &amp; qualification history</h3>
+              </div>
+              <span class="badge badge--neutral" id="history-count-badge">—</span>
+            </div>
+
+            <div class="history-summary">
+              <div>
+                <span>Real sensor sessions</span>
+                <strong id="real-session-history-count">0</strong>
+              </div>
+              <p>
+                The records below are software qualification evidence. They
+                are not a substitute for future real sensor session history.
+              </p>
+            </div>
+
+            <div
+              class="session-history-list"
+              id="session-history-list"
+            ></div>
+          </article>
+
+          <div class="content-grid content-grid--three">
+            <article class="mini-status">
+              <span>Real network I/O</span>
+              <strong id="operations-network">—</strong>
+            </article>
+
+            <article class="mini-status">
+              <span>Real sensor contact</span>
+              <strong id="operations-contact">—</strong>
+            </article>
+
+            <article class="mini-status">
+              <span>Grounded authorization</span>
+              <strong id="operations-auth">—</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" data-panel="evidence" aria-labelledby="evidence-heading">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Traceability</span>
+              <h2 id="evidence-heading">Evidence &amp; Receipts</h2>
+            </div>
+            <span class="badge badge--green">Repository-backed</span>
+          </div>
+
+          <div class="evidence-class-grid">
+            <article class="evidence-class-card">
+              <span>Frozen repository evidence</span>
+              <strong>Available</strong>
+              <small>Hash-addressed source artifacts</small>
+            </article>
+
+            <article class="evidence-class-card evidence-class-card--synthetic">
+              <span>Synthetic live evidence</span>
+              <strong>Available</strong>
+              <small>Software qualification only</small>
+            </article>
+
+            <article class="evidence-class-card evidence-class-card--missing">
+              <span>Real sensor runtime evidence</span>
+              <strong>Unavailable</strong>
+              <small>No physical session executed</small>
+            </article>
+
+            <article class="evidence-class-card evidence-class-card--missing">
+              <span>Health supervision</span>
+              <strong>Unavailable</strong>
+              <small>No accepted supervision source</small>
+            </article>
+          </div>
+
+          <div class="repository-strip">
+            <div>
+              <span>Branch</span>
+              <code id="repo-branch">—</code>
+            </div>
+            <div>
+              <span>HEAD</span>
+              <code id="repo-head">—</code>
+            </div>
+            <div>
+              <span>Tree</span>
+              <code id="repo-tree">—</code>
+            </div>
+            <div>
+              <span>Worktree</span>
+              <strong id="repo-clean">—</strong>
+            </div>
+          </div>
+
+          <article class="panel receipt-registry-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Receipt registry</span>
+                <h3>Observed qualification receipts</h3>
+              </div>
+              <span class="badge badge--neutral" id="receipt-count-badge">—</span>
+            </div>
+
+            <div
+              class="receipt-registry"
+              id="receipt-registry"
+              aria-label="Qualification receipt registry"
+            ></div>
+
+            <div class="receipt-boundary-note">
+              Receipt hashes prove integrity of the recorded artifact. They do
+              not by themselves prove physical sensor truth, health truth, or
+              authorization authority.
+            </div>
+          </article>
+
+          <article class="panel evidence-table-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Dashboard source files</span>
+                <h3>Evidence hashes</h3>
+              </div>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Source</th>
+                    <th scope="col">SHA-256</th>
+                    <th scope="col">State</th>
+                  </tr>
+                </thead>
+                <tbody id="evidence-table-body"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="view" data-panel="health" aria-labelledby="health-heading">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Scientific safety state</span>
+              <h2 id="health-heading">Health Supervision &amp; Boundaries</h2>
+            </div>
+            <span class="badge badge--amber">Training blocked</span>
+          </div>
+
+          <div class="health-readiness-banner">
+            <div>
+              <span class="eyebrow">Training readiness</span>
+              <strong id="health-readiness-state">Blocked</strong>
+            </div>
+            <div>
+              <span>Unresolved prerequisites</span>
+              <strong id="health-unresolved-count">—</strong>
+            </div>
+            <p>
+              The dashboard reports missing supervision explicitly. It does
+              not convert feature values into labels or infer health truth.
+            </p>
+          </div>
+
+          <div class="boundary-grid">
+            <article class="boundary-card">
+              <span>Baseline nominality sources</span>
+              <strong id="boundary-baseline-sources">—</strong>
+            </article>
+
+            <article class="boundary-card">
+              <span>Accepted supervision sources</span>
+              <strong id="boundary-supervision">—</strong>
+            </article>
+
+            <article class="boundary-card">
+              <span>Real health labels</span>
+              <strong id="boundary-labels">—</strong>
+            </article>
+
+            <article class="boundary-card">
+              <span>Runtime bindings</span>
+              <strong id="boundary-bindings">—</strong>
+            </article>
+          </div>
+
+          <div class="content-grid content-grid--two">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Blocking prerequisites</span>
+                  <h3>Health-supervision readiness</h3>
+                </div>
+                <span class="badge badge--amber">Fail-closed</span>
+              </div>
+
+              <div
+                class="health-blocker-list"
+                id="health-blocker-list"
+              ></div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <span class="eyebrow">Interpretation policy</span>
+                  <h3>What the dashboard may not infer</h3>
+                </div>
+              </div>
+
+              <div class="health-policy-list">
+                <div>
+                  <span>Feature values → health labels</span>
+                  <strong id="health-policy-labels">Forbidden</strong>
+                </div>
+                <div>
+                  <span>Feature values → health predictions</span>
+                  <strong id="health-policy-predictions">Forbidden</strong>
+                </div>
+                <div>
+                  <span>Create health labels</span>
+                  <strong id="health-control-create-label">Disabled</strong>
+                </div>
+                <div>
+                  <span>Authorize SE4 training</span>
+                  <strong id="health-control-authorize-training">Disabled</strong>
+                </div>
+                <div>
+                  <span>Override blocker</span>
+                  <strong id="health-control-override">Disabled</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <span class="eyebrow">Fail-closed gates</span>
+                <h3>Current scientific permissions</h3>
+              </div>
+            </div>
+
+            <div class="gate-grid">
+              <div class="gate-item">
+                <span>SE2 health-model training</span>
+                <strong id="gate-se2-training">—</strong>
+              </div>
+              <div class="gate-item">
+                <span>SE4 complete</span>
+                <strong id="gate-se4-complete">—</strong>
+              </div>
+              <div class="gate-item">
+                <span>SE4 training</span>
+                <strong id="gate-se4-training">—</strong>
+              </div>
+              <div class="gate-item">
+                <span>SE5 entry</span>
+                <strong id="gate-se5">—</strong>
+              </div>
+              <div class="gate-item">
+                <span>Interval binding</span>
+                <strong id="gate-interval-binding">—</strong>
+              </div>
+              <div class="gate-item">
+                <span>Physical measurement time</span>
+                <strong id="gate-measurement-time">—</strong>
+              </div>
+              <div class="gate-item">
+                <span>ATE / RPE</span>
+                <strong id="gate-ate">—</strong>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <footer class="dashboard-footer">
+          <span>TRUST-ROBOT Front-Side Program</span>
+          <span>Read-only • Same-origin • Scientific boundary preserved</span>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "history": {
+    "real_sensor_session_count": 0,
+    "real_sensor_session_history_available": false,
+    "software_qualification_history_visible": true,
+    "synthetic_qualification_history_visible": true,
+    "synthetic_history_may_be_presented_as_real_sensor_history": false
+  },
+  "live_update": {
+    "endpoint": "/api/v1/events",
+    "frontend_transport": "EventSource",
+    "manual_refresh": true,
+    "reconnect_hint_milliseconds": 5000,
+    "response_model": "single-event SSE response with automatic EventSource reconnect",
+    "sensor_measurement_time": false,
+    "transport_observation_time_only": true
+  },
+  "network_policy": {
+    "external_services": false,
+    "real_sensor_network_IO": false,
+    "same_origin_only": true,
+    "UI6_remains_loopback_only": true
+  },
+  "schema": "TRUST_ROBOT_UI6_LIVE_BEHAVIOR_SESSION_HISTORY_CONTRACT_V1",
+  "scientific_boundary": {
+    "dashboard_transport_time_is_physical_measurement_time": false,
+    "history_creates_no_new_scientific_evidence": true,
+    "real_sensor_contact": false,
+    "SE4_complete": false,
+    "SE5_may_proceed": false
+  }
+}

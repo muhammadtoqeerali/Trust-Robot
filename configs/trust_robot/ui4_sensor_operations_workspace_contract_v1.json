@@ -1,0 +1,59 @@
+{
+  "authorization_state": {
+    "dashboard_may_create_authorization": false,
+    "grounded_authorization_required_for_real_execution": true,
+    "real_execution_authorization_count": 0
+  },
+  "channel_workspace": [
+    {
+      "id": "measurement_udp",
+      "protocol": "UDP",
+      "purpose": "VLP-32C measurement datagrams"
+    },
+    {
+      "id": "position_udp",
+      "protocol": "UDP",
+      "purpose": "VLP-32C position datagrams"
+    },
+    {
+      "id": "identity_http",
+      "protocol": "HTTP GET",
+      "path": "/cgi/info.json"
+    },
+    {
+      "id": "status_http",
+      "protocol": "HTTP GET",
+      "path": "/cgi/status.json"
+    },
+    {
+      "id": "diagnostic_http",
+      "protocol": "HTTP GET",
+      "path": "/cgi/diag.json"
+    }
+  ],
+  "network_policy": {
+    "dashboard_contacts_real_sensor": false,
+    "dashboard_executes_real_network_IO": false,
+    "operations_workspace_is_observability_only": true,
+    "UI4_remains_loopback_only": true
+  },
+  "runtime_binding": {
+    "required_field_count": 16,
+    "real_bound_field_count": 0,
+    "real_values_may_be_fabricated": false
+  },
+  "schema": "TRUST_ROBOT_UI4_SENSOR_OPERATIONS_WORKSPACE_CONTRACT_V1",
+  "scientific_boundary": {
+    "accepted_health_supervision_source_count": 0,
+    "health_labels_may_be_created_from_dashboard": false,
+    "real_health_label_count": 0,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false
+  },
+  "session_workspace": {
+    "real_session_started": false,
+    "real_session_id_available": false,
+    "synthetic_qualification_visible": true
+  }
+}

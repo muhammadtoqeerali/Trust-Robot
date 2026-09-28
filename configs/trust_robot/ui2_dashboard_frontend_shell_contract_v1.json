@@ -1,0 +1,58 @@
+{
+  "accessibility": {
+    "keyboard_navigation_required": true,
+    "semantic_landmarks_required": true,
+    "skip_link_required": true,
+    "status_updates_use_aria_live": true
+  },
+  "architecture": {
+    "API": "/api/v1/snapshot",
+    "external_CDNs": false,
+    "frontend": "HTML5 + CSS + ES modules",
+    "same_origin_with_aiohttp": true,
+    "separate_node_runtime_required": false
+  },
+  "frontend_routes": [
+    "GET /",
+    "GET /assets/styles.css",
+    "GET /assets/app.js"
+  ],
+  "navigation": [
+    "overview",
+    "dataset",
+    "features",
+    "operations",
+    "evidence",
+    "health"
+  ],
+  "network_policy": {
+    "frontend_may_contact_real_sensor": false,
+    "frontend_may_only_fetch_same_origin_dashboard_API": true,
+    "UI2_remains_loopback_only": true
+  },
+  "responsive_breakpoints": {
+    "compact_px": 760,
+    "medium_px": 1100
+  },
+  "schema": "TRUST_ROBOT_UI2_DASHBOARD_FRONTEND_SHELL_CONTRACT_V1",
+  "scientific_boundary": {
+    "ATE_RPE_controls": false,
+    "authorization_creation_controls": false,
+    "confirmation_open_controls": false,
+    "health_label_creation_controls": false,
+    "real_sensor_execution_controls": false,
+    "scientific_parameter_write_controls": false,
+    "synthetic_state_must_be_visibly_labeled": true,
+    "validation_open_controls": false
+  },
+  "scope": {
+    "dashboard_shell": true,
+    "dataset_summary_view": true,
+    "evidence_summary_view": true,
+    "feature_summary_view": true,
+    "health_boundary_summary_view": true,
+    "live_history_and_SSE": false,
+    "operations_summary_view": true,
+    "real_sensor_runtime_activation": false
+  }
+}

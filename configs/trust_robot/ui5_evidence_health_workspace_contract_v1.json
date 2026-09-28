@@ -1,0 +1,42 @@
+{
+  "evidence_classes": {
+    "repository_frozen_evidence": "available",
+    "software_qualification_receipt": "available",
+    "synthetic_live_stack_evidence": "available_synthetic",
+    "real_sensor_runtime_evidence": "unavailable",
+    "accepted_health_supervision": "unavailable",
+    "real_health_labels": "unavailable"
+  },
+  "health_supervision": {
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "dashboard_may_create_health_labels": false,
+    "health_model_training_ready": false,
+    "real_health_label_count": 0,
+    "SE4_training_authorized": false
+  },
+  "network_policy": {
+    "dashboard_contacts_external_evidence_services": false,
+    "dashboard_contacts_real_sensor": false,
+    "dashboard_is_read_only": true,
+    "UI5_remains_loopback_only": true
+  },
+  "receipt_registry": {
+    "qualification_receipt_visible": true,
+    "receipt_hashes_visible": true,
+    "run_specific_receipts_must_be_labeled_run_specific": true,
+    "synthetic_composite_receipt_visible": true,
+    "synthetic_receipts_may_be_presented_as_real_sensor_evidence": false
+  },
+  "schema": "TRUST_ROBOT_UI5_EVIDENCE_HEALTH_WORKSPACE_CONTRACT_V1",
+  "scientific_boundary": {
+    "ATE_RPE_available": false,
+    "confirmation_open": false,
+    "health_labels_may_be_inferred_from_feature_values": false,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "SE4_complete": false,
+    "SE5_may_proceed": false,
+    "validation_open": false
+  }
+}

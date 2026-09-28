@@ -1,0 +1,582 @@
+{
+  "acquisition": {
+    "authorization_controls_exposed": false,
+    "dashboard_mode": "software_only_evidence_shell",
+    "grounded_authorization_record_count": 0,
+    "health_label_controls_exposed": false,
+    "real_execution_authorization_count": 0,
+    "real_execution_controls_exposed": false,
+    "real_runtime_binding_count": 0,
+    "real_sensor_connected": false,
+    "real_sensor_connection_state": "not_executed",
+    "real_sensor_contact": false,
+    "real_sensor_network_IO_executed": false,
+    "sensor_configuration_controls_exposed": false,
+    "synthetic_live_stack": {
+      "HTTP_diagnostic_receipt_produced": true,
+      "HTTP_identity_receipt_produced": true,
+      "HTTP_status_receipt_produced": true,
+      "UDP_receipt_produced": true,
+      "composite_receipt_produced": true,
+      "execution_order": [
+        "UDP",
+        "HTTP:identity",
+        "HTTP:status",
+        "HTTP:diagnostic"
+      ],
+      "qualified": true,
+      "real_sensor_evidence": false
+    }
+  },
+  "api_version": "v1",
+  "capabilities": {
+    "create_execution_authorization": false,
+    "create_health_labels": false,
+    "execute_real_sensor_acquisition": false,
+    "modify_scientific_parameters": false,
+    "open_confirmation": false,
+    "open_validation": false,
+    "run_ATE_RPE": false,
+    "view_dataset_splits": true,
+    "view_evidence_hashes": true,
+    "view_project_state": true,
+    "view_real_feature_observations": true,
+    "view_scientific_blockers": true,
+    "view_synthetic_live_stack_qualification": true
+  },
+  "content_sha256": "4d67c1bb0c0bc0d7d6d532c10d4260cd4ffadd0c29dbf04b2f254d9a59ba8855",
+  "dashboard_policy": {
+    "current_UI_program_scope": {
+      "claims_real_runtime_dashboard": false,
+      "future_real_runtime_adapter_reserved": true,
+      "live_runtime_activation": false,
+      "software_only_evidence_shell": true
+    },
+    "dashboard_scientific_parameter_selection": false,
+    "dashboard_threshold_or_calibration_modification": false,
+    "dashboard_write_capability": false,
+    "frozen_legacy_boundary": {
+      "dashboard_may_display_only_real_or_explicitly_unavailable_values": true,
+      "dashboard_may_modify_frozen_thresholds_or_calibration": false,
+      "dashboard_may_select_scientific_parameters": false,
+      "dashboard_work_begins_after_real_runtime_outputs_exist": true,
+      "target": "github_plus_vercel"
+    }
+  },
+  "dataset": {
+    "confirmation_open": false,
+    "counts": {
+      "CONFIRMATION": 7,
+      "TRAIN": 22,
+      "VALIDATION": 7
+    },
+    "dashboard_allows_opening_closed_partitions": false,
+    "trajectories": {
+      "CONFIRMATION": [
+        "Circle_02",
+        "gate_02",
+        "hall_02",
+        "lift_01",
+        "room_01",
+        "room_dark_05",
+        "street_06"
+      ],
+      "TRAIN": [
+        "Circle_01",
+        "door_01",
+        "gate_01",
+        "hall_01",
+        "hall_03",
+        "hall_04",
+        "hall_05",
+        "lift_02",
+        "lift_04",
+        "room_02",
+        "room_dark_01",
+        "room_dark_02",
+        "room_dark_03",
+        "room_dark_04",
+        "street_01",
+        "street_010",
+        "street_03",
+        "street_04",
+        "street_05",
+        "street_07",
+        "street_09",
+        "walk_01"
+      ],
+      "VALIDATION": [
+        "door_02",
+        "gate_03",
+        "lift_03",
+        "room_03",
+        "room_dark_06",
+        "street_02",
+        "street_08"
+      ]
+    },
+    "validation_open": false
+  },
+  "deployment": {
+    "dataset_required_at_runtime": false,
+    "git_repository_required_at_runtime": false,
+    "platform": "vercel",
+    "real_sensor_network_required": false,
+    "runtime_branch_environment_variable": "VERCEL_GIT_COMMIT_REF",
+    "runtime_commit_environment_variable": "VERCEL_GIT_COMMIT_SHA",
+    "schema": "TRUST_ROBOT_VERCEL_DEPLOYMENT_STATE_V1",
+    "scope": "software_only_read_only_dashboard",
+    "source_checkpoint_branch": "trajectory-association-evaluation-protocol",
+    "source_checkpoint_head": "1cfc199b697e5bd515510db9896bf47ba95ef126",
+    "source_checkpoint_tree": "1df4f11d98cb88de3c1576611b1b0bf666ab1350",
+    "writable_server_state": false
+  },
+  "evidence": {
+    "accepted_health_supervision_available": false,
+    "all_values_traceable_to_repository_evidence": true,
+    "runtime_sensor_evidence_available": false,
+    "sources": [
+      {
+        "exists": true,
+        "path": "manifests/trust_robot_se4_software_only_end_to_end_qualification_freeze_v1.json",
+        "sha256": "0017b8036c4fbf0627eb93bad34a5070de02082707959348dff3be8a7d81a2d1"
+      },
+      {
+        "exists": true,
+        "path": "manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json",
+        "sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+      },
+      {
+        "exists": true,
+        "path": "configs/trust_robot/software_evidence_completion_plan_v1.json",
+        "sha256": "5624c4b6e28172859122abec121735314d317d613bded01a0ce18501ea715cdb"
+      },
+      {
+        "exists": true,
+        "path": "configs/trust_robot/se4_health_model_training_resolution_v1.json",
+        "sha256": "8d68167359b95d978ad9c39b8c9cfc87204b28def090f0fb3c2c640b61d4cfaa"
+      },
+      {
+        "exists": true,
+        "path": "configs/trust_robot/se4_real_train_runtime_input_binding_v2.json",
+        "sha256": "740705b97fa088f31efe3e603e9c25d3c005d9cae1b757479377cc7aabe517fb"
+      }
+    ]
+  },
+  "features": {
+    "camera": {
+      "bag_timestamp_ns": 1627643739533299874,
+      "feature_names": [
+        "gray_mean_intensity_8bit",
+        "gray_std_intensity_8bit",
+        "gray_mean_abs_neighbor_difference_8bit"
+      ],
+      "feature_values": [
+        118.984404296875,
+        67.17714891875188,
+        4.872886772762849
+      ]
+    },
+    "d435i_imu": {
+      "bag_timestamp_ns": 1627643739482808635,
+      "feature_names": [
+        "angular_speed_norm_rad_s",
+        "linear_acceleration_norm_m_s2"
+      ],
+      "feature_values": [
+        0.0034743013743035868,
+        9.76639145189828
+      ]
+    },
+    "evidence_class": "real_M2DGR_TRAIN_software_evidence",
+    "feature_values_are_ground_truth_error": false,
+    "feature_values_are_health_labels": false,
+    "feature_values_are_health_predictions": false,
+    "handsfree_imu": {
+      "bag_timestamp_ns": 1627643739487759438,
+      "feature_names": [
+        "angular_speed_norm_rad_s",
+        "linear_acceleration_norm_m_s2"
+      ],
+      "feature_values": [
+        0.0021029424511825835,
+        10.04871765839132
+      ]
+    },
+    "representative_trajectory": "room_02",
+    "velodyne": {
+      "bag_timestamp_ns": 1627643739605994074,
+      "frozen_SE3_lidar_feature_contract": [
+        "source_point_count",
+        "target_point_count",
+        "fixed_point_iterations",
+        "final_correspondence_count",
+        "final_nearest_neighbor_rmse_m"
+      ],
+      "full_lidar_registration_rerun": false,
+      "serialized_payload_bytes": 1121202,
+      "serialized_payload_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd"
+    }
+  },
+  "frontend_program_id": "TRUST_ROBOT_FRONT_SIDE_OPERATIONS_DASHBOARD_V1",
+  "health_supervision": {
+    "SE2_health_model_training_blocked": true,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE4_training_execution_blocked": true,
+    "SE5_entry_blocked": true,
+    "SE5_may_proceed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "blockers": [
+      {
+        "current_count": 0,
+        "display_name": "Accepted baseline nominality source",
+        "id": "baseline_nominality_source",
+        "required": true,
+        "resolved": false
+      },
+      {
+        "current_count": 0,
+        "display_name": "Accepted health supervision source",
+        "id": "health_supervision_source",
+        "required": true,
+        "resolved": false
+      },
+      {
+        "current_count": 0,
+        "display_name": "Real health labels",
+        "id": "real_health_labels",
+        "required": true,
+        "resolved": false
+      },
+      {
+        "current_count": null,
+        "display_name": "Interval binding",
+        "id": "interval_binding",
+        "required": true,
+        "resolved": false
+      },
+      {
+        "current_count": null,
+        "display_name": "Physical measurement time",
+        "id": "physical_measurement_time",
+        "required": true,
+        "resolved": false
+      }
+    ],
+    "dashboard_controls": {
+      "accept_supervision_source": false,
+      "authorize_training": false,
+      "create_health_label": false,
+      "override_blocker": false
+    },
+    "feature_values_may_be_used_as_health_labels": false,
+    "feature_values_may_be_used_as_health_predictions": false,
+    "health_label_generated": false,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "real_health_label_count": 0,
+    "status": "blocked_pending_accepted_health_supervision",
+    "training_ready": false,
+    "unresolved_blocker_count": 5
+  },
+  "operations": {
+    "authorization": {
+      "authorization_available": false,
+      "grounded_authorization_record_count": 0,
+      "real_execution_authorization_count": 0,
+      "state": "awaiting_grounded_authorization"
+    },
+    "channels": [
+      {
+        "bind_value_source": "bind_ipv4",
+        "display_name": "Measurement UDP",
+        "endpoint_value_source": "measurement_udp_port",
+        "execution_state": "not_executed",
+        "id": "measurement_udp",
+        "protocol": "UDP",
+        "purpose": "VLP-32C measurement datagrams",
+        "real_endpoint_available": false,
+        "real_sensor_evidence_available": false
+      },
+      {
+        "bind_value_source": "bind_ipv4",
+        "display_name": "Position UDP",
+        "endpoint_value_source": "position_udp_port",
+        "execution_state": "not_executed",
+        "id": "position_udp",
+        "protocol": "UDP",
+        "purpose": "VLP-32C position datagrams",
+        "real_endpoint_available": false,
+        "real_sensor_evidence_available": false
+      },
+      {
+        "display_name": "Identity HTTP",
+        "execution_state": "not_executed",
+        "id": "identity_http",
+        "path": "/cgi/info.json",
+        "protocol": "HTTP GET",
+        "purpose": "Sensor identity evidence",
+        "real_endpoint_available": false,
+        "real_sensor_evidence_available": false
+      },
+      {
+        "display_name": "Status HTTP",
+        "execution_state": "not_executed",
+        "id": "status_http",
+        "path": "/cgi/status.json",
+        "protocol": "HTTP GET",
+        "purpose": "Sensor status evidence",
+        "real_endpoint_available": false,
+        "real_sensor_evidence_available": false
+      },
+      {
+        "display_name": "Diagnostic HTTP",
+        "execution_state": "not_executed",
+        "id": "diagnostic_http",
+        "path": "/cgi/diag.json",
+        "protocol": "HTTP GET",
+        "purpose": "Sensor diagnostic evidence",
+        "real_endpoint_available": false,
+        "real_sensor_evidence_available": false
+      }
+    ],
+    "controls": {
+      "create_authorization": false,
+      "create_health_label": false,
+      "edit_runtime_binding": false,
+      "execute_real_sensor": false,
+      "modify_scientific_parameters": false
+    },
+    "lifecycle": [
+      {
+        "display_name": "Real runtime binding",
+        "evidence_available": false,
+        "id": "runtime_binding",
+        "state": "waiting"
+      },
+      {
+        "display_name": "Grounded authorization",
+        "evidence_available": false,
+        "id": "grounded_authorization",
+        "state": "waiting"
+      },
+      {
+        "display_name": "UDP capture",
+        "evidence_available": false,
+        "id": "udp_capture",
+        "state": "not_executed"
+      },
+      {
+        "display_name": "Identity read",
+        "evidence_available": false,
+        "id": "identity_http",
+        "state": "not_executed"
+      },
+      {
+        "display_name": "Status read",
+        "evidence_available": false,
+        "id": "status_http",
+        "state": "not_executed"
+      },
+      {
+        "display_name": "Diagnostic read",
+        "evidence_available": false,
+        "id": "diagnostic_http",
+        "state": "not_executed"
+      },
+      {
+        "display_name": "Composite evidence receipt",
+        "evidence_available": false,
+        "id": "composite_receipt",
+        "state": "not_executed"
+      }
+    ],
+    "live_real_runtime_activated": false,
+    "mode": "software_only",
+    "real_network_IO_executed": false,
+    "real_sensor_connected": false,
+    "real_sensor_connection_state": "not_executed",
+    "real_sensor_contact": false,
+    "runtime_binding": {
+      "real_bound_field_count": 0,
+      "required_field_count": 16,
+      "required_fields": [
+        "acquisition_session_id",
+        "split",
+        "bind_ipv4",
+        "measurement_udp_port",
+        "position_udp_port",
+        "sensor_ipv4",
+        "capture_duration_seconds",
+        "http_port",
+        "absolute_output_root",
+        "http_connect_timeout_seconds",
+        "http_total_timeout_seconds",
+        "vlp32c_destination_ipv4",
+        "vlp32c_measurement_destination_udp_port",
+        "vlp32c_position_destination_udp_port",
+        "vlp32c_destination_configuration_verified",
+        "declared_before_execution"
+      ],
+      "state": "awaiting_external_real_values",
+      "values_available": false
+    },
+    "session": {
+      "real_session_id": null,
+      "real_session_id_state": "unavailable",
+      "real_session_started": false,
+      "reason": "no_real_sensor_session_executed"
+    },
+    "synthetic_qualification": {
+      "UDP_receipt_produced": true,
+      "composite_receipt_produced": true,
+      "diagnostic_receipt_produced": true,
+      "execution_order": [
+        "UDP",
+        "HTTP:identity",
+        "HTTP:status",
+        "HTTP:diagnostic"
+      ],
+      "identity_receipt_produced": true,
+      "qualified": true,
+      "real_sensor_evidence": false,
+      "status_receipt_produced": true
+    },
+    "workspace_kind": "future_real_sensor_observability"
+  },
+  "overview": {
+    "bounded_replay_deterministic": true,
+    "bounded_replay_digest_sha256": "68cda190573e34204567407a7783b7ba028696f9d21d10e72a149c7508e2904e",
+    "bounded_replay_message_count": 45,
+    "current_scientific_frontier": "SE4_training_blocked_pending_accepted_health_supervision",
+    "mode": "software_only",
+    "physical_or_health_evidence_fabricated": false,
+    "proves_health_model": false,
+    "proves_real_sensor_operation": false,
+    "real_stream_count": 4,
+    "representative_real_data_trajectory": "room_02",
+    "software_level_end_to_end_qualification": "passed",
+    "system_name": "TRUST-ROBOT"
+  },
+  "read_only": true,
+  "receipts": {
+    "real_sensor_receipt_count": 0,
+    "real_sensor_runtime_evidence_available": false,
+    "receipt_count": 2,
+    "receipt_hashes_are_scientific_truth_by_themselves": false,
+    "registry": [
+      {
+        "availability": "available",
+        "content_sha256": "5b82e5bc482376ff2b099ee9cf58d2432067b8277f472c9946f9e258e3b52974",
+        "display_name": "Software-only E2E qualification receipt",
+        "evidence_class": "software_qualification_receipt",
+        "file_sha256": "ce5ea8d5adcd6b8a8a304c661242b3ff5260189495ec959209fd6ec89ce8f988",
+        "id": "software_only_E2E_qualification_receipt",
+        "real_sensor_evidence": false,
+        "run_specific": true,
+        "stability_requirement": false,
+        "synthetic": false
+      },
+      {
+        "availability": "available_synthetic",
+        "display_name": "Synthetic composite session receipt",
+        "evidence_class": "synthetic_live_stack_evidence",
+        "id": "synthetic_composite_session_receipt",
+        "real_sensor_evidence": false,
+        "receipt_sha256": "2692942fa3c8e0f65b3eb4ed75e40c7d658dba27682c1ec2fbd083bff0b3bb9f",
+        "run_specific": true,
+        "stability_requirement": false,
+        "synthetic": true
+      }
+    ],
+    "run_specific_receipt_count": 2
+  },
+  "replay": {
+    "ATE_RPE_computed": false,
+    "bag_file_size_bytes": 15162620712,
+    "bag_relative_path": "raw/rosbags/room_02.bag",
+    "bounded_replay_deterministic": true,
+    "bounded_replay_digest_sha256": "68cda190573e34204567407a7783b7ba028696f9d21d10e72a149c7508e2904e",
+    "bounded_replay_message_count": 45,
+    "real_stream_count": 4,
+    "real_stream_ids": [
+      "/camera/color/image_raw/compressed",
+      "/camera/imu",
+      "/handsfree/imu",
+      "/velodyne_points"
+    ],
+    "reference_trajectory_accessed": false,
+    "split": "TRAIN",
+    "trajectory_id": "room_02"
+  },
+  "repository": {
+    "branch": "trajectory-association-evaluation-protocol",
+    "deployment_metadata_source": "vercel_runtime_environment",
+    "head": "1cfc199b697e5bd515510db9896bf47ba95ef126",
+    "tree": null,
+    "value_origin": "local_git_repository",
+    "worktree_clean": null
+  },
+  "schema": "TRUST_ROBOT_DASHBOARD_READ_ONLY_SNAPSHOT_V1",
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "SE2_health_model_training_blocked": true,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE4_training_execution_blocked": true,
+    "SE5_entry_blocked": true,
+    "SE5_may_proceed": false,
+    "accepted_baseline_nominality_source_count": 0,
+    "accepted_health_supervision_source_count": 0,
+    "confirmation_access": false,
+    "dashboard_may_override_boundary": false,
+    "grounded_authorization_record_count": 0,
+    "health_label_generated": false,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "real_execution_authorization_count": 0,
+    "real_health_label_count": 0,
+    "real_runtime_binding_count": 0,
+    "real_sensor_contact": false,
+    "real_sensor_network_IO_executed": false,
+    "reference_trajectory_accessed": false,
+    "validation_access": false
+  },
+  "session_history": {
+    "history_creates_new_scientific_evidence": false,
+    "history_is_real_sensor_history": false,
+    "real_sensor_session_count": 0,
+    "real_sensor_session_history_available": false,
+    "record_count": 2,
+    "records": [
+      {
+        "display_name": "Software-only E2E qualification",
+        "evidence_class": "real_M2DGR_TRAIN_software_evidence",
+        "execution_timestamp": null,
+        "id": "software_only_E2E_qualification",
+        "kind": "software_qualification",
+        "real_sensor_session": false,
+        "receipt_sha256": "ce5ea8d5adcd6b8a8a304c661242b3ff5260189495ec959209fd6ec89ce8f988",
+        "state": "passed",
+        "synthetic": false,
+        "time_basis": "execution_time_not_claimed",
+        "trajectory_id": "room_02"
+      },
+      {
+        "display_name": "Synthetic live-stack qualification",
+        "evidence_class": "synthetic_live_stack_evidence",
+        "execution_timestamp": null,
+        "id": "synthetic_live_stack_qualification",
+        "kind": "synthetic_live_stack",
+        "real_sensor_session": false,
+        "receipt_sha256": "2692942fa3c8e0f65b3eb4ed75e40c7d658dba27682c1ec2fbd083bff0b3bb9f",
+        "state": "passed",
+        "synthetic": true,
+        "time_basis": "execution_time_not_claimed",
+        "trajectory_id": null
+      }
+    ]
+  }
+}

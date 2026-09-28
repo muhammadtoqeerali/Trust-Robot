@@ -1,0 +1,42 @@
+{
+  "deployment": {
+    "existing_vercel_project": "trust-robot",
+    "framework_override": "fastapi",
+    "framework_override_source": "vercel.json",
+    "new_vercel_project_created": false,
+    "preview_before_production": true,
+    "repository_root": true
+  },
+  "failure_recovery": {
+    "previous_preview_ready_but_application_routes_unavailable": true,
+    "previous_project_framework_preset": "other",
+    "source_controlled_framework_pin_required": true
+  },
+  "runtime": {
+    "git_repository_required": false,
+    "local_dataset_required": false,
+    "real_sensor_network_required": false,
+    "server_writable_state": false
+  },
+  "schema": "TRUST_ROBOT_UI9_VERCEL_PREVIEW_QUALIFICATION_CONTRACT_V1",
+  "scientific_boundary": {
+    "ATE_RPE_available": false,
+    "confirmation_open": false,
+    "health_training_ready": false,
+    "real_health_label_count": 0,
+    "real_sensor_contact": false,
+    "real_sensor_network_IO": false,
+    "real_sensor_session_count": 0,
+    "SE4_complete": false,
+    "SE5_may_proceed": false,
+    "validation_open": false
+  },
+  "verification": {
+    "api_health": true,
+    "api_snapshot": true,
+    "eventsource": true,
+    "root_HTML": true,
+    "static_assets": true,
+    "write_methods_blocked": true
+  }
+}

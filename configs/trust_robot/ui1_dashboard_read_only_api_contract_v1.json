@@ -1,0 +1,58 @@
+{
+  "api": {
+    "framework": "aiohttp",
+    "prefix": "/api/v1",
+    "read_only": true,
+    "version": "v1"
+  },
+  "architecture": {
+    "backend": "Python aiohttp",
+    "frontend_future": "zero-dependency HTML/CSS/ES modules served same-origin",
+    "future_live_update_transport": "Server-Sent Events",
+    "separate_node_server_required": false
+  },
+  "endpoints": [
+    "GET /api/v1/health",
+    "GET /api/v1/snapshot",
+    "GET /api/v1/overview",
+    "GET /api/v1/repository",
+    "GET /api/v1/dataset",
+    "GET /api/v1/features",
+    "GET /api/v1/acquisition",
+    "GET /api/v1/scientific-boundary",
+    "GET /api/v1/dashboard-policy",
+    "GET /api/v1/evidence",
+    "GET /api/v1/capabilities"
+  ],
+  "frontend_program_id": "TRUST_ROBOT_FRONT_SIDE_OPERATIONS_DASHBOARD_V1",
+  "network_policy": {
+    "UI1_default_bind_host": "127.0.0.1",
+    "UI1_non_loopback_bind_allowed": false,
+    "dashboard_HTTP_is_sensor_HTTP": false,
+    "real_sensor_network_IO_allowed": false
+  },
+  "prohibited_capabilities": [
+    "real sensor acquisition execution",
+    "execution authorization creation",
+    "health label creation",
+    "scientific parameter selection",
+    "frozen threshold modification",
+    "calibration modification",
+    "validation split opening",
+    "confirmation split opening",
+    "ATE/RPE execution"
+  ],
+  "schema": "TRUST_ROBOT_UI1_DASHBOARD_READ_ONLY_API_CONTRACT_V1",
+  "scientific_boundary": {
+    "backend_scientific_truth_is_authoritative": true,
+    "dashboard_can_override_backend_truth": false,
+    "software_only_state_may_appear_as_real_sensor_evidence": false,
+    "synthetic_values_must_be_labeled_synthetic": true,
+    "unavailable_values_must_be_explicitly_unavailable": true
+  },
+  "scope": {
+    "live_real_runtime_dashboard_activated": false,
+    "software_only_evidence_shell": true,
+    "future_real_sensor_adapter_reserved": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "dataset_view": {
+    "partition_counts": true,
+    "partition_trajectory_lists": true,
+    "representative_trajectory_highlight": true,
+    "validation_open_control": false,
+    "confirmation_open_control": false
+  },
+  "evidence_view": {
+    "repository_branch": true,
+    "repository_head": true,
+    "repository_tree": true,
+    "repository_worktree_clean": true,
+    "source_file_hashes": true
+  },
+  "feature_view": {
+    "camera_observation": true,
+    "d435i_IMU_observation": true,
+    "handsfree_IMU_observation": true,
+    "velodyne_payload_observation": true,
+    "timestamps_visible": true,
+    "health_label_interpretation": false,
+    "health_prediction_interpretation": false
+  },
+  "network_policy": {
+    "frontend_fetches_same_origin_snapshot_only": true,
+    "real_sensor_network_IO": false,
+    "external_services": false
+  },
+  "replay_view": {
+    "bag_relative_path": true,
+    "bag_file_size_bytes": true,
+    "message_count": true,
+    "reader_order_digest": true,
+    "deterministic_state": true,
+    "stream_ids": true
+  },
+  "schema": "TRUST_ROBOT_UI3_DASHBOARD_DATA_VIEWS_CONTRACT_V1",
+  "scientific_boundary": {
+    "feature_values_are_health_labels": false,
+    "feature_values_are_health_predictions": false,
+    "validation_remains_closed": true,
+    "confirmation_remains_closed": true,
+    "ATE_RPE_remains_unavailable": true,
+    "dashboard_write_capability": false
+  }
+}
