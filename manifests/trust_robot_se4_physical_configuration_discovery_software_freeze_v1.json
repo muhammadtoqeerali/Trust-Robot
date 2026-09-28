@@ -1,0 +1,87 @@
+{
+  "architecture_transition": {
+    "Verona_workstation_is_required_to_be_physical_sensor_host": false,
+    "confirmation_split_open": false,
+    "offline_ML_development_on_frozen_M2DGR_TRAIN_allowed_next": true,
+    "portable_acquisition_architecture_required_next": true,
+    "validation_split_open": false
+  },
+  "content_sha256": "743265c1a9e3107457cf100b2baee3c96b84bacf53b47c78b98128ea6d02a0dc",
+  "created_utc": "2026-09-28T10:58:49Z",
+  "current_physical_truth": {
+    "physical_configuration_discovery_completed": false,
+    "real_TRAIN_execution": false,
+    "real_UDP_acquisition": false,
+    "real_runtime_binding_count": 0,
+    "real_sensor_contact": false,
+    "real_sensor_network_IO_executed": false
+  },
+  "current_scientific_truth": {
+    "ATE_RPE_available_from_real_sensor_execution": false,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "health_label_generation_authorized": false,
+    "interval_binding_established": false,
+    "physical_measurement_time_established": false,
+    "real_health_label_count": 0,
+    "source_acceptance_authorized": false
+  },
+  "network_contract": {
+    "ARP_scan_allowed": false,
+    "HTTP_write_methods_allowed": false,
+    "UDP_measurement_acquisition_allowed": false,
+    "configuration_discovery_HTTP_method": "GET",
+    "fallback_endpoint_search_allowed": false,
+    "maximum_configuration_discovery_HTTP_requests": 2,
+    "network_scan_allowed": false,
+    "ping_allowed": false,
+    "sensor_configuration_changes_allowed": false
+  },
+  "next_phase": "Audit and implement offline ML development using only the frozen M2DGR TRAIN split, with explicit synthetic corruption labels and without opening frozen VALIDATION or CONFIRMATION.",
+  "parent_checkpoint": {
+    "HEAD": "f973c8850d32c0764d09c67b1f6282a04410efc1",
+    "tree": "85bc8351abaa66122d96e4d414f45845925c998c"
+  },
+  "qualification": {
+    "all_passed": true,
+    "executor_targeted_tests": 24,
+    "full_regression_tests": 2649,
+    "protocol_targeted_tests": 28
+  },
+  "qualified_artifacts": {
+    "configs/trust_robot/se4_physical_configuration_discovery_executor_v1.json": {
+      "bytes": 768,
+      "sha256": "aa0e82e50ad7064b80293e14e7f05ad77c615c778421cf01becf37a9a058341d"
+    },
+    "configs/trust_robot/se4_physical_configuration_discovery_protocol_v1.json": {
+      "bytes": 3384,
+      "sha256": "597c806a0a8d44a3d9729c5c6d2c05c11e09db0ef982cd0d4356276c696b7fec"
+    },
+    "src/trust_robot/se4_physical_configuration_discovery.py": {
+      "bytes": 23012,
+      "sha256": "b927100bf3110138d23795dfb3711d0c3b3a1590f168b991cd439059190a4a4e"
+    },
+    "src/trust_robot/se4_physical_configuration_discovery_executor.py": {
+      "bytes": 13602,
+      "sha256": "b9746d5a0b3ec0a9ce9e95ec9d021faebf890d99cd535f796c74a895e68f1113"
+    },
+    "tests/trust_robot/test_se4_physical_configuration_discovery.py": {
+      "bytes": 12563,
+      "sha256": "995d26097cd6bd17201bfb86e5ceaee2377a3f9bfa342f27817c7e21d863b940"
+    },
+    "tests/trust_robot/test_se4_physical_configuration_discovery_executor.py": {
+      "bytes": 19374,
+      "sha256": "b626434f31e8f9ff1c806caf8a4090a09a6e74503b88fd0c46005e0db084fd15"
+    }
+  },
+  "schema": "TRUST_ROBOT_SE4_PHYSICAL_CONFIGURATION_DISCOVERY_SOFTWARE_FREEZE_V1",
+  "schema_version": 1,
+  "scope": {
+    "ML_training": false,
+    "bounded_read_only_discovery_executor": true,
+    "physical_configuration_discovery_protocol": true,
+    "portable_sensor_acquisition": false,
+    "real_TRAIN_acquisition": false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "content_sha256": "25fa178ba6474f0f659e8a0c296b6780044abb6f3c1006161234a272530a9ba6",
+  "current_state": {
+    "grounded_configuration_discovery_record_count": 0,
+    "real_configuration_discovery_authorization_count": 0,
+    "real_configuration_discovery_candidate_count": 0,
+    "real_configuration_discovery_execution_count": 0,
+    "real_runtime_binding_count": 0,
+    "real_sensor_contact": false,
+    "real_sensor_network_IO_executed": false
+  },
+  "discovery_contract": {
+    "ARP_scan_allowed": false,
+    "HTTP_method": "GET",
+    "HTTP_write_methods_allowed": false,
+    "allowed_paths": [
+      "/cgi/info.json",
+      "/cgi/snapshot.hdl"
+    ],
+    "authorization_schema": "TRUST_ROBOT_SE4_PHYSICAL_CONFIGURATION_DISCOVERY_AUTHORIZATION_V1",
+    "candidate_schema": "TRUST_ROBOT_SE4_PHYSICAL_CONFIGURATION_DISCOVERY_CANDIDATE_V1",
+    "exact_operator_acknowledgement_required": "I_AUTHORIZE_READ_ONLY_VLP32C_CONFIGURATION_DISCOVERY",
+    "external_authorization_record_digest_required": true,
+    "maximum_HTTP_request_count": 2,
+    "minimum_request_spacing_seconds": 1,
+    "ping_allowed": false,
+    "port_scan_allowed": false,
+    "scope": "read_only_physical_configuration_discovery",
+    "sensor_configuration_changes_allowed": false,
+    "separate_hash_bound_authorization_required": true,
+    "subnet_scan_allowed": false
+  },
+  "manufacturer_documented_discovery_candidates": {
+    "candidate_destination_ipv4": "255.255.255.255",
+    "candidate_http_port": 80,
+    "candidate_measurement_udp_port": 2368,
+    "candidate_position_udp_port": 8308,
+    "candidate_sensor_ipv4": "192.168.1.201",
+    "candidate_temporary_host_ipv4": "192.168.1.100",
+    "factory_values_are_current_unit_configuration": false,
+    "factory_values_are_runtime_binding": false
+  },
+  "protocol_id": "trust_robot_se4_physical_configuration_discovery_v1",
+  "purpose": "Resolve the bootstrap gap between a zero-contact repository state and the externally grounded physical values required for one real TRAIN V2 runtime binding.",
+  "schema": "TRUST_ROBOT_SE4_PHYSICAL_CONFIGURATION_DISCOVERY_PROTOCOL_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "SE4_complete": false,
+    "SE4_training_authorized": false,
+    "SE5_may_proceed": false,
+    "configuration_discovery_establishes_interval_binding": false,
+    "configuration_discovery_establishes_physical_measurement_time": false,
+    "configuration_discovery_is_health_label": false,
+    "configuration_discovery_is_health_supervision": false,
+    "configuration_discovery_is_real_TRAIN_execution": false,
+    "configuration_discovery_is_runtime_binding": false,
+    "configuration_discovery_is_source_acceptance": false
+  },
+  "transition_policy": {
+    "after_successful_discovery": "Treat observed sensor settings as configuration evidence only, then separately construct and validate the 16-field real TRAIN V2 runtime binding.",
+    "configuration_discovery_authorized": false,
+    "network_execution_implemented_by_this_module": false,
+    "next_required_event": "Construct one explicit bounded discovery candidate, one external operator authorization record, and one separate hash-bound discovery authorization. Only then may the documented candidate endpoint receive at most two GET requests for identity and configuration snapshot.",
+    "software_protocol_resolved": true
+  }
+}

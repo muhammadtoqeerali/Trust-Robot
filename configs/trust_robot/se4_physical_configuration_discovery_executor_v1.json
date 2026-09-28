@@ -1,0 +1,23 @@
+{
+  "HTTP_method": "GET",
+  "SE4_training_authorized": false,
+  "SE5_may_proceed": false,
+  "UDP_measurement_acquisition_allowed": false,
+  "allowed_paths": [
+    "/cgi/info.json",
+    "/cgi/snapshot.hdl"
+  ],
+  "fallback_endpoint_search_allowed": false,
+  "health_label_generation_authorized": false,
+  "maximum_HTTP_request_count": 2,
+  "maximum_response_bytes": 4194304,
+  "minimum_request_spacing_seconds": 1,
+  "real_TRAIN_execution_authorized": false,
+  "redirect_following_allowed": false,
+  "retry_allowed": false,
+  "schema": "TRUST_ROBOT_SE4_PHYSICAL_CONFIGURATION_DISCOVERY_EXECUTOR_V1",
+  "schema_version": 1,
+  "scope": "read_only_physical_configuration_discovery",
+  "sensor_configuration_write_allowed": false,
+  "source_acceptance_authorized": false
+}
