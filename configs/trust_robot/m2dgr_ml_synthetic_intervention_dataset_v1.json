@@ -1,0 +1,204 @@
+{
+  "content_sha256": "c7148a53f5366ff840133e748ab9a2712a81371f271927476f864a728538fd45",
+  "dataset_id": "M2DGR",
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "method": "trajectory_group_holdout",
+    "random_row_split_allowed": false,
+    "trajectory_cross_partition_allowed": false
+  },
+  "expected_development_check_input_records": 26580,
+  "expected_development_check_samples": 53150,
+  "expected_development_check_window_pairs": 26575,
+  "expected_development_train_input_records": 64412,
+  "expected_development_train_samples": 128790,
+  "expected_development_train_window_pairs": 64395,
+  "expected_total_input_records": 90992,
+  "expected_total_samples": 181940,
+  "expected_total_window_pairs": 90970,
+  "label_contract": {
+    "0": "uncorrupted_source_window",
+    "1": "declared_synthetic_EVENT_REPEAT",
+    "labels_are_real_physical_health_truth": false,
+    "labels_are_synthetic_intervention_truth": true
+  },
+  "outer_split": "TRAIN",
+  "schema": "TRUST_ROBOT_M2DGR_ML_SYNTHETIC_INTERVENTION_DATASET_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "confirmation_access": false,
+    "final_health_model_training_authorized": false,
+    "health_state_assignment": false,
+    "real_physical_health_truth": false,
+    "reference_data_access": false,
+    "synthetic_intervention_benchmark_only": true,
+    "validation_access": false
+  },
+  "source_contract": {
+    "feature_order": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "phase4_config_file": "configs/trust_robot/phase4_lidar_train_diagnostic_artifacts_v1.json",
+    "phase4_config_file_sha256": "1cba3d90b1539486b9f35fdd649f1bdaf0d8434c1e3a03502355fe60e59297fc",
+    "phase4_feature_extraction_aggregate_sha256": "42658bdb5739200f02dc1397f753b78ca60eb22f6bc5d913e42c6a208fc61020",
+    "raw_rosbag_reprocessing": false,
+    "split_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "source_files": {
+    "Circle_01": {
+      "record_count": 2338,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/Circle_01.jsonl",
+      "sha256": "d967f8e041cc256e83398b3177d36fe56d4aa9838fa3290fa856883718c161f7"
+    },
+    "door_01": {
+      "record_count": 4605,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/door_01.jsonl",
+      "sha256": "eccb280c91e30cff6ccf2a3c5da5654356ae505411576f3a655bc391cdfc2337"
+    },
+    "gate_01": {
+      "record_count": 1721,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/gate_01.jsonl",
+      "sha256": "8402a2779d33cc11ff0631042206187e55a4d21726b361d994e00c77ba1dea0b"
+    },
+    "hall_01": {
+      "record_count": 3510,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_01.jsonl",
+      "sha256": "521fadc7d6dee66f9a163f7bc7cc7f2c5f39e51fdd5aa5e5b3a24b33a87e9443"
+    },
+    "hall_03": {
+      "record_count": 1644,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_03.jsonl",
+      "sha256": "472a2834f1218a199e49aa1900e2e4f537fb5f5e92a8d6bdf26377e93f88116a"
+    },
+    "hall_04": {
+      "record_count": 1812,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_04.jsonl",
+      "sha256": "78f88fb4287a8ca4d2cdaef67e0d321c288411a997a91f32b207a5849ae28bf0"
+    },
+    "hall_05": {
+      "record_count": 4016,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_05.jsonl",
+      "sha256": "872e0b009d9c81e6cc957a42ec175c312d205182be82daccb58709d7ceff97c0"
+    },
+    "lift_02": {
+      "record_count": 4872,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/lift_02.jsonl",
+      "sha256": "bec1585af5ad4c9b8e513bc357140bde71941c09235f42dd242a290a96c3bd3c"
+    },
+    "lift_04": {
+      "record_count": 2985,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/lift_04.jsonl",
+      "sha256": "de87c4c84332f2c9bd7913d728b8e8df8ed6f7925ae7b4939a9a6810c15e3208"
+    },
+    "room_02": {
+      "record_count": 751,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_02.jsonl",
+      "sha256": "322610e738fdfd4c77a3489a6f012c6084e5e084ff69db5d0a3c7610f9753b17"
+    },
+    "room_dark_01": {
+      "record_count": 1111,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_01.jsonl",
+      "sha256": "bffb03ea82cd075442de4eb19971b7d418d014d4edbd26f52cc803507c3a4ed5"
+    },
+    "room_dark_02": {
+      "record_count": 1646,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_02.jsonl",
+      "sha256": "3d95dedae8bbed10bc6a20d049a14ce6dc38d40738e7869ffc96b46579d2fff5"
+    },
+    "room_dark_03": {
+      "record_count": 1158,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_03.jsonl",
+      "sha256": "6826866ba4d78b937d25ef5a71c8e16255a5b6ef81c4e4962834d18c95971be5"
+    },
+    "room_dark_04": {
+      "record_count": 1434,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_04.jsonl",
+      "sha256": "0a91eb822fdf7a36df5ffc41c7ac62260141772c108faa76829f484083fac3f3"
+    },
+    "street_01": {
+      "record_count": 10269,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_01.jsonl",
+      "sha256": "09e9a3703323e1e14fb2abd30836a044ab50e577c8022743489d81f499dc6112"
+    },
+    "street_010": {
+      "record_count": 9086,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_010.jsonl",
+      "sha256": "f1d8becffe0f75b9e562051eb1e3adce4df2ff8ea397cf0832667606c4f3d5fe"
+    },
+    "street_03": {
+      "record_count": 3534,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_03.jsonl",
+      "sha256": "9c76ec3b83800e8b78b76d7d10a17e5863a9f74378e87a49fbb3f55a79733d1b"
+    },
+    "street_04": {
+      "record_count": 8567,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_04.jsonl",
+      "sha256": "aa5fd5747d80fdd5d8650f9d9cb61cdac81033f36465b7ede3752147a6808232"
+    },
+    "street_05": {
+      "record_count": 4686,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_05.jsonl",
+      "sha256": "c39bda6b2fe3872f1b2822123dddd9ccba1b8cb8b8a2466e95e5fa9c8e6b43fe"
+    },
+    "street_07": {
+      "record_count": 9275,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_07.jsonl",
+      "sha256": "15ab6dd3eaa0eee8243082bf370160824cc43998cef71cd75ed075dd071723ae"
+    },
+    "street_09": {
+      "record_count": 9059,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_09.jsonl",
+      "sha256": "faa77bdbf9ef76dcb93a32e4aa04558ab30e619ca58b75ab221da8a60a944d78"
+    },
+    "walk_01": {
+      "record_count": 2913,
+      "relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/walk_01.jsonl",
+      "sha256": "89eaa501848c68934f137c74b88ae36c600b42fdc0d6989be1a58628ef90a88b"
+    }
+  },
+  "synthetic_intervention": {
+    "confirmation_used_for_selection": false,
+    "family": "EVENT_REPEAT",
+    "kernel_timestamp_is_physical_measurement_time": false,
+    "kernel_timestamp_semantics": "synthetic_local_ordinal_only",
+    "length": 1,
+    "magnitude_selection_source": "explicit_pre_execution_literal",
+    "modality": "lidar",
+    "observed_estimator_output_used_for_selection": false,
+    "reference_data_used_for_selection": false,
+    "target_index": 1,
+    "target_selection_source": "deterministic_train_metadata_rule",
+    "validation_used_for_selection": false,
+    "window_event_count": 2
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "content_sha256": "21155892fde0aa73cdbc7adf5b26a206ce6c528b3115961a36d614b3d039b886",
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "method": "trajectory_group_holdout",
+    "random_row_split_allowed": false,
+    "trajectory_overlap_allowed": false
+  },
+  "feature_count": 5,
+  "feature_names": [
+    "source_point_count",
+    "target_point_count",
+    "fixed_point_iterations",
+    "final_correspondence_count",
+    "final_nearest_neighbor_rmse_m"
+  ],
+  "metrics": [
+    "balanced_accuracy",
+    "precision",
+    "recall",
+    "f1",
+    "roc_auc",
+    "average_precision",
+    "brier_score",
+    "confusion_matrix",
+    "per_trajectory_metrics",
+    "single_feature_univariate_auc_report"
+  ],
+  "model_hyperparameters": {
+    "histogram_gradient_boosting": {
+      "l2_regularization": 1e-06,
+      "learning_rate": 0.1,
+      "max_iter": 150,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "scaler": "StandardScaler",
+      "solver": "lbfgs"
+    },
+    "random_forest": {
+      "class_weight": "balanced",
+      "max_depth": 16,
+      "max_features": "sqrt",
+      "min_samples_leaf": 4,
+      "n_estimators": 128,
+      "n_jobs": 1
+    }
+  },
+  "model_names": [
+    "logistic_regression",
+    "random_forest",
+    "histogram_gradient_boosting"
+  ],
+  "probability_threshold": 0.5,
+  "random_seed": 20260928,
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_EVENT_GAP_BASELINE_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_TRUST_ROBOT_health_model": false,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "target_semantics": "synthetic_EVENT_GAP_intervention_truth_only"
+  },
+  "selection_policy": {
+    "confirmation_used": false,
+    "development_check_used_for_fitting": false,
+    "development_check_used_for_reporting_only": true,
+    "final_health_model_selected": false,
+    "hyperparameter_search_executed": false,
+    "model_family_selection_executed": false,
+    "real_health_labels_used": false,
+    "reference_data_used": false,
+    "validation_used": false
+  },
+  "source_dataset": {
+    "SUCCESS_sha256": "29751b74c6163bbc434086fca488e4a38133cb17412b039c7d8c07e9697bc9eb",
+    "dataset": "M2DGR",
+    "development_check_file_sha256": "f3b2e92b0815bd42e4f978f933109c312676bb044e244a57fbf117a8e51c935c",
+    "development_check_samples": 1000,
+    "development_train_file_sha256": "ab1710bad5bf52ee63e65e038718631286b054a691e3f8a72befafaed4c250e3",
+    "development_train_samples": 3400,
+    "outer_split": "TRAIN",
+    "paired_window_count": 2200,
+    "run_manifest_sha256": "1ea4872b954826c313840f9a73136539ec2560998fbdbfc8991507961055de1e",
+    "window_provenance_file_sha256": "43359f12a6a2a8758d202666d6dca170afeb344192294199f5f3d8e5057a5ef4"
+  },
+  "task": "synthetic_EVENT_GAP_registration_diagnostic_discrimination"
+}

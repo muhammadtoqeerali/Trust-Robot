@@ -1,0 +1,72 @@
+{
+  "content_sha256": "44a63ff2814ebfce6e8498a65f5906b9b30eb8ef09cb90973ff41da5a70aa8a5",
+  "determinism": {
+    "CONFIRMATION_used_for_parameter_selection": false,
+    "VALIDATION_used_for_parameter_selection": false,
+    "hash_function": "SHA256",
+    "model_outputs_used_for_parameter_selection": false,
+    "operator_parameters_selected_before_raw_execution": true,
+    "pseudo_random_generator": "numpy_PCG64",
+    "reference_data_used_for_parameter_selection": false,
+    "registration_diagnostics_used_for_parameter_selection": false,
+    "window_key_required": true
+  },
+  "future_raw_replay": {
+    "authorized_by_this_config": false,
+    "execution_mode": "nohup_pid_log_workstation_independent",
+    "expected_long_running": true,
+    "new_corrupted_registration_count": 3300,
+    "selected_scan_count": 2200,
+    "selected_window_count": 1100,
+    "trajectory_count": 22,
+    "windows_per_trajectory": 50
+  },
+  "immutability": {
+    "clean_stream_modified_in_place": false,
+    "non_target_events_modified": false,
+    "origin_indices_modified": false,
+    "timestamps_modified": false
+  },
+  "operators": {
+    "AZIMUTH_SECTOR_OCCLUSION": {
+      "changes_XYZ_values_of_retained_points": false,
+      "changes_point_count": true,
+      "sector_center_selection": "SHA256_window_key_mapping_to_azimuth",
+      "sector_width_degrees": 60.0,
+      "target_event": "current_scan",
+      "target_event_index": 1
+    },
+    "POINT_DROPOUT": {
+      "changes_XYZ_values_of_retained_points": false,
+      "changes_point_count": true,
+      "remove_fraction": 0.3,
+      "selection": "PCG64_without_replacement_from_hash_derived_seed",
+      "target_event": "current_scan",
+      "target_event_index": 1
+    },
+    "XYZ_GAUSSIAN_NOISE": {
+      "changes_XYZ_values": true,
+      "changes_point_count": false,
+      "distribution": "independent_zero_mean_Gaussian_per_XYZ_coordinate",
+      "sampling": "numpy_PCG64_from_hash_derived_seed",
+      "sigma_m": 0.05,
+      "target_event": "current_scan",
+      "target_event_index": 1
+    }
+  },
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_POINT_LEVEL_CORRUPTION_OPERATORS_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_health_model_selection": false,
+    "model_fit_authorized": false,
+    "raw_M2DGR_execution_authorized": false,
+    "real_health_labels_created": false,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "synthetic_intervention_truth": true
+  },
+  "scope": "TRAIN_only_synthetic_point_level_LiDAR_corruption"
+}

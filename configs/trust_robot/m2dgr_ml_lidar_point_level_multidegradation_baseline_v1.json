@@ -1,0 +1,128 @@
+{
+  "class_weighting": {
+    "development_train_clean_count": 850,
+    "development_train_degraded_count": 2550,
+    "method": "balanced_binary_sample_weight",
+    "reason": "one CLEAN and three degraded samples exist per selected window",
+    "weights_derived_from_training_labels_only": true
+  },
+  "content_sha256": "6d58bba0d07e832663c43852ffbdf81553df8fa12f64ed66a6553bbdf0a8c635",
+  "degradation_families": [
+    "POINT_DROPOUT",
+    "XYZ_GAUSSIAN_NOISE",
+    "AZIMUTH_SECTOR_OCCLUSION"
+  ],
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "method": "trajectory_group_holdout",
+    "random_row_split_allowed": false,
+    "trajectory_overlap_allowed": false
+  },
+  "feature_names": [
+    "source_point_count",
+    "target_point_count",
+    "fixed_point_iterations",
+    "final_correspondence_count",
+    "final_nearest_neighbor_rmse_m"
+  ],
+  "model_hyperparameters": {
+    "histogram_gradient_boosting": {
+      "l2_regularization": 1e-06,
+      "learning_rate": 0.1,
+      "max_iter": 150,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "scaler": "StandardScaler",
+      "solver": "lbfgs"
+    },
+    "random_forest": {
+      "max_depth": 16,
+      "max_features": "sqrt",
+      "min_samples_leaf": 4,
+      "n_estimators": 128,
+      "n_jobs": 1
+    }
+  },
+  "model_names": [
+    "logistic_regression",
+    "random_forest",
+    "histogram_gradient_boosting"
+  ],
+  "primary_label": {
+    "0": "CLEAN",
+    "1": "ANY_DECLARED_POINT_LEVEL_SYNTHETIC_DEGRADATION"
+  },
+  "probability_threshold": 0.5,
+  "random_seed": 20260928,
+  "reporting": {
+    "multiclass_family_model_fit": false,
+    "overall_binary_metrics": true,
+    "per_degradation_family_metrics": true,
+    "per_trajectory_metrics": true
+  },
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_POINT_LEVEL_MULTIDEGRADATION_BASELINE_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_health_model_training": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "synthetic_intervention_truth": true
+  },
+  "selection_policy": {
+    "CONFIRMATION_used": false,
+    "VALIDATION_used": false,
+    "development_check_used_for_fitting": false,
+    "final_health_model_selected": false,
+    "hyperparameter_search_executed": false,
+    "model_family_selection_executed": false,
+    "real_health_labels_used": false,
+    "reference_data_used": false
+  },
+  "source_dataset": {
+    "SUCCESS_sha256": "e54d268a24ac10b5a173e278a821dce61843c1d8ccf9a3642ca3f61a84b78457",
+    "dataset": "M2DGR",
+    "development_check_samples": 1000,
+    "development_check_sha256": "e81a3fa509e6ce8084a4611c1b6da0c35fe208274f7eecb47e954f7070905d86",
+    "development_check_windows": 250,
+    "development_train_samples": 3400,
+    "development_train_sha256": "cd0c6128faae45614f590fa1b84f0712f0e4532539895234448f9997fa1d988f",
+    "development_train_windows": 850,
+    "outer_split": "TRAIN",
+    "run_manifest_sha256": "e685f548ab8e63999d5ae85a5160f18e4cf29e84df5998ec7f7ae3e5d348aaed",
+    "window_provenance_sha256": "b971665d37a8105507d37b83e4b500fde10d8b78dd847b4e457e7e9afdbbcf97"
+  },
+  "task": "binary_clean_vs_point_level_synthetic_degraded"
+}

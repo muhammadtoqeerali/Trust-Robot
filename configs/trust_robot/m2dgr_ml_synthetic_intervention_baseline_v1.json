@@ -1,0 +1,116 @@
+{
+  "content_sha256": "914ec4619f2338359ef235db23f40fbff23fa64a42d16609eae9b8b113488dea",
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "method": "trajectory_group_holdout",
+    "random_row_split_allowed": false,
+    "trajectory_grouping_required": true
+  },
+  "mechanism_signature_baseline": {
+    "definition": "Predict synthetic EVENT_REPEAT when all five current diagnostic values exactly equal the five previous values.",
+    "enabled": true,
+    "is_health_model": false,
+    "purpose": "Measure how much of the benchmark is mechanically identifiable without machine learning."
+  },
+  "metrics": [
+    "balanced_accuracy",
+    "precision",
+    "recall",
+    "f1",
+    "roc_auc",
+    "average_precision",
+    "brier_score",
+    "confusion_matrix",
+    "per_trajectory_metrics"
+  ],
+  "model_hyperparameters": {
+    "histogram_gradient_boosting": {
+      "l2_regularization": 1e-06,
+      "learning_rate": 0.1,
+      "max_iter": 150,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "scaler": "StandardScaler",
+      "solver": "lbfgs"
+    },
+    "random_forest": {
+      "class_weight": "balanced",
+      "max_depth": 16,
+      "max_features": "sqrt",
+      "min_samples_leaf": 4,
+      "n_estimators": 128,
+      "n_jobs": 1
+    }
+  },
+  "model_names": [
+    "logistic_regression",
+    "random_forest",
+    "histogram_gradient_boosting"
+  ],
+  "probability_threshold": 0.5,
+  "random_seed": 20260928,
+  "schema": "TRUST_ROBOT_M2DGR_SYNTHETIC_INTERVENTION_BASELINE_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_health_model_training": false,
+    "health_state_output": false,
+    "labels": "synthetic_intervention_truth_only",
+    "real_physical_health_truth": false
+  },
+  "selection_policy": {
+    "confirmation_used": false,
+    "development_check_used_for_fitting": false,
+    "development_check_used_for_reporting_only": true,
+    "final_health_model_selected": false,
+    "hyperparameter_search_executed": false,
+    "model_family_search_executed": false,
+    "real_health_labels_used": false,
+    "reference_data_used": false,
+    "validation_used": false
+  },
+  "source_dataset": {
+    "dataset": "M2DGR",
+    "dataset_SUCCESS_sha256": "bb62a88882118bca5a38b3f72c93f3435bc099b3b963641bf3890abe5c6fbe44",
+    "dataset_run_manifest_sha256": "70c9ebeb9ec95a4f9b2b16d17677b96f3e4d09ead991067b41654bd205cf002b",
+    "dataset_summary_sha256": "fb1f1c769eb021f100948bc628e7fd3dc39627dea8578e4c1fc070539941a714",
+    "development_check_file_sha256": "cbde738c86ad6f0c725ee6acb6bf9aa11eb0929d2bcd444bc5d248656e7e2d3e",
+    "development_check_sample_count": 53150,
+    "development_train_file_sha256": "110dafb86bbf1046a384512edea55de1f3d342e893e87aea487545845cb0d05b",
+    "development_train_sample_count": 128790,
+    "feature_count": 10,
+    "outer_split": "TRAIN"
+  },
+  "task": "synthetic_EVENT_REPEAT_intervention_discrimination"
+}

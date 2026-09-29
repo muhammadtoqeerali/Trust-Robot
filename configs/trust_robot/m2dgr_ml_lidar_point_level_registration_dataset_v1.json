@@ -1,0 +1,292 @@
+{
+  "content_sha256": "ff7931b7265c70e9ee72208d4c45ddb1793f82c31f88c76ba75397deb9137e84",
+  "dataset": "M2DGR",
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "random_row_split_allowed": false,
+    "trajectory_group_isolation": true
+  },
+  "expected_AZIMUTH_SECTOR_OCCLUSION_samples": 1100,
+  "expected_POINT_DROPOUT_samples": 1100,
+  "expected_XYZ_GAUSSIAN_NOISE_samples": 1100,
+  "expected_clean_samples": 1100,
+  "expected_development_check_windows": 250,
+  "expected_development_train_windows": 850,
+  "expected_new_corrupted_registrations": 3300,
+  "expected_phase4_diagnostic_counts": {
+    "Circle_01": 2338,
+    "door_01": 4605,
+    "gate_01": 1721,
+    "hall_01": 3510,
+    "hall_03": 1644,
+    "hall_04": 1812,
+    "hall_05": 4016,
+    "lift_02": 4872,
+    "lift_04": 2985,
+    "room_02": 751,
+    "room_dark_01": 1111,
+    "room_dark_02": 1646,
+    "room_dark_03": 1158,
+    "room_dark_04": 1434,
+    "street_01": 10269,
+    "street_010": 9086,
+    "street_03": 3534,
+    "street_04": 8567,
+    "street_05": 4686,
+    "street_07": 9275,
+    "street_09": 9059,
+    "walk_01": 2913
+  },
+  "expected_selected_raw_scans": 2200,
+  "expected_total_samples": 4400,
+  "expected_total_windows": 1100,
+  "feature_names": [
+    "source_point_count",
+    "target_point_count",
+    "fixed_point_iterations",
+    "final_correspondence_count",
+    "final_nearest_neighbor_rmse_m"
+  ],
+  "outer_split": "TRAIN",
+  "phase4_contract": {
+    "aggregate_sha256": "42658bdb5739200f02dc1397f753b78ca60eb22f6bc5d913e42c6a208fc61020",
+    "config_sha256": "1cba3d90b1539486b9f35fdd649f1bdaf0d8434c1e3a03502355fe60e59297fc"
+  },
+  "point_level_corruptions": {
+    "AZIMUTH_SECTOR_OCCLUSION": {
+      "sector_width_degrees": 60.0
+    },
+    "POINT_DROPOUT": {
+      "remove_fraction": 0.3
+    },
+    "XYZ_GAUSSIAN_NOISE": {
+      "sigma_m": 0.05
+    }
+  },
+  "qualified_operator_artifacts": {
+    "config": "configs/trust_robot/m2dgr_lidar_point_level_corruption_operators_v1.json",
+    "config_sha256": "2bde6b8ca5f39b13f6890a11be1ebdfa6e6ad1a50db9bc4572b82b3269df2a1",
+    "module": "src/trust_robot/lidar_point_level_corruption.py",
+    "module_sha256": "26dfc2ba4eaa11e66bd4a3b9d530a3cb09d6d76ee62ccd0c4820a06eca784858",
+    "test": "tests/trust_robot/test_lidar_point_level_corruption.py",
+    "test_sha256": "37dd74dc958587d58b7997cef6292df2f6934a986cdb9ab527d9f60e00b5c485"
+  },
+  "resumability": {
+    "per_trajectory_checkpointing": true,
+    "restart_skips_hash_verified_completed_trajectories": true,
+    "trajectory_provenance_file": true,
+    "trajectory_receipt": true,
+    "trajectory_sample_file": true
+  },
+  "runtime": {
+    "expected_long_running": true,
+    "foreground_laptop_session_required": false,
+    "launch_mode": "nohup_pid_log",
+    "unbuffered_python": true
+  },
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_POINT_LEVEL_REGISTRATION_DATASET_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_health_model_selection": false,
+    "health_state_assignment": false,
+    "model_fit_authorized": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "synthetic_intervention_truth": true
+  },
+  "source_files": {
+    "Circle_01": {
+      "bag_relative_path": "raw/rosbags/Circle_01.bag",
+      "bag_size_bytes": 23250587328,
+      "phase4_record_count": 2338,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/Circle_01.jsonl",
+      "phase4_sha256": "d967f8e041cc256e83398b3177d36fe56d4aa9838fa3290fa856883718c161f7"
+    },
+    "door_01": {
+      "bag_relative_path": "raw/rosbags/door_01.bag",
+      "bag_size_bytes": 35460797903,
+      "phase4_record_count": 4605,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/door_01.jsonl",
+      "phase4_sha256": "eccb280c91e30cff6ccf2a3c5da5654356ae505411576f3a655bc391cdfc2337"
+    },
+    "gate_01": {
+      "bag_relative_path": "raw/rosbags/gate_01.bag",
+      "bag_size_bytes": 16373999247,
+      "phase4_record_count": 1721,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/gate_01.jsonl",
+      "phase4_sha256": "8402a2779d33cc11ff0631042206187e55a4d21726b361d994e00c77ba1dea0b"
+    },
+    "hall_01": {
+      "bag_relative_path": "raw/rosbags/hall_01.bag",
+      "bag_size_bytes": 29054106807,
+      "phase4_record_count": 3510,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_01.jsonl",
+      "phase4_sha256": "521fadc7d6dee66f9a163f7bc7cc7f2c5f39e51fdd5aa5e5b3a24b33a87e9443"
+    },
+    "hall_03": {
+      "bag_relative_path": "raw/rosbags/hall_03.bag",
+      "bag_size_bytes": 20523226437,
+      "phase4_record_count": 1644,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_03.jsonl",
+      "phase4_sha256": "472a2834f1218a199e49aa1900e2e4f537fb5f5e92a8d6bdf26377e93f88116a"
+    },
+    "hall_04": {
+      "bag_relative_path": "raw/rosbags/hall_04.bag",
+      "bag_size_bytes": 17711933747,
+      "phase4_record_count": 1812,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_04.jsonl",
+      "phase4_sha256": "78f88fb4287a8ca4d2cdaef67e0d321c288411a997a91f32b207a5849ae28bf0"
+    },
+    "hall_05": {
+      "bag_relative_path": "raw/rosbags/hall_05.bag",
+      "bag_size_bytes": 35119340535,
+      "phase4_record_count": 4016,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/hall_05.jsonl",
+      "phase4_sha256": "872e0b009d9c81e6cc957a42ec175c312d205182be82daccb58709d7ceff97c0"
+    },
+    "lift_02": {
+      "bag_relative_path": "raw/rosbags/lift_02.bag",
+      "bag_size_bytes": 43591689194,
+      "phase4_record_count": 4872,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/lift_02.jsonl",
+      "phase4_sha256": "bec1585af5ad4c9b8e513bc357140bde71941c09235f42dd242a290a96c3bd3c"
+    },
+    "lift_04": {
+      "bag_relative_path": "raw/rosbags/lift_04.bag",
+      "bag_size_bytes": 27814558712,
+      "phase4_record_count": 2985,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/lift_04.jsonl",
+      "phase4_sha256": "de87c4c84332f2c9bd7913d728b8e8df8ed6f7925ae7b4939a9a6810c15e3208"
+    },
+    "room_02": {
+      "bag_relative_path": "raw/rosbags/room_02.bag",
+      "bag_size_bytes": 15162620712,
+      "phase4_record_count": 751,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_02.jsonl",
+      "phase4_sha256": "322610e738fdfd4c77a3489a6f012c6084e5e084ff69db5d0a3c7610f9753b17"
+    },
+    "room_dark_01": {
+      "bag_relative_path": "raw/rosbags/room_dark_01.bag",
+      "bag_size_bytes": 20157750139,
+      "phase4_record_count": 1111,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_01.jsonl",
+      "phase4_sha256": "bffb03ea82cd075442de4eb19971b7d418d014d4edbd26f52cc803507c3a4ed5"
+    },
+    "room_dark_02": {
+      "bag_relative_path": "raw/rosbags/room_dark_02.bag",
+      "bag_size_bytes": 30295640787,
+      "phase4_record_count": 1646,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_02.jsonl",
+      "phase4_sha256": "3d95dedae8bbed10bc6a20d049a14ce6dc38d40738e7869ffc96b46579d2fff5"
+    },
+    "room_dark_03": {
+      "bag_relative_path": "raw/rosbags/room_dark_03.bag",
+      "bag_size_bytes": 22664591738,
+      "phase4_record_count": 1158,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_03.jsonl",
+      "phase4_sha256": "6826866ba4d78b937d25ef5a71c8e16255a5b6ef81c4e4962834d18c95971be5"
+    },
+    "room_dark_04": {
+      "bag_relative_path": "raw/rosbags/room_dark_04.bag",
+      "bag_size_bytes": 29342676061,
+      "phase4_record_count": 1434,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/room_dark_04.jsonl",
+      "phase4_sha256": "0a91eb822fdf7a36df5ffc41c7ac62260141772c108faa76829f484083fac3f3"
+    },
+    "street_01": {
+      "bag_relative_path": "raw/rosbags/street_01.bag",
+      "bag_size_bytes": 75760411232,
+      "phase4_record_count": 10269,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_01.jsonl",
+      "phase4_sha256": "09e9a3703323e1e14fb2abd30836a044ab50e577c8022743489d81f499dc6112"
+    },
+    "street_010": {
+      "bag_relative_path": "raw/rosbags/street_010.bag",
+      "bag_size_bytes": 86249828923,
+      "phase4_record_count": 9086,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_010.jsonl",
+      "phase4_sha256": "f1d8becffe0f75b9e562051eb1e3adce4df2ff8ea397cf0832667606c4f3d5fe"
+    },
+    "street_03": {
+      "bag_relative_path": "raw/rosbags/street_03.bag",
+      "bag_size_bytes": 21279882853,
+      "phase4_record_count": 3534,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_03.jsonl",
+      "phase4_sha256": "9c76ec3b83800e8b78b76d7d10a17e5863a9f74378e87a49fbb3f55a79733d1b"
+    },
+    "street_04": {
+      "bag_relative_path": "raw/rosbags/street_04.bag",
+      "bag_size_bytes": 48651446875,
+      "phase4_record_count": 8567,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_04.jsonl",
+      "phase4_sha256": "aa5fd5747d80fdd5d8650f9d9cb61cdac81033f36465b7ede3752147a6808232"
+    },
+    "street_05": {
+      "bag_relative_path": "raw/rosbags/street_05.bag",
+      "bag_size_bytes": 27414820542,
+      "phase4_record_count": 4686,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_05.jsonl",
+      "phase4_sha256": "c39bda6b2fe3872f1b2822123dddd9ccba1b8cb8b8a2466e95e5fa9c8e6b43fe"
+    },
+    "street_07": {
+      "bag_relative_path": "raw/rosbags/street_07.bag",
+      "bag_size_bytes": 77191125434,
+      "phase4_record_count": 9275,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_07.jsonl",
+      "phase4_sha256": "15ab6dd3eaa0eee8243082bf370160824cc43998cef71cd75ed075dd071723ae"
+    },
+    "street_09": {
+      "bag_relative_path": "raw/rosbags/street_09.bag",
+      "bag_size_bytes": 83180083877,
+      "phase4_record_count": 9059,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/street_09.jsonl",
+      "phase4_sha256": "faa77bdbf9ef76dcb93a32e4aa04558ab30e619ca58b75ab221da8a60a944d78"
+    },
+    "walk_01": {
+      "bag_relative_path": "raw/rosbags/walk_01.bag",
+      "bag_size_bytes": 21523357822,
+      "phase4_record_count": 2913,
+      "phase4_relative_path": "audit/phase4_lidar_train_diagnostics_v1/features/walk_01.jsonl",
+      "phase4_sha256": "89eaa501848c68934f137c74b88ae36c600b42fdc0d6989be1a58628ef90a88b"
+    }
+  },
+  "window_selection": {
+    "CONFIRMATION_used": false,
+    "VALIDATION_used": false,
+    "feature_values_used_for_selection": false,
+    "method": "deterministic_even_spacing_from_frozen_phase4_diagnostic_count",
+    "non_overlapping": true,
+    "prior_model_results_used": false,
+    "window_scan_count": 2
+  },
+  "windows_per_trajectory": 50
+}

@@ -1,0 +1,377 @@
+{
+  "content_sha256": "48fb42c54021f1c2477fbe39ab5912c7e49edcde730d7d4811fe3958510fbc69",
+  "development_evidence": {
+    "EVENT_GAP": {
+      "histogram_gradient_boosting_development_check_balanced_accuracy": 0.6359999999999999,
+      "logistic_regression_development_check_balanced_accuracy": 0.628,
+      "random_forest_development_check_balanced_accuracy": 0.633,
+      "role": "stream_integrity_degradation_benchmark"
+    },
+    "EVENT_REPEAT": {
+      "interpretation": "Mechanically trivial synthetic benchmark; not evidence of general sensor-health intelligence.",
+      "mechanism_signature_balanced_accuracy": 1.0,
+      "role": "pipeline_sanity_benchmark"
+    },
+    "POINT_LEVEL_MULTIDEGRADATION": {
+      "development_check_overall": {
+        "histogram_gradient_boosting": {
+          "average_precision": 0.9701566014926081,
+          "balanced_accuracy": 0.796,
+          "brier_score": 0.11974645306901976,
+          "roc_auc": 0.9064586666666667
+        },
+        "logistic_regression": {
+          "average_precision": 0.9571068212590117,
+          "balanced_accuracy": 0.8326666666666667,
+          "brier_score": 0.15048264487526034,
+          "roc_auc": 0.86392
+        },
+        "random_forest": {
+          "average_precision": 0.9691567391424115,
+          "balanced_accuracy": 0.8140000000000001,
+          "brier_score": 0.10908688164845247,
+          "roc_auc": 0.9061786666666666
+        }
+      },
+      "development_check_per_family": {
+        "histogram_gradient_boosting": {
+          "AZIMUTH_SECTOR_OCCLUSION": {
+            "average_precision": 0.997543742102129,
+            "balanced_accuracy": 0.88,
+            "brier_score": 0.08537446448051837,
+            "confusion_matrix": {
+              "fn": 0,
+              "fp": 60,
+              "tn": 190,
+              "tp": 250
+            },
+            "f1": 0.8928571428571429,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.8064516129032258,
+            "recall": 1.0,
+            "roc_auc": 0.997888,
+            "sample_count": 500
+          },
+          "POINT_DROPOUT": {
+            "average_precision": 0.999968253968254,
+            "balanced_accuracy": 0.88,
+            "brier_score": 0.08537429358537403,
+            "confusion_matrix": {
+              "fn": 0,
+              "fp": 60,
+              "tn": 190,
+              "tp": 250
+            },
+            "f1": 0.8928571428571429,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.8064516129032258,
+            "recall": 1.0,
+            "roc_auc": 0.999968,
+            "sample_count": 500
+          },
+          "XYZ_GAUSSIAN_NOISE": {
+            "average_precision": 0.7150797839365993,
+            "balanced_accuracy": 0.628,
+            "brier_score": 0.23949273374799282,
+            "confusion_matrix": {
+              "fn": 126,
+              "fp": 60,
+              "tn": 190,
+              "tp": 124
+            },
+            "f1": 0.5714285714285714,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.6739130434782609,
+            "recall": 0.496,
+            "roc_auc": 0.7215199999999999,
+            "sample_count": 500
+          }
+        },
+        "logistic_regression": {
+          "AZIMUTH_SECTOR_OCCLUSION": {
+            "average_precision": 1.0,
+            "balanced_accuracy": 0.998,
+            "brier_score": 0.03532177265124208,
+            "confusion_matrix": {
+              "fn": 0,
+              "fp": 1,
+              "tn": 249,
+              "tp": 250
+            },
+            "f1": 0.998003992015968,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.9960159362549801,
+            "recall": 1.0,
+            "roc_auc": 1.0,
+            "sample_count": 500
+          },
+          "POINT_DROPOUT": {
+            "average_precision": 1.0,
+            "balanced_accuracy": 0.998,
+            "brier_score": 0.03530321452447828,
+            "confusion_matrix": {
+              "fn": 0,
+              "fp": 1,
+              "tn": 249,
+              "tp": 250
+            },
+            "f1": 0.998003992015968,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.9960159362549801,
+            "recall": 1.0,
+            "roc_auc": 1.0,
+            "sample_count": 500
+          },
+          "XYZ_GAUSSIAN_NOISE": {
+            "average_precision": 0.5507731840260247,
+            "balanced_accuracy": 0.502,
+            "brier_score": 0.3009467312279433,
+            "confusion_matrix": {
+              "fn": 248,
+              "fp": 1,
+              "tn": 249,
+              "tp": 2
+            },
+            "f1": 0.015810276679841896,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.6666666666666666,
+            "recall": 0.008,
+            "roc_auc": 0.59176,
+            "sample_count": 500
+          }
+        },
+        "random_forest": {
+          "AZIMUTH_SECTOR_OCCLUSION": {
+            "average_precision": 0.9946382411942477,
+            "balanced_accuracy": 0.906,
+            "brier_score": 0.07335283237840948,
+            "confusion_matrix": {
+              "fn": 0,
+              "fp": 47,
+              "tn": 203,
+              "tp": 250
+            },
+            "f1": 0.9140767824497258,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.8417508417508418,
+            "recall": 1.0,
+            "roc_auc": 0.99688,
+            "sample_count": 500
+          },
+          "POINT_DROPOUT": {
+            "average_precision": 0.9959521295629474,
+            "balanced_accuracy": 0.906,
+            "brier_score": 0.07280824146789848,
+            "confusion_matrix": {
+              "fn": 0,
+              "fp": 47,
+              "tn": 203,
+              "tp": 250
+            },
+            "f1": 0.9140767824497258,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.8417508417508418,
+            "recall": 1.0,
+            "roc_auc": 0.997968,
+            "sample_count": 500
+          },
+          "XYZ_GAUSSIAN_NOISE": {
+            "average_precision": 0.7064186883452543,
+            "balanced_accuracy": 0.63,
+            "brier_score": 0.2176289171563315,
+            "confusion_matrix": {
+              "fn": 138,
+              "fp": 47,
+              "tn": 203,
+              "tp": 112
+            },
+            "f1": 0.5476772616136919,
+            "negative_count": 250,
+            "positive_count": 250,
+            "precision": 0.7044025157232704,
+            "recall": 0.448,
+            "roc_auc": 0.7236879999999999,
+            "sample_count": 500
+          }
+        }
+      },
+      "families": [
+        "POINT_DROPOUT",
+        "XYZ_GAUSSIAN_NOISE",
+        "AZIMUTH_SECTOR_OCCLUSION"
+      ],
+      "new_corrupted_registrations": 3300,
+      "samples": 4400,
+      "selected_windows": 1100
+    }
+  },
+  "external_artifacts": {
+    "event_gap_baseline_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_baseline_v1/SUCCESS.json",
+      "sha256": "b80f65ced86aa1092dae9369108480c95c53eaa3cbb9dc203936344146d60e02"
+    },
+    "event_gap_baseline_results": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_baseline_v1/baseline_results.json",
+      "sha256": "d64aa5180dbe00a3e15c35337dff7c3b8841a838f0405e2e43b141b743c3847e"
+    },
+    "event_gap_baseline_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_baseline_v1/run_manifest.json",
+      "sha256": "05e2060e208374bcacfd3b95e8692b712bdd5ecaeff2266c32f0a4a4b39c9924"
+    },
+    "event_gap_dataset_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_registration_dataset_v1/SUCCESS.json",
+      "sha256": "29751b74c6163bbc434086fca488e4a38133cb17412b039c7d8c07e9697bc9eb"
+    },
+    "event_gap_dataset_check": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_registration_dataset_v1/development_check.jsonl",
+      "sha256": "f3b2e92b0815bd42e4f978f933109c312676bb044e244a57fbf117a8e51c935c"
+    },
+    "event_gap_dataset_provenance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_registration_dataset_v1/window_provenance.jsonl",
+      "sha256": "43359f12a6a2a8758d202666d6dca170afeb344192294199f5f3d8e5057a5ef4"
+    },
+    "event_gap_dataset_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_registration_dataset_v1/run_manifest.json",
+      "sha256": "1ea4872b954826c313840f9a73136539ec2560998fbdbfc8991507961055de1e"
+    },
+    "event_gap_dataset_train": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_event_gap_registration_dataset_v1/development_train.jsonl",
+      "sha256": "ab1710bad5bf52ee63e65e038718631286b054a691e3f8a72befafaed4c250e3"
+    },
+    "point_level_baseline_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_multidegradation_baseline_v1/SUCCESS.json",
+      "sha256": "a81ad0b9f632d1fcc67b2ccbb005343000a9c4db24536bd6b14b27ebb5cc5568"
+    },
+    "point_level_baseline_results": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_multidegradation_baseline_v1/baseline_results.json",
+      "sha256": "c47bcefce73bd0eaa689fd4f6704209e109d41d8c169c68b71a32ec365de00ad"
+    },
+    "point_level_baseline_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_multidegradation_baseline_v1/run_manifest.json",
+      "sha256": "d571df5f0edb3b62a3cce155947826e03f567a2fd0d7e170438b8747667bc51b"
+    },
+    "point_level_dataset_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/SUCCESS.json",
+      "sha256": "e54d268a24ac10b5a173e278a821dce61843c1d8ccf9a3642ca3f61a84b78457"
+    },
+    "point_level_dataset_check": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/development_check.jsonl",
+      "sha256": "e81a3fa509e6ce8084a4611c1b6da0c35fe208274f7eecb47e954f7070905d86"
+    },
+    "point_level_dataset_provenance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/window_provenance.jsonl",
+      "sha256": "b971665d37a8105507d37b83e4b500fde10d8b78dd847b4e457e7e9afdbbcf97"
+    },
+    "point_level_dataset_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/run_manifest.json",
+      "sha256": "e685f548ab8e63999d5ae85a5160f18e4cf29e84df5998ec7f7ae3e5d348aaed"
+    },
+    "point_level_dataset_train": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/development_train.jsonl",
+      "sha256": "cd0c6128faae45614f590fa1b84f0712f0e4532539895234448f9997fa1d988f"
+    },
+    "repeat_baseline_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_synthetic_intervention_baseline_v1/SUCCESS.json",
+      "sha256": "df3060b90727608994514c0ac97e6b9bb65179e8ac84882ac60eb13728c8fb4e"
+    },
+    "repeat_baseline_results": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_synthetic_intervention_baseline_v1/baseline_results.json",
+      "sha256": "67d24737dc3638afc38117263a2304cb33a464bebbf3f36b625f8aa0b6b31ed9"
+    },
+    "repeat_baseline_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_synthetic_intervention_baseline_v1/run_manifest.json",
+      "sha256": "d5710d1c7381bed2e10e4381a331c8fd03d569df19e6dafe7ef37b01488c0d32"
+    },
+    "repeat_dataset_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_synthetic_intervention_dataset_v1/SUCCESS.json",
+      "sha256": "bb62a88882118bca5a38b3f72c93f3435bc099b3b963641bf3890abe5c6fbe44"
+    },
+    "repeat_dataset_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_synthetic_intervention_dataset_v1/run_manifest.json",
+      "sha256": "70c9ebeb9ec95a4f9b2b16d17677b96f3e4d09ead991067b41654bd205cf002b"
+    }
+  },
+  "model_decision": {
+    "final_health_model_training_executed": false,
+    "final_model_selected": false,
+    "model_family_selection_executed": false,
+    "reason": "Development evidence is heterogeneous across degradation families and Gaussian-noise detection remains weak."
+  },
+  "parent_checkpoint": {
+    "git_head": "9ad394d3027db9fcb5fca372934e64f26cb0cf64",
+    "git_tree": "08a50a9f9eb14cdae3b17a06043bc1ab15780aa4"
+  },
+  "qualification": {
+    "full_regression_tests": 2823,
+    "targeted_tests": 28
+  },
+  "repository_files": {
+    "configs/trust_robot/m2dgr_lidar_point_level_corruption_operators_v1.json": "2bde6b8ca5f39b13f6890a11be1ebdfa6e6ad1a50db9bc4572b82b3269df2a1b",
+    "configs/trust_robot/m2dgr_ml_lidar_event_gap_baseline_v1.json": "78d3145cefbfe932e656e9ab9a369fd52f2e53bb59e7b6d8750376fd304c25cf",
+    "configs/trust_robot/m2dgr_ml_lidar_event_gap_registration_dataset_v1.json": "e3752eb32bea3a7686703ac06bc64930b32a4bbf01d48dd4ead037686a233f67",
+    "configs/trust_robot/m2dgr_ml_lidar_point_level_multidegradation_baseline_v1.json": "896d5c35a1a40334fda71460bdcc2e8e779d69313a8d9c8d37823ffff73caad5",
+    "configs/trust_robot/m2dgr_ml_lidar_point_level_registration_dataset_v1.json": "5bc4b9f7eaaf4436fb5363136679583459a84e33d25d1ee58c165ffaaf498a15",
+    "configs/trust_robot/m2dgr_ml_synthetic_intervention_baseline_v1.json": "ee99318513969ec827d1387d200122060c9bd306a2287b50e9350ab63fc79483",
+    "configs/trust_robot/m2dgr_ml_synthetic_intervention_dataset_v1.json": "db8182b323c188e61a87258aa2bb14def9c6a1f9fac5c4b5b0dd5685116eab60",
+    "scripts/trust_robot/run_m2dgr_ml_lidar_event_gap_baseline_v1.py": "ecd1b3d90236518305a70d7b694c47088fc5c6752d98930f93cc40c35d718600",
+    "scripts/trust_robot/run_m2dgr_ml_lidar_event_gap_registration_dataset_v1.py": "44741166ab2350b2fbcf2137b3d60e810d32f9398d32274815b8e29c333f70c1",
+    "scripts/trust_robot/run_m2dgr_ml_lidar_point_level_multidegradation_baseline_v1.py": "5ba2057bb92299f5621647a291d3ce92892bb1dcfaeb2a7fa0efff52771e9700",
+    "scripts/trust_robot/run_m2dgr_ml_lidar_point_level_registration_dataset_v1.py": "61ac91c226bf6c5e2b7a696c558b5d77c56244957b343dcade2f6020535210e9",
+    "scripts/trust_robot/run_m2dgr_ml_synthetic_intervention_baseline_v1.py": "ed735367d266667d3b56c57051ece7bcaae68da5c580b5fbef84aeaac779609a",
+    "scripts/trust_robot/run_m2dgr_ml_synthetic_intervention_dataset_v1.py": "9857e50fb51b4b3beb70447c45b3d27fc069b6807b016927f5b8af3739cd1542",
+    "src/trust_robot/lidar_point_level_corruption.py": "26dfc2ba4eaa11e66bd4a3b9d530a3cb09d6d76ee62ccd0c4820a06eca784858",
+    "src/trust_robot/ml_lidar_event_gap_baseline.py": "6445d07a3a9ac8012c631708567859a1523d5ab840f917f3dc04c76cc5fada5d",
+    "src/trust_robot/ml_lidar_event_gap_registration_dataset.py": "846bf0ecd17606ab0628e61a7656998a388e6d1f46038536346630c9e67c87a9",
+    "src/trust_robot/ml_lidar_point_level_multidegradation_baseline.py": "4cbcd315d874e50970205bc8ebfa09c093053d3df49429eb148753cf9e32b17b",
+    "src/trust_robot/ml_lidar_point_level_registration_dataset.py": "2fac35644437224b61104d333bd1bfd209b7ce15e29f6e02e193b8a6d56ca4aa",
+    "src/trust_robot/ml_synthetic_intervention_baseline.py": "2f860598bcaefa9ca2bc6cc83941042bb4a3970654496623b5ed2b42d37a9582",
+    "src/trust_robot/ml_synthetic_intervention_dataset.py": "d9965b39e1b0c15a11ad3dfd44b07b611910e099ddad44c1abc1657ba3dddc1b",
+    "tests/trust_robot/test_lidar_point_level_corruption.py": "37dd74dc958587d58b7997cef6292df2f6934a986cdb9ab527d9f60e00b5c485",
+    "tests/trust_robot/test_ml_lidar_event_gap_baseline.py": "dd6c561181b5270a9e66025b0397968e9bbee8b1b7ae9165041eabe9fbb03be8",
+    "tests/trust_robot/test_ml_lidar_event_gap_registration_dataset.py": "d38ea017ca8c8b4ca328f03562648e068af3195052997fc35222a0226420d9d6",
+    "tests/trust_robot/test_ml_lidar_point_level_multidegradation_baseline.py": "199fe4ebbcd570e6db5e43d5752fc9ce9fc0bf162a3f3de022435454b5268c8f",
+    "tests/trust_robot/test_ml_lidar_point_level_registration_dataset.py": "af559446b1d1821cf74956270d0b7e6f39887dd63c27bc18e40f2e1f27e72cdf",
+    "tests/trust_robot/test_ml_synthetic_intervention_baseline.py": "7916ded75cfa961ebf909ef00d3b1706777dfa6c07f357f478dedae70ceeb52d",
+    "tests/trust_robot/test_ml_synthetic_intervention_dataset.py": "fb697d063a9bd977696647ed68eee0d10571ef2a2aaa0c30eaa8234d3ecf4205"
+  },
+  "schema": "TRUST_ROBOT_M2DGR_TRAIN_ONLY_SYNTHETIC_LIDAR_ML_DEVELOPMENT_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "CONFIRMATION_open": false,
+    "SE4_physical_completion": false,
+    "SE5_physical_progression_authorized": false,
+    "VALIDATION_open": false,
+    "physical_failure_accuracy_claim": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "real_sensor_health_accuracy_claim": false,
+    "reference_data_used": false,
+    "synthetic_intervention_truth_only": true
+  },
+  "scientific_interpretation": {
+    "azimuth_sector_occlusion_detection": "strong_in_current_synthetic_benchmark",
+    "classifier_hyperparameter_tuning_is_next_step": false,
+    "next_research_priority": "Develop richer noise-sensitive LiDAR diagnostics/features and later calibrate against controlled real physical data.",
+    "overall_metric_must_not_hide_per_family_failure": true,
+    "point_dropout_detection": "strong_in_current_synthetic_benchmark",
+    "xyz_gaussian_noise_detection": "materially_weaker_and_requires_further_feature_development"
+  },
+  "scope": {
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "dataset": "M2DGR",
+    "development_check_trajectories": 5,
+    "development_train_trajectories": 17,
+    "outer_split": "TRAIN_ONLY"
+  },
+  "status": "FROZEN_DEVELOPMENT_CHECKPOINT"
+}

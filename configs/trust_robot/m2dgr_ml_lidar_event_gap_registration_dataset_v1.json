@@ -1,0 +1,127 @@
+{
+  "content_sha256": "3c4ada504b4410c1684fd3ffd1bdcba9ad6402f982b311aa5f2d726086179a8f",
+  "corruption": {
+    "family": "EVENT_GAP",
+    "length": 1,
+    "modality": "lidar",
+    "scenario_context": "unattributed",
+    "selected_before_execution": true,
+    "start_index": 1
+  },
+  "dataset": "M2DGR",
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "method": "trajectory_group_holdout",
+    "random_row_split_allowed": false,
+    "trajectory_cross_partition_allowed": false
+  },
+  "execution_policy": {
+    "compact_provenance_persisted": true,
+    "deserialize_only_selected_scans": true,
+    "full_pointcloud_cache_persisted": false,
+    "reader": "rosbags.highlevel.AnyReader",
+    "reason_full_pointcloud_cache_not_persisted": "The selected windows are consumed immediately by the already qualified adapter/corruption/registration path; compact diagnostics plus raw/decoded hashes are sufficient for this benchmark and avoid multi-gigabyte duplication.",
+    "topic": "/velodyne_points"
+  },
+  "expected_development_check_windows": 500,
+  "expected_development_train_windows": 1700,
+  "expected_phase4_diagnostic_counts": {
+    "Circle_01": 2338,
+    "door_01": 4605,
+    "gate_01": 1721,
+    "hall_01": 3510,
+    "hall_03": 1644,
+    "hall_04": 1812,
+    "hall_05": 4016,
+    "lift_02": 4872,
+    "lift_04": 2985,
+    "room_02": 751,
+    "room_dark_01": 1111,
+    "room_dark_02": 1646,
+    "room_dark_03": 1158,
+    "room_dark_04": 1434,
+    "street_01": 10269,
+    "street_010": 9086,
+    "street_03": 3534,
+    "street_04": 8567,
+    "street_05": 4686,
+    "street_07": 9275,
+    "street_09": 9059,
+    "walk_01": 2913
+  },
+  "expected_total_samples": 4400,
+  "expected_total_windows": 2200,
+  "frozen_split_manifest": {
+    "file": "manifests/m2dgr_trajectory_manifest_v1_split_freeze_v1.json",
+    "file_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "model_feature_contract": {
+    "clean_observation": "middle_scan_to_final_scan_registration",
+    "corruption_family_as_feature": false,
+    "corruption_truth_as_feature": false,
+    "feature_count": 5,
+    "feature_names": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "gap_observation": "first_scan_to_final_scan_registration",
+    "registration_count_as_feature": false,
+    "scan_index_as_feature": false,
+    "timestamp_as_feature": false,
+    "trajectory_identity_as_feature": false
+  },
+  "outer_split": "TRAIN",
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_EVENT_GAP_REGISTRATION_DATASET_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "confirmation_access": false,
+    "final_health_model_selection": false,
+    "health_state_assignment": false,
+    "labels_are_synthetic_intervention_truth": true,
+    "model_fit_authorized": false,
+    "real_physical_health_truth": false,
+    "reference_data_access": false,
+    "validation_access": false
+  },
+  "window_selection": {
+    "confirmation_data_used": false,
+    "feature_values_used": false,
+    "method": "deterministic_even_spacing_from_frozen_diagnostic_count_metadata",
+    "model_outputs_used": false,
+    "non_overlapping_required": true,
+    "reference_data_used": false,
+    "validation_data_used": false,
+    "window_scan_count": 3,
+    "windows_per_trajectory": 100
+  },
+  "windows_per_trajectory": 100
+}
