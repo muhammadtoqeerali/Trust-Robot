@@ -1,0 +1,274 @@
+{
+  "content_sha256": "63df44fe468a6dfcc0799e61abdd558f2585a9ed54a122570de272b9a7b1753e",
+  "experimental_control": {
+    "legacy_first_five_features_reproduce_parent": true,
+    "only_intended_experimental_change": "feature_representation_5_to_13",
+    "same_class_weighting": true,
+    "same_development_split": true,
+    "same_hyperparameters": true,
+    "same_labels": true,
+    "same_model_families": true,
+    "same_sample_ids": true,
+    "same_semantic_samples": true,
+    "same_windows": true
+  },
+  "external_artifacts": {
+    "extended_13_feature_baseline_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/SUCCESS.json",
+      "sha256": "fa631f843308fd62cab55d6aa094c25733c0fafde336dff484226835c612b46b"
+    },
+    "extended_13_feature_baseline_results": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/baseline_results.json",
+      "sha256": "007986b90f7803ba0587ba983d7a197cbbf98d1111b0b1a7999eaeb3a531dae6"
+    },
+    "extended_13_feature_baseline_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/run_manifest.json",
+      "sha256": "f3a90d87c829c7061f7f106c88259df8df6fc5bc11811afa374cc85d067a8d6d"
+    },
+    "extended_13_feature_dataset_SUCCESS": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_registration_dataset_v1/SUCCESS.json",
+      "sha256": "c08d59b511c0bbfdc9760f0e7134733e5a89df4ac743eea47287f9d3b919391f"
+    },
+    "extended_13_feature_dataset_run_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_registration_dataset_v1/run_manifest.json",
+      "sha256": "d58a6790b5fb371873a17fb52a9d5e999a91b9438afec17d9e03735980331855"
+    },
+    "extended_13_feature_development_check": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_registration_dataset_v1/development_check.jsonl",
+      "sha256": "af079a2266cf2eeb47df24a0c7f61bced892ac94ec4c2dfcc128a440334078b8"
+    },
+    "extended_13_feature_development_train": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_registration_dataset_v1/development_train.jsonl",
+      "sha256": "7fcf52fc73e7fd817932b78780791630c2236e9213fb258026a729bf503b30be"
+    },
+    "extended_13_feature_window_provenance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_registration_dataset_v1/window_provenance.jsonl",
+      "sha256": "172af85dd3b17167470d46e89859e5331becae325b61c63ee03f778770ccde83"
+    },
+    "extended_histogram_gradient_boosting_model": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/histogram_gradient_boosting.joblib",
+      "sha256": "df0db2436cbe660271fbd8ffdfa136f357a70a7938b4099888ddf06412bb2da7"
+    },
+    "extended_histogram_gradient_boosting_predictions": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/histogram_gradient_boosting_development_check_predictions.npz",
+      "sha256": "41fb157d7e4fc5ae0774fabe8eaf06d9501e8d73a60ff92db0c1448b26382c9e"
+    },
+    "extended_logistic_model": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/logistic_regression.joblib",
+      "sha256": "5d174beb8ac5c8cc17cd14b6967ab211c939e8c96aedf54c70c374dce1bb5530"
+    },
+    "extended_logistic_predictions": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/logistic_regression_development_check_predictions.npz",
+      "sha256": "524806c8db6f9280c852b000fcfcc57fb0b3d0c896681b5b16a2f72220b55bc2"
+    },
+    "extended_random_forest_model": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/random_forest.joblib",
+      "sha256": "ac202f01f2beb64e4f336ec1a3e9bd39de5bf37a37a0142a656263320b8e83a4"
+    },
+    "extended_random_forest_predictions": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_extended_13_feature_multidegradation_baseline_v1/random_forest_development_check_predictions.npz",
+      "sha256": "def50dd6031638a5a8b204195404974d21e05c8215a63ac81a0e0b75a1bb5e29"
+    },
+    "parent_5_feature_baseline_results": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_multidegradation_baseline_v1/baseline_results.json",
+      "sha256": "c47bcefce73bd0eaa689fd4f6704209e109d41d8c169c68b71a32ec365de00ad"
+    },
+    "parent_5_feature_development_check": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/development_check.jsonl",
+      "sha256": "e81a3fa509e6ce8084a4611c1b6da0c35fe208274f7eecb47e954f7070905d86"
+    },
+    "parent_5_feature_development_train": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/audit/ml_lidar_point_level_registration_dataset_v1/development_train.jsonl",
+      "sha256": "cd0c6128faae45614f590fa1b84f0712f0e4532539895234448f9997fa1d988f"
+    }
+  },
+  "model_decision": {
+    "development_models_are_final_runtime_models": false,
+    "final_health_model_training_executed": false,
+    "final_model_selected": false,
+    "hyperparameter_search_executed": false,
+    "model_family_selection_executed": false
+  },
+  "new_residual_features": [
+    "final_nearest_neighbor_mean_m",
+    "final_nearest_neighbor_std_m",
+    "final_nearest_neighbor_median_m",
+    "final_nearest_neighbor_mad_m",
+    "final_nearest_neighbor_p75_m",
+    "final_nearest_neighbor_p90_m",
+    "final_nearest_neighbor_p95_m",
+    "final_nearest_neighbor_max_m"
+  ],
+  "paired_development_evidence": {
+    "histogram_gradient_boosting": {
+      "delta_13_minus_5": {
+        "balanced_accuracy": 0.15866666666666673,
+        "f1": 0.10704044630404463,
+        "gaussian_noise_recall": 0.43600000000000005,
+        "gaussian_noise_roc_auc": 0.26592000000000005,
+        "roc_auc": 0.08905066666666661
+      },
+      "five_feature": {
+        "balanced_accuracy": 0.796,
+        "f1": 0.8702928870292888,
+        "gaussian_noise_recall": 0.496,
+        "gaussian_noise_roc_auc": 0.7215199999999999,
+        "roc_auc": 0.9064586666666667
+      },
+      "thirteen_feature": {
+        "balanced_accuracy": 0.9546666666666668,
+        "f1": 0.9773333333333334,
+        "gaussian_noise_recall": 0.932,
+        "gaussian_noise_roc_auc": 0.98744,
+        "roc_auc": 0.9955093333333334
+      }
+    },
+    "logistic_regression": {
+      "delta_13_minus_5": {
+        "balanced_accuracy": 0.14466666666666672,
+        "f1": 0.1797785450237427,
+        "gaussian_noise_recall": 0.892,
+        "gaussian_noise_roc_auc": 0.3907360000000001,
+        "roc_auc": 0.13022933333333342
+      },
+      "five_feature": {
+        "balanced_accuracy": 0.8326666666666667,
+        "f1": 0.8012769353551477,
+        "gaussian_noise_recall": 0.008,
+        "gaussian_noise_roc_auc": 0.59176,
+        "roc_auc": 0.86392
+      },
+      "thirteen_feature": {
+        "balanced_accuracy": 0.9773333333333334,
+        "f1": 0.9810554803788903,
+        "gaussian_noise_recall": 0.9,
+        "gaussian_noise_roc_auc": 0.982496,
+        "roc_auc": 0.9941493333333334
+      }
+    },
+    "random_forest": {
+      "delta_13_minus_5": {
+        "balanced_accuracy": 0.1519999999999999,
+        "f1": 0.1104794516303853,
+        "gaussian_noise_recall": 0.468,
+        "gaussian_noise_roc_auc": 0.26279200000000014,
+        "roc_auc": 0.0892400000000001
+      },
+      "five_feature": {
+        "balanced_accuracy": 0.8140000000000001,
+        "f1": 0.8687012065294535,
+        "gaussian_noise_recall": 0.448,
+        "gaussian_noise_roc_auc": 0.7236879999999999,
+        "roc_auc": 0.9061786666666666
+      },
+      "thirteen_feature": {
+        "balanced_accuracy": 0.966,
+        "f1": 0.9791806581598388,
+        "gaussian_noise_recall": 0.916,
+        "gaussian_noise_roc_auc": 0.98648,
+        "roc_auc": 0.9954186666666667
+      }
+    }
+  },
+  "parent_checkpoint": {
+    "git_head": "7a4d791dbf2011e12f1e29a52ceaf831f9823905",
+    "git_tree": "4302909ed04b218d1601835282c99d6bcd2b1b1b",
+    "prior_ML_development_freeze_preserved": true
+  },
+  "qualification": {
+    "extended_baseline_targeted_tests": 28,
+    "extended_dataset_targeted_tests": 24,
+    "full_regression_tests": 2905,
+    "noise_sensitive_targeted_tests": 30
+  },
+  "repository_files": {
+    "configs/trust_robot/lidar_noise_sensitive_diagnostics_v1.json": "b12551aca7d64645b9c791bb3264870c28f45ccf8eddfa0f5becc035c4c857ec",
+    "configs/trust_robot/m2dgr_ml_lidar_extended_13_feature_multidegradation_baseline_v1.json": "6b977994be13c8c747996f6b6f70c23d53a75e72f6b046304a0157515e4e1619",
+    "configs/trust_robot/m2dgr_ml_lidar_extended_13_feature_registration_dataset_v1.json": "4c83200da853e6c8f3bacba7164cc4b0f7204892ac0ba0b906be4f1ae30d6c24",
+    "scripts/trust_robot/run_m2dgr_ml_lidar_extended_13_feature_multidegradation_baseline_v1.py": "d0a7fbb4876c903d31b3f1417e289deb9f8922fc21b63bc80189a5c4fce95885",
+    "scripts/trust_robot/run_m2dgr_ml_lidar_extended_13_feature_registration_dataset_v1.py": "61dba31b78908683ff3106cde0c581df91ec1933d40d007b9f4489ea8743f0e6",
+    "src/trust_robot/lidar_noise_sensitive_diagnostics.py": "76da15f7acd8968fc83bc9b2094c8b2b7a64ad796d454f161f3de68666648765",
+    "src/trust_robot/ml_lidar_extended_13_feature_multidegradation_baseline.py": "4038d91564977c591afca456f31df638a7be801d7d5ec73abf04c5fc18eead00",
+    "src/trust_robot/ml_lidar_extended_13_feature_registration_dataset.py": "83c074d6301a3535a71b93d142fc594643afb3c1dd6cfb60aa90eecddcd196d5",
+    "tests/trust_robot/test_lidar_noise_sensitive_diagnostics.py": "09f51679fb7a504ee544b7faa17621a900c099067baf00baf4089fd88747159a",
+    "tests/trust_robot/test_ml_lidar_extended_13_feature_multidegradation_baseline.py": "033f0d2cf3aa88b083eb78cc610977fa4586f8090f38575a786ba08b869f511f",
+    "tests/trust_robot/test_ml_lidar_extended_13_feature_registration_dataset.py": "a96b1d76e9c94e35c52ef5e0c5fc62720a6b6647bbe9665c84cbfe7c526f49a8"
+  },
+  "schema": "TRUST_ROBOT_M2DGR_NOISE_SENSITIVE_LIDAR_FEATURE_DEVELOPMENT_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "CONFIRMATION_open": false,
+    "SE4_physical_completion": false,
+    "SE5_physical_progression_authorized": false,
+    "VALIDATION_open": false,
+    "physical_failure_accuracy_claim": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "real_sensor_health_accuracy_claim": false,
+    "reference_data_used": false,
+    "synthetic_degraded_sample_is_real_fault": false,
+    "synthetic_intervention_truth_only": true,
+    "uncorrupted_M2DGR_is_proven_physically_healthy": false
+  },
+  "scientific_interpretation": {
+    "all_eight_features_individually_strong": false,
+    "causal_scope_of_paired_comparison": "Because semantic samples, labels, windows, development split, model families, hyperparameters, and class weighting were fixed, the paired metric difference is attributable to the changed feature representation within this benchmark.",
+    "classifier_tuning_selected_as_next_step": false,
+    "combined_representation_is_more_informative_than_any_claim_that_all_new_features_are_individually_useful": true,
+    "next_research_priority": "Acquire controlled real LiDAR evidence and evaluate whether these diagnostics transfer to nominal and physically degraded sensing before any final health model decision.",
+    "real_sensor_health_problem_solved": false,
+    "residual_maximum_alone_near_chance": true,
+    "result": "The parallel residual-distribution representation materially improves discrimination of that declared synthetic perturbation on trajectory-disjoint outer-TRAIN development-check data.",
+    "specific_development_problem": "5 cm synthetic Cartesian XYZ Gaussian perturbation was weakly observable through the historical five registration diagnostics.",
+    "strongest_single_new_gaussian_feature": "final_nearest_neighbor_median_m",
+    "strongest_single_new_gaussian_feature_roc_auc": 0.84016,
+    "synthetic_observability_problem_materially_improved": true
+  },
+  "scope": {
+    "dataset": "M2DGR",
+    "development_check_trajectories": 5,
+    "development_train_trajectories": 17,
+    "extended_feature_count": 13,
+    "new_residual_feature_count": 8,
+    "outer_split": "TRAIN_ONLY",
+    "parent_feature_count": 5,
+    "sample_count": 4400,
+    "window_count": 1100
+  },
+  "single_feature_gaussian_noise_evidence": {
+    "final_nearest_neighbor_mad_m": {
+      "direction_agnostic_roc_auc": 0.770592,
+      "raw_direction_roc_auc": 0.770592
+    },
+    "final_nearest_neighbor_max_m": {
+      "direction_agnostic_roc_auc": 0.5003360000000001,
+      "raw_direction_roc_auc": 0.5003360000000001
+    },
+    "final_nearest_neighbor_mean_m": {
+      "direction_agnostic_roc_auc": 0.711744,
+      "raw_direction_roc_auc": 0.711744
+    },
+    "final_nearest_neighbor_median_m": {
+      "direction_agnostic_roc_auc": 0.84016,
+      "raw_direction_roc_auc": 0.84016
+    },
+    "final_nearest_neighbor_p75_m": {
+      "direction_agnostic_roc_auc": 0.758992,
+      "raw_direction_roc_auc": 0.758992
+    },
+    "final_nearest_neighbor_p90_m": {
+      "direction_agnostic_roc_auc": 0.679328,
+      "raw_direction_roc_auc": 0.679328
+    },
+    "final_nearest_neighbor_p95_m": {
+      "direction_agnostic_roc_auc": 0.620464,
+      "raw_direction_roc_auc": 0.620464
+    },
+    "final_nearest_neighbor_std_m": {
+      "direction_agnostic_roc_auc": 0.51808,
+      "raw_direction_roc_auc": 0.51808
+    }
+  },
+  "status": "FROZEN_DEVELOPMENT_CHECKPOINT"
+}

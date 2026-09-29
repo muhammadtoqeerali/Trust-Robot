@@ -1,0 +1,99 @@
+{
+  "comparison": {
+    "extended_representation": "13_features",
+    "frozen_representation": "5_features",
+    "same_class_weighting": true,
+    "same_hyperparameters": true,
+    "same_labels": true,
+    "same_model_families": true,
+    "same_semantic_samples": true,
+    "same_trajectory_split": true
+  },
+  "content_sha256": "1da9362b6a547ce353a631459586fda3b001b9d59011046b0b6f35e5b277b794",
+  "degradation_families": [
+    "POINT_DROPOUT",
+    "XYZ_GAUSSIAN_NOISE",
+    "AZIMUTH_SECTOR_OCCLUSION"
+  ],
+  "extended_dataset": {
+    "SUCCESS_sha256": "c08d59b511c0bbfdc9760f0e7134733e5a89df4ac743eea47287f9d3b919391f",
+    "development_check_samples": 1000,
+    "development_check_sha256": "af079a2266cf2eeb47df24a0c7f61bced892ac94ec4c2dfcc128a440334078b8",
+    "development_train_samples": 3400,
+    "development_train_sha256": "7fcf52fc73e7fd817932b78780791630c2236e9213fb258026a729bf503b30be",
+    "run_manifest_sha256": "d58a6790b5fb371873a17fb52a9d5e999a91b9438afec17d9e03735980331855",
+    "sample_count": 4400,
+    "window_count": 1100,
+    "window_provenance_sha256": "172af85dd3b17167470d46e89859e5331becae325b61c63ee03f778770ccde83"
+  },
+  "feature_count": 13,
+  "feature_names": [
+    "source_point_count",
+    "target_point_count",
+    "fixed_point_iterations",
+    "final_correspondence_count",
+    "final_nearest_neighbor_rmse_m",
+    "final_nearest_neighbor_mean_m",
+    "final_nearest_neighbor_std_m",
+    "final_nearest_neighbor_median_m",
+    "final_nearest_neighbor_mad_m",
+    "final_nearest_neighbor_p75_m",
+    "final_nearest_neighbor_p90_m",
+    "final_nearest_neighbor_p95_m",
+    "final_nearest_neighbor_max_m"
+  ],
+  "frozen_five_feature_baseline": {
+    "frozen_baseline_config_sha256": "896d5c35a1a40334fda71460bdcc2e8e779d69313a8d9c8d37823ffff73caad5",
+    "frozen_baseline_module_sha256": "4cbcd315d874e50970205bc8ebfa09c093053d3df49429eb148753cf9e32b17b",
+    "results_sha256": "c47bcefce73bd0eaa689fd4f6704209e109d41d8c169c68b71a32ec365de00ad"
+  },
+  "legacy_feature_count": 5,
+  "model_names": [
+    "logistic_regression",
+    "random_forest",
+    "histogram_gradient_boosting"
+  ],
+  "model_policy": {
+    "class_weighting": "same_balanced_binary_training_sample_weights",
+    "new_hyperparameters_introduced": false,
+    "source": "reuse_frozen_five_feature_baseline_build_models"
+  },
+  "new_residual_feature_count": 8,
+  "parent_five_feature_dataset": {
+    "development_check_sha256": "e81a3fa509e6ce8084a4611c1b6da0c35fe208274f7eecb47e954f7070905d86",
+    "development_train_sha256": "cd0c6128faae45614f590fa1b84f0712f0e4532539895234448f9997fa1d988f"
+  },
+  "probability_threshold": 0.5,
+  "random_seed": 20260928,
+  "reporting": {
+    "overall_binary_metrics": true,
+    "paired_5_vs_13_metric_delta": true,
+    "per_family_metrics": true,
+    "per_family_single_feature_auc": true,
+    "per_trajectory_metrics": true,
+    "single_feature_auc": true
+  },
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_EXTENDED_13_FEATURE_MULTIDEGRADATION_BASELINE_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_health_model_training": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "synthetic_intervention_truth": true
+  },
+  "selection_policy": {
+    "CONFIRMATION_used": false,
+    "VALIDATION_used": false,
+    "development_check_used_for_fitting": false,
+    "final_health_model_selected": false,
+    "hyperparameter_search_executed": false,
+    "model_family_selection_executed": false,
+    "real_health_labels_used": false,
+    "reference_data_used": false
+  },
+  "task": "paired_binary_clean_vs_synthetic_degraded_feature_representation_ablation"
+}

@@ -1,0 +1,220 @@
+{
+  "bags": {
+    "Circle_01": {
+      "relative_path": "raw/rosbags/Circle_01.bag",
+      "size_bytes": 23250587328
+    },
+    "door_01": {
+      "relative_path": "raw/rosbags/door_01.bag",
+      "size_bytes": 35460797903
+    },
+    "gate_01": {
+      "relative_path": "raw/rosbags/gate_01.bag",
+      "size_bytes": 16373999247
+    },
+    "hall_01": {
+      "relative_path": "raw/rosbags/hall_01.bag",
+      "size_bytes": 29054106807
+    },
+    "hall_03": {
+      "relative_path": "raw/rosbags/hall_03.bag",
+      "size_bytes": 20523226437
+    },
+    "hall_04": {
+      "relative_path": "raw/rosbags/hall_04.bag",
+      "size_bytes": 17711933747
+    },
+    "hall_05": {
+      "relative_path": "raw/rosbags/hall_05.bag",
+      "size_bytes": 35119340535
+    },
+    "lift_02": {
+      "relative_path": "raw/rosbags/lift_02.bag",
+      "size_bytes": 43591689194
+    },
+    "lift_04": {
+      "relative_path": "raw/rosbags/lift_04.bag",
+      "size_bytes": 27814558712
+    },
+    "room_02": {
+      "relative_path": "raw/rosbags/room_02.bag",
+      "size_bytes": 15162620712
+    },
+    "room_dark_01": {
+      "relative_path": "raw/rosbags/room_dark_01.bag",
+      "size_bytes": 20157750139
+    },
+    "room_dark_02": {
+      "relative_path": "raw/rosbags/room_dark_02.bag",
+      "size_bytes": 30295640787
+    },
+    "room_dark_03": {
+      "relative_path": "raw/rosbags/room_dark_03.bag",
+      "size_bytes": 22664591738
+    },
+    "room_dark_04": {
+      "relative_path": "raw/rosbags/room_dark_04.bag",
+      "size_bytes": 29342676061
+    },
+    "street_01": {
+      "relative_path": "raw/rosbags/street_01.bag",
+      "size_bytes": 75760411232
+    },
+    "street_010": {
+      "relative_path": "raw/rosbags/street_010.bag",
+      "size_bytes": 86249828923
+    },
+    "street_03": {
+      "relative_path": "raw/rosbags/street_03.bag",
+      "size_bytes": 21279882853
+    },
+    "street_04": {
+      "relative_path": "raw/rosbags/street_04.bag",
+      "size_bytes": 48651446875
+    },
+    "street_05": {
+      "relative_path": "raw/rosbags/street_05.bag",
+      "size_bytes": 27414820542
+    },
+    "street_07": {
+      "relative_path": "raw/rosbags/street_07.bag",
+      "size_bytes": 77191125434
+    },
+    "street_09": {
+      "relative_path": "raw/rosbags/street_09.bag",
+      "size_bytes": 83180083877
+    },
+    "walk_01": {
+      "relative_path": "raw/rosbags/walk_01.bag",
+      "size_bytes": 21523357822
+    }
+  },
+  "combined_feature_count": 13,
+  "content_sha256": "747bd83463ec3b5030854ed8dea42018aeba27d91abd1d90e03d52cf6b4b4fc5",
+  "dataset": "M2DGR",
+  "development_split": {
+    "development_check": [
+      "hall_05",
+      "lift_04",
+      "room_dark_04",
+      "street_010",
+      "street_09"
+    ],
+    "development_train": [
+      "Circle_01",
+      "door_01",
+      "gate_01",
+      "hall_01",
+      "hall_03",
+      "hall_04",
+      "lift_02",
+      "room_02",
+      "room_dark_01",
+      "room_dark_02",
+      "room_dark_03",
+      "street_01",
+      "street_03",
+      "street_04",
+      "street_05",
+      "street_07",
+      "walk_01"
+    ],
+    "random_row_split_allowed": false,
+    "trajectory_group_isolation": true
+  },
+  "expected_development_check_samples": 1000,
+  "expected_development_train_samples": 3400,
+  "expected_diagnostic_counts": {
+    "Circle_01": 2338,
+    "door_01": 4605,
+    "gate_01": 1721,
+    "hall_01": 3510,
+    "hall_03": 1644,
+    "hall_04": 1812,
+    "hall_05": 4016,
+    "lift_02": 4872,
+    "lift_04": 2985,
+    "room_02": 751,
+    "room_dark_01": 1111,
+    "room_dark_02": 1646,
+    "room_dark_03": 1158,
+    "room_dark_04": 1434,
+    "street_01": 10269,
+    "street_010": 9086,
+    "street_03": 3534,
+    "street_04": 8567,
+    "street_05": 4686,
+    "street_07": 9275,
+    "street_09": 9059,
+    "walk_01": 2913
+  },
+  "expected_registration_count": 4400,
+  "expected_sample_count": 4400,
+  "expected_selected_scan_count": 2200,
+  "expected_window_count": 1100,
+  "families": [
+    "CLEAN",
+    "POINT_DROPOUT",
+    "XYZ_GAUSSIAN_NOISE",
+    "AZIMUTH_SECTOR_OCCLUSION"
+  ],
+  "identity_policy": {
+    "failure_policy": "fail_closed",
+    "legacy_RMSE_absolute_tolerance": 1e-12,
+    "legacy_RMSE_relative_tolerance": 1e-12,
+    "legacy_integer_feature_exact_identity": true,
+    "observational_RMSE_identity_guard": true,
+    "same_parent_sample_id": true
+  },
+  "legacy_feature_count": 5,
+  "new_residual_feature_count": 8,
+  "outer_split": "TRAIN",
+  "parent_dataset": {
+    "development_check_sha256": "e81a3fa509e6ce8084a4611c1b6da0c35fe208274f7eecb47e954f7070905d86",
+    "development_train_sha256": "cd0c6128faae45614f590fa1b84f0712f0e4532539895234448f9997fa1d988f",
+    "feature_count": 5,
+    "run_manifest_sha256": "e685f548ab8e63999d5ae85a5160f18e4cf29e84df5998ec7f7ae3e5d348aaed",
+    "sample_count": 4400,
+    "window_count": 1100,
+    "window_provenance_sha256": "b971665d37a8105507d37b83e4b500fde10d8b78dd847b4e457e7e9afdbbcf97"
+  },
+  "point_level_corruption_parameters": {
+    "AZIMUTH_SECTOR_OCCLUSION": {
+      "sector_width_degrees": 60.0
+    },
+    "POINT_DROPOUT": {
+      "remove_fraction": 0.3
+    },
+    "XYZ_GAUSSIAN_NOISE": {
+      "sigma_m": 0.05
+    }
+  },
+  "qualified_noise_sensitive_extractor": {
+    "config_sha256": "b12551aca7d64645b9c791bb3264870c28f45ccf8eddfa0f5becc035c4c857ec",
+    "module_sha256": "76da15f7acd8968fc83bc9b2094c8b2b7a64ad796d454f161f3de68666648765",
+    "test_sha256": "09f51679fb7a504ee544b7faa17621a900c099067baf00baf4089fd88747159a"
+  },
+  "runtime": {
+    "execution_mode": "nohup_pid_log_workstation_independent",
+    "expected_long_running": true,
+    "resumable_per_trajectory": true
+  },
+  "schema": "TRUST_ROBOT_M2DGR_LIDAR_EXTENDED_13_FEATURE_REGISTRATION_DATASET_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "model_fit_authorized": false,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "same_parent_benchmark_population": true,
+    "synthetic_intervention_truth": true
+  },
+  "window_selection": {
+    "new_window_selection": false,
+    "same_parent_windows": true,
+    "window_scan_count": 2,
+    "windows_per_trajectory": 50
+  }
+}

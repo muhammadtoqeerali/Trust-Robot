@@ -1,0 +1,107 @@
+{
+  "combined_feature_count": 13,
+  "content_sha256": "e302b13e5a96b4bfb166b78c1ada3e5c8ea66ca8a3d3db9b1e87fe8317898485",
+  "excluded_from_v1": {
+    "convergence_history_features": true,
+    "feature_normalization": true,
+    "fixed_distance_threshold_features": true,
+    "learned_feature_transformation": true,
+    "pose_update_history_features": true,
+    "raw_residual_vector_as_model_feature": true,
+    "residual_clipping": true,
+    "supervised_feature_selection": true
+  },
+  "future_execution": {
+    "full_TRAIN_raw_replay_authorized_by_this_config": false,
+    "full_TRAIN_raw_replay_expected_long": true,
+    "full_TRAIN_raw_replay_mode": "nohup_pid_log_workstation_independent",
+    "model_fit_authorized": false,
+    "real_TRAIN_smoke_authorized_by_this_config": false
+  },
+  "historical_phase4_contract": {
+    "changed": false,
+    "feature_count": 5,
+    "feature_names": [
+      "source_point_count",
+      "target_point_count",
+      "fixed_point_iterations",
+      "final_correspondence_count",
+      "final_nearest_neighbor_rmse_m"
+    ],
+    "historical_artifacts_rewritten": false,
+    "replaced": false
+  },
+  "identity_guard": {
+    "absolute_tolerance": 1e-12,
+    "failure_policy": "fail_closed",
+    "recompute_RMSE": true,
+    "relative_tolerance": 1e-12
+  },
+  "new_feature_count": 8,
+  "new_features": [
+    {
+      "definition": "numpy.mean(final_distances,dtype=float64)",
+      "name": "final_nearest_neighbor_mean_m",
+      "unit": "m"
+    },
+    {
+      "definition": "numpy.std(final_distances,dtype=float64,ddof=0)",
+      "name": "final_nearest_neighbor_std_m",
+      "unit": "m"
+    },
+    {
+      "definition": "numpy.median(final_distances)",
+      "name": "final_nearest_neighbor_median_m",
+      "unit": "m"
+    },
+    {
+      "definition": "median(abs(final_distances-median(final_distances)))",
+      "name": "final_nearest_neighbor_mad_m",
+      "unit": "m"
+    },
+    {
+      "definition": "numpy.quantile(final_distances,0.75,method=linear)",
+      "name": "final_nearest_neighbor_p75_m",
+      "unit": "m"
+    },
+    {
+      "definition": "numpy.quantile(final_distances,0.90,method=linear)",
+      "name": "final_nearest_neighbor_p90_m",
+      "unit": "m"
+    },
+    {
+      "definition": "numpy.quantile(final_distances,0.95,method=linear)",
+      "name": "final_nearest_neighbor_p95_m",
+      "unit": "m"
+    },
+    {
+      "definition": "numpy.max(final_distances)",
+      "name": "final_nearest_neighbor_max_m",
+      "unit": "m"
+    }
+  ],
+  "residual_reconstruction": {
+    "distance_unit": "m",
+    "nearest_neighbor": "scipy.spatial.cKDTree(previous_xyz)",
+    "pose_refit": false,
+    "pose_source": "already_frozen_registration_result",
+    "query_k": 1,
+    "query_workers": 1,
+    "source": "current_xyz",
+    "target": "previous_xyz",
+    "transform": "transform_xyz(frozen_pose,current_xyz)"
+  },
+  "role": "parallel_TRAIN_only_observational_diagnostic_extension",
+  "schema": "TRUST_ROBOT_LIDAR_NOISE_SENSITIVE_DIAGNOSTICS_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE": false,
+    "CONFIRMATION_open": false,
+    "VALIDATION_open": false,
+    "final_health_model_selected": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "reference_data_used": false,
+    "synthetic_unit_qualification_only": true
+  }
+}
