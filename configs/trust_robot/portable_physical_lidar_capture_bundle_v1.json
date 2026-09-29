@@ -1,0 +1,109 @@
+{
+  "additional_portable_runtime_fact": "capture_interface",
+  "bundle_artifacts": [
+    "hardware_inventory.json",
+    "runtime_input_template.json",
+    "KIOS_OPERATOR_CHECKLIST.txt",
+    "portable_bundle_manifest.json",
+    "runtime_binding_candidate_v2.json",
+    "phase5_plan_argv.json"
+  ],
+  "content_sha256": "42c96804747b90135473bee8c544bee90be505f48bf6acdf75a97927db2a5a8b",
+  "current_frozen_hardware_path": {
+    "model": "VLP-32C",
+    "other_models_may_be_inventoried": true,
+    "other_models_may_use_frozen_vlp32c_runtime_binding": false,
+    "vendor": "Velodyne"
+  },
+  "existing_frozen_reuse": {
+    "phase5_plan_cli": "scripts/trust_robot/plan_phase5_vlp32c_live_acquisition.py",
+    "real_session_runner": "scripts/trust_robot/run_se4_real_train_live_session_v1.py",
+    "real_session_runner_invoked_by_this_bundle": false,
+    "runtime_binding_builder": "trust_robot.se4_real_train_runtime_input_binding_v2.build_runtime_binding_candidate_v2",
+    "runtime_binding_validator": "trust_robot.se4_real_train_runtime_input_binding_v2.validate_runtime_binding_candidate_v2"
+  },
+  "first_capture_condition": {
+    "dog_robot_required": false,
+    "means_proven_healthy": false,
+    "name": "DECLARED_NOMINAL_BENCH_CONDITION",
+    "real_health_label": false
+  },
+  "forbidden_hardcoding": [
+    "Verona_interface_eno1",
+    "Verona_IPv4",
+    "guessed_sensor_IPv4",
+    "guessed_measurement_UDP_port",
+    "guessed_position_UDP_port",
+    "guessed_HTTP_port",
+    "guessed_KIOS_interface"
+  ],
+  "operator_workflow": [
+    "physical_hardware_inventory",
+    "read_only_host_network_inventory",
+    "sensor_identity_confirmation",
+    "sensor_destination_configuration_confirmation",
+    "connection_path_confirmation",
+    "runtime_binding_candidate_generation",
+    "separate_grounded_execution_authorization",
+    "packet_presence_check",
+    "short_declared_nominal_bench_capture",
+    "raw_artifact_receipt_and_hashing",
+    "offline_diagnostic_extraction",
+    "later_controlled_physical_interventions"
+  ],
+  "physical_defaults": {
+    "bind_ipv4": null,
+    "capture_duration_seconds": null,
+    "capture_interface": null,
+    "http_port": null,
+    "measurement_udp_port": null,
+    "position_udp_port": null,
+    "sensor_ipv4": null,
+    "vlp32c_destination_ipv4": null
+  },
+  "purpose": "Prepare portable KIOS physical LiDAR inventory and explicit runtime-binding artifacts without performing sensor I/O.",
+  "required_runtime_binding_fields": [
+    "acquisition_session_id",
+    "split",
+    "bind_ipv4",
+    "measurement_udp_port",
+    "position_udp_port",
+    "sensor_ipv4",
+    "capture_duration_seconds",
+    "absolute_output_root",
+    "http_port",
+    "http_connect_timeout_seconds",
+    "http_total_timeout_seconds",
+    "vlp32c_destination_ipv4",
+    "vlp32c_measurement_destination_udp_port",
+    "vlp32c_position_destination_udp_port",
+    "vlp32c_destination_configuration_verified",
+    "declared_before_execution"
+  ],
+  "schema": "TRUST_ROBOT_PORTABLE_PHYSICAL_LIDAR_CAPTURE_BUNDLE_CONFIG_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "CONFIRMATION_open": false,
+    "SE4_physical_completion": false,
+    "SE5_physical_progression_authorized": false,
+    "VALIDATION_open": false,
+    "baseline_nominality_accepted": false,
+    "execution_authorization_generated": false,
+    "health_supervision_source_accepted": false,
+    "model_fit_executed": false,
+    "network_IO_executed": false,
+    "packet_capture_executed": false,
+    "real_capture_executed": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "sensor_contact_executed": false
+  },
+  "source_checkpoint": {
+    "git_head": "af8f2d484cf99bedcb88ac41b2aa19196888efb5",
+    "git_tree": "223f13db7b7641a9b8d164e74128934bab33c984"
+  },
+  "states": [
+    "INVENTORY_DECLARED_RUNTIME_UNBOUND",
+    "RUNTIME_BOUND_NOT_AUTHORIZED"
+  ]
+}

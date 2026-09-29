@@ -1,0 +1,117 @@
+{
+  "content_sha256": "2b92ea81a07a15afbbb7bc067410208e2f7b1e0a1ed7448a09a504e481a3c5e5",
+  "first_physical_condition_semantics": {
+    "accepted_as_baseline_nominality": false,
+    "accepted_as_health_supervision_source": false,
+    "creates_real_health_label": false,
+    "means_proven_healthy": false,
+    "name": "DECLARED_NOMINAL_BENCH_CONDITION"
+  },
+  "frozen_capability": {
+    "automatic_network_inventory": false,
+    "automatic_network_reconfiguration": false,
+    "execution_authorization_generation": false,
+    "frozen_VLP32C_runtime_binding_v2_reuse": true,
+    "hardware_inventory_declaration": true,
+    "operator_checklist_generation": true,
+    "packet_capture": false,
+    "phase5_plan_argv_generation": true,
+    "portable_bundle_directory_publication": true,
+    "real_capture": false,
+    "real_session_runner_execution": false,
+    "runtime_input_template_generation": true,
+    "sensor_configuration_write": false,
+    "sensor_contact": false,
+    "unconfirmed_hardware_inventory_supported": true
+  },
+  "hardware_boundary": {
+    "dog_robot_required_for_initial_bench_capture": false,
+    "dog_robot_required_for_initial_bench_inventory": false,
+    "frozen_runtime_model": "VLP-32C",
+    "frozen_runtime_vendor": "Velodyne",
+    "other_hardware_may_be_inventoried": true,
+    "other_hardware_may_use_VLP32C_runtime_path": false
+  },
+  "next_physical_step": {
+    "action": "read_only_hardware_and_host_network_inventory",
+    "goal": "Ground the actual sensor model, serial, cabling, host interfaces, host IPv4 configuration, and connection path before any runtime binding or real sensor execution.",
+    "location": "KIOS_acquisition_host",
+    "network_configuration_change_required": false,
+    "packet_capture_required": false,
+    "sensor_contact_required": false
+  },
+  "parent_checkpoint": {
+    "git_head": "af8f2d484cf99bedcb88ac41b2aa19196888efb5",
+    "git_tree": "223f13db7b7641a9b8d164e74128934bab33c984"
+  },
+  "portability": {
+    "HTTP_port_default_selected": false,
+    "KIOS_interface_default_selected": false,
+    "Verona_IP_hardcoded": false,
+    "Verona_interface_hardcoded": false,
+    "config_eno1_occurrence_role": "forbidden_hardcoding_policy_only",
+    "measurement_UDP_port_default_selected": false,
+    "module_eno1_occurrence_role": "operator_warning_only",
+    "physical_runtime_values_must_be_operator_supplied_or_physically_discovered": true,
+    "position_UDP_port_default_selected": false,
+    "sensor_IP_default_selected": false
+  },
+  "purpose": "Freeze the portable, hardware-neutral preparation layer for future controlled physical LiDAR evidence collection at KIOS while preserving fail-closed execution boundaries.",
+  "qualification": {
+    "bound_software_only_smoke": true,
+    "frozen_runtime_binding_v2_compatibility": true,
+    "full_regression_tests": 2937,
+    "inventory_only_software_smoke": true,
+    "production_structural_hardcoding_guard": true,
+    "targeted_tests": 32
+  },
+  "repository_files": {
+    "config": {
+      "path": "configs/trust_robot/portable_physical_lidar_capture_bundle_v1.json",
+      "sha256": "9a43505cff2113f2ff3e7dfbdf48fea88fd9600f5b9a2156265e4ec18a3789a8"
+    },
+    "module": {
+      "path": "src/trust_robot/portable_physical_lidar_capture_bundle.py",
+      "sha256": "611766a8c0c2f7e532c52185a50a7087a46a7cfcc7b1a996a072e5dff0e5747e"
+    },
+    "runner": {
+      "path": "scripts/trust_robot/prepare_portable_physical_lidar_capture_bundle_v1.py",
+      "sha256": "4b374f95eca3ce742e87098c2747c102181d06d92cf5df4a8fb037f25866125f"
+    },
+    "test": {
+      "path": "tests/trust_robot/test_portable_physical_lidar_capture_bundle.py",
+      "sha256": "751a8e734b039ee07789b79d51e87a5a81c65e4f768db88186eeb0d44fd4b897"
+    }
+  },
+  "runtime_binding": {
+    "TRAIN_only": true,
+    "binding_candidate_is_execution_authorization": false,
+    "declared_before_execution_required": true,
+    "destination_configuration_must_be_explicitly_verified": true,
+    "required_field_count": 16
+  },
+  "schema": "TRUST_ROBOT_PORTABLE_KIOS_PHYSICAL_LIDAR_CAPTURE_BUNDLE_FREEZE_V1",
+  "schema_version": 1,
+  "scientific_boundary": {
+    "ATE_RPE_computed": false,
+    "CONFIRMATION_open": false,
+    "SE4_physical_completion": false,
+    "SE5_physical_progression_authorized": false,
+    "VALIDATION_open": false,
+    "baseline_nominality_accepted": false,
+    "execution_authorization_generated": false,
+    "final_health_model_selected": false,
+    "health_supervision_source_accepted": false,
+    "model_fit_executed": false,
+    "network_IO_executed": false,
+    "packet_capture_executed": false,
+    "raw_real_sensor_capture_artifact_count": 0,
+    "real_capture_executed": false,
+    "real_health_label_count": 0,
+    "real_physical_health_truth": false,
+    "real_sensor_health_accuracy_claim": false,
+    "reference_data_used": false,
+    "sensor_contact_executed": false
+  },
+  "status": "FROZEN_SOFTWARE_PREPARATION_CHECKPOINT"
+}
