@@ -1,0 +1,20 @@
+{
+  "schema": "TRUST_ROBOT_MULTIMODAL_V15",
+  "status": "OFFLINE_PREPARED_NOT_RUNTIME_VERIFIED",
+  "scene_sha256": "bad5b801ea0d3d7fe046342bcd25bd5a2d91d9c35ad9071745156ef65a055e3d",
+  "script_sha256": "678fdbb580c6fe891a149ba127d6ba91769a679fb3e6921fc01f7b6b6cf919d2",
+  "parent_script_sha256": "848f4cf4fb40a30d91c59ef7dcda57c7eafa04494e55d4aac1cd670d02283212",
+  "fix": "NUMPY_SHAPE_TUPLE_ASSERTION",
+  "expected_vector_shape": [
+    3
+  ],
+  "planned_steps": 90,
+  "planned_camera_frames": 6,
+  "planned_lidar_frames": 6,
+  "planned_imu_records": 90,
+  "planned_pose_records": 90,
+  "motion_type": "SCRIPTED_KINEMATIC_TRANSLATION",
+  "runtime_verified": false,
+  "cross_sensor_synchronization_verified": false,
+  "independent_ground_truth_verified": false
+}

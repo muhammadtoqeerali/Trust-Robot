@@ -1,0 +1,89 @@
+{
+  "schema": "TRUST_ROBOT_ISAACSIM_V15_COMPACT_EVIDENCE_V1",
+  "status": "LOCAL_RUNTIME_AND_OFFLINE_FILE_VALIDATION_PASSED",
+  "source_origin": "FIRST_PARTY_SIMPLIFIED_PROXY",
+  "data_origin": "SYNTHETIC",
+  "isaac_sim_version": "5.1",
+  "camera_frames": 6,
+  "lidar_scans": 6,
+  "imu_records": 90,
+  "usd_pose_samples": 90,
+  "robot_displacement_m": 0.356,
+  "lidar_displacement_m": 0.356,
+  "relative_offset_max_drift_m": 0.0,
+  "lidar_emitter_count": 16,
+  "runtime_log_sha256": "b7c0e5b64186ab619173ceb7f0b2869334de7ccbd120b8928a35fa2902d31878",
+  "summary_sha256": "d788f59ce11b1a5af4223a8da7628e2eaa7b7cc517bdb88de9bf449bb6692a80",
+  "capture_index_sha256": "9c723cb8b3861413840d39f5dac38c224af2579a10c0473cbfe827314de5be7d",
+  "pose_series_sha256": "482d6127f5a561145ec44f45ece72ce78b57c8519bd0c2eae98fa65093bef6ce",
+  "imu_series_sha256": "c31ca3c60bec36f24511d4856b1b27c41beec34233cfd2fae358307d6dd39b7b",
+  "frame_files": {
+    "frames_v15/camera_001.npy": {
+      "sha256": "a94bb056cc40d1ec0c061b0e4fdf53a8d45517988d32f426c25d8c9862666024",
+      "bytes": 76928
+    },
+    "frames_v15/lidar_001.npy": {
+      "sha256": "d3d299e4836964740af5729b3f5cd571c86d35e6beae6d908016d7870d6d4062",
+      "bytes": 284
+    },
+    "frames_v15/camera_002.npy": {
+      "sha256": "4d9a7a27d11c2dc1a15634aaa86e4065625db047ccfe024dfd3a7bc9a1eca335",
+      "bytes": 76928
+    },
+    "frames_v15/lidar_002.npy": {
+      "sha256": "cf9c1905ab33312d0e80fd35b2ca52e4af92a0c8feb6adda9604c2ea87559425",
+      "bytes": 308
+    },
+    "frames_v15/camera_003.npy": {
+      "sha256": "6a149a26d6a21459c51188571e02f28400229927a364f50f57e6f85c41e4bf21",
+      "bytes": 76928
+    },
+    "frames_v15/lidar_003.npy": {
+      "sha256": "915266fe553f9083a053bac69321cf962c4e5dd4bc2247e53c16a3be2a3d5607",
+      "bytes": 308
+    },
+    "frames_v15/camera_004.npy": {
+      "sha256": "0af1fac2068aab7cebc119a4968e5ee62ca50fc0ffb56a5ab169f91bcc95fc1a",
+      "bytes": 76928
+    },
+    "frames_v15/lidar_004.npy": {
+      "sha256": "f54bf2f9b7d193676cfeb1ef0889dc744bd3cc56ba7bb00c9bb1bf0c8fcae89c",
+      "bytes": 308
+    },
+    "frames_v15/camera_005.npy": {
+      "sha256": "7b07a3f438f23023dbd71f3740d9aa4e5415ec516a864bc370f8a8d7b6ba3a3a",
+      "bytes": 76928
+    },
+    "frames_v15/lidar_005.npy": {
+      "sha256": "e1315ce9c72f3e74e04a36525e961ec0ad288bfc2798452be0f54c6a8c88eeb9",
+      "bytes": 296
+    },
+    "frames_v15/camera_006.npy": {
+      "sha256": "305b822e3095ea58f266ecdfde48de74c878d3729f833d77574f97268e2cace1",
+      "bytes": 76928
+    },
+    "frames_v15/lidar_006.npy": {
+      "sha256": "f37c8cdca7ac767b38304d74a2fe746ba6040ffb1e3acf847ccf4473221b1ae5",
+      "bytes": 296
+    }
+  },
+  "runtime_markers": [
+    "KINEMATIC_TRANSLATION_SHAPE=PASS",
+    "ROBOT_MOUNTED_LIDAR_PRIM=PASS",
+    "LIDAR_USD_ATTRIBUTES=PASS",
+    "DYNAMIC_USD_MOUNT_CONSISTENCY=PASS",
+    "TIMESERIES_CAMERA_FRAMES=6",
+    "TIMESERIES_LIDAR_FRAMES=6",
+    "TIMESERIES_POSE_SAMPLES=90",
+    "MULTIMODAL_RUNTIME=PASS"
+  ],
+  "gpu_crash_report_count": 0,
+  "usd_mount_motion_consistency_verified": true,
+  "physical_motion_equivalence_verified": false,
+  "lidar_motion_effects_verified": false,
+  "cross_sensor_synchronization_verified": false,
+  "independent_ground_truth_verified": false,
+  "localization_estimator_evaluated": false,
+  "trained_health_model_evaluated": false,
+  "physical_robot_tested": false
+}
