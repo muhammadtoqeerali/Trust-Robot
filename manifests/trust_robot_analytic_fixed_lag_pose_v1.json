@@ -1,0 +1,133 @@
+{
+  "derived_output_sha256": {
+    "clean_rolling_window_poses.jsonl": "877ad239698784bbadb021939eb84b9eb3c2ab5a4083142c76fad2356731084d",
+    "noise_rolling_window_poses.jsonl": "f912545659906bf0641e05b3f9458909007d628e5e6916cbdd6e9680a02ce63c",
+    "offset_rolling_window_poses.jsonl": "192ad3a0908c4569b08dc2f3ac1a0cfe1d0040c702697cc0bc9e3fa7d114b4c8",
+    "sparse_rolling_window_poses.jsonl": "5a0f7165f6effeb7c2608b2e088722481cb60fc96543ac78c67c5b54c48c3580"
+  },
+  "empirical_health_training_authorized": false,
+  "full_state_estimator_complete": false,
+  "independent_reference_validated": false,
+  "metrics_by_condition": {
+    "clean": {
+      "chain": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 7.124478503425614e-13,
+        "fixture_rotation_max_deg": 7.124478503425614e-13,
+        "fixture_rotation_rmse_deg": 2.2276870085515117e-13,
+        "fixture_translation_final_m": 1.43492467211679e-14,
+        "fixture_translation_max_m": 1.43492467211679e-14,
+        "fixture_translation_rmse_m": 4.51655915369772e-15,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      },
+      "successful_window_solves": 19,
+      "window": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 7.093393170440236e-13,
+        "fixture_rotation_max_deg": 7.093393170440236e-13,
+        "fixture_rotation_rmse_deg": 2.2161169717369654e-13,
+        "fixture_translation_final_m": 1.4340331129491895e-14,
+        "fixture_translation_max_m": 1.4340331129491895e-14,
+        "fixture_translation_rmse_m": 4.515677129124349e-15,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      }
+    },
+    "noise": {
+      "chain": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 0.012461462619990843,
+        "fixture_rotation_max_deg": 0.21609759389980854,
+        "fixture_rotation_rmse_deg": 0.09295134910948372,
+        "fixture_translation_final_m": 0.002591770252577457,
+        "fixture_translation_max_m": 0.010121330987952199,
+        "fixture_translation_rmse_m": 0.004837860753673221,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      },
+      "successful_window_solves": 19,
+      "window": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 0.0064276385916206625,
+        "fixture_rotation_max_deg": 0.21650541418345548,
+        "fixture_rotation_rmse_deg": 0.09222313211646234,
+        "fixture_translation_final_m": 0.0011128610975396662,
+        "fixture_translation_max_m": 0.00968359966301787,
+        "fixture_translation_rmse_m": 0.004502865183317535,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      }
+    },
+    "offset": {
+      "chain": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 7.192495690620121e-13,
+        "fixture_rotation_max_deg": 7.192495690620121e-13,
+        "fixture_rotation_rmse_deg": 2.28408498405768e-13,
+        "fixture_translation_final_m": 1.3937996331645434e-14,
+        "fixture_translation_max_m": 0.13601470508735494,
+        "fixture_translation_rmse_m": 0.09124143795447354,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      },
+      "successful_window_solves": 19,
+      "window": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 7.17008013862778e-13,
+        "fixture_rotation_max_deg": 7.17008013862778e-13,
+        "fixture_rotation_rmse_deg": 2.275457466888923e-13,
+        "fixture_translation_final_m": 1.3916075091944423e-14,
+        "fixture_translation_max_m": 0.13601470508735494,
+        "fixture_translation_rmse_m": 0.09124143795447354,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      }
+    },
+    "sparse": {
+      "chain": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 7.985200142772735,
+        "fixture_rotation_max_deg": 7.985200142772735,
+        "fixture_rotation_rmse_deg": 4.373674244389973,
+        "fixture_translation_final_m": 0.11309227838849925,
+        "fixture_translation_max_m": 0.11868925036171,
+        "fixture_translation_rmse_m": 0.06336547647024847,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      },
+      "successful_window_solves": 19,
+      "window": {
+        "analytic_reference_only": true,
+        "fixture_rotation_final_deg": 7.985200142772731,
+        "fixture_rotation_max_deg": 7.985200142772731,
+        "fixture_rotation_rmse_deg": 4.3736742443899725,
+        "fixture_translation_final_m": 0.11309227838849926,
+        "fixture_translation_max_m": 0.11868925036171,
+        "fixture_translation_rmse_m": 0.06336547647024847,
+        "independent_measured_reference": false,
+        "scientific_dataset_ate_rpe": false
+      }
+    }
+  },
+  "module_sha256": "71e1034b1376ca399317018891b6d138fda93cd5162e55aeb953a5a118e94eca",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.12",
+    "scipy": "1.13.1"
+  },
+  "parent_commit": "a8cd154d7fbcb910423b9f011ed845b4f14f01e5",
+  "physical_robot_tested": false,
+  "reference_input_to_estimator": false,
+  "run_manifest_sha256": "1b4fdb37ee89130430e1138c9c1f6bb8c46e2379eda93c2cea49531ae090e05d",
+  "schema": "TRUST_ROBOT_ANALYTIC_FIXED_LAG_POSE_FREEZE_V1",
+  "status": "POSE_ONLY_ROLLING_NONLINEAR_BENCHMARK_VALIDATED",
+  "test_sha256": "608a057b86d4af94af20ceea505c6bdf21e9ed4f1e7aacb098cfabe742f28695",
+  "upstream_source_sha256": {
+    "src/trust_robot/analytic_se3_geometry_benchmark.py": "d1d6fd3438b04606016eeec64113aefc8c94ccf6abfe8322c8ce572612d07bff",
+    "src/trust_robot/clean_backbone.py": "c33905286d380da32167b711e0c77f55478c04b54a89fef619e9c6e8fa168552",
+    "src/trust_robot/diagnostics.py": "b5332ffdfec5f7ef18b74f4f96bccfe6cf9d256300ee8f42916acb6217cd0ad2",
+    "src/trust_robot/lidar_frontend.py": "c1aac98d3081d338036a7ae9fd4ffd5c8f345f217ca8dbfa6426b0ac4e65cf7a"
+  },
+  "window_length": 5
+}
