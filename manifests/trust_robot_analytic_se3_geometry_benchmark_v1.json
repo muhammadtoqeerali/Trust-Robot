@@ -1,0 +1,84 @@
+{
+  "clean_pose_backbone_reused": true,
+  "conditions": [
+    "clean",
+    "sparse",
+    "noise",
+    "offset"
+  ],
+  "derived_artifact_sha256": {
+    "clean_estimated_poses.jsonl": "5603bbf2a479b324854c376c92b7d3266f02c39eaf199bd6b5ce77c6ad557423",
+    "noise_estimated_poses.jsonl": "edc978a9a82559faffbe6e85e57d6f0e5ed7dfa598d9188425a6a9f84dc0aee9",
+    "offset_estimated_poses.jsonl": "f0c86f713c3dca84a566d15250eb8107888d2711d3f762a2d7f71db03fbb459a",
+    "sparse_estimated_poses.jsonl": "449c0e451f5df644b3d10926d9e0552deb9536be08c6c569ab7748474a61a61d"
+  },
+  "fixture_frames": 20,
+  "health_model_training_authorized": false,
+  "held_out_scientific_evaluation_performed": false,
+  "independent_physical_reference_verified": false,
+  "landmark_count": 96,
+  "local_benchmark_manifest_sha256": "c98414bdb7ab16a35609a8477af5bdc340cf0248b720106d47b9bd28a15a5a36",
+  "metrics_by_condition": {
+    "clean": {
+      "analytic_reference_only": true,
+      "fixture_rotation_final_deg": 7.124478503425614e-13,
+      "fixture_rotation_max_deg": 7.124478503425614e-13,
+      "fixture_rotation_rmse_deg": 2.2276870085515117e-13,
+      "fixture_translation_final_m": 1.43492467211679e-14,
+      "fixture_translation_max_m": 1.43492467211679e-14,
+      "fixture_translation_rmse_m": 4.51655915369772e-15,
+      "independent_measured_reference": false,
+      "scientific_dataset_ate_rpe": false
+    },
+    "noise": {
+      "analytic_reference_only": true,
+      "fixture_rotation_final_deg": 0.012461462619990843,
+      "fixture_rotation_max_deg": 0.21609759389980854,
+      "fixture_rotation_rmse_deg": 0.09295134910948372,
+      "fixture_translation_final_m": 0.002591770252577457,
+      "fixture_translation_max_m": 0.010121330987952199,
+      "fixture_translation_rmse_m": 0.004837860753673221,
+      "independent_measured_reference": false,
+      "scientific_dataset_ate_rpe": false
+    },
+    "offset": {
+      "analytic_reference_only": true,
+      "fixture_rotation_final_deg": 7.192495690620121e-13,
+      "fixture_rotation_max_deg": 7.192495690620121e-13,
+      "fixture_rotation_rmse_deg": 2.28408498405768e-13,
+      "fixture_translation_final_m": 1.3937996331645434e-14,
+      "fixture_translation_max_m": 0.13601470508735494,
+      "fixture_translation_rmse_m": 0.09124143795447354,
+      "independent_measured_reference": false,
+      "scientific_dataset_ate_rpe": false
+    },
+    "sparse": {
+      "analytic_reference_only": true,
+      "fixture_rotation_final_deg": 7.985200142772735,
+      "fixture_rotation_max_deg": 7.985200142772735,
+      "fixture_rotation_rmse_deg": 4.373674244389973,
+      "fixture_translation_final_m": 0.11309227838849925,
+      "fixture_translation_max_m": 0.11868925036171,
+      "fixture_translation_rmse_m": 0.06336547647024847,
+      "independent_measured_reference": false,
+      "scientific_dataset_ate_rpe": false
+    }
+  },
+  "module_sha256": "d1d6fd3438b04606016eeec64113aefc8c94ccf6abfe8322c8ce572612d07bff",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.12",
+    "scipy": "1.13.1"
+  },
+  "parent_commit": "143dcfcfe9b8a7a9ef7a51a67468ab0ebd91d961",
+  "perturbation_index_window": [
+    5,
+    14
+  ],
+  "phase2_registration_reused": true,
+  "phase4_diagnostics_reused": true,
+  "physical_robot_tested": false,
+  "schema": "TRUST_ROBOT_ANALYTIC_SE3_GEOMETRY_BENCHMARK_FREEZE_V1",
+  "status": "SYNTHETIC_DEVELOPMENT_FIXTURE_VALIDATED",
+  "test_sha256": "fe9c342c74d24cbcfa50caeac4c5e34686796aee2f923a06804c4f252632040c"
+}
