@@ -1,0 +1,33 @@
+{
+  "camera_and_imu_se3_contract_reused": true,
+  "cross_modal_synchronization_verified": false,
+  "derived_file_sha256": {
+    "clean_camera.jsonl": "664d5dc336b09a5274f2ca2398e0867299d57b656335c405eb264c61f5d5c1e1",
+    "clean_imu.jsonl": "e93967cbb2c3f6aa363c6e5e4f9e9a23e407b5073ca4ff87451f4cb4e470f7d2",
+    "clean_lidar.jsonl": "1116825c54794b5184e369bab772eba5f55cc2fc39e108f7166a5f713d93380b",
+    "intervention_camera.jsonl": "58306dcb0d509a664b08ca01f8e569783971952e12101cba62908632827e4252",
+    "intervention_imu.jsonl": "31c2574a48f9d978a15ee662ecb868b812e0a2a68dfe9c1874ab372e2220b31c",
+    "intervention_lidar.jsonl": "1f28aa46f0b74a27ed56c93d85f5e40e248d59a4fc45fdb39294dd02d58708bd"
+  },
+  "derived_output_manifest_sha256": "55381f48bd21fb2c1d5ddc422ec77fe69958c605a7d0e003bd88ae82d95d239d",
+  "empirical_health_training_authorized": false,
+  "independent_ground_truth_verified": false,
+  "input_evidence_sha256": "d30ab2f7abd0adc2834774743d1e75b2a68c3e24704f9d889a38153d0af886bc",
+  "interventions": {
+    "camera_blackout_frame": 3,
+    "imu_accel_bias_step": 45,
+    "lidar_half_sample_frame": 3
+  },
+  "module_sha256": "07e150502446cbb3ea65592964ae35addfe974caeb0232f10d4b918bd3ebcdf9",
+  "phase4_lidar_icp_contract_implemented": false,
+  "real_hardware_tested": false,
+  "schema": "TRUST_ROBOT_KIOS_ISAACSIM_V15_DIAGNOSTIC_BRIDGE_FREEZE_V1",
+  "source_commit": "99816844a4344f14ac201d2d26e05a645932d8ca",
+  "status": "OFFLINE_SYNTHETIC_DIAGNOSTIC_BRIDGE_PASSED",
+  "stream_record_counts": {
+    "camera": 6,
+    "imu": 90,
+    "lidar": 6
+  },
+  "test_sha256": "21af4cbbe63766084b8f91839e94d3530d5bd3d5d7348ec0316bf550ff98f03f"
+}
