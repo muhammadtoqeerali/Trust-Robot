@@ -1,0 +1,19 @@
+{
+  "attempted_pairs": 10,
+  "empirical_health_training_authorized": false,
+  "frozen_phase2_registration_reused": true,
+  "frozen_phase4_diagnostic_extractor_reused": true,
+  "independent_extrinsics_verified": false,
+  "independent_ground_truth_verified": false,
+  "localization_accuracy_evaluated": false,
+  "module_sha256": "d477121d3fdc6ca8673b212961f6ed93a744c5c28cd4028375572382230b91c3",
+  "paired_records_sha256": "cec3f7931774fdf7a3ab8a32115c8b707ab1b6cb2ff5f9b8bc8b159080eb4c37",
+  "pairs_unavailable": 0,
+  "pairs_with_diagnostics": 10,
+  "run_manifest_sha256": "907fa1126910673bd2d403f0c2dc7f0f77d1f549c67d0a10df1c8ff81db4d08f",
+  "schema": "TRUST_ROBOT_KIOS_V15_REGISTRATION_QUALIFICATION_FREEZE_V1",
+  "source_commit": "b9b5d00247d52d2f6aceb7cc2f91e80bebaae1c2",
+  "status": "OFFLINE_SYNTHETIC_PAIRWISE_QUALIFICATION_EXECUTED",
+  "synchronization_verified": false,
+  "unit_test_sha256": "59b50bcb634d0961bd2650485e544a63fae196467d0215226819b9dc0062b589"
+}
