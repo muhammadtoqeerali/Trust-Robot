@@ -1,0 +1,31 @@
+{
+  "cross_environment_feature_difference_pairs": 0,
+  "derived_file_sha256": {
+    "clean_pose_chain.jsonl": "0b5fda35e965cc1ac765e140bc63fdad02c3a668f50eeec6a5003bc0d104fd86",
+    "intervention_pose_chain.jsonl": "d2503a4374af89dafd1801d3ef0e73d25f885cfdfb9a395dc4b7c1f7ce1969de"
+  },
+  "fixed_lag_backend_complete": false,
+  "frozen_backbone_reused": true,
+  "health_model_trained": false,
+  "independent_ground_truth_available": false,
+  "module_sha256": "5ab5fa253ec387d4869e2e604368d48813f285c9a0cf3dd654972eb16f7188ee",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.12",
+    "scipy": "1.13.1"
+  },
+  "parent_commit": "988f5a64433bc2108f02d6df7dcb1655a0fb4739",
+  "physical_robot_tested": false,
+  "physical_synchronization_verified": false,
+  "pose_chains": {
+    "clean": 6,
+    "intervention": 6
+  },
+  "real_world_localization_validated": false,
+  "registration_pairs_per_condition": 5,
+  "run_manifest_sha256": "b1f04d865c65d59c8962f10b5f47501c9c17cfff3f34c360e19e765208d4e20f",
+  "schema": "TRUST_ROBOT_KIOS_V15_ODOMETRY_CHAIN_FREEZE_V1",
+  "sensor_extrinsics_independently_verified": false,
+  "status": "OFFLINE_EXPLORATORY_POSE_CHAIN_VALIDATED",
+  "test_sha256": "fc1b19550f20a863eb19f9d738dc3174049b7a9af0b8d3ee638a4daae7e60daa"
+}
