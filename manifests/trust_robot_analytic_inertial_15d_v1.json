@@ -1,0 +1,51 @@
+{
+  "15d_nonlinear_joint_state_implemented": true,
+  "artifact_sha256": {
+    "accel_bias_15d_states.jsonl": "963bbb7fe24e7683640829524c3db35e9305292bb3c4263cc5453275e3ce6f87",
+    "clean_15d_states.jsonl": "7f585b96aa6bd5102558919f9167d56c8101f022472ec699aded15119691c1e7",
+    "lidar_dropout_15d_states.jsonl": "7f585b96aa6bd5102558919f9167d56c8101f022472ec699aded15119691c1e7"
+  },
+  "conditions": [
+    "clean",
+    "accel_bias",
+    "lidar_dropout"
+  ],
+  "execution_manifest_sha256": "1312c2aff7bf97bdd2c19e287670a92440527f09b107121a976e4c5b13a008ed",
+  "full_fixed_lag_estimator_complete": false,
+  "health_model_training_authorized": false,
+  "independent_reference_verified": false,
+  "inertial_factors_implemented": true,
+  "metrics_by_condition": {
+    "accel_bias": {
+      "fixture_position_rmse_m": 0.0006197716760328808,
+      "fixture_rotation_rmse_deg": 0.005478317625654609,
+      "fixture_velocity_rmse_m_s": 0.0686512916892807,
+      "independent_reference": false
+    },
+    "clean": {
+      "fixture_position_rmse_m": 2.1387142793593918e-16,
+      "fixture_rotation_rmse_deg": 3.28782580182274e-16,
+      "fixture_velocity_rmse_m_s": 7.083077146699878e-16,
+      "independent_reference": false
+    },
+    "lidar_dropout": {
+      "fixture_position_rmse_m": 2.1387142793593918e-16,
+      "fixture_rotation_rmse_deg": 3.28782580182274e-16,
+      "fixture_velocity_rmse_m_s": 7.083077146699878e-16,
+      "independent_reference": false
+    }
+  },
+  "module_sha256": "e077d3d294f22130450a34b9ac42932d5bfcf1af552ed4653b864211a5e39c74",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.12",
+    "scipy": "1.13.1"
+  },
+  "parent_commit": "faa8d0917a7bcb46668b3f69a04007865b5a8d70",
+  "physical_robot_tested": false,
+  "probabilistic_marginalization_complete": false,
+  "schema": "TRUST_ROBOT_ANALYTIC_INERTIAL_15D_FREEZE_V1",
+  "state_dimension": 15,
+  "status": "DEVELOPMENT_15D_STATE_PROTOTYPE_VALIDATED",
+  "test_sha256": "f7dd38aa1e71e9ff3d08e33fc926bf9460de665490c8156a4a72d4449ae57f5d"
+}
