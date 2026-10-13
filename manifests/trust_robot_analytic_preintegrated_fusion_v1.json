@@ -1,0 +1,60 @@
+{
+  "correlated_15d_whitening_integrated": true,
+  "covariance_floor_std": 0.0001,
+  "derived_artifact_sha256": {
+    "accel_bias_preintegrated_states.jsonl": "47a36f40838576c41167e4994242ecdb56a12545bffa0cb7398b5fa0541262a6",
+    "clean_preintegrated_states.jsonl": "4e297c530b40d0dbe21405758d188eaec43cd20c883202583c67bd8f0e227ad9",
+    "lidar_dropout_preintegrated_states.jsonl": "4e297c530b40d0dbe21405758d188eaec43cd20c883202583c67bd8f0e227ad9"
+  },
+  "empirical_health_model_training_authorized": false,
+  "full_trust_robot_estimator_complete": false,
+  "independent_reference_verified": false,
+  "metrics_by_condition": {
+    "accel_bias": {
+      "fixture_position_rmse_m": 0.020767734669380655,
+      "fixture_rotation_rmse_deg": 0.0005265723824599501,
+      "fixture_velocity_rmse_m_s": 0.07928619579537519,
+      "independent_reference": false
+    },
+    "clean": {
+      "fixture_position_rmse_m": 2.3185935584906465e-16,
+      "fixture_rotation_rmse_deg": 4.317599069697634e-16,
+      "fixture_velocity_rmse_m_s": 6.925737648733791e-16,
+      "independent_reference": false
+    },
+    "lidar_dropout": {
+      "fixture_position_rmse_m": 2.3185935584906465e-16,
+      "fixture_rotation_rmse_deg": 4.317599069697634e-16,
+      "fixture_velocity_rmse_m_s": 6.925737648733791e-16,
+      "independent_reference": false
+    }
+  },
+  "module_sha256": "396fc5171f3db972a2cebcd020f189e8a9c91979ada820a69ab8cd1b954efd79",
+  "node_frames": [
+    0,
+    2,
+    4,
+    6,
+    8
+  ],
+  "nonoverlapping_imu_factors": true,
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.12",
+    "scipy": "1.13.1"
+  },
+  "parent_commit": "dcbd92e789e336e535057749cf39663195cbf973",
+  "physical_sensor_calibration_verified": false,
+  "preintegration_integrated": true,
+  "run_manifest_sha256": "498322a3aed17d4c851944732ef051c499cdded9796eb1a4f890d3d34c72f0ad",
+  "schema": "TRUST_ROBOT_ANALYTIC_PREINTEGRATED_FUSION_FREEZE_V1",
+  "schur_marginalization_implemented": false,
+  "status": "DEVELOPMENT_PREINTEGRATED_FUSION_VALIDATED",
+  "test_sha256": "07c5b089beb5be643c4b2f6c51d4d442f3630f937b97930dff7be218b4f5aab6",
+  "upstream_source_sha256": {
+    "src/trust_robot/analytic_imu_preintegration.py": "5d1150e1351e205521f7511b7885542199d95a4b9ef34ad618f6f9291bb24b33",
+    "src/trust_robot/analytic_inertial_15d.py": "e077d3d294f22130450a34b9ac42932d5bfcf1af552ed4653b864211a5e39c74",
+    "src/trust_robot/diagnostics.py": "b5332ffdfec5f7ef18b74f4f96bccfe6cf9d256300ee8f42916acb6217cd0ad2",
+    "src/trust_robot/lidar_frontend.py": "c1aac98d3081d338036a7ae9fd4ffd5c8f345f217ca8dbfa6426b0ac4e65cf7a"
+  }
+}
