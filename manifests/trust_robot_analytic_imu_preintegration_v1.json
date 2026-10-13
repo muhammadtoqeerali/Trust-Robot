@@ -1,0 +1,54 @@
+{
+  "bias_correction_error": 2.025088725459537e-05,
+  "bias_jacobian_implemented": true,
+  "covariance_propagation_implemented": true,
+  "derived_output_sha256": {
+    "accel_bias_factors.jsonl": "5193fa88bbcfbfa2cff494984c6d5e239bfe3343b7f41b58ea189861b4836a32",
+    "clean_factors.jsonl": "c7683ebdc8d119c6b551652b98d842820f47c37ee641ace3a9593fa33531f499",
+    "gyro_bias_factors.jsonl": "83adfa19a4e9b833f1492168ab0ac66a5d21f6a406bd5d75e58858ccc49f4b14"
+  },
+  "finite_difference_jacobian_error": 4.875601034015631e-10,
+  "full_15d_correlated_whitening_implemented": false,
+  "health_model_training_authorized": false,
+  "independent_reference_verified": false,
+  "module_sha256": "5d1150e1351e205521f7511b7885542199d95a4b9ef34ad618f6f9291bb24b33",
+  "noise_covariance_scaling_error": 0.0,
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "python": "3.10.12"
+  },
+  "parent_commit": "1a66d42770d56b6262e438e0cbb8fe8e591922bb",
+  "physical_robot_tested": false,
+  "real_sensor_noise_calibrated": false,
+  "results": {
+    "accel_bias": {
+      "covariance_trace_mean": 9.8527691439933e-05,
+      "factors": 4,
+      "max_whitened_motion_residual": 14.676349552586188,
+      "mean_whitened_motion_residual": 6.262123974287722
+    },
+    "clean": {
+      "covariance_trace_mean": 9.852393715183012e-05,
+      "factors": 4,
+      "max_whitened_motion_residual": 2.7276780839255975e-13,
+      "mean_whitened_motion_residual": 1.7563155980626647e-13
+    },
+    "gyro_bias": {
+      "covariance_trace_mean": 9.852393673810849e-05,
+      "factors": 4,
+      "max_whitened_motion_residual": 11.962527464816947,
+      "mean_whitened_motion_residual": 4.487660739783735
+    }
+  },
+  "rolling_optimizer_integration_complete": false,
+  "run_manifest_sha256": "d16b03fad5fd46b431657fe9ee708583cba05e34e77e47f7a70f6dc8d1c91398",
+  "schema": "TRUST_ROBOT_ANALYTIC_IMU_PREINTEGRATION_FREEZE_V1",
+  "schur_marginalization_complete": false,
+  "status": "DEVELOPMENT_PREINTEGRATION_MATHEMATICS_VALIDATED",
+  "test_sha256": "97db13a8c43bc817e7c83df8c0dced0a207c46e54bfa50f309f7f7f8205b709f",
+  "upstream_source_sha256": {
+    "src/trust_robot/analytic_inertial_15d.py": "e077d3d294f22130450a34b9ac42932d5bfcf1af552ed4653b864211a5e39c74",
+    "src/trust_robot/clean_backbone.py": "c33905286d380da32167b711e0c77f55478c04b54a89fef619e9c6e8fa168552",
+    "src/trust_robot/lidar_frontend.py": "c1aac98d3081d338036a7ae9fd4ffd5c8f345f217ca8dbfa6426b0ac4e65cf7a"
+  }
+}
