@@ -1,0 +1,215 @@
+{
+  "deterministic_rederivation_identical": true,
+  "engineering_gate_pass": true,
+  "factor_candidates_examined": 10,
+  "factor_decisions": [
+    {
+      "admission": "DENIED",
+      "condition": "clean",
+      "current_step": 61,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 51,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "L2_PERTURBATION_SENSITIVITY_REQUIRES_QUALIFICATION"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "clean",
+      "current_step": 71,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 61,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "L2_PERTURBATION_SENSITIVITY_REQUIRES_QUALIFICATION"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "clean",
+      "current_step": 81,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 71,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "L2_PERTURBATION_SENSITIVITY_REQUIRES_QUALIFICATION"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "clean",
+      "current_step": 91,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 81,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "L2_PERTURBATION_SENSITIVITY_REQUIRES_QUALIFICATION"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "clean",
+      "current_step": 101,
+      "diagnostic_candidate_present": false,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "SPARSE_ENDPOINT_UNAVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 91,
+      "reason_codes": [
+        "SPARSE_ENDPOINT_UNAVAILABLE"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "frame_3_half_sampled",
+      "current_step": 61,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 51,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "PERTURBED_CONDITION_NOT_L2_QUALIFIED"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "frame_3_half_sampled",
+      "current_step": 71,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 61,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "PERTURBED_CONDITION_NOT_L2_QUALIFIED"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "frame_3_half_sampled",
+      "current_step": 81,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 71,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "PERTURBED_CONDITION_NOT_L2_QUALIFIED"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "frame_3_half_sampled",
+      "current_step": 91,
+      "diagnostic_candidate_present": true,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "FROZEN_DIAGNOSTICS_AVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 81,
+      "reason_codes": [
+        "GEOMETRIC_POSE_OBSERVABILITY_UNVERIFIED",
+        "REGISTRATION_UNCERTAINTY_NOT_CALIBRATED",
+        "PHYSICAL_MEASUREMENT_TIME_UNVERIFIED",
+        "DIAGNOSTIC_FIT_NOT_POSE_QUALIFICATION",
+        "PERTURBED_CONDITION_NOT_L2_QUALIFIED"
+      ]
+    },
+    {
+      "admission": "DENIED",
+      "condition": "frame_3_half_sampled",
+      "current_step": 101,
+      "diagnostic_candidate_present": false,
+      "estimator_pose_increment": null,
+      "factor_information_matrix": null,
+      "health_label": null,
+      "input_registration_status": "SPARSE_ENDPOINT_UNAVAILABLE",
+      "physical_or_reference_accuracy_claim": false,
+      "physical_timestamp_ns": null,
+      "previous_step": 91,
+      "reason_codes": [
+        "SPARSE_ENDPOINT_UNAVAILABLE"
+      ]
+    }
+  ],
+  "factors_admitted": 0,
+  "health_labels_generated": false,
+  "health_model_training_authorized": false,
+  "implementation_sha256": "38afc32a383331b79bce9e3f61172359df3a0767c8070735a22e6e8cd1c76f35",
+  "independent_reference_scoring_performed": false,
+  "l1_sha256": "a120e376d7055a19fe5948f0df9b15b8b824399e967583e745da3258c55c553b",
+  "l2_sha256": "4cad184b44bd9d99ebb762a7dcbe04e0c18bd42265568057aaf7f7a1598922c6",
+  "negative_tampering_tests_passed": 8,
+  "no_scientific_selection_thresholds_introduced": true,
+  "phase2_frontend_modified": false,
+  "phase4_extractor_modified": false,
+  "physical_sensor_synchronization_verified": false,
+  "schema": "TRUST_ROBOT_L3_V16_FAIL_CLOSED_FACTOR_ADMISSION_V1",
+  "sparse_pairs_rejected": 2,
+  "unqualified_nonsparse_pairs_rejected": 8,
+  "v16_sha256": "ab08f15221e2f977321afc5e4983feaf9d815ca91b97f2034b36317638e78d82"
+}

@@ -41,3 +41,18 @@ plus 130 IMU/pose records; V16.29 provenance audit passed. **Do not claim
 cross-sensor exposure synchronization, independently measured ground truth,
 physical sensor equivalence or localization performance.** Preserve original
 V15/V16 experimental history. No shared-KIOS or physical-robot operations.
+
+## KIOS V16 L1-L3 registration gate checkpoint (2026-10-15)
+
+Engineering-only deterministic diagnostics and a fail-closed factor-admission
+interface are now versioned in
+`experiments/isaacsim_v16_l123_registration_gate_v1/` and
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_V16_L1_L2_L3_REGISTRATION_GATE_V1.md`.
+L1: 8/10 registration diagnostics available; two sparse pairs refused.
+L2: weak scan geometry and strongly perturbation-sensitive ICP pose estimates.
+L3: 10/10 factors DENIED, eight evidence-tampering tests passed.
+No localization pose factor, calibration, health label, cross-sensor sync,
+independently referenced pose, or scientific accuracy claim is established.
+These source/report copies are hash-bound and reproducibility-tested; frozen
+Phase-2/Phase-4, M2DGR, historical V15/V16 data and SE4/SE5/SE9 scientific
+gates remain unchanged. Read the package README before further LiDAR work.

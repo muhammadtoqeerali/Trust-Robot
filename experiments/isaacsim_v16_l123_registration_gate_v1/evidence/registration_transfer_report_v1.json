@@ -1,0 +1,461 @@
+{
+  "ate_rpe_computed": false,
+  "camera_exposure_synchronization_verified": false,
+  "engineering_gate_is_health_threshold": false,
+  "engineering_point_gate_minimum": 8,
+  "frozen_diagnostics_available": 8,
+  "frozen_phase2_frontend_reused": true,
+  "frozen_phase4_extractor_reused": true,
+  "health_labels_generated": false,
+  "implementation_sha256": "02555ba07f6dea31384bf666ef3601f4420a9496306441cd7629d398c53f4c9e",
+  "independent_ground_truth_verified": false,
+  "model_training_authorized": false,
+  "offline_implementation_pass": true,
+  "pair_attempts": 10,
+  "paired_registration": [
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "clean",
+      "current_points": 16,
+      "current_step": 61,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 51,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.012649219905566021,
+          "fixed_point_iterations": 2,
+          "source_point_count": 16,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.974813493502483,
+            0.0013283483288477368,
+            -0.2079861271448206,
+            0.08049011921658768
+          ],
+          "translation_m": [
+            0.09440141575503119,
+            -0.08457061228097629,
+            -0.2132290100236868
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "clean",
+      "current_points": 16,
+      "current_step": 71,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 61,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.010531652313497878,
+          "fixed_point_iterations": 4,
+          "source_point_count": 16,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.9983369050027354,
+            0.0004801550386315218,
+            0.05563793981899836,
+            -0.015086855649724716
+          ],
+          "translation_m": [
+            0.04031749443467991,
+            0.020704400230408725,
+            0.05192511322756347
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "clean",
+      "current_points": 16,
+      "current_step": 81,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 71,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.009059521427794447,
+          "fixed_point_iterations": 5,
+          "source_point_count": 16,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.31414183901235004,
+            -0.0004909737279515062,
+            -0.8788376867598333,
+            0.35910859674667
+          ],
+          "translation_m": [
+            0.851544528964797,
+            -0.11300424572222982,
+            -0.24357167140217914
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "clean",
+      "current_points": 16,
+      "current_step": 91,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 81,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.011254475023037584,
+          "fixed_point_iterations": 2,
+          "source_point_count": 16,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.13274909197697382,
+            -0.0005268493029466773,
+            0.916684644934251,
+            -0.37691731553600366
+          ],
+          "translation_m": [
+            0.8455629449384585,
+            0.04331370658102373,
+            0.09891914057492482
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "clean",
+      "current_points": 4,
+      "current_step": 101,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 91,
+      "registration": {
+        "error": "INSUFFICIENT_STRUCTURAL_POINTS",
+        "features": null,
+        "relative_pose_candidate": null,
+        "relative_pose_scientifically_qualified": false,
+        "status": "SPARSE_ENDPOINT_UNAVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "frame_3_half_sampled",
+      "current_points": 16,
+      "current_step": 61,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 51,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.012649219905566021,
+          "fixed_point_iterations": 2,
+          "source_point_count": 16,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.974813493502483,
+            0.0013283483288477368,
+            -0.2079861271448206,
+            0.08049011921658768
+          ],
+          "translation_m": [
+            0.09440141575503119,
+            -0.08457061228097629,
+            -0.2132290100236868
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "frame_3_half_sampled",
+      "current_points": 8,
+      "current_step": 71,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 61,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 8,
+          "final_nearest_neighbor_rmse_m": 0.010799829744111592,
+          "fixed_point_iterations": 1,
+          "source_point_count": 8,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.9996126494507445,
+            -0.00017026002226545837,
+            0.027661411249732933,
+            -0.003060783765830043
+          ],
+          "translation_m": [
+            0.03725469338473525,
+            0.0034788387759935747,
+            0.026944757632547646
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "frame_3_half_sampled",
+      "current_points": 16,
+      "current_step": 81,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 8,
+      "previous_step": 71,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.0183815209294117,
+          "fixed_point_iterations": 1,
+          "source_point_count": 16,
+          "target_point_count": 8
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.16736159524946112,
+            0.0017843487703486617,
+            -0.9120892844465034,
+            0.37427269434582966
+          ],
+          "translation_m": [
+            0.9153951469066239,
+            -0.05079833330886497,
+            -0.13965194956745824
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "frame_3_half_sampled",
+      "current_points": 16,
+      "current_step": 91,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 81,
+      "registration": {
+        "error": null,
+        "features": {
+          "final_correspondence_count": 16,
+          "final_nearest_neighbor_rmse_m": 0.011254475023037584,
+          "fixed_point_iterations": 2,
+          "source_point_count": 16,
+          "target_point_count": 16
+        },
+        "relative_pose_candidate": {
+          "quaternion_wxyz": [
+            0.13274909197697382,
+            -0.0005268493029466773,
+            0.916684644934251,
+            -0.37691731553600366
+          ],
+          "translation_m": [
+            0.8455629449384585,
+            0.04331370658102373,
+            0.09891914057492482
+          ]
+        },
+        "relative_pose_scientifically_qualified": false,
+        "status": "FROZEN_DIAGNOSTICS_AVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    },
+    {
+      "camera_lidar_synchronized": false,
+      "condition": "frame_3_half_sampled",
+      "current_points": 4,
+      "current_step": 101,
+      "health_label_generated": false,
+      "independent_ground_truth_used": false,
+      "localization_accuracy_scored": false,
+      "previous_points": 16,
+      "previous_step": 91,
+      "registration": {
+        "error": "INSUFFICIENT_STRUCTURAL_POINTS",
+        "features": null,
+        "relative_pose_candidate": null,
+        "relative_pose_scientifically_qualified": false,
+        "status": "SPARSE_ENDPOINT_UNAVAILABLE"
+      },
+      "source_frame": "GMO_SENSOR_CARTESIAN"
+    }
+  ],
+  "registration_unavailable": 2,
+  "repeat_derivation_identical": true,
+  "scan_geometry": [
+    {
+      "full_6dof_observability_proven": false,
+      "lidar_file_sha256": "d3021afa566c114d69039eb357537fb2770b740038c66b9d7d1094597b5cd73f",
+      "points": 16,
+      "raw_xyz_source_sha256": "247a4534b2f5baeb921c3650ca852ca2d261cb4e3ca42befc655035e3fb4dd95",
+      "singular_values": [
+        0.6892883186373656,
+        0.016970222486222875,
+        0.0029165619592438764
+      ],
+      "smallest_to_largest_singular_ratio": 0.004231265611768301,
+      "spatial_rank": 3,
+      "step": 51
+    },
+    {
+      "full_6dof_observability_proven": false,
+      "lidar_file_sha256": "9da0f987ffc77c664bc3c75c46a3109db4d4267e5703fd0e07bfec39d8dca26b",
+      "points": 16,
+      "raw_xyz_source_sha256": "f5575fce906a3d43b7621e2ecfd9242208b467b2f09b40762a39dc09f72322c3",
+      "singular_values": [
+        0.6404556682703825,
+        0.012895258223723777,
+        0.0026373192566179165
+      ],
+      "smallest_to_largest_singular_ratio": 0.004117879483743618,
+      "spatial_rank": 3,
+      "step": 61
+    },
+    {
+      "full_6dof_observability_proven": false,
+      "lidar_file_sha256": "10a7a730b7350a1b8a613da398abaf955f8085aa51c8280dc937cf857890aaaa",
+      "points": 16,
+      "raw_xyz_source_sha256": "4fb12d2e30ddef9d30c95072aed3aa3df36341cedc6fb08758b331afb2e27ae8",
+      "singular_values": [
+        0.5953280426803557,
+        0.010084486544066304,
+        0.0024438406577574324
+      ],
+      "smallest_to_largest_singular_ratio": 0.0041050319866581236,
+      "spatial_rank": 3,
+      "step": 71
+    },
+    {
+      "full_6dof_observability_proven": false,
+      "lidar_file_sha256": "1ffc56ebbbafbfe2417684ce832b59cc1066f01f74aeb2c2a3d8d40034b58192",
+      "points": 16,
+      "raw_xyz_source_sha256": "d1bd736688afd46f6474f3e1f3dde4b3a6647229b1c09733d3c9a2294ad220ec",
+      "singular_values": [
+        0.5444935866241348,
+        0.011982524657099803,
+        0.002238628050258808
+      ],
+      "smallest_to_largest_singular_ratio": 0.00411139470739834,
+      "spatial_rank": 3,
+      "step": 81
+    },
+    {
+      "full_6dof_observability_proven": false,
+      "lidar_file_sha256": "c933285d4bb4aa660f62cbc9d625800d3d0d4429bb027fd102b8d10105d78f40",
+      "points": 16,
+      "raw_xyz_source_sha256": "9605855a8c7a9b9c5a1ea778ddd7775516b91d8864a0b3ae7c561459df37d908",
+      "singular_values": [
+        0.4998254523821813,
+        0.014322154734088396,
+        0.002111884739037856
+      ],
+      "smallest_to_largest_singular_ratio": 0.004225244490796852,
+      "spatial_rank": 3,
+      "step": 91
+    },
+    {
+      "full_6dof_observability_proven": false,
+      "lidar_file_sha256": "f932eb6ce5cf0977ba7546e6354f07984e6fd851daa30c6ce3e37bd7c0a4a4e4",
+      "points": 4,
+      "raw_xyz_source_sha256": "a3642de58cf1b061e5ffdc1f782dfc5a3f21364be4d204419f42ad58cfa616b3",
+      "singular_values": [
+        0.348444679505855,
+        0.0052547794830501956,
+        0.0005889226821396918
+      ],
+      "smallest_to_largest_singular_ratio": 0.0016901468634127788,
+      "spatial_rank": 3,
+      "step": 101
+    }
+  ],
+  "schema": "TRUST_ROBOT_L1_V16_REGISTRATION_TRANSFER_V1",
+  "scientific_localization_score": null,
+  "six_dof_observability_verified": false,
+  "source": "V16_28_SYNTHETIC_GMO_XYZ",
+  "source_evidence_sha256": "ab08f15221e2f977321afc5e4983feaf9d815ca91b97f2034b36317638e78d82",
+  "source_point_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    4
+  ],
+  "source_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "sparse_pairs_rejected": 2
+}

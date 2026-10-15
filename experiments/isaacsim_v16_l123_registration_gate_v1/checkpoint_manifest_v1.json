@@ -1,0 +1,27 @@
+{
+  "branch": "kios-isaacsim-v15-integration",
+  "files_sha256": {
+    "code/phase_l1_registration.py": "02555ba07f6dea31384bf666ef3601f4420a9496306441cd7629d398c53f4c9e",
+    "code/phase_l2_ambiguity.py": "d94edec3ea848b4f8e2c7874489f474704b6556f46c62f998eeb7a6f7d673b2a",
+    "code/phase_l3_factor_gate.py": "38afc32a383331b79bce9e3f61172359df3a0767c8070735a22e6e8cd1c76f35",
+    "evidence/l2_registration_ambiguity_report_v1.json": "4cad184b44bd9d99ebb762a7dcbe04e0c18bd42265568057aaf7f7a1598922c6",
+    "evidence/l3_factor_admission_report_v1.json": "14aacc536ee224e7ca2cfcc42fceb5486b448d588ea4c344b50f102c68ad81d6",
+    "evidence/registration_transfer_report_v1.json": "a120e376d7055a19fe5948f0df9b15b8b824399e967583e745da3258c55c553b"
+  },
+  "independent_ground_truth_verified": false,
+  "localization_scored": false,
+  "negative_tampering_tests_passed": 8,
+  "parent_commit": "555edb8c0c0490c3791c0bdc3bc8a771ab11309c",
+  "physical_cross_sensor_sync_verified": false,
+  "pose_factors_admitted": 0,
+  "registration_attempts": 10,
+  "registration_diagnostics_available": 8,
+  "schema": "TRUST_ROBOT_V16_L123_DIAGNOSTIC_ADMISSION_CHECKPOINT_V1",
+  "scientific_scope": "OFFLINE_SYNTHETIC_ENGINEERING_DIAGNOSTICS_ONLY",
+  "source_scans": 6,
+  "sparse_pairs_rejected": 2,
+  "training_authorized": false,
+  "upstream_v16_relative_path": "experiments/isaacsim_v16_recovery_v1/evidence/readiness_capture_report_v1.json",
+  "upstream_v16_sha256": "ab08f15221e2f977321afc5e4983feaf9d815ca91b97f2034b36317638e78d82",
+  "valid_lidar_points": 84
+}
