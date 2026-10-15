@@ -5761,3 +5761,7 @@ Frozen qualification artifacts:
   SHA-256 `75d292393daa7d643260390bded8e96c26cc34a920799f3a6516e51ae0f119e5`
 - `docs/audits/trust_robot/TRUST_ROBOT_SE4_SOFTWARE_ONLY_END_TO_END_QUALIFICATION_FREEZE_V1.md`
   SHA-256 `1c139187c13a1edd0dcf7cf4def913d53b374a3313b4b653a2453aac114e74e4`
+
+## KIOS Isaac Sim V16.28–V16.29 synthetic recovery (2026-10-15)
+
+Six verified synthetic camera and validity-flagged, sensor-frame LiDAR XYZ pairs and 130 IMU/USD-pose samples were recorded on KIOS (V16.28), with passing independent offline file and V16.29 timing/provenance audits. This does not lift M2DGR physical timing, calibration, reference or evaluation-readiness gates. Camera exposure time and cross-sensor synchronization remain unverified; the observed GMO-minus-read-step offset is not a validated correction. Last LiDAR sample is sparse (4 valid points). **This Verona commit documents the discovery and recovery-builder script only; exact KIOS source/scene and compact JSON evidence are pending a subsequent SHA-verified import.** See `docs/audits/trust_robot/TRUST_ROBOT_ISAACSIM_V16_28_29_VERONA_HANDOFF_V1.md`.
