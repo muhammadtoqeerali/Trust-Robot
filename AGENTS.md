@@ -28,3 +28,16 @@ See `TRUST_ROBOT_MASTER_CONTEXT.md` for the authoritative project context.
 Before future Isaac Sim camera/LiDAR/IMU work, read:
 `docs/audits/trust_robot/TRUST_ROBOT_ISAACSIM_V16_28_29_VERONA_HANDOFF_V1.md`.
 V16.28 yielded six validated camera/LiDAR synthetic pairs with 130 IMU/pose records; V16.29 offline timing/provenance audit passed. The **exact working source and data reports have not yet been imported from KIOS into GitHub**. The documented KIOS-only builder at `scripts/trust_robot/kios_v16_full_checkpoint_builder_20261015.sh` is not executable on Verona. Never claim physical sensor equivalence, independent ground truth, or measured camera–LiDAR synchronization from the synthetic run.
+
+## KIOS Isaac Sim V16 recovered acquisition (2026-10-15)
+
+**Read before any new Isaac Sim camera/LiDAR/IMU work:**
+`docs/audits/trust_robot/TRUST_ROBOT_ISAACSIM_V16_28_29_RECOVERY_FREEZE_V1.md`
+and `experiments/isaacsim_v16_recovery_v1/README.md`.
+The latter contains SHA-pinned successful source, corrected USD mount, compact
+experiment reports, local run-preparation utility and offline validator, and KIOS-isolated reproduction launcher.
+V16.28 passed 6 synthetic camera / 6 real GMO-derived LiDAR XYZ frame files
+plus 130 IMU/pose records; V16.29 provenance audit passed. **Do not claim
+cross-sensor exposure synchronization, independently measured ground truth,
+physical sensor equivalence or localization performance.** Preserve original
+V15/V16 experimental history. No shared-KIOS or physical-robot operations.

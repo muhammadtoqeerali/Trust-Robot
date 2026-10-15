@@ -5765,3 +5765,24 @@ Frozen qualification artifacts:
 ## KIOS Isaac Sim V16.28–V16.29 synthetic recovery (2026-10-15)
 
 Six verified synthetic camera and validity-flagged, sensor-frame LiDAR XYZ pairs and 130 IMU/USD-pose samples were recorded on KIOS (V16.28), with passing independent offline file and V16.29 timing/provenance audits. This does not lift M2DGR physical timing, calibration, reference or evaluation-readiness gates. Camera exposure time and cross-sensor synchronization remain unverified; the observed GMO-minus-read-step offset is not a validated correction. Last LiDAR sample is sparse (4 valid points). **This Verona commit documents the discovery and recovery-builder script only; exact KIOS source/scene and compact JSON evidence are pending a subsequent SHA-verified import.** See `docs/audits/trust_robot/TRUST_ROBOT_ISAACSIM_V16_28_29_VERONA_HANDOFF_V1.md`.
+
+## TRUST-ROBOT KIOS Isaac Sim V16.28 recovery (2026-10-15)
+
+Independent synthetic runtime, file and provenance checkpoints have now passed
+for the **KIOS V16.28 six-frame proxy experiment**: six nonblack camera frames,
+six VALID-flagged GMO-to-Cartesian XYZ LiDAR scans, and 130 IMU plus 130 USD
+pose records. V16.29 offline provenance and read-step timing audits passed.
+
+This is a separate **synthetic hardware-in-the-loop-free smoke test**; it does
+**not** alter the M2DGR physical calibration, synchronization, reference or
+evaluation-readiness blocking decisions elsewhere in this state document.
+The camera exposure time and cross-sensor synchronization remain unverified;
+GMO vs USD read-time offset (+~1.033333387s) is observed, not calibrated.
+Do not use synthetic proxy results as physical ground truth, physical robot
+performance, or empirical reliability-training labels. The last LiDAR frame
+contains only four valid points and must be flagged as sparse.
+
+For exact reproducible source, corrected USD scene, SHA-bound compact evidence,
+KIOS sandbox instructions, and the next-agent handoff, read:
+`docs/audits/trust_robot/TRUST_ROBOT_ISAACSIM_V16_28_29_RECOVERY_FREEZE_V1.md`
+and `experiments/isaacsim_v16_recovery_v1/README.md`.

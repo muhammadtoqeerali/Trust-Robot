@@ -1,0 +1,503 @@
+{
+  "candidate_ingested_observations": [
+    {
+      "frame_id": 111,
+      "points": 16,
+      "step": 51,
+      "timestamp_ns": 2833333481
+    },
+    {
+      "frame_id": 127,
+      "points": 16,
+      "step": 61,
+      "timestamp_ns": 3000000156
+    },
+    {
+      "frame_id": 143,
+      "points": 16,
+      "step": 71,
+      "timestamp_ns": 3166666831
+    },
+    {
+      "frame_id": 159,
+      "points": 16,
+      "step": 81,
+      "timestamp_ns": 3333333507
+    },
+    {
+      "frame_id": 175,
+      "points": 16,
+      "step": 91,
+      "timestamp_ns": 3500000182
+    },
+    {
+      "frame_id": 191,
+      "points": 4,
+      "step": 101,
+      "timestamp_ns": 3666666857
+    }
+  ],
+  "candidate_raw_observations": [
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "num_elements": null,
+      "state": "NO_RAW_RETURN",
+      "step": 41
+    },
+    {
+      "coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "elementsCoordsType": "CoordsType.SPHERICAL",
+      "file": "gmo_pre_step_051.npz",
+      "first_values": {
+        "x": [
+          25.0003662109375,
+          21.666595458984375,
+          18.33355712890625,
+          15.005828857421875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.6369556188583374,
+          0.6188881993293762,
+          0.6032982468605042,
+          0.5877944231033325
+        ]
+      },
+      "flag_values": [
+        64
+      ],
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 111,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 51,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 2833333481,
+      "valid_elements": 16,
+      "valid_flag_bit": 64,
+      "x_range": [
+        -24.99462890625,
+        25.0003662109375
+      ],
+      "xyz_count": 16,
+      "xyz_file": "lidar_xyz_step_051.npz",
+      "xyz_qualified": true,
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.568649172782898,
+        0.6372844576835632
+      ]
+    },
+    {
+      "coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "elementsCoordsType": "CoordsType.SPHERICAL",
+      "file": "gmo_pre_step_061.npz",
+      "first_values": {
+        "x": [
+          25.00555419921875,
+          21.668701171875,
+          18.338287353515625,
+          15.005889892578125
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.5847525000572205,
+          0.5751427412033081,
+          0.558708667755127,
+          0.5474704504013062
+        ]
+      },
+      "flag_values": [
+        64
+      ],
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 127,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 61,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3000000156,
+      "valid_elements": 16,
+      "valid_flag_bit": 64,
+      "x_range": [
+        -24.99365234375,
+        25.00555419921875
+      ],
+      "xyz_count": 16,
+      "xyz_file": "lidar_xyz_step_061.npz",
+      "xyz_qualified": true,
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.5245140194892883,
+        0.5966641902923584
+      ]
+    },
+    {
+      "coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "elementsCoordsType": "CoordsType.SPHERICAL",
+      "file": "gmo_pre_step_071.npz",
+      "first_values": {
+        "x": [
+          25.003875732421875,
+          21.66552734375,
+          18.34222412109375,
+          14.999359130859375
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.5488219857215881,
+          0.5374985933303833,
+          0.5258642435073853,
+          0.5129604339599609
+        ]
+      },
+      "flag_values": [
+        64
+      ],
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 143,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 71,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3166666831,
+      "valid_elements": 16,
+      "valid_flag_bit": 64,
+      "x_range": [
+        -24.997314453125,
+        25.003875732421875
+      ],
+      "xyz_count": 16,
+      "xyz_file": "lidar_xyz_step_071.npz",
+      "xyz_qualified": true,
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.48599016666412354,
+        0.5488219857215881
+      ]
+    },
+    {
+      "coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "elementsCoordsType": "CoordsType.SPHERICAL",
+      "file": "gmo_pre_step_081.npz",
+      "first_values": {
+        "x": [
+          24.996307373046875,
+          21.663726806640625,
+          18.33489990234375,
+          15.00555419921875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.5025405287742615,
+          0.4823722541332245,
+          0.4749491512775421,
+          0.46761906147003174
+        ]
+      },
+      "flag_values": [
+        64
+      ],
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 159,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 81,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3333333507,
+      "valid_elements": 16,
+      "valid_flag_bit": 64,
+      "x_range": [
+        -24.9979248046875,
+        24.996307373046875
+      ],
+      "xyz_count": 16,
+      "xyz_file": "lidar_xyz_step_081.npz",
+      "xyz_qualified": true,
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.44955748319625854,
+        0.5076903104782104
+      ]
+    },
+    {
+      "coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "elementsCoordsType": "CoordsType.SPHERICAL",
+      "file": "gmo_pre_step_091.npz",
+      "first_values": {
+        "x": [
+          25.0032958984375,
+          21.660369873046875,
+          18.330841064453125,
+          14.99713134765625
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.4655487835407257,
+          0.44710808992385864,
+          0.43858328461647034,
+          0.42317840456962585
+        ]
+      },
+      "flag_values": [
+        64
+      ],
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 175,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 91,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3500000182,
+      "valid_elements": 16,
+      "valid_flag_bit": 64,
+      "x_range": [
+        -24.998565673828125,
+        25.0032958984375
+      ],
+      "xyz_count": 16,
+      "xyz_file": "lidar_xyz_step_091.npz",
+      "xyz_qualified": true,
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.40530309081077576,
+        0.4655487835407257
+      ]
+    },
+    {
+      "coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "elementsCoordsType": "CoordsType.SPHERICAL",
+      "file": "gmo_pre_step_101.npz",
+      "first_values": {
+        "x": [
+          24.9898681640625,
+          21.66925048828125,
+          -21.662933349609375,
+          -25.0037841796875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          8.666669845581055,
+          10.0
+        ],
+        "z": [
+          0.4161112606525421,
+          0.40185546875,
+          0.40080901980400085,
+          0.4206433594226837
+        ]
+      },
+      "flag_values": [
+        64
+      ],
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 191,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 4,
+      "state": "RAW_AXES_SAVED",
+      "step": 101,
+      "target_matches_3cm": 4,
+      "timestamp_ns": 3666666857,
+      "valid_elements": 4,
+      "valid_flag_bit": 64,
+      "x_range": [
+        -25.0037841796875,
+        24.9898681640625
+      ],
+      "xyz_count": 4,
+      "xyz_file": "lidar_xyz_step_101.npz",
+      "xyz_qualified": true,
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.40080901980400085,
+        0.4206433594226837
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 207,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 0,
+      "state": "EMPTY_GMO",
+      "step": 111,
+      "timestamp_ns": 3833333533
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 223,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 0,
+      "state": "EMPTY_GMO",
+      "step": 121,
+      "timestamp_ns": 4000000208
+    }
+  ],
+  "cross_sensor_sync_verified": false,
+  "data_origin": "ISAAC_SIM_SYNTHETIC",
+  "diagnosis": "SIX_FRAME_SENSOR_FILES_OFFLINE_VALIDATED",
+  "imu_records": 130,
+  "independent_ground_truth_verified": false,
+  "offline_sensor_file_validation_pass": true,
+  "physical_robot_contact": false,
+  "pose_records": 130,
+  "runtime_pass": true,
+  "schema": "TRUST_ROBOT_V16_28_READINESS_CAPTURE_V1",
+  "selected_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "simulator_exit_code": 0,
+  "source_commit": "00d04bf69610c36f3bd2bbfb11633a993b9a624f",
+  "validated_frames": [
+    {
+      "camera_sha256": "7364be7fd6739530836621cca5eeeb913a1100a6972045f2207fefd22dce5321",
+      "camera_valid": true,
+      "expected_target_range_m": 0.5659999928474426,
+      "flags_valid": true,
+      "lidar_sha256": "d3021afa566c114d69039eb357537fb2770b740038c66b9d7d1094597b5cd73f",
+      "lidar_valid": true,
+      "points": 16,
+      "source_match": true,
+      "step": 51,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 2833333481
+    },
+    {
+      "camera_sha256": "d5cc328bef74c70c5e14977c9ee79f9d4f980d1e9af30c6bab3284253b35e5ef",
+      "camera_valid": true,
+      "expected_target_range_m": 0.5259999928474426,
+      "flags_valid": true,
+      "lidar_sha256": "9da0f987ffc77c664bc3c75c46a3109db4d4267e5703fd0e07bfec39d8dca26b",
+      "lidar_valid": true,
+      "points": 16,
+      "source_match": true,
+      "step": 61,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3000000156
+    },
+    {
+      "camera_sha256": "feb2634715440b478ad5ff2a365684e1b5fd3900f0b2473f2462da9f7c3fd753",
+      "camera_valid": true,
+      "expected_target_range_m": 0.48599999284744255,
+      "flags_valid": true,
+      "lidar_sha256": "10a7a730b7350a1b8a613da398abaf955f8085aa51c8280dc937cf857890aaaa",
+      "lidar_valid": true,
+      "points": 16,
+      "source_match": true,
+      "step": 71,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3166666831
+    },
+    {
+      "camera_sha256": "a3cc25e64003c374e48412d2aa2736759de0304a5f1086a94213bab0df3a73b5",
+      "camera_valid": true,
+      "expected_target_range_m": 0.44599999284744263,
+      "flags_valid": true,
+      "lidar_sha256": "1ffc56ebbbafbfe2417684ce832b59cc1066f01f74aeb2c2a3d8d40034b58192",
+      "lidar_valid": true,
+      "points": 16,
+      "source_match": true,
+      "step": 81,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3333333507
+    },
+    {
+      "camera_sha256": "dca5aa13d5ef923c388e71a3fee507bf7d7022c4d4e694fb66ce4619fa46fc2d",
+      "camera_valid": true,
+      "expected_target_range_m": 0.4059999928474427,
+      "flags_valid": true,
+      "lidar_sha256": "c933285d4bb4aa660f62cbc9d625800d3d0d4429bb027fd102b8d10105d78f40",
+      "lidar_valid": true,
+      "points": 16,
+      "source_match": true,
+      "step": 91,
+      "target_matches_3cm": 16,
+      "timestamp_ns": 3500000182
+    },
+    {
+      "camera_sha256": "544ed4026aa873702964b68a5f981965e7037cad7fe2e685df746b19cd27936d",
+      "camera_valid": true,
+      "expected_target_range_m": 0.36599999284744267,
+      "flags_valid": true,
+      "lidar_sha256": "f932eb6ce5cf0977ba7546e6354f07984e6fd851daa30c6ce3e37bd7c0a4a4e4",
+      "lidar_valid": true,
+      "points": 4,
+      "source_match": true,
+      "step": 101,
+      "target_matches_3cm": 4,
+      "timestamp_ns": 3666666857
+    }
+  ],
+  "validation_issues": []
+}

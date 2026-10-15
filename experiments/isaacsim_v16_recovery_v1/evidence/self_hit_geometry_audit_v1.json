@@ -1,0 +1,81 @@
+{
+  "assessment": "STRONG_EVIDENCE_OF_ROBOT_BODY_SELF_RETURNS",
+  "base_half_extents_m": [
+    0.4,
+    0.3,
+    0.15
+  ],
+  "body_max_m": [
+    0.4,
+    0.3,
+    0.44999999999999996
+  ],
+  "body_min_m": [
+    -0.4,
+    -0.3,
+    0.15
+  ],
+  "composed_usd_verification": {
+    "status": "NOT_AVAILABLE"
+  },
+  "external_scene_returns_verified": false,
+  "forward_median_m": 0.4003493613166541,
+  "front_face_match_1cm": 59,
+  "front_face_match_2cm": 59,
+  "input_report_sha256": "e4c748ddefe11d3cd236f6688a63c62593cb197477674e5736251d14ad68dda7",
+  "inside_body_geometry": true,
+  "nominal_sensor_origin_m": [
+    0.0,
+    0.0,
+    0.32999999999999996
+  ],
+  "per_return_validity_verified": false,
+  "raw_file_summaries": [
+    {
+      "file": "gmo_pre_step_051.npz",
+      "forward_max_m": 0.4071155279667359,
+      "forward_median_m": 0.4003876059884959,
+      "forward_min_m": 0.3947377847123161,
+      "near_body_front_within_1cm": 16,
+      "range_max_m": 0.4505305588245392,
+      "range_min_m": 0.4024791121482849,
+      "returns": 16
+    },
+    {
+      "file": "gmo_pre_step_061.npz",
+      "forward_max_m": 0.40403382684735856,
+      "forward_median_m": 0.4009629473475433,
+      "forward_min_m": 0.3965828733137688,
+      "near_body_front_within_1cm": 14,
+      "range_max_m": 0.4498709440231323,
+      "range_min_m": 0.4014926850795746,
+      "returns": 14
+    },
+    {
+      "file": "gmo_pre_step_071.npz",
+      "forward_max_m": 0.40495650707055014,
+      "forward_median_m": 0.4003493613166541,
+      "forward_min_m": 0.3947611007706359,
+      "near_body_front_within_1cm": 15,
+      "range_max_m": 0.45107147097587585,
+      "range_min_m": 0.4005451500415802,
+      "returns": 15
+    },
+    {
+      "file": "gmo_pre_step_081.npz",
+      "forward_max_m": 0.40341171197295783,
+      "forward_median_m": 0.4000081258436845,
+      "forward_min_m": 0.39523743276793416,
+      "near_body_front_within_1cm": 14,
+      "range_max_m": 0.4512426257133484,
+      "range_min_m": 0.400771826505661,
+      "returns": 14
+    }
+  ],
+  "raw_returns": 59,
+  "scene_sha256": "bad5b801ea0d3d7fe046342bcd25bd5a2d91d9c35ad9071745156ef65a055e3d",
+  "schema": "TRUST_ROBOT_V16_SELF_HIT_AUDIT_V1",
+  "sensor_data_modified": false,
+  "simulation_launched": false,
+  "spherical_interpretation_confirmed": false
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "TRUST_ROBOT_PROXY_PHYSICS_PILOT_V1",
+  "status": "RUNTIME_MEASURED_NOT_SCIENTIFICALLY_VALIDATED",
+  "model": "SIMPLIFIED_PROXY",
+  "samples": 60,
+  "first_sample": {
+    "step": 1,
+    "simulation_time_seconds": 0.05000000260770321,
+    "usd_world_position_m": [
+      0.0,
+      0.0,
+      0.2836499810218811
+    ]
+  },
+  "last_sample": {
+    "step": 60,
+    "simulation_time_seconds": 1.0333333872258663,
+    "usd_world_position_m": [
+      2.482732384123665e-07,
+      1.3610790006168827e-07,
+      0.15000006556510925
+    ]
+  },
+  "pose_source": "USD_COMPOSED_WORLD_TRANSFORM",
+  "physics_pose_independently_verified": false,
+  "camera_frames_recorded": 0,
+  "lidar_scans_recorded": 0,
+  "imu_samples_recorded": 0,
+  "physical_robot_contact": false
+}

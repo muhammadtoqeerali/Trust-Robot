@@ -1,0 +1,273 @@
+{
+  "cartesian_xyz_validation": false,
+  "complete_multimodal_validation": false,
+  "coordinate_semantics_verified": false,
+  "data_origin": "ISAAC_SIM_SYNTHETIC",
+  "diagnosis": "RAW_GMO_COORDINATES_PRESERVED",
+  "exit_code": 0,
+  "physical_robot_contact": false,
+  "raw_observations": [
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "num_elements": null,
+      "state": "NO_RAW_RETURN",
+      "step": 31
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "num_elements": null,
+      "state": "NO_RAW_RETURN",
+      "step": 41
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_051.npz",
+      "first_values": {
+        "x": [
+          25.002410888671875,
+          21.660614013671875,
+          18.3282470703125,
+          14.99285888671875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.4488520622253418,
+          0.43449902534484863,
+          0.42052382230758667,
+          0.41585561633110046
+        ]
+      },
+      "frame_id": 25,
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 51,
+      "timestamp_ns": 1916666766,
+      "x_range": [
+        -24.99932861328125,
+        25.002410888671875
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.4024791121482849,
+        0.4505305588245392
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_061.npz",
+      "first_values": {
+        "x": [
+          24.985107421875,
+          21.666259765625,
+          18.33612060546875,
+          15.00372314453125
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.4481055438518524,
+          0.43321090936660767,
+          0.42211684584617615,
+          0.4136189818382263
+        ]
+      },
+      "frame_id": 41,
+      "num_elements": 14,
+      "state": "RAW_AXES_SAVED",
+      "step": 61,
+      "timestamp_ns": 2083333441,
+      "x_range": [
+        -25.002960205078125,
+        24.985107421875
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.4014926850795746,
+        0.4498709440231323
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_071.npz",
+      "first_values": {
+        "x": [
+          25.0025634765625,
+          21.665374755859375,
+          18.336456298828125,
+          14.9986572265625
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.4471327066421509,
+          0.43323609232902527,
+          0.43013617396354675,
+          0.4184822142124176
+        ]
+      },
+      "frame_id": 57,
+      "num_elements": 15,
+      "state": "RAW_AXES_SAVED",
+      "step": 71,
+      "timestamp_ns": 2250000117,
+      "x_range": [
+        -24.993255615234375,
+        25.0025634765625
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.4005451500415802,
+        0.45107147097587585
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_081.npz",
+      "first_values": {
+        "x": [
+          24.997467041015625,
+          21.673492431640625,
+          18.335235595703125,
+          15.01239013671875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.4512426257133484,
+          0.43529587984085083,
+          0.42571449279785156,
+          0.4114576280117035
+        ]
+      },
+      "frame_id": 73,
+      "num_elements": 14,
+      "state": "RAW_AXES_SAVED",
+      "step": 81,
+      "timestamp_ns": 2416666792,
+      "x_range": [
+        -24.983856201171875,
+        24.997467041015625
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.400771826505661,
+        0.4512426257133484
+      ]
+    }
+  ],
+  "saved_raw_files": [
+    {
+      "filename": "gmo_pre_step_051.npz",
+      "frame_id": 25,
+      "num_elements": 16,
+      "sha256": "5c5cae0b7a54d397741d3dc64519ae6a10288aaa2f29d4e67971d84114fae5b3",
+      "timestamp_ns": 1916666766,
+      "x_minmax": [
+        -24.99932861328125,
+        25.002410888671875
+      ],
+      "y_minmax": [
+        -10.0,
+        10.0
+      ],
+      "z_minmax": [
+        0.4024791121482849,
+        0.4505305588245392
+      ]
+    },
+    {
+      "filename": "gmo_pre_step_061.npz",
+      "frame_id": 41,
+      "num_elements": 14,
+      "sha256": "873ddf15d123c283cd2cae86ba6496b6003e34580829df623ace1c39ea63a7e7",
+      "timestamp_ns": 2083333441,
+      "x_minmax": [
+        -25.002960205078125,
+        24.985107421875
+      ],
+      "y_minmax": [
+        -10.0,
+        10.0
+      ],
+      "z_minmax": [
+        0.4014926850795746,
+        0.4498709440231323
+      ]
+    },
+    {
+      "filename": "gmo_pre_step_071.npz",
+      "frame_id": 57,
+      "num_elements": 15,
+      "sha256": "47614746394dea3f79a563420292155a2db78bf711363f28524f550aebb86219",
+      "timestamp_ns": 2250000117,
+      "x_minmax": [
+        -24.993255615234375,
+        25.0025634765625
+      ],
+      "y_minmax": [
+        -10.0,
+        10.0
+      ],
+      "z_minmax": [
+        0.4005451500415802,
+        0.45107147097587585
+      ]
+    },
+    {
+      "filename": "gmo_pre_step_081.npz",
+      "frame_id": 73,
+      "num_elements": 14,
+      "sha256": "450bae2cbe9caa8cead6741e33bfc542e077dafa56482d1adb149d8ece8896ec",
+      "timestamp_ns": 2416666792,
+      "x_minmax": [
+        -24.983856201171875,
+        24.997467041015625
+      ],
+      "y_minmax": [
+        -10.0,
+        10.0
+      ],
+      "z_minmax": [
+        0.400771826505661,
+        0.4512426257133484
+      ]
+    }
+  ],
+  "saved_steps": [
+    51,
+    61,
+    71,
+    81
+  ],
+  "schema": "TRUST_ROBOT_V16_GMO_PRESNAPSHOT_V1",
+  "source_commit": "00d04bf69610c36f3bd2bbfb11633a993b9a624f"
+}

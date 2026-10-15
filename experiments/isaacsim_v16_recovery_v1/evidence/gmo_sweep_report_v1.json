@@ -1,0 +1,1020 @@
+{
+  "camera_frames": 5,
+  "data_origin": "ISAAC_SIM_SYNTHETIC",
+  "decoded_samples": 49,
+  "diagnosis": "VALID_RAW_RETURNS_MISSED_BY_SPARSE_SAMPLING",
+  "imu_records": 90,
+  "intervention": "PER_STEP_GMO_OBSERVATION_ONLY",
+  "lidar_scans": 0,
+  "physical_robot_contact": false,
+  "positive_samples": 44,
+  "rows": [
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 1,
+      "world_time_s": 0.05000000260770321
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 2,
+      "world_time_s": 0.06666667014360428
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 3,
+      "world_time_s": 0.08333333767950535
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 4,
+      "world_time_s": 0.10000000521540642
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 5,
+      "world_time_s": 0.11666667275130749
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 6,
+      "world_time_s": 0.13333334028720856
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 7,
+      "world_time_s": 0.15000000782310963
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 8,
+      "world_time_s": 0.1666666753590107
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 9,
+      "world_time_s": 0.18333334289491177
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 10,
+      "world_time_s": 0.20000001043081284
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 11,
+      "world_time_s": 0.2166666779667139
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 12,
+      "world_time_s": 0.23333334550261497
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 13,
+      "world_time_s": 0.25000001303851604
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 14,
+      "world_time_s": 0.2666666805744171
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 15,
+      "world_time_s": 0.2833333481103182
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 16,
+      "world_time_s": 0.30000001564621925
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 17,
+      "world_time_s": 0.3166666831821203
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 18,
+      "world_time_s": 0.3333333507180214
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 19,
+      "world_time_s": 0.35000001825392246
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 20,
+      "world_time_s": 0.36666668578982353
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 21,
+      "world_time_s": 0.3833333533257246
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 22,
+      "world_time_s": 0.40000002086162567
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 23,
+      "world_time_s": 0.41666668839752674
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 24,
+      "world_time_s": 0.4333333559334278
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 25,
+      "world_time_s": 0.4500000234693289
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 26,
+      "world_time_s": 0.46666669100522995
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 27,
+      "world_time_s": 0.483333358541131
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 28,
+      "world_time_s": 0.5000000260770321
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 29,
+      "world_time_s": 0.5166666936129332
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 30,
+      "world_time_s": 0.5333333611488342
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 31,
+      "world_time_s": 0.5500000286847353
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 32,
+      "world_time_s": 0.5666666962206364
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 33,
+      "world_time_s": 0.5833333637565374
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 34,
+      "world_time_s": 0.6000000312924385
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 35,
+      "world_time_s": 0.6166666988283396
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 36,
+      "world_time_s": 0.6333333663642406
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 37,
+      "world_time_s": 0.6500000339001417
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 38,
+      "world_time_s": 0.6666667014360428
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 39,
+      "world_time_s": 0.6833333689719439
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 40,
+      "world_time_s": 0.7000000365078449
+    },
+    {
+      "num_elements": null,
+      "packet_bytes": 0,
+      "packet_shape": [
+        0
+      ],
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 41,
+      "world_time_s": 0.716666704043746
+    },
+    {
+      "frame_id": 16,
+      "num_elements": 0,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 42,
+      "timestamp_ns": 1750000091,
+      "world_time_s": 0.7333333715796471
+    },
+    {
+      "frame_id": 17,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 43,
+      "timestamp_ns": 1783333426,
+      "world_time_s": 0.7500000391155481
+    },
+    {
+      "frame_id": 18,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 44,
+      "timestamp_ns": 1800000093,
+      "world_time_s": 0.7666667066514492
+    },
+    {
+      "frame_id": 19,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 45,
+      "timestamp_ns": 1816666761,
+      "world_time_s": 0.7833333741873503
+    },
+    {
+      "frame_id": 20,
+      "num_elements": 16,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 46,
+      "timestamp_ns": 1833333428,
+      "world_time_s": 0.8000000417232513
+    },
+    {
+      "frame_id": 21,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 47,
+      "timestamp_ns": 1850000096,
+      "world_time_s": 0.8166667092591524
+    },
+    {
+      "frame_id": 22,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 48,
+      "timestamp_ns": 1866666764,
+      "world_time_s": 0.8333333767950535
+    },
+    {
+      "frame_id": 23,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 49,
+      "timestamp_ns": 1883333431,
+      "world_time_s": 0.8500000443309546
+    },
+    {
+      "frame_id": 24,
+      "num_elements": 16,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 50,
+      "timestamp_ns": 1900000099,
+      "world_time_s": 0.8666667118668556
+    },
+    {
+      "frame_id": 25,
+      "num_elements": 16,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 51,
+      "timestamp_ns": 1916666766,
+      "world_time_s": 0.8833333794027567
+    },
+    {
+      "frame_id": 32,
+      "num_elements": 0,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 52,
+      "timestamp_ns": 1916666766,
+      "world_time_s": 0.9000000469386578
+    },
+    {
+      "frame_id": 33,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 53,
+      "timestamp_ns": 1950000101,
+      "world_time_s": 0.9166667144745588
+    },
+    {
+      "frame_id": 34,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 54,
+      "timestamp_ns": 1966666769,
+      "world_time_s": 0.9333333820104599
+    },
+    {
+      "frame_id": 35,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 55,
+      "timestamp_ns": 1983333436,
+      "world_time_s": 0.950000049546361
+    },
+    {
+      "frame_id": 36,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 56,
+      "timestamp_ns": 2000000104,
+      "world_time_s": 0.966666717082262
+    },
+    {
+      "frame_id": 37,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 57,
+      "timestamp_ns": 2016666771,
+      "world_time_s": 0.9833333846181631
+    },
+    {
+      "frame_id": 38,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 58,
+      "timestamp_ns": 2033333439,
+      "world_time_s": 1.0000000521540642
+    },
+    {
+      "frame_id": 39,
+      "num_elements": 13,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 59,
+      "timestamp_ns": 2050000106,
+      "world_time_s": 1.0166667196899652
+    },
+    {
+      "frame_id": 40,
+      "num_elements": 13,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 60,
+      "timestamp_ns": 2066666774,
+      "world_time_s": 1.0333333872258663
+    },
+    {
+      "frame_id": 41,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 61,
+      "timestamp_ns": 2083333441,
+      "world_time_s": 1.0500000547617674
+    },
+    {
+      "frame_id": 48,
+      "num_elements": 0,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 62,
+      "timestamp_ns": 2050000106,
+      "world_time_s": 1.0666667222976685
+    },
+    {
+      "frame_id": 49,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 63,
+      "timestamp_ns": 2116666777,
+      "world_time_s": 1.0833333898335695
+    },
+    {
+      "frame_id": 50,
+      "num_elements": 12,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 64,
+      "timestamp_ns": 2133333444,
+      "world_time_s": 1.1000000573694706
+    },
+    {
+      "frame_id": 51,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 65,
+      "timestamp_ns": 2150000112,
+      "world_time_s": 1.1166667249053717
+    },
+    {
+      "frame_id": 52,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 66,
+      "timestamp_ns": 2166666779,
+      "world_time_s": 1.1333333924412727
+    },
+    {
+      "frame_id": 53,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 67,
+      "timestamp_ns": 2183333447,
+      "world_time_s": 1.1500000599771738
+    },
+    {
+      "frame_id": 54,
+      "num_elements": 13,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 68,
+      "timestamp_ns": 2200000114,
+      "world_time_s": 1.1666667275130749
+    },
+    {
+      "frame_id": 55,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 69,
+      "timestamp_ns": 2216666782,
+      "world_time_s": 1.183333395048976
+    },
+    {
+      "frame_id": 56,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 70,
+      "timestamp_ns": 2233333449,
+      "world_time_s": 1.200000062584877
+    },
+    {
+      "frame_id": 57,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 71,
+      "timestamp_ns": 2250000117,
+      "world_time_s": 1.216666730120778
+    },
+    {
+      "frame_id": 64,
+      "num_elements": 0,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 72,
+      "timestamp_ns": 2250000117,
+      "world_time_s": 1.2333333976566792
+    },
+    {
+      "frame_id": 65,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 73,
+      "timestamp_ns": 2283333452,
+      "world_time_s": 1.2500000651925802
+    },
+    {
+      "frame_id": 66,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 74,
+      "timestamp_ns": 2300000119,
+      "world_time_s": 1.2666667327284813
+    },
+    {
+      "frame_id": 67,
+      "num_elements": 16,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 75,
+      "timestamp_ns": 2316666787,
+      "world_time_s": 1.2833334002643824
+    },
+    {
+      "frame_id": 68,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 76,
+      "timestamp_ns": 2333333455,
+      "world_time_s": 1.3000000678002834
+    },
+    {
+      "frame_id": 69,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 77,
+      "timestamp_ns": 2350000122,
+      "world_time_s": 1.3166667353361845
+    },
+    {
+      "frame_id": 70,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 78,
+      "timestamp_ns": 2366666790,
+      "world_time_s": 1.3333334028720856
+    },
+    {
+      "frame_id": 71,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 79,
+      "timestamp_ns": 2383333457,
+      "world_time_s": 1.3500000704079866
+    },
+    {
+      "frame_id": 72,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 80,
+      "timestamp_ns": 2400000125,
+      "world_time_s": 1.3666667379438877
+    },
+    {
+      "frame_id": 73,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 81,
+      "timestamp_ns": 2416666792,
+      "world_time_s": 1.3833334054797888
+    },
+    {
+      "frame_id": 80,
+      "num_elements": 0,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 82,
+      "timestamp_ns": 2416666792,
+      "world_time_s": 1.4000000730156898
+    },
+    {
+      "frame_id": 81,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 83,
+      "timestamp_ns": 2450000127,
+      "world_time_s": 1.416666740551591
+    },
+    {
+      "frame_id": 82,
+      "num_elements": 13,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 84,
+      "timestamp_ns": 2466666795,
+      "world_time_s": 1.433333408087492
+    },
+    {
+      "frame_id": 83,
+      "num_elements": 16,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 85,
+      "timestamp_ns": 2483333462,
+      "world_time_s": 1.450000075623393
+    },
+    {
+      "frame_id": 84,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 86,
+      "timestamp_ns": 2500000130,
+      "world_time_s": 1.4666667431592941
+    },
+    {
+      "frame_id": 85,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 87,
+      "timestamp_ns": 2516666797,
+      "world_time_s": 1.4833334106951952
+    },
+    {
+      "frame_id": 86,
+      "num_elements": 14,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 88,
+      "timestamp_ns": 2533333465,
+      "world_time_s": 1.5000000782310963
+    },
+    {
+      "frame_id": 87,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 89,
+      "timestamp_ns": 2550000132,
+      "world_time_s": 1.5166667457669973
+    },
+    {
+      "frame_id": 88,
+      "num_elements": 15,
+      "packet_bytes": 936,
+      "packet_shape": [
+        936
+      ],
+      "state": "DECODED",
+      "step": 90,
+      "timestamp_ns": 2566666800,
+      "world_time_s": 1.5333334133028984
+    }
+  ],
+  "schema": "TRUST_ROBOT_V16_GMO_SWEEP_V1",
+  "simulator_exit_code": 0,
+  "source_commit": "00d04bf69610c36f3bd2bbfb11633a993b9a624f",
+  "states": {
+    "DECODED": 49,
+    "UNSAFE_OR_EMPTY_BUFFER": 41
+  },
+  "unique_frame_ids": 49,
+  "validated_multimodal_recording": false
+}

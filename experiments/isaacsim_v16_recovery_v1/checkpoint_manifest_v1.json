@@ -1,0 +1,96 @@
+{
+  "branch": "kios-isaacsim-v15-integration",
+  "camera_exposure_timestamp_verified": false,
+  "camera_frames": 6,
+  "classification": "OFFLINE_VALIDATED_SYNTHETIC_SENSOR_RECORDING_NOT_SCIENTIFIC_SYNCHRONIZATION",
+  "cross_sensor_synchronization_verified": false,
+  "imu_records": 130,
+  "independent_ground_truth_verified": false,
+  "lidar_frames": 6,
+  "physical_hesai_equivalence_verified": false,
+  "points_per_lidar_scan": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    4
+  ],
+  "publication_date": "2026-10-15",
+  "raw_sensor_payloads_published": false,
+  "reports": {
+    "V16_19_GMO_SWEEP": {
+      "bytes": 21506,
+      "file": "gmo_sweep_report_v1.json",
+      "sha256": "4b24628d5191ba932e4ff0c8989f2d9c28a918c964207ca1b533481f1cb2337c",
+      "source_relative": "isaacsim_v16_gmo_sweep_result_v1/gmo_sweep_report_v1.json"
+    },
+    "V16_20_PRE_POST": {
+      "bytes": 4521,
+      "file": "prepost_lidar_report_v1.json",
+      "sha256": "0d28bee52c55e46237f1d037b261b7b5f0705b36e96ae156e41fee60884b3947",
+      "source_relative": "isaacsim_v16_prepost_lidar_result_v1/prepost_lidar_report_v1.json"
+    },
+    "V16_21_RAW_PRESNAPSHOT": {
+      "bytes": 6118,
+      "file": "gmo_presnapshot_report_v1.json",
+      "sha256": "e4c748ddefe11d3cd236f6688a63c62593cb197477674e5736251d14ad68dda7",
+      "source_relative": "isaacsim_v16_gmo_presnapshot_result_v1/gmo_presnapshot_report_v1.json"
+    },
+    "V16_22_SELF_HIT": {
+      "bytes": 2301,
+      "file": "self_hit_geometry_audit_v1.json",
+      "sha256": "394380af5cc4f1909c9e11895e679e93584341692f97f5e2680d1b60deb680c9",
+      "source_relative": "isaacsim_v16_self_hit_geometry_audit_v1/self_hit_geometry_audit_v1.json"
+    },
+    "V16_23_MOUNT": {
+      "bytes": 7544,
+      "file": "mount_recovery_report_v1.json",
+      "sha256": "5498b108af625588ea89b86b7829af859b6d22f9ed67549c5493b1e7cfda011e",
+      "source_relative": "isaacsim_v16_mount_recovery_result_v1/mount_recovery_report_v1.json"
+    },
+    "V16_24_GMO_XYZ": {
+      "bytes": 7275,
+      "file": "xyz_warmstart_report_v1.json",
+      "sha256": "72eceb98917a7e42f22d22f4877d5a479687b2191d8cdbd851d0ecb9e506282c",
+      "source_relative": "isaacsim_v16_xyz_warmstart_result_v1/xyz_warmstart_report_v1.json"
+    },
+    "V16_25_EARLY_PRIMING": {
+      "bytes": 9024,
+      "file": "early_replicator_report_v1.json",
+      "sha256": "665209d90f04f28accfc43bd4afe3f3c8972685fd344388ee8540cc3ad474e6b",
+      "source_relative": "isaacsim_v16_early_replicator_result_v1/early_replicator_report_v1.json"
+    },
+    "V16_26B_FAILURE": {
+      "bytes": 7970,
+      "file": "six_frame_recovery_report_v2.json",
+      "sha256": "046b84cb296e58f90ea7fe47f23ada91d701cd1d6a86d3ddb629deead6afdefc",
+      "source_relative": "isaacsim_v16_six_frame_result_v2/six_frame_recovery_report_v2.json"
+    },
+    "V16_28_SUCCESS": {
+      "bytes": 12715,
+      "file": "readiness_capture_report_v1.json",
+      "sha256": "ab08f15221e2f977321afc5e4983feaf9d815ca91b97f2034b36317638e78d82",
+      "source_relative": "isaacsim_v16_readiness_result_v1/readiness_capture_report_v1.json"
+    },
+    "V16_29_PROVENANCE": {
+      "bytes": 4551,
+      "file": "timing_provenance_report_v1.json",
+      "sha256": "5e42eb8b0f6469f82a5c003942b5a0c208a020f018a13b91fdd8c26e4574482a",
+      "source_relative": "isaacsim_v16_timing_provenance_audit_v1/timing_provenance_report_v1.json"
+    }
+  },
+  "scene_sha256": "950a84720a4304fd293cd5d5e8297d56b19dae178d127cf9db390d2da5e7a7ea",
+  "schema": "TRUST_ROBOT_KIOS_ISAAC_V16_28_29_RECOVERY_CHECKPOINT_V1",
+  "selected_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "source_predecessor_commit": "00d04bf69610c36f3bd2bbfb11633a993b9a624f",
+  "source_sha256": "1a4416f4ceeda3a41076c31baea1458ae59e73f715517846abd725b216c491cd",
+  "usd_pose_records": 130
+}

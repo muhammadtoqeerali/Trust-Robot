@@ -1,0 +1,316 @@
+{
+  "cartesian_xyz_qualified": false,
+  "complete_multimodal_validation": false,
+  "coordinate_semantics_verified": false,
+  "data_origin": "ISAAC_SIM_SYNTHETIC",
+  "diagnosis": "EXTERNAL_TARGET_RETURNS_STRONGLY_SUPPORTED",
+  "exit_code": 0,
+  "mount_observations": [
+    {
+      "base_world_xyz": [
+        0.20400000000000001,
+        0.0,
+        0.3
+      ],
+      "expected_lidar_world_x": 0.6839999999999999,
+      "expected_lidar_world_z": 0.525,
+      "lidar_world_xyz": [
+        0.6840000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 51,
+      "target_near_face_world_x": 1.25
+    },
+    {
+      "base_world_xyz": [
+        0.244,
+        0.0,
+        0.3
+      ],
+      "expected_lidar_world_x": 0.724,
+      "expected_lidar_world_z": 0.525,
+      "lidar_world_xyz": [
+        0.7240000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 61,
+      "target_near_face_world_x": 1.25
+    },
+    {
+      "base_world_xyz": [
+        0.28400000000000003,
+        0.0,
+        0.3
+      ],
+      "expected_lidar_world_x": 0.764,
+      "expected_lidar_world_z": 0.525,
+      "lidar_world_xyz": [
+        0.7640000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 71,
+      "target_near_face_world_x": 1.25
+    },
+    {
+      "base_world_xyz": [
+        0.324,
+        0.0,
+        0.3
+      ],
+      "expected_lidar_world_x": 0.804,
+      "expected_lidar_world_z": 0.525,
+      "lidar_world_xyz": [
+        0.8040000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 81,
+      "target_near_face_world_x": 1.25
+    }
+  ],
+  "old_self_face_matches_1cm": 0,
+  "physical_robot_contact": false,
+  "raw_observations": [
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "num_elements": null,
+      "state": "NO_RAW_RETURN",
+      "step": 31
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "num_elements": null,
+      "state": "NO_RAW_RETURN",
+      "step": 41
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_051.npz",
+      "first_values": {
+        "x": [
+          25.002410888671875,
+          21.660614013671875,
+          18.3282470703125,
+          14.99285888671875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.6395472288131714,
+          0.6192474961280823,
+          0.599669873714447,
+          0.5926470160484314
+        ]
+      },
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 25,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 51,
+      "timestamp_ns": 1916666766,
+      "x_range": [
+        -24.99932861328125,
+        25.002410888671875
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.5644412636756897,
+        0.6417754888534546
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_061.npz",
+      "first_values": {
+        "x": [
+          24.985107421875,
+          21.666259765625,
+          18.33612060546875,
+          15.00372314453125
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.5937440395355225,
+          0.5741620659828186,
+          0.5595042109489441,
+          0.5482465028762817
+        ]
+      },
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 41,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 61,
+      "timestamp_ns": 2083333441,
+      "x_range": [
+        -25.002960205078125,
+        24.985107421875
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.5298042297363281,
+        0.5959551334381104
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_071.npz",
+      "first_values": {
+        "x": [
+          25.0025634765625,
+          21.665374755859375,
+          18.336456298828125,
+          14.9986572265625
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.5477883219718933,
+          0.5308193564414978,
+          0.5266605615615845,
+          0.5125395059585571
+        ]
+      },
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 57,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 71,
+      "timestamp_ns": 2250000117,
+      "x_range": [
+        -24.993255615234375,
+        25.0025634765625
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.48967695236206055,
+        0.5524213910102844
+      ]
+    },
+    {
+      "coordinate_semantics": "NOT_YET_VERIFIED",
+      "file": "gmo_pre_step_081.npz",
+      "first_values": {
+        "x": [
+          24.997467041015625,
+          21.673492431640625,
+          18.335235595703125,
+          15.01239013671875
+        ],
+        "y": [
+          -10.0,
+          -8.666669845581055,
+          -7.333330154418945,
+          -6.0
+        ],
+        "z": [
+          0.5075671076774597,
+          0.4897100031375885,
+          0.47890639305114746,
+          0.4630190134048462
+        ]
+      },
+      "frameOfReference": "FrameOfReference.SENSOR",
+      "frame_id": 73,
+      "gmo_coordinate_fields": [
+        "elementsCoordsType"
+      ],
+      "num_elements": 16,
+      "state": "RAW_AXES_SAVED",
+      "step": 81,
+      "timestamp_ns": 2416666792,
+      "x_range": [
+        -24.983856201171875,
+        24.997467041015625
+      ],
+      "y_range": [
+        -10.0,
+        10.0
+      ],
+      "z_range": [
+        0.44760873913764954,
+        0.5075671076774597
+      ]
+    }
+  ],
+  "raw_return_count": 64,
+  "scene_variant": "MOUNT_TRANSLATION_ONLY",
+  "schema": "TRUST_ROBOT_V16_MOUNT_RECOVERY_V1",
+  "target_matches_3cm": 64,
+  "validated_raw_files": [
+    {
+      "expected_target_forward_m": 0.5660000000000001,
+      "file_sha256": "aee3a45b423cb9a0b11f780b09e6927990b2c2e92b3d25399c5a1e808cb6d737",
+      "forward_median_m": 0.5686135361376654,
+      "frame_id": 25,
+      "old_self_face_matches_1cm": 0,
+      "returns": 16,
+      "step": 51,
+      "target_matches_3cm": 16
+    },
+    {
+      "expected_target_forward_m": 0.526,
+      "file_sha256": "b1ace4688d4b0979518f7c80f5ff6bd86116efe2d7b9ec1eafcd25b785cdf8c9",
+      "forward_median_m": 0.530334507321792,
+      "frame_id": 41,
+      "old_self_face_matches_1cm": 0,
+      "returns": 16,
+      "step": 61,
+      "target_matches_3cm": 16
+    },
+    {
+      "expected_target_forward_m": 0.486,
+      "file_sha256": "703a132ca39d63ebcb63ee9ecb60373529801b0ab0f4e0579870b2f2a0badabf",
+      "forward_median_m": 0.49171724276490825,
+      "frame_id": 57,
+      "old_self_face_matches_1cm": 0,
+      "returns": 16,
+      "step": 71,
+      "target_matches_3cm": 16
+    },
+    {
+      "expected_target_forward_m": 0.44599999999999995,
+      "file_sha256": "b9a1c5f1ca9759c57b3a175db703bfb1a44bdaa012fcc15891c1a023d0eaa1b8",
+      "forward_median_m": 0.450008611120843,
+      "frame_id": 73,
+      "old_self_face_matches_1cm": 0,
+      "returns": 16,
+      "step": 81,
+      "target_matches_3cm": 16
+    }
+  ]
+}

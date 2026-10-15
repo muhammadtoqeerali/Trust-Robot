@@ -1,0 +1,232 @@
+{
+  "after": [
+    {
+      "raw_elements": null,
+      "raw_frame_id": null,
+      "raw_packet_bytes": 0,
+      "rendering_frame": [
+        2959,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 31,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 0,
+      "raw_frame_id": 15,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        2974,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 41,
+      "timestamp_ns": 1733333423,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 0,
+      "raw_frame_id": 31,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        2990,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 51,
+      "timestamp_ns": 1933333434,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 0,
+      "raw_frame_id": 48,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        3007,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 61,
+      "timestamp_ns": 2066666774,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 0,
+      "raw_frame_id": 64,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        3023,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 71,
+      "timestamp_ns": 2266666784,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 0,
+      "raw_frame_id": 82,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        3040,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 81,
+      "timestamp_ns": 2416666792,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    }
+  ],
+  "after_positive_raw": 0,
+  "after_valid_xyz": 0,
+  "before": [
+    {
+      "raw_elements": null,
+      "raw_frame_id": null,
+      "raw_packet_bytes": 0,
+      "rendering_frame": [
+        0,
+        0
+      ],
+      "state": "OBSERVED",
+      "step": 31,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": null,
+      "raw_frame_id": null,
+      "raw_packet_bytes": 0,
+      "rendering_frame": [
+        2968,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 41,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 16,
+      "raw_frame_id": 25,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        2984,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 51,
+      "timestamp_ns": 1916666766,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 14,
+      "raw_frame_id": 42,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        3001,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 61,
+      "timestamp_ns": 2083333441,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 15,
+      "raw_frame_id": 58,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        3017,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 71,
+      "timestamp_ns": 2250000117,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    },
+    {
+      "raw_elements": 14,
+      "raw_frame_id": 75,
+      "raw_packet_bytes": 936,
+      "rendering_frame": [
+        3034,
+        30
+      ],
+      "state": "OBSERVED",
+      "step": 81,
+      "timestamp_ns": 2416666792,
+      "xyz_count": 0,
+      "xyz_finite": false,
+      "xyz_shape": [
+        0
+      ]
+    }
+  ],
+  "before_positive_raw": 4,
+  "before_valid_xyz": 0,
+  "camera_frames": 5,
+  "classification": "RAW_RETURNS_LOST_AFTER_REPLICATOR_CAPTURE",
+  "complete_sensor_recording_verified": false,
+  "data_origin": "ISAAC_SIM_SYNTHETIC",
+  "imu_records": 90,
+  "intervention": "OBSERVATION_ONLY",
+  "lidar_scans": 0,
+  "optix_cache_errors": 0,
+  "physical_robot_contact": false,
+  "raw_lost_steps": [
+    51,
+    61,
+    71,
+    81
+  ],
+  "schema": "TRUST_ROBOT_V16_PREPOST_LIDAR_V1",
+  "simulator_exit_code": 0,
+  "source_commit": "00d04bf69610c36f3bd2bbfb11633a993b9a624f",
+  "world_sweep_positive_raw": 44,
+  "world_sweep_rows": 90,
+  "xyz_lost_steps": []
+}
