@@ -1,0 +1,550 @@
+{
+  "analyzed_step_pairs": [
+    [
+      51,
+      61
+    ],
+    [
+      61,
+      71
+    ],
+    [
+      71,
+      81
+    ],
+    [
+      81,
+      91
+    ]
+  ],
+  "candidate_frame_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    2
+  ],
+  "candidate_pairs": [
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.9998861574106269,
+          -7.228637189182833e-05,
+          0.013857753169162103,
+          -0.005969059422907316
+        ],
+        "translation_m": [
+          0.04213985921189922,
+          0.006714685815635962,
+          0.014765521086334476
+        ]
+      },
+      "baseline_rmse_m": 0.013241337683562381,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.04515390739407143,
+      "current_points": 16,
+      "current_step": 61,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 51,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.06787486413191474,
+            "translation_change_m": 0.0005966420013366836
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.01325676604876087,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.2715702329005782,
+            "translation_change_m": 0.0023870623939553273
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.013423143081668506,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.9999312609085993,
+          1.6580294659759947e-05,
+          -0.007702871438477345,
+          0.008839624111631328
+        ],
+        "translation_m": [
+          0.03732028826476336,
+          -0.009356510319608827,
+          -0.007652944580873294
+        ]
+      },
+      "baseline_rmse_m": 0.01157715112726916,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.03922901684064868,
+      "current_points": 16,
+      "current_step": 71,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 61,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.07244156520280012,
+            "translation_change_m": 0.0005889040136385907
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.011640478619471026,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.2899620173866931,
+            "translation_change_m": 0.0023571574261612546
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.011963558415913851,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.9999754856426104,
+          -1.1039233641198091e-05,
+          0.002192405257830143,
+          -0.006649913619462053
+        ],
+        "translation_m": [
+          0.04076292656555802,
+          0.006490506313301484,
+          0.0019472207782074069
+        ]
+      },
+      "baseline_rmse_m": 0.013348391215783129,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.0413223247549211,
+      "current_points": 16,
+      "current_step": 81,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 71,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.08150269528300695,
+            "translation_change_m": 0.0006116664019762354
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.013396501027616593,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.3261425999458997,
+            "translation_change_m": 0.002447546512305376
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.013657771614010498,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.9999459808441999,
+          -2.3010439518413043e-05,
+          0.009888217340912444,
+          0.0032028146792125694
+        ],
+        "translation_m": [
+          0.03950800338674426,
+          -0.0028861021436210926,
+          0.00820232854349954
+        ]
+      },
+      "baseline_rmse_m": 0.012319593797298913,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.04045355498254656,
+      "current_points": 16,
+      "current_step": 91,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 81,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.0843249790310223,
+            "translation_change_m": 0.0005725318245296315
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.012309371869009277,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 0.33732024133257277,
+            "translation_change_m": 0.0022900358770190903
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.012408880033976053,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    }
+  ],
+  "cross_sensor_synchronization_verified": false,
+  "deterministic_rederivation_identical": true,
+  "frozen_original_l2_control_reproduced": true,
+  "frozen_phase2_registration_reused": true,
+  "frozen_phase4_diagnostics_reused": true,
+  "health_labels_emitted": 0,
+  "implementation_sha256": "24664368fa056b0a2f6c73fe6a4b6167f33cbcee02df5d0c754b2acf39c4ddc4",
+  "l1_evidence_sha256": "a120e376d7055a19fe5948f0df9b15b8b824399e967583e745da3258c55c553b",
+  "l2_evidence_sha256": "4cad184b44bd9d99ebb762a7dcbe04e0c18bd42265568057aaf7f7a1598922c6",
+  "l6_evidence_sha256": "e82b86d4d14b213d62db7699142caa8701637fb7e7d042657c10a02dd6c529f3",
+  "localization_ate_rpe_scored": false,
+  "original_frame_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    4
+  ],
+  "original_pairs": [
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.974813493502483,
+          0.0013283483288477368,
+          -0.2079861271448206,
+          0.08049011921658768
+        ],
+        "translation_m": [
+          0.09440141575503119,
+          -0.08457061228097629,
+          -0.2132290100236868
+        ]
+      },
+      "baseline_rmse_m": 0.012649219905566021,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.24805327345918052,
+      "current_points": 16,
+      "current_step": 61,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 51,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 2.7413117322819613,
+            "translation_change_m": 0.025247413051570005
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.012665614759726601,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 10.333097626021994,
+            "translation_change_m": 0.09504745427838612
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.012841573030358343,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.9983369050027354,
+          0.0004801550386315218,
+          0.05563793981899836,
+          -0.015086855649724716
+        ],
+        "translation_m": [
+          0.04031749443467991,
+          0.020704400230408725,
+          0.05192511322756347
+        ]
+      },
+      "baseline_rmse_m": 0.010531652313497878,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.06892307255256894,
+      "current_points": 16,
+      "current_step": 71,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 61,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 2.4861237438340997,
+            "translation_change_m": 0.021490042104804024
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.011214677948082464,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 20.479581289982402,
+            "translation_change_m": 0.17443061769050905
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.01054335040431293,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.31414183901235004,
+          -0.0004909737279515062,
+          -0.8788376867598333,
+          0.35910859674667
+        ],
+        "translation_m": [
+          0.851544528964797,
+          -0.11300424572222982,
+          -0.24357167140217914
+        ]
+      },
+      "baseline_rmse_m": 0.009059521427794447,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.8928746851998769,
+      "current_points": 16,
+      "current_step": 81,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 71,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 3.963829469844048,
+            "translation_change_m": 0.03122209235844355
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.008869874424759342,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 31.10912793926835,
+            "translation_change_m": 0.2410985293727079
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.009547382659343533,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "baseline_error": null,
+      "baseline_pose": {
+        "quaternion_wxyz": [
+          0.13274909197697382,
+          -0.0005268493029466773,
+          0.916684644934251,
+          -0.37691731553600366
+        ],
+        "translation_m": [
+          0.8455629449384585,
+          0.04331370658102373,
+          0.09891914057492482
+        ]
+      },
+      "baseline_rmse_m": 0.011254475023037584,
+      "baseline_status": "DIAGNOSTIC_AVAILABLE",
+      "baseline_translation_norm_m": 0.8524305059081752,
+      "current_points": 16,
+      "current_step": 91,
+      "pose_factor_authorized": false,
+      "previous_points": 16,
+      "previous_step": 81,
+      "scientific_pose_validity_verified": false,
+      "synthetic_challenges": [
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 5.390507359934807,
+            "translation_change_m": 0.04101800074290682
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.008175394090701168,
+          "per_coordinate_max_perturbation_m": 0.0005,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "calibrated_noise": false,
+          "candidate_change": {
+            "rotation_change_deg": 71.62594958581248,
+            "translation_change_m": 0.48040627259162666
+          },
+          "error": null,
+          "nearest_neighbor_rmse_m": 0.01061529966065206,
+          "per_coordinate_max_perturbation_m": 0.002,
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ]
+    }
+  ],
+  "reference_ground_truth_used": false,
+  "schema": "TRUST_ROBOT_L7_PAIRED_SYNTHETIC_REGISTRATION_COMPARISON_V1",
+  "scientifically_qualified_pose_factors": 0,
+  "sensitivity_comparisons": [
+    {
+      "all_pairs_comparable": true,
+      "candidate_lower_rotation_change_pair_count": 4,
+      "candidate_median_rotation_change_deg": 0.07697213024290353,
+      "comparable_pairs": 4,
+      "original_median_rotation_change_deg": 3.3525706010630048,
+      "paired_observations": [
+        {
+          "candidate_rotation_change_deg": 0.06787486413191474,
+          "candidate_translation_change_m": 0.0005966420013366836,
+          "original_rotation_change_deg": 2.7413117322819613,
+          "original_translation_change_m": 0.025247413051570005,
+          "steps": [
+            51,
+            61
+          ]
+        },
+        {
+          "candidate_rotation_change_deg": 0.07244156520280012,
+          "candidate_translation_change_m": 0.0005889040136385907,
+          "original_rotation_change_deg": 2.4861237438340997,
+          "original_translation_change_m": 0.021490042104804024,
+          "steps": [
+            61,
+            71
+          ]
+        },
+        {
+          "candidate_rotation_change_deg": 0.08150269528300695,
+          "candidate_translation_change_m": 0.0006116664019762354,
+          "original_rotation_change_deg": 3.963829469844048,
+          "original_translation_change_m": 0.03122209235844355,
+          "steps": [
+            71,
+            81
+          ]
+        },
+        {
+          "candidate_rotation_change_deg": 0.0843249790310223,
+          "candidate_translation_change_m": 0.0005725318245296315,
+          "original_rotation_change_deg": 5.390507359934807,
+          "original_translation_change_m": 0.04101800074290682,
+          "steps": [
+            81,
+            91
+          ]
+        }
+      ],
+      "perturbation_max_per_coordinate_m": 0.0005
+    },
+    {
+      "all_pairs_comparable": true,
+      "candidate_lower_rotation_change_pair_count": 4,
+      "candidate_median_rotation_change_deg": 0.3080523086662964,
+      "comparable_pairs": 4,
+      "original_median_rotation_change_deg": 25.794354614625377,
+      "paired_observations": [
+        {
+          "candidate_rotation_change_deg": 0.2715702329005782,
+          "candidate_translation_change_m": 0.0023870623939553273,
+          "original_rotation_change_deg": 10.333097626021994,
+          "original_translation_change_m": 0.09504745427838612,
+          "steps": [
+            51,
+            61
+          ]
+        },
+        {
+          "candidate_rotation_change_deg": 0.2899620173866931,
+          "candidate_translation_change_m": 0.0023571574261612546,
+          "original_rotation_change_deg": 20.479581289982402,
+          "original_translation_change_m": 0.17443061769050905,
+          "steps": [
+            61,
+            71
+          ]
+        },
+        {
+          "candidate_rotation_change_deg": 0.3261425999458997,
+          "candidate_translation_change_m": 0.002447546512305376,
+          "original_rotation_change_deg": 31.10912793926835,
+          "original_translation_change_m": 0.2410985293727079,
+          "steps": [
+            71,
+            81
+          ]
+        },
+        {
+          "candidate_rotation_change_deg": 0.33732024133257277,
+          "candidate_translation_change_m": 0.0022900358770190903,
+          "original_rotation_change_deg": 71.62594958581248,
+          "original_translation_change_m": 0.48040627259162666,
+          "steps": [
+            81,
+            91
+          ]
+        }
+      ],
+      "perturbation_max_per_coordinate_m": 0.002
+    }
+  ],
+  "sparse_last_pair_original_and_candidate": "NOT_REGISTERED",
+  "synthetic_perturbations_are_calibrated_noise": false
+}

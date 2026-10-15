@@ -56,3 +56,19 @@ independently referenced pose, or scientific accuracy claim is established.
 These source/report copies are hash-bound and reproducibility-tested; frozen
 Phase-2/Phase-4, M2DGR, historical V15/V16 data and SE4/SE5/SE9 scientific
 gates remain unchanged. Read the package README before further LiDAR work.
+
+## KIOS V16 L4-L9 geometry and registration stability (2026-10-15)
+
+Before further synthetic LiDAR development, read
+experiments/isaacsim_v16_l4_l9_geometry_stability_v1/README.md
+and docs/audits/trust_robot/TRUST_ROBOT_KIOS_V16_L4_L9_GEOMETRY_STABILITY_V1.md.
+
+The improved 16-emitter configuration increased synthetic geometric
+conditioning and improved deterministic registration stability and
+bidirectional/skip-frame consistency. The final scan has only two returns.
+
+These engineering results do not establish real localization accuracy,
+independent ground truth, cross-sensor synchronization or trained
+health supervision. No estimator factors are authorized.
+
+Preserve historical V16 recordings. Continue with L10 sparse coverage.

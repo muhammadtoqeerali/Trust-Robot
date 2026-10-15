@@ -1,0 +1,48 @@
+{
+  "candidate_lidar_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    2
+  ],
+  "cross_sensor_synchronization_verified": false,
+  "files_sha256": {
+    "code/l4_analytic_beam_layout_probe.py": "86567064e417395d366fba8193c12aa5b72de431f064a427b22e5fa9a5404f47",
+    "code/l5_permuted_beam_acquisition.py": "b987e4b3bb2e77ac1b72e4f24e1480c2b08eecbbfe525f917604286723e98dec",
+    "code/l5_prepared_isolated_launcher.sh": "da58a7dc20d93d67761154607be1b5461521b51ef803938de985a92ac9e940c6",
+    "code/l6_sparse_aware_comparison.py": "bb945c81d69d3f41f8990974302d3624a2457cd4ae53c3fc4d03f14e00af3978",
+    "code/l7_registration_comparison.py": "24664368fa056b0a2f6c73fe6a4b6167f33cbcee02df5d0c754b2acf39c4ddc4",
+    "code/l8_multipattern_robustness.py": "6c179462dd6515e5adc448c36dbefda8fc59c3146fd6d1c43b121a965105fc9c",
+    "code/l9_bidirectional_consistency.py": "9a91a0120732d8fbd28b67d8de28e9a1b11793371951320d8149b934e5d524a5",
+    "evidence/l4_analytic_beam_layout_report_v1.json": "d3bcaf9c03947f7f35bbfcb30b681f39b566ee15661800d6cc5700ef2e38c163",
+    "evidence/l5_candidate_preparation_receipt_v1.json": "1ccbaa68597795c2425662e7c889e78a88d24ebcc0aee30cd86cc5380feb434c",
+    "evidence/l5_candidate_validation_metadata_v1.json": "f02ed5fb8dd99a838cd324235b863a76f08e376b31c283308808bab2710dcb16",
+    "evidence/l6_sparse_aware_geometry_comparison_v1.json": "e82b86d4d14b213d62db7699142caa8701637fb7e7d042657c10a02dd6c529f3",
+    "evidence/l7_registration_comparison_v1.json": "9bdcd860d32975d7ea793d0989bf82aa7feeeeb928c02e79c09843267133ba17",
+    "evidence/l8_multipattern_registration_report_v1.json": "b7690dd77e3e9efaf934893b7ce4cb5bd822c67fc0e01d9b41468b521bd5aca9",
+    "evidence/l9_bidirectional_skip_pair_report_v1.json": "9309a3f9896144996366f7743ae9fca9bcacec827f5c6046d06d8ba13c280af7",
+    "scene/l5_permuted_beam_scene.usda": "08d7f96b249e56cf53a53593b4f7e09cfe3c5e37b08b06a6361403438888c4b0"
+  },
+  "health_labels_generated": false,
+  "independent_ground_truth_verified": false,
+  "l8_perturbation_registrations_per_derivation": 192,
+  "l9_reverse_pair_attempts": 8,
+  "l9_skip_pair_attempts": 6,
+  "parent_commit": "612c71ccc6b70abbe3e35af19bf9e7b8dc052b98",
+  "qualified_pose_factors": 0,
+  "raw_recordings_published": false,
+  "schema": "TRUST_ROBOT_KIOS_V16_L4_L9_GEOMETRY_STABILITY_CHECKPOINT_V1",
+  "scientific_localization_ate_rpe_computed": false,
+  "simulator_executed_by_publisher": false,
+  "synthetic_capture_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "upstream_l123_evidence": "experiments/isaacsim_v16_l123_registration_gate_v1/"
+}

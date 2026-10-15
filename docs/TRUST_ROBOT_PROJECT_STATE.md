@@ -5801,3 +5801,25 @@ independently referenced pose, or scientific accuracy claim is established.
 These source/report copies are hash-bound and reproducibility-tested; frozen
 Phase-2/Phase-4, M2DGR, historical V15/V16 data and SE4/SE5/SE9 scientific
 gates remain unchanged. Read the package README before further LiDAR work.
+
+## KIOS V16 L4-L9 engineering milestone (2026-10-15)
+
+L4-L9 completed SHA-pinned synthetic LiDAR acquisition and registration
+geometry studies. One separately prepared candidate permuted the generic
+16-emitter elevation list consistently across scene and acquisition code.
+
+L6 validated six camera frames, six LiDAR scans with point counts
+[16,16,16,16,16,2], 130 IMU samples and 130 USD pose records.
+
+L7/L8 quantified improved perturbation stability; L9 measured substantially
+improved reverse and skip-frame SE(3) closure.
+
+Raw recordings remain on KIOS; compact evidence and exact source snapshots:
+experiments/isaacsim_v16_l4_l9_geometry_stability_v1/
+
+The last scan remains too sparse. No scientific pose factors, health labels,
+independent reference localization scores or physical synchronization are
+established. SE4 model training and all prior scientific access gates remain
+unchanged.
+
+Next: L10 end-of-trajectory LiDAR coverage investigation.

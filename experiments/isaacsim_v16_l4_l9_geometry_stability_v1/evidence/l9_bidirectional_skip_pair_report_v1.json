@@ -1,0 +1,243 @@
+{
+  "bidirectional_pair_attempts": 8,
+  "health_labels_generated": 0,
+  "implementation_sha256": "9a91a0120732d8fbd28b67d8de28e9a1b11793371951320d8149b934e5d524a5",
+  "independent_reference_verified": false,
+  "l1_sha256": "a120e376d7055a19fe5948f0df9b15b8b824399e967583e745da3258c55c553b",
+  "l6_sha256": "e82b86d4d14b213d62db7699142caa8701637fb7e7d042657c10a02dd6c529f3",
+  "l7_sha256": "9bdcd860d32975d7ea793d0989bf82aa7feeeeb928c02e79c09843267133ba17",
+  "l8_sha256": "b7690dd77e3e9efaf934893b7ce4cb5bd822c67fc0e01d9b41468b521bd5aca9",
+  "note": "Closure is internal geometric consistency, not independently validated localization accuracy",
+  "original_and_candidate_l7_baselines_reproduced": true,
+  "physical_synchronization_verified": false,
+  "pose_factors_authorized": 0,
+  "repeated_derivation_identical": true,
+  "results": {
+    "candidate": {
+      "bidirectional_pairs": [
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 2.316307148601597e-14,
+            "translation_closure_m": 4.010973662952911e-16
+          },
+          "forward_rmse_m": 0.013241337683562381,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.013241337683562442,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            51,
+            61
+          ]
+        },
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 1.5232084815582845e-14,
+            "translation_closure_m": 4.934243990987147e-16
+          },
+          "forward_rmse_m": 0.01157715112726916,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.011577151127269173,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            61,
+            71
+          ]
+        },
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 2.9626828531473463e-14,
+            "translation_closure_m": 3.333774119856106e-16
+          },
+          "forward_rmse_m": 0.013348391215783129,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.013348391215783165,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            71,
+            81
+          ]
+        },
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 2.272172784838592e-14,
+            "translation_closure_m": 2.393702332316728e-16
+          },
+          "forward_rmse_m": 0.012319593797298913,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.012319593797298902,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            81,
+            91
+          ]
+        }
+      ],
+      "two_step_comparisons": [
+        {
+          "direct_registration_error": null,
+          "direct_registration_rmse_m": 0.02398231367177064,
+          "direct_registration_status": "DIAGNOSTIC_AVAILABLE",
+          "direct_vs_two_step_composition": {
+            "rotation_closure_deg": 0.009180942799076245,
+            "translation_closure_m": 7.859191599211374e-05
+          },
+          "pose_factor_authorized": false,
+          "steps": [
+            51,
+            61,
+            71
+          ]
+        },
+        {
+          "direct_registration_error": null,
+          "direct_registration_rmse_m": 0.024155863678374953,
+          "direct_registration_status": "DIAGNOSTIC_AVAILABLE",
+          "direct_vs_two_step_composition": {
+            "rotation_closure_deg": 0.006980821967125542,
+            "translation_closure_m": 5.481513656512188e-05
+          },
+          "pose_factor_authorized": false,
+          "steps": [
+            61,
+            71,
+            81
+          ]
+        },
+        {
+          "direct_registration_error": null,
+          "direct_registration_rmse_m": 0.024500211446629217,
+          "direct_registration_status": "DIAGNOSTIC_AVAILABLE",
+          "direct_vs_two_step_composition": {
+            "rotation_closure_deg": 0.8339661920898253,
+            "translation_closure_m": 0.0042710731507756275
+          },
+          "pose_factor_authorized": false,
+          "steps": [
+            71,
+            81,
+            91
+          ]
+        }
+      ]
+    },
+    "original": {
+      "bidirectional_pairs": [
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 0.29726892920108816,
+            "translation_closure_m": 0.003202580385837321
+          },
+          "forward_rmse_m": 0.012649219905566021,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.013269263619419908,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            51,
+            61
+          ]
+        },
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 5.168314439934193,
+            "translation_closure_m": 0.048357293195898016
+          },
+          "forward_rmse_m": 0.010531652313497878,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.011703788137880028,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            61,
+            71
+          ]
+        },
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 7.506293580424598,
+            "translation_closure_m": 0.0643137028550024
+          },
+          "forward_rmse_m": 0.009059521427794447,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.011488641136226191,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            71,
+            81
+          ]
+        },
+        {
+          "forward_reverse_cycle": {
+            "rotation_closure_deg": 0.20343423442616823,
+            "translation_closure_m": 0.013659482596792984
+          },
+          "forward_rmse_m": 0.011254475023037584,
+          "pose_factor_authorized": false,
+          "reverse_error": null,
+          "reverse_rmse_m": 0.010643041364358771,
+          "reverse_status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            81,
+            91
+          ]
+        }
+      ],
+      "two_step_comparisons": [
+        {
+          "direct_registration_error": null,
+          "direct_registration_rmse_m": 0.012092572948851028,
+          "direct_registration_status": "DIAGNOSTIC_AVAILABLE",
+          "direct_vs_two_step_composition": {
+            "rotation_closure_deg": 125.33635238120746,
+            "translation_closure_m": 0.8714238565183554
+          },
+          "pose_factor_authorized": false,
+          "steps": [
+            51,
+            61,
+            71
+          ]
+        },
+        {
+          "direct_registration_error": null,
+          "direct_registration_rmse_m": 0.010156979781602177,
+          "direct_registration_status": "DIAGNOSTIC_AVAILABLE",
+          "direct_vs_two_step_composition": {
+            "rotation_closure_deg": 11.821246529170942,
+            "translation_closure_m": 0.09327838106043106
+          },
+          "pose_factor_authorized": false,
+          "steps": [
+            61,
+            71,
+            81
+          ]
+        },
+        {
+          "direct_registration_error": null,
+          "direct_registration_rmse_m": 0.008918415100802277,
+          "direct_registration_status": "DIAGNOSTIC_AVAILABLE",
+          "direct_vs_two_step_composition": {
+            "rotation_closure_deg": 33.88168225982285,
+            "translation_closure_m": 0.23941396062684311
+          },
+          "pose_factor_authorized": false,
+          "steps": [
+            71,
+            81,
+            91
+          ]
+        }
+      ]
+    }
+  },
+  "schema": "TRUST_ROBOT_L9_V16_BIDIRECTIONAL_SKIP_PAIR_DIAGNOSTIC_V1",
+  "scientific_accuracy_scored": false,
+  "sparse_final_pair_not_used": true,
+  "two_step_direct_attempts": 6
+}

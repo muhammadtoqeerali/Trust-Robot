@@ -1,0 +1,112 @@
+{
+  "actual_frames": [
+    {
+      "calibrated_sensor_noise_model": false,
+      "cloud_sha256": "946eaf9c5485f27692c6753ffda148b56fccd9a4871402db92669136ff2bbc7d",
+      "gmo_xyz_source_sha256": "7e5d5878311b9cc01dd57367c193d7c4043c7f9ff7af4d21aabb399b57ce5c28",
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13722206055391692,
+      "spatial_rank": 3,
+      "spatial_singular_ratio": 0.02451980976222169,
+      "status": "STRUCTURAL_GEOMETRY_COMPUTED_NOT_QUALIFIED",
+      "step": 51
+    },
+    {
+      "calibrated_sensor_noise_model": false,
+      "cloud_sha256": "1213e56eacd374321640fc23cae215fe3a8dc260c4a3d92ad6f9a92e321eebda",
+      "gmo_xyz_source_sha256": "485176ae4976356998f6bc94b8c04cb25253fa7241ff7fb889749070a3a7008a",
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13584920674957573,
+      "spatial_rank": 3,
+      "spatial_singular_ratio": 0.02169398241917084,
+      "status": "STRUCTURAL_GEOMETRY_COMPUTED_NOT_QUALIFIED",
+      "step": 61
+    },
+    {
+      "calibrated_sensor_noise_model": false,
+      "cloud_sha256": "dc741cb082087028482b3c84e9b0bdf17735e24e44c2e1f68642ca62522da08f",
+      "gmo_xyz_source_sha256": "f41d7d6a0d6cb37a4709a57c6500594298bbc499797cb53f4c95302ceedc167e",
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13634056053683266,
+      "spatial_rank": 3,
+      "spatial_singular_ratio": 0.01743298548624045,
+      "status": "STRUCTURAL_GEOMETRY_COMPUTED_NOT_QUALIFIED",
+      "step": 71
+    },
+    {
+      "calibrated_sensor_noise_model": false,
+      "cloud_sha256": "6753d290548728163097823a3f56b4095b063fd6a30aff3f94a74bdaa06449dc",
+      "gmo_xyz_source_sha256": "4d0633dd162e7438283d34bc17f21b203ed49e42224835bfed7818867844c207",
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13704074148932266,
+      "spatial_rank": 3,
+      "spatial_singular_ratio": 0.02344548286986087,
+      "status": "STRUCTURAL_GEOMETRY_COMPUTED_NOT_QUALIFIED",
+      "step": 81
+    },
+    {
+      "calibrated_sensor_noise_model": false,
+      "cloud_sha256": "365d63714a7d41ace52d31ff97eb851f10a63b0aed2e40902931563ab586ccce",
+      "gmo_xyz_source_sha256": "3346f4e8dd1e066377e48d580d2477fcc748dfadfb353dc0bf9a8cf44ac6590a",
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.1364939507216398,
+      "spatial_rank": 3,
+      "spatial_singular_ratio": 0.030635997191282432,
+      "status": "STRUCTURAL_GEOMETRY_COMPUTED_NOT_QUALIFIED",
+      "step": 91
+    },
+    {
+      "calibrated_sensor_noise_model": false,
+      "cloud_sha256": "7e3bdaf4d880a0f10ef18cbc97e16c3d99f8765b717564aa260aab7a60951c19",
+      "gmo_xyz_source_sha256": "76079801701a5398e4a5ce64f5458ad9831bf62f0e36b0c25790058c37a7111a",
+      "physical_six_dof_observability_verified": false,
+      "point_count": 2,
+      "rotational_information_ratio": null,
+      "spatial_rank": null,
+      "spatial_singular_ratio": null,
+      "status": "INSUFFICIENT_POINTS_FOR_3D_GEOMETRY",
+      "step": 101
+    }
+  ],
+  "actual_lidar_point_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    2
+  ],
+  "candidate_first_five_median_rotational_ratio": 0.1364939507216398,
+  "candidate_structural_ratio_higher": true,
+  "cross_sensor_synchronization_verified": false,
+  "health_labels_generated": 0,
+  "implementation_sha256": "bb945c81d69d3f41f8990974302d3624a2457cd4ae53c3fc4d03f14e00af3978",
+  "independent_ground_truth_verified": false,
+  "l2_baseline_sha256": "4cad184b44bd9d99ebb762a7dcbe04e0c18bd42265568057aaf7f7a1598922c6",
+  "l5_preparation_receipt_sha256": "1ccbaa68597795c2425662e7c889e78a88d24ebcc0aee30cd86cc5380feb434c",
+  "median_ratio_factor_diagnostic_only": 272.46627790303955,
+  "original_first_five_median_rotational_ratio": 0.0005009572258707657,
+  "original_total_lidar_points": 84,
+  "physical_sensor_performance_verified": false,
+  "pose_factors_authorized": 0,
+  "registration_accuracy_scored": false,
+  "repeated_derivation_identical": true,
+  "schema": "TRUST_ROBOT_L6_SPARSE_AWARE_GEOMETRY_COMPARISON_V1",
+  "selected_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "simulation_is_synthetic": true,
+  "sparse_final_frame_excluded_from_geometry_median": true,
+  "total_actual_lidar_points": 82,
+  "usable_geometry_frames": 5
+}

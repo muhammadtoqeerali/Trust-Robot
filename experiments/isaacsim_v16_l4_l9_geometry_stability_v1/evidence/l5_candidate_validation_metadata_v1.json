@@ -1,0 +1,20 @@
+{
+  "cross_sensor_synchronization_verified": false,
+  "expected_vector_shape": [
+    3
+  ],
+  "fix": "NUMPY_SHAPE_TUPLE_ASSERTION",
+  "independent_ground_truth_verified": false,
+  "motion_type": "SCRIPTED_KINEMATIC_TRANSLATION",
+  "parent_script_sha256": "848f4cf4fb40a30d91c59ef7dcda57c7eafa04494e55d4aac1cd670d02283212",
+  "planned_camera_frames": 6,
+  "planned_imu_records": 90,
+  "planned_lidar_frames": 6,
+  "planned_pose_records": 90,
+  "planned_steps": 90,
+  "runtime_verified": false,
+  "scene_sha256": "08d7f96b249e56cf53a53593b4f7e09cfe3c5e37b08b06a6361403438888c4b0",
+  "schema": "TRUST_ROBOT_MULTIMODAL_V15",
+  "script_sha256": "b987e4b3bb2e77ac1b72e4f24e1480c2b08eecbbfe525f917604286723e98dec",
+  "status": "NEW_L5_PERMUTED_LAYOUT_UNEXECUTED_UNVERIFIED"
+}
