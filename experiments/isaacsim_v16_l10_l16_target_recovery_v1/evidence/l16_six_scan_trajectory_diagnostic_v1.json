@@ -1,0 +1,370 @@
+{
+  "all_pair_attempts_per_derivation": 15,
+  "all_pairs": [
+    {
+      "absolute_translation_norm_difference_m": 0.008959208298973592,
+      "direct_translation_norm_m": 0.04895920829897363,
+      "direct_vs_composed_se3": null,
+      "error_type": null,
+      "hop_count": 1,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.014213993693755318,
+      "scripted_usd_displacement_norm_m": 0.040000000000000036,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        51,
+        61
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0006279228941620807,
+      "direct_translation_norm_m": 0.07937207710583799,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.007636437616909733,
+        "translation_m": 0.00010537971020970057
+      },
+      "error_type": null,
+      "hop_count": 2,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.024208050053580864,
+      "scripted_usd_displacement_norm_m": 0.08000000000000007,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0005045962850357272,
+      "direct_translation_norm_m": 0.12050459628503572,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.005849673921458167,
+        "translation_m": 7.655654770616574e-05
+      },
+      "error_type": null,
+      "hop_count": 3,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.036587599819515565,
+      "scripted_usd_displacement_norm_m": 0.12,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.002878641625836953,
+      "direct_translation_norm_m": 0.16287864162583687,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 2.118059034929205,
+        "translation_m": 0.00826811566019382
+      },
+      "error_type": null,
+      "hop_count": 4,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.046216372292936035,
+      "scripted_usd_displacement_norm_m": 0.15999999999999992,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.005545792112700981,
+      "direct_translation_norm_m": 0.20554579211270094,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 4.219034588449464,
+        "translation_m": 0.03380351496934602
+      },
+      "error_type": null,
+      "hop_count": 5,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.039773873898340716,
+      "scripted_usd_displacement_norm_m": 0.19999999999999996,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0002479951146533016,
+      "direct_translation_norm_m": 0.04024799511465334,
+      "direct_vs_composed_se3": null,
+      "error_type": null,
+      "hop_count": 1,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.01162078521134707,
+      "scripted_usd_displacement_norm_m": 0.040000000000000036,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        61,
+        71
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.002507692557591895,
+      "direct_translation_norm_m": 0.07749230744240806,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.005670069692117798,
+        "translation_m": 7.42060105131019e-05
+      },
+      "error_type": null,
+      "hop_count": 2,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.024435114038323172,
+      "scripted_usd_displacement_norm_m": 0.07999999999999996,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0034622795806650147,
+      "direct_translation_norm_m": 0.11653772041933487,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.0015909316544502454,
+        "translation_m": 1.9735068110427434e-05
+      },
+      "error_type": null,
+      "hop_count": 3,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.03533948091641117,
+      "scripted_usd_displacement_norm_m": 0.11999999999999988,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0003199378711808143,
+      "direct_translation_norm_m": 0.16031993787118073,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 4.131083087611471,
+        "translation_m": 0.03822614926497185
+      },
+      "error_type": null,
+      "hop_count": 4,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.03381514690157089,
+      "scripted_usd_displacement_norm_m": 0.15999999999999992,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.002372788939496377,
+      "direct_translation_norm_m": 0.0423727889394963,
+      "direct_vs_composed_se3": null,
+      "error_type": null,
+      "hop_count": 1,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.014422891088981066,
+      "scripted_usd_displacement_norm_m": 0.039999999999999925,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        71,
+        81
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.001983355153190647,
+      "direct_translation_norm_m": 0.0819833551531905,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.0037933582738961962,
+        "translation_m": 4.699606691738578e-05
+      },
+      "error_type": null,
+      "hop_count": 2,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.024717843110924814,
+      "scripted_usd_displacement_norm_m": 0.07999999999999985,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0013535657660602857,
+      "direct_translation_norm_m": 0.12135356576606017,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.00193829998365466,
+        "translation_m": 2.2670843345315055e-05
+      },
+      "error_type": null,
+      "hop_count": 3,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.03650697193431526,
+      "scripted_usd_displacement_norm_m": 0.11999999999999988,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0015032449920202515,
+      "direct_translation_norm_m": 0.041503244992020176,
+      "direct_vs_composed_se3": null,
+      "error_type": null,
+      "hop_count": 1,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.013299492210545447,
+      "scripted_usd_displacement_norm_m": 0.039999999999999925,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        81,
+        91
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.00022044101770905822,
+      "direct_translation_norm_m": 0.0797795589822909,
+      "direct_vs_composed_se3": {
+        "rotation_deg": 0.0022546423358876006,
+        "translation_m": 2.636756211384529e-05
+      },
+      "error_type": null,
+      "hop_count": 2,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.023975434169922438,
+      "scripted_usd_displacement_norm_m": 0.07999999999999996,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "absolute_translation_norm_difference_m": 0.0019272364431306144,
+      "direct_translation_norm_m": 0.04192723644313065,
+      "direct_vs_composed_se3": null,
+      "error_type": null,
+      "hop_count": 1,
+      "pose_factor_authorized": false,
+      "rmse_m": 0.01428333629955553,
+      "scripted_usd_displacement_norm_m": 0.040000000000000036,
+      "status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        91,
+        101
+      ]
+    }
+  ],
+  "calibrated_sensor_noise": false,
+  "consecutive_l15_baselines_reproduced": 5,
+  "cumulative_scripted_comparison": [
+    {
+      "absolute_norm_difference_m": 0.008959208298973592,
+      "chain_rotation_relative_to_initial_deg": 1.5869368241709565,
+      "chain_translation_norm_m": 0.04895920829897363,
+      "from_step": 51,
+      "scripted_usd_displacement_norm_m": 0.040000000000000036,
+      "scripted_usd_is_independent_ground_truth": false,
+      "to_step": 61
+    },
+    {
+      "absolute_norm_difference_m": 0.0006184411167201309,
+      "chain_rotation_relative_to_initial_deg": 0.7198737915484333,
+      "chain_translation_norm_m": 0.07938155888327994,
+      "from_step": 51,
+      "scripted_usd_displacement_norm_m": 0.08000000000000007,
+      "scripted_usd_is_independent_ground_truth": false,
+      "to_step": 71
+    },
+    {
+      "absolute_norm_difference_m": 0.0005140034487130934,
+      "chain_rotation_relative_to_initial_deg": 0.9696165138016241,
+      "chain_translation_norm_m": 0.12051400344871309,
+      "from_step": 51,
+      "scripted_usd_displacement_norm_m": 0.12,
+      "scripted_usd_is_independent_ground_truth": false,
+      "to_step": 81
+    },
+    {
+      "absolute_norm_difference_m": 0.0009891017919067546,
+      "chain_rotation_relative_to_initial_deg": 1.906770307328603,
+      "chain_translation_norm_m": 0.16098910179190667,
+      "from_step": 51,
+      "scripted_usd_displacement_norm_m": 0.15999999999999992,
+      "scripted_usd_is_independent_ground_truth": false,
+      "to_step": 91
+    },
+    {
+      "absolute_norm_difference_m": 0.00011911987695897852,
+      "chain_rotation_relative_to_initial_deg": 1.2424430032511986,
+      "chain_translation_norm_m": 0.20011911987695893,
+      "from_step": 51,
+      "scripted_usd_displacement_norm_m": 0.19999999999999996,
+      "scripted_usd_is_independent_ground_truth": false,
+      "to_step": 101
+    }
+  ],
+  "fully_composed_translation_norm_m": 0.20011911987695893,
+  "health_labels_generated": 0,
+  "hop_summaries": [
+    {
+      "attempts": 5,
+      "diagnostic_available": 5,
+      "hop_count": 1,
+      "max_rotation_closure_deg": null,
+      "median_rotation_closure_deg": null,
+      "median_translation_closure_m": null,
+      "registration_unavailable": 0
+    },
+    {
+      "attempts": 4,
+      "diagnostic_available": 4,
+      "hop_count": 2,
+      "max_rotation_closure_deg": 0.007636437616909733,
+      "median_rotation_closure_deg": 0.004731713983006997,
+      "median_translation_closure_m": 6.0601038715243845e-05,
+      "registration_unavailable": 0
+    },
+    {
+      "attempts": 3,
+      "diagnostic_available": 3,
+      "hop_count": 3,
+      "max_rotation_closure_deg": 0.005849673921458167,
+      "median_rotation_closure_deg": 0.00193829998365466,
+      "median_translation_closure_m": 2.2670843345315055e-05,
+      "registration_unavailable": 0
+    },
+    {
+      "attempts": 2,
+      "diagnostic_available": 2,
+      "hop_count": 4,
+      "max_rotation_closure_deg": 4.131083087611471,
+      "median_rotation_closure_deg": 3.124571061270338,
+      "median_translation_closure_m": 0.023247132462582837,
+      "registration_unavailable": 0
+    },
+    {
+      "attempts": 1,
+      "diagnostic_available": 1,
+      "hop_count": 5,
+      "max_rotation_closure_deg": 4.219034588449464,
+      "median_rotation_closure_deg": 4.219034588449464,
+      "median_translation_closure_m": 0.03380351496934602,
+      "registration_unavailable": 0
+    }
+  ],
+  "implementation_sha256": "c98420f94f04ce373c55ef98e83ae0ad7412fa5de430226c73a036a299ae641a",
+  "kinematic_usd_is_independent_ground_truth": false,
+  "l14_report_sha256": "2119e8d0a5a5c5c8127991b7bb853b7fc46752cf7b22ce71f35fc368caf955f6",
+  "l15_report_sha256": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+  "nonadjacent_pair_attempts_per_derivation": 10,
+  "physical_exposure_synchronization_verified": false,
+  "pose_factors_authorized": 0,
+  "recorded_usd_pose_series_sha256": "0c7cd562bfed36a432b13c1b56dca7530e0f3d02cebeccee0895f41a1efc2a1b",
+  "repeated_derivation_identical": true,
+  "schema": "TRUST_ROBOT_L16_SIX_SCAN_ALL_PAIRS_TRAJECTORY_DIAGNOSTIC_V1",
+  "scientific_localization_ate_rpe_computed": false,
+  "scripted_step51_to101_displacement_norm_m": 0.19999999999999996
+}

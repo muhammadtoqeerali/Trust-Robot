@@ -1,0 +1,708 @@
+{
+  "bidirectional": [
+    {
+      "closure": {
+        "rotation_closure_deg": 1.9359222680647324e-14,
+        "translation_closure_m": 4.3765942241823496e-16
+      },
+      "forward_status": "DIAGNOSTIC_AVAILABLE",
+      "pose_factor_authorized": false,
+      "reverse_status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        51,
+        61
+      ]
+    },
+    {
+      "closure": {
+        "rotation_closure_deg": 6.512213772342002e-15,
+        "translation_closure_m": 3.9997321727428326e-16
+      },
+      "forward_status": "DIAGNOSTIC_AVAILABLE",
+      "pose_factor_authorized": false,
+      "reverse_status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        61,
+        71
+      ]
+    },
+    {
+      "closure": {
+        "rotation_closure_deg": 1.378821665629148e-14,
+        "translation_closure_m": 4.043340965099265e-16
+      },
+      "forward_status": "DIAGNOSTIC_AVAILABLE",
+      "pose_factor_authorized": false,
+      "reverse_status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        71,
+        81
+      ]
+    },
+    {
+      "closure": {
+        "rotation_closure_deg": 1.8361993237180827e-14,
+        "translation_closure_m": 3.3859118299977674e-16
+      },
+      "forward_status": "DIAGNOSTIC_AVAILABLE",
+      "pose_factor_authorized": false,
+      "reverse_status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        81,
+        91
+      ]
+    },
+    {
+      "closure": {
+        "rotation_closure_deg": 2.0095896314019593e-14,
+        "translation_closure_m": 2.501131983845073e-16
+      },
+      "forward_status": "DIAGNOSTIC_AVAILABLE",
+      "pose_factor_authorized": false,
+      "reverse_status": "DIAGNOSTIC_AVAILABLE",
+      "steps": [
+        91,
+        101
+      ]
+    }
+  ],
+  "cross_sensor_sync_verified": false,
+  "deterministic_two_derivations_identical": true,
+  "final_pair_included_in_engineering_diagnostics": true,
+  "final_pair_perturbation_summaries": [
+    {
+      "amplitude_m": 0.0005,
+      "available_count": 12,
+      "maximum_rotation_change_deg": 0.12268827377243867,
+      "median_rotation_change_deg": 0.047014311038472756,
+      "median_translation_change_m": 0.0004429412271927219,
+      "unavailable_count": 0
+    },
+    {
+      "amplitude_m": 0.002,
+      "available_count": 12,
+      "maximum_rotation_change_deg": 0.49072244860161335,
+      "median_rotation_change_deg": 0.18842936063658092,
+      "median_translation_change_m": 0.0017719246701229532,
+      "unavailable_count": 0
+    }
+  ],
+  "final_pair_perturbations": [
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 1,
+      "pose_change": {
+        "rotation_closure_deg": 0.05671338603551179,
+        "translation_closure_m": 0.0006449146114221867
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 2,
+      "pose_change": {
+        "rotation_closure_deg": 0.021303349177165233,
+        "translation_closure_m": 0.00024096784296325714
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 3,
+      "pose_change": {
+        "rotation_closure_deg": 0.06131534512800842,
+        "translation_closure_m": 0.0007154305612174297
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 4,
+      "pose_change": {
+        "rotation_closure_deg": 0.057254476115473824,
+        "translation_closure_m": 0.0006659432700610304
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 5,
+      "pose_change": {
+        "rotation_closure_deg": 0.03731523604143372,
+        "translation_closure_m": 0.00014757915355075935
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 6,
+      "pose_change": {
+        "rotation_closure_deg": 0.0356315363826337,
+        "translation_closure_m": 5.737761458613084e-05
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 7,
+      "pose_change": {
+        "rotation_closure_deg": 0.10301070007409913,
+        "translation_closure_m": 0.0011972614524669459
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 8,
+      "pose_change": {
+        "rotation_closure_deg": 0.12268827377243867,
+        "translation_closure_m": 0.0014346065228158103
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 9,
+      "pose_change": {
+        "rotation_closure_deg": 0.02086513707588603,
+        "translation_closure_m": 0.00017802876172826778
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 10,
+      "pose_change": {
+        "rotation_closure_deg": 0.06972292095595917,
+        "translation_closure_m": 0.0008011013817729297
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 11,
+      "pose_change": {
+        "rotation_closure_deg": 0.018511051490546826,
+        "translation_closure_m": 0.0001941434944140387
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.0005,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 12,
+      "pose_change": {
+        "rotation_closure_deg": 0.02402426083932596,
+        "translation_closure_m": 0.0001443577605142748
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 1,
+      "pose_change": {
+        "rotation_closure_deg": 0.2275064112490285,
+        "translation_closure_m": 0.0025874237632564586
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 2,
+      "pose_change": {
+        "rotation_closure_deg": 0.08458932734587342,
+        "translation_closure_m": 0.000956425576989448
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 3,
+      "pose_change": {
+        "rotation_closure_deg": 0.2444725360373648,
+        "translation_closure_m": 0.002852503623843946
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 4,
+      "pose_change": {
+        "rotation_closure_deg": 0.22860174443113337,
+        "translation_closure_m": 0.0026589528976632016
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 5,
+      "pose_change": {
+        "rotation_closure_deg": 0.14935231002413332,
+        "translation_closure_m": 0.000591728885821176
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 6,
+      "pose_change": {
+        "rotation_closure_deg": 0.1425515625749137,
+        "translation_closure_m": 0.00022910786927777375
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 7,
+      "pose_change": {
+        "rotation_closure_deg": 0.41254654557255066,
+        "translation_closure_m": 0.0047948897112318044
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 8,
+      "pose_change": {
+        "rotation_closure_deg": 0.49072244860161335,
+        "translation_closure_m": 0.005738037361947498
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 9,
+      "pose_change": {
+        "rotation_closure_deg": 0.08357942477839755,
+        "translation_closure_m": 0.0007142306823362571
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 10,
+      "pose_change": {
+        "rotation_closure_deg": 0.27856375589404686,
+        "translation_closure_m": 0.003200466471356262
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 11,
+      "pose_change": {
+        "rotation_closure_deg": 0.07393928679983719,
+        "translation_closure_m": 0.0007753657497537386
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "amplitude_m": 0.002,
+      "calibrated_noise": false,
+      "error": null,
+      "pattern_id": 12,
+      "pose_change": {
+        "rotation_closure_deg": 0.09603085029177685,
+        "translation_closure_m": 0.0005762584499679783
+      },
+      "status": "DIAGNOSTIC_AVAILABLE"
+    }
+  ],
+  "forward": [
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999041091688428,
+          -6.031188655037765e-05,
+          0.01272636024297136,
+          -0.005459723867157257
+        ],
+        "translation_m": [
+          0.04304490474185807,
+          0.009617735700546123,
+          0.021251809641089234
+        ]
+      },
+      "rmse_m": 0.014213993693755318,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999429183309752,
+          1.2686086364478659e-05,
+          -0.007009729407991611,
+          0.008063721995618214
+        ],
+        "translation_m": [
+          0.036129792163133057,
+          -0.013741973643383816,
+          -0.011211484709105768
+        ]
+      },
+      "rmse_m": 0.01162078521134707,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999798158211051,
+          -8.783655254621398e-06,
+          0.0020229032903756623,
+          -0.006022934128309126
+        ],
+        "translation_m": [
+          0.041116716112740925,
+          0.009788334054642736,
+          0.0030095539619837686
+        ]
+      },
+      "rmse_m": 0.014422891088981066,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999562908245868,
+          -1.8688778408079115e-05,
+          0.00889126148174836,
+          0.002891636271605824
+        ],
+        "translation_m": [
+          0.039227796444215146,
+          -0.004497462648751148,
+          0.012785623204285253
+        ]
+      },
+      "rmse_m": 0.013299492210545447,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999731480311447,
+          3.244591411516766e-05,
+          -0.006510961071907651,
+          -0.003362967419576553
+        ],
+        "translation_m": [
+          0.0406798621048432,
+          0.004893963934154,
+          -0.008893317260748353
+        ]
+      },
+      "rmse_m": 0.01428333629955553,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    }
+  ],
+  "geometry": [
+    {
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.1370880405843884,
+      "spatial_numeric_rank": 3,
+      "spatial_singular_ratio": 0.02252410165965557,
+      "step": 51
+    },
+    {
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13584344235316947,
+      "spatial_numeric_rank": 3,
+      "spatial_singular_ratio": 0.019826460629701614,
+      "step": 61
+    },
+    {
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13629814814798114,
+      "spatial_numeric_rank": 3,
+      "spatial_singular_ratio": 0.015846028923988342,
+      "step": 71
+    },
+    {
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13691285112984067,
+      "spatial_numeric_rank": 3,
+      "spatial_singular_ratio": 0.021162627264857292,
+      "step": 81
+    },
+    {
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13638185834064456,
+      "spatial_numeric_rank": 3,
+      "spatial_singular_ratio": 0.02746697887778282,
+      "step": 91
+    },
+    {
+      "physical_six_dof_observability_verified": false,
+      "point_count": 16,
+      "rotational_information_ratio": 0.13601197268085058,
+      "spatial_numeric_rank": 3,
+      "spatial_singular_ratio": 0.018714817240834236,
+      "step": 101
+    }
+  ],
+  "health_labels_generated": 0,
+  "implementation_sha256": "c00d55ae608864186d6c084cf1e2d86798fd3d2ad9f5d2386b6009cbf9a6ca09",
+  "independent_ground_truth_verified": false,
+  "localization_accuracy_scored": false,
+  "pose_factors_authorized": 0,
+  "reverse": [
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999041091688428,
+          6.031188655026177e-05,
+          -0.012726360242971484,
+          0.005459723867157256
+        ],
+        "translation_m": [
+          -0.042382519837987465,
+          -0.010081561204744112,
+          -0.02234028229722977
+        ]
+      },
+      "rmse_m": 0.014213993693755382,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999429183309752,
+          -1.268608636449437e-05,
+          0.007009729407991563,
+          -0.00806372199561824
+        ],
+        "translation_m": [
+          -0.035742762929322325,
+          0.014321857894441093,
+          0.011714964591446103
+        ]
+      },
+      "rmse_m": 0.011620785211347141,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999798158211051,
+          8.78365525464588e-06,
+          -0.0020229032903757455,
+          0.006022934128309209
+        ],
+        "translation_m": [
+          -0.04098331406451816,
+          -0.01028277277803234,
+          -0.003175814036675633
+        ]
+      },
+      "rmse_m": 0.0144228910889811,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999562908245868,
+          1.8688778407973042e-05,
+          -0.008891261481748475,
+          -0.0028916362716057925
+        ],
+        "translation_m": [
+          -0.03896757865986189,
+          0.004724076022938972,
+          -0.013480736774547449
+        ]
+      },
+      "rmse_m": 0.013299492210545494,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    },
+    {
+      "error": null,
+      "pose": {
+        "quaternion_wxyz": [
+          0.9999731480311447,
+          -3.244591411525463e-05,
+          0.006510961071907502,
+          0.0033629674195765217
+        ],
+        "translation_m": [
+          -0.04052677221068757,
+          -0.005166472247094165,
+          0.009422391122280313
+        ]
+      },
+      "rmse_m": 0.0142833362995555,
+      "status": "DIAGNOSTIC_AVAILABLE"
+    }
+  ],
+  "scan_file_provenance": [
+    {
+      "cloud_sha256": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+      "count": 16,
+      "gmo_frame_id": 112,
+      "gmo_timestamp_ns_unqualified": 2833333481,
+      "qualified_xyz_sha256": "39cb432b5634cae0668b6b7682f6170ee35f4486d5a3c9f3850a38197d8195f6",
+      "step": 51
+    },
+    {
+      "cloud_sha256": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+      "count": 16,
+      "gmo_frame_id": 128,
+      "gmo_timestamp_ns_unqualified": 3000000156,
+      "qualified_xyz_sha256": "fefc9cec5f9b776386fdc7e8d635be371423ff92cd0a1e3404e6d0ea9c021b67",
+      "step": 61
+    },
+    {
+      "cloud_sha256": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+      "count": 16,
+      "gmo_frame_id": 144,
+      "gmo_timestamp_ns_unqualified": 3166666831,
+      "qualified_xyz_sha256": "9001ad0b64bfc53f96d5ec35f0001b1abc41e997acdb6f08b267c4f0f3d3dd67",
+      "step": 71
+    },
+    {
+      "cloud_sha256": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+      "count": 16,
+      "gmo_frame_id": 160,
+      "gmo_timestamp_ns_unqualified": 3333333507,
+      "qualified_xyz_sha256": "f9ba47a5a8d36078e7d94b022317c1b5d9e7d733f35656f5a0a26404cac01cc8",
+      "step": 81
+    },
+    {
+      "cloud_sha256": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+      "count": 16,
+      "gmo_frame_id": 176,
+      "gmo_timestamp_ns_unqualified": 3500000182,
+      "qualified_xyz_sha256": "d6dcc5c2ffa04833a9eb03670ae18198c6a1dc507817afe99059201e4786c349",
+      "step": 91
+    },
+    {
+      "cloud_sha256": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+      "count": 16,
+      "gmo_frame_id": 192,
+      "gmo_timestamp_ns_unqualified": 3666666857,
+      "qualified_xyz_sha256": "b7fab7585dbfd00a7dd56b62160aec09d1d04762bf92ec383e990da64c849516",
+      "step": 101
+    }
+  ],
+  "schema": "TRUST_ROBOT_L15_RESTORED_FINAL_SCAN_REGISTRATION_V1",
+  "sensor_noise_calibrated": false,
+  "skip_pair": [
+    {
+      "direct_rmse_m": 0.024208050053580864,
+      "direct_status": "DIAGNOSTIC_AVAILABLE",
+      "direct_vs_chain": {
+        "rotation_closure_deg": 0.007636437616909733,
+        "translation_closure_m": 0.00010537971020970057
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        51,
+        61,
+        71
+      ]
+    },
+    {
+      "direct_rmse_m": 0.024435114038323172,
+      "direct_status": "DIAGNOSTIC_AVAILABLE",
+      "direct_vs_chain": {
+        "rotation_closure_deg": 0.005670069692117644,
+        "translation_closure_m": 7.420601051310102e-05
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        61,
+        71,
+        81
+      ]
+    },
+    {
+      "direct_rmse_m": 0.024717843110924814,
+      "direct_status": "DIAGNOSTIC_AVAILABLE",
+      "direct_vs_chain": {
+        "rotation_closure_deg": 0.003793358273896112,
+        "translation_closure_m": 4.699606691737556e-05
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        71,
+        81,
+        91
+      ]
+    },
+    {
+      "direct_rmse_m": 0.023975434169922438,
+      "direct_status": "DIAGNOSTIC_AVAILABLE",
+      "direct_vs_chain": {
+        "rotation_closure_deg": 0.0022546423358876496,
+        "translation_closure_m": 2.6367562113845694e-05
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        81,
+        91,
+        101
+      ]
+    }
+  ],
+  "synthetic_not_physical": true,
+  "upstream_l14_sha256": "2119e8d0a5a5c5c8127991b7bb853b7fc46752cf7b22ce71f35fc368caf955f6",
+  "upstream_l9_sha256": "9309a3f9896144996366f7743ae9fca9bcacec827f5c6046d06d8ba13c280af7"
+}

@@ -1,0 +1,1266 @@
+{
+  "actual_per_emitter_identity_verified": false,
+  "analytic_geometry_is_not_RTX_measurement": true,
+  "first_logged_raw_drop_after_step_91": {
+    "new_count": 0,
+    "prior_count": 16,
+    "step": 92
+  },
+  "health_labels_generated": 0,
+  "implementation_sha256": "5ab81c9da254c15cee142cbc8c0e6e3795f7260319c029dbe5b8af729888e603",
+  "missing_return_cause_conclusively_identified": false,
+  "offline_existing_recordings_only": true,
+  "per_step_gmo_sweep": [
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 1
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 2
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 3
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 4
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 5
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 6
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 7
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 8
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 9
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 10
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 11
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 12
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 13
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 14
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 15
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 16
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 17
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 18
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 19
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 20
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 21
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 22
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 23
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 24
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 25
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 26
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 27
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 28
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 29
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 30
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 31
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 32
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 33
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 34
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 35
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 36
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 37
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 38
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 39
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 40
+    },
+    {
+      "frame_id": null,
+      "gmo_timestamp_ns_unqualified": null,
+      "raw_element_count": null,
+      "state": "UNSAFE_OR_EMPTY_BUFFER",
+      "step": 41
+    },
+    {
+      "frame_id": 102,
+      "gmo_timestamp_ns_unqualified": 2666666805,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 42
+    },
+    {
+      "frame_id": 103,
+      "gmo_timestamp_ns_unqualified": 2700000140,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 43
+    },
+    {
+      "frame_id": 104,
+      "gmo_timestamp_ns_unqualified": 2716666808,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 44
+    },
+    {
+      "frame_id": 105,
+      "gmo_timestamp_ns_unqualified": 2733333475,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 45
+    },
+    {
+      "frame_id": 106,
+      "gmo_timestamp_ns_unqualified": 2750000143,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 46
+    },
+    {
+      "frame_id": 107,
+      "gmo_timestamp_ns_unqualified": 2766666810,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 47
+    },
+    {
+      "frame_id": 108,
+      "gmo_timestamp_ns_unqualified": 2783333478,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 48
+    },
+    {
+      "frame_id": 109,
+      "gmo_timestamp_ns_unqualified": 2800000146,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 49
+    },
+    {
+      "frame_id": 110,
+      "gmo_timestamp_ns_unqualified": 2816666813,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 50
+    },
+    {
+      "frame_id": 111,
+      "gmo_timestamp_ns_unqualified": 2833333481,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 51
+    },
+    {
+      "frame_id": 118,
+      "gmo_timestamp_ns_unqualified": 2833333481,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 52
+    },
+    {
+      "frame_id": 119,
+      "gmo_timestamp_ns_unqualified": 2866666816,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 53
+    },
+    {
+      "frame_id": 120,
+      "gmo_timestamp_ns_unqualified": 2883333483,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 54
+    },
+    {
+      "frame_id": 121,
+      "gmo_timestamp_ns_unqualified": 2900000151,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 55
+    },
+    {
+      "frame_id": 122,
+      "gmo_timestamp_ns_unqualified": 2916666818,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 56
+    },
+    {
+      "frame_id": 123,
+      "gmo_timestamp_ns_unqualified": 2933333486,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 57
+    },
+    {
+      "frame_id": 124,
+      "gmo_timestamp_ns_unqualified": 2950000153,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 58
+    },
+    {
+      "frame_id": 125,
+      "gmo_timestamp_ns_unqualified": 2966666821,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 59
+    },
+    {
+      "frame_id": 126,
+      "gmo_timestamp_ns_unqualified": 2983333488,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 60
+    },
+    {
+      "frame_id": 127,
+      "gmo_timestamp_ns_unqualified": 3000000156,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 61
+    },
+    {
+      "frame_id": 134,
+      "gmo_timestamp_ns_unqualified": 2966666821,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 62
+    },
+    {
+      "frame_id": 135,
+      "gmo_timestamp_ns_unqualified": 3033333491,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 63
+    },
+    {
+      "frame_id": 136,
+      "gmo_timestamp_ns_unqualified": 3050000159,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 64
+    },
+    {
+      "frame_id": 137,
+      "gmo_timestamp_ns_unqualified": 3066666826,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 65
+    },
+    {
+      "frame_id": 138,
+      "gmo_timestamp_ns_unqualified": 3083333494,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 66
+    },
+    {
+      "frame_id": 139,
+      "gmo_timestamp_ns_unqualified": 3100000161,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 67
+    },
+    {
+      "frame_id": 140,
+      "gmo_timestamp_ns_unqualified": 3116666829,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 68
+    },
+    {
+      "frame_id": 141,
+      "gmo_timestamp_ns_unqualified": 3133333496,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 69
+    },
+    {
+      "frame_id": 142,
+      "gmo_timestamp_ns_unqualified": 3150000164,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 70
+    },
+    {
+      "frame_id": 143,
+      "gmo_timestamp_ns_unqualified": 3166666831,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 71
+    },
+    {
+      "frame_id": 150,
+      "gmo_timestamp_ns_unqualified": 3166666831,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 72
+    },
+    {
+      "frame_id": 151,
+      "gmo_timestamp_ns_unqualified": 3200000166,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 73
+    },
+    {
+      "frame_id": 152,
+      "gmo_timestamp_ns_unqualified": 3216666834,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 74
+    },
+    {
+      "frame_id": 153,
+      "gmo_timestamp_ns_unqualified": 3233333501,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 75
+    },
+    {
+      "frame_id": 154,
+      "gmo_timestamp_ns_unqualified": 3250000169,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 76
+    },
+    {
+      "frame_id": 155,
+      "gmo_timestamp_ns_unqualified": 3266666837,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 77
+    },
+    {
+      "frame_id": 156,
+      "gmo_timestamp_ns_unqualified": 3283333504,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 78
+    },
+    {
+      "frame_id": 157,
+      "gmo_timestamp_ns_unqualified": 3300000172,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 79
+    },
+    {
+      "frame_id": 158,
+      "gmo_timestamp_ns_unqualified": 3316666839,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 80
+    },
+    {
+      "frame_id": 159,
+      "gmo_timestamp_ns_unqualified": 3333333507,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 81
+    },
+    {
+      "frame_id": 166,
+      "gmo_timestamp_ns_unqualified": 3333333507,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 82
+    },
+    {
+      "frame_id": 167,
+      "gmo_timestamp_ns_unqualified": 3366666842,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 83
+    },
+    {
+      "frame_id": 168,
+      "gmo_timestamp_ns_unqualified": 3383333509,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 84
+    },
+    {
+      "frame_id": 169,
+      "gmo_timestamp_ns_unqualified": 3400000177,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 85
+    },
+    {
+      "frame_id": 170,
+      "gmo_timestamp_ns_unqualified": 3416666844,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 86
+    },
+    {
+      "frame_id": 171,
+      "gmo_timestamp_ns_unqualified": 3433333512,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 87
+    },
+    {
+      "frame_id": 172,
+      "gmo_timestamp_ns_unqualified": 3450000179,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 88
+    },
+    {
+      "frame_id": 173,
+      "gmo_timestamp_ns_unqualified": 3466666847,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 89
+    },
+    {
+      "frame_id": 174,
+      "gmo_timestamp_ns_unqualified": 3483333515,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 90
+    },
+    {
+      "frame_id": 175,
+      "gmo_timestamp_ns_unqualified": 3500000182,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 91
+    },
+    {
+      "frame_id": 183,
+      "gmo_timestamp_ns_unqualified": 3516666850,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 92
+    },
+    {
+      "frame_id": 184,
+      "gmo_timestamp_ns_unqualified": 3533333517,
+      "raw_element_count": 16,
+      "state": "DECODED",
+      "step": 93
+    },
+    {
+      "frame_id": 185,
+      "gmo_timestamp_ns_unqualified": 3550000185,
+      "raw_element_count": 14,
+      "state": "DECODED",
+      "step": 94
+    },
+    {
+      "frame_id": 186,
+      "gmo_timestamp_ns_unqualified": 3566666852,
+      "raw_element_count": 11,
+      "state": "DECODED",
+      "step": 95
+    },
+    {
+      "frame_id": 187,
+      "gmo_timestamp_ns_unqualified": 3583333520,
+      "raw_element_count": 10,
+      "state": "DECODED",
+      "step": 96
+    },
+    {
+      "frame_id": 188,
+      "gmo_timestamp_ns_unqualified": 3600000187,
+      "raw_element_count": 7,
+      "state": "DECODED",
+      "step": 97
+    },
+    {
+      "frame_id": 189,
+      "gmo_timestamp_ns_unqualified": 3616666855,
+      "raw_element_count": 6,
+      "state": "DECODED",
+      "step": 98
+    },
+    {
+      "frame_id": 190,
+      "gmo_timestamp_ns_unqualified": 3633333522,
+      "raw_element_count": 5,
+      "state": "DECODED",
+      "step": 99
+    },
+    {
+      "frame_id": 191,
+      "gmo_timestamp_ns_unqualified": 3650000190,
+      "raw_element_count": 4,
+      "state": "DECODED",
+      "step": 100
+    },
+    {
+      "frame_id": 192,
+      "gmo_timestamp_ns_unqualified": 3666666857,
+      "raw_element_count": 2,
+      "state": "DECODED",
+      "step": 101
+    },
+    {
+      "frame_id": 199,
+      "gmo_timestamp_ns_unqualified": 3666666857,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 102
+    },
+    {
+      "frame_id": 200,
+      "gmo_timestamp_ns_unqualified": 3700000192,
+      "raw_element_count": 2,
+      "state": "DECODED",
+      "step": 103
+    },
+    {
+      "frame_id": 201,
+      "gmo_timestamp_ns_unqualified": 3716666860,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 104
+    },
+    {
+      "frame_id": 202,
+      "gmo_timestamp_ns_unqualified": 3733333528,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 105
+    },
+    {
+      "frame_id": 203,
+      "gmo_timestamp_ns_unqualified": 3750000195,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 106
+    },
+    {
+      "frame_id": 204,
+      "gmo_timestamp_ns_unqualified": 3766666863,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 107
+    },
+    {
+      "frame_id": 205,
+      "gmo_timestamp_ns_unqualified": 3783333530,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 108
+    },
+    {
+      "frame_id": 206,
+      "gmo_timestamp_ns_unqualified": 3800000198,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 109
+    },
+    {
+      "frame_id": 207,
+      "gmo_timestamp_ns_unqualified": 3816666865,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 110
+    },
+    {
+      "frame_id": 208,
+      "gmo_timestamp_ns_unqualified": 3833333533,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 111
+    },
+    {
+      "frame_id": 215,
+      "gmo_timestamp_ns_unqualified": 3800000198,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 112
+    },
+    {
+      "frame_id": 216,
+      "gmo_timestamp_ns_unqualified": 3866666868,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 113
+    },
+    {
+      "frame_id": 217,
+      "gmo_timestamp_ns_unqualified": 3883333535,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 114
+    },
+    {
+      "frame_id": 218,
+      "gmo_timestamp_ns_unqualified": 3900000203,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 115
+    },
+    {
+      "frame_id": 219,
+      "gmo_timestamp_ns_unqualified": 3916666870,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 116
+    },
+    {
+      "frame_id": 220,
+      "gmo_timestamp_ns_unqualified": 3933333538,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 117
+    },
+    {
+      "frame_id": 221,
+      "gmo_timestamp_ns_unqualified": 3950000206,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 118
+    },
+    {
+      "frame_id": 222,
+      "gmo_timestamp_ns_unqualified": 3966666873,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 119
+    },
+    {
+      "frame_id": 223,
+      "gmo_timestamp_ns_unqualified": 3983333541,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 120
+    },
+    {
+      "frame_id": 224,
+      "gmo_timestamp_ns_unqualified": 4000000208,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 121
+    },
+    {
+      "frame_id": 231,
+      "gmo_timestamp_ns_unqualified": 4000000208,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 122
+    },
+    {
+      "frame_id": 232,
+      "gmo_timestamp_ns_unqualified": 4033333543,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 123
+    },
+    {
+      "frame_id": 233,
+      "gmo_timestamp_ns_unqualified": 4050000211,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 124
+    },
+    {
+      "frame_id": 234,
+      "gmo_timestamp_ns_unqualified": 4066666878,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 125
+    },
+    {
+      "frame_id": 235,
+      "gmo_timestamp_ns_unqualified": 4083333546,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 126
+    },
+    {
+      "frame_id": 236,
+      "gmo_timestamp_ns_unqualified": 4100000213,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 127
+    },
+    {
+      "frame_id": 237,
+      "gmo_timestamp_ns_unqualified": 4116666881,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 128
+    },
+    {
+      "frame_id": 238,
+      "gmo_timestamp_ns_unqualified": 4133333548,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 129
+    },
+    {
+      "frame_id": 239,
+      "gmo_timestamp_ns_unqualified": 4150000216,
+      "raw_element_count": 0,
+      "state": "DECODED",
+      "step": 130
+    }
+  ],
+  "physical_sensor_timing_verified": false,
+  "pose_factors_authorized": 0,
+  "raw_count_change_events": [
+    {
+      "new_count": 0,
+      "prior_count": null,
+      "step": 42
+    },
+    {
+      "new_count": 16,
+      "prior_count": 0,
+      "step": 43
+    },
+    {
+      "new_count": 0,
+      "prior_count": 16,
+      "step": 52
+    },
+    {
+      "new_count": 16,
+      "prior_count": 0,
+      "step": 53
+    },
+    {
+      "new_count": 0,
+      "prior_count": 16,
+      "step": 62
+    },
+    {
+      "new_count": 16,
+      "prior_count": 0,
+      "step": 63
+    },
+    {
+      "new_count": 0,
+      "prior_count": 16,
+      "step": 72
+    },
+    {
+      "new_count": 16,
+      "prior_count": 0,
+      "step": 73
+    },
+    {
+      "new_count": 0,
+      "prior_count": 16,
+      "step": 82
+    },
+    {
+      "new_count": 16,
+      "prior_count": 0,
+      "step": 83
+    },
+    {
+      "new_count": 0,
+      "prior_count": 16,
+      "step": 92
+    },
+    {
+      "new_count": 16,
+      "prior_count": 0,
+      "step": 93
+    },
+    {
+      "new_count": 14,
+      "prior_count": 16,
+      "step": 94
+    },
+    {
+      "new_count": 11,
+      "prior_count": 14,
+      "step": 95
+    },
+    {
+      "new_count": 10,
+      "prior_count": 11,
+      "step": 96
+    },
+    {
+      "new_count": 7,
+      "prior_count": 10,
+      "step": 97
+    },
+    {
+      "new_count": 6,
+      "prior_count": 7,
+      "step": 98
+    },
+    {
+      "new_count": 5,
+      "prior_count": 6,
+      "step": 99
+    },
+    {
+      "new_count": 4,
+      "prior_count": 5,
+      "step": 100
+    },
+    {
+      "new_count": 2,
+      "prior_count": 4,
+      "step": 101
+    },
+    {
+      "new_count": 0,
+      "prior_count": 2,
+      "step": 102
+    },
+    {
+      "new_count": 2,
+      "prior_count": 0,
+      "step": 103
+    },
+    {
+      "new_count": 0,
+      "prior_count": 2,
+      "step": 104
+    }
+  ],
+  "repeated_derivation_identical": true,
+  "schema": "TRUST_ROBOT_L11_EXISTING_GMO_SWEEP_TRIAGE_V1",
+  "selected_capture_crosscheck": [
+    {
+      "analytic_max_target_distance_m": 0.6341459968512807,
+      "analytic_min_target_distance_m": 0.5662778742600645,
+      "front_cube_analytic_ray_hits": 16,
+      "pre_gmo_raw_count": 16,
+      "pre_gmo_valid_count": 16,
+      "step": 51,
+      "sweep_agrees_with_pre_snapshot": true,
+      "sweep_raw_count": 16,
+      "sweep_state": "DECODED"
+    },
+    {
+      "analytic_max_target_distance_m": 0.5893300247760156,
+      "analytic_min_target_distance_m": 0.5262582359974401,
+      "front_cube_analytic_ray_hits": 16,
+      "pre_gmo_raw_count": 16,
+      "pre_gmo_valid_count": 16,
+      "step": 61,
+      "sweep_agrees_with_pre_snapshot": true,
+      "sweep_raw_count": 16,
+      "sweep_state": "DECODED"
+    },
+    {
+      "analytic_max_target_distance_m": 0.5445140527007505,
+      "analytic_min_target_distance_m": 0.48623859773481587,
+      "front_cube_analytic_ray_hits": 16,
+      "pre_gmo_raw_count": 16,
+      "pre_gmo_valid_count": 16,
+      "step": 71,
+      "sweep_agrees_with_pre_snapshot": true,
+      "sweep_raw_count": 16,
+      "sweep_state": "DECODED"
+    },
+    {
+      "analytic_max_target_distance_m": 0.49969808062548543,
+      "analytic_min_target_distance_m": 0.4462189594721917,
+      "front_cube_analytic_ray_hits": 16,
+      "pre_gmo_raw_count": 16,
+      "pre_gmo_valid_count": 16,
+      "step": 81,
+      "sweep_agrees_with_pre_snapshot": true,
+      "sweep_raw_count": 16,
+      "sweep_state": "DECODED"
+    },
+    {
+      "analytic_max_target_distance_m": 0.45488210855022043,
+      "analytic_min_target_distance_m": 0.4061993212095675,
+      "front_cube_analytic_ray_hits": 16,
+      "pre_gmo_raw_count": 16,
+      "pre_gmo_valid_count": 16,
+      "step": 91,
+      "sweep_agrees_with_pre_snapshot": true,
+      "sweep_raw_count": 16,
+      "sweep_state": "DECODED"
+    },
+    {
+      "analytic_max_target_distance_m": 0.4100661364749553,
+      "analytic_min_target_distance_m": 0.3661796829469432,
+      "front_cube_analytic_ray_hits": 16,
+      "pre_gmo_raw_count": 2,
+      "pre_gmo_valid_count": 2,
+      "step": 101,
+      "sweep_agrees_with_pre_snapshot": true,
+      "sweep_raw_count": 2,
+      "sweep_state": "DECODED"
+    }
+  ],
+  "spherical_raw_return_details_step_91_and_101": {
+    "101": [
+      {
+        "angular_discrepancy_deg": 4.26084204430631,
+        "nearest_configured_beam_index_not_verified_emitter_id": 14,
+        "reported_azimuth_deg": 24.9898681640625,
+        "reported_elevation_deg": -10.0,
+        "reported_range_m": 0.4161112606525421,
+        "sensor_forward_component_m": 0.37142612063932606
+      },
+      {
+        "angular_discrepancy_deg": 4.27170457044625,
+        "nearest_configured_beam_index_not_verified_emitter_id": 1,
+        "reported_azimuth_deg": -25.0037841796875,
+        "reported_elevation_deg": 2.0,
+        "reported_range_m": 0.41452306509017944,
+        "sensor_forward_component_m": 0.375445060243301
+      }
+    ],
+    "91": [
+      {
+        "angular_discrepancy_deg": 4.271323129315301,
+        "nearest_configured_beam_index_not_verified_emitter_id": 14,
+        "reported_azimuth_deg": 25.0032958984375,
+        "reported_elevation_deg": -10.0,
+        "reported_range_m": 0.4655487835407257,
+        "sensor_forward_component_m": 0.4155092689744131
+      },
+      {
+        "angular_discrepancy_deg": 4.273670366776048,
+        "nearest_configured_beam_index_not_verified_emitter_id": 15,
+        "reported_azimuth_deg": 21.660369873046875,
+        "reported_elevation_deg": -0.666670024394989,
+        "reported_range_m": 0.4420347511768341,
+        "sensor_forward_component_m": 0.4107940253755834
+      },
+      {
+        "angular_discrepancy_deg": 4.000000619931029,
+        "nearest_configured_beam_index_not_verified_emitter_id": 13,
+        "reported_azimuth_deg": 18.330841064453125,
+        "reported_elevation_deg": 8.666669845581055,
+        "reported_range_m": 0.4400181174278259,
+        "sensor_forward_component_m": 0.41292067615250644
+      },
+      {
+        "angular_discrepancy_deg": 1.3333431699177896,
+        "nearest_configured_beam_index_not_verified_emitter_id": 12,
+        "reported_azimuth_deg": 14.99713134765625,
+        "reported_elevation_deg": -3.333329916000366,
+        "reported_range_m": 0.42157062888145447,
+        "sensor_forward_component_m": 0.40652248455240086
+      },
+      {
+        "angular_discrepancy_deg": 1.3333309605060277,
+        "nearest_configured_beam_index_not_verified_emitter_id": 11,
+        "reported_azimuth_deg": 11.665069580078125,
+        "reported_elevation_deg": 6.0,
+        "reported_range_m": 0.4167909622192383,
+        "sensor_forward_component_m": 0.40594660188099907
+      },
+      {
+        "angular_discrepancy_deg": 4.00000839622492,
+        "nearest_configured_beam_index_not_verified_emitter_id": 10,
+        "reported_azimuth_deg": 8.32513427734375,
+        "reported_elevation_deg": -6.0,
+        "reported_range_m": 0.4195331633090973,
+        "sensor_forward_component_m": 0.41283824884851134
+      },
+      {
+        "angular_discrepancy_deg": 4.269004809400467,
+        "nearest_configured_beam_index_not_verified_emitter_id": 8,
+        "reported_azimuth_deg": 5.000335693359375,
+        "reported_elevation_deg": 3.333329916000366,
+        "reported_range_m": 0.41733884811401367,
+        "sensor_forward_component_m": 0.415047152019711
+      },
+      {
+        "angular_discrepancy_deg": 3.3365613574218784,
+        "nearest_configured_beam_index_not_verified_emitter_id": 7,
+        "reported_azimuth_deg": 1.669891357421875,
+        "reported_elevation_deg": -8.666669845581055,
+        "reported_range_m": 0.40996792912483215,
+        "sensor_forward_component_m": 0.40511467627123815
+      },
+      {
+        "angular_discrepancy_deg": 3.335706865234375,
+        "nearest_configured_beam_index_not_verified_emitter_id": 8,
+        "reported_azimuth_deg": -1.669036865234375,
+        "reported_elevation_deg": 0.666670024394989,
+        "reported_range_m": 0.4110410809516907,
+        "sensor_forward_component_m": 0.41083888248541944
+      },
+      {
+        "angular_discrepancy_deg": 6.666671349555449,
+        "nearest_configured_beam_index_not_verified_emitter_id": 6,
+        "reported_azimuth_deg": -4.995758056640625,
+        "reported_elevation_deg": 10.0,
+        "reported_range_m": 0.41479405760765076,
+        "sensor_forward_component_m": 0.4069406016556171
+      },
+      {
+        "angular_discrepancy_deg": 4.000004497683316,
+        "nearest_configured_beam_index_not_verified_emitter_id": 5,
+        "reported_azimuth_deg": -8.32733154296875,
+        "reported_elevation_deg": -2.0,
+        "reported_range_m": 0.4120537042617798,
+        "sensor_forward_component_m": 0.40746098027323824
+      },
+      {
+        "angular_discrepancy_deg": 1.3333357482183055,
+        "nearest_configured_beam_index_not_verified_emitter_id": 4,
+        "reported_azimuth_deg": -11.6705322265625,
+        "reported_elevation_deg": 7.333330154418945,
+        "reported_range_m": 0.42348605394363403,
+        "sensor_forward_component_m": 0.411338963390781
+      },
+      {
+        "angular_discrepancy_deg": 1.3333954444572367,
+        "nearest_configured_beam_index_not_verified_emitter_id": 3,
+        "reported_azimuth_deg": -15.012176513671875,
+        "reported_elevation_deg": -4.666669845581055,
+        "reported_range_m": 0.42298632860183716,
+        "sensor_forward_component_m": 0.4071957523649423
+      },
+      {
+        "angular_discrepancy_deg": 4.0000004638705935,
+        "nearest_configured_beam_index_not_verified_emitter_id": 2,
+        "reported_azimuth_deg": -18.331756591796875,
+        "reported_elevation_deg": 4.666669845581055,
+        "reported_range_m": 0.4362352192401886,
+        "sensor_forward_component_m": 0.41272406937030615
+      },
+      {
+        "angular_discrepancy_deg": 4.273479475909057,
+        "nearest_configured_beam_index_not_verified_emitter_id": 0,
+        "reported_azimuth_deg": -21.660614013671875,
+        "reported_elevation_deg": -7.333330154418945,
+        "reported_range_m": 0.45243921875953674,
+        "sensor_forward_component_m": 0.4170514468563011
+      },
+      {
+        "angular_discrepancy_deg": 4.267629045521011,
+        "nearest_configured_beam_index_not_verified_emitter_id": 1,
+        "reported_azimuth_deg": -24.998565673828125,
+        "reported_elevation_deg": 2.0,
+        "reported_range_m": 0.4522058367729187,
+        "sensor_forward_component_m": 0.40959279033637386
+      }
+    ]
+  },
+  "upstream_l10_sha256": "f1f20e7ad8cb2d93bc91437bb4e94800ae706603824712362d8d7259774086bb",
+  "upstream_runtime_log_sha256": "eb6a8e16954d633cb14890fbf2182ae5e3b89c83903ed5c2cae258a0a413d0f6"
+}

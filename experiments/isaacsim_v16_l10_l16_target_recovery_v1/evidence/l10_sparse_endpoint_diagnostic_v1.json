@@ -1,0 +1,696 @@
+{
+  "analytic_model_is_not_rtx_emitter_observation": true,
+  "candidate": [
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 111,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.6341459968512807,
+      "minimum_predicted_distance_m": 0.5662778742600645,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.6341459968512807,
+        0.6090706735859645,
+        0.6031517686521357,
+        0.5869593510448784,
+        0.581123332606833,
+        0.5751907459719741,
+        0.5691248881791426,
+        0.5727797057650936,
+        0.5662778742600645,
+        0.5769268358538324,
+        0.5723884744755702,
+        0.5827062057777509,
+        0.58791531859147,
+        0.5982480694433226,
+        0.614052170292365,
+        0.6248925619054773
+      ],
+      "qualified_raw_sha256": "7e5d5878311b9cc01dd57367c193d7c4043c7f9ff7af4d21aabb399b57ce5c28",
+      "recording_sha256": "946eaf9c5485f27692c6753ffda148b56fccd9a4871402db92669136ff2bbc7d",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.6800000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 51,
+      "timestamp_ns": 2833333481,
+      "usd_sensor_world_m": [
+        0.6840000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 127,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.5893300247760156,
+      "minimum_predicted_distance_m": 0.5262582359974401,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.5893300247760156,
+        0.5660268091843526,
+        0.5605262014242783,
+        0.545478124298426,
+        0.5400545453311789,
+        0.5345412227747532,
+        0.5289040475168677,
+        0.5323005741040812,
+        0.5262582359974401,
+        0.5361546207906187,
+        0.5319369916692904,
+        0.5415255546723499,
+        0.5463665323002351,
+        0.5559690534006795,
+        0.5706562566491029,
+        0.5807305428381796
+      ],
+      "qualified_raw_sha256": "485176ae4976356998f6bc94b8c04cb25253fa7241ff7fb889749070a3a7008a",
+      "recording_sha256": "1213e56eacd374321640fc23cae215fe3a8dc260c4a3d92ad6f9a92e321eebda",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.7200000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 61,
+      "timestamp_ns": 3000000156,
+      "usd_sensor_world_m": [
+        0.7240000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 143,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.5445140527007505,
+      "minimum_predicted_distance_m": 0.48623859773481587,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.5445140527007505,
+        0.5229829447827408,
+        0.517900634196421,
+        0.5039968975519737,
+        0.49898575805552486,
+        0.4938916995775323,
+        0.4886832068545928,
+        0.49182144244306863,
+        0.48623859773481587,
+        0.4953824057274051,
+        0.49148550886301057,
+        0.5003449035669487,
+        0.5048177460090003,
+        0.5136900373580363,
+        0.5272603430058407,
+        0.5365685237708819
+      ],
+      "qualified_raw_sha256": "f41d7d6a0d6cb37a4709a57c6500594298bbc499797cb53f4c95302ceedc167e",
+      "recording_sha256": "dc741cb082087028482b3c84e9b0bdf17735e24e44c2e1f68642ca62522da08f",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.7600000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 71,
+      "timestamp_ns": 3166666831,
+      "usd_sensor_world_m": [
+        0.7640000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 159,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.49969808062548543,
+      "minimum_predicted_distance_m": 0.4462189594721917,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.49969808062548543,
+        0.47993908038112904,
+        0.47527506696856375,
+        0.46251567080552153,
+        0.4579169707798709,
+        0.4532421763803115,
+        0.448462366192318,
+        0.4513423107820562,
+        0.4462189594721917,
+        0.45461019066419156,
+        0.4510340260567308,
+        0.45916425246154774,
+        0.4632689597177656,
+        0.4714110213153933,
+        0.4838644293625787,
+        0.4924065047035844
+      ],
+      "qualified_raw_sha256": "4d0633dd162e7438283d34bc17f21b203ed49e42224835bfed7818867844c207",
+      "recording_sha256": "6753d290548728163097823a3f56b4095b063fd6a30aff3f94a74bdaa06449dc",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.8000000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 81,
+      "timestamp_ns": 3333333507,
+      "usd_sensor_world_m": [
+        0.8040000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 175,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.45488210855022043,
+      "minimum_predicted_distance_m": 0.4061993212095675,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.45488210855022043,
+        0.4368952159795173,
+        0.43264949974070654,
+        0.4210344440590693,
+        0.416848183504217,
+        0.4125926531830907,
+        0.4082415255300432,
+        0.41086317912104386,
+        0.4061993212095675,
+        0.413837975600978,
+        0.4105825432504511,
+        0.4179836013561467,
+        0.42172017342653095,
+        0.4291320052727503,
+        0.4404685157193166,
+        0.4482444856362868
+      ],
+      "qualified_raw_sha256": "3346f4e8dd1e066377e48d580d2477fcc748dfadfb353dc0bf9a8cf44ac6590a",
+      "recording_sha256": "365d63714a7d41ace52d31ff97eb851f10a63b0aed2e40902931563ab586ccce",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.8400000071525573,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 91,
+      "timestamp_ns": 3500000182,
+      "usd_sensor_world_m": [
+        0.8440000071525573,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 192,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 2,
+      "maximum_predicted_distance_m": 0.4100661364749553,
+      "minimum_predicted_distance_m": 0.3661796829469432,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.4100661364749553,
+        0.3938513515779054,
+        0.39002393251284917,
+        0.37955321731261704,
+        0.3757793962285629,
+        0.3719431299858698,
+        0.3680206848677683,
+        0.37038404746003134,
+        0.3661796829469432,
+        0.37306576053776436,
+        0.3701310604441713,
+        0.3768029502507456,
+        0.38017138713529613,
+        0.3868529892301072,
+        0.39707260207605444,
+        0.4040824665689891
+      ],
+      "qualified_raw_sha256": "76079801701a5398e4a5ce64f5458ad9831bf62f0e36b0c25790058c37a7111a",
+      "recording_sha256": "7e3bdaf4d880a0f10ef18cbc97e16c3d99f8765b717564aa260aab7a60951c19",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.8800000071525573,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 101,
+      "timestamp_ns": 3666666857,
+      "usd_sensor_world_m": [
+        0.8840000071525573,
+        0.0,
+        0.5250000089406968
+      ]
+    }
+  ],
+  "candidate_last_frame_model_ray_hits": 16,
+  "candidate_last_frame_raw_element_count": 2,
+  "candidate_last_frame_raw_minus_valid": 0,
+  "candidate_last_frame_valid_element_count": 2,
+  "candidate_log_sha256": "eb6a8e16954d633cb14890fbf2182ae5e3b89c83903ed5c2cae258a0a413d0f6",
+  "candidate_raw_gmo": [
+    {
+      "capture_state": "RAW_AXES_SAVED",
+      "gmo_invalid_or_unqualified_elements": 0,
+      "gmo_raw_elements": 16,
+      "gmo_valid_elements": 16,
+      "pre_gmo_file_sha256": "2fb2215eb0626213c719bf353389e8198327e9f83cbb346ec3ab581908ca3dad",
+      "raw_spherical_ranges": {
+        "x": [
+          -24.99462890625,
+          25.0003662109375
+        ],
+        "y": [
+          -10.0,
+          10.0
+        ],
+        "z": [
+          0.568649172782898,
+          0.6369556188583374
+        ]
+      },
+      "reported_coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "reported_valid_flag_bit": 64,
+      "step": 51
+    },
+    {
+      "capture_state": "RAW_AXES_SAVED",
+      "gmo_invalid_or_unqualified_elements": 0,
+      "gmo_raw_elements": 16,
+      "gmo_valid_elements": 16,
+      "pre_gmo_file_sha256": "480c83b28a0b57cf3c4cc949662cc8cacfe15c8c9d214433e3b233a0c44fb762",
+      "raw_spherical_ranges": {
+        "x": [
+          -24.99365234375,
+          25.00555419921875
+        ],
+        "y": [
+          -10.0,
+          10.0
+        ],
+        "z": [
+          0.5272348523139954,
+          0.5879660248756409
+        ]
+      },
+      "reported_coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "reported_valid_flag_bit": 64,
+      "step": 61
+    },
+    {
+      "capture_state": "RAW_AXES_SAVED",
+      "gmo_invalid_or_unqualified_elements": 0,
+      "gmo_raw_elements": 16,
+      "gmo_valid_elements": 16,
+      "pre_gmo_file_sha256": "7237b896c989b12bbbea2c333abe17525aaea07b2d122d7a8acc2d17f71b788a",
+      "raw_spherical_ranges": {
+        "x": [
+          -24.997314453125,
+          25.003875732421875
+        ],
+        "y": [
+          -10.0,
+          10.0
+        ],
+        "z": [
+          0.48971816897392273,
+          0.5488219857215881
+        ]
+      },
+      "reported_coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "reported_valid_flag_bit": 64,
+      "step": 71
+    },
+    {
+      "capture_state": "RAW_AXES_SAVED",
+      "gmo_invalid_or_unqualified_elements": 0,
+      "gmo_raw_elements": 16,
+      "gmo_valid_elements": 16,
+      "pre_gmo_file_sha256": "57d83535be597093b3ff7ce1cab63f41200944d856b01e1f4cf60efc999c7497",
+      "raw_spherical_ranges": {
+        "x": [
+          -24.9979248046875,
+          24.996307373046875
+        ],
+        "y": [
+          -10.0,
+          10.0
+        ],
+        "z": [
+          0.45336514711380005,
+          0.5025405287742615
+        ]
+      },
+      "reported_coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "reported_valid_flag_bit": 64,
+      "step": 81
+    },
+    {
+      "capture_state": "RAW_AXES_SAVED",
+      "gmo_invalid_or_unqualified_elements": 0,
+      "gmo_raw_elements": 16,
+      "gmo_valid_elements": 16,
+      "pre_gmo_file_sha256": "d0ccde1fd01c896f44616fb1a2d276c5996ae5337a1f51fdec430bced18ddef5",
+      "raw_spherical_ranges": {
+        "x": [
+          -24.998565673828125,
+          25.0032958984375
+        ],
+        "y": [
+          -10.0,
+          10.0
+        ],
+        "z": [
+          0.40996792912483215,
+          0.4655487835407257
+        ]
+      },
+      "reported_coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "reported_valid_flag_bit": 64,
+      "step": 91
+    },
+    {
+      "capture_state": "RAW_AXES_SAVED",
+      "gmo_invalid_or_unqualified_elements": 0,
+      "gmo_raw_elements": 2,
+      "gmo_valid_elements": 2,
+      "pre_gmo_file_sha256": "5f78724e2ba8f065faa30b5218aa621213d0f86da0f76c4000dba18d419214e5",
+      "raw_spherical_ranges": {
+        "x": [
+          -25.0037841796875,
+          24.9898681640625
+        ],
+        "y": [
+          -10.0,
+          2.0
+        ],
+        "z": [
+          0.41452306509017944,
+          0.4161112606525421
+        ]
+      },
+      "reported_coordinate_semantics": "SPHERICAL_SENSOR_FRAME_VERIFIED",
+      "reported_valid_flag_bit": 64,
+      "step": 101
+    }
+  ],
+  "deterministic_rederivation_identical": true,
+  "health_labels_generated": 0,
+  "implementation_sha256": "34744cc699a8fca3f3b4870664c7d84d3048034f4413831be507c630731633ca",
+  "independent_ground_truth_verified": false,
+  "l9_report_sha256": "9309a3f9896144996366f7743ae9fca9bcacec827f5c6046d06d8ba13c280af7",
+  "missing_return_cause_conclusively_identified": false,
+  "original": [
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 111,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.6341459968512807,
+      "minimum_predicted_distance_m": 0.5662778742600645,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.6341459968512807,
+        0.6160638390870623,
+        0.6011822623859312,
+        0.5891939769614125,
+        0.5798621890068274,
+        0.5730092298700473,
+        0.5685083407902838,
+        0.5662778742600645,
+        0.5662778742600645,
+        0.5685083407902838,
+        0.5730092298700473,
+        0.5798621890068274,
+        0.5891939769614125,
+        0.6011822623859312,
+        0.6160638390870623,
+        0.6341459968512807
+      ],
+      "qualified_raw_sha256": "247a4534b2f5baeb921c3650ca852ca2d261cb4e3ca42befc655035e3fb4dd95",
+      "recording_sha256": "d3021afa566c114d69039eb357537fb2770b740038c66b9d7d1094597b5cd73f",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.6800000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 51,
+      "timestamp_ns": 2833333481,
+      "usd_sensor_world_m": [
+        0.6840000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 127,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.5893300247760156,
+      "minimum_predicted_distance_m": 0.5262582359974401,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.5893300247760156,
+        0.5725257580360179,
+        0.558695882881826,
+        0.5475548261199232,
+        0.5388825284884838,
+        0.5325138774240274,
+        0.5283310723821891,
+        0.5262582359974401,
+        0.5262582359974401,
+        0.5283310723821891,
+        0.5325138774240274,
+        0.5388825284884838,
+        0.5475548261199232,
+        0.558695882881826,
+        0.5725257580360179,
+        0.5893300247760156
+      ],
+      "qualified_raw_sha256": "f5575fce906a3d43b7621e2ecfd9242208b467b2f09b40762a39dc09f72322c3",
+      "recording_sha256": "9da0f987ffc77c664bc3c75c46a3109db4d4267e5703fd0e07bfec39d8dca26b",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.7200000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 61,
+      "timestamp_ns": 3000000156,
+      "usd_sensor_world_m": [
+        0.7240000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 143,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.5445140527007505,
+      "minimum_predicted_distance_m": 0.48623859773481587,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.5445140527007505,
+        0.5289876769849735,
+        0.5162095033777208,
+        0.505915675278434,
+        0.49790286797014016,
+        0.49201852497800763,
+        0.4881538039740944,
+        0.48623859773481587,
+        0.48623859773481587,
+        0.4881538039740944,
+        0.49201852497800763,
+        0.49790286797014016,
+        0.505915675278434,
+        0.5162095033777208,
+        0.5289876769849735,
+        0.5445140527007505
+      ],
+      "qualified_raw_sha256": "4fb12d2e30ddef9d30c95072aed3aa3df36341cedc6fb08758b331afb2e27ae8",
+      "recording_sha256": "10a7a730b7350a1b8a613da398abaf955f8085aa51c8280dc937cf857890aaaa",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.7600000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 71,
+      "timestamp_ns": 3166666831,
+      "usd_sensor_world_m": [
+        0.7640000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 159,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.49969808062548543,
+      "minimum_predicted_distance_m": 0.4462189594721917,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.49969808062548543,
+        0.4854495959339292,
+        0.4737231238736157,
+        0.4642765244369448,
+        0.45692320745179665,
+        0.45152317253198787,
+        0.4479765355659998,
+        0.4462189594721917,
+        0.4462189594721917,
+        0.4479765355659998,
+        0.45152317253198787,
+        0.45692320745179665,
+        0.4642765244369448,
+        0.4737231238736157,
+        0.4854495959339292,
+        0.49969808062548543
+      ],
+      "qualified_raw_sha256": "d1bd736688afd46f6474f3e1f3dde4b3a6647229b1c09733d3c9a2294ad220ec",
+      "recording_sha256": "1ffc56ebbbafbfe2417684ce832b59cc1066f01f74aeb2c2a3d8d40034b58192",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.8000000071525574,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 81,
+      "timestamp_ns": 3333333507,
+      "usd_sensor_world_m": [
+        0.8040000071525574,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 175,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 16,
+      "maximum_predicted_distance_m": 0.45488210855022043,
+      "minimum_predicted_distance_m": 0.4061993212095675,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.45488210855022043,
+        0.44191151488288494,
+        0.43123674436951065,
+        0.4226373735954556,
+        0.41594354693345315,
+        0.4110278200859681,
+        0.40779926715790527,
+        0.4061993212095675,
+        0.4061993212095675,
+        0.40779926715790527,
+        0.4110278200859681,
+        0.41594354693345315,
+        0.4226373735954556,
+        0.43123674436951065,
+        0.44191151488288494,
+        0.45488210855022043
+      ],
+      "qualified_raw_sha256": "9605855a8c7a9b9c5a1ea778ddd7775516b91d8864a0b3ae7c561459df37d908",
+      "recording_sha256": "c933285d4bb4aa660f62cbc9d625800d3d0d4429bb027fd102b8d10105d78f40",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.8400000071525573,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 91,
+      "timestamp_ns": 3500000182,
+      "usd_sensor_world_m": [
+        0.8440000071525573,
+        0.0,
+        0.5250000089406968
+      ]
+    },
+    {
+      "bookkeeping_is_qualified_exposure_pose": false,
+      "bookkeeping_to_current_usd_offset_m": 0.0040000000000000036,
+      "frame_id": 191,
+      "front_cube_ray_intersections_predicted": 16,
+      "gmo_valid_points": 4,
+      "maximum_predicted_distance_m": 0.4100661364749553,
+      "minimum_predicted_distance_m": 0.3661796829469432,
+      "model_far_range_m": 10.0,
+      "model_near_range_m": 0.2,
+      "predicted_distances_m": [
+        0.4100661364749553,
+        0.39837343383184054,
+        0.3887503648654055,
+        0.38099822275396633,
+        0.3749638864151095,
+        0.37053246763994824,
+        0.3676219987498106,
+        0.3661796829469432,
+        0.3661796829469432,
+        0.3676219987498106,
+        0.37053246763994824,
+        0.3749638864151095,
+        0.38099822275396633,
+        0.3887503648654055,
+        0.39837343383184054,
+        0.4100661364749553
+      ],
+      "qualified_raw_sha256": "a3642de58cf1b061e5ffdc1f782dfc5a3f21364be4d204419f42ad58cfa616b3",
+      "recording_sha256": "f932eb6ce5cf0977ba7546e6354f07984e6fd851daa30c6ce3e37bd7c0a4a4e4",
+      "saved_bookkeeping_matches_previous_usd_step": true,
+      "saved_recorder_bookkeeping_world_m": [
+        0.8800000071525573,
+        0.0,
+        0.5250000089406968
+      ],
+      "step": 101,
+      "timestamp_ns": 3666666857,
+      "usd_sensor_world_m": [
+        0.8840000071525573,
+        0.0,
+        0.5250000089406968
+      ]
+    }
+  ],
+  "pose_factors_authorized": 0,
+  "raw_invalid_flags_per_emitter_preserved": false,
+  "schema": "TRUST_ROBOT_L10_SPARSE_ENDPOINT_TRIAGE_V1",
+  "synchronization_verified": false
+}

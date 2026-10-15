@@ -72,3 +72,21 @@ independent ground truth, cross-sensor synchronization or trained
 health supervision. No estimator factors are authorized.
 
 Preserve historical V16 recordings. Continue with L10 sparse coverage.
+
+## KIOS V16 L10-L16 target recovery (2026-10-15)
+
+Read:
+experiments/isaacsim_v16_l10_l16_target_recovery_v1/README.md
+docs/audits/trust_robot/TRUST_ROBOT_KIOS_V16_L10_L16_TARGET_RECOVERY_V1.md
+
+L14 restored six 16-point synthetic LiDAR scans using a +0.30 m
+calibration-target move. L15 established five available consecutive
+ICP diagnostics. L16 completed all 15 scan-pair diagnostics but
+revealed up to approximately 4.22 degrees of long-baseline
+rotational inconsistency.
+
+Preserve all frozen experiments and raw recordings.
+Do not claim physical localization validity, calibrated sync,
+health labels, or authorized pose factors.
+
+Next: L17 long-baseline correspondence/initialization audit.

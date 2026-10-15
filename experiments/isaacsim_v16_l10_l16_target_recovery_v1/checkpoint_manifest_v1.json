@@ -1,0 +1,50 @@
+{
+  "all_pair_attempts": 15,
+  "cross_sensor_synchronization_verified": false,
+  "files_sha256": {
+    "code/l10_sparse_endpoint.py": "34744cc699a8fca3f3b4870664c7d84d3048034f4413831be507c630731633ca",
+    "code/l11_gmo_sweep_triage.py": "5ab81c9da254c15cee142cbc8c0e6e3795f7260319c029dbe5b8af729888e603",
+    "code/l12_angle_mapping.py": "11b5393aae75d175b1b29f32edbbaa0f6d670d9d873bc634bf6bc6a06bdaa370",
+    "code/l13_isolated_launcher.sh": "bd170532b834ae4150a085ffc91963f913b49ef41fcf19888de6b8797c225912",
+    "code/l13_target_distance_acquisition.py": "7842740a5f8639ec843a14c180cf8da1f74a844f9500d04522f9da7cd94e4eae",
+    "code/l13_verify_recording.py": "3770ac50ecd47741bf785afe4e51e02ffd3b59fe0ef0f24b279d9f4380a318af",
+    "code/l15_restored_registration.py": "c00d55ae608864186d6c084cf1e2d86798fd3d2ad9f5d2386b6009cbf9a6ca09",
+    "code/l16_six_scan_trajectory.py": "c98420f94f04ce373c55ef98e83ae0ad7412fa5de430226c73a036a299ae641a",
+    "evidence/l10_sparse_endpoint_diagnostic_v1.json": "f1f20e7ad8cb2d93bc91437bb4e94800ae706603824712362d8d7259774086bb",
+    "evidence/l11_existing_gmo_sweep_triage_v1.json": "3cd034389160c80f1ce1d57d499cecb3b8c3d20117ec2366d5d0550b20dcbaa2",
+    "evidence/l12_azimuth_mapping_and_return_timeline_v1.json": "fefce1a4ef06fdc9cb24d5b214f8b876edeb5fd0613153511d387cea83a69a7a",
+    "evidence/l13_candidate_metadata_v1.json": "68fe49b4be73e6d023904c58de54a28559cb330c0c6d155b4468559e2cae28dc",
+    "evidence/l13_target_distance_preparation_receipt_v1.json": "6fae47606e32a1cb34efacc981200e5f849e40bcec28ae8a33b74aaba790f967",
+    "evidence/l14_target_distance_comparison_v1.json": "2119e8d0a5a5c5c8127991b7bb853b7fc46752cf7b22ce71f35fc368caf955f6",
+    "evidence/l15_restored_final_scan_registration_v1.json": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "evidence/l16_six_scan_trajectory_diagnostic_v1.json": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+    "scene/l13_distance_intervention.usda": "43b4ffe0f7af29e435203ac3aa8c2d4c4897434042f37e26586b124b2495d8cf"
+  },
+  "health_labels_generated": false,
+  "independent_ground_truth_verified": false,
+  "long_baseline_max_rotation_discrepancy_deg": 4.219034588449464,
+  "parent_commit": "c8d13cc7f6fe5a5faaa4c828cb4c5c2bc68cad9c",
+  "physical_sensor_equivalence_verified": false,
+  "pose_factors_authorized": 0,
+  "raw_recordings_published": false,
+  "restored_scan_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "schema": "TRUST_ROBOT_KIOS_V16_L10_L16_TARGET_RECOVERY_CHECKPOINT_V1",
+  "scientific_ate_rpe_computed": false,
+  "selected_capture_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "simulator_rerun_by_publisher": false,
+  "upstream_package": "experiments/isaacsim_v16_l4_l9_geometry_stability_v1"
+}

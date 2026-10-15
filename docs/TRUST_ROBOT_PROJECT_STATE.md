@@ -5823,3 +5823,29 @@ established. SE4 model training and all prior scientific access gates remain
 unchanged.
 
 Next: L10 end-of-trajectory LiDAR coverage investigation.
+
+## KIOS V16 L10-L16 milestone (2026-10-15)
+
+A controlled synthetic target-distance intervention restored the
+final sparse LiDAR scan to 16 valid points, producing six complete
+16-point scans.
+
+Five consecutive registrations and all 15 direct scan-pair
+registrations are diagnostic-available.
+
+Short-range registration consistency is good. Four- and five-hop
+direct registrations still exhibit errors up to approximately
+4.22 degrees of rotation and 0.038 m of translation relative to
+the composed short-range chain.
+
+These are internal synthetic diagnostics, not scientifically
+validated localization accuracy.
+
+Exact compact sources, scene, reports and provenance:
+experiments/isaacsim_v16_l10_l16_target_recovery_v1/
+
+Raw sensor data remain local to KIOS.
+Physical synchronization, independent ground truth, ATE/RPE,
+health labels and estimator-factor admission remain unverified.
+
+Next: L17 offline long-baseline registration ambiguity audit.
