@@ -1,0 +1,53 @@
+{
+  "actual_sensor_data_mutated": false,
+  "baseline_pairs_verified": 10,
+  "cross_phase_metrics_rederived": true,
+  "evidence_mutated_on_disk": false,
+  "experimental_thresholds_calibrated": false,
+  "false_negative_rate_estimated": false,
+  "false_positive_rate_estimated": false,
+  "health_labels_generated": 0,
+  "implementation_sha256": "fac8fd0945145efdc781484b5a6918725dc5b866ce414183a8b8b68a9e725391",
+  "in_memory_evidence_tampering_rejected": 6,
+  "independent_rule_shadow_agreement": true,
+  "l20_rule_source_sha256": "4cf2732c057a7183eeac7115635e63fc4ad3c069024706afd46535e0755589ea",
+  "mutation_tests_do_not_establish_detection_rates": true,
+  "numeric_and_duplicate_boundary_probes": 23,
+  "observed_pair_adverse_metric_mutations": 80,
+  "pose_factors_authorized": 0,
+  "schema": "TRUST_ROBOT_L21_AMBIGUITY_RULE_FALSIFICATION_V1",
+  "scientific_reliability_established": false,
+  "sensor_failure_ground_truth_available": false,
+  "threshold_scenarios": [
+    {
+      "not_flagged": 1,
+      "sensitivity_review": 6,
+      "structural_review": 3,
+      "threshold_multiplier": 0.5
+    },
+    {
+      "not_flagged": 4,
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "threshold_multiplier": 1.0
+    },
+    {
+      "not_flagged": 6,
+      "sensitivity_review": 1,
+      "structural_review": 3,
+      "threshold_multiplier": 2.0
+    }
+  ],
+  "two_derivations_identical": true,
+  "unflagged_factors_admitted": 0,
+  "upstream_report_sha256": {
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l16": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+    "l17": "1161a181982b3af155626ed889ab5a21010e86ea3fa64eadbf9bb4cbf1f722da",
+    "l18": "787117369a6e5bda511325343916f5c8d3d93cd4a4db92f04b0fb49e4b413bac",
+    "l19": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "l20": "e93519d92257180bcfca3ca8b0aca781da89bcb000612c02d1f3202a4c1cbae6"
+  },
+  "zero_metric_probe_is_not_scientifically_accurate": true,
+  "zero_metric_probe_remains_not_flagged": true
+}

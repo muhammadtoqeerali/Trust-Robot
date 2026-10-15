@@ -90,3 +90,32 @@ Do not claim physical localization validity, calibrated sync,
 health labels, or authorized pose factors.
 
 Next: L17 long-baseline correspondence/initialization audit.
+
+## KIOS L17-L23 ambiguity and robustness checkpoint (2026-10-15)
+
+Before continuing synthetic LiDAR ambiguity or multimodal-estimator
+research, read:
+
+experiments/isaacsim_v16_l17_l23_ambiguity_robustness_v1/README.md
+docs/audits/trust_robot/TRUST_ROBOT_KIOS_L17_L23_AMBIGUITY_ROBUSTNESS_V1.md
+
+L17-L19 evaluated initialization ambiguity, one-to-one matching,
+inferred beam associations and per-beam sensitivity.
+
+L20-L21 implemented and challenged a diagnostic-only ambiguity screen.
+
+L22 recomputed 60 small-perturbation pair diagnostics with no changed
+warning decisions. L23 recomputed 110 structured-stress pair
+diagnostics with five changed decisions.
+
+Some deliberately corrupted inputs remained unflagged, and one
+stale-scan substitution reduced a prior warning. Do not promote
+these tests to calibrated sensor-failure detection or health labels.
+
+The current next phase is L24: sensor provenance, frame freshness,
+and common-mode fault detection.
+
+Keep working phase by phase: generate one guarded implementation,
+have the user run it on KIOS, review its full output, and commit only
+at substantive validated milestones. Never change frozen raw files
+or admit pose factors without the established scientific evidence.

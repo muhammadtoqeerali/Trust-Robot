@@ -1,0 +1,2130 @@
+{
+  "all_eight_l20_metrics_recomputed": true,
+  "all_six_scans_perturbed_per_scenario": true,
+  "decision_transitions": {
+    "NOT_FLAGGED_DIAGNOSTIC_ONLY -> NOT_FLAGGED_DIAGNOSTIC_ONLY": 24,
+    "SENSITIVITY_REVIEW -> SENSITIVITY_REVIEW": 18,
+    "STRUCTURAL_REVIEW -> STRUCTURAL_REVIEW": 18
+  },
+  "false_negative_rate_estimated": false,
+  "false_positive_rate_estimated": false,
+  "frozen_icp_unchanged": true,
+  "fully_recomputed": 60,
+  "health_labels_generated": 0,
+  "implementation_sha256": "5cfe8e389ef3aba3cc1da06a77f8eaefad1964da90c9652029f83d02f1ce1feb",
+  "independent_ground_truth_verified": false,
+  "not_evaluable": 0,
+  "perturbation_amplitudes_m": [
+    0.0005,
+    0.002
+  ],
+  "perturbation_pattern_ids": [
+    1,
+    4,
+    7
+  ],
+  "perturbation_trials": [
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.001516277962922163,
+        "closure_translation_m": -2.0902815934917664e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.01904605241635593,
+        "jackknife_translation_m": 0.00017792797582335922,
+        "seed_spread_rotation_deg": -1.891380503387826e-14,
+        "seed_spread_translation_m": -3.004563831879604e-16
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.00612015965398757,
+        "closure_translation_m": 8.447689427478291e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.8747664506206985,
+        "jackknife_translation_m": 0.012273325595225083,
+        "seed_spread_rotation_deg": 2.8120983347991285e-14,
+        "seed_spread_translation_m": 5.695714304512314e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.0013922177127937323,
+        "closure_translation_m": -1.822066939138949e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.03948616506948466,
+        "jackknife_translation_m": 0.0004854482694809084,
+        "seed_spread_rotation_deg": 0.003045763741843288,
+        "seed_spread_translation_m": -0.00029333920582620687
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.004457456208664435,
+        "closure_translation_m": 5.833587831477625e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.5615619572521404,
+        "jackknife_translation_m": 0.007117792702604982,
+        "seed_spread_rotation_deg": 2.985589473602581,
+        "seed_spread_translation_m": 0.034689317225105994
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.00012198678243093702,
+        "closure_rotation_deg": -0.017437745670270566,
+        "closure_translation_m": 0.00010987905009756174,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.03820956168948131,
+        "jackknife_translation_m": 0.0004942976888717768,
+        "seed_spread_rotation_deg": 0.01829329968893667,
+        "seed_spread_translation_m": -0.0006996021282464696
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.000289836628120356,
+        "closure_rotation_deg": 2.1006212892589344,
+        "closure_translation_m": 0.008377994710291381,
+        "duplicate_target_assignments": 3,
+        "jackknife_rotation_deg": 1.9330533503195055,
+        "jackknife_translation_m": 0.021634023750039352,
+        "seed_spread_rotation_deg": 3.751138715367019,
+        "seed_spread_translation_m": 0.05814738660165892
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 9.491286415604094e-05,
+        "closure_rotation_deg": 0.0011635992964462716,
+        "closure_translation_m": -0.00037752693964614864,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.01251189269949804,
+        "jackknife_translation_m": 0.0001721844742040915,
+        "seed_spread_rotation_deg": 0.05176177795823289,
+        "seed_spread_translation_m": -0.0004195151164871347
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010771449615983489,
+        "closure_rotation_deg": 4.22019818774591,
+        "closure_translation_m": 0.03342598802969987,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 0.9533822217694825,
+        "jackknife_translation_m": 0.008577936603666412,
+        "seed_spread_rotation_deg": 3.0423108520721294,
+        "seed_spread_translation_m": 0.08407038750240013
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.001606417358516291,
+        "closure_translation_m": -2.104452488457902e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.02565316298617526,
+        "jackknife_translation_m": 0.0002680921858566523,
+        "seed_spread_rotation_deg": -6.860304693053424e-15,
+        "seed_spread_translation_m": -9.272338184362822e-17
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.004063652333601507,
+        "closure_translation_m": 5.3161485628522884e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.6742206390065811,
+        "jackknife_translation_m": 0.007408554444381386,
+        "seed_spread_rotation_deg": 3.1853396618795676e-14,
+        "seed_spread_translation_m": 5.526510190353575e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0002929869371938491,
+        "closure_translation_m": 3.634105202201835e-06,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.023656401097629898,
+        "jackknife_translation_m": 0.00031722046867602854,
+        "seed_spread_rotation_deg": 0.0033755512222839457,
+        "seed_spread_translation_m": -0.0006921030346546675
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0018839185916440944,
+        "closure_translation_m": 2.336917331262927e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.367970951055974,
+        "jackknife_translation_m": 0.015189025299386342,
+        "seed_spread_rotation_deg": 2.9126001859875466,
+        "seed_spread_translation_m": 0.05287479604863988
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 3.651503382388205e-05,
+        "closure_rotation_deg": 0.0011235525764536902,
+        "closure_translation_m": -0.00023696920345721295,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.011940830932920754,
+        "jackknife_translation_m": -0.00019260723513098328,
+        "seed_spread_rotation_deg": 0.2826933699386567,
+        "seed_spread_translation_m": 0.006737494534706234
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010719958213952663,
+        "closure_rotation_deg": 4.132206640187925,
+        "closure_translation_m": 0.03798918006151464,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.1049875228994592,
+        "jackknife_translation_m": 0.010182837030826515,
+        "seed_spread_rotation_deg": 3.6750610041977247,
+        "seed_spread_translation_m": 0.07491029537428712
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.00037986656087783286,
+        "closure_translation_m": 4.683019855925141e-06,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.005809204282081648,
+        "jackknife_translation_m": 9.688815399388345e-05,
+        "seed_spread_rotation_deg": -3.695580172332862e-14,
+        "seed_spread_translation_m": -4.473414962713993e-16
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.004173224834774029,
+        "closure_translation_m": 5.167908677331092e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.0680316390749496,
+        "jackknife_translation_m": 0.012102471589474919,
+        "seed_spread_rotation_deg": 2.6883658577586545e-14,
+        "seed_spread_translation_m": 5.919475386573465e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.00040822582812355575,
+        "closure_translation_m": 4.577594223216253e-06,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.012533498031655821,
+        "jackknife_translation_m": -0.00016971734571111924,
+        "seed_spread_rotation_deg": 0.0020975940941045934,
+        "seed_spread_translation_m": -0.00017504551442718008
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0023465258117782157,
+        "closure_translation_m": 2.724843756853131e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7642029087495829,
+        "jackknife_translation_m": 0.006830806795450225,
+        "seed_spread_rotation_deg": 4.121076681369667,
+        "seed_spread_translation_m": 0.0671975489881601
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.002538942523736223,
+        "closure_translation_m": 2.9630783008098348e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.022146772514684443,
+        "jackknife_translation_m": 0.00021118840975147685,
+        "seed_spread_rotation_deg": 5.158621016017167e-15,
+        "seed_spread_translation_m": 1.1450940805255158e-16
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0047935848596238236,
+        "closure_translation_m": 5.599834512194364e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.8134840334754274,
+        "jackknife_translation_m": 0.008682006356524573,
+        "seed_spread_rotation_deg": 3.63501986572031e-14,
+        "seed_spread_translation_m": 6.102218180138908e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.006213076884933515,
+        "closure_translation_m": 8.57967059786501e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.015643796390467757,
+        "jackknife_translation_m": 0.0004216746623634561,
+        "seed_spread_rotation_deg": -2.2179019111174584e-14,
+        "seed_spread_translation_m": -5.476444953835254e-16
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.013849514501843248,
+        "closure_translation_m": 0.00019117641618835067,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.8400766018138748,
+        "jackknife_translation_m": 0.01251707228176518,
+        "seed_spread_rotation_deg": 2.4855769270694962e-14,
+        "seed_spread_translation_m": 3.2238331825566645e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0058759153759523125,
+        "closure_translation_m": 7.689731586258059e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.02776286886590823,
+        "jackknife_translation_m": 0.0002743455849568274,
+        "seed_spread_rotation_deg": -0.008507718899289252,
+        "seed_spread_translation_m": -0.0001243211577313455
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.01172558929741048,
+        "closure_translation_m": 0.00015345386356874633,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.49431292331674753,
+        "jackknife_translation_m": 0.006906690018080901,
+        "seed_spread_rotation_deg": 2.9740359909614487,
+        "seed_spread_translation_m": 0.034858335273200855
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 4.468347695664454e-05,
+        "closure_rotation_deg": 0.012843628713512967,
+        "closure_translation_m": -0.00027234898907040235,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.033938560433268705,
+        "jackknife_translation_m": -0.0004068036841434336,
+        "seed_spread_rotation_deg": -0.017225233454308153,
+        "seed_spread_translation_m": -5.30107171246158e-05
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.00045650688750793755,
+        "closure_rotation_deg": 2.130902663642718,
+        "closure_translation_m": 0.007995766671123417,
+        "duplicate_target_assignments": 3,
+        "jackknife_rotation_deg": 1.8609052281967555,
+        "jackknife_translation_m": 0.020732922377024142,
+        "seed_spread_rotation_deg": 3.715620182223774,
+        "seed_spread_translation_m": 0.05879397801278077
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.00024437466544492,
+        "closure_rotation_deg": 0.007910556614180386,
+        "closure_translation_m": 0.00014106326024994342,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.001387842180187615,
+        "jackknife_translation_m": 0.0006081996663457323,
+        "seed_spread_rotation_deg": -0.009170443154069563,
+        "seed_spread_translation_m": -3.356992323275132e-05
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010432162086382528,
+        "closure_rotation_deg": 4.226945145063644,
+        "closure_translation_m": 0.03394457822959596,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 0.9422581712501721,
+        "jackknife_translation_m": 0.009013951795808052,
+        "seed_spread_rotation_deg": 2.981378630959827,
+        "seed_spread_translation_m": 0.08445633269565452
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.009584531911872654,
+        "closure_translation_m": 0.00012543207256170402,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.03795498078904136,
+        "jackknife_translation_m": -6.953616575335313e-05,
+        "seed_spread_rotation_deg": -5.749291368268943e-15,
+        "seed_spread_translation_m": 1.1650970614234834e-17
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.015254601603990453,
+        "closure_translation_m": 0.00019963808307480593,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.6106124952313645,
+        "jackknife_translation_m": 0.007070926092771381,
+        "seed_spread_rotation_deg": 3.296440994358016e-14,
+        "seed_spread_translation_m": 6.570253714932206e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.012499927636694363,
+        "closure_translation_m": 0.00015505403373185917,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.028364471613618214,
+        "jackknife_translation_m": -0.00031271655935232595,
+        "seed_spread_rotation_deg": -0.022031030854650968,
+        "seed_spread_translation_m": 6.842732003092822e-05
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.01409085929114461,
+        "closure_translation_m": 0.0001747891018422866,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.315950078344726,
+        "jackknife_translation_m": 0.014559088271357988,
+        "seed_spread_rotation_deg": 2.8871936039106116,
+        "seed_spread_translation_m": 0.053635326403325474
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.00013154520390338403,
+        "closure_rotation_deg": -0.006642424517354861,
+        "closure_translation_m": -5.768131333001164e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.09849326205928466,
+        "jackknife_translation_m": -0.0010865094768548952,
+        "seed_spread_rotation_deg": -0.009353055416161826,
+        "seed_spread_translation_m": 0.02003869189109185
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010551897976225397,
+        "closure_rotation_deg": 4.124440663094116,
+        "closure_translation_m": 0.03816846795164184,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.0184350917730953,
+        "jackknife_translation_m": 0.009288934789102603,
+        "seed_spread_rotation_deg": 3.3830145788429062,
+        "seed_spread_translation_m": 0.08821149273067273
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.007061320688876854,
+        "closure_translation_m": 8.717928931360698e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.008440288409787833,
+        "jackknife_translation_m": -9.014997813101659e-05,
+        "seed_spread_rotation_deg": -3.5206414802770496e-14,
+        "seed_spread_translation_m": -2.843030791109626e-16
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.01085467896277305,
+        "closure_translation_m": 0.00013417535623099275,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.05378214638308,
+        "jackknife_translation_m": 0.011915433457350019,
+        "seed_spread_rotation_deg": 2.8633045498144666e-14,
+        "seed_spread_translation_m": 7.549859558177833e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.007175251726492535,
+        "closure_translation_m": 8.392129906414274e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.10468762651023344,
+        "jackknife_translation_m": -0.000456993279959678,
+        "seed_spread_rotation_deg": 0.009461092489753575,
+        "seed_spread_translation_m": -0.0005417918697441515
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.009113551710147196,
+        "closure_translation_m": 0.00010659214240945779,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.6720487802710052,
+        "jackknife_translation_m": 0.006543530861201666,
+        "seed_spread_rotation_deg": 4.128440179765316,
+        "seed_spread_translation_m": 0.06683080263284313
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0005842910125428828,
+        "closure_translation_m": 6.596322049793655e-06,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.006670244978289719,
+        "jackknife_translation_m": -0.00020388709646177068,
+        "seed_spread_rotation_deg": 2.1125066597831483e-16,
+        "seed_spread_translation_m": 1.0367237330988822e-16
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0028389333484304833,
+        "closure_translation_m": 3.2963884163638946e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7846670159824533,
+        "jackknife_translation_m": 0.008266930850311325,
+        "seed_spread_rotation_deg": 3.140282830716425e-14,
+        "seed_spread_translation_m": 5.993847832712274e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0024932533005611324,
+        "closure_translation_m": 3.441268601377874e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.001006367142426412,
+        "jackknife_translation_m": -0.00038391998604643714,
+        "seed_spread_rotation_deg": -5.1527335278138524e-15,
+        "seed_spread_translation_m": -4.565918550798215e-16
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.010129690917470865,
+        "closure_translation_m": 0.0001397923962234793,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.8547140310619161,
+        "jackknife_translation_m": 0.011711477633355286,
+        "seed_spread_rotation_deg": 4.188205485405569e-14,
+        "seed_spread_translation_m": 4.1343595855937024e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.00025225968067777143,
+        "closure_translation_m": -3.3301421726793066e-06,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.02606367460809067,
+        "jackknife_translation_m": -0.00017848786134154904,
+        "seed_spread_rotation_deg": -0.022293906146593656,
+        "seed_spread_translation_m": 0.00047692377899381105
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.005597414240780396,
+        "closure_translation_m": 7.322640553348644e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.5481394667907464,
+        "jackknife_translation_m": 0.006453856571782525,
+        "seed_spread_rotation_deg": 2.9602498037141443,
+        "seed_spread_translation_m": 0.03545958020992601
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.010603745157037846,
+        "closure_rotation_deg": 2.096175359260246,
+        "closure_translation_m": 0.025537651414162404,
+        "duplicate_target_assignments": -1,
+        "jackknife_rotation_deg": -9.609693345202786e-05,
+        "jackknife_translation_m": 4.138469205361775e-05,
+        "seed_spread_rotation_deg": 0.009405669811080042,
+        "seed_spread_translation_m": 0.00020890589525734277
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.011015568567589139,
+        "closure_rotation_deg": 4.214234394189451,
+        "closure_translation_m": 0.03380576707435622,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.8947476916965722,
+        "jackknife_translation_m": 0.021181110753221193,
+        "seed_spread_rotation_deg": 3.7422510854891624,
+        "seed_spread_translation_m": 0.05905589462516273
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.000214228001566244,
+        "closure_rotation_deg": -0.012360170842881324,
+        "closure_translation_m": 0.00021295067064514006,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.01850019183632534,
+        "jackknife_translation_m": -0.00017110193132859226,
+        "seed_spread_rotation_deg": 0.011002742618082983,
+        "seed_spread_translation_m": 0.00021548257120784786
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010462308750261204,
+        "closure_rotation_deg": 4.206674417606583,
+        "closure_translation_m": 0.03401646563999116,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 0.9223701372336591,
+        "jackknife_translation_m": 0.008234650198133728,
+        "seed_spread_rotation_deg": 3.0015518167319795,
+        "seed_spread_translation_m": 0.08470538519009511
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.003001712840318473,
+        "closure_translation_m": -3.958731584315348e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.023623938440608727,
+        "jackknife_translation_m": 0.0004032041275082868,
+        "seed_spread_rotation_deg": 1.2058672499353762e-15,
+        "seed_spread_translation_m": 2.639724808975326e-16
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.002668356851799325,
+        "closure_translation_m": 3.461869466994842e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.6721914144610146,
+        "jackknife_translation_m": 0.007543666386033021,
+        "seed_spread_rotation_deg": 3.9919568561784477e-14,
+        "seed_spread_translation_m": 9.093468817765184e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0013615969822807735,
+        "closure_translation_m": 1.6863216663316917e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.0021204075286860302,
+        "jackknife_translation_m": -1.1636400276645795e-05,
+        "seed_spread_rotation_deg": 0.012124128598479889,
+        "seed_spread_translation_m": -9.04177193975092e-05
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.002952528636731019,
+        "closure_translation_m": 3.659828477374435e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.3421941424296582,
+        "jackknife_translation_m": 0.014860168430433668,
+        "seed_spread_rotation_deg": 2.9213487633637425,
+        "seed_spread_translation_m": 0.05347648136389704
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.00010935969634617154,
+        "closure_rotation_deg": -0.007243332553332316,
+        "closure_translation_m": 0.00014658646969079037,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.0071886808643062405,
+        "jackknife_translation_m": -6.990390425103653e-05,
+        "seed_spread_rotation_deg": -0.03652614601004256,
+        "seed_spread_translation_m": 0.00013115477657658914
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.01057408348378261,
+        "closure_rotation_deg": 4.123839755058139,
+        "closure_translation_m": 0.03837273573466264,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.1097396729680737,
+        "jackknife_translation_m": 0.010305540361706462,
+        "seed_spread_rotation_deg": 3.3558414882490255,
+        "seed_spread_translation_m": 0.06830395561615747
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.004125914378638308,
+        "closure_translation_m": 5.075882771180018e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.036625249771657487,
+        "jackknife_translation_m": -0.000392123822818698,
+        "seed_spread_rotation_deg": -1.0358470000331521e-14,
+        "seed_spread_translation_m": 2.5670479254067715e-17
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.007919272652534504,
+        "closure_translation_m": 9.775489462918596e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.0255971850212104,
+        "jackknife_translation_m": 0.011613459612662337,
+        "seed_spread_rotation_deg": 5.348099030058364e-14,
+        "seed_spread_translation_m": 1.0649595141828136e-15
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.010900339141662113,
+        "closure_translation_m": 0.0001273314782911103,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.0024359654477784654,
+        "jackknife_translation_m": 0.0003105108072263413,
+        "seed_spread_rotation_deg": -0.005100343714524946,
+        "seed_spread_translation_m": 0.00022908320455525266
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.012838639125316773,
+        "closure_translation_m": 0.00015000232163642536,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7791723722290171,
+        "jackknife_translation_m": 0.007311034948387685,
+        "seed_spread_rotation_deg": 4.113878743561037,
+        "seed_spread_translation_m": 0.06760167770714254
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.0005,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.010929813411158841,
+        "closure_translation_m": 0.00012781559451796498,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.034154668623404216,
+        "jackknife_translation_m": 6.194870597027273e-05,
+        "seed_spread_rotation_deg": -1.0941109151858202e-14,
+        "seed_spread_translation_m": -9.603641451759448e-17
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.013184455747046442,
+        "closure_translation_m": 0.00015418315663181026,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.8254919295841472,
+        "jackknife_translation_m": 0.008532766652743369,
+        "seed_spread_rotation_deg": 2.025046848932773e-14,
+        "seed_spread_translation_m": 3.996759954437447e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.004485151296883688,
+        "closure_translation_m": -6.193264003943928e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.10260138071290115,
+        "jackknife_translation_m": 0.0007179007989511713,
+        "seed_spread_rotation_deg": -2.7613117030816077e-14,
+        "seed_spread_translation_m": -1.0486772855653391e-17
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0031512863200260444,
+        "closure_translation_m": 4.34470701702613e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.9583217789172437,
+        "jackknife_translation_m": 0.012813298418352895,
+        "seed_spread_rotation_deg": 1.9421671351053468e-14,
+        "seed_spread_translation_m": 8.595410407835384e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": -0.0026991714293399323,
+        "closure_translation_m": -3.77602760127908e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.15821966708217128,
+        "jackknife_translation_m": 0.0019614214573912435,
+        "seed_spread_rotation_deg": 0.014266283736462881,
+        "seed_spread_translation_m": -0.015171841318037362
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.003150502492118235,
+        "closure_translation_m": 3.8796271693374944e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.680295459264827,
+        "jackknife_translation_m": 0.008593765890515317,
+        "seed_spread_rotation_deg": 2.996809993597201,
+        "seed_spread_translation_m": 0.01981081511289484
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.00048774859056076314,
+        "closure_rotation_deg": -0.06916885860345978,
+        "closure_translation_m": 0.0004309975917920761,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.1537156282904255,
+        "jackknife_translation_m": 0.0019833789820682055,
+        "seed_spread_rotation_deg": 0.07550577088114263,
+        "seed_spread_translation_m": -0.002765341865610324
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": -7.592518000947013e-05,
+        "closure_rotation_deg": 2.048890176325745,
+        "closure_translation_m": 0.008699113251985895,
+        "duplicate_target_assignments": 3,
+        "jackknife_rotation_deg": 2.0485594169204497,
+        "jackknife_translation_m": 0.02312310504323578,
+        "seed_spread_rotation_deg": 3.808351186559225,
+        "seed_spread_translation_m": 0.056081646864295065
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.00021774132263724377,
+        "closure_rotation_deg": 0.00805214965894141,
+        "closure_translation_m": -0.0014968714136174843,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.052014795474981335,
+        "jackknife_translation_m": 0.0007028159218853813,
+        "seed_spread_rotation_deg": 0.22861182801693314,
+        "seed_spread_translation_m": -0.0015432665300457865
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010894278074464692,
+        "closure_rotation_deg": 4.227086738108405,
+        "closure_translation_m": 0.032306643555728536,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 0.9928851245449658,
+        "jackknife_translation_m": 0.009108568051347701,
+        "seed_spread_rotation_deg": 3.2191609021308296,
+        "seed_spread_translation_m": 0.08294663608884148
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.00011393899683923101,
+        "closure_translation_m": 4.1348863370761736e-07,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.10564959093301696,
+        "jackknife_translation_m": 0.0012061744595374202,
+        "seed_spread_rotation_deg": -2.527378194839887e-14,
+        "seed_spread_translation_m": -1.9309951985690468e-16
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.005784008688957029,
+        "closure_translation_m": 7.461949914680952e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7542170669534228,
+        "jackknife_translation_m": 0.008346636718062154,
+        "seed_spread_rotation_deg": 1.3439919363450232e-14,
+        "seed_spread_translation_m": 4.522748810220811e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.003996976326763455,
+        "closure_translation_m": 4.951907048931732e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.09526744924577057,
+        "jackknife_translation_m": 0.0012719442901713302,
+        "seed_spread_rotation_deg": 0.013329345556783334,
+        "seed_spread_translation_m": -0.0027399911767092278
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.0055879079812137,
+        "closure_translation_m": 6.925413859974476e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.4395819992041148,
+        "jackknife_translation_m": 0.016143749120881644,
+        "seed_spread_rotation_deg": 2.922553980322046,
+        "seed_spread_translation_m": 0.05082690790658532
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.00011410258865029999,
+        "closure_rotation_deg": 0.0065900240698484325,
+        "closure_translation_m": -0.0009175477013860719,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.04391675385901528,
+        "jackknife_translation_m": -0.0007686206749796774,
+        "seed_spread_rotation_deg": 0.024240083605760798,
+        "seed_spread_translation_m": 0.017608092993062124
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.01079754576877908,
+        "closure_rotation_deg": 4.13767311168132,
+        "closure_translation_m": 0.03730860156358578,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.0730115999733647,
+        "jackknife_translation_m": 0.009606823590977821,
+        "seed_spread_rotation_deg": 3.416607717864829,
+        "seed_spread_translation_m": 0.08578089383264301
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.004755791570391219,
+        "closure_translation_m": 5.901422313643153e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.02377793907156489,
+        "jackknife_translation_m": 0.0003879079351827158,
+        "seed_spread_rotation_deg": -4.0353657899813766e-14,
+        "seed_spread_translation_m": -5.733801246876402e-16
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.008549149844287415,
+        "closure_translation_m": 0.0001060102900538173,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.0860003738644328,
+        "jackknife_translation_m": 0.012393491370663751,
+        "seed_spread_rotation_deg": 2.3485802401101396e-14,
+        "seed_spread_translation_m": 4.659089102411057e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.006116214213708162,
+        "closure_translation_m": 7.083314387738116e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.048230914447358164,
+        "jackknife_translation_m": 0.0001420529439875775,
+        "seed_spread_rotation_deg": 0.0083525628685015,
+        "seed_spread_translation_m": -0.007915904292492365
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.008054514197362823,
+        "closure_translation_m": 9.350398722269621e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7285054923338805,
+        "jackknife_translation_m": 0.0071425770851489215,
+        "seed_spread_rotation_deg": 4.127331650144064,
+        "seed_spread_translation_m": 0.05945669021009492
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.015664442480773387,
+        "closure_translation_m": 0.00018317687429445523,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.09063598841815956,
+        "jackknife_translation_m": 0.0008437231160388012,
+        "seed_spread_rotation_deg": 1.5326955190142554e-14,
+        "seed_spread_translation_m": 1.9172789052177286e-16
+      },
+      "pattern_id": 1,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.017919084816660987,
+        "closure_translation_m": 0.00020954443640830051,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.8819732493789025,
+        "jackknife_translation_m": 0.009314541062811897,
+        "seed_spread_rotation_deg": 4.6518532831328487e-14,
+        "seed_spread_translation_m": 6.874403004831121e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.02272525547798008,
+        "closure_translation_m": 0.0003135256045189182,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.0801603261250805,
+        "jackknife_translation_m": 0.0016945240750981302,
+        "seed_spread_rotation_deg": -1.2982621968478759e-14,
+        "seed_spread_translation_m": -4.2032521827903756e-16
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.03036169309488981,
+        "closure_translation_m": 0.0004189053147286188,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.935880724329423,
+        "jackknife_translation_m": 0.013789921694499854,
+        "seed_spread_rotation_deg": 3.4052166413390786e-14,
+        "seed_spread_translation_m": 4.497025953601543e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.023357259361782637,
+        "closure_translation_m": 0.00030563524465900677,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.021141341984973305,
+        "jackknife_translation_m": 0.0011022654297013143,
+        "seed_spread_rotation_deg": -0.033204181569556734,
+        "seed_spread_translation_m": -0.00047147972114704867
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.029206933283240803,
+        "closure_translation_m": 0.00038219179236517254,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.5009344501976825,
+        "jackknife_translation_m": 0.007734609862825388,
+        "seed_spread_rotation_deg": 2.949339528291181,
+        "seed_spread_translation_m": 0.03451117670978515
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0001462492326802997,
+        "closure_rotation_deg": 0.053385247382379486,
+        "closure_translation_m": -0.001079852484382725,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.1355640890646852,
+        "jackknife_translation_m": -0.0016249345084997056,
+        "seed_spread_rotation_deg": -0.0685614983076146,
+        "seed_spread_translation_m": -0.00019872303817723008
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0005580726432315927,
+        "closure_rotation_deg": 2.1714442823115845,
+        "closure_translation_m": 0.007188263175811094,
+        "duplicate_target_assignments": 3,
+        "jackknife_rotation_deg": 1.759279699565339,
+        "jackknife_translation_m": 0.01951479155266787,
+        "seed_spread_rotation_deg": 3.6642839173704678,
+        "seed_spread_translation_m": 0.05864826569172816
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.006442759622646184,
+        "closure_rotation_deg": -0.1623031431895754,
+        "closure_translation_m": -0.023995903422883505,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 0.006145493133671298,
+        "jackknife_translation_m": 0.0025282530054463476,
+        "seed_spread_rotation_deg": -0.03631682511379841,
+        "seed_spread_translation_m": -0.00013210304458838307
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.004233777129181264,
+        "closure_rotation_deg": 4.056731445259889,
+        "closure_translation_m": 0.009807611546462513,
+        "duplicate_target_assignments": 4,
+        "jackknife_rotation_deg": 0.9470158222036558,
+        "jackknife_translation_m": 0.010934005134908668,
+        "seed_spread_rotation_deg": 2.954232249000098,
+        "seed_spread_translation_m": 0.08435779957429888
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.03782506449194826,
+        "closure_translation_m": 0.0004950315291303717,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.14603130574260692,
+        "jackknife_translation_m": -0.00020372150219519214,
+        "seed_spread_rotation_deg": 7.793049363452135e-15,
+        "seed_spread_translation_m": 7.472793352260251e-16
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.04349513418406606,
+        "closure_translation_m": 0.0005692375396434737,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.502536170277799,
+        "jackknife_translation_m": 0.006936740756329542,
+        "seed_spread_rotation_deg": 4.6506750675301235e-14,
+        "seed_spread_translation_m": 1.3926537361050109e-15
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.053192288536801274,
+        "closure_translation_m": 0.0006598353330133878,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.11268022951400347,
+        "jackknife_translation_m": -0.0012447715844523081,
+        "seed_spread_rotation_deg": -0.08759051150858399,
+        "seed_spread_translation_m": -0.028797230197235686
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.05478322019125152,
+        "closure_translation_m": 0.0006795704011238153,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.2316343204443407,
+        "jackknife_translation_m": 0.013627033246258006,
+        "seed_spread_rotation_deg": 2.8216341232566786,
+        "seed_spread_translation_m": 0.02476966888605886
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.0005462322249159546,
+        "closure_rotation_deg": -0.026094105863187167,
+        "closure_translation_m": -0.00020503451680790874,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.3933211893569567,
+        "jackknife_translation_m": -0.004149081570788607,
+        "seed_spread_rotation_deg": -0.6882043323898617,
+        "seed_spread_translation_m": 0.020371034831944093
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010137210955212826,
+        "closure_rotation_deg": 4.104988981748284,
+        "closure_translation_m": 0.03802111474816394,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 0.7236071644754233,
+        "jackknife_translation_m": 0.006226362695168891,
+        "seed_spread_rotation_deg": 2.7041633018692064,
+        "seed_spread_translation_m": 0.08854383567152498
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.03523503288545469,
+        "closure_translation_m": 0.0004353519734742283,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.032828571436101184,
+        "jackknife_translation_m": -0.0003510003762472059,
+        "seed_spread_rotation_deg": -3.5959503114537416e-14,
+        "seed_spread_translation_m": -4.448253439128092e-16
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.03902839115935088,
+        "closure_translation_m": 0.0004823480403916141,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.0293938633567667,
+        "jackknife_translation_m": 0.01165458305923383,
+        "seed_spread_rotation_deg": 2.7879957186377746e-14,
+        "seed_spread_translation_m": 5.944636910159367e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.028333018022035212,
+        "closure_translation_m": 0.00033137773914478183,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.37713366890166566,
+        "jackknife_translation_m": -0.0007803711407853931,
+        "seed_spread_rotation_deg": -1.2481727140697267,
+        "seed_spread_translation_m": -0.015425014342915037
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.03027131800568987,
+        "closure_translation_m": 0.0003540485824900969,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.399602737879573,
+        "jackknife_translation_m": 0.006220153000375951,
+        "seed_spread_rotation_deg": 2.8708063732058355,
+        "seed_spread_translation_m": 0.05194758015967225
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.008421420818276026,
+        "closure_translation_m": 9.797523947748069e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.026493313313968758,
+        "jackknife_translation_m": -0.0007284298790705638,
+        "seed_spread_rotation_deg": -7.866330201514992e-15,
+        "seed_spread_translation_m": -6.05988034060641e-17
+      },
+      "pattern_id": 4,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.010676063154163626,
+        "closure_translation_m": 0.00012434280159132597,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7648439476467742,
+        "jackknife_translation_m": 0.007742388067702532,
+        "seed_spread_rotation_deg": 2.332524743967094e-14,
+        "seed_spread_translation_m": 4.351136065552751e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.01988189156050639,
+        "closure_translation_m": 0.0002743679618672912,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.09121229163287436,
+        "jackknife_translation_m": -0.00029654889519403933,
+        "seed_spread_rotation_deg": -1.829601096423679e-14,
+        "seed_spread_translation_m": -3.1097085209927014e-17
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.02751832917741612,
+        "closure_translation_m": 0.00037974767207699176,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.9469326898372169,
+        "jackknife_translation_m": 0.011798848724207684,
+        "seed_spread_rotation_deg": 2.8738777417632756e-14,
+        "seed_spread_translation_m": 8.389307284292648e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.009444755569890322,
+        "closure_translation_m": 0.00012314317461591682,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.10505478262047518,
+        "jackknife_translation_m": 0.0009640115638141957,
+        "seed_spread_rotation_deg": -0.08968912199468093,
+        "seed_spread_translation_m": -0.012849212145166693
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.015294429491348488,
+        "closure_translation_m": 0.00019969972232208256,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.627130574803131,
+        "jackknife_translation_m": 0.00759635599693827,
+        "seed_spread_rotation_deg": 2.892854587866057,
+        "seed_spread_translation_m": 0.022133444285765507
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.010618088792839417,
+        "closure_rotation_deg": 2.063051549749935,
+        "closure_translation_m": 0.026074906339427145,
+        "duplicate_target_assignments": -1,
+        "jackknife_rotation_deg": -0.00021377776093522982,
+        "jackknife_translation_m": 0.0001660871396842456,
+        "seed_spread_rotation_deg": 0.041024168647391335,
+        "seed_spread_translation_m": 0.0008154781053810803
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.01102991220339071,
+        "closure_rotation_deg": 4.18111058467914,
+        "closure_translation_m": 0.034343021999620964,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.894630010869089,
+        "jackknife_translation_m": 0.02130581320085182,
+        "seed_spread_rotation_deg": 3.7738695843254737,
+        "seed_spread_translation_m": 0.05966246683528647
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.0072134961695495756,
+        "closure_rotation_deg": -0.44978783315590265,
+        "closure_translation_m": -0.024669947948776628,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": -0.0738567487691848,
+        "jackknife_translation_m": -0.0006093541957310541,
+        "seed_spread_rotation_deg": 0.045695079856925336,
+        "seed_spread_translation_m": 0.000837287768885947
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0034630405822778723,
+        "closure_rotation_deg": 3.7692467552935613,
+        "closure_translation_m": 0.009133567020569392,
+        "duplicate_target_assignments": 4,
+        "jackknife_rotation_deg": 0.8670135803007997,
+        "jackknife_translation_m": 0.007796397933731266,
+        "seed_spread_rotation_deg": 3.036244153970822,
+        "seed_spread_translation_m": 0.08532719038777321
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.002314633575626443,
+        "closure_translation_m": 2.8543318350477504e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.09495338219928484,
+        "jackknife_translation_m": 0.002136396705633841,
+        "seed_spread_rotation_deg": -4.118961333070393e-15,
+        "seed_spread_translation_m": -5.713477947220081e-17
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.007984703267744241,
+        "closure_translation_m": 0.00010274932886357941,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7435208582196907,
+        "jackknife_translation_m": 0.009276858964158575,
+        "seed_spread_rotation_deg": 3.459473997877871e-14,
+        "seed_spread_translation_m": 5.88239621406785e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.007972099002425652,
+        "closure_translation_m": 9.876881705142722e-05,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.008438072273601271,
+        "jackknife_translation_m": -4.5946081330731914e-05,
+        "seed_spread_rotation_deg": 0.04957460577218775,
+        "seed_spread_translation_m": -0.000376270499413911
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.009563030656875898,
+        "closure_translation_m": 0.00011850388516185465,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 1.335876477684743,
+        "jackknife_translation_m": 0.014825858749379582,
+        "seed_spread_rotation_deg": 2.9587992405374504,
+        "seed_spread_translation_m": 0.053190628583880635
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": -0.0004613602185495197,
+        "closure_rotation_deg": -0.025993047346631215,
+        "closure_translation_m": 0.000584707367343236,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.02905093386955926,
+        "jackknife_translation_m": -0.0002825502837803199,
+        "seed_spread_rotation_deg": -0.1406772517956778,
+        "seed_spread_translation_m": 0.0005188992356525285
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "STRUCTURAL_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.010222082961579261,
+        "closure_rotation_deg": 4.10509004026484,
+        "closure_translation_m": 0.03881085663231509,
+        "duplicate_target_assignments": 2,
+        "jackknife_rotation_deg": 1.0878774199628207,
+        "jackknife_translation_m": 0.010092893982177178,
+        "seed_spread_rotation_deg": 3.2516903824633903,
+        "seed_spread_translation_m": 0.06869170007523341
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.03426763677950128,
+        "closure_translation_m": 0.0004244134610752393,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": -0.07905201024804998,
+        "jackknife_translation_m": -0.0013290434685842133,
+        "seed_spread_rotation_deg": -4.15856928858937e-14,
+        "seed_spread_translation_m": -6.183682940073013e-16
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.038060995053397474,
+        "closure_translation_m": 0.0004714095279926251,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.983170424544818,
+        "jackknife_translation_m": 0.010676539966896822,
+        "seed_spread_rotation_deg": 2.225376741502146e-14,
+        "seed_spread_translation_m": 4.209207409214445e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.06130847929876182,
+        "closure_translation_m": 0.0007162444630413406,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.010842597668275111,
+        "jackknife_translation_m": 0.0023297195927858994,
+        "seed_spread_rotation_deg": -0.01923997188050386,
+        "seed_spread_translation_m": -0.006502065353221148
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "SENSITIVITY_REVIEW",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.06324677928241648,
+        "closure_translation_m": 0.0007389153063866557,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.7875790044495138,
+        "jackknife_translation_m": 0.009330243733947243,
+        "seed_spread_rotation_deg": 4.099739115395058,
+        "seed_spread_translation_m": 0.06087052914936614
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "amplitude_m": 0.002,
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "metric_delta": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.05606884697454181,
+        "closure_translation_m": 0.0006557940148441631,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.1409143438052466,
+        "jackknife_translation_m": 0.0013302109168890526,
+        "seed_spread_rotation_deg": -9.251546641993408e-15,
+        "seed_spread_translation_m": -2.3558098107737238e-17
+      },
+      "pattern_id": 7,
+      "perturbed_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "perturbed_metrics": {
+        "bijective_nn_cost_penalty_m": 0.0,
+        "closure_rotation_deg": 0.05832348931042941,
+        "closure_translation_m": 0.0006821615769580084,
+        "duplicate_target_assignments": 0,
+        "jackknife_rotation_deg": 0.9322516047659896,
+        "jackknife_translation_m": 0.009801028863662149,
+        "seed_spread_rotation_deg": 2.1940030999192525e-14,
+        "seed_spread_translation_m": 4.72154311853602e-16
+      },
+      "pose_factor_authorized": false,
+      "reason": null,
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    }
+  ],
+  "perturbations_are_calibrated_noise": false,
+  "pose_factors_authorized": 0,
+  "reused_implementation_sha256": {
+    "l17": "37fa17fd1f07e3a57929ee4f29bff3d0e49ab55413621d78f7b5ffa73f24dc31",
+    "l18": "93722e891e2d44db5027207ceb53ee5d10b8f3cb9d8f303764f00a4c38ce8a6a",
+    "l19": "d2750dff0b98cd2dad6f9266a774ba0f87612ac343b1f0fc255e205ba9d398a4",
+    "l20": "4cf2732c057a7183eeac7115635e63fc4ad3c069024706afd46535e0755589ea"
+  },
+  "scenarios": [
+    {
+      "amplitude_m": 0.0005,
+      "chain_failure": null,
+      "decision_changed": 0,
+      "not_evaluable": 0,
+      "pattern_id": 1,
+      "perturbed_cloud_bytes_sha256": "d913a54d68313c2f2766198cc28c623a669620724a5d60fc653537033c155139",
+      "previously_structural_no_longer_structural": 0,
+      "previously_unflagged_now_flagged": 0,
+      "registration_screens_recomputed": 10
+    },
+    {
+      "amplitude_m": 0.0005,
+      "chain_failure": null,
+      "decision_changed": 0,
+      "not_evaluable": 0,
+      "pattern_id": 4,
+      "perturbed_cloud_bytes_sha256": "ea91ab798ca051a5a6db9d527daa35844542568e2906e2a6d98e71c20036f199",
+      "previously_structural_no_longer_structural": 0,
+      "previously_unflagged_now_flagged": 0,
+      "registration_screens_recomputed": 10
+    },
+    {
+      "amplitude_m": 0.0005,
+      "chain_failure": null,
+      "decision_changed": 0,
+      "not_evaluable": 0,
+      "pattern_id": 7,
+      "perturbed_cloud_bytes_sha256": "d6dcb13482b1a7964918ba5b31da1a2fde4eb8c84b6094ab91bb47b29523f730",
+      "previously_structural_no_longer_structural": 0,
+      "previously_unflagged_now_flagged": 0,
+      "registration_screens_recomputed": 10
+    },
+    {
+      "amplitude_m": 0.002,
+      "chain_failure": null,
+      "decision_changed": 0,
+      "not_evaluable": 0,
+      "pattern_id": 1,
+      "perturbed_cloud_bytes_sha256": "37e7e2ecbd61725622675952e2b35a275799395e00aeed878e7b2ff36e0fed60",
+      "previously_structural_no_longer_structural": 0,
+      "previously_unflagged_now_flagged": 0,
+      "registration_screens_recomputed": 10
+    },
+    {
+      "amplitude_m": 0.002,
+      "chain_failure": null,
+      "decision_changed": 0,
+      "not_evaluable": 0,
+      "pattern_id": 4,
+      "perturbed_cloud_bytes_sha256": "91e762fbf440df08a87b105cbd8205ce399fa5d3c586f055a82e7fd5d92dcc59",
+      "previously_structural_no_longer_structural": 0,
+      "previously_unflagged_now_flagged": 0,
+      "registration_screens_recomputed": 10
+    },
+    {
+      "amplitude_m": 0.002,
+      "chain_failure": null,
+      "decision_changed": 0,
+      "not_evaluable": 0,
+      "pattern_id": 7,
+      "perturbed_cloud_bytes_sha256": "8f19cfd3eda44bd55affebfa8c8911e8c7682a30b180f79db6edcc9d0e655138",
+      "previously_structural_no_longer_structural": 0,
+      "previously_unflagged_now_flagged": 0,
+      "registration_screens_recomputed": 10
+    }
+  ],
+  "schema": "TRUST_ROBOT_L22_REAL_CLOUD_COORDINATE_PERTURBATION_AUDIT_V1",
+  "screen_thresholds_scientifically_calibrated": false,
+  "source_cloud_provenance": [
+    {
+      "cloud_sha256": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+      "qualified_xyz_sha256": "39cb432b5634cae0668b6b7682f6170ee35f4486d5a3c9f3850a38197d8195f6",
+      "step": 51
+    },
+    {
+      "cloud_sha256": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+      "qualified_xyz_sha256": "fefc9cec5f9b776386fdc7e8d635be371423ff92cd0a1e3404e6d0ea9c021b67",
+      "step": 61
+    },
+    {
+      "cloud_sha256": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+      "qualified_xyz_sha256": "9001ad0b64bfc53f96d5ec35f0001b1abc41e997acdb6f08b267c4f0f3d3dd67",
+      "step": 71
+    },
+    {
+      "cloud_sha256": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+      "qualified_xyz_sha256": "f9ba47a5a8d36078e7d94b022317c1b5d9e7d733f35656f5a0a26404cac01cc8",
+      "step": 81
+    },
+    {
+      "cloud_sha256": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+      "qualified_xyz_sha256": "d6dcc5c2ffa04833a9eb03670ae18198c6a1dc507817afe99059201e4786c349",
+      "step": 91
+    },
+    {
+      "cloud_sha256": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+      "qualified_xyz_sha256": "b7fab7585dbfd00a7dd56b62160aec09d1d04762bf92ec383e990da64c849516",
+      "step": 101
+    }
+  ],
+  "total_trials": 60,
+  "two_derivations_identical": true,
+  "unperturbed_baseline_reproduced": true,
+  "upstream_report_sha256": {
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l16": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+    "l17": "1161a181982b3af155626ed889ab5a21010e86ea3fa64eadbf9bb4cbf1f722da",
+    "l18": "787117369a6e5bda511325343916f5c8d3d93cd4a4db92f04b0fb49e4b413bac",
+    "l19": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "l20": "e93519d92257180bcfca3ca8b0aca781da89bcb000612c02d1f3202a4c1cbae6",
+    "l21": "680b88cdb8fccd1260931b62e871850972462e0bd79f833ca21eafa7512ae4fa"
+  }
+}

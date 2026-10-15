@@ -1,0 +1,2074 @@
+{
+  "all_corruptions_applied_in_memory": true,
+  "all_eight_metrics_recomputed": true,
+  "decision_changes": 5,
+  "decision_transitions": {
+    "NOT_FLAGGED_DIAGNOSTIC_ONLY -> NOT_FLAGGED_DIAGNOSTIC_ONLY": 41,
+    "NOT_FLAGGED_DIAGNOSTIC_ONLY -> SENSITIVITY_REVIEW": 3,
+    "SENSITIVITY_REVIEW -> NOT_FLAGGED_DIAGNOSTIC_ONLY": 1,
+    "SENSITIVITY_REVIEW -> SENSITIVITY_REVIEW": 32,
+    "STRUCTURAL_REVIEW -> SENSITIVITY_REVIEW": 1,
+    "STRUCTURAL_REVIEW -> STRUCTURAL_REVIEW": 32
+  },
+  "experiment_is_independent_failure_validation": false,
+  "false_negative_rate_estimated": false,
+  "false_positive_rate_estimated": false,
+  "health_labels_generated": 0,
+  "implementation_sha256": "82a75b02458df8c3168bd7a3c25f84db039c48bb602fda5bded003d6377a5f4e",
+  "injected_corruptions_are_calibrated_sensor_faults": false,
+  "not_evaluable_pairs": 0,
+  "not_evaluable_treated_as_review": true,
+  "original_recordings_modified": false,
+  "pair_trials": [
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_20mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": true,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": true,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_101",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": true,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": true,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "single_return_80mm_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_3pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "nonrigid_shear_15pct",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_3deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_rotation_10deg",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "coherent_translation_80mm",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": true,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": true,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": true,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "stale_scan_101_from_91",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "STRUCTURAL_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "STRUCTURAL_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": false,
+      "manual_review_required": false,
+      "new_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "baseline_decision": "SENSITIVITY_REVIEW",
+      "decision_changed": false,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": false,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "baseline_decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+      "decision_changed": true,
+      "manual_review_required": true,
+      "new_decision": "SENSITIVITY_REVIEW",
+      "not_evaluable_reason": null,
+      "pose_factor_authorized": false,
+      "previously_not_flagged_now_review": true,
+      "previously_review_now_not_flagged": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "status": "DIAGNOSTIC_RECOMPUTED",
+      "steps": [
+        81,
+        101
+      ]
+    }
+  ],
+  "physical_localization_accuracy_verified": false,
+  "point_permutation_control_decision_changes": 0,
+  "pose_factors_authorized": 0,
+  "recomputed_pairs": 110,
+  "recorded_scan_provenance": [
+    {
+      "cloud_sha256": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+      "qualified_xyz_sha256": "39cb432b5634cae0668b6b7682f6170ee35f4486d5a3c9f3850a38197d8195f6",
+      "step": 51
+    },
+    {
+      "cloud_sha256": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+      "qualified_xyz_sha256": "fefc9cec5f9b776386fdc7e8d635be371423ff92cd0a1e3404e6d0ea9c021b67",
+      "step": 61
+    },
+    {
+      "cloud_sha256": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+      "qualified_xyz_sha256": "9001ad0b64bfc53f96d5ec35f0001b1abc41e997acdb6f08b267c4f0f3d3dd67",
+      "step": 71
+    },
+    {
+      "cloud_sha256": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+      "qualified_xyz_sha256": "f9ba47a5a8d36078e7d94b022317c1b5d9e7d733f35656f5a0a26404cac01cc8",
+      "step": 81
+    },
+    {
+      "cloud_sha256": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+      "qualified_xyz_sha256": "d6dcc5c2ffa04833a9eb03670ae18198c6a1dc507817afe99059201e4786c349",
+      "step": 91
+    },
+    {
+      "cloud_sha256": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+      "qualified_xyz_sha256": "b7fab7585dbfd00a7dd56b62160aec09d1d04762bf92ec383e990da64c849516",
+      "step": 101
+    }
+  ],
+  "reused_source_sha256": {
+    "l17": "37fa17fd1f07e3a57929ee4f29bff3d0e49ab55413621d78f7b5ffa73f24dc31",
+    "l18": "93722e891e2d44db5027207ceb53ee5d10b8f3cb9d8f303764f00a4c38ce8a6a",
+    "l19": "d2750dff0b98cd2dad6f9266a774ba0f87612ac343b1f0fc255e205ba9d398a4",
+    "l20": "4cf2732c057a7183eeac7115635e63fc4ad3c069024706afd46535e0755589ea",
+    "l22": "5cfe8e389ef3aba3cc1da06a77f8eaefad1964da90c9652029f83d02f1ce1feb"
+  },
+  "scenario_count": 11,
+  "scenario_summaries": [
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "1db165fc7e6cb413ee3ff074292d24b8b77c6b3ba56ce42f428e948e08a83d5c",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.020000000000000018,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 0.02,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "single_return_20mm_101",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "single_return"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "543928fbd2639e1142eb8dc09460cfb66b8b7f44cb24a2fe0b4f9f1c2f4c5a2e",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 1,
+      "maximum_rowwise_difference_m": 0.07999999999999996,
+      "new_review_from_unflagged": 1,
+      "nominal_parameter": 0.08,
+      "not_evaluable": 0,
+      "not_flagged": 3,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "single_return_80mm_101",
+      "sensitivity_review": 4,
+      "structural_review": 3,
+      "type": "single_return"
+    },
+    {
+      "affected_recorded_step": 91,
+      "altered_clouds_sha256": "c34469d8b85722d6b772eac8e205646983f36675fe9d5cb869ace10fbfb38dba",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 1,
+      "maximum_rowwise_difference_m": 0.07999999999999996,
+      "new_review_from_unflagged": 1,
+      "nominal_parameter": 0.08,
+      "not_evaluable": 0,
+      "not_flagged": 3,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "single_return_80mm_91",
+      "sensitivity_review": 4,
+      "structural_review": 3,
+      "type": "single_return"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "1f89ed560dab8784c520245a46bc471524519e3284b2c7554fbd0e57338dd8d4",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.00025816205888984367,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 0.03,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "nonrigid_shear_3pct",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "shear"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "f3bd1ecae8e98b14c32f277e4a8dbb386eff5eaa0933f4697ed2f9625c28c7b0",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.0012908102944493294,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 0.15,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "nonrigid_shear_15pct",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "shear"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "0c92b8a9022388376fc8926f19124504b72556c44a93b513cabe4251f1dfe145",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.016560516729858435,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 3.0,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "coherent_rotation_3deg",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "rotation"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "22cdc76c787f1458d68f889d6db6daa4d4a48bdf26c0ab1837e0de438fb52420",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.0551379831942336,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 10.0,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "coherent_rotation_10deg",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "rotation"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "23f5a29a399860d52969401b4421ebbffb5a7c418be1faa1a4d277d8e9e6047d",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.07999999999999996,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 0.08,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "coherent_translation_80mm",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "translation"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "08c7a93d7bc609aedf536bab8af79de8323f4cef1ea67018f11be3069de9b1aa",
+      "association_only": false,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 2,
+      "maximum_rowwise_difference_m": 0.05831279759219648,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 0.0,
+      "not_evaluable": 0,
+      "not_flagged": 5,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": false,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 1,
+      "scenario": "stale_scan_101_from_91",
+      "sensitivity_review": 3,
+      "structural_review": 2,
+      "type": "stale_scan"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "c39d70ca22659fd561aa3bf5d579b971e2b376711df04d96d94e624b5937c904",
+      "association_only": true,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 0,
+      "maximum_rowwise_difference_m": 0.3571051367912583,
+      "new_review_from_unflagged": 0,
+      "nominal_parameter": 0.0,
+      "not_evaluable": 0,
+      "not_flagged": 4,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": true,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "point_order_changed_mapping_corrected",
+      "sensitivity_review": 3,
+      "structural_review": 3,
+      "type": "permutation_corrected"
+    },
+    {
+      "affected_recorded_step": 101,
+      "altered_clouds_sha256": "c39d70ca22659fd561aa3bf5d579b971e2b376711df04d96d94e624b5937c904",
+      "association_only": true,
+      "attempted_pairs": 10,
+      "chain_failure": null,
+      "decision_changes": 1,
+      "maximum_rowwise_difference_m": 0.3571051367912583,
+      "new_review_from_unflagged": 1,
+      "nominal_parameter": 0.0,
+      "not_evaluable": 0,
+      "not_flagged": 3,
+      "original_sensor_files_modified": false,
+      "pointset_preserved": true,
+      "recomputed_pairs": 10,
+      "review_to_unflagged": 0,
+      "scenario": "point_order_changed_mapping_stale",
+      "sensitivity_review": 4,
+      "structural_review": 3,
+      "type": "permutation_stale"
+    }
+  ],
+  "schema": "TRUST_ROBOT_L23_STRUCTURED_CLOUD_STRESS_DIAGNOSTIC_V1",
+  "severe_corruption_can_remain_unflagged": true,
+  "stale_mapping_decision_changes": 1,
+  "thresholds_scientifically_calibrated": false,
+  "total_pair_trials": 110,
+  "two_derivations_identical": true,
+  "unmodified_l20_baseline_reproduced": true,
+  "upstream_sha256": {
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l19": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "l20": "e93519d92257180bcfca3ca8b0aca781da89bcb000612c02d1f3202a4c1cbae6",
+    "l22": "519d751af02eca8c75e56a7c0f3f8b8df0aad6ae4900342c32ece893bb7d54e4"
+  }
+}

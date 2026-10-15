@@ -1,0 +1,807 @@
+{
+  "all_unordered_pair_diagnostics": 15,
+  "ate_rpe_computed": false,
+  "cross_sensor_sync_verified": false,
+  "deterministic_two_derivations_identical": true,
+  "experimental_method_not_admitted_to_frontend": true,
+  "health_labels_generated": 0,
+  "hop_summaries": [
+    {
+      "hop_count": 1,
+      "maximum_emitter_fit_jackknife_rotation_deg": 1.398725059713779,
+      "median_emitter_fit_from_chain_rotation_deg": 2.1229166933192752e-16,
+      "median_emitter_fit_nn_rmse_m": 0.014213993693755318,
+      "median_frozen_nn_rmse_m": 0.014213993693755318,
+      "pair_count": 5
+    },
+    {
+      "hop_count": 2,
+      "maximum_emitter_fit_jackknife_rotation_deg": 1.062222434792868,
+      "median_emitter_fit_from_chain_rotation_deg": 0.004731713983006997,
+      "median_emitter_fit_nn_rmse_m": 0.024321582045952018,
+      "median_frozen_nn_rmse_m": 0.024321582045952018,
+      "pair_count": 4
+    },
+    {
+      "hop_count": 3,
+      "maximum_emitter_fit_jackknife_rotation_deg": 1.3443145499583442,
+      "median_emitter_fit_from_chain_rotation_deg": 0.00193829998365466,
+      "median_emitter_fit_nn_rmse_m": 0.03650697193431526,
+      "median_frozen_nn_rmse_m": 0.03650697193431526,
+      "pair_count": 3
+    },
+    {
+      "hop_count": 4,
+      "maximum_emitter_fit_jackknife_rotation_deg": 1.8948437886300242,
+      "median_emitter_fit_from_chain_rotation_deg": 0.005253533046866925,
+      "median_emitter_fit_nn_rmse_m": 0.0455633928925935,
+      "median_frozen_nn_rmse_m": 0.04001575959725347,
+      "pair_count": 2
+    },
+    {
+      "hop_count": 5,
+      "maximum_emitter_fit_jackknife_rotation_deg": 0.9408703290699845,
+      "median_emitter_fit_from_chain_rotation_deg": 0.007030638292612255,
+      "median_emitter_fit_nn_rmse_m": 0.05045041065016816,
+      "median_frozen_nn_rmse_m": 0.039773873898340716,
+      "pair_count": 1
+    }
+  ],
+  "implementation_sha256": "d2750dff0b98cd2dad6f9266a774ba0f87612ac343b1f0fc255e205ba9d398a4",
+  "independent_ground_truth_verified": false,
+  "inferred_emitter_association_not_physical_feature_tracking": true,
+  "jackknife_fits_per_derivation": 240,
+  "l15_report_sha256": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+  "l16_report_sha256": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+  "l18_report_sha256": "787117369a6e5bda511325343916f5c8d3d93cd4a4db92f04b0fb49e4b413bac",
+  "pair_diagnostics": [
+    {
+      "frozen_identity": {
+        "direct_vs_chain": null,
+        "nearest_rmse_m": 0.014213993693755318
+      },
+      "hop_count": 1,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0,
+          "translation_m": 0.0
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.7447735955171729,
+          "maximum_translation_change_m": 0.011378179345309,
+          "median_rotation_change_deg": 0.16944454116983498,
+          "median_translation_change_m": 0.0028073020039528084,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.014213993693755318,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.014213993693755318
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": null,
+      "pose_factor_authorized": false,
+      "steps": [
+        51,
+        61
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.007636437616909733,
+          "translation_m": 0.00010537971020970057
+        },
+        "nearest_rmse_m": 0.024208050053580864
+      },
+      "hop_count": 2,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.007636437616909733,
+          "translation_m": 0.00010537971020970057
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.8557203982043425,
+          "maximum_translation_change_m": 0.012095397619401723,
+          "median_rotation_change_deg": 0.1892517636753496,
+          "median_translation_change_m": 0.0029664608116007135,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.024208050053580864,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024208050053580864
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.007636437616909733,
+          "translation_m": 0.00010537971020970057
+        },
+        "nearest_rmse_m": 0.024208050053580864,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.005849673921458167,
+          "translation_m": 7.655654770616574e-05
+        },
+        "nearest_rmse_m": 0.036587599819515565
+      },
+      "hop_count": 3,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005849673921458167,
+          "translation_m": 7.655654770616574e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.5220757921826558,
+          "maximum_translation_change_m": 0.006632344433124074,
+          "median_rotation_change_deg": 0.15393237900460496,
+          "median_translation_change_m": 0.00293971985722278,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.036587599819515565,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.036587599819515565
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005849673921458167,
+          "translation_m": 7.655654770616574e-05
+        },
+        "nearest_rmse_m": 0.036587599819515565,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 2.118059034929205,
+          "translation_m": 0.00826811566019382
+        },
+        "nearest_rmse_m": 0.046216372292936035
+      },
+      "hop_count": 4,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005938746720982557,
+          "translation_m": 7.366714560723856e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 1.8948437886300242,
+          "maximum_translation_change_m": 0.021139726061167576,
+          "median_rotation_change_deg": 0.3494348875939827,
+          "median_translation_change_m": 0.004590724640773659,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.04779524273774401,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 2,
+          "rmse_m": 0.04662819570348733
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005938746720982557,
+          "translation_m": 7.366714560723856e-05
+        },
+        "nearest_rmse_m": 0.04662819570348733,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 4.219034588449464,
+          "translation_m": 0.03380351496934602
+        },
+        "nearest_rmse_m": 0.039773873898340716
+      },
+      "hop_count": 5,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.007030638292612255,
+          "translation_m": 8.223004102912203e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.9408703290699845,
+          "maximum_translation_change_m": 0.00840575212946232,
+          "median_rotation_change_deg": 0.21579940326931896,
+          "median_translation_change_m": 0.004463262044017215,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.05961339342147331,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 4,
+          "rmse_m": 0.05045041065016816
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.007030638292612255,
+          "translation_m": 8.223004102912203e-05
+        },
+        "nearest_rmse_m": 0.05045041065016816,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": null,
+        "nearest_rmse_m": 0.01162078521134707
+      },
+      "hop_count": 1,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 2.2226700897408812e-16,
+          "translation_m": 1.4409695421113136e-17
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.3761427639464524,
+          "maximum_translation_change_m": 0.005645820410140239,
+          "median_rotation_change_deg": 0.15762667488981824,
+          "median_translation_change_m": 0.002466959986111578,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.01162078521134707,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.01162078521134707
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": null,
+      "pose_factor_authorized": false,
+      "steps": [
+        61,
+        71
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.005670069692117798,
+          "translation_m": 7.42060105131019e-05
+        },
+        "nearest_rmse_m": 0.024435114038323172
+      },
+      "hop_count": 2,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005670069692117798,
+          "translation_m": 7.42060105131019e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.6485674760204059,
+          "maximum_translation_change_m": 0.007140462258524734,
+          "median_rotation_change_deg": 0.1734367317580613,
+          "median_translation_change_m": 0.002843912486136614,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.024435114038323172,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024435114038323172
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005670069692117798,
+          "translation_m": 7.42060105131019e-05
+        },
+        "nearest_rmse_m": 0.024435114038323172,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.0015909316544502454,
+          "translation_m": 1.9735068110427434e-05
+        },
+        "nearest_rmse_m": 0.03533948091641117
+      },
+      "hop_count": 3,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0015909316544502454,
+          "translation_m": 1.9735068110427434e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 1.3443145499583442,
+          "maximum_translation_change_m": 0.014871804830710314,
+          "median_rotation_change_deg": 0.33602134237961545,
+          "median_translation_change_m": 0.005190703270537686,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.03533948091641117,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.03533948091641117
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0015909316544502454,
+          "translation_m": 1.9735068110427434e-05
+        },
+        "nearest_rmse_m": 0.03533948091641117,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 4.131083087611471,
+          "translation_m": 0.03822614926497185
+        },
+        "nearest_rmse_m": 0.03381514690157089
+      },
+      "hop_count": 4,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.004568319372751294,
+          "translation_m": 5.343222152855474e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 1.11692835383238,
+          "maximum_translation_change_m": 0.010375444265957498,
+          "median_rotation_change_deg": 0.1481143975463402,
+          "median_translation_change_m": 0.0034901013187221596,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.047169122455015096,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 4,
+          "rmse_m": 0.04449859008169967
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.004568319372751294,
+          "translation_m": 5.343222152855474e-05
+        },
+        "nearest_rmse_m": 0.04449859008169967,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": null,
+        "nearest_rmse_m": 0.014422891088981066
+      },
+      "hop_count": 1,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 1.1112451611226444e-16,
+          "translation_m": 1.6457031883953286e-17
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.7051967730087533,
+          "maximum_translation_change_m": 0.010171916029100931,
+          "median_rotation_change_deg": 0.2776585455976842,
+          "median_translation_change_m": 0.0033623976678431463,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.014422891088981066,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.014422891088981066
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": null,
+      "pose_factor_authorized": false,
+      "steps": [
+        71,
+        81
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.0037933582738961962,
+          "translation_m": 4.699606691738578e-05
+        },
+        "nearest_rmse_m": 0.024717843110924814
+      },
+      "hop_count": 2,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0037933582738961962,
+          "translation_m": 4.699606691738578e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 1.062222434792868,
+          "maximum_translation_change_m": 0.012005583435481035,
+          "median_rotation_change_deg": 0.23127657250467645,
+          "median_translation_change_m": 0.0031886831459858964,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.024717843110924814,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024717843110924814
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0037933582738961962,
+          "translation_m": 4.699606691738578e-05
+        },
+        "nearest_rmse_m": 0.024717843110924814,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.00193829998365466,
+          "translation_m": 2.2670843345315055e-05
+        },
+        "nearest_rmse_m": 0.03650697193431526
+      },
+      "hop_count": 3,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.00193829998365466,
+          "translation_m": 2.2670843345315055e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.7767364067812387,
+          "maximum_translation_change_m": 0.007000524141161344,
+          "median_rotation_change_deg": 0.1695589540647785,
+          "median_translation_change_m": 0.002299577744790884,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.03650697193431526,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.03650697193431526
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.00193829998365466,
+          "translation_m": 2.2670843345315055e-05
+        },
+        "nearest_rmse_m": 0.03650697193431526,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": null,
+        "nearest_rmse_m": 0.013299492210545447
+      },
+      "hop_count": 1,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 2.1229166933192752e-16,
+          "translation_m": 4.2668555758937507e-17
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 1.3767328745487555,
+          "maximum_translation_change_m": 0.016634828529985525,
+          "median_rotation_change_deg": 0.2639585004050087,
+          "median_translation_change_m": 0.003471665758368157,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.013299492210545447,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.013299492210545447
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": null,
+      "pose_factor_authorized": false,
+      "steps": [
+        81,
+        91
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": {
+          "rotation_deg": 0.0022546423358876006,
+          "translation_m": 2.636756211384529e-05
+        },
+        "nearest_rmse_m": 0.023975434169922438
+      },
+      "hop_count": 2,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0022546423358876006,
+          "translation_m": 2.636756211384529e-05
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 0.791337260960743,
+          "maximum_translation_change_m": 0.008470817946773096,
+          "median_rotation_change_deg": 0.19849417976645495,
+          "median_translation_change_m": 0.0018931461293773394,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.023975434169922438,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.023975434169922438
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0022546423358876006,
+          "translation_m": 2.636756211384529e-05
+        },
+        "nearest_rmse_m": 0.023975434169922438,
+        "physical_correspondence_verified": false
+      },
+      "pose_factor_authorized": false,
+      "steps": [
+        81,
+        101
+      ]
+    },
+    {
+      "frozen_identity": {
+        "direct_vs_chain": null,
+        "nearest_rmse_m": 0.01428333629955553
+      },
+      "hop_count": 1,
+      "inferred_emitter_index_fit": {
+        "difference_from_short_chain": {
+          "rotation_deg": 4.045094204016356e-16,
+          "translation_m": 2.9541276310451896e-17
+        },
+        "leave_one_emitter_out": {
+          "maximum_rotation_change_deg": 1.398725059713779,
+          "maximum_translation_change_m": 0.01747247331798068,
+          "median_rotation_change_deg": 0.18371893862883085,
+          "median_translation_change_m": 0.00220610749757959,
+          "trials": 16
+        },
+        "matched_emitter_rmse_m": 0.01428333629955553,
+        "nearest_neighbor_diagnostic": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.01428333629955553
+        },
+        "same_emitter_means_same_physical_point": false
+      },
+      "l18_bijective_identity_diagnostic": null,
+      "pose_factor_authorized": false,
+      "steps": [
+        91,
+        101
+      ]
+    }
+  ],
+  "physical_emitter_identity_verified": false,
+  "pose_factors_authorized": 0,
+  "raw_beam_mapping": [
+    {
+      "all_configured_indices_present": true,
+      "inferred_emitter_indices_in_gmo_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_elevation_residual_deg": 1.544189451863076e-07,
+      "maximum_inverted_azimuth_residual_deg": 0.01025390625,
+      "physical_emitter_identity_verified": false,
+      "pre_gmo_sha256": "d86be03440d3cf459cd9e9d24cc08bfaa673ce8bd3d8c9d2b20583902ddc8f97",
+      "raw_return_count": 16,
+      "step": 51
+    },
+    {
+      "all_configured_indices_present": true,
+      "inferred_emitter_indices_in_gmo_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_elevation_residual_deg": 1.544189451863076e-07,
+      "maximum_inverted_azimuth_residual_deg": 0.009931718750000096,
+      "physical_emitter_identity_verified": false,
+      "pre_gmo_sha256": "722f7c2ba1f38e48ff7a5d2d54bfe4b3713596877b68ea4b6d37d1eb8031352d",
+      "raw_return_count": 16,
+      "step": 61
+    },
+    {
+      "all_configured_indices_present": true,
+      "inferred_emitter_indices_in_gmo_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_elevation_residual_deg": 1.544189451863076e-07,
+      "maximum_inverted_azimuth_residual_deg": 0.010084306640624874,
+      "physical_emitter_identity_verified": false,
+      "pre_gmo_sha256": "24e6b5bf18e2d2367c94deaa66e9b350dd20c4b535cb40c194e47cb8846c4a5c",
+      "raw_return_count": 16,
+      "step": 71
+    },
+    {
+      "all_configured_indices_present": true,
+      "inferred_emitter_indices_in_gmo_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_elevation_residual_deg": 1.544189451863076e-07,
+      "maximum_inverted_azimuth_residual_deg": 0.011030351562499874,
+      "physical_emitter_identity_verified": false,
+      "pre_gmo_sha256": "0890291059f842f2ecf2048be7c89e38a60258f19d9b0fa78d098b40ab5202a8",
+      "raw_return_count": 16,
+      "step": 81
+    },
+    {
+      "all_configured_indices_present": true,
+      "inferred_emitter_indices_in_gmo_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_elevation_residual_deg": 1.544189451863076e-07,
+      "maximum_inverted_azimuth_residual_deg": 0.012176513671875,
+      "physical_emitter_identity_verified": false,
+      "pre_gmo_sha256": "c080f28563b3c5b23240c31b6ee215e11d5f36fecb0822c0414456f4138b253a",
+      "raw_return_count": 16,
+      "step": 91
+    },
+    {
+      "all_configured_indices_present": true,
+      "inferred_emitter_indices_in_gmo_order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_elevation_residual_deg": 1.544189451863076e-07,
+      "maximum_inverted_azimuth_residual_deg": 0.015516435546875096,
+      "physical_emitter_identity_verified": false,
+      "pre_gmo_sha256": "50d92eacd9e4728ff7c1846800e522ae7c271ab9ec145944c4c859661bea0e2c",
+      "raw_return_count": 16,
+      "step": 101
+    }
+  ],
+  "schema": "TRUST_ROBOT_L19_SYNTHETIC_BEAM_ASSOCIATION_STABILITY_V1",
+  "six_scans_have_all_16_inferred_indices": true
+}

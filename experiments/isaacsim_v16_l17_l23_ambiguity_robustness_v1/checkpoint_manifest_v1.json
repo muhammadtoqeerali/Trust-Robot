@@ -1,0 +1,69 @@
+{
+  "branch": "kios-isaacsim-v15-integration",
+  "files_sha256": {
+    "code/l17_initialization_audit.py": "37fa17fd1f07e3a57929ee4f29bff3d0e49ab55413621d78f7b5ffa73f24dc31",
+    "code/l18_bijective_matching.py": "93722e891e2d44db5027207ceb53ee5d10b8f3cb9d8f303764f00a4c38ce8a6a",
+    "code/l19_beam_association.py": "d2750dff0b98cd2dad6f9266a774ba0f87612ac343b1f0fc255e205ba9d398a4",
+    "code/l20_ambiguity_screen.py": "4cf2732c057a7183eeac7115635e63fc4ad3c069024706afd46535e0755589ea",
+    "code/l21_ambiguity_challenge.py": "fac8fd0945145efdc781484b5a6918725dc5b866ce414183a8b8b68a9e725391",
+    "code/l22_point_perturbation.py": "5cfe8e389ef3aba3cc1da06a77f8eaefad1964da90c9652029f83d02f1ce1feb",
+    "code/l23_structured_stress.py": "82a75b02458df8c3168bd7a3c25f84db039c48bb602fda5bded003d6377a5f4e",
+    "evidence/l17_chain_seeded_registration_report_v1.json": "1161a181982b3af155626ed889ab5a21010e86ea3fa64eadbf9bb4cbf1f722da",
+    "evidence/l18_bijective_correspondence_diagnostic_v1.json": "787117369a6e5bda511325343916f5c8d3d93cd4a4db92f04b0fb49e4b413bac",
+    "evidence/l19_beam_association_stability_report_v1.json": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "evidence/l20_ambiguity_screen_report_v1.json": "e93519d92257180bcfca3ca8b0aca781da89bcb000612c02d1f3202a4c1cbae6",
+    "evidence/l21_ambiguity_challenge_report_v1.json": "680b88cdb8fccd1260931b62e871850972462e0bd79f833ca21eafa7512ae4fa",
+    "evidence/l22_point_perturbation_ambiguity_report_v1.json": "519d751af02eca8c75e56a7c0f3f8b8df0aad6ae4900342c32ece893bb7d54e4",
+    "evidence/l23_structured_stress_diagnostic_v1.json": "dd5d970df2caafedbe24c43f45e95cbd2551563c942edbf688f98a2d04752d68"
+  },
+  "frozen_frontend_modified": false,
+  "health_labels_generated": 0,
+  "independent_ground_truth_verified": false,
+  "l22_perturbed_pair_trials": 60,
+  "l23_decision_changes": 5,
+  "l23_structured_pair_trials": 110,
+  "local_only_original_backup_sha256": {
+    "l21_before_pair_count_repair": "20eb0a4d58c9169b26234486876a2c0e0d3923a5ceb6622c5371ca5d3d22b5c8",
+    "l22_before_argument_count_repair": "2ac6d1ec61fa6499aed1f5a140e279b2c31694a43e4133b188dbc266d4de51e6"
+  },
+  "parent_commit": "cd8ce09f169d1942eb44c28e460be4d78a3fcf77",
+  "phases": {
+    "17": {
+      "report": "evidence/l17_chain_seeded_registration_report_v1.json",
+      "source": "code/l17_initialization_audit.py"
+    },
+    "18": {
+      "report": "evidence/l18_bijective_correspondence_diagnostic_v1.json",
+      "source": "code/l18_bijective_matching.py"
+    },
+    "19": {
+      "report": "evidence/l19_beam_association_stability_report_v1.json",
+      "source": "code/l19_beam_association.py"
+    },
+    "20": {
+      "report": "evidence/l20_ambiguity_screen_report_v1.json",
+      "source": "code/l20_ambiguity_screen.py"
+    },
+    "21": {
+      "report": "evidence/l21_ambiguity_challenge_report_v1.json",
+      "source": "code/l21_ambiguity_challenge.py"
+    },
+    "22": {
+      "report": "evidence/l22_point_perturbation_ambiguity_report_v1.json",
+      "source": "code/l22_point_perturbation.py"
+    },
+    "23": {
+      "report": "evidence/l23_structured_stress_diagnostic_v1.json",
+      "source": "code/l23_structured_stress.py"
+    }
+  },
+  "pose_factors_authorized": 0,
+  "raw_recordings_published": false,
+  "schema": "TRUST_ROBOT_KIOS_L17_L23_AMBIGUITY_ROBUSTNESS_CHECKPOINT_V1",
+  "screen_thresholds_calibrated": false,
+  "sensor_exposure_sync_verified": false,
+  "sensor_failure_detection_validated": false,
+  "upstream_l15_sha256": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+  "upstream_l16_sha256": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+  "upstream_package": "experiments/isaacsim_v16_l10_l16_target_recovery_v1"
+}

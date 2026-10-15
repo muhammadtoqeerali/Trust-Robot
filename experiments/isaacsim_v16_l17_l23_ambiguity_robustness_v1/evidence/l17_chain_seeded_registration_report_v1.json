@@ -1,0 +1,1825 @@
+{
+  "ate_rpe_computed": false,
+  "baseline_identity_attempts_per_derivation": 10,
+  "calibrated_sensor_noise": false,
+  "chain_closeness_is_independent_accuracy": false,
+  "chain_seeded_attempts_per_derivation": 70,
+  "cross_sensor_sync_verified": false,
+  "frozen_icp_unchanged": true,
+  "health_labels_generated": 0,
+  "hop_summary": [
+    {
+      "attempts": 4,
+      "chain_start_available": 4,
+      "chain_start_lower_rmse_count": 4,
+      "chain_start_median_rmse_m": 0.024321582045951907,
+      "chain_start_median_rotation_from_chain_deg": 0.004731713983019141,
+      "hops": 2,
+      "identity_median_rmse_m": 0.024321582045952018,
+      "identity_median_rotation_from_chain_deg": 0.004731713983006997
+    },
+    {
+      "attempts": 3,
+      "chain_start_available": 3,
+      "chain_start_lower_rmse_count": 3,
+      "chain_start_median_rmse_m": 0.03650697193431506,
+      "chain_start_median_rotation_from_chain_deg": 0.001938299983666848,
+      "hops": 3,
+      "identity_median_rmse_m": 0.03650697193431526,
+      "identity_median_rotation_from_chain_deg": 0.00193829998365466
+    },
+    {
+      "attempts": 2,
+      "chain_start_available": 2,
+      "chain_start_lower_rmse_count": 2,
+      "chain_start_median_rmse_m": 0.03473588587027529,
+      "chain_start_median_rotation_from_chain_deg": 4.178457806909295,
+      "hops": 4,
+      "identity_median_rmse_m": 0.04001575959725347,
+      "identity_median_rotation_from_chain_deg": 3.124571061270338
+    },
+    {
+      "attempts": 1,
+      "chain_start_available": 1,
+      "chain_start_lower_rmse_count": 1,
+      "chain_start_median_rmse_m": 0.039773873898340695,
+      "chain_start_median_rotation_from_chain_deg": 4.219034588449466,
+      "hops": 5,
+      "identity_median_rmse_m": 0.039773873898340716,
+      "identity_median_rotation_from_chain_deg": 4.219034588449464
+    }
+  ],
+  "implementation_sha256": "37fa17fd1f07e3a57929ee4f29bff3d0e49ab55413621d78f7b5ffa73f24dc31",
+  "independent_ground_truth_verified": false,
+  "no_pose_selection_authorized": true,
+  "nonadjacent_pairs": 10,
+  "pair_cases": [
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 9.73715389417253e-15,
+          "translation_m": 4.1703145631965225e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.007636437616904867,
+          "translation_m": 0.00010537971020955106
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024208050053580753,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.02420805005358076,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 9.73715389417253e-15,
+            "translation_m": 3.658632158564667e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.007636437616904867,
+            "translation_m": 0.00010537971020955104
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024208050053580753,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02420805005358076,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 9.73715389417253e-15,
+            "translation_m": 3.652004942017475e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.007636437616904867,
+            "translation_m": 0.00010537971020955262
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024208050053580753,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024208050053580756,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.9843264524277906e-14,
+            "translation_m": 5.907701337193111e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.007636437616904476,
+            "translation_m": 0.00010537971020954339
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024208050053580753,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02420805005358079,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.287918950823747e-14,
+            "translation_m": 7.326532260387772e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.007636437616895395,
+            "translation_m": 0.0001053797102093798
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024208050053580756,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02420805005358077,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.751127253773415e-14,
+            "translation_m": 6.540051296243377e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.007636437616915409,
+            "translation_m": 0.00010537971020991862
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024208050053580777,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024208050053580756,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 3.045913114830821e-14,
+            "translation_m": 5.386281474850441e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.007636437616938139,
+            "translation_m": 0.00010537971021011981
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024208050053580753,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02420805005358079,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 2,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.007636437616909733,
+          "translation_m": 0.00010537971020970057
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024208050053580864,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.024208050053580864
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 4.7034788381869545e-14,
+        "max_pairwise_translation_m": 8.700278136391918e-16
+      },
+      "steps": [
+        51,
+        71
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 2.0338786443491097e-14,
+          "translation_m": 3.5446241981816185e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0058496739214759655,
+          "translation_m": 7.655654770635477e-05
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.036587599819515475,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.036587599819515475,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.0320572496590527e-14,
+            "translation_m": 3.7835269478048854e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005849673921476078,
+            "translation_m": 7.655654770635819e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.036587599819515475,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.03658759981951547,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.0338786443491097e-14,
+            "translation_m": 3.2006470822034144e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0058496739214759655,
+            "translation_m": 7.655654770635282e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.036587599819515475,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.036587599819515475,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.9153186006320066e-14,
+            "translation_m": 3.5613834938132105e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005849673921476257,
+            "translation_m": 7.655654770636039e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.036587599819515475,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.036587599819515475,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.5761398372230316e-14,
+            "translation_m": 2.550574492202788e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005849673921482795,
+            "translation_m": 7.655654770634443e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.036587599819515475,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.03658759981951546,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.982543709860745,
+            "translation_m": 0.021222510884350013
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 2.98493942353,
+            "translation_m": 0.02121611097811463
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03689083298305772,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03689083298305771,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 0.7789181601636429,
+            "translation_m": 0.014383403010579375
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.7773843104974659,
+            "translation_m": 0.014417682804971431
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03888526644440626,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03888526644440628,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 3,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005849673921458167,
+          "translation_m": 7.655654770616574e-05
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.036587599819515565,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.036587599819515565
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 2.982543709860738,
+        "max_pairwise_translation_m": 0.0349826564309322
+      },
+      "steps": [
+        51,
+        81
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 2.6583144950445288,
+          "translation_m": 0.038752115098132506
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 4.225832526207114,
+          "translation_m": 0.03361527105347863
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 3,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 2,
+          "rmse_m": 0.03565662483897973,
+          "unique_target_nearest_neighbors": 14
+        },
+        "rmse_m": 0.03565662483897973,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.6583144950445288,
+            "translation_m": 0.038752115098132506
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.225832526207114,
+            "translation_m": 0.033615271053478626
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 3,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03565662483897973,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03565662483897973,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.6583144950445288,
+            "translation_m": 0.03875211509813252
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.225832526207114,
+            "translation_m": 0.03361527105347864
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 4,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.035656624838979724,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03565662483897973,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.65831449504453,
+            "translation_m": 0.0387521150981325
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.225832526207113,
+            "translation_m": 0.03361527105347862
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 3,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.035656624838979724,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03565662483897973,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.2566665544280076,
+            "translation_m": 0.006847875045206532
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.0056029260460222,
+            "translation_m": 0.012093031012261628
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.04600667488134194,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.046006674881341955,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.65831449504452,
+            "translation_m": 0.038752115098132915
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.225832526207107,
+            "translation_m": 0.03361527105347903
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03565662483897973,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03565662483897974,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 0.5551094808250012,
+            "translation_m": 0.021814971472789824
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.5806618143472069,
+            "translation_m": 0.025258100762722776
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.04466802077848087,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.04466802077848087,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 4,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 2.118059034929205,
+          "translation_m": 0.00826811566019382
+        },
+        "icp_iterations": 2,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 3,
+          "rmse_m": 0.046216372292936035,
+          "unique_target_nearest_neighbors": 13
+        },
+        "rmse_m": 0.046216372292936035
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 3.7328454156780824,
+        "max_pairwise_translation_m": 0.05884698872990539
+      },
+      "steps": [
+        51,
+        91
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 2.393187325780109e-14,
+          "translation_m": 5.237486127824154e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 4.219034588449466,
+          "translation_m": 0.03380351496934634
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 5,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 2,
+          "rmse_m": 0.03977387389834069,
+          "unique_target_nearest_neighbors": 14
+        },
+        "rmse_m": 0.039773873898340695,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.393187325780109e-14,
+            "translation_m": 4.808032639627464e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.219034588449466,
+            "translation_m": 0.03380351496934634
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 5,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03977387389834069,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.039773873898340695,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.393187325780109e-14,
+            "translation_m": 5.92097487909921e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.219034588449466,
+            "translation_m": 0.03380351496934633
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 5,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03977387389834069,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03977387389834069,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.4025199491204333e-14,
+            "translation_m": 5.95785973158751e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.219034588449466,
+            "translation_m": 0.03380351496934634
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 4,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03977387389834068,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03977387389834069,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.9216171462755411,
+            "translation_m": 0.06628103360264263
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 2.39072538303786,
+            "translation_m": 0.03278500204422813
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 5,
+            "rmse_m": 0.048912807382849886,
+            "unique_target_nearest_neighbors": 11
+          },
+          "rmse_m": 0.048912807382849886,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 7.774661776854054e-15,
+            "translation_m": 6.517483304901956e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.219034588449463,
+            "translation_m": 0.033803514969346006
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03977387389834068,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03977387389834069,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.990549074113897,
+            "translation_m": 0.08448990261888693
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.3335870021306002,
+            "translation_m": 0.05077107525142748
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 3,
+            "rmse_m": 0.04438721928279679,
+            "unique_target_nearest_neighbors": 13
+          },
+          "rmse_m": 0.044387219282796785,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 5,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 4.219034588449464,
+          "translation_m": 0.03380351496934602
+        },
+        "icp_iterations": 5,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 2,
+          "rmse_m": 0.039773873898340716,
+          "unique_target_nearest_neighbors": 14
+        },
+        "rmse_m": 0.039773873898340716
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 2.9905490741138965,
+        "max_pairwise_translation_m": 0.08448990261888727
+      },
+      "steps": [
+        51,
+        101
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 1.8426432405279397e-14,
+          "translation_m": 5.327198881991008e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005670069692128865,
+          "translation_m": 7.420601051319324e-05
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.02443511403832308,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.024435114038323054,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.42012078268455e-14,
+            "translation_m": 1.4924230954853487e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005670069692113631,
+            "translation_m": 7.420601051313581e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02443511403832309,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024435114038323057,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.42012078268455e-14,
+            "translation_m": 2.779890987404683e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005670069692113631,
+            "translation_m": 7.420601051313085e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024435114038323085,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02443511403832306,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.8426432405279397e-14,
+            "translation_m": 5.283537782461196e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005670069692128865,
+            "translation_m": 7.420601051320866e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024435114038323078,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02443511403832305,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.8426432405279397e-14,
+            "translation_m": 5.464440903385587e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005670069692128865,
+            "translation_m": 7.42060105131939e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02443511403832308,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02443511403832305,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 7.236998841711211e-15,
+            "translation_m": 4.331983474365633e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005670069692114517,
+            "translation_m": 7.42060105129565e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02443511403832308,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02443511403832305,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.4566500539574774e-14,
+            "translation_m": 4.960285488184426e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.005670069692094819,
+            "translation_m": 7.420601051279125e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024435114038323092,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024435114038323078,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 2,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.005670069692117798,
+          "translation_m": 7.42060105131019e-05
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024435114038323172,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.024435114038323172
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 3.87137013118491e-14,
+        "max_pairwise_translation_m": 6.453744008789858e-16
+      },
+      "steps": [
+        61,
+        81
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 3.0490422932944176e-14,
+          "translation_m": 4.908041330915741e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0015909316544381396,
+          "translation_m": 1.9735068110413082e-05
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.035339480916410995,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.03533948091641101,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 3.0490422932944176e-14,
+            "translation_m": 4.911963793114207e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0015909316544381396,
+            "translation_m": 1.973506811041857e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.035339480916411,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.03533948091641101,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 3.35099318564152e-14,
+            "translation_m": 5.395889369924693e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.001590931654423892,
+            "translation_m": 1.973506811004921e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.03533948091641101,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.03533948091641101,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.1274070792183524,
+            "translation_m": 0.007800116175277947
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.1273772720564643,
+            "translation_m": 0.007783764948392185
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 1,
+            "rmse_m": 0.035791362168797344,
+            "unique_target_nearest_neighbors": 15
+          },
+          "rmse_m": 0.035791362168797365,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.940917280350196e-14,
+            "translation_m": 4.776509981534352e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0015909316544412426,
+            "translation_m": 1.9735068110496457e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.03533948091641101,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.035339480916410995,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.9092246347652475,
+            "translation_m": 0.024799424523309126
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 2.9091549952198013,
+            "translation_m": 0.024779838284872794
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.035188585452396955,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.035188585452396955,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6391719557941729,
+            "translation_m": 0.03203458472452385
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.6391207703625603,
+            "translation_m": 0.03204819383040994
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03923151059818178,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.039231510598181765,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 3,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0015909316544502454,
+          "translation_m": 1.9735068110427434e-05
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.03533948091641117,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.03533948091641117
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 2.9092246347652626,
+        "max_pairwise_translation_m": 0.053566899083294546
+      },
+      "steps": [
+        61,
+        91
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 6.5202143029190065e-15,
+          "translation_m": 2.4316467374646806e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 4.131083087611477,
+          "translation_m": 0.038226149264971684
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 5,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 2,
+          "rmse_m": 0.03381514690157085,
+          "unique_target_nearest_neighbors": 14
+        },
+        "rmse_m": 0.03381514690157085,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 6.5202143029190065e-15,
+            "translation_m": 2.6193750069204537e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.131083087611477,
+            "translation_m": 0.0382261492649717
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 5,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03381514690157085,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03381514690157086,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 6.5202143029190065e-15,
+            "translation_m": 2.5438405243138006e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.131083087611477,
+            "translation_m": 0.038226149264971684
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 5,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03381514690157085,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03381514690157086,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 6.5202143029190065e-15,
+            "translation_m": 2.2247786310271853e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.131083087611477,
+            "translation_m": 0.0382261492649717
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 3,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03381514690157085,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03381514690157086,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 3.392367634259062,
+            "translation_m": 0.05291176657220065
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.7600512714488136,
+            "translation_m": 0.014703253406405147
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.04460639965606498,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.04460639965606498,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.7026244042274566e-14,
+            "translation_m": 4.575495538413633e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.131083087611474,
+            "translation_m": 0.038226149264971664
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03381514690157085,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03381514690157087,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.5790086709480375,
+            "translation_m": 0.06817280083958104
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.5988316157314537,
+            "translation_m": 0.030668625858978255
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.04320738514874515,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.04320738514874514,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 4,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 4.131083087611471,
+          "translation_m": 0.03822614926497185
+        },
+        "icp_iterations": 3,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 2,
+          "rmse_m": 0.03381514690157089,
+          "unique_target_nearest_neighbors": 14
+        },
+        "rmse_m": 0.03381514690157089
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 3.392367634259068,
+        "max_pairwise_translation_m": 0.06817280083958088
+      },
+      "steps": [
+        61,
+        101
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 1.6314029802020464e-14,
+          "translation_m": 5.790553994517298e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0037933582739094174,
+          "translation_m": 4.699606691743134e-05
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024717843110924585,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.024717843110924596,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6314029802020464e-14,
+            "translation_m": 6.343403684219066e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0037933582739094174,
+            "translation_m": 4.6996066917433693e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02471784311092459,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024717843110924596,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6314029802020464e-14,
+            "translation_m": 6.341932895784042e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0037933582739094174,
+            "translation_m": 4.699606691743028e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02471784311092459,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02471784311092459,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 5.804930010137447e-15,
+            "translation_m": 5.17264755023513e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0037933582739014754,
+            "translation_m": 4.69960669173719e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02471784311092459,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024717843110924582,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.59220913213169e-14,
+            "translation_m": 5.3783771849162e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.003793358273909472,
+            "translation_m": 4.6996066917422804e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024717843110924585,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024717843110924603,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 7.274480875540714e-15,
+            "translation_m": 3.6217520006270623e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0037933582738993595,
+            "translation_m": 4.699606691741523e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024717843110924582,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.024717843110924613,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 4.851268792744301e-14,
+            "translation_m": 1.0361284918225344e-15
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0037933582738602805,
+            "translation_m": 4.699606691660681e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.024717843110924554,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02471784311092458,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 2,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0037933582738961962,
+          "translation_m": 4.699606691738578e-05
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.024717843110924814,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.024717843110924814
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 6.383946030091516e-14,
+        "max_pairwise_translation_m": 1.0392890349287459e-15
+      },
+      "steps": [
+        71,
+        91
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 1.6668798417374572e-14,
+          "translation_m": 3.6766419500416906e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.001938299983666848,
+          "translation_m": 2.267084334546992e-05
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.036506971934315076,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.03650697193431506,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6668798417374572e-14,
+            "translation_m": 2.820579822434882e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.001938299983666848,
+            "translation_m": 2.2670843345468748e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.036506971934315076,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.036506971934315076,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 3.5925191927825695e-14,
+            "translation_m": 6.572244341231719e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0019382999836878119,
+            "translation_m": 2.2670843345777905e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.03650697193431507,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.03650697193431507,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.4833002289932655,
+            "translation_m": 0.00855532130572281
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.4841486460787097,
+            "translation_m": 0.008544235471989573
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.035952262434868335,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.035952262434868335,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6463693053906502e-14,
+            "translation_m": 3.091764417517797e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0019382999836668445,
+            "translation_m": 2.267084334547525e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.036506971934315076,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.03650697193431506,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 4.118979087275558,
+            "translation_m": 0.03434916332431969
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 4.119205039186402,
+            "translation_m": 0.034330511825334996
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 3,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03184154735242936,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.03184154735242936,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6996401750904027,
+            "translation_m": 0.033611533889303755
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 1.7004747756603014,
+            "translation_m": 0.03363289587304684
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 2,
+            "rmse_m": 0.03800830136193775,
+            "unique_target_nearest_neighbors": 14
+          },
+          "rmse_m": 0.038008301361937745,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 3,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.00193829998365466,
+          "translation_m": 2.2670843345315055e-05
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.03650697193431526,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.03650697193431526
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 4.118979087275562,
+        "max_pairwise_translation_m": 0.06737259450258729
+      },
+      "steps": [
+        71,
+        101
+      ]
+    },
+    {
+      "chain_start": {
+        "difference_from_identity_start": {
+          "rotation_deg": 1.8894809243281413e-14,
+          "translation_m": 6.545607955839815e-16
+        },
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0022546423358845076,
+          "translation_m": 2.636756211360139e-05
+        },
+        "error_type": null,
+        "factor_authorized": false,
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.023975434169922268,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.023975434169922264,
+        "seed": "chain",
+        "status": "DIAGNOSTIC_AVAILABLE"
+      },
+      "chain_start_has_lower_rmse_than_identity": true,
+      "fixed_offset_starts": [
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.8894809243281413e-14,
+            "translation_m": 5.396556058579183e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0022546423358845076,
+            "translation_m": 2.636756211360028e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.023975434169922268,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02397543416992227,
+          "seed": "tx_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.9028743983882538e-14,
+            "translation_m": 6.769618844592271e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.002254642335884546,
+            "translation_m": 2.6367562113602864e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02397543416992227,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.023975434169922257,
+          "seed": "tx_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.0594461583120212e-14,
+            "translation_m": 5.817447373991174e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.002254642335885081,
+            "translation_m": 2.636756211361704e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02397543416992227,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.023975434169922257,
+          "seed": "ty_plus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 1.6465684814753247e-14,
+            "translation_m": 7.852365502749273e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.002254642335887381,
+            "translation_m": 2.6367562113672737e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 1,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.023975434169922268,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.023975434169922257,
+          "seed": "ty_minus_10mm",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 8.622511531386855e-15,
+            "translation_m": 3.82040416594445e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.0022546423358848783,
+            "translation_m": 2.6367562113671192e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.02397543416992228,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.0239754341699223,
+          "seed": "yaw_plus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        },
+        {
+          "difference_from_identity_start": {
+            "rotation_deg": 2.216084129202213e-14,
+            "translation_m": 5.63805312171656e-16
+          },
+          "difference_from_short_chain": {
+            "rotation_deg": 0.002254642335866232,
+            "translation_m": 2.6367562113451306e-05
+          },
+          "error_type": null,
+          "factor_authorized": false,
+          "icp_iterations": 2,
+          "nearest_neighbor_topology": {
+            "duplicate_target_assignments": 0,
+            "rmse_m": 0.023975434169922268,
+            "unique_target_nearest_neighbors": 16
+          },
+          "rmse_m": 0.02397543416992228,
+          "seed": "yaw_minus_2deg",
+          "status": "DIAGNOSTIC_AVAILABLE"
+        }
+      ],
+      "hops": 2,
+      "identity_start": {
+        "difference_from_short_chain": {
+          "rotation_deg": 0.0022546423358876006,
+          "translation_m": 2.636756211384529e-05
+        },
+        "icp_iterations": 1,
+        "nearest_neighbor_topology": {
+          "duplicate_target_assignments": 0,
+          "rmse_m": 0.023975434169922438,
+          "unique_target_nearest_neighbors": 16
+        },
+        "rmse_m": 0.023975434169922438
+      },
+      "no_independent_pose_accuracy_or_factor_admission": true,
+      "seed_solution_spread": {
+        "available": 7,
+        "max_pairwise_rotation_deg": 3.1191577641185933e-14,
+        "max_pairwise_translation_m": 4.957124099613392e-16
+      },
+      "steps": [
+        81,
+        101
+      ]
+    }
+  ],
+  "pose_factors_authorized": 0,
+  "schema": "TRUST_ROBOT_L17_CHAIN_SEEDED_LONG_BASELINE_ICP_DIAGNOSTIC_V1",
+  "seed_variants_per_pair": 7,
+  "short_chain_seed_reuses_same_sensor_scans": true,
+  "two_derivations_identical": true,
+  "upstream_l15_sha256": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+  "upstream_l16_sha256": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf"
+}

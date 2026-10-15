@@ -5849,3 +5849,36 @@ Physical synchronization, independent ground truth, ATE/RPE,
 health labels and estimator-factor admission remain unverified.
 
 Next: L17 offline long-baseline registration ambiguity audit.
+
+## KIOS L17-L23 ambiguity robustness milestone — 2026-10-15
+
+The previous L10-L16 milestone restored six 16-return synthetic
+LiDAR scans, but longer-baseline direct registrations showed
+inconsistency with the composed shorter-range trajectory.
+
+L17-L19 investigated multiple initialization solutions, matching
+ambiguity, one-to-one assignments and inferred emitter association.
+
+L20 built a diagnostic-only eight-feature screen. L21 tested rule
+and evidence consistency. L22 recomputed 60 perturbed-cloud pair
+diagnostics without warning changes.
+
+L23 evaluated 11 structured perturbation scenarios covering 110
+pair evaluations. Five decisions changed, while several deliberate
+alterations remained unflagged.
+
+In particular, stale scan substitution removed one earlier warning.
+This demonstrates that the current diagnostic screen cannot be
+treated as a reliable physical fault detector.
+
+Evidence and source snapshots:
+
+experiments/isaacsim_v16_l17_l23_ambiguity_robustness_v1/
+
+Raw recordings remain on KIOS. No physical exposure sync,
+independent six-DoF ground truth, scientifically valid ATE/RPE,
+calibrated health labels or authorized estimator pose factors
+are established.
+
+Next: L24 sensor freshness/provenance and common-mode
+failure investigation, without changing the frozen frontend.
