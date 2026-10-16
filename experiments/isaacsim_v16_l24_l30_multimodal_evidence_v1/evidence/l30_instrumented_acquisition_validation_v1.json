@@ -1,0 +1,78 @@
+{
+  "adapter_sha256": "490f5627fec869b2fd4b4e4fd66e667bf18f7f403316c4f56b080d112c12e579",
+  "event_count": 272,
+  "frame_provenance": [
+    {
+      "count": 16,
+      "gmo_frame_id": 111,
+      "gmo_timestamp_ns_unqualified": 2833333481,
+      "lidar_file_sha256": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+      "raw_gmo_xyz_sha256": "ac7d27f2e164e75cd3f86abc7d82f9b604c2b97d77d29fc9128ec369547c12a6",
+      "step": 51
+    },
+    {
+      "count": 16,
+      "gmo_frame_id": 128,
+      "gmo_timestamp_ns_unqualified": 3000000156,
+      "lidar_file_sha256": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+      "raw_gmo_xyz_sha256": "fefc9cec5f9b776386fdc7e8d635be371423ff92cd0a1e3404e6d0ea9c021b67",
+      "step": 61
+    },
+    {
+      "count": 16,
+      "gmo_frame_id": 144,
+      "gmo_timestamp_ns_unqualified": 3166666831,
+      "lidar_file_sha256": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+      "raw_gmo_xyz_sha256": "9001ad0b64bfc53f96d5ec35f0001b1abc41e997acdb6f08b267c4f0f3d3dd67",
+      "step": 71
+    },
+    {
+      "count": 16,
+      "gmo_frame_id": 160,
+      "gmo_timestamp_ns_unqualified": 3333333507,
+      "lidar_file_sha256": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+      "raw_gmo_xyz_sha256": "f9ba47a5a8d36078e7d94b022317c1b5d9e7d733f35656f5a0a26404cac01cc8",
+      "step": 81
+    },
+    {
+      "count": 16,
+      "gmo_frame_id": 176,
+      "gmo_timestamp_ns_unqualified": 3500000182,
+      "lidar_file_sha256": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+      "raw_gmo_xyz_sha256": "d6dcc5c2ffa04833a9eb03670ae18198c6a1dc507817afe99059201e4786c349",
+      "step": 91
+    },
+    {
+      "count": 16,
+      "gmo_frame_id": 192,
+      "gmo_timestamp_ns_unqualified": 3666666857,
+      "lidar_file_sha256": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+      "raw_gmo_xyz_sha256": "b7fab7585dbfd00a7dd56b62160aec09d1d04762bf92ec383e990da64c849516",
+      "step": 101
+    }
+  ],
+  "health_labels_generated": 0,
+  "independent_6dof_reference_verified": false,
+  "instrumented_events_sha256": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+  "instrumented_manifest_sha256": "cd202b19dd86a1b00871c2ec55690cab30898b7120906d064390009363138d80",
+  "l27_contract_sha256": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+  "l29_preparation_receipt_sha256": "0577aa1513737b4f10619d5ea2e854ae1c2460352f5cb62577bebf082c026d0b",
+  "modality_counts": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "usd_pose": 130
+  },
+  "negative_controls_rejected": 6,
+  "new_synthetic_runtime_acquisition": true,
+  "pose_factors_authorized": 0,
+  "prepared_candidate_source_sha256": "993d21523afd54dca39ce6fcf27ba20d430324c5b7b5b9b25939521c0082bb78",
+  "previous_recordings_modified": false,
+  "runtime_capture_index_sha256": "910ef925c98121a068fee9cb3a6fe0ecd3e2778db75d1eeb2bd2cf996101ed92",
+  "runtime_capture_mode": "SIMULATOR_POST_CAPTURE_UNQUALIFIED",
+  "runtime_capture_summary_sha256": "9f0635a2d8d801c721b198c7840eb53abdbf5c4f4e1927beecc7a088fdea6a40",
+  "scene_sha256": "43b4ffe0f7af29e435203ac3aa8c2d4c4897434042f37e26586b124b2495d8cf",
+  "schema": "TRUST_ROBOT_L30_INSTRUMENTED_ISAAC_SIM_VALIDATION_V1",
+  "scientific_exposure_synchronization_verified": false,
+  "sensor_health_detection_validated": false
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_executes_simulator_in_this_phase": false,
+  "candidate_metadata_sha256": "f5196b9829189b0e8fadc5124274d63f2aefc68e68164af2dcb6f32c544155b4",
+  "candidate_scientifically_qualified": false,
+  "independent_ground_truth_verified": false,
+  "l27_acquisition_contract_sha256": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+  "original_acquisition_script_sha256": "7842740a5f8639ec843a14c180cf8da1f74a844f9500d04522f9da7cd94e4eae",
+  "original_run_directory": "/home/kios/TRUST_ROBOT_ALI/experiments/isaacsim_v16_l13_target_distance_run_v1",
+  "parent_git_commit": "45b54a9625ea4c834f4009f441973cf93ce0d6b3",
+  "physical_exposure_sync_verified": false,
+  "pilot_summary_sha256": "7374d63a50fb7e5808a0387ed685762929eef4502ab896512fd0beb6732c8a1b",
+  "pose_factors_authorized": 0,
+  "prepared_acquisition_script_sha256": "993d21523afd54dca39ce6fcf27ba20d430324c5b7b5b9b25939521c0082bb78",
+  "prepared_candidate_directory": "/home/kios/TRUST_ROBOT_ALI/experiments/isaacsim_v16_l29_instrumented_candidate_v1",
+  "runtime_adapter_sha256": "490f5627fec869b2fd4b4e4fd66e667bf18f7f403316c4f56b080d112c12e579",
+  "runtime_integration_executed": false,
+  "scene_sha256": "43b4ffe0f7af29e435203ac3aa8c2d4c4897434042f37e26586b124b2495d8cf",
+  "schema": "TRUST_ROBOT_L29_RUNTIME_INTEGRATION_PREPARATION_V1",
+  "source_patch_scope": [
+    "Relocate candidate E root",
+    "Add post-capture metadata export before success marker"
+  ]
+}

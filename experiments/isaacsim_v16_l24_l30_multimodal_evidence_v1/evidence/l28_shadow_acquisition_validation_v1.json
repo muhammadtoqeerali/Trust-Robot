@@ -1,0 +1,21 @@
+{
+  "event_count": 272,
+  "event_counts_by_modality": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "usd_pose": 130
+  },
+  "events_file_sha256": "957e13ec10411631cbeaaeb8759907363bfa0e3200f9f9b46caf49adaf2bc082",
+  "health_labels_generated": 0,
+  "implementation_sha256": "e8e95f0c8a60c50bfce396b8f64fd938bcd4bfa26198fee1855848024b44530f",
+  "in_memory_negative_controls_rejected": 6,
+  "independent_6dof_reference_verified": false,
+  "manifest_file_sha256": "5fc7ce49d00a9a8ba4b1a4b770482650a755c4aa49df572d77f7bafc306aec7a",
+  "new_isaac_sim_capture_performed": false,
+  "physical_exposure_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "raw_recordings_unchanged": true,
+  "schema": "TRUST_ROBOT_L28_SHADOW_ACQUISITION_VALIDATION_V1",
+  "two_derivations_identical": true
+}

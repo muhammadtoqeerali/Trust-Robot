@@ -1,0 +1,35 @@
+{
+  "capture_mode": "FROZEN_RECORDED_REPLAY_NOT_NEW_CAPTURE",
+  "event_count": 272,
+  "event_counts_by_modality": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "usd_pose": 130
+  },
+  "event_file": "l28_shadow_acquisition_events_v1.jsonl",
+  "event_file_sha256": "957e13ec10411631cbeaaeb8759907363bfa0e3200f9f9b46caf49adaf2bc082",
+  "evidence_status": {
+    "independent_6dof_reference": false,
+    "independent_payload_attestation": false,
+    "pose_factors_authorized": 0,
+    "qualified_cross_sensor_sync": false,
+    "qualified_rig_extrinsics": false,
+    "qualified_sensor_exposure_timing": false,
+    "sensor_health_labels_authorized": false
+  },
+  "input_file_sha256": {
+    "capture_index": "910ef925c98121a068fee9cb3a6fe0ecd3e2778db75d1eeb2bd2cf996101ed92",
+    "imu_series": "c0d1ee8db2ad2a149ce7028a247649852bba3f8dd62461a177ae2e847e2456cb",
+    "runtime_summary": "9f0635a2d8d801c721b198c7840eb53abdbf5c4f4e1927beecc7a088fdea6a40",
+    "usd_pose_series": "0c7cd562bfed36a432b13c1b56dca7530e0f3d02cebeccee0895f41a1efc2a1b"
+  },
+  "run_id": "KIOS_L13_RECORDED_SHADOW_V1",
+  "schema": "TRUST_ROBOT_L28_SHADOW_ACQUISITION_MANIFEST_V1",
+  "upstream_sha256": {
+    "contract": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l24": "d12e4cc58746b7721a2fb76e7dfc5534cac68c229829968ea751bd4c66dd694a",
+    "l27": "5afc8a89c28af07c3a3dd353d8d0b19eefb7a336b52b250ee627a077ec57fa3a"
+  }
+}

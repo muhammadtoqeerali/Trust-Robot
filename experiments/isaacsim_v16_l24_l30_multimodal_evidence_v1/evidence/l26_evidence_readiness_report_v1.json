@@ -1,0 +1,499 @@
+{
+  "adversarial_promotion_challenges": [
+    {
+      "challenge": "baseline_lidar_pose_factor_admission",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "lidar_pose_factor_admission",
+        "ignored_untrusted_claims": false,
+        "missing_requirements": [
+          "physical_correspondence_validation",
+          "qualified_exposure_synchronization",
+          "calibrated_factor_uncertainty",
+          "verified_extrinsic_transform"
+        ]
+      }
+    },
+    {
+      "challenge": "baseline_scientific_6dof_accuracy_claim",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "scientific_6dof_accuracy_claim",
+        "ignored_untrusted_claims": false,
+        "missing_requirements": [
+          "independent_6dof_reference",
+          "qualified_exposure_synchronization",
+          "verified_extrinsic_transform",
+          "heldout_6dof_accuracy_evaluation"
+        ]
+      }
+    },
+    {
+      "challenge": "baseline_supervised_sensor_health_labels",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "supervised_sensor_health_labels",
+        "ignored_untrusted_claims": false,
+        "missing_requirements": [
+          "adjudicated_sensor_failure_labels",
+          "independent_source_authenticity",
+          "validated_detection_error_rates"
+        ]
+      }
+    },
+    {
+      "challenge": "baseline_live_sensor_freshness_admission",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "live_sensor_freshness_admission",
+        "ignored_untrusted_claims": false,
+        "missing_requirements": [
+          "independent_source_authenticity",
+          "trusted_hardware_exposure_time",
+          "qualified_exposure_synchronization",
+          "independently_verified_replay_monitor"
+        ]
+      }
+    },
+    {
+      "challenge": "forged_independent_pose",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "scientific_6dof_accuracy_claim",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": [
+          "independent_6dof_reference",
+          "qualified_exposure_synchronization",
+          "verified_extrinsic_transform",
+          "heldout_6dof_accuracy_evaluation"
+        ]
+      }
+    },
+    {
+      "challenge": "usd_as_ground_truth",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "scientific_6dof_accuracy_claim",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": [
+          "independent_6dof_reference",
+          "qualified_exposure_synchronization",
+          "verified_extrinsic_transform",
+          "heldout_6dof_accuracy_evaluation"
+        ]
+      }
+    },
+    {
+      "challenge": "rehashed_payload_as_authenticity",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "live_sensor_freshness_admission",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": [
+          "independent_source_authenticity",
+          "trusted_hardware_exposure_time",
+          "qualified_exposure_synchronization",
+          "independently_verified_replay_monitor"
+        ]
+      }
+    },
+    {
+      "challenge": "read_step_as_exposure",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "live_sensor_freshness_admission",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": [
+          "independent_source_authenticity",
+          "trusted_hardware_exposure_time",
+          "qualified_exposure_synchronization",
+          "independently_verified_replay_monitor"
+        ]
+      }
+    },
+    {
+      "challenge": "unflagged_pair_as_factor",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "lidar_pose_factor_admission",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": [
+          "physical_correspondence_validation",
+          "qualified_exposure_synchronization",
+          "calibrated_factor_uncertainty",
+          "verified_extrinsic_transform"
+        ]
+      }
+    },
+    {
+      "challenge": "synthetic_fault_as_health_label",
+      "result": {
+        "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+        "factor_authorized": false,
+        "gate": "supervised_sensor_health_labels",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": [
+          "adjudicated_sensor_failure_labels",
+          "independent_source_authenticity",
+          "validated_detection_error_rates"
+        ]
+      }
+    },
+    {
+      "challenge": "unknown_policy",
+      "result": {
+        "decision": "DENIED_UNKNOWN_GATE",
+        "factor_authorized": false,
+        "gate": "unrecognized_request",
+        "ignored_untrusted_claims": true,
+        "missing_requirements": []
+      }
+    }
+  ],
+  "diagnostic_gate_is_not_estimator_integration": true,
+  "full_6dof_ground_truth_available": false,
+  "hash_mismatch_does_not_prove_sensor_fault": true,
+  "implementation_sha256": "3d41c9a33cc38fb5a733f95ea2c1da3aa1e5e4c99345aef1ee8b571545a06cda",
+  "independent_exposure_sync_verified": false,
+  "observed_evidence_only_no_real_time_qualification": true,
+  "pose_factors_authorized": 0,
+  "readiness_decisions": [
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "lidar_pose_factor_admission",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "physical_correspondence_validation",
+        "qualified_exposure_synchronization",
+        "calibrated_factor_uncertainty",
+        "verified_extrinsic_transform"
+      ]
+    },
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "scientific_6dof_accuracy_claim",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "independent_6dof_reference",
+        "qualified_exposure_synchronization",
+        "verified_extrinsic_transform",
+        "heldout_6dof_accuracy_evaluation"
+      ]
+    },
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "supervised_sensor_health_labels",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "adjudicated_sensor_failure_labels",
+        "independent_source_authenticity",
+        "validated_detection_error_rates"
+      ]
+    },
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "live_sensor_freshness_admission",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "independent_source_authenticity",
+        "trusted_hardware_exposure_time",
+        "qualified_exposure_synchronization",
+        "independently_verified_replay_monitor"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "Synthetic perturbations are not adjudicated physical health labels",
+      "requirement": "adjudicated_sensor_failure_labels",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": true,
+      "reason": "Deterministic perturbation tests do not establish calibrated factor covariance",
+      "requirement": "calibrated_factor_uncertainty",
+      "status": "NOT_EVIDENCED"
+    },
+    {
+      "not_proven_for_entire_project": true,
+      "reason": "No independent held-out 6DoF accuracy evaluation in reviewed evidence",
+      "requirement": "heldout_6dof_accuracy_evaluation",
+      "status": "NOT_EVIDENCED"
+    },
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "Scripted USD motion is not an independent reference",
+      "requirement": "independent_6dof_reference",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "Local recording hashes are not independently attested source provenance",
+      "requirement": "independent_source_authenticity",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": true,
+      "reason": "Sequence-only freshness checks have demonstrated blind spots",
+      "requirement": "independently_verified_replay_monitor",
+      "status": "NOT_EVIDENCED"
+    },
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "Inferred beam indices are not verified physical surface matches",
+      "requirement": "physical_correspondence_validation",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "L24/L25 explicitly deny verified physical exposure synchronization",
+      "requirement": "qualified_exposure_synchronization",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "Read-step times and GMO timestamps are not qualified exposure times",
+      "requirement": "trusted_hardware_exposure_time",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": false,
+      "reason": "False-positive and false-negative rates have not been estimated",
+      "requirement": "validated_detection_error_rates",
+      "status": "UNQUALIFIED"
+    },
+    {
+      "not_proven_for_entire_project": true,
+      "reason": "No admissible cross-sensor extrinsic certification in reviewed reports",
+      "requirement": "verified_extrinsic_transform",
+      "status": "NOT_EVIDENCED"
+    }
+  ],
+  "scenario_analysis": {
+    "change_in_warning_is_not_detection_success": true,
+    "l23_total_decision_changes": 5,
+    "l24_incoming_sequence_challenges_flagged": 8,
+    "l24_pinned_challenges_flagged": 11,
+    "l25_motion_flag_counts_by_threshold_m": {
+      "0.01": 5,
+      "0.02": 3,
+      "0.04": 1
+    },
+    "l25_sequence_scenarios_flagged": 1,
+    "motion_thresholds_are_uncalibrated": true,
+    "no_observed_reaction_scenarios_by_threshold_m": {
+      "0.01": [
+        "single_return_20mm_101",
+        "nonrigid_shear_3pct",
+        "nonrigid_shear_15pct",
+        "coherent_translation_80mm",
+        "point_order_changed_mapping_corrected"
+      ],
+      "0.02": [
+        "single_return_20mm_101",
+        "nonrigid_shear_3pct",
+        "nonrigid_shear_15pct",
+        "coherent_rotation_3deg",
+        "coherent_translation_80mm",
+        "point_order_changed_mapping_corrected"
+      ],
+      "0.04": [
+        "single_return_20mm_101",
+        "nonrigid_shear_3pct",
+        "nonrigid_shear_15pct",
+        "coherent_rotation_3deg",
+        "coherent_translation_80mm",
+        "point_order_changed_mapping_corrected"
+      ]
+    },
+    "point_storage_reordering_is_not_a_sensor_failure": true,
+    "scenario_comparison": [
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "single_return_20mm_101",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": false,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 1,
+        "scenario": "single_return_80mm_101",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": true,
+          "0.02": true,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 1,
+        "scenario": "single_return_80mm_91",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": true,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "nonrigid_shear_3pct",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": false,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "nonrigid_shear_15pct",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": false,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "coherent_rotation_3deg",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": true,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "coherent_rotation_10deg",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": true,
+          "0.02": true,
+          "0.04": true
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "coherent_translation_80mm",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": false,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": true,
+        "incoming_sequence_review": true,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 2,
+        "scenario": "stale_scan_101_from_91",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": true,
+          "0.02": true,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": false,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": false,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 0,
+        "scenario": "point_order_changed_mapping_corrected",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": false,
+          "0.02": false,
+          "0.04": false
+        }
+      },
+      {
+        "emitter_ordered_fingerprint_changed": true,
+        "frozen_snapshot_review": true,
+        "geometry_pointset_changed": false,
+        "incoming_sequence_review": false,
+        "internal_diagnostic_reactions_not_detection_labels": true,
+        "l23_screen_decisions_changed": 1,
+        "scenario": "point_order_changed_mapping_stale",
+        "scripted_motion_review_at_threshold_m": {
+          "0.01": false,
+          "0.02": false,
+          "0.04": false
+        }
+      }
+    ],
+    "scenario_count": 11
+  },
+  "schema": "TRUST_ROBOT_L26_EVIDENCE_READINESS_AND_COMMON_MODE_GAP_AUDIT_V1",
+  "source_sha256": {
+    "s23": "82a75b02458df8c3168bd7a3c25f84db039c48bb602fda5bded003d6377a5f4e",
+    "s24": "6f9f6b60d168b78fa2614fe56812944b7ada8853a447c6833f1a5cadf014a05d",
+    "s25": "34c377491800def2f19d3f1e7be55bcf5091dc2f24845fd5f0bc0d7079ff7539"
+  },
+  "supervised_health_labels_generated": 0,
+  "two_derivations_identical": true,
+  "unflagged_does_not_mean_healthy_or_accurate": true,
+  "upstream_sha256": {
+    "l16": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+    "l19": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "l20": "e93519d92257180bcfca3ca8b0aca781da89bcb000612c02d1f3202a4c1cbae6",
+    "l23": "dd5d970df2caafedbe24c43f45e95cbd2551563c942edbf688f98a2d04752d68",
+    "l24": "d12e4cc58746b7721a2fb76e7dfc5534cac68c229829968ea751bd4c66dd694a",
+    "l25": "a138006ee414b074bfe2d1b276ed3ca29fc4413d75b9fa294c1e3ddf403747cc"
+  }
+}

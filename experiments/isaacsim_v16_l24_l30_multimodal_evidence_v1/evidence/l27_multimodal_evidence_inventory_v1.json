@@ -1,0 +1,196 @@
+{
+  "all_original_recordings_preserved": true,
+  "contract_filename": "l27_acquisition_contract_v1.json",
+  "contract_sha256": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+  "cross_sensor_exposure_sync_claim": false,
+  "existing_recording_inventory": {
+    "camera": {
+      "exposure_timing_qualified": false,
+      "frames": 6,
+      "intrinsic_calibration_independently_verified": false,
+      "minimum_nonblank_fraction": 0.9455729166666667,
+      "shape": [
+        120,
+        160,
+        4
+      ],
+      "source_authenticity_verified": false,
+      "unique_payload_hashes": 6
+    },
+    "imu": {
+      "bias_noise_calibration_verified": false,
+      "finite_angular_velocity_rows": 130,
+      "finite_linear_acceleration_rows": 130,
+      "finite_orientation_rows": 130,
+      "finite_reported_timestamp_rows": 130,
+      "reported_timestamps_strictly_increasing": true,
+      "rows": 130,
+      "timestamp_units_independently_qualified": false
+    },
+    "lidar": {
+      "frames": 6,
+      "physical_correspondence_validated": false,
+      "raw_gmo_timestamp_count": 6,
+      "raw_timestamp_qualified_as_exposure": false,
+      "selected_return_counts": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "unique_pinned_cloud_hashes": 6
+    },
+    "recording_scope": {
+      "130_scripted_imu_and_pose_steps": true,
+      "calibrated_sensor_health_labels": false,
+      "independent_multimodal_synchronization": false,
+      "scientific_6dof_reference": false,
+      "six_selected_synthetic_observations": true
+    },
+    "selected_capture_provenance": [
+      {
+        "camera_nonblank_fraction": 0.9999479166666667,
+        "camera_read_step_time_s": 1.8000000938773155,
+        "camera_sha256_local_baseline": "2cb10aa01bb05b6804cd825441188980d80cf03b9ffa68c3c1fc50b893724164",
+        "camera_shape": [
+          120,
+          160,
+          4
+        ],
+        "gmo_frame_id": 112,
+        "gmo_timestamp_ns_unqualified": 2833333481,
+        "independent_source_authenticity_verified": false,
+        "lidar_read_step_time_s": 1.8000000938773155,
+        "lidar_return_count": 16,
+        "lidar_sha256_pinned": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+        "physical_exposure_sync_verified": false,
+        "qualified_xyz_sha256_pinned": "39cb432b5634cae0668b6b7682f6170ee35f4486d5a3c9f3850a38197d8195f6",
+        "step": 51
+      },
+      {
+        "camera_nonblank_fraction": 0.9961458333333333,
+        "camera_read_step_time_s": 1.9666667692363262,
+        "camera_sha256_local_baseline": "45329291459e53779da67090bbc57bb37f743452b80118b3057ee1e0b4f2448f",
+        "camera_shape": [
+          120,
+          160,
+          4
+        ],
+        "gmo_frame_id": 128,
+        "gmo_timestamp_ns_unqualified": 3000000156,
+        "independent_source_authenticity_verified": false,
+        "lidar_read_step_time_s": 1.9666667692363262,
+        "lidar_return_count": 16,
+        "lidar_sha256_pinned": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+        "physical_exposure_sync_verified": false,
+        "qualified_xyz_sha256_pinned": "fefc9cec5f9b776386fdc7e8d635be371423ff92cd0a1e3404e6d0ea9c021b67",
+        "step": 61
+      },
+      {
+        "camera_nonblank_fraction": 0.9800520833333334,
+        "camera_read_step_time_s": 2.133333444595337,
+        "camera_sha256_local_baseline": "cc7b3f1dc5366bbd3fa78756567ce121441f399aa6e1fc8ad7e110d3a98d6338",
+        "camera_shape": [
+          120,
+          160,
+          4
+        ],
+        "gmo_frame_id": 144,
+        "gmo_timestamp_ns_unqualified": 3166666831,
+        "independent_source_authenticity_verified": false,
+        "lidar_read_step_time_s": 2.133333444595337,
+        "lidar_return_count": 16,
+        "lidar_sha256_pinned": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+        "physical_exposure_sync_verified": false,
+        "qualified_xyz_sha256_pinned": "9001ad0b64bfc53f96d5ec35f0001b1abc41e997acdb6f08b267c4f0f3d3dd67",
+        "step": 71
+      },
+      {
+        "camera_nonblank_fraction": 0.9617708333333334,
+        "camera_read_step_time_s": 2.3000001199543476,
+        "camera_sha256_local_baseline": "9ebb5bed7a6df674b9b84c07c7bd223dbba147aa2524a4241eec1518a1a15eab",
+        "camera_shape": [
+          120,
+          160,
+          4
+        ],
+        "gmo_frame_id": 160,
+        "gmo_timestamp_ns_unqualified": 3333333507,
+        "independent_source_authenticity_verified": false,
+        "lidar_read_step_time_s": 2.3000001199543476,
+        "lidar_return_count": 16,
+        "lidar_sha256_pinned": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+        "physical_exposure_sync_verified": false,
+        "qualified_xyz_sha256_pinned": "f9ba47a5a8d36078e7d94b022317c1b5d9e7d733f35656f5a0a26404cac01cc8",
+        "step": 81
+      },
+      {
+        "camera_nonblank_fraction": 0.95546875,
+        "camera_read_step_time_s": 2.4666667953133583,
+        "camera_sha256_local_baseline": "c42eaf00d39e509359ac947cb36cd0e1c46fead33c3be8ede918534f3a088c22",
+        "camera_shape": [
+          120,
+          160,
+          4
+        ],
+        "gmo_frame_id": 176,
+        "gmo_timestamp_ns_unqualified": 3500000182,
+        "independent_source_authenticity_verified": false,
+        "lidar_read_step_time_s": 2.4666667953133583,
+        "lidar_return_count": 16,
+        "lidar_sha256_pinned": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+        "physical_exposure_sync_verified": false,
+        "qualified_xyz_sha256_pinned": "d6dcc5c2ffa04833a9eb03670ae18198c6a1dc507817afe99059201e4786c349",
+        "step": 91
+      },
+      {
+        "camera_nonblank_fraction": 0.9455729166666667,
+        "camera_read_step_time_s": 2.633333470672369,
+        "camera_sha256_local_baseline": "b7c8eb9b968bb36f036a68e2af4945c486774c0a197449d27a5a88a50b129fa4",
+        "camera_shape": [
+          120,
+          160,
+          4
+        ],
+        "gmo_frame_id": 192,
+        "gmo_timestamp_ns_unqualified": 3666666857,
+        "independent_source_authenticity_verified": false,
+        "lidar_read_step_time_s": 2.633333470672369,
+        "lidar_return_count": 16,
+        "lidar_sha256_pinned": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+        "physical_exposure_sync_verified": false,
+        "qualified_xyz_sha256_pinned": "b7fab7585dbfd00a7dd56b62160aec09d1d04762bf92ec383e990da64c849516",
+        "step": 101
+      }
+    ],
+    "source_hashes": {
+      "capture_index": "910ef925c98121a068fee9cb3a6fe0ecd3e2778db75d1eeb2bd2cf996101ed92",
+      "imu_series": "c0d1ee8db2ad2a149ce7028a247649852bba3f8dd62461a177ae2e847e2456cb",
+      "runtime_summary": "9f0635a2d8d801c721b198c7840eb53abdbf5c4f4e1927beecc7a088fdea6a40",
+      "usd_pose_series": "0c7cd562bfed36a432b13c1b56dca7530e0f3d02cebeccee0895f41a1efc2a1b"
+    },
+    "usd_pose": {
+      "base_displacement_m": 0.516,
+      "base_lidar_offset_max_drift_m": 5.551115123125783e-17,
+      "independent_physical_6dof_ground_truth": false,
+      "median_scripted_step_s": 0.01666666753590107,
+      "rows": 130
+    }
+  },
+  "health_labels_generated": 0,
+  "implementation_sha256": "55db714512563a2631b1b68548ca03bb1f4c9e0248486f6fe43a64b5308d5a80",
+  "independent_ground_truth_claim": false,
+  "inventory_rederived_identically": true,
+  "no_new_sensor_acquisition_performed": true,
+  "pose_factors_authorized": 0,
+  "readiness_gates_approved": 0,
+  "schema": "TRUST_ROBOT_L27_MULTIMODAL_EXISTING_EVIDENCE_INVENTORY_V1",
+  "scientific_requirements_unqualified": 11,
+  "upstream_sha256": {
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l24": "d12e4cc58746b7721a2fb76e7dfc5534cac68c229829968ea751bd4c66dd694a",
+    "l26": "e60b16ebf9770bf19fd3f4a642255edace082fab0071add61bd5bffe840dc41e"
+  }
+}

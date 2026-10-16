@@ -119,3 +119,23 @@ Keep working phase by phase: generate one guarded implementation,
 have the user run it on KIOS, review its full output, and commit only
 at substantive validated milestones. Never change frozen raw files
 or admit pose factors without the established scientific evidence.
+
+## KIOS L24-L30 multimodal evidence checkpoint (2026-10-16)
+
+Read `experiments/isaacsim_v16_l24_l30_multimodal_evidence_v1/README.md`
+and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_L24_L30_MULTIMODAL_EVIDENCE_V1.md`.
+
+L24-L26 exposed provenance/common-mode blind spots and denied
+all scientifically unqualified estimator/health admissions.
+L27-L29 prepared evidence contracts, a shadow event envelope,
+and an instrumented candidate. L30 acquired fresh synthetic
+camera/LiDAR/IMU/scripted pose evidence with a validated
+272-event provenance envelope and six negative controls.
+
+L30 is a successful guarded engineering capture, not
+verified physical synchronization or independent ground truth.
+No pose factors or health labels are authorized.
+
+Next: L31 offline provenance and measurement-time assessment.
+Never rerun L30 merely to validate this archive.
+The KIOS and iot4care workstations are distinct.

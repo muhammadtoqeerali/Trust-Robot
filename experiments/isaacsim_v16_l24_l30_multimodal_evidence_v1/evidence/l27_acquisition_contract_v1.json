@@ -1,0 +1,215 @@
+{
+  "acquisition_stages": [
+    {
+      "completed": false,
+      "objective": "Record independent acquisition provenance",
+      "required_outputs": [
+        "Unmodified per-sensor payload hashes",
+        "Sensor identity and frame sequence",
+        "Clock-domain identification",
+        "Acquisition-side immutable manifest"
+      ],
+      "stage": "A"
+    },
+    {
+      "completed": false,
+      "objective": "Measure exposure timing and calibrations",
+      "required_outputs": [
+        "Defined camera and LiDAR exposure times",
+        "IMU timestamp clock semantics",
+        "Measured clock alignment uncertainty",
+        "Verified camera-LiDAR-IMU extrinsics"
+      ],
+      "stage": "B"
+    },
+    {
+      "completed": false,
+      "objective": "Acquire independent six-DoF reference",
+      "required_outputs": [
+        "Reference trajectory with orientation",
+        "Reference measurement uncertainty",
+        "Reference-to-sensor time alignment",
+        "Verified physical correspondences"
+      ],
+      "stage": "C"
+    },
+    {
+      "completed": false,
+      "objective": "Validate localization and health detection",
+      "required_outputs": [
+        "Held-out evaluation recordings",
+        "Adjudicated fault and healthy controls",
+        "Factor covariance calibration",
+        "Six-DoF and detection error evaluation"
+      ],
+      "stage": "D"
+    }
+  ],
+  "current_readiness_denials": [
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "lidar_pose_factor_admission",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "physical_correspondence_validation",
+        "qualified_exposure_synchronization",
+        "calibrated_factor_uncertainty",
+        "verified_extrinsic_transform"
+      ]
+    },
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "scientific_6dof_accuracy_claim",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "independent_6dof_reference",
+        "qualified_exposure_synchronization",
+        "verified_extrinsic_transform",
+        "heldout_6dof_accuracy_evaluation"
+      ]
+    },
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "supervised_sensor_health_labels",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "adjudicated_sensor_failure_labels",
+        "independent_source_authenticity",
+        "validated_detection_error_rates"
+      ]
+    },
+    {
+      "decision": "DENIED_INSUFFICIENT_EVIDENCE",
+      "factor_authorized": false,
+      "gate": "live_sensor_freshness_admission",
+      "ignored_untrusted_claims": false,
+      "missing_requirements": [
+        "independent_source_authenticity",
+        "trusted_hardware_exposure_time",
+        "qualified_exposure_synchronization",
+        "independently_verified_replay_monitor"
+      ]
+    }
+  ],
+  "estimator_pose_factors_authorized": false,
+  "existing_recordings_must_remain_unchanged": true,
+  "independent_6dof_ground_truth_qualified": false,
+  "physical_timing_qualified": false,
+  "raw_recordings_must_remain_local": true,
+  "required_modalities": [
+    "camera",
+    "lidar",
+    "imu",
+    "independent_6dof_reference"
+  ],
+  "required_reference_fields": [
+    "run_id",
+    "reference_system_id",
+    "reference_timestamp_raw",
+    "reference_clock_domain",
+    "reference_frame_id",
+    "position_xyz_m",
+    "orientation_quaternion_wxyz",
+    "reference_uncertainty",
+    "reference_calibration_reference"
+  ],
+  "required_sensor_fields": [
+    "run_id",
+    "sensor_id",
+    "sensor_modality",
+    "sensor_frame_id",
+    "sequence_number",
+    "payload_sha256",
+    "sensor_timestamp_raw",
+    "sensor_clock_domain",
+    "exposure_time_definition",
+    "reference_frame_id",
+    "calibration_version",
+    "provenance_attestation_reference"
+  ],
+  "schema": "TRUST_ROBOT_L27_FUTURE_MULTIMODAL_ACQUISITION_CONTRACT_V1",
+  "scientific_requirements": [
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "failure_adjudications.jsonl",
+      "requirement": "adjudicated_sensor_failure_labels"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "NOT_EVIDENCED",
+      "proposed_future_artifact": "factor_uncertainty_calibration.json",
+      "requirement": "calibrated_factor_uncertainty"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "NOT_EVIDENCED",
+      "proposed_future_artifact": "heldout_localization_evaluation.json",
+      "requirement": "heldout_6dof_accuracy_evaluation"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "independent_reference_poses.jsonl",
+      "requirement": "independent_6dof_reference"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "capture_provenance_attestation.json",
+      "requirement": "independent_source_authenticity"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "NOT_EVIDENCED",
+      "proposed_future_artifact": "replay_monitor_validation.json",
+      "requirement": "independently_verified_replay_monitor"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "physical_correspondence_audit.json",
+      "requirement": "physical_correspondence_validation"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "clock_alignment_validation.json",
+      "requirement": "qualified_exposure_synchronization"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "exposure_clock_evidence.json",
+      "requirement": "trusted_hardware_exposure_time"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "UNQUALIFIED",
+      "proposed_future_artifact": "heldout_detection_evaluation.json",
+      "requirement": "validated_detection_error_rates"
+    },
+    {
+      "currently_independently_qualified": false,
+      "independent_validation_required": true,
+      "previous_status": "NOT_EVIDENCED",
+      "proposed_future_artifact": "rig_extrinsic_calibration.json",
+      "requirement": "verified_extrinsic_transform"
+    }
+  ],
+  "sensor_health_labels_authorized": false,
+  "status": "DESIGN_ONLY_NOT_AN_EXECUTED_ACQUISITION"
+}

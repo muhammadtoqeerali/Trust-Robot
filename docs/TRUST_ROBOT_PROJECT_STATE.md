@@ -5882,3 +5882,39 @@ are established.
 
 Next: L24 sensor freshness/provenance and common-mode
 failure investigation, without changing the frozen frontend.
+
+## KIOS L24-L30 multimodal evidence update (2026-10-16)
+
+Archive:
+`experiments/isaacsim_v16_l24_l30_multimodal_evidence_v1/`
+
+L24-L25: adversarial provenance/freshness and common-mode
+diagnostics exposed failures of sequence-only and
+scripted-motion comparisons.
+
+L26: zero of eleven evidence requirements independently
+qualified; four readiness gates denied.
+
+L27: offline six-camera/six-LiDAR/130-IMU/130-scripted-pose
+inventory and prospective acquisition contract.
+
+L28: 272-event shadow envelope on earlier recordings.
+L29: instrumented candidate and adapter dry-run.
+L30: guarded fresh synthetic Isaac Sim acquisition,
+six camera frames, six 16-return LiDAR scans,
+130 IMU rows, 130 scripted USD pose rows and 272
+metadata events. Six adversarial controls passed.
+
+The Phase-3 physical-data timing/reference gates remain
+blocked. The historical 344 PASS unit-test statement above
+has not been rerun as part of this checkpoint.
+
+Cross-sensor physical exposure sync: NOT VERIFIED.
+Independent physical 6DoF reference: NOT VERIFIED.
+Physical sensor equivalence: NOT VERIFIED.
+Qualified localization pose factors: ZERO.
+Supervised sensor-health labels: ZERO.
+
+Next milestone: L31 offline assessment of source authenticity,
+measurement-event timing semantics, replay detection and
+evidence independence.

@@ -1,0 +1,282 @@
+{
+  "baseline_context": {
+    "baseline_lidar_unique_payload_count": 6,
+    "camera_payload_hashes_self_baselined_not_independently_attested": true,
+    "capture_index_sha256": "910ef925c98121a068fee9cb3a6fe0ecd3e2778db75d1eeb2bd2cf996101ed92",
+    "gmo_timestamps_unqualified_as_physical_exposure_times": true,
+    "imu_jsonl_sha256": "c0d1ee8db2ad2a149ce7028a247649852bba3f8dd62461a177ae2e847e2456cb",
+    "observed_zero_raw_return_steps": [
+      92,
+      102
+    ],
+    "pose_jsonl_sha256": "0c7cd562bfed36a432b13c1b56dca7530e0f3d02cebeccee0895f41a1efc2a1b",
+    "recorded_frame_id_gaps_allowed": true,
+    "recorded_imu_rows": 130,
+    "recorded_usd_pose_rows": 130,
+    "selected_capture_steps": [
+      51,
+      61,
+      71,
+      81,
+      91,
+      101
+    ],
+    "verified_cross_sensor_exposure_sync": false,
+    "zero_return_mechanism_verified": false
+  },
+  "camera_hashes_independently_attested": false,
+  "challenge_count": 11,
+  "challenges": [
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "lidar_payload_replay_fresh_header",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "CONSECUTIVE_IDENTICAL_LIDAR_CONTENT_REVIEW"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "CONSECUTIVE_IDENTICAL_LIDAR_CONTENT_REVIEW",
+          "PINNED_LIDAR_FILE_HASH_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "lidar_payload_replay_old_header",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "CONSECUTIVE_IDENTICAL_LIDAR_CONTENT_REVIEW",
+          "NONINCREASING_GMO_FRAME_ID",
+          "NONINCREASING_GMO_TIMESTAMP"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "CONSECUTIVE_IDENTICAL_LIDAR_CONTENT_REVIEW",
+          "NONINCREASING_GMO_FRAME_ID",
+          "NONINCREASING_GMO_TIMESTAMP",
+          "PINNED_GMO_FRAME_ID_MISMATCH",
+          "PINNED_GMO_TIMESTAMP_MISMATCH",
+          "PINNED_LIDAR_FILE_HASH_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "camera_payload_replay",
+      "incoming_sequence_check": {
+        "decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+        "pose_factor_authorized": false,
+        "trigger_codes": []
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "LOCAL_BASELINE_CAMERA_FILE_HASH_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "gmo_timestamp_rewind",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "NONINCREASING_GMO_TIMESTAMP"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "NONINCREASING_GMO_TIMESTAMP",
+          "PINNED_GMO_TIMESTAMP_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "gmo_frame_id_rewind",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "NONINCREASING_GMO_FRAME_ID"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "NONINCREASING_GMO_FRAME_ID",
+          "PINNED_GMO_FRAME_ID_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "out_of_order_packet",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "CAPTURE_STEP_SEQUENCE_MISMATCH",
+          "NONINCREASING_CAPTURE_STEP",
+          "NONINCREASING_GMO_FRAME_ID",
+          "NONINCREASING_GMO_TIMESTAMP"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "CAPTURE_STEP_SEQUENCE_MISMATCH",
+          "LOCAL_BASELINE_CAMERA_FILE_HASH_MISMATCH",
+          "NONINCREASING_CAPTURE_STEP",
+          "NONINCREASING_GMO_FRAME_ID",
+          "NONINCREASING_GMO_TIMESTAMP",
+          "PINNED_GMO_FRAME_ID_MISMATCH",
+          "PINNED_GMO_TIMESTAMP_MISMATCH",
+          "PINNED_LIDAR_FILE_HASH_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "missing_last_packet",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "MISSING_OR_EXTRA_CAPTURE"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "MISSING_OR_EXTRA_CAPTURE"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "read_step_clock_shift",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "LIDAR_READ_VS_SCRIPTED_STEP_TIME_MISMATCH"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "LIDAR_READ_VS_SCRIPTED_STEP_TIME_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "forged_reported_digest",
+      "incoming_sequence_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "LIDAR_REPORTED_DIGEST_MISMATCH"
+        ]
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "LIDAR_REPORTED_DIGEST_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "coherent_xyz_shift_rehashed",
+      "incoming_sequence_check": {
+        "decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+        "pose_factor_authorized": false,
+        "trigger_codes": []
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "PINNED_LIDAR_FILE_HASH_MISMATCH"
+        ]
+      }
+    },
+    {
+      "all_corruptions_in_memory": true,
+      "challenge": "plausible_new_header_relabel",
+      "incoming_sequence_check": {
+        "decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+        "pose_factor_authorized": false,
+        "trigger_codes": []
+      },
+      "physical_sensor_failure_label": false,
+      "pinned_recording_check": {
+        "decision": "REVIEW_REQUIRED",
+        "pose_factor_authorized": false,
+        "trigger_codes": [
+          "PINNED_GMO_FRAME_ID_MISMATCH",
+          "PINNED_GMO_TIMESTAMP_MISMATCH"
+        ]
+      }
+    }
+  ],
+  "clean_incoming_sequence_baseline": {
+    "decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+    "pose_factor_authorized": false,
+    "trigger_codes": []
+  },
+  "clean_pinned_baseline": {
+    "decision": "NOT_FLAGGED_DIAGNOSTIC_ONLY",
+    "pose_factor_authorized": false,
+    "trigger_codes": []
+  },
+  "coherent_rehashed_geometry_unflagged_without_anchor": true,
+  "health_labels_generated": 0,
+  "implementation_sha256": "6f9f6b60d168b78fa2614fe56812944b7ada8853a447c6833f1a5cadf014a05d",
+  "incoming_sequence_review_count": 8,
+  "independent_source_authenticity_verified": false,
+  "l14_report_sha256": "2119e8d0a5a5c5c8127991b7bb853b7fc46752cf7b22ce71f35fc368caf955f6",
+  "l15_report_sha256": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+  "note_identical_content_may_be_legitimate_in_static_scene": true,
+  "original_recordings_modified": false,
+  "physical_exposure_sync_verified": false,
+  "physical_ground_truth_verified": false,
+  "pinned_review_count": 11,
+  "plausible_relabel_unflagged_without_anchor": true,
+  "pose_factors_authorized": 0,
+  "proven_sensor_failure_detection": false,
+  "repeated_derivation_identical": true,
+  "schema": "TRUST_ROBOT_L24_OFFLINE_SENSOR_FRESHNESS_PROVENANCE_DIAGNOSTIC_V1"
+}

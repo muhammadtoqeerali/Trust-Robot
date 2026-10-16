@@ -1,0 +1,132 @@
+{
+  "additional_evidence": {
+    "l27_contract": "evidence/l27_acquisition_contract_v1.json",
+    "l28_events": "evidence/l28_shadow_acquisition_events_v1.jsonl",
+    "l28_manifest": "evidence/l28_shadow_acquisition_manifest_v1.json",
+    "l29_dryrun_events": "evidence/l29_offline_dryrun_events_v1.jsonl",
+    "l29_dryrun_manifest": "evidence/l29_offline_dryrun_manifest_v1.json",
+    "l30_events": "evidence/l30_fresh_runtime_events_v1.jsonl",
+    "l30_manifest": "evidence/l30_fresh_runtime_manifest_v1.json"
+  },
+  "branch": "kios-isaacsim-v15-integration",
+  "calibrated_health_probabilities": false,
+  "cross_sensor_exposure_sync_verified": false,
+  "documentation_sha256": {
+    "AGENTS.md": "c392cf343c3a8a9353ddae92c11a448d77a008ce5343c63661a55ff2c1649367",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "51403a8da1f5c917c0a7893869509e6016f73874e670fa6fb48f0eaaf92e6d12",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_L24_L30_MULTIMODAL_EVIDENCE_V1.md": "f26a616791c13dbb8eeb528ee242894c4e659149804b2f6e02f3a90f12b26e5a"
+  },
+  "envelopes": {
+    "l28_events": "evidence/l28_shadow_acquisition_events_v1.jsonl",
+    "l29_dryrun_events": "evidence/l29_offline_dryrun_events_v1.jsonl",
+    "l30_events": "evidence/l30_fresh_runtime_events_v1.jsonl"
+  },
+  "factor_uncertainty_qualified": false,
+  "files_sha256": {
+    "README.md": "4cfb4d304c153c00d798a90781fe1584a0bd2b3b5b4b485b9632e14b1a39f671",
+    "code/l24_phase_l24_freshness_provenance.py": "6f9f6b60d168b78fa2614fe56812944b7ada8853a447c6833f1a5cadf014a05d",
+    "code/l25_phase_l25_common_mode.py": "34c377491800def2f19d3f1e7be55bcf5091dc2f24845fd5f0bc0d7079ff7539",
+    "code/l26_phase_l26_evidence_readiness.py": "3d41c9a33cc38fb5a733f95ea2c1da3aa1e5e4c99345aef1ee8b571545a06cda",
+    "code/l27_phase_l27_multimodal_acquisition.py": "55db714512563a2631b1b68548ca03bb1f4c9e0248486f6fe43a64b5308d5a80",
+    "code/l28_phase_l28_shadow_acquisition.py": "e8e95f0c8a60c50bfce396b8f64fd938bcd4bfa26198fee1855848024b44530f",
+    "code/l29_instrumented_multimodal_probe_candidate_v15.py": "993d21523afd54dca39ce6fcf27ba20d430324c5b7b5b9b25939521c0082bb78",
+    "code/l29_phase_l29_runtime_adapter.py": "490f5627fec869b2fd4b4e4fd66e667bf18f7f403316c4f56b080d112c12e579",
+    "evidence/l24_freshness_provenance_diagnostic_v1.json": "d12e4cc58746b7721a2fb76e7dfc5534cac68c229829968ea751bd4c66dd694a",
+    "evidence/l25_common_mode_cross_witness_diagnostic_v1.json": "a138006ee414b074bfe2d1b276ed3ca29fc4413d75b9fa294c1e3ddf403747cc",
+    "evidence/l26_evidence_readiness_report_v1.json": "e60b16ebf9770bf19fd3f4a642255edace082fab0071add61bd5bffe840dc41e",
+    "evidence/l27_acquisition_contract_v1.json": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+    "evidence/l27_multimodal_evidence_inventory_v1.json": "5afc8a89c28af07c3a3dd353d8d0b19eefb7a336b52b250ee627a077ec57fa3a",
+    "evidence/l28_shadow_acquisition_events_v1.jsonl": "957e13ec10411631cbeaaeb8759907363bfa0e3200f9f9b46caf49adaf2bc082",
+    "evidence/l28_shadow_acquisition_manifest_v1.json": "5fc7ce49d00a9a8ba4b1a4b770482650a755c4aa49df572d77f7bafc306aec7a",
+    "evidence/l28_shadow_acquisition_validation_v1.json": "12c61e9e6a98d1d5494da6d89880719ca5867eec279ee8ccd1b9f825cc85e729",
+    "evidence/l29_candidate_validation_metadata_v15.json": "f5196b9829189b0e8fadc5124274d63f2aefc68e68164af2dcb6f32c544155b4",
+    "evidence/l29_offline_dryrun_events_v1.jsonl": "0683126c2494d1400d94fe63b43ec489847d9d9a6150a5ab314458b0ede2e8cd",
+    "evidence/l29_offline_dryrun_manifest_v1.json": "0e0ea2ed7798720efde4b15905dcd2b071022a1ad17172fa5b07c9f22061d7cf",
+    "evidence/l29_runtime_integration_preparation_v1.json": "0577aa1513737b4f10619d5ea2e854ae1c2460352f5cb62577bebf082c026d0b",
+    "evidence/l30_fresh_runtime_events_v1.jsonl": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+    "evidence/l30_fresh_runtime_manifest_v1.json": "cd202b19dd86a1b00871c2ec55690cab30898b7120906d064390009363138d80",
+    "evidence/l30_instrumented_acquisition_validation_v1.json": "d358563fa3e08523c2aa86fb42e8d39b51bd33ffc5fa1cf87ad348075a1adc67"
+  },
+  "frozen_frontend_modified": false,
+  "health_labels_generated": 0,
+  "independent_ground_truth_verified": false,
+  "kios_only_candidate_paths": true,
+  "l29_candidate_metadata_sha256": "f5196b9829189b0e8fadc5124274d63f2aefc68e68164af2dcb6f32c544155b4",
+  "l29_candidate_source": "code/l29_instrumented_multimodal_probe_candidate_v15.py",
+  "l29_candidate_source_sha256": "993d21523afd54dca39ce6fcf27ba20d430324c5b7b5b9b25939521c0082bb78",
+  "l29_scene_original_sha256": "43b4ffe0f7af29e435203ac3aa8c2d4c4897434042f37e26586b124b2495d8cf",
+  "l30_capture_counts": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "lidar_points": 96,
+    "scripted_usd_pose": 130,
+    "total_events": 272
+  },
+  "l30_negative_controls_passed": 6,
+  "l30_runtime_exit_code": 0,
+  "l30_selected_steps": [
+    51,
+    61,
+    71,
+    81,
+    91,
+    101
+  ],
+  "original_l30_launch_script_archived": false,
+  "parent_commit": "45b54a9625ea4c834f4009f441973cf93ce0d6b3",
+  "phases": {
+    "24": {
+      "report": "evidence/l24_freshness_provenance_diagnostic_v1.json",
+      "report_sha256": "d12e4cc58746b7721a2fb76e7dfc5534cac68c229829968ea751bd4c66dd694a",
+      "source": "code/l24_phase_l24_freshness_provenance.py",
+      "source_sha256": "6f9f6b60d168b78fa2614fe56812944b7ada8853a447c6833f1a5cadf014a05d"
+    },
+    "25": {
+      "report": "evidence/l25_common_mode_cross_witness_diagnostic_v1.json",
+      "report_sha256": "a138006ee414b074bfe2d1b276ed3ca29fc4413d75b9fa294c1e3ddf403747cc",
+      "source": "code/l25_phase_l25_common_mode.py",
+      "source_sha256": "34c377491800def2f19d3f1e7be55bcf5091dc2f24845fd5f0bc0d7079ff7539"
+    },
+    "26": {
+      "report": "evidence/l26_evidence_readiness_report_v1.json",
+      "report_sha256": "e60b16ebf9770bf19fd3f4a642255edace082fab0071add61bd5bffe840dc41e",
+      "source": "code/l26_phase_l26_evidence_readiness.py",
+      "source_sha256": "3d41c9a33cc38fb5a733f95ea2c1da3aa1e5e4c99345aef1ee8b571545a06cda"
+    },
+    "27": {
+      "report": "evidence/l27_multimodal_evidence_inventory_v1.json",
+      "report_sha256": "5afc8a89c28af07c3a3dd353d8d0b19eefb7a336b52b250ee627a077ec57fa3a",
+      "source": "code/l27_phase_l27_multimodal_acquisition.py",
+      "source_sha256": "55db714512563a2631b1b68548ca03bb1f4c9e0248486f6fe43a64b5308d5a80"
+    },
+    "28": {
+      "report": "evidence/l28_shadow_acquisition_validation_v1.json",
+      "report_sha256": "12c61e9e6a98d1d5494da6d89880719ca5867eec279ee8ccd1b9f825cc85e729",
+      "source": "code/l28_phase_l28_shadow_acquisition.py",
+      "source_sha256": "e8e95f0c8a60c50bfce396b8f64fd938bcd4bfa26198fee1855848024b44530f"
+    },
+    "29": {
+      "report": "evidence/l29_runtime_integration_preparation_v1.json",
+      "report_sha256": "0577aa1513737b4f10619d5ea2e854ae1c2460352f5cb62577bebf082c026d0b",
+      "source": "code/l29_phase_l29_runtime_adapter.py",
+      "source_sha256": "490f5627fec869b2fd4b4e4fd66e667bf18f7f403316c4f56b080d112c12e579"
+    },
+    "30": {
+      "report": "evidence/l30_instrumented_acquisition_validation_v1.json",
+      "report_sha256": "d358563fa3e08523c2aa86fb42e8d39b51bd33ffc5fa1cf87ad348075a1adc67"
+    }
+  },
+  "physical_sensor_equivalence_verified": false,
+  "pose_factors_authorized": 0,
+  "raw_recordings_published": false,
+  "schema": "TRUST_ROBOT_KIOS_L24_L30_CHECKPOINT_V1",
+  "sensor_failure_detection_validated": false,
+  "upstream_report_sha256": {
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l16": "2a1ebca297ca4d58ab2d2ff0a9aa3104673e12aef9dd6e1f43ce5167617cfdaf",
+    "l19": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "l20": "e93519d92257180bcfca3ca8b0aca781da89bcb000612c02d1f3202a4c1cbae6",
+    "l23": "dd5d970df2caafedbe24c43f45e95cbd2551563c942edbf688f98a2d04752d68"
+  }
+}

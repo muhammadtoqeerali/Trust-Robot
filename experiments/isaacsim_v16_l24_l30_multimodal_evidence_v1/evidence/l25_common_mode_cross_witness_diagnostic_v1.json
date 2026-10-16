@@ -1,0 +1,571 @@
+{
+  "all_frozen_report_pose_factors_unauthorized": true,
+  "all_transforms_in_memory": true,
+  "camera_content_repeat_is_not_proof_of_fault": true,
+  "camera_replay_content_control": {
+    "baseline_consecutive_identical_camera_content": false,
+    "duplicate_camera_content_is_proof_of_fault": false,
+    "existing_l24_sequence_review": false,
+    "new_exact_duplicate_camera_content_review": true,
+    "replay_consecutive_identical_camera_content": true
+  },
+  "emitter_ordered_fingerprint_changed_count": 10,
+  "false_negative_rate_estimated": false,
+  "false_positive_rate_estimated": false,
+  "geometry_fingerprint_changed_count": 9,
+  "health_labels_generated": 0,
+  "implementation_sha256": "34c377491800def2f19d3f1e7be55bcf5091dc2f24845fd5f0bc0d7079ff7539",
+  "incoming_sequence_review_count": 1,
+  "motion_deviation_thresholds_exploratory_m": [
+    0.01,
+    0.02,
+    0.04
+  ],
+  "original_recordings_modified": false,
+  "physical_exposure_sync_verified": false,
+  "pinned_review_count": 11,
+  "pose_factors_authorized": 0,
+  "recording_context": {
+    "baseline_lidar_unique_payload_count": 6,
+    "camera_payload_hashes_self_baselined_not_independently_attested": true,
+    "capture_index_sha256": "910ef925c98121a068fee9cb3a6fe0ecd3e2778db75d1eeb2bd2cf996101ed92",
+    "gmo_timestamps_unqualified_as_physical_exposure_times": true,
+    "imu_jsonl_sha256": "c0d1ee8db2ad2a149ce7028a247649852bba3f8dd62461a177ae2e847e2456cb",
+    "observed_zero_raw_return_steps": [
+      92,
+      102
+    ],
+    "pose_jsonl_sha256": "0c7cd562bfed36a432b13c1b56dca7530e0f3d02cebeccee0895f41a1efc2a1b",
+    "recorded_frame_id_gaps_allowed": true,
+    "recorded_imu_rows": 130,
+    "recorded_usd_pose_rows": 130,
+    "selected_capture_steps": [
+      51,
+      61,
+      71,
+      81,
+      91,
+      101
+    ],
+    "verified_cross_sensor_exposure_sync": false,
+    "zero_return_mechanism_verified": false
+  },
+  "reused_source_sha256": {
+    "l17": "37fa17fd1f07e3a57929ee4f29bff3d0e49ab55413621d78f7b5ffa73f24dc31",
+    "l22": "5cfe8e389ef3aba3cc1da06a77f8eaefad1964da90c9652029f83d02f1ce1feb",
+    "l23": "82a75b02458df8c3168bd7a3c25f84db039c48bb602fda5bded003d6377a5f4e",
+    "l24": "6f9f6b60d168b78fa2614fe56812944b7ada8853a447c6833f1a5cadf014a05d"
+  },
+  "scenario_count": 11,
+  "scenario_summaries": [
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "single_return_20mm_101",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": false,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": -0.001729924960678586,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.015889837432525984,
+          "new_abs_norm_residual_m": 0.00019731148245202834,
+          "new_translation_norm_m": 0.040197311482452064,
+          "rotation_change_vs_frozen_baseline_deg": 1.2719080454742024,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 1,
+      "l23_not_flagged_count": 3,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "single_return_80mm_101",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": true,
+        "0.02": true,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 0.021848241927573536,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.02537056712690006,
+          "new_abs_norm_residual_m": 0.02377547837070415,
+          "new_translation_norm_m": 0.06377547837070419,
+          "rotation_change_vs_frozen_baseline_deg": 5.106396681907404,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 91,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 1,
+      "l23_not_flagged_count": 3,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "single_return_80mm_91",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": true,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0015032449920202515,
+          "error": null,
+          "excess_over_baseline_m": 0.011727409255726802,
+          "frozen_baseline_translation_norm_m": 0.041503244992020176,
+          "nearest_neighbor_rmse_m": 0.02079621497312849,
+          "new_abs_norm_residual_m": 0.013230654247747053,
+          "new_translation_norm_m": 0.05323065424774698,
+          "rotation_change_vs_frozen_baseline_deg": 3.998720713993636,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.039999999999999925,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            81,
+            91
+          ]
+        },
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 0.01992665125672216,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.02170957378091247,
+          "new_abs_norm_residual_m": 0.021853887699852775,
+          "new_translation_norm_m": 0.06185388769985281,
+          "rotation_change_vs_frozen_baseline_deg": 3.9894087437971213,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "nonrigid_shear_3pct",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": false,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 1.923302135747873e-07,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.014306562794130508,
+          "new_abs_norm_residual_m": 0.0019274287733441892,
+          "new_translation_norm_m": 0.041927428773344225,
+          "rotation_change_vs_frozen_baseline_deg": 0.001305233261804502,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "nonrigid_shear_15pct",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": false,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 9.625748087008223e-07,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.014407912512996116,
+          "new_abs_norm_residual_m": 0.0019281990179393152,
+          "new_translation_norm_m": 0.04192819901793935,
+          "rotation_change_vs_frozen_baseline_deg": 0.006530648892456158,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "coherent_rotation_3deg",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": true,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 0.016615178123630024,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.014283336299555539,
+          "new_abs_norm_residual_m": 0.01854241456676064,
+          "new_translation_norm_m": 0.058542414566760674,
+          "rotation_change_vs_frozen_baseline_deg": 2.9999999999999925,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "coherent_rotation_10deg",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": true,
+        "0.02": true,
+        "0.04": true
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 0.0901190098470393,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.014283336299555482,
+          "new_abs_norm_residual_m": 0.09204624629016991,
+          "new_translation_norm_m": 0.13204624629016995,
+          "rotation_change_vs_frozen_baseline_deg": 10.00000000000001,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "coherent_translation_80mm",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": false,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": -0.0010174625248092137,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.014283336299555534,
+          "new_abs_norm_residual_m": 0.0009097739183214007,
+          "new_translation_norm_m": 0.040909773918321436,
+          "rotation_change_vs_frozen_baseline_deg": 0.0,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": true,
+      "incoming_sequence_review": true,
+      "incoming_sequence_trigger_codes": [
+        "CONSECUTIVE_IDENTICAL_LIDAR_CONTENT_REVIEW"
+      ],
+      "l23_decision_changes": 2,
+      "l23_not_flagged_count": 5,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "CONSECUTIVE_IDENTICAL_LIDAR_CONTENT_REVIEW",
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "stale_scan_101_from_91",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": true,
+        "0.02": true,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 0.03807276355686902,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 2.5243691313674553e-16,
+          "new_abs_norm_residual_m": 0.03999999999999963,
+          "new_translation_norm_m": 4.028750015498758e-16,
+          "rotation_change_vs_frozen_baseline_deg": 0.8397628635307365,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": false,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": false,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 0,
+      "l23_not_flagged_count": 4,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "point_order_changed_mapping_corrected",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": false,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 9.020562075079397e-17,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.01428333629955552,
+          "new_abs_norm_residual_m": 0.0019272364431307046,
+          "new_translation_norm_m": 0.04192723644313074,
+          "rotation_change_vs_frozen_baseline_deg": 6.5947505901918526e-15,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    },
+    {
+      "affected_step": 101,
+      "emitter_ordered_fingerprint_changed": true,
+      "frozen_reference_is_not_live_trust_anchor": true,
+      "geometry_fingerprint_changed_from_archived_capture": false,
+      "incoming_sequence_review": false,
+      "incoming_sequence_trigger_codes": [],
+      "l23_decision_changes": 1,
+      "l23_not_flagged_count": 3,
+      "pinned_recording_review": true,
+      "pinned_trigger_codes": [
+        "PINNED_LIDAR_FILE_HASH_MISMATCH"
+      ],
+      "pose_factor_authorized": false,
+      "scenario": "point_order_changed_mapping_stale",
+      "scripted_motion_excess_threshold_reviews": {
+        "0.01": false,
+        "0.02": false,
+        "0.04": false
+      },
+      "scripted_usd_motion_comparisons": [
+        {
+          "baseline_abs_norm_residual_m": 0.0019272364431306144,
+          "error": null,
+          "excess_over_baseline_m": 9.020562075079397e-17,
+          "frozen_baseline_translation_norm_m": 0.04192723644313065,
+          "nearest_neighbor_rmse_m": 0.01428333629955552,
+          "new_abs_norm_residual_m": 0.0019272364431307046,
+          "new_translation_norm_m": 0.04192723644313074,
+          "rotation_change_vs_frozen_baseline_deg": 6.5947505901918526e-15,
+          "scripted_usd_is_physical_ground_truth": false,
+          "scripted_usd_translation_norm_m": 0.040000000000000036,
+          "status": "DIAGNOSTIC_AVAILABLE",
+          "steps": [
+            91,
+            101
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "TRUST_ROBOT_L25_COMMON_MODE_CROSS_WITNESS_DIAGNOSTIC_V1",
+  "scripted_motion_review_counts_by_threshold_m": {
+    "0.01": 5,
+    "0.02": 3,
+    "0.04": 1
+  },
+  "scripted_usd_motion_is_not_independent_ground_truth": true,
+  "sensor_failure_detection_validated": false,
+  "source_scan_provenance": [
+    {
+      "cloud_sha256": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+      "qualified_xyz_sha256": "39cb432b5634cae0668b6b7682f6170ee35f4486d5a3c9f3850a38197d8195f6",
+      "step": 51
+    },
+    {
+      "cloud_sha256": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+      "qualified_xyz_sha256": "fefc9cec5f9b776386fdc7e8d635be371423ff92cd0a1e3404e6d0ea9c021b67",
+      "step": 61
+    },
+    {
+      "cloud_sha256": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+      "qualified_xyz_sha256": "9001ad0b64bfc53f96d5ec35f0001b1abc41e997acdb6f08b267c4f0f3d3dd67",
+      "step": 71
+    },
+    {
+      "cloud_sha256": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+      "qualified_xyz_sha256": "f9ba47a5a8d36078e7d94b022317c1b5d9e7d733f35656f5a0a26404cac01cc8",
+      "step": 81
+    },
+    {
+      "cloud_sha256": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+      "qualified_xyz_sha256": "d6dcc5c2ffa04833a9eb03670ae18198c6a1dc507817afe99059201e4786c349",
+      "step": 91
+    },
+    {
+      "cloud_sha256": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+      "qualified_xyz_sha256": "b7fab7585dbfd00a7dd56b62160aec09d1d04762bf92ec383e990da64c849516",
+      "step": 101
+    }
+  ],
+  "stored_capture_hash_is_not_live_sensor_authenticity": true,
+  "two_derivations_identical": true,
+  "upstream_report_sha256": {
+    "l14": "2119e8d0a5a5c5c8127991b7bb853b7fc46752cf7b22ce71f35fc368caf955f6",
+    "l15": "da5a45d217d6c27d565acabef8c6c454d7d3f691d5d7dd375c780c0b37f6b1c9",
+    "l19": "5762341d44de5771508c5689bd636aff49a9368e363aa1d3d3a686f1e18fb0cf",
+    "l23": "dd5d970df2caafedbe24c43f45e95cbd2551563c942edbf688f98a2d04752d68",
+    "l24": "d12e4cc58746b7721a2fb76e7dfc5534cac68c229829968ea751bd4c66dd694a"
+  }
+}
