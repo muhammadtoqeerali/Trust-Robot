@@ -1,0 +1,19 @@
+{
+  "contract_sha256": "fa91bd78aadc2b7f0343b9c8929dd77419b2f43c4825c4105621931953b0f87c",
+  "engine_sha256": "d15014023621cb31d804c8772e09b211376cd91e8fcfa4df16fafe12c38f2b54",
+  "global_replay_security_verified": false,
+  "health_labels": 0,
+  "live_simulator_launch_authorized": false,
+  "new_sensor_measurements": 0,
+  "physical_source_witness_verified": false,
+  "real_power_loss_durability_verified": false,
+  "report_sha256": "0edb9cc0eb8d274c3b139ab0bacc2abb69c8a33812a9028e9c4f89e69d47816a",
+  "schema": "TRUST_ROBOT_L49_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "verified_false_promotions": 12,
+  "verified_fault_denials": 10,
+  "verified_outage_scenarios": 18,
+  "verified_publication_paths": 3,
+  "verified_source_ledgers": 3,
+  "verifier_sha256": "bfb1d4318c91b630389d754b13a1b561e481e303e0d94f7a453903996a5e420d"
+}

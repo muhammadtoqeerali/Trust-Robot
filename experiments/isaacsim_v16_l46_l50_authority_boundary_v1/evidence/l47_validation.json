@@ -1,0 +1,19 @@
+{
+  "contract_sha256": "0b2f968936ecee182f09741b8159a75de199625aa999944b5a104739d0128a13",
+  "engine_sha256": "63b385edc1bb2945ba62a4cf98b82f81373c58d12e5ede497bcc35e8e4249f27",
+  "globally_unique_admission_proven": false,
+  "health_labels_generated": 0,
+  "live_simulator_launch_authorized": false,
+  "new_sensor_measurements": 0,
+  "pose_factors_authorized": 0,
+  "rechecked_bad_request_controls": 20,
+  "rechecked_central_admissions": 1,
+  "rechecked_central_replays_denied": 7,
+  "rechecked_ledger_faults": 8,
+  "rechecked_split_registries": 2,
+  "report_sha256": "40eccecc0e73b6b718f7b3cb9e7936811c7955f07f021672a23fada71ac64f6e",
+  "request_sha256": "0629c8b54f876f87d633c9c5253c1d2d8a5a0e8866cdad93e5efc25d55fef6ec",
+  "schema": "TRUST_ROBOT_L47_INDEPENDENT_VALIDATION_V1",
+  "trusted_independent_source_origin_proven": false,
+  "verifier_sha256": "b5120140ca4f428940d9aa3fae7a1a744ae47fd615020af560d8749c465beffa"
+}

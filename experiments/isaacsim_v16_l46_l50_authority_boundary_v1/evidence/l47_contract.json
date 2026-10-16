@@ -1,0 +1,16 @@
+{
+  "authority_scope": "ONE_SQLITE_FILE_ONE_HOST_NOT_CROSS_HOST",
+  "cross_host_replay_security_verified": false,
+  "engine_sha256": "63b385edc1bb2945ba62a4cf98b82f81373c58d12e5ede497bcc35e8e4249f27",
+  "independent_sensor_provenance_established": false,
+  "issuer_independently_trusted": false,
+  "l46_contract_sha256": "f5af31413559d5cbda9d7c415f8f36e248744eb6198ba583d84a7d4849e1697d",
+  "l46_report_sha256": "183bf08ffdf467294027af058ab8e627bcec7d35192c612accff78735c1c7e40",
+  "l46_validation_sha256": "044f98088d885ce4fbce3d7390da270c42286d9ca30f7ac00b94e72d14462ef5",
+  "live_simulator_launch_authorized": false,
+  "parent_commit": "c2e013f549b87e8646a8e51095a3372df0d09581",
+  "pose_factors_authorized": 0,
+  "quorum_or_distributed_consensus_implemented": false,
+  "schema": "TRUST_ROBOT_L47_SINGLE_HOST_NONCE_AUTHORITY_CONTRACT_V1",
+  "trusted_clock_established": false
+}

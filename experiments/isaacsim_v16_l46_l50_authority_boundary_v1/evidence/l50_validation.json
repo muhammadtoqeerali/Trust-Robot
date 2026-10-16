@@ -1,0 +1,18 @@
+{
+  "automatic_unquarantine_authorized": false,
+  "contract_sha256": "b9cf102c1f767f43da81ac88a63105c3f0c5bb7ed46e66686359c3167eb513cf",
+  "distributed_replay_protection_proven": false,
+  "engine_sha256": "08f4558ea0825bb850cf4150bf69fb4a669a68a5720c88a8ec138669e9157645",
+  "health_labels_generated": 0,
+  "matrix_sha256": "9c8012fed6b974790875d63107b84f5c8e9049bb591240bae826c4aaf145bffe",
+  "new_sensor_measurements": 0,
+  "physical_source_authenticity_proven": false,
+  "pose_factors_authorized": 0,
+  "report_sha256": "207feedbf9ea30046e839ef7f6b6c57dce9df548435fd617fa167a376fa4d4e9",
+  "schema": "TRUST_ROBOT_L50_INDEPENDENT_VALIDATION_V1",
+  "verified_negative_controls": 32,
+  "verified_offline_engineering_gates": 6,
+  "verified_source_phases": 4,
+  "verified_unqualified_gates": 16,
+  "verifier_sha256": "2a8940c4ba0b2b26f6314293cd880a526cb76c868239ce32538b0d54f2f0318f"
+}

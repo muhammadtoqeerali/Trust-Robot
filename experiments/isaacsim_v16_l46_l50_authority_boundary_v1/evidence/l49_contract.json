@@ -1,0 +1,16 @@
+{
+  "automatic_reconciliation_authorized": false,
+  "engine_sha256": "d15014023621cb31d804c8772e09b211376cd91e8fcfa4df16fafe12c38f2b54",
+  "future_exit_requires_external_evidence": true,
+  "global_nonce_ledger_present": false,
+  "independent_witness_present": false,
+  "issuer_authenticated_externally": false,
+  "l47_report_sha256": "40eccecc0e73b6b718f7b3cb9e7936811c7955f07f021672a23fada71ac64f6e",
+  "l48_report_sha256": "1bea7f9e612fbd3edb1d14577258b089f82581cd2ce2659118fe8d96e3890283",
+  "l48_validation_sha256": "124a53792eeced5515e5b84855a7602eb2f523a663cfc376694d1423df33f9b9",
+  "parent_commit": "c2e013f549b87e8646a8e51095a3372df0d09581",
+  "policy": "QUARANTINE_REVIEW_REQUIRED",
+  "real_power_failure_tested": false,
+  "schema": "TRUST_ROBOT_L49_AUTHORITY_FAILURE_CONTRACT_V1",
+  "trusted_clock_proven": false
+}

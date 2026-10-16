@@ -5996,3 +5996,28 @@ No independent source authenticity, physical exposure synchronization, hardware 
 Real M2DGR evaluation remains blocked.
 
 Next: L46 offline witness-authority trust-boundary design, not live simulator permission.
+
+## KIOS L46-L50 offline trust-boundary checkpoint — 2026-10-16
+
+Parent commit: `c2e013f549b87e8646a8e51095a3372df0d09581`.
+
+Archive: `experiments/isaacsim_v16_l46_l50_authority_boundary_v1/`.
+Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_L46_L50_TRUST_BOUNDARY_V1.md`.
+
+L46: 35 synthetic software-authority controls denied; coherent signed fabrication was internally accepted without trusted sensor provenance, and cloned registries accepted the same nonce.
+
+L47: one shared-ledger admission and seven denied competing attempts; two isolated registries admitted the same nonce; twenty request mutations and eight faults rejected.
+
+L48: three receipt chains confirmed, duplicate nonce quarantined, twenty-four mutations and ten faults denied.
+
+L49: eighteen authority-failure cases quarantined, twelve false promotions denied, three simulated publication paths checked, ten receipt/journal faults denied.
+
+L50: six engineering evidence categories, sixteen scientifically/operationally unqualified requirements, thirty-two false promotions denied.
+
+Checkpoint retains 26 SHA-pinned source/report files, five synthetic request/receipts and one SQLite hash-only summary. Raw SQLite, simulator assets, sensor recordings and ephemeral keys remain excluded.
+
+No independent sensor source authentication, physical exposure-clock verification, hardware attestation, global replay protection, real power-loss durability, scientific 6DoF scoring, calibrated sensor-health labels or admitted pose factors.
+
+M2DGR scientific evaluation remains blocked.
+
+Next: read-only examination of fixed clean 6DoF estimator readiness and remaining dataset timing, calibration and independent-reference prerequisites. Avoid equating engineering PASS phase counts with scientific project completeness.

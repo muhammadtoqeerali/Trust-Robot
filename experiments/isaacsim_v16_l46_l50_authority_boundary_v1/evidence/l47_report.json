@@ -1,0 +1,72 @@
+{
+  "central": {
+    "database_sha256": "7b49995ec1352819b63daa0d6a22a37d2ee89907700f9c30578678ca55a927fa",
+    "nonce_sha256": "63a5b5742f8fc17368943c7e1c25c1795d1b0aa551c112596e13a34b5e607347",
+    "receipt_sha256": "a86550e3be142540e9e17de1156dc4bf1babe6e7754219c493ef42b1c63d5124",
+    "session_id": "L47_SYNTH_3497226f4233ac25d68b67cb"
+  },
+  "central_single_host_replays_denied": 7,
+  "central_single_host_successes": 1,
+  "contract_sha256": "0b2f968936ecee182f09741b8159a75de199625aa999944b5a104739d0128a13",
+  "engine_sha256": "63b385edc1bb2945ba62a4cf98b82f81373c58d12e5ede497bcc35e8e4249f27",
+  "fault_count": 8,
+  "faults_rejected": [
+    "receipt_missing",
+    "receipt_altered",
+    "db_receipt_payload",
+    "db_receipt_digest",
+    "db_nonce",
+    "db_session",
+    "db_request_digest",
+    "db_row_deleted"
+  ],
+  "git_commit_or_push": false,
+  "globally_unique_admission_proven": false,
+  "health_labels_generated": 0,
+  "invalid_request_control_count": 20,
+  "invalid_request_controls_rejected": [
+    "mutation_schema",
+    "mutation_session_id",
+    "mutation_nonce_hex",
+    "mutation_candidate_sha256",
+    "mutation_l46_report_sha256",
+    "mutation_parent_commit",
+    "mutation_mode",
+    "mutation_issuer_role",
+    "mutation_not_before_tick",
+    "mutation_deadline_tick",
+    "mutation_source_origin_verified",
+    "mutation_physical_sync_verified",
+    "mutation_attestation_verified",
+    "mutation_new_sensor_measurements",
+    "mutation_pose_factors_authorized",
+    "mutation_health_labels_generated",
+    "missing_mode",
+    "extra_field",
+    "malformed_nonce",
+    "expired_logical_tick"
+  ],
+  "live_simulator_launch_authorized": false,
+  "new_sensor_measurements": 0,
+  "physical_source_authenticity_verified": false,
+  "pose_factors_authorized": 0,
+  "request_sha256": "0629c8b54f876f87d633c9c5253c1d2d8a5a0e8866cdad93e5efc25d55fef6ec",
+  "schema": "TRUST_ROBOT_L47_SPLIT_REGISTRY_FALSIFICATION_V1",
+  "split": [
+    {
+      "database_sha256": "7b49995ec1352819b63daa0d6a22a37d2ee89907700f9c30578678ca55a927fa",
+      "nonce_sha256": "63a5b5742f8fc17368943c7e1c25c1795d1b0aa551c112596e13a34b5e607347",
+      "receipt_sha256": "a86550e3be142540e9e17de1156dc4bf1babe6e7754219c493ef42b1c63d5124",
+      "session_id": "L47_SYNTH_3497226f4233ac25d68b67cb"
+    },
+    {
+      "database_sha256": "7b49995ec1352819b63daa0d6a22a37d2ee89907700f9c30578678ca55a927fa",
+      "nonce_sha256": "63a5b5742f8fc17368943c7e1c25c1795d1b0aa551c112596e13a34b5e607347",
+      "receipt_sha256": "a86550e3be142540e9e17de1156dc4bf1babe6e7754219c493ef42b1c63d5124",
+      "session_id": "L47_SYNTH_3497226f4233ac25d68b67cb"
+    }
+  ],
+  "split_registry_detected_unsafe": "DUPLICATE_NONCE_REQUIRES_QUARANTINE",
+  "split_registry_same_nonce_admissions": 2,
+  "synthetic_request_issuer_trusted": false
+}

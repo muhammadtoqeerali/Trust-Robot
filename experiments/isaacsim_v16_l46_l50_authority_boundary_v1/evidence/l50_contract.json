@@ -1,0 +1,24 @@
+{
+  "distributed_security_proof": false,
+  "engine_sha256": "08f4558ea0825bb850cf4150bf69fb4a669a68a5720c88a8ec138669e9157645",
+  "frozen_input_sha256": {
+    "c46": "f5af31413559d5cbda9d7c415f8f36e248744eb6198ba583d84a7d4849e1697d",
+    "c47": "0b2f968936ecee182f09741b8159a75de199625aa999944b5a104739d0128a13",
+    "c48": "90e6fc5409890a9576876900ce6892f6123f6bf1815944483e73e864abed92d9",
+    "c49": "fa91bd78aadc2b7f0343b9c8929dd77419b2f43c4825c4105621931953b0f87c",
+    "r46": "183bf08ffdf467294027af058ab8e627bcec7d35192c612accff78735c1c7e40",
+    "r47": "40eccecc0e73b6b718f7b3cb9e7936811c7955f07f021672a23fada71ac64f6e",
+    "r48": "1bea7f9e612fbd3edb1d14577258b089f82581cd2ce2659118fe8d96e3890283",
+    "r49": "0edb9cc0eb8d274c3b139ab0bacc2abb69c8a33812a9028e9c4f89e69d47816a",
+    "v46": "044f98088d885ce4fbce3d7390da270c42286d9ca30f7ac00b94e72d14462ef5",
+    "v47": "d0194e6940305e5d129ebcf107298a139b130f34bc1daa55c5fb2bcc0e7dd682",
+    "v48": "124a53792eeced5515e5b84855a7602eb2f523a663cfc376694d1423df33f9b9",
+    "v49": "fe6f0e56e689dddbab220d1a5bb150dc44d6f01c05bc0155a3810cf83d60dcb2"
+  },
+  "offline_scope_only": true,
+  "parent_commit": "c2e013f549b87e8646a8e51095a3372df0d09581",
+  "physical_power_loss_tested": false,
+  "physical_source_proof": false,
+  "schema": "TRUST_ROBOT_L50_CONSOLIDATED_REVIEW_CONTRACT_V1",
+  "scientific_pose_factors_authorized": 0
+}

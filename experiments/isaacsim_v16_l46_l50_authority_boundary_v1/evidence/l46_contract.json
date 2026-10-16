@@ -1,0 +1,23 @@
+{
+  "authority_type": "TWO_SIMULATED_SOFTWARE_ROLES_ONE_HOST_EPHEMERAL_HMAC",
+  "independent_physical_trust_established": false,
+  "key_material_persisted": false,
+  "l41_sha256": "67e0be9b1da5944cf41a3bfeccdfdd5110e5e672de6c4fc7370bf3fa1914e798",
+  "l45_sha256": "9d39841e6942c5ee57346d8ebbafebba291a94239e86f570dd1eff622eb2dd31",
+  "live_simulator_launch_authorized": false,
+  "parent_commit": "c2e013f549b87e8646a8e51095a3372df0d09581",
+  "pose_factors_authorized": 0,
+  "required_external_gates": [
+    "separately_administered_issuer_and_verifier_identity",
+    "independent_capture_source_witness",
+    "trusted_real_measurement_time_semantics",
+    "independently_controlled_immutable_receipts",
+    "cross_host_atomic_nonce_consumption",
+    "hardware_backed_key_attestation_if_required",
+    "real_power_loss_fault_injection",
+    "independent_six_dof_reference_and_calibration",
+    "heldout_scientific_evaluation"
+  ],
+  "schema": "TRUST_ROBOT_L46_AUTHORITY_TRUST_BOUNDARY_CONTRACT_V1",
+  "simulation_source_sha256": "2b4c0b7101cdfbfcc6cf438fe1a3d8f6f7f1421d06e2304309c34e3c9a31d2dd"
+}

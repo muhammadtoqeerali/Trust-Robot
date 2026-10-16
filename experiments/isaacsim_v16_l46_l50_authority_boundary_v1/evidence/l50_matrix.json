@@ -1,0 +1,164 @@
+{
+  "authority_verdict": "QUARANTINE_AND_NO_AUTOMATIC_PROMOTION",
+  "evidence_counts": {
+    "l46_role_controls_denied": 35,
+    "l47_local_admissions": 1,
+    "l47_local_replays_denied": 7,
+    "l47_split_duplicate_admissions": 2,
+    "l48_faults_denied": 10,
+    "l48_mutations_denied": 24,
+    "l48_quarantined_conflicts": 1,
+    "l49_false_promotions_denied": 12,
+    "l49_faults_denied": 10,
+    "l49_outage_scenarios_quarantined": 18,
+    "l49_publication_paths_tested": 3
+  },
+  "gates": [
+    {
+      "gate": "l46_ephemeral_two_role_mac_simulation",
+      "status": "OFFLINE_ENGINEERING_EVIDENCE",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "l47_single_file_concurrent_nonce_exclusion",
+      "status": "OFFLINE_ENGINEERING_EVIDENCE",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "l47_split_registry_double_admission_demonstration",
+      "status": "OFFLINE_ENGINEERING_EVIDENCE",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "l48_duplicate_nonce_quarantine_detection",
+      "status": "OFFLINE_ENGINEERING_EVIDENCE",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "l49_simulated_authority_failure_quarantine",
+      "status": "OFFLINE_ENGINEERING_EVIDENCE",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "l49_outbox_publication_and_recovery_rehearsal",
+      "status": "OFFLINE_ENGINEERING_EVIDENCE",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "independently_authenticated_capture_origin",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "independently_administered_witness_authority",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "globally_consistent_nonce_consumption",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "tamper_resistant_witness_retention",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "trusted_physical_exposure_time",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "independently_verified_sensor_calibration",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "independent_6dof_reference",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "sensor_payload_capture_attestation",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "real_power_loss_durability",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "real_multi_host_partition_replay_protection",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "fixed_clean_6dof_estimator_scientifically_qualified",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "trained_three_state_modality_health_model",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "validated_health_probability_calibration",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "health_aware_factor_admission_and_weighting",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "guarded_closed_loop_safety_validation",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    },
+    {
+      "gate": "independently_approved_live_capture",
+      "status": "NOT_QUALIFIED",
+      "supports_scientific_factor_admission": false,
+      "trusted_sensor_provenance": false
+    }
+  ],
+  "globally_unique_nonce_proven": false,
+  "health_labels": 0,
+  "live_simulator_launch_authorized": false,
+  "new_sensor_measurements": 0,
+  "next_scientific_priority": "RESUME_FIXED_CLEAN_6DOF_ESTIMATOR_AND_EVIDENCE_GATES",
+  "offline_prototype_gates": 6,
+  "parent_commit": "c2e013f549b87e8646a8e51095a3372df0d09581",
+  "schema": "TRUST_ROBOT_L50_TRUST_BOUNDARY_MATRIX_V1",
+  "scientific_6dof_accuracy_scoring_authorized": false,
+  "scientific_pose_factor_admission_authorized": false,
+  "scientific_pose_factors": 0,
+  "trained_health_labels_qualified": false,
+  "trusted_physical_sensor_origin_proven": false,
+  "unqualified_required_gates": 16
+}

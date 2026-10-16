@@ -1,0 +1,384 @@
+{
+  "autonomous_merge_performed": false,
+  "contract_sha256": "fa91bd78aadc2b7f0343b9c8929dd77419b2f43c4825c4105621931953b0f87c",
+  "engine_sha256": "d15014023621cb31d804c8772e09b211376cd91e8fcfa4df16fafe12c38f2b54",
+  "git_push_performed": false,
+  "global_replay_prevention_verified": false,
+  "health_labels": 0,
+  "l47_request_sha256": "0629c8b54f876f87d633c9c5253c1d2d8a5a0e8866cdad93e5efc25d55fef6ec",
+  "l48_report_sha256": "1bea7f9e612fbd3edb1d14577258b089f82581cd2ce2659118fe8d96e3890283",
+  "negative_claim_count": 12,
+  "negative_claims_rejected": [
+    "forged_state",
+    "forged_autonomous_merge_authorized",
+    "forged_physical_sensor_origin_verified",
+    "forged_distributed_consensus_verified",
+    "forged_sensor_measurements",
+    "forged_scientific_pose_factors",
+    "forged_health_labels",
+    "forged_nonce_sha256",
+    "forged_report_sha256",
+    "forged_contract_sha256",
+    "forged_session_id",
+    "forged_parent_commit"
+  ],
+  "new_sensor_measurements": 0,
+  "physical_witness_verified": false,
+  "quarantine_decisions": 18,
+  "real_power_failure_tested": false,
+  "receipt_fault_count": 10,
+  "receipt_fault_names": [
+    "receipt_missing",
+    "receipt_tamper",
+    "row_receipt_tamper",
+    "row_digest_tamper",
+    "source_report_digest_tamper",
+    "nonce_digest_tamper",
+    "state_promoted",
+    "published_reset",
+    "db_corrupted",
+    "row_deleted"
+  ],
+  "recovery_windows": [
+    "commit_before_publication",
+    "file_before_mark",
+    "idempotent_republish"
+  ],
+  "scenario_count": 18,
+  "scenarios": [
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "observed_three_way_nonce_collision"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": false,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "issuer_unreachable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": false
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "witness_unreachable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "central_ledger_unreachable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "left_ledger_unreachable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "right_ledger_unreachable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "central_receipt_unavailable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "left_receipt_unavailable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "right_receipt_unavailable"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": false,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "stale_authority_epoch"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "untrusted_logical_clock"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": true,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "unilateral_merge_requested"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": true,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "pose_factor_promotion_requested"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "divergent_session_claim"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": true,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "forged_physical_witness_claim"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": true,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "unsigned_resolution_override"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": true,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "publication_interrupted"
+    },
+    {
+      "decision": "QUARANTINE_REVIEW_REQUIRED",
+      "gate": {
+        "authority_inventory_complete": false,
+        "capture_admission_authorized": false,
+        "fresh_authority_epoch": true,
+        "globally_unique_nonce": false,
+        "issuer_available": true,
+        "physical_witness": false,
+        "requested_unsafe_promotion": false,
+        "trusted_clock": false,
+        "witness_available": true
+      },
+      "promoted_capture": false,
+      "reconciliation_performed": false,
+      "scenario": "incomplete_authority_inventory"
+    }
+  ],
+  "schema": "TRUST_ROBOT_L49_AUTHORITY_FAILURE_FALSIFICATION_V1",
+  "scientific_pose_factors": 0,
+  "source_ledgers": [
+    {
+      "database_sha256": "7b49995ec1352819b63daa0d6a22a37d2ee89907700f9c30578678ca55a927fa",
+      "label": "central",
+      "nonce_sha256": "63a5b5742f8fc17368943c7e1c25c1795d1b0aa551c112596e13a34b5e607347",
+      "receipt_sha256": "a86550e3be142540e9e17de1156dc4bf1babe6e7754219c493ef42b1c63d5124",
+      "request_sha256": "0629c8b54f876f87d633c9c5253c1d2d8a5a0e8866cdad93e5efc25d55fef6ec",
+      "session_id": "L47_SYNTH_3497226f4233ac25d68b67cb"
+    },
+    {
+      "database_sha256": "7b49995ec1352819b63daa0d6a22a37d2ee89907700f9c30578678ca55a927fa",
+      "label": "split_left",
+      "nonce_sha256": "63a5b5742f8fc17368943c7e1c25c1795d1b0aa551c112596e13a34b5e607347",
+      "receipt_sha256": "a86550e3be142540e9e17de1156dc4bf1babe6e7754219c493ef42b1c63d5124",
+      "request_sha256": "0629c8b54f876f87d633c9c5253c1d2d8a5a0e8866cdad93e5efc25d55fef6ec",
+      "session_id": "L47_SYNTH_3497226f4233ac25d68b67cb"
+    },
+    {
+      "database_sha256": "7b49995ec1352819b63daa0d6a22a37d2ee89907700f9c30578678ca55a927fa",
+      "label": "split_right",
+      "nonce_sha256": "63a5b5742f8fc17368943c7e1c25c1795d1b0aa551c112596e13a34b5e607347",
+      "receipt_sha256": "a86550e3be142540e9e17de1156dc4bf1babe6e7754219c493ef42b1c63d5124",
+      "request_sha256": "0629c8b54f876f87d633c9c5253c1d2d8a5a0e8866cdad93e5efc25d55fef6ec",
+      "session_id": "L47_SYNTH_3497226f4233ac25d68b67cb"
+    }
+  ]
+}

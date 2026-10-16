@@ -1,0 +1,18 @@
+{
+  "authoritative_distributed_issuer_available": false,
+  "conflict_resolution_authorized": false,
+  "globally_consistent_nonce_state_available": false,
+  "independent_source_attestation_available": false,
+  "l47_report_sha256": "40eccecc0e73b6b718f7b3cb9e7936811c7955f07f021672a23fada71ac64f6e",
+  "l47_validation_sha256": "d0194e6940305e5d129ebcf107298a139b130f34bc1daa55c5fb2bcc0e7dd682",
+  "parent_commit": "c2e013f549b87e8646a8e51095a3372df0d09581",
+  "quarantine_policy": "QUARANTINE_REVIEW_REQUIRED",
+  "required_future_evidence": [
+    "authenticated independent source witness",
+    "single authoritative or consensus-backed nonce ledger",
+    "independent durable receipt publication",
+    "physical timestamp and sensor provenance validation"
+  ],
+  "schema": "TRUST_ROBOT_L48_OFFLINE_RECONCILIATION_CONTRACT_V1",
+  "source_sha256": "2d5a79bdcef2f9486abd61dce8fdecf4950fecd4b71b276ed7a4735b665de740"
+}

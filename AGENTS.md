@@ -181,3 +181,13 @@ L41: 20 readiness gates and 26 negative controls. L42: offline hook/outbox compa
 No real sensor acquisition, trusted physical timing, independent 6DoF GT, calibrated health labels or pose factors. Preserve frozen KIOS evidence and Git history.
 
 Next L46: offline independent-witness authority design and adversarial checks. L37 live launch remains denied.
+
+## KIOS L46-L50 witness-authority checkpoint (2026-10-16)
+
+Read `experiments/isaacsim_v16_l46_l50_authority_boundary_v1/README.md` and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_L46_L50_TRUST_BOUNDARY_V1.md`.
+
+L46 simulated role signing cannot establish sensor authenticity. L47 single-host SQLite exclusion worked only inside one ledger, while two isolated registries admitted the same nonce. L48-L49 retained quarantine without automatic promotion. L50 documented six engineering capabilities and sixteen unqualified requirements.
+
+No trusted physical source, exposure-time verification, independent 6DoF GT, calibrated health model or scientific pose-factor authorization. Raw SQLite, sensors and test HMAC secrets remain outside GitHub.
+
+Next: return to core clean 6DoF estimator and scientifically supportable dataset evidence. Do not pursue additional trust prototypes without a demonstrated research dependency. KIOS and iot4care are distinct workstations.
