@@ -1,0 +1,12 @@
+{
+  "admission_sha256": "2f8a0f3be28eb0b2b139f9f36836160cf05775917c313982b0f666e930588a61",
+  "challenge_sha256": "2a20c6b86f79472003a0187dc3d6d9fc520092743d8343aeb2412556c8f770db",
+  "database_sha256": "cd77cabf882de91cace96c2d3cb5130a7d7877e39301eb2fbf0167422c97a240",
+  "issued_monotonic_ns_untrusted": 2658208588642387,
+  "nonce_sha256": "871fbeb191c605d77e5f83a7cd05c868e6782750429771c2f28f9bb3ff554ee3",
+  "raw_database_archived": false,
+  "schema": "TRUST_ROBOT_L38_COMPACT_REGISTRY_SNAPSHOT_V1",
+  "seal_sha256": "4d380b175c62401d404169d1611f8c332203c53506b79474673e68a118771bdd",
+  "session_id": "KIOS_L38_ac601fa3fb8125b0d67df55d",
+  "state": "SEALED"
+}

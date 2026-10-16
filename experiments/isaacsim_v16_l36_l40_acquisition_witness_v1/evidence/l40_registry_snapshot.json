@@ -1,0 +1,25 @@
+{
+  "database_sha256": "776ee49342f9047c9b8e4267794c4870d6c2d3861b28820a43c24c7cfa63adbc",
+  "nonce_sha256": "2f763c707fd7ee3ec1549fcc94ac1cc138a498dbe55328f19c1643aba83fad9f",
+  "outbox": [
+    {
+      "digest": "96ad65affdd24a4773868b0b54af83986f062cddce468ca9cec1d6d31dac9f16",
+      "published": 1,
+      "stage": 0
+    },
+    {
+      "digest": "4facd0cfca65989022cebe708f9dd96de0a35398e3db3526c8f53b725aa67d3a",
+      "published": 1,
+      "stage": 1
+    },
+    {
+      "digest": "cd3a1b3573cf91a0a0640efe3a0890b245257a63a05941ca8891ff69499b9b63",
+      "published": 1,
+      "stage": 2
+    }
+  ],
+  "raw_database_archived": false,
+  "schema": "TRUST_ROBOT_L40_COMPACT_OUTBOX_SNAPSHOT_V1",
+  "session_id": "KIOS_L40_5d21dc76fb8d957bae907c70",
+  "state": "SEALED"
+}

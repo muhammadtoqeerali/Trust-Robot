@@ -1,0 +1,14 @@
+{
+  "assessment_sha256": "5bf243322cac38204defd66402b20b771d547ef6c6027567f91fc283fab6f2cf",
+  "baseline_state": "SEALED",
+  "live_gpu_launch": false,
+  "orchestrator_source_sha256": "4b7424ad462a76871041563ee6c5f4fdc45a4f1b6929edb1fc12dd5e815ce0ad",
+  "physical_durability_qualified": false,
+  "protocol_source_sha256": "1df54c21a92bbf48387b48e1b78a0b71ea0298767005df7e3f7548f307a99736",
+  "schema": "TRUST_ROBOT_L40_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "verified_denied_faults": 7,
+  "verified_outbox_rows": 3,
+  "verified_recoveries": 2,
+  "verifier_source_sha256": "ba468339dde1e26cc713870e838542ff8ed171de39be8a34cd2945fd43de1ef1"
+}

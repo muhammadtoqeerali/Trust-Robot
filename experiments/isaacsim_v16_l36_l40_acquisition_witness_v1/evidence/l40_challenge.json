@@ -1,0 +1,17 @@
+{
+  "candidate_sha256": "4384b085f79dff51af5dbbf8a4c4bf4cae6deffc906bfbcaf8a8ef00a7e05dec",
+  "contract_sha256": "ee8dfaa3a0f95813d29efa68f65a3222a39cce5e12cf855c4c3508791dcc05f9",
+  "fixture_sha256": "b2fa0728d1aa867d162bae7e463f7bf353b058222d2700eaf392cd271ed97736",
+  "health_labels_generated": 0,
+  "mode": "OFFLINE_FIXTURE_NO_NEW_SENSOR_MEASUREMENTS",
+  "new_sensor_measurements": 0,
+  "nonce_hash": "2f763c707fd7ee3ec1549fcc94ac1cc138a498dbe55328f19c1643aba83fad9f",
+  "nonce_hex": "233fc9d37c3bf39cb8ba29a528b501bebba9c3cd1f3064f18d0c34076f9a2744",
+  "parent_commit": "0b542e8644f3c4b98ed92c0f83a7c82a4635ae52",
+  "physical_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "schema": "TRUST_ROBOT_L40_RECEIPT_V1",
+  "session_id": "KIOS_L40_5d21dc76fb8d957bae907c70",
+  "simulator_launch_authorized": false,
+  "stage": "ISSUED"
+}

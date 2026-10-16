@@ -1,0 +1,13 @@
+{
+  "candidate_sha256": "4384b085f79dff51af5dbbf8a4c4bf4cae6deffc906bfbcaf8a8ef00a7e05dec",
+  "issued_monotonic_ns_untrusted": 2658208588642387,
+  "l35_transcript_sha256": "b2fa0728d1aa867d162bae7e463f7bf353b058222d2700eaf392cd271ed97736",
+  "l36_contract_sha256": "ee8dfaa3a0f95813d29efa68f65a3222a39cce5e12cf855c4c3508791dcc05f9",
+  "mode": "OFFLINE_L35_FIXTURE_NO_SENSOR_ACQUISITION",
+  "nonce_hex": "954b0d2ca2de51cbaddc0cc4f1ad4acfc7ad5ddfaf4b17afd16447395b0330b7",
+  "parent_commit": "0b542e8644f3c4b98ed92c0f83a7c82a4635ae52",
+  "physical_time_verified": false,
+  "schema": "TRUST_ROBOT_L38_LOCAL_CHALLENGE_V1",
+  "session_id": "KIOS_L38_ac601fa3fb8125b0d67df55d",
+  "trusted_hardware_attestation": false
+}

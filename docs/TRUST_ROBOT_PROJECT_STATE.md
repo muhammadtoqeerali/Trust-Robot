@@ -5959,3 +5959,14 @@ Historical 344 PASS test count was not rerun by this milestone.
 Next: L36 acquisition-time integration design and adversarial
 offline testing. Do not promote software ordering to trusted
 physical sensor timing.
+
+## KIOS L36-L40 acquisition witness engineering milestone (2026-10-16)
+
+Checkpoint: `experiments/isaacsim_v16_l36_l40_acquisition_witness_v1/`.
+L36: offline preflight/sealing gate, 46 controls rejected.
+L37: pre-simulator and post-export fail-closed hooks, 12 static mutations rejected, no execution.
+L38: durable local SQLite nonce consumption; separate-process replay denied; 20 controls rejected.
+L39: 20 simulated recovery cases (1 sealed, 2 review, 17 quarantined).
+L40: transactional outbox; 2 missing-publication recoveries and 7 corruption faults denied.
+No new camera/LiDAR/IMU measurements, trusted clock/exposure sync, independent source authenticity, hardware attestation, qualified 6DoF reference or scientific ATE/RPE. No sensor health labels or estimator pose factors. Physical phase remains blocked.
+Historical verifiers using documentation hashes must be run against their publishing commit; this archive's verifier uses commit-scoped document verification. Next: L41 readiness review and targeted offline tests.

@@ -1,0 +1,115 @@
+{
+  "actual_power_failure_tested": false,
+  "automatic_nonce_reset": false,
+  "faults_rejected_count": 7,
+  "git_commit_or_push_performed": false,
+  "hardware_attestation_verified": false,
+  "health_labels_generated": 0,
+  "input_sha256": {
+    "candidate": "4384b085f79dff51af5dbbf8a4c4bf4cae6deffc906bfbcaf8a8ef00a7e05dec",
+    "contract": "ee8dfaa3a0f95813d29efa68f65a3222a39cce5e12cf855c4c3508791dcc05f9",
+    "fixture": "b2fa0728d1aa867d162bae7e463f7bf353b058222d2700eaf392cd271ed97736"
+  },
+  "live_simulator_launch_authorized": false,
+  "missing_receipts_recovered_only_from_committed_outbox": true,
+  "nonce_replay_rejected": true,
+  "nonce_state_final": "SEALED",
+  "orchestrator_source_sha256": "4b7424ad462a76871041563ee6c5f4fdc45a4f1b6929edb1fc12dd5e815ce0ad",
+  "parent_commit": "0b542e8644f3c4b98ed92c0f83a7c82a4635ae52",
+  "physical_source_authenticity_verified": false,
+  "physical_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "primary_receipts_sha256": {
+    "admission_v1.json": "4facd0cfca65989022cebe708f9dd96de0a35398e3db3526c8f53b725aa67d3a",
+    "challenge_v1.json": "96ad65affdd24a4773868b0b54af83986f062cddce468ca9cec1d6d31dac9f16",
+    "seal_v1.json": "cd3a1b3573cf91a0a0640efe3a0890b245257a63a05941ca8891ff69499b9b63"
+  },
+  "primary_registry_sha256": "776ee49342f9047c9b8e4267794c4870d6c2d3861b28820a43c24c7cfa63adbc",
+  "protocol_source_sha256": "1df54c21a92bbf48387b48e1b78a0b71ea0298767005df7e3f7548f307a99736",
+  "quarantined_faults": [
+    [
+      "tampered_receipt",
+      "L40_FAIL_CLOSED=ValueError:RECEIPT_HASH_MISMATCH"
+    ],
+    [
+      "missing_published_receipt",
+      "L40_FAIL_CLOSED=ValueError:RECEIPT_MISSING_OR_SYMLINKED"
+    ],
+    [
+      "corrupt_outbox_blob",
+      "L40_FAIL_CLOSED=ValueError:OUTBOX_DIGEST_MISMATCH"
+    ],
+    [
+      "missing_outbox_entry",
+      "L40_FAIL_CLOSED=ValueError:OUTBOX_STAGE_COUNT"
+    ],
+    [
+      "wrong_registry_nonce",
+      "L40_FAIL_CLOSED=ValueError:NONCE_IDENTITY"
+    ],
+    [
+      "state_outbox_mismatch",
+      "L40_FAIL_CLOSED=ValueError:OUTBOX_STAGE_COUNT"
+    ],
+    [
+      "pending_but_tampered",
+      "L40_FAIL_CLOSED=ValueError:RECEIPT_HASH_MISMATCH"
+    ]
+  ],
+  "recovery_cases": [
+    [
+      "rename_before_mark",
+      "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=3"
+    ],
+    [
+      "pending_file_missing",
+      "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=3"
+    ]
+  ],
+  "recovery_count": 2,
+  "replaced_existing_tampered_receipts": false,
+  "schema": "TRUST_ROBOT_L40_CRASH_SAFE_OUTBOX_OFFLINE_VALIDATION_V1",
+  "sensor_measurements_acquired": 0,
+  "subprocess_checks": [
+    [
+      "issue_before_publication",
+      "L40_ISSUE_STATE_COMMITTED_BEFORE_PUBLICATION=PASS"
+    ],
+    [
+      "challenge_recovery",
+      "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=1"
+    ],
+    [
+      "admission_before_publication",
+      "L40_ADMITTED_COMMITTED_WITH_OUTBOX=PASS"
+    ],
+    [
+      "restart_replay_denied",
+      "L40_FAIL_CLOSED=ValueError:NONCE_OR_SESSION_ALREADY_CONSUMED"
+    ],
+    [
+      "admission_recovery",
+      "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=2"
+    ],
+    [
+      "seal_before_publication",
+      "L40_SEALED_COMMITTED_WITH_OUTBOX=PASS"
+    ],
+    [
+      "seal_recovery",
+      "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=3"
+    ],
+    [
+      "second_seal_denied",
+      "L40_FAIL_CLOSED=ValueError:NONCE_OR_SESSION_ALREADY_CONSUMED"
+    ],
+    [
+      "idempotent_publication",
+      "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=3"
+    ],
+    [
+      "sealed_final_state",
+      "L40_FINAL_STATE=SEALED"
+    ]
+  ]
+}

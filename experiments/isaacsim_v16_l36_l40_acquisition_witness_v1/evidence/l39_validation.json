@@ -1,0 +1,16 @@
+{
+  "assessment_report_sha256": "c9c7afe88785c3e59b8e2954834973ca6478d424b4402a008d756fabb3762b1c",
+  "assessment_source_sha256": "e2353db5a37863d296b888e71a8271458b505585d685e7635b8132cb44ea9c98",
+  "baseline_registry_state": "SEALED",
+  "fail_closed_policy_verified": true,
+  "frozen_l38_database_sha256": "cd77cabf882de91cace96c2d3cb5130a7d7877e39301eb2fbf0167422c97a240",
+  "health_labels_generated": 0,
+  "live_launch_authorized": false,
+  "parent_git_commit": "0b542e8644f3c4b98ed92c0f83a7c82a4635ae52",
+  "pose_factors_authorized": 0,
+  "power_loss_durability_verified": false,
+  "schema": "TRUST_ROBOT_L39_INDEPENDENT_VALIDATION_V1",
+  "verified_case_count": 20,
+  "verified_quarantine_cases": 17,
+  "verifier_source_sha256": "a1d97220d9977727843ee8b5aa13afaecc6be6d81ee780750d0bc2a8242a87e9"
+}

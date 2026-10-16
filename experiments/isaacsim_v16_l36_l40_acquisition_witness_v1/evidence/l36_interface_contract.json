@@ -1,0 +1,44 @@
+{
+  "future_capture_hook_requires": [
+    "Actual payload source digests produced after admission",
+    "Capture-session identity bound to every sensor stream",
+    "Defined camera LiDAR and IMU measurement-time semantics",
+    "Independent calibration and reference evidence"
+  ],
+  "future_issuer": "Independent trusted recording source requires separate qualification; current software issuer is untrusted",
+  "future_seal_requires": [
+    "Captured source payload hashes bound to challenge and admission",
+    "Independently controlled immutable witness storage",
+    "Power-loss and partial-capture recovery behavior",
+    "Challenge replay rejection across process restarts"
+  ],
+  "goal": "Future guarded Isaac Sim preflight and sealing hooks",
+  "health_labels_generated": 0,
+  "independent_source_authenticity_verified": false,
+  "nonce_replay_requirement": "Persist consumed nonce in independent durable storage before future launch; not implemented or proven here",
+  "not_implemented": [
+    "Live Isaac Sim integration",
+    "External hardware attestation",
+    "Physical exposure or clock verification",
+    "Durable independent nonce registry",
+    "Scientifically qualified six-DoF reference"
+  ],
+  "parent_commit": "0b542e8644f3c4b98ed92c0f83a7c82a4635ae52",
+  "physical_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "preflight_requires": [
+    "Preissued unconsumed nonce within untrusted local clock TTL",
+    "Exact capture session ID and contract hash",
+    "Hash-pinned acquisition source and scene",
+    "Validated issuer challenge binding",
+    "Separate guarded GPU authorization before any live launch"
+  ],
+  "schema": "TRUST_ROBOT_L36_ACQUISITION_TIME_INTERFACE_CONTRACT_V1",
+  "scope": "ENGINEERING_OFFLINE_INTERFACE_NOT_LIVE_GPU_PERMISSION",
+  "state_order": [
+    "ISSUE_CHALLENGE",
+    "PREFLIGHT_GATE",
+    "ACQUISITION_HOOK",
+    "SEAL_RECEIPT"
+  ]
+}
