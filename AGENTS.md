@@ -191,3 +191,11 @@ L46 simulated role signing cannot establish sensor authenticity. L47 single-host
 No trusted physical source, exposure-time verification, independent 6DoF GT, calibrated health model or scientific pose-factor authorization. Raw SQLite, sensors and test HMAC secrets remain outside GitHub.
 
 Next: return to core clean 6DoF estimator and scientifically supportable dataset evidence. Do not pursue additional trust prototypes without a demonstrated research dependency. KIOS and iot4care are distinct workstations.
+
+## KIOS S1–S5 core 6DoF scientific readiness checkpoint (2026-10-16)
+
+See `experiments/trust_robot_s1_s5_core_6dof_readiness_v1/README.md` and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_S1_S5_CORE_6DOF_READINESS_V1.md`.
+
+S1: 36 M2DGR trajectories and 140 unqualified synchronization entries; frozen 22/7/7 split. S2: 104/104 selected synthetic estimator regression tests passed in compatible system Python, eight recorded factor denials. S3: 41 metadata-only contract tests. S4: 55 tests and 32 closed sensor science gates; corrected order-independent verifier. S5: 32 rejected false promotions and next-step integration decision. S1–S5 did not qualify real sensor capture, scoring, extrinsics, synchronization, health labels, or pose factors.
+
+Next S6: CPU-only manufactured-fixture same-edge independent camera and LiDAR factor support with distinct covariance and factor identity, while retaining the recorded-source fail-closed gate and prior test baseline. Never unfreeze historical M2DGR calibration, split, ground-truth, or scientific-evidence gates. Work with KIOS and iot4care as separate machines; do not silently run the live simulator.

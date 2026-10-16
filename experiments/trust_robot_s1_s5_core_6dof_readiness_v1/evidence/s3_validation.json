@@ -1,0 +1,19 @@
+{
+  "cross_modal_time_qualified": false,
+  "engine_sha256": "f04f7d16fd16dd2e67920ca0b7ec19c862c79798a63eab9ff582f645b97ef3ef",
+  "health_labels": 0,
+  "junit_sha256": "b9927fad93813742919bf1312221ebaefdb8b360b5d7f3fcbb346dbcb4650a24",
+  "metadata_sha256": "357f8b3371d5acfad48069cc1614758e0ba630348b80a4b8b9db6200d2c8c468",
+  "new_sensor_acquisitions": 0,
+  "physical_extrinsics_qualified": false,
+  "real_sensor_factors_authorized": 0,
+  "report_sha256": "438eec80e1cb0a32eb5b0d958f9e9cf4b7a20e0184d421df3c1e16b853623745",
+  "schema": "TRUST_ROBOT_S3_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "separate_imu_sources_verified": true,
+  "simulator_launch_authorized": false,
+  "test_source_sha256": "123ffd27ae61c13b9f5dcae9ecfbfd73cb25327c199adf519c8441e33c155314",
+  "verified_train_streams": 4,
+  "verified_unit_tests": 41,
+  "verifier_sha256": "9153e1eccabd356a338be1fad3f253fa3ac67f2194603c4cf5759e7ce5b9b6cb"
+}

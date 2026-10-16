@@ -1,0 +1,18 @@
+{
+  "engine_sha256": "7418238ceca3e3bc350820a854aa928c51b599216809688f43b8f4e4b39798cd",
+  "health_labels_generated": 0,
+  "health_training_authorized": false,
+  "junit_xml_sha256": "8ffc02f9e88d966d4f93ff50484052782ab770e428a62928c6e312f266f27c04",
+  "live_simulator_launch_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "new_sensor_measurements": 0,
+  "real_sensor_factors_authorized": 0,
+  "report_sha256": "cdac0cd46b1e45f70d34058aec6ecf45a6dfa9745e637a4b02d469470d24c5ad",
+  "schema": "TRUST_ROBOT_S2_INDEPENDENT_VALIDATION_V1",
+  "verified_failed_tests": 0,
+  "verified_recorded_factor_denials": 8,
+  "verified_selected_suites": 9,
+  "verified_skipped_tests": 0,
+  "verified_test_count": 104,
+  "verifier_sha256": "5ef2f1f06e522ee45e684483963b527c14aa9e5abad66c9c90de6eadd73d1cf2"
+}

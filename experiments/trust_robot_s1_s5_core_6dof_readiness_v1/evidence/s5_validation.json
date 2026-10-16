@@ -1,0 +1,19 @@
+{
+  "closed_gate_instances_verified": 32,
+  "engine_sha256": "df108dffd5dd3dde0beb84a9c3ea223c751bb57d189ede3d720a6c3484d80ef5",
+  "existing_regression_tests_verified": 104,
+  "false_promotion_controls_reviewed": 32,
+  "health_labels": 0,
+  "independently_checked_source_reports": 5,
+  "m2dgr_scoring_authorized": false,
+  "matrix_sha256": "aef562021ceb42c77229a5bed208498d387e63108753eb010ac8132cf89be8d4",
+  "new_sensor_acquisitions": 0,
+  "ready_next_task": "S6_CPU_ONLY_INDEPENDENT_CAMERA_LIDAR_SAME_EDGE_FUSION",
+  "real_recorded_factor_admission": false,
+  "report_sha256": "2896a34936b41918121dbe77f79b8eaada765ebfecc3127e5be992ce17bde8d6",
+  "s3_contract_tests_verified": 41,
+  "s4_contract_tests_verified": 55,
+  "schema": "TRUST_ROBOT_S5_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "verifier_sha256": "73d52505b0818899711cedc929a5d92f1a482c9480c9baa434042585ec578c14"
+}

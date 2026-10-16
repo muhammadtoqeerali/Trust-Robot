@@ -6021,3 +6021,15 @@ No independent sensor source authentication, physical exposure-clock verificatio
 M2DGR scientific evaluation remains blocked.
 
 Next: read-only examination of fixed clean 6DoF estimator readiness and remaining dataset timing, calibration and independent-reference prerequisites. Avoid equating engineering PASS phase counts with scientific project completeness.
+
+## KIOS S1–S5 core 6DoF readiness checkpoint — 2026-10-16
+
+Parent commit: `79a2abf6de6ff68df23de8bd04b538ce0c95b46b`.
+
+Archive `experiments/trust_robot_s1_s5_core_6dof_readiness_v1/`; audit `docs/audits/trust_robot/TRUST_ROBOT_KIOS_S1_S5_CORE_6DOF_READINESS_V1.md`.
+
+S1 verified frozen dataset split 22/7/7 with zero qualified stream timing entries across 140 synchronization records and 16 analytic estimator code/test pairs. S2 executed 104/104 selected synthetic regressions, denied eight unauthorized recorded-factor probes after CPU environment repair. S3 produced a metadata-only TRAIN contract for four streams with 41 passing tests. S4 documented 32 closed requirements and 55 passing tests; repaired verifier requires exact gate key sets regardless of JSON key ordering. S5 documented 32 refused false science promotions and prioritized CPU synthetic independent camera/LiDAR same-edge factors.
+
+28 local artifacts SHA-pinned with versioned verifier and manifest. No sensor records, simulator execution, real GT, scientific factors, empirical health labels, health model training, M2DGR ATE/RPE, full extrinsics or cross-modal timing qualification. Do not equate test PASS with scientific readiness.
+
+Next S6: implement synthetic independent camera + LiDAR same-edge factor ownership and covariance with adversarial tests while all recorded-input gates remain closed.

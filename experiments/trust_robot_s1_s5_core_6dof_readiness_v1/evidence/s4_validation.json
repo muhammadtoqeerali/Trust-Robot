@@ -1,0 +1,20 @@
+{
+  "bag_integrity_not_calibration": true,
+  "engine_sha256": "98388322f7bcf809662c0dbcc7343107e0c2317fcd1809b3a2a245b8863b8518",
+  "full_extrinsics_verified": false,
+  "health_labels": 0,
+  "junit_sha256": "f2340964258acbd8ce59865c1d391d570d85c2f534759e31b8c3e8105b4ba4a4",
+  "matrix_sha256": "162ebb53712d74e45160cd56aaedf987e7c45d6fe66e05b9d4c13ea34e4b7fe7",
+  "new_sensor_acquisitions": 0,
+  "partial_rotation_not_full_extrinsic": true,
+  "physical_sensor_time_verified": false,
+  "recorded_factor_execution_authorized": false,
+  "report_sha256": "5d8fbafe58b04055942454ecc3491b3bcf2045baf3f14050c48b8a5d51574ce3",
+  "schema": "TRUST_ROBOT_S4_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "test_sha256": "187b0c7a5b4bd4da3bc1bfa95b59496a90bec7c6a49a99063ecc023ef8a33f37",
+  "verified_closed_gate_instances": 32,
+  "verified_source_streams": 4,
+  "verified_tests": 55,
+  "verifier_sha256": "8aaa44b665a4d272f03de8180e954aee70d7c1503224c9a5acaebd87c1f22d14"
+}

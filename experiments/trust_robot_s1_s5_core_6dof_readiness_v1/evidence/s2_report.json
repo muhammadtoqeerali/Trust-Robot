@@ -1,0 +1,103 @@
+{
+  "audit_source_sha256": "7418238ceca3e3bc350820a854aa928c51b599216809688f43b8f4e4b39798cd",
+  "camera_lidar_independent_same_edge_fusion_qualified": false,
+  "empirical_covariance_calibration": false,
+  "factor_gate_probe": {
+    "metadata_only_streams": [
+      {
+        "factor_execution_authorized": false,
+        "status": "RECORDED_PROVENANCE_ONLY",
+        "stream": "/camera/color/image_raw/compressed"
+      },
+      {
+        "factor_execution_authorized": false,
+        "status": "RECORDED_PROVENANCE_ONLY",
+        "stream": "/handsfree/imu"
+      },
+      {
+        "factor_execution_authorized": false,
+        "status": "RECORDED_PROVENANCE_ONLY",
+        "stream": "/velodyne_points"
+      }
+    ],
+    "negative_control_count": 8,
+    "negative_controls_denied": [
+      "heldout",
+      "missing_camera",
+      "boolean_header",
+      "negative_header",
+      "unsupported_stream",
+      "recorded_factor",
+      "forged_authorization",
+      "recorded_in_synthetic_slot"
+    ],
+    "physical_extrinsics_verified": false,
+    "real_factor_execution_authorized": false,
+    "sensor_synchronization_verified": false
+  },
+  "git_commit_or_push": false,
+  "health_labels_generated": 0,
+  "health_training_authorized": false,
+  "live_simulator_launch_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "manufactured_truth_is_physical_reference": false,
+  "new_sensor_measurements": 0,
+  "next_scientific_task": "DEFINE_TRAIN_ONLY_RECORDED_FACTOR_INPUT_BOUNDARY_WITHOUT_ADMISSION",
+  "numerical_execution_environment": "PYTHONNOUSERSITE=1; system NumPy/SciPy; CPU only",
+  "parent_commit": "79a2abf6de6ff68df23de8bd04b538ce0c95b46b",
+  "pytest_xml_sha256": "8ffc02f9e88d966d4f93ff50484052782ab770e428a62928c6e312f266f27c04",
+  "recorded_camera_relative_pose_qualified": false,
+  "recorded_lidar_imu_fusion_qualified": false,
+  "regression_counts": {
+    "errored": 0,
+    "failed": 0,
+    "passed": 104,
+    "skipped": 0
+  },
+  "regression_suites": [
+    {
+      "name": "test_analytic_imu_preintegration.py",
+      "sha256": "97db13a8c43bc817e7c83df8c0dced0a207c46e54bfa50f309f7f7f8205b709f"
+    },
+    {
+      "name": "test_analytic_preintegrated_fusion.py",
+      "sha256": "07c5b089beb5be643c4b2f6c51d4d442f3630f937b97930dff7be218b4f5aab6"
+    },
+    {
+      "name": "test_analytic_schur_marginalization.py",
+      "sha256": "3fc856ce38ed5334f6bdf7daabf9302326e773a2b62a4b1d0f81105fd9a98691"
+    },
+    {
+      "name": "test_analytic_marginalized_fusion.py",
+      "sha256": "5b9710a9acd240cd3bd1f8380f1b7369194a3a39c9761f5efea95905836d2793"
+    },
+    {
+      "name": "test_analytic_factor_support.py",
+      "sha256": "a8d41ea39ae1f14593b91403135141b88268c08f2aa1b3199ea8bb6693c02e88"
+    },
+    {
+      "name": "test_analytic_marginalization_consistency.py",
+      "sha256": "d6869f86d7876799dcf0de2929e06eed3c7100a44c00973bd349b683ffa6d24e"
+    },
+    {
+      "name": "test_analytic_three_modality_bridge.py",
+      "sha256": "b37f272fff1ae3548967b1147154c15cc4667ce746bc2fc1e646e3714a90b8fe"
+    },
+    {
+      "name": "test_multimodal_factor_interface.py",
+      "sha256": "a9705b3643352815d6faf8c01be6d1025e0f481658f1eeacf586e522d0f32be2"
+    },
+    {
+      "name": "test_m2dgr_sensor_admission.py",
+      "sha256": "570a630cbd78b138bb785f0e76e50ec18e600cc71b8cabb87d69d4a1372acf30"
+    }
+  ],
+  "regression_test_count": 104,
+  "s1_report_sha256": "604976cc1f020dff0b8b401e4f8aa418ba9492643210d915bf6e58146ab6d046",
+  "s1_validation_sha256": "df466a5d22ae8972a9c08fe87c2c958977d285ad85c06ce66e6933921f9368fd",
+  "schema": "TRUST_ROBOT_S2_ESTIMATOR_REGRESSION_AND_FACTOR_GATE_V1",
+  "scientific_interpretation": "SYNTHETIC_ESTIMATOR_REGRESSION_ONLY",
+  "scientific_pose_factors_authorized": 0,
+  "selected_suite_count": 9,
+  "trusted_cross_modal_timing": false
+}
