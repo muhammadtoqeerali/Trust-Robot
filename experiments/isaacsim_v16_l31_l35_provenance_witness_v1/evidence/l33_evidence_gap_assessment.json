@@ -1,0 +1,92 @@
+{
+  "adversarial_mutations_rejected": [
+    "missing_event",
+    "duplicate_id",
+    "event_reorder",
+    "foreign_run",
+    "invalid_payload_sha",
+    "invalid_source_sha",
+    "forged_authenticity",
+    "forged_exposure",
+    "forged_factor",
+    "forged_health",
+    "wrong_sequence",
+    "wrong_imu_clock",
+    "fake_exposure_definition",
+    "fake_calibration",
+    "fake_attestation",
+    "fake_camera_time",
+    "fake_lidar_clock",
+    "fake_reference",
+    "fake_orientation",
+    "fake_reference_uncertainty"
+  ],
+  "adversarial_mutations_rejected_count": 20,
+  "contract_sha256": "24e71f94c8acfc3aa59184c49a811d62f54fc93d90178bbebef6c8239912467b",
+  "evidence_requirements_independently_qualified": 0,
+  "evidence_requirements_total": 11,
+  "git_commit_or_push_performed": false,
+  "health_labels_generated": 0,
+  "historical_raw_recordings_modified": false,
+  "implementation_sha256": "1c2b3ce3639b922e7db599ebee9ace484fc023d9d731e5c2ddd82c82ac501baf",
+  "input_sha256": {
+    "l27_contract": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+    "l30_events": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+    "l30_manifest": "cd202b19dd86a1b00871c2ec55690cab30898b7120906d064390009363138d80",
+    "l31": "4a54a1ece6b5a6fcab6c61001983fb9c69f0be8cf9a4928dade3c28d5846a24b",
+    "l32": "949eaa79cf967a4c910dd54e69c5c03194a68aaa819137c415124cdcacbc9585"
+  },
+  "l30_exposure_sync": "UNQUALIFIED",
+  "l30_reference": "SCRIPTED_NOT_INDEPENDENT",
+  "l30_source_authenticity": "UNQUALIFIED",
+  "missing_evidence_counts": {
+    "camera_measurement_timestamp_missing": 6,
+    "physical_exposure_unqualified": 272,
+    "reference_orientation_missing": 130,
+    "reference_uncertainty_missing": 130,
+    "sensor_calibration_version_missing": 142,
+    "sensor_exposure_definition_missing": 142,
+    "sensor_independent_attestation_missing": 142,
+    "source_authenticity_unverified": 272
+  },
+  "new_simulator_run": false,
+  "next": "L34_DESIGN_AND_TEST_SEPARATE_CAPTURE_WITNESS_INSTRUMENTATION",
+  "parent_commit": "2ac0a332bf6a5d749f5a75fe7d5a53572ea0e109",
+  "pose_factors_authorized": 0,
+  "prospective_protocol_scientifically_qualified": false,
+  "schema": "TRUST_ROBOT_L33_EVIDENCE_GAP_ASSESSMENT_V1",
+  "scientific_admission_decisions": {
+    "lidar_pose_factor": "DENIED_INSUFFICIENT_EVIDENCE",
+    "live_freshness": "DENIED_INSUFFICIENT_EVIDENCE",
+    "scientific_6dof_accuracy": "DENIED_INSUFFICIENT_EVIDENCE",
+    "supervised_health_labels": "DENIED_INSUFFICIENT_EVIDENCE"
+  },
+  "verified_cross_run_overlap": {
+    "camera": {
+      "identical_payloads": 0,
+      "same_inode": 0,
+      "total": 6
+    },
+    "imu": {
+      "identical_payloads": 130,
+      "same_inode": 0,
+      "total": 130
+    },
+    "lidar": {
+      "identical_payloads": 6,
+      "same_inode": 0,
+      "total": 6
+    },
+    "usd_pose": {
+      "identical_payloads": 130,
+      "same_inode": 0,
+      "total": 130
+    }
+  },
+  "verified_event_counts": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "usd_pose": 130
+  }
+}

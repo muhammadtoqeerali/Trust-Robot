@@ -1,6 +1,6 @@
 # TRUST-ROBOT Project State
 
-Last Updated: 2026-09-22
+Last Updated: 2026-10-16
 
 Repository: `muhammadtoqeerali/Trust-Robot`
 
@@ -5918,3 +5918,44 @@ Supervised sensor-health labels: ZERO.
 Next milestone: L31 offline assessment of source authenticity,
 measurement-event timing semantics, replay detection and
 evidence independence.
+
+## KIOS L31-L35 provenance and witness milestone (2026-10-16)
+
+Checkpoint:
+`experiments/isaacsim_v16_l31_l35_provenance_witness_v1/`
+
+L31: 272 archived metadata events verified, 14 fresh L30
+source files checked, 16 negative controls rejected.
+
+L32: 28 old/new files verified. Cross-run identical payloads:
+camera 0/6, LiDAR 6/6, IMU 130/130, scripted pose 130/130.
+Separate files and deterministic equality do not prove
+independent measurement or replay.
+
+L33: eleven acquisition-readiness requirements unqualified,
+four gates denied, 20 adverse controls rejected.
+A prospective acquisition-evidence contract was created.
+
+L34: post-capture userspace challenge/file witness,
+16 source files rehashed, 16 mutations rejected.
+
+L35: challenge-before-recording software rehearsal on twelve
+archived L30 fixture references, with independently sealed
+record chain and 25 rejected negative controls.
+
+No new camera/LiDAR/IMU sensor acquisition in L31-L35.
+No new simulator execution or scientific pose factors.
+
+Independent source authenticity: NOT VERIFIED.
+Physical exposure synchronization: NOT VERIFIED.
+Independent six-DoF reference: NOT VERIFIED.
+Hardware attestation: NOT VERIFIED.
+Scientific localization error qualification: BLOCKED.
+Pose factors and supervised health labels: ZERO.
+
+The M2DGR physical-data scoring gate remains blocked.
+Historical 344 PASS test count was not rerun by this milestone.
+
+Next: L36 acquisition-time integration design and adversarial
+offline testing. Do not promote software ordering to trusted
+physical sensor timing.

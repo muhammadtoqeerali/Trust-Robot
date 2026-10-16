@@ -1,0 +1,109 @@
+{
+  "adversarial_mutations_rejected": [
+    "duplicate_event",
+    "truncated_sequence",
+    "payload_hash_forgery",
+    "source_hash_forgery",
+    "run_id_forgery",
+    "sequence_replay",
+    "timestamp_mutation",
+    "forged_physical_exposure",
+    "forged_authenticity",
+    "forged_pose_factor",
+    "forged_health_label",
+    "forged_reference",
+    "reordered_events",
+    "imu_clock_relabel",
+    "pose_orientation_forgery",
+    "source_row_replay"
+  ],
+  "adversarial_mutations_rejected_count": 16,
+  "capture_mode": "SIMULATOR_POST_CAPTURE_UNQUALIFIED",
+  "cross_run_hash_comparison": {
+    "camera": {
+      "compared": 6,
+      "identical_payload_sha256": 0,
+      "identical_reported_timestamp_field": 6,
+      "identical_source_file_sha256": 0
+    },
+    "imu": {
+      "compared": 130,
+      "identical_payload_sha256": 130,
+      "identical_reported_timestamp_field": 130,
+      "identical_source_file_sha256": 130
+    },
+    "lidar": {
+      "compared": 6,
+      "identical_payload_sha256": 6,
+      "identical_reported_timestamp_field": 6,
+      "identical_source_file_sha256": 6
+    },
+    "usd_pose": {
+      "compared": 130,
+      "identical_payload_sha256": 130,
+      "identical_reported_timestamp_field": 130,
+      "identical_source_file_sha256": 130
+    }
+  },
+  "event_counts": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "usd_pose": 130
+  },
+  "git_commit_performed": false,
+  "health_labels_generated": 0,
+  "implementation_sha256": "dbb86672c8d6f9940a73f78b1b75e83ee217047ea0451df4c4274fd1b152eb6a",
+  "input_sha256": {
+    "candidate_script": "993d21523afd54dca39ce6fcf27ba20d430324c5b7b5b9b25939521c0082bb78",
+    "l27_contract": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+    "l28_events": "957e13ec10411631cbeaaeb8759907363bfa0e3200f9f9b46caf49adaf2bc082",
+    "l30_events": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+    "l30_manifest": "cd202b19dd86a1b00871c2ec55690cab30898b7120906d064390009363138d80",
+    "l30_report": "d358563fa3e08523c2aa86fb42e8d39b51bd33ffc5fa1cf87ad348075a1adc67",
+    "scene": "43b4ffe0f7af29e435203ac3aa8c2d4c4897434042f37e26586b124b2495d8cf"
+  },
+  "limitations": {
+    "extrinsics_independently_verified": false,
+    "hashes_establish_independent_source_authenticity": false,
+    "health_detection_error_rates_validated": false,
+    "independent_six_dof_reference_verified": false,
+    "matching_cross_run_hashes_prove_replay": false,
+    "physical_exposure_synchronization_verified": false,
+    "scientific_ate_rpe_qualified": false,
+    "sensor_clock_alignment_uncertainty_measured": false
+  },
+  "new_simulator_acquisition_performed": false,
+  "parent_git_commit": "2ac0a332bf6a5d749f5a75fe7d5a53572ea0e109",
+  "pose_factors_authorized": 0,
+  "raw_recordings_modified": false,
+  "schema": "TRUST_ROBOT_L31_OFFLINE_MULTIMODAL_PROVENANCE_TIMING_V1",
+  "source_payload_integrity": "VERIFIED_AGAINST_KIOS_LOCAL_FILES",
+  "timing_diagnostics_unqualified": {
+    "camera_minus_lidar_scripted_read_seconds": {
+      "count": 6,
+      "max": 0.0,
+      "median": 0.0,
+      "min": 0.0,
+      "spread": 0.0
+    },
+    "imu_reported_timestamps_monotonic": true,
+    "imu_scripted_read_minus_reported_seconds": {
+      "count": 130,
+      "max": 0.01666678488254547,
+      "median": 0.01666666381061077,
+      "min": 0.016666550189256668,
+      "spread": 2.3469328880310059e-07
+    },
+    "lidar_gmo_minus_scripted_read_seconds": {
+      "count": 6,
+      "max": 1.0333333871226844,
+      "median": 1.0333333867251577,
+      "min": 1.033333386327631,
+      "spread": 7.95053356483777e-10
+    },
+    "lidar_gmo_timestamps_monotonic": true,
+    "scripted_pose_times_monotonic": true
+  },
+  "unique_raw_source_files_verified": 14
+}

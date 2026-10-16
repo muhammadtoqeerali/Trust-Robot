@@ -1,0 +1,88 @@
+{
+  "calibrated_health_probabilities": false,
+  "future_acquisition_engineering_checks": [
+    "Fail closed on duplicated or omitted event identities",
+    "Bind each event to an immutable source payload and run identity",
+    "Check independent capture-session challenge and receipt provenance",
+    "Preserve explicit sensor event type and measurement-time definition",
+    "Reject unverified physical synchronization and calibration claims",
+    "Separate content equality from independent recording-origin evidence",
+    "Reject self-rehashed metadata as sufficient authenticity proof"
+  ],
+  "future_capture_stages": [
+    {
+      "name": "source_provenance",
+      "qualification": "NOT_YET_VERIFIED",
+      "required": [
+        "A pre-capture challenge identifier originating outside the capture writer",
+        "Independent verification of acquisition identity and source attribution",
+        "Per-modality source identity, counters, content hashes and immutable evidence roots",
+        "Documented independent witness trust boundary and replay challenge procedure"
+      ],
+      "stage": "A"
+    },
+    {
+      "name": "exposure_timing_and_calibration",
+      "qualification": "NOT_YET_VERIFIED",
+      "required": [
+        "Camera physical exposure start/end semantics and uncertainty",
+        "LiDAR scan or firing event time origin and uncertainty",
+        "IMU sample or integration time semantics and clock domain",
+        "Measured cross-clock mapping, uncertainty and time-varying error bounds",
+        "Verified intrinsic/extrinsic transforms with independently reviewed provenance"
+      ],
+      "stage": "B"
+    },
+    {
+      "name": "independent_six_dof_reference",
+      "qualification": "NOT_YET_VERIFIED",
+      "required": [
+        "Externally referenced position and orientation",
+        "Reference uncertainty, coverage and frame provenance",
+        "Independently verified reference-to-sensor time association",
+        "Physical correspondence and reference-sensor extrinsics"
+      ],
+      "stage": "C"
+    },
+    {
+      "name": "prospective_heldout_validation",
+      "qualification": "NOT_YET_VERIFIED",
+      "required": [
+        "Frozen train, validation and confirmation-test policies",
+        "Held-out 6DoF localization error analysis",
+        "Calibrated factor uncertainty",
+        "Adjudicated healthy/fault controls and false-alarm/miss evaluation"
+      ],
+      "stage": "D"
+    }
+  ],
+  "health_labels_generated": 0,
+  "independent_reference_verified": false,
+  "limitations": [
+    "An independent software process does not necessarily constitute an independent trusted physical witness",
+    "A signature or nonce alone does not prove a physical sensor exposure",
+    "Deterministic identical sensor payloads do not by themselves prove replay",
+    "Simulator read-time consistency does not prove physical exposure synchronization",
+    "Scripted USD translation does not qualify as independent 6DoF ground truth"
+  ],
+  "parent_commit": "2ac0a332bf6a5d749f5a75fe7d5a53572ea0e109",
+  "physical_exposure_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "prior_l27_contract_sha256": "7078da5e5c9ba0db5052f2ecb8d02544379b4d70cb319a3d7cab3e6a8fd52931",
+  "protocol_status": "ENGINEERING_PROPOSAL_NOT_SCIENTIFIC_QUALIFICATION",
+  "requirements_preserved": [
+    "adjudicated_sensor_failure_labels",
+    "calibrated_factor_uncertainty",
+    "heldout_6dof_accuracy_evaluation",
+    "independent_6dof_reference",
+    "independent_source_authenticity",
+    "independently_verified_replay_monitor",
+    "physical_correspondence_validation",
+    "qualified_exposure_synchronization",
+    "trusted_hardware_exposure_time",
+    "validated_detection_error_rates",
+    "verified_extrinsic_transform"
+  ],
+  "schema": "TRUST_ROBOT_L33_PROSPECTIVE_ACQUISITION_CONTRACT_V1",
+  "source_authenticity_verified": false
+}

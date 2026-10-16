@@ -1,0 +1,10 @@
+{
+  "contract_sha256": "24e71f94c8acfc3aa59184c49a811d62f54fc93d90178bbebef6c8239912467b",
+  "issued_monotonic_ns_untrusted": 2656398936880597,
+  "l34_report_sha256": "49d1f4aed8e69ac5cc9ed8018a0340ab8e664cb94668f1e824cc7521b24ca010",
+  "mode": "ARCHIVED_L30_METADATA_FIXTURE_NOT_NEW_ACQUISITION",
+  "nonce_hex": "236bba35acf6e1b63a9311266af6066b61464cee03e7085e3382e62a2a091f7f",
+  "pose_factors_authorized": 0,
+  "schema": "TRUST_ROBOT_L35_ISSUER_CHALLENGE_V1",
+  "trusted_hardware_attestation": false
+}

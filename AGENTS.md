@@ -139,3 +139,29 @@ No pose factors or health labels are authorized.
 Next: L31 offline provenance and measurement-time assessment.
 Never rerun L30 merely to validate this archive.
 The KIOS and iot4care workstations are distinct.
+
+## KIOS L31-L35 provenance witness checkpoint (2026-10-16)
+
+Read:
+experiments/isaacsim_v16_l31_l35_provenance_witness_v1/README.md
+docs/audits/trust_robot/TRUST_ROBOT_KIOS_L31_L35_PROVENANCE_WITNESS_V1.md
+
+L31-L32 verified cross-run source hashes and demonstrated limits
+of hash-only freshness/source-independence inference.
+
+L33 produced the prospective evidence acquisition contract.
+
+L34 completed a separate-process post-capture witness dry run.
+L35 completed a challenge-before-software-recording rehearsal
+with twelve historical fixture references and 25 rejected
+adversarial mutations. No new sensor measurements occurred.
+
+None of these results establishes independent source
+authenticity, trusted hardware attestation, physical exposure
+sync, independent 6DoF ground truth or authorized pose factors.
+
+Next: L36 acquisition-time witness integration design and
+offline falsification before any additional guarded GPU work.
+
+Use KIOS for all KIOS-specific local experiments. Do not
+confuse iot4care/MioAgent with the KIOS repository.

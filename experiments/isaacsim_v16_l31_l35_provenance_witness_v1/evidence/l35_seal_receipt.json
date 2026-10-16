@@ -1,0 +1,19 @@
+{
+  "challenge_file_sha256": "13cc5aacfe4158578a6fd0faeb5f4e82c7ee4fb40fdcb9ccbb3d138cd2b9d316",
+  "hardware_attestation_verified": false,
+  "health_labels_generated": 0,
+  "independent_6dof_reference_verified": false,
+  "independent_source_authenticity_verified": false,
+  "last_record_sha256": "f87c0fc7e8c5b3ebad098d38c65a1fe76a49c2c9762a4821a408a88af1651b91",
+  "mode": "ARCHIVED_L30_METADATA_FIXTURE_NOT_NEW_ACQUISITION",
+  "physical_exposure_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "post_record_software_witness_only": true,
+  "record_count": 12,
+  "schema": "TRUST_ROBOT_L35_POST_RECORD_SEAL_V1",
+  "session_manifest_sha256": "ee23238ba3df2beff518c08973cf5e73aea69f1ce7dad1985d5369e31295d479",
+  "source_l30_events_sha256": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+  "transcript_sha256": "b2fa0728d1aa867d162bae7e463f7bf353b058222d2700eaf392cd271ed97736",
+  "witness_end_monotonic_ns_untrusted": 2656399000351348,
+  "witness_start_monotonic_ns_untrusted": 2656398998616650
+}

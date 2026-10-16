@@ -1,0 +1,9 @@
+{
+  "issued_monotonic_ns_unqualified": 2655894785503557,
+  "issued_wall_ns_unqualified": 1792131787698302600,
+  "l33_contract_sha256": "24e71f94c8acfc3aa59184c49a811d62f54fc93d90178bbebef6c8239912467b",
+  "nonce_hex": "07a537cad74b882e20ed6fd7c32304edff63541d211710e8d1a102c78b83d77b",
+  "physical_sensor_attestation": false,
+  "purpose": "POST_CAPTURE_OFFLINE_DRYRUN",
+  "schema": "TRUST_ROBOT_L34_LOCAL_CHALLENGE_V1"
+}

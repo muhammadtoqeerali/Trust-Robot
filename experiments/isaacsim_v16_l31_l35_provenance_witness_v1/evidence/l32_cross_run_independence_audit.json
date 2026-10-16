@@ -1,0 +1,85 @@
+{
+  "coherent_in_memory_rehash_challenge": {
+    "crosschecking_against_unchanged_raw_imu_rejects": true,
+    "independently_pinned_l30_file_hash_rejects": true,
+    "modified_field": "imu:001.sensor_timestamp_raw",
+    "raw_files_modified": false,
+    "timestamp_shift_seconds": 0.25,
+    "unsigned_envelope_file_manifest_hash_self_consistent": true
+  },
+  "cross_run": {
+    "camera": {
+      "distinct_source_paths": 6,
+      "event_count": 6,
+      "identical_payload_sha256": 0,
+      "identical_source_file_sha256": 0,
+      "identical_timestamp_field": 6,
+      "same_device_inode": 0
+    },
+    "imu": {
+      "distinct_source_paths": 1,
+      "event_count": 130,
+      "identical_payload_sha256": 130,
+      "identical_source_file_sha256": 130,
+      "identical_timestamp_field": 130,
+      "same_device_inode": 0
+    },
+    "lidar": {
+      "distinct_source_paths": 6,
+      "event_count": 6,
+      "identical_payload_sha256": 6,
+      "identical_source_file_sha256": 6,
+      "identical_timestamp_field": 6,
+      "same_device_inode": 0
+    },
+    "usd_pose": {
+      "distinct_source_paths": 1,
+      "event_count": 130,
+      "identical_payload_sha256": 130,
+      "identical_source_file_sha256": 130,
+      "identical_timestamp_field": 130,
+      "same_device_inode": 0
+    }
+  },
+  "events_verified_each_run": 272,
+  "git_commit_or_push_performed": false,
+  "gpu_or_simulator_executed": false,
+  "health_labels_generated": 0,
+  "implementation_sha256": "194214c9fcf03eca3e347d2516b6bd39686617b66e5229a69618d6f39cdb626a",
+  "inputs_sha256": {
+    "l28": "957e13ec10411631cbeaaeb8759907363bfa0e3200f9f9b46caf49adaf2bc082",
+    "l30": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+    "l30_manifest": "cd202b19dd86a1b00871c2ec55690cab30898b7120906d064390009363138d80",
+    "l31": "4a54a1ece6b5a6fcab6c61001983fb9c69f0be8cf9a4928dade3c28d5846a24b"
+  },
+  "interpretation": {
+    "calibrated_health_labels_approved": false,
+    "cross_sensor_exposure_sync_verified": false,
+    "different_paths_or_inode_prove_independent_acquisition": false,
+    "file_hash_equality_proves_replay": false,
+    "independent_six_dof_reference_verified": false,
+    "independent_source_authenticity_verified": false,
+    "new_camera_hash_proves_physical_acquisition": false,
+    "trusted_physical_exposure_time_verified": false
+  },
+  "missing_evidence_field_counts": {
+    "camera_measurement_timestamp": 6,
+    "scripted_reference_orientation": 130,
+    "scripted_reference_uncertainty": 130,
+    "sensor_calibration_version": 142,
+    "sensor_exposure_definition": 142,
+    "sensor_provenance_attestation": 142
+  },
+  "parent_git_commit": "2ac0a332bf6a5d749f5a75fe7d5a53572ea0e109",
+  "pose_factors_authorized": 0,
+  "prior_acquisitions_modified": false,
+  "raw_source_files_sha256_verified": 28,
+  "reported_clock_label_counts": {
+    "GMO_TIMESTAMP_NS_UNQUALIFIED": 6,
+    "IMU_REPORTED_CLOCK_UNQUALIFIED": 130,
+    "None": 6,
+    "SCRIPTED_SIM_STEP_SECONDS": 130
+  },
+  "schema": "TRUST_ROBOT_L32_CROSS_RUN_SOURCE_INDEPENDENCE_AUDIT_V1",
+  "source_file_pairs_verified": 14
+}

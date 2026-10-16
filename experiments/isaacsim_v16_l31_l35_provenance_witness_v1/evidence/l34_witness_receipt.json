@@ -1,0 +1,111 @@
+{
+  "challenge_file_sha256": "464d02f9e8a1376124e79590ed0bd3d0210fe07ea20c4eb8f5f428c6b0f691db",
+  "challenge_nonce_sha256": "c3d1ab5dcd7d249b78c7b326a6d4116e6633342711ad79274884cc4f0c270710",
+  "event_count": 272,
+  "event_counts": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6,
+    "usd_pose": 130
+  },
+  "file_count": 16,
+  "files": [
+    {
+      "path": "multimodal_probe_results_v15/base_pose_series_v15.jsonl",
+      "sha256": "0c7cd562bfed36a432b13c1b56dca7530e0f3d02cebeccee0895f41a1efc2a1b",
+      "size_bytes": 45755
+    },
+    {
+      "path": "multimodal_probe_results_v15/capture_index_v15.json",
+      "sha256": "910ef925c98121a068fee9cb3a6fe0ecd3e2778db75d1eeb2bd2cf996101ed92",
+      "size_bytes": 2442
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/camera_001.npy",
+      "sha256": "ce23a18129c7c7ce5a45cf57fbbd77754b74fc34f4fb1a50395bb303d3f9ef79",
+      "size_bytes": 76928
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/camera_002.npy",
+      "sha256": "ff08a5f1e1489cab19430127fc3e4a1537ceac3b43bef4606abf9cd795a05ef7",
+      "size_bytes": 76928
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/camera_003.npy",
+      "sha256": "ecef280a8672ce0a5c1a29a274d0c1c27c5c5cc0e1a9fa6f74df89e38ca85845",
+      "size_bytes": 76928
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/camera_004.npy",
+      "sha256": "2af7a2fd21f4827d1af5444eca39a7a2897c977375b2e19f686359498a9b728d",
+      "size_bytes": 76928
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/camera_005.npy",
+      "sha256": "5aa13e6904904965eff28b6bdfb49ec02fe78fd2907a7488295ff6333d1fedfb",
+      "size_bytes": 76928
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/camera_006.npy",
+      "sha256": "f79f818a7dc45134b793aa33b35af447ca05fbbf6ed1c40d8c7489030fe6762e",
+      "size_bytes": 76928
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/lidar_001.npy",
+      "sha256": "a1f12471c70cf0abd6e28055fe1c36d534e74718ea7f5f6ff69c0f316750addb",
+      "size_bytes": 320
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/lidar_002.npy",
+      "sha256": "ba90d25638e65a0c65301b3fdf628d2ebaf4e60631273a48f84bac226b24febc",
+      "size_bytes": 320
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/lidar_003.npy",
+      "sha256": "cffe15aadc1bfc650ea0e53c7ab248fbdf12feccfd6023da10f4a18440582c45",
+      "size_bytes": 320
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/lidar_004.npy",
+      "sha256": "0b157c4a261943cb36a1dfab22e86cf3e1335da9233fb6c3f1f5db20bc84d3b1",
+      "size_bytes": 320
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/lidar_005.npy",
+      "sha256": "2bd398cf1a3bea0b4dabdc0ee7f3e644647fc965b2456fd87514354e65621e72",
+      "size_bytes": 320
+    },
+    {
+      "path": "multimodal_probe_results_v15/frames_v15/lidar_006.npy",
+      "sha256": "65f21a5e9af1b369956c00589af85a5877e759dce28584ee614c6014ed0cb979",
+      "size_bytes": 320
+    },
+    {
+      "path": "multimodal_probe_results_v15/imu_v1.jsonl",
+      "sha256": "c0d1ee8db2ad2a149ce7028a247649852bba3f8dd62461a177ae2e847e2456cb",
+      "size_bytes": 41942
+    },
+    {
+      "path": "multimodal_probe_results_v15/summary_v1.json",
+      "sha256": "9f0635a2d8d801c721b198c7840eb53abdbf5c4f4e1927beecc7a088fdea6a40",
+      "size_bytes": 1148
+    }
+  ],
+  "hardware_attestation_verified": false,
+  "health_labels_generated": 0,
+  "independent_6dof_reference_verified": false,
+  "independent_source_authenticity_verified": false,
+  "l30_events_sha256": "b28c333347ebb9c7262b636c355324b9abfa0b03beeb7c1af5a8b473a7144444",
+  "l30_manifest_sha256": "cd202b19dd86a1b00871c2ec55690cab30898b7120906d064390009363138d80",
+  "l33_contract_sha256": "24e71f94c8acfc3aa59184c49a811d62f54fc93d90178bbebef6c8239912467b",
+  "mode": "POST_CAPTURE_OFFLINE_DRYRUN",
+  "parent_commit": "2ac0a332bf6a5d749f5a75fe7d5a53572ea0e109",
+  "physical_exposure_synchronization_verified": false,
+  "pose_factors_authorized": 0,
+  "post_capture_only": true,
+  "run_id": "KIOS_L29_INSTRUMENTED_RUNTIME_V1",
+  "schema": "TRUST_ROBOT_L34_POST_CAPTURE_WITNESS_RECEIPT_V1",
+  "separate_process_untrusted_host": true,
+  "witness_end_monotonic_ns_unqualified": 2655894811308486,
+  "witness_start_monotonic_ns_unqualified": 2655894808586959
+}
