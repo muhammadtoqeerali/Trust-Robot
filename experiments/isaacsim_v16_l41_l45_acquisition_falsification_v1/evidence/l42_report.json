@@ -1,0 +1,81 @@
+{
+  "actual_per_modality_payloads": 0,
+  "binding_contract_sha256": "1b4acef236b12b58d912b20a8c920835e44f44f23fc517fe325f799b5638836d",
+  "builder_source_sha256": "604aab4d79548261b0ab7c99abfa8b4ba2f77b07b9a2447c8a61627a4aee4981",
+  "git_commit_or_push_performed": false,
+  "hardware_attestation_verified": false,
+  "health_labels_generated": 0,
+  "independent_6dof_reference_verified": false,
+  "independent_source_authenticity_verified": false,
+  "live_simulator_launch_authorized": false,
+  "new_sensor_measurements": 0,
+  "nonce_sha256": "1333bd4086b328d22384698156d6bdc19399eac40e20042326748cc9fd9785f7",
+  "offline_fixture_only": true,
+  "outbox_receipts_sha256": {
+    "admission_v1.json": "4cf458bc4bf4a2471d35fd8332dc856dc70592708118b0cca229eb3ab688e36d",
+    "challenge_v1.json": "3045c295650f7d91c3cf09a7fa3080e2412710176744a6c88bf71964e26b03e1",
+    "seal_v1.json": "e2b0652f305192342736ed5174977cab16c634756e6d0c5808d57de802d2e75a"
+  },
+  "outbox_records": 3,
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "physical_sync_verified": false,
+  "pose_factors_authorized": 0,
+  "postexport_guard_denied": true,
+  "pre_simulator_guard_denied": true,
+  "real_power_loss_durability_verified": false,
+  "registry_sha256": "970d8c0edfeb66e6656bb3bb547e42cb88e6a25cb4bf92c872a7af813c9fd14d",
+  "registry_state": "SEALED",
+  "replay_admit_denied": true,
+  "replay_seal_denied": true,
+  "schema": "TRUST_ROBOT_L42_OFFLINE_HOOK_OUTBOX_COMPATIBILITY_V1",
+  "session_id": "KIOS_L40_77304442d096dd75931eb7e7",
+  "simulator_executed": false,
+  "source_clock_verified": false,
+  "source_sha256": {
+    "candidate": "4384b085f79dff51af5dbbf8a4c4bf4cae6deffc906bfbcaf8a8ef00a7e05dec",
+    "contract": "ee8dfaa3a0f95813d29efa68f65a3222a39cce5e12cf855c4c3508791dcc05f9",
+    "fixture": "b2fa0728d1aa867d162bae7e463f7bf353b058222d2700eaf392cd271ed97736",
+    "guard": "b6bcabaf081bb1d6bf31b0ff907369bef841cf012d33b4ec407efd9bd6d94965",
+    "l41report": "67e0be9b1da5944cf41a3bfeccdfdd5110e5e672de6c4fc7370bf3fa1914e798",
+    "l41validation": "e1507fa4233bc918246a518c4a3b56c474149f843030cd238d7887fcc91a3a84",
+    "protocol": "1df54c21a92bbf48387b48e1b78a0b71ea0298767005df7e3f7548f307a99736"
+  },
+  "subprocess_trace": [
+    {
+      "action": "issue",
+      "response": "L40_ISSUE_STATE_COMMITTED_BEFORE_PUBLICATION=PASS"
+    },
+    {
+      "action": "publish",
+      "response": "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=1"
+    },
+    {
+      "action": "admit",
+      "response": "L40_ADMITTED_COMMITTED_WITH_OUTBOX=PASS"
+    },
+    {
+      "action": "publish",
+      "response": "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=2"
+    },
+    {
+      "action": "replay_admit",
+      "response": "L40_FAIL_CLOSED=ValueError:NONCE_OR_SESSION_ALREADY_CONSUMED"
+    },
+    {
+      "action": "seal",
+      "response": "L40_SEALED_COMMITTED_WITH_OUTBOX=PASS"
+    },
+    {
+      "action": "publish",
+      "response": "L40_RECEIPTS_PUBLISHED_OR_RECONCILED=3"
+    },
+    {
+      "action": "replay_seal",
+      "response": "L40_FAIL_CLOSED=ValueError:NONCE_OR_SESSION_ALREADY_CONSUMED"
+    },
+    {
+      "action": "status",
+      "response": "L40_FINAL_STATE=SEALED"
+    }
+  ]
+}

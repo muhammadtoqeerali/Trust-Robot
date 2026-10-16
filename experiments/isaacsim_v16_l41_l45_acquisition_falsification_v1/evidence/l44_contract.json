@@ -1,0 +1,18 @@
+{
+  "atomic_sqlite_state_and_outbox": true,
+  "core_source_sha256": "f9eb0917972a14ee5f80d64122d23619ede37b589062e1c30200c0bb1d9dae49",
+  "expected_synthetic_events": {
+    "camera": 6,
+    "imu": 130,
+    "lidar": 6
+  },
+  "health_labels": 0,
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "physical_exposure_sync_verified": false,
+  "real_sensor_source_attestation": false,
+  "schema": "TRUST_ROBOT_L44_CAPTURE_COMMIT_CONTRACT_V1",
+  "scientific_pose_factors": 0,
+  "simulator_launch_authorized": false,
+  "test_source_sha256": "570ccdb7961d4687a756187f5ac07696a6db9f5d1bf4f55f7b80a2abe87e5620",
+  "verifier_source_sha256": "9662acca5536d47e659ce1c36c658991b9e8a314f1f924467d82925989cc5269"
+}

@@ -1,0 +1,221 @@
+{
+  "acquisition_stages": [
+    {
+      "independently_qualified": false,
+      "name": "source_provenance",
+      "stage": "A"
+    },
+    {
+      "independently_qualified": false,
+      "name": "exposure_timing_and_calibration",
+      "stage": "B"
+    },
+    {
+      "independently_qualified": false,
+      "name": "independent_six_dof_reference",
+      "stage": "C"
+    },
+    {
+      "independently_qualified": false,
+      "name": "prospective_heldout_validation",
+      "stage": "D"
+    }
+  ],
+  "assessment_source_sha256": "0d29394a4774eb93bb7133206a6052161be170f1964eb60bbc880014e3a7f34c",
+  "checkpoint_manifest_sha256": "265294732cc445ec798a3b7391ab07826037b27d31942d5915047c9bc618d27c",
+  "claim_flags": {
+    "hardware_attestation_verified": false,
+    "independent_6dof_reference_verified": false,
+    "independent_source_authenticity_verified": false,
+    "live_guard_satisfied": false,
+    "live_simulator_execution_authorized": false,
+    "multi_host_replay_verified": false,
+    "physical_sync_verified": false,
+    "power_loss_durability_verified": false,
+    "scientific_accuracy_qualified": false,
+    "witness_independent_of_capture_host": false
+  },
+  "files_sha256": {
+    "code/l37_nonexecuted_candidate.py": "4384b085f79dff51af5dbbf8a4c4bf4cae6deffc906bfbcaf8a8ef00a7e05dec",
+    "code/l37_runtime_guard.py": "b6bcabaf081bb1d6bf31b0ff907369bef841cf012d33b4ec407efd9bd6d94965",
+    "evidence/l36_falsification_report.json": "18ba0c5ee8644581987321a955133518481e86f5c702600b11cf2d9dc904ba96",
+    "evidence/l37_integration_plan.json": "51aa9fd4b612af45ac53d049fe21184ad15123b8154b7d72a8c71f5692d0f466",
+    "evidence/l37_validation.json": "ecc7e2cee1c066b1dc39f85136efd850422901b08936cd892b13d981ba6ff926",
+    "evidence/l38_validation.json": "d3ec936ccc7ebeb1aeb7d629d90b0767a8fc15d9ff6e772637a4c2c9ca7adba8",
+    "evidence/l39_recovery_matrix.json": "c9c7afe88785c3e59b8e2954834973ca6478d424b4402a008d756fabb3762b1c",
+    "evidence/l40_outbox_validation.json": "5bf243322cac38204defd66402b20b771d547ef6c6027567f91fc283fab6f2cf",
+    "evidence/l40_registry_snapshot.json": "a31283d5d4b070397e98aa72e0d4abb90c7d860d53220ba57bd76cafe3f9c7ab"
+  },
+  "gates": [
+    {
+      "id": "archived_checkpoint_integrity",
+      "justification": "Reproducible published evidence integrity",
+      "status": "PASS_ARCHIVED"
+    },
+    {
+      "id": "offline_preflight_contract",
+      "justification": "L36 46 negative controls; design only",
+      "status": "PROTOTYPE_ONLY"
+    },
+    {
+      "id": "pre_simulator_hook_position",
+      "justification": "L37 static preflight hook; intentionally denied",
+      "status": "PROTOTYPE_ONLY"
+    },
+    {
+      "id": "post_export_seal_hook_position",
+      "justification": "L37 static sealing hook; intentionally denied",
+      "status": "PROTOTYPE_ONLY"
+    },
+    {
+      "id": "single_host_nonce_consumption",
+      "justification": "L38 process-restart rejection without trusted issuer",
+      "status": "PROTOTYPE_ONLY"
+    },
+    {
+      "id": "transactional_receipt_outbox",
+      "justification": "L40 committed bytes, two simulated recovery windows",
+      "status": "PROTOTYPE_ONLY"
+    },
+    {
+      "id": "incomplete_session_quarantine",
+      "justification": "L39 20 simulated cases; no real power failure",
+      "status": "PROTOTYPE_ONLY"
+    },
+    {
+      "id": "guarded_live_gpu_launch_authorization",
+      "justification": "No separate live authorization, live guard denied",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "candidate_scene_and_metadata_staging",
+      "justification": "L37 source hash/run identity not rebound; assets absent",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "capture_hook_to_persistent_outbox",
+      "justification": "L37 hook not wired into L38/L40 prototypes",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "per_sensor_acquisition_session_binding",
+      "justification": "Actual per-modality payload witness not acquired",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "independent_immutable_witness_storage",
+      "justification": "No separately controlled immutable acquisition witness",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "independent_sensor_source_authenticity",
+      "justification": "No independent physical acquisition origin",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "hardware_backed_attestation",
+      "justification": "No independently authenticated hardware witness",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "power_loss_durability",
+      "justification": "No actual interruption/power failure study",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "multi_host_replay_protection",
+      "justification": "SQLite prototype is single-host",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "physical_exposure_clock_synchronization",
+      "justification": "No qualified exposure-clock mapping",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "sensor_intrinsic_extrinsic_calibration",
+      "justification": "Independent calibration/provenance not established",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "independent_six_dof_reference",
+      "justification": "Scripted USD transform is not independent six-DoF truth",
+      "status": "NOT_QUALIFIED"
+    },
+    {
+      "id": "heldout_scientific_pose_health_evaluation",
+      "justification": "No qualified ATE/RPE/factor uncertainty/health labels",
+      "status": "NOT_QUALIFIED"
+    }
+  ],
+  "health_labels": 0,
+  "l33_contract_sha256": "24e71f94c8acfc3aa59184c49a811d62f54fc93d90178bbebef6c8239912467b",
+  "negative_controls_count": 26,
+  "negative_controls_rejected": [
+    "false_ready_archived_checkpoint_integrity",
+    "false_ready_offline_preflight_contract",
+    "false_ready_pre_simulator_hook_position",
+    "false_ready_post_export_seal_hook_position",
+    "false_ready_single_host_nonce_consumption",
+    "false_ready_transactional_receipt_outbox",
+    "false_ready_incomplete_session_quarantine",
+    "false_ready_guarded_live_gpu_launch_authorization",
+    "false_ready_candidate_scene_and_metadata_staging",
+    "false_ready_capture_hook_to_persistent_outbox",
+    "false_ready_per_sensor_acquisition_session_binding",
+    "false_ready_independent_immutable_witness_storage",
+    "false_ready_independent_sensor_source_authenticity",
+    "false_ready_hardware_backed_attestation",
+    "false_ready_power_loss_durability",
+    "false_ready_multi_host_replay_protection",
+    "false_ready_physical_exposure_clock_synchronization",
+    "false_ready_sensor_intrinsic_extrinsic_calibration",
+    "false_ready_independent_six_dof_reference",
+    "false_ready_heldout_scientific_pose_health_evaluation",
+    "replace_parent_commit",
+    "increase_pose_factors",
+    "declare_health_labels",
+    "enable_live_authorization",
+    "promote_independent_reference",
+    "fake_test_count"
+  ],
+  "new_sensor_measurements": 0,
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "prioritized_next_steps": [
+    {
+      "order": 1,
+      "phase": "L42",
+      "success_gate": "Falsify inconsistent session bindings without Isaac Sim execution",
+      "task": "Draft offline-only hook-to-outbox binding with exact source/scene/script/run identifiers and per-modality witness schema"
+    },
+    {
+      "order": 2,
+      "phase": "L43",
+      "success_gate": "Fail closed without replacing evidence or reopening nonce",
+      "task": "Test adversarial atomic state transitions, stale challenges, tampered payload handles and incomplete captures"
+    },
+    {
+      "order": 3,
+      "phase": "L44",
+      "success_gate": "Document independent assumptions and required real fault injection",
+      "task": "Build separately scoped witness/attestation trust-boundary review and crash/power durability test plan"
+    },
+    {
+      "order": 4,
+      "phase": "FUTURE_AUTHORIZED",
+      "success_gate": "Do not equate successful capture with physical exposure or six-DoF qualification",
+      "task": "Only after guarded source/scene metadata binding, explicit authorization and safety review, plan one new synthetic acquisition"
+    }
+  ],
+  "readiness_verdict": "LIVE_CAPTURE_DENIED_SCIENCE_GATES_CLOSED",
+  "schema": "TRUST_ROBOT_L41_ACQUISITION_WITNESS_READINESS_V1",
+  "scientific_pose_factors": 0,
+  "technical_test_counts": {
+    "l36_adversarial_controls": 46,
+    "l37_static_mutations": 12,
+    "l38_adversarial_controls": 20,
+    "l39_crash_matrix_cases": 20,
+    "l40_recovery_windows": 2,
+    "l40_rejected_faults": 7
+  }
+}

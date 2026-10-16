@@ -1,0 +1,19 @@
+{
+  "adversarial_cases_independently_rejected": 50,
+  "assessor_source_sha256": "1511632b1e8fcbabfa84dd35ffbbd8b0760bcd2893682f7af2334b4ddae5aafd",
+  "health_labels": 0,
+  "l42_readonly_registry_sha256": "970d8c0edfeb66e6656bb3bb547e42cb88e6a25cb4bf92c872a7af813c9fd14d",
+  "live_simulator_launch_authorized": false,
+  "manifest_sha256": "aeb1af103fa04fd5b494997b20bb53debc3d2e82bf10bb5e2d95c6397ec1a213",
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "partial_capture_cases_requiring_review": 7,
+  "physical_sync_verified": false,
+  "real_sensor_samples": 0,
+  "report_sha256": "4158836e2f1b32a54813cbc17e8ac90812ffa76f598f3210ed467ae9278a0c77",
+  "schema": "TRUST_ROBOT_L43_INDEPENDENT_SESSION_VERIFICATION_V1",
+  "scientific_pose_factors": 0,
+  "source_authenticity_verified": false,
+  "synthetic_record_count": 6,
+  "verified_receipt_count": 3,
+  "verifier_source_sha256": "ea38119a46ed4ebb927e6d9371ceba039b826f73213a26d144c30a228869a600"
+}

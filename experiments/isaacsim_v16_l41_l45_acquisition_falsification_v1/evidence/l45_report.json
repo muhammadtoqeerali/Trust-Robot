@@ -1,0 +1,170 @@
+{
+  "actual_sensor_acquisition_binding": false,
+  "baseline_database_sha256": "23b0f06ccb68822950fc71d10295c1272181e99e55b161874114e192253e7891",
+  "baseline_receipt_sha256": "3c2bb610ceda349250d06cc614926ac4fb40755249d47eb5e52870a8d16e958a",
+  "coherent_cases_internally_accepted": 12,
+  "coherent_cases_with_trusted_provenance": 0,
+  "coherent_rekey_cases": [
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": true,
+      "original_session_pin_matches": false,
+      "scenario": "session_only_0",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": true,
+      "original_session_pin_matches": false,
+      "scenario": "session_only_1",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": true,
+      "original_session_pin_matches": false,
+      "scenario": "session_only_2",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": true,
+      "original_session_pin_matches": false,
+      "scenario": "session_only_3",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": true,
+      "scenario": "nonce_only_0",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": true,
+      "scenario": "nonce_only_1",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": true,
+      "scenario": "nonce_only_2",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": true,
+      "scenario": "nonce_only_3",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": false,
+      "scenario": "both_0",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": false,
+      "scenario": "both_1",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": false,
+      "scenario": "both_2",
+      "trusted_source_authenticity_verified": false
+    },
+    {
+      "internal_l44_decision": "COMPLETE_SYNTHETIC",
+      "original_event_tip_pin_matches": false,
+      "original_nonce_pin_matches": false,
+      "original_session_pin_matches": false,
+      "scenario": "both_3",
+      "trusted_source_authenticity_verified": false
+    }
+  ],
+  "coherent_rekey_count": 12,
+  "contract_sha256": "4e51c3199f45fbbaf056385eb64f369a55601982907b42460be57ce356001673",
+  "fault_cases": [
+    "receipt_missing",
+    "receipt_corrupted",
+    "cross_session_receipt",
+    "database_corrupted",
+    "outbox_deleted",
+    "outbox_payload_changed",
+    "outbox_digest_changed",
+    "outbox_published_invalid",
+    "session_nonce_changed",
+    "session_id_changed",
+    "final_event_deleted",
+    "event_position_gap"
+  ],
+  "faults_rejected_count": 12,
+  "git_commit_or_push": false,
+  "hardware_attestation_verified": false,
+  "health_labels_generated": 0,
+  "incoherent_event_mutations_rejected": [
+    "0:session_id",
+    "0:event_index",
+    "0:payload_sha256",
+    "0:event_digest",
+    "6:session_id",
+    "6:event_index",
+    "6:payload_sha256",
+    "6:event_digest",
+    "12:session_id",
+    "12:event_index",
+    "12:payload_sha256",
+    "12:event_digest",
+    "129:session_id",
+    "129:event_index",
+    "129:payload_sha256",
+    "129:event_digest",
+    "141:session_id",
+    "141:event_index",
+    "141:payload_sha256",
+    "141:event_digest"
+  ],
+  "incoherent_rejection_count": 20,
+  "independent_source_authenticity_verified": false,
+  "l44_report_sha256": "6742e4630ab3a8d3b0714b854d27639d67220169acb4d2296111e56ad0243340",
+  "l44_source_sha256": "f9eb0917972a14ee5f80d64122d23619ede37b589062e1c30200c0bb1d9dae49",
+  "live_simulator_launch_authorized": false,
+  "new_local_fabricated_session": {
+    "database_sha256": "25d469bd3daa187668f58c1f14d6af002d331109672beddc7d95ce2b9601c1b6",
+    "independent_capture_witness": false,
+    "internal_l44_result": "COMPLETE_SYNTHETIC",
+    "real_sensor_measurements": 0,
+    "receipt_sha256": "3216cfebe17d035a982a710a1cec2ee55c1e08fb625aa31cf0cf7abf2f33c7ce"
+  },
+  "new_sensor_measurements": 0,
+  "original_session_tip_sha256": "a1291003447394194d299e814f0e12c0e6d84eb37891bedbfa1e3d1264170b86",
+  "pose_factors_authorized": 0,
+  "real_power_failure_tested": false,
+  "recovery_cases": [
+    "rename_before_publication_mark",
+    "committed_outbox_missing_file"
+  ],
+  "recovery_count": 2,
+  "schema": "TRUST_ROBOT_L45_COHERENT_FORGERY_FALSIFICATION_REPORT_V1",
+  "trusted_physical_timing_verified": false
+}

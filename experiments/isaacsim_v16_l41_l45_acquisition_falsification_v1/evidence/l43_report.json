@@ -1,0 +1,259 @@
+{
+  "actual_acquisition_time_integration_implemented": false,
+  "actual_new_sensor_measurements": 0,
+  "adversarial_cases": [
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_parent"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_schema"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_session"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_nonce"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_challenge"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_admission"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_seal"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_candidate"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_guard"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_contract"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_fixture"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_runid"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "wrong_registry"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_session"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_runid"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_nonce"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_challenge"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_admission"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_seal"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_candidate"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_modality"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_counter"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_negative_counter"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_event_id"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_payload_hash"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_malformed_payload_hash"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_wrong_clock_domain"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "event_clock_decrease"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "drop_one_camera"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "drop_one_lidar"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "drop_one_imu"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "drop_both_camera"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "drop_both_lidar"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "drop_both_imu"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "duplicate_event"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "add_extra_event"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "reorder_events"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "counter_gap"
+    },
+    {
+      "decision": "INCOMPLETE_SYNTHETIC_REVIEW_NO_SEAL",
+      "name": "empty_event_set"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "live_launch_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "physical_payload_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "physical_sync_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "independent_groundtruth_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "pose_factor_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "health_label_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "new_measurement_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "seal_capture_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "hardware_witness_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "multi_host_claim"
+    },
+    {
+      "decision": "QUARANTINED",
+      "name": "trusted_clock_claim"
+    }
+  ],
+  "adversarial_cases_rejected": 50,
+  "assessor_source_sha256": "1511632b1e8fcbabfa84dd35ffbbd8b0760bcd2893682f7af2334b4ddae5aafd",
+  "complete_synthetic_manifest_decision": "COMPLETE_SYNTHETIC_NOT_ACQUISITION",
+  "existing_l42_database_modified": false,
+  "frozen_source_sha256": {
+    "candidate": "4384b085f79dff51af5dbbf8a4c4bf4cae6deffc906bfbcaf8a8ef00a7e05dec",
+    "contract": "ee8dfaa3a0f95813d29efa68f65a3222a39cce5e12cf855c4c3508791dcc05f9",
+    "fixture": "b2fa0728d1aa867d162bae7e463f7bf353b058222d2700eaf392cd271ed97736",
+    "guard": "b6bcabaf081bb1d6bf31b0ff907369bef841cf012d33b4ec407efd9bd6d94965",
+    "l41report": "67e0be9b1da5944cf41a3bfeccdfdd5110e5e672de6c4fc7370bf3fa1914e798",
+    "l42plan": "1b4acef236b12b58d912b20a8c920835e44f44f23fc517fe325f799b5638836d",
+    "l42report": "cb4beb8acb5888e93aa1b041adf6971290f76b25840953ca7b747472caaa2573",
+    "l42source": "604aab4d79548261b0ab7c99abfa8b4ba2f77b07b9a2447c8a61627a4aee4981",
+    "l42validation": "be450eee7acc97b10e17acb8bf826e3958196ba7bbb46af5613c413ef4fe40ac",
+    "l42verifier": "47eb2ca0696986f456a78d59c5eb85fbab232c656f70e743dd6c24a5f9feb0d9",
+    "outbox": "1df54c21a92bbf48387b48e1b78a0b71ea0298767005df7e3f7548f307a99736"
+  },
+  "git_commit_or_push_performed": false,
+  "health_labels": 0,
+  "incomplete_cases_require_review": 7,
+  "independent_6dof_groundtruth_verified": false,
+  "l42_nonce_sha256": "1333bd4086b328d22384698156d6bdc19399eac40e20042326748cc9fd9785f7",
+  "l42_plan_sha256": "1b4acef236b12b58d912b20a8c920835e44f44f23fc517fe325f799b5638836d",
+  "l42_receipts_sha256": {
+    "admission_v1.json": "4cf458bc4bf4a2471d35fd8332dc856dc70592708118b0cca229eb3ab688e36d",
+    "challenge_v1.json": "3045c295650f7d91c3cf09a7fa3080e2412710176744a6c88bf71964e26b03e1",
+    "seal_v1.json": "e2b0652f305192342736ed5174977cab16c634756e6d0c5808d57de802d2e75a"
+  },
+  "l42_registry_sha256": "970d8c0edfeb66e6656bb3bb547e42cb88e6a25cb4bf92c872a7af813c9fd14d",
+  "l42_report_sha256": "cb4beb8acb5888e93aa1b041adf6971290f76b25840953ca7b747472caaa2573",
+  "l42_session_id": "KIOS_L40_77304442d096dd75931eb7e7",
+  "l42_validation_sha256": "be450eee7acc97b10e17acb8bf826e3958196ba7bbb46af5613c413ef4fe40ac",
+  "limitations": [
+    "Synthetic metadata is not sensor data",
+    "The archived L40 seal does not bind actual per-sensor capture payloads",
+    "A fully consistent attacker-controlled rewrite is not prevented by self-hashing",
+    "No independent issuer, trusted sensor hardware, or real-time clock proved"
+  ],
+  "live_simulator_launch_authorized": false,
+  "next": "L44_INCOMPLETE_CAPTURE_COMMIT_BOUNDARY_AND_FAIL_CLOSED_RECOVERY",
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "physical_time_synchronization_verified": false,
+  "schema": "TRUST_ROBOT_L43_SESSION_BINDING_PARTIAL_CAPTURE_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "seal_binds_actual_capture_payloads": false,
+  "synthetic_event_count": 6,
+  "synthetic_manifest_sha256": "aeb1af103fa04fd5b494997b20bb53debc3d2e82bf10bb5e2d95c6397ec1a213",
+  "synthetic_modalities": [
+    "camera",
+    "lidar",
+    "imu"
+  ],
+  "trusted_independent_witness": false
+}

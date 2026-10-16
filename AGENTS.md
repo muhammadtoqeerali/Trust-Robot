@@ -171,3 +171,13 @@ confuse iot4care/MioAgent with the KIOS repository.
 Archive: experiments/isaacsim_v16_l36_l40_acquisition_witness_v1/.
 L36 46 negative tests; L37 isolated fail-closed nonexecuted candidate, 12 static mutations; L38 persistent local nonce rejection and 20 negative tests; L39 20 simulated crash windows; L40 committed receipt outbox with 2 recoveries and 7 denied faults.
 Do not launch L37 or promote it to trusted source authenticity, physical exposure timing, independent 6DoF GT, calibrated health labels or scientific factors. Raw SQLite DBs and sensor files are not committed. Next L41 readiness audit. KIOS and iot4care are distinct workstations.
+
+## KIOS L41-L45 acquisition falsification checkpoint (2026-10-16)
+
+Read `experiments/isaacsim_v16_l41_l45_acquisition_falsification_v1/README.md` and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_L41_L45_ACQUISITION_FALSIFICATION_V1.md`.
+
+L41: 20 readiness gates and 26 negative controls. L42: offline hook/outbox compatibility and 25 negative controls. L43: 50 session mutations and 7 incomplete captures. L44: atomic synthetic decision outbox, 36 event faults, 8 database faults. L45: 12 coherent internal acceptances but ZERO independently trusted sensor origins; 20 incoherent denials, 12 database/receipt faults, 2 simulated recoveries.
+
+No real sensor acquisition, trusted physical timing, independent 6DoF GT, calibrated health labels or pose factors. Preserve frozen KIOS evidence and Git history.
+
+Next L46: offline independent-witness authority design and adversarial checks. L37 live launch remains denied.

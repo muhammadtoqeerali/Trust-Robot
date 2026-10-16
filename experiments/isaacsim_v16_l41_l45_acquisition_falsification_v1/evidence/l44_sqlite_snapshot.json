@@ -1,0 +1,73 @@
+{
+  "case_results": [
+    {
+      "case": 0,
+      "database_sha256": "23b0f06ccb68822950fc71d10295c1272181e99e55b161874114e192253e7891",
+      "event_count": 142,
+      "outbox_published": true,
+      "receipt_sha256": "3c2bb610ceda349250d06cc614926ac4fb40755249d47eb5e52870a8d16e958a",
+      "state": "COMPLETE_SYNTHETIC"
+    },
+    {
+      "case": 1,
+      "database_sha256": "1a2d93ba01bd002fc82453586e27f9038efad0b17c5975fd286534b711d7460c",
+      "event_count": 0,
+      "outbox_published": true,
+      "receipt_sha256": "03543530abd682186274b5ed1e51140c5a4787c3fc82551a75cf0090e403c14c",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "case": 2,
+      "database_sha256": "7e1bf4050d114b42b0d53fc6be8b2dd0a8a6ec949f08e70eb4db3bd6aa655f8d",
+      "event_count": 1,
+      "outbox_published": true,
+      "receipt_sha256": "8779ba5a8607befba6c4d81c8d3074c6b6c0e872a6163e15ef188520e8dfe81a",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "case": 3,
+      "database_sha256": "6ba2637f1165a3042959e595906c3693bf00f3df978e9feaf74fd689a4229a61",
+      "event_count": 3,
+      "outbox_published": true,
+      "receipt_sha256": "7fe64901548050f0c61fd66e95e3b5e6172be6f852e58c724d85af18644bfe3b",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "case": 4,
+      "database_sha256": "f830923a0208d7d4f30a7c5ae448961d20c4189669a0025f7ebeee5004ba155d",
+      "event_count": 5,
+      "outbox_published": true,
+      "receipt_sha256": "8ba2c008419a610564dedd1edba18748fd714bb43bce8601bf98c1612e534649",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "case": 5,
+      "database_sha256": "1d42ac2146ea54282377dd1f2db2f3c78a01fcc76aa42d561c729469e7a20597",
+      "event_count": 6,
+      "outbox_published": true,
+      "receipt_sha256": "6377cfe44d31182195e6b32a23aca865e44d274dabfbf24a9a68bbc98004bf71",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "case": 6,
+      "database_sha256": "8d68f60356346f98185a740175552b624c84cd14770c3aba19812cc13be643bc",
+      "event_count": 12,
+      "outbox_published": true,
+      "receipt_sha256": "dca9d94996cdd21f783d484e6f8ad67bb840bd300d6c6c0b886020cdd5a76531",
+      "state": "REVIEW_REQUIRED"
+    },
+    {
+      "case": 7,
+      "database_sha256": "f5b8917b011f924af4b3d2ec4a2173469d5913f4f93724876488f5cf09fa5620",
+      "event_count": 100,
+      "outbox_published": true,
+      "receipt_sha256": "dd5ce0339ae8f76ec24893f8ea81a15be84ee9f76688fda2b4824143017f6811",
+      "state": "REVIEW_REQUIRED"
+    }
+  ],
+  "independent_physical_sensor_witness": false,
+  "raw_sqlite_archived": false,
+  "schema": "TRUST_ROBOT_L44_SYNTHETIC_SQLITE_SUMMARY_V1",
+  "scientific_pose_factors": 0,
+  "source_report_sha256": "6742e4630ab3a8d3b0714b854d27639d67220169acb4d2296111e56ad0243340"
+}

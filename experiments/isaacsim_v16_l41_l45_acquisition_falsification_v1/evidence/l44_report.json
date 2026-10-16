@@ -1,0 +1,124 @@
+{
+  "actual_sensor_acquisition_binding": false,
+  "case_results": [
+    {
+      "case": 0,
+      "database_sha256": "23b0f06ccb68822950fc71d10295c1272181e99e55b161874114e192253e7891",
+      "decision": "COMPLETE_SYNTHETIC",
+      "receipt_sha256": "3c2bb610ceda349250d06cc614926ac4fb40755249d47eb5e52870a8d16e958a",
+      "synthetic_event_count": 142
+    },
+    {
+      "case": 1,
+      "database_sha256": "1a2d93ba01bd002fc82453586e27f9038efad0b17c5975fd286534b711d7460c",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "03543530abd682186274b5ed1e51140c5a4787c3fc82551a75cf0090e403c14c",
+      "synthetic_event_count": 0
+    },
+    {
+      "case": 2,
+      "database_sha256": "7e1bf4050d114b42b0d53fc6be8b2dd0a8a6ec949f08e70eb4db3bd6aa655f8d",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "8779ba5a8607befba6c4d81c8d3074c6b6c0e872a6163e15ef188520e8dfe81a",
+      "synthetic_event_count": 1
+    },
+    {
+      "case": 3,
+      "database_sha256": "6ba2637f1165a3042959e595906c3693bf00f3df978e9feaf74fd689a4229a61",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "7fe64901548050f0c61fd66e95e3b5e6172be6f852e58c724d85af18644bfe3b",
+      "synthetic_event_count": 3
+    },
+    {
+      "case": 4,
+      "database_sha256": "f830923a0208d7d4f30a7c5ae448961d20c4189669a0025f7ebeee5004ba155d",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "8ba2c008419a610564dedd1edba18748fd714bb43bce8601bf98c1612e534649",
+      "synthetic_event_count": 5
+    },
+    {
+      "case": 5,
+      "database_sha256": "1d42ac2146ea54282377dd1f2db2f3c78a01fcc76aa42d561c729469e7a20597",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "6377cfe44d31182195e6b32a23aca865e44d274dabfbf24a9a68bbc98004bf71",
+      "synthetic_event_count": 6
+    },
+    {
+      "case": 6,
+      "database_sha256": "8d68f60356346f98185a740175552b624c84cd14770c3aba19812cc13be643bc",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "dca9d94996cdd21f783d484e6f8ad67bb840bd300d6c6c0b886020cdd5a76531",
+      "synthetic_event_count": 12
+    },
+    {
+      "case": 7,
+      "database_sha256": "f5b8917b011f924af4b3d2ec4a2173469d5913f4f93724876488f5cf09fa5620",
+      "decision": "REVIEW_REQUIRED",
+      "receipt_sha256": "dd5ce0339ae8f76ec24893f8ea81a15be84ee9f76688fda2b4824143017f6811",
+      "synthetic_event_count": 100
+    }
+  ],
+  "completed_cases": 1,
+  "core_source_sha256": "f9eb0917972a14ee5f80d64122d23619ede37b589062e1c30200c0bb1d9dae49",
+  "event_mutation_count": 36,
+  "event_mutations_rejected": [
+    "mutation_00",
+    "mutation_01",
+    "mutation_02",
+    "mutation_03",
+    "mutation_04",
+    "mutation_05",
+    "mutation_06",
+    "mutation_07",
+    "mutation_08",
+    "mutation_09",
+    "mutation_10",
+    "mutation_11",
+    "mutation_12",
+    "mutation_13",
+    "mutation_14",
+    "mutation_15",
+    "mutation_16",
+    "mutation_17",
+    "mutation_18",
+    "mutation_19",
+    "mutation_20",
+    "mutation_21",
+    "mutation_22",
+    "mutation_23",
+    "mutation_24",
+    "mutation_25",
+    "mutation_26",
+    "mutation_27",
+    "mutation_28",
+    "mutation_29",
+    "mutation_30",
+    "mutation_31",
+    "mutation_32",
+    "mutation_33",
+    "mutation_34",
+    "mutation_35"
+  ],
+  "fault_count": 8,
+  "faults_rejected": [
+    "event_tamper",
+    "outbox_blob",
+    "outbox_hash",
+    "outbox_missing",
+    "nonce_changed",
+    "wrong_state",
+    "missing_receipt",
+    "tampered_receipt"
+  ],
+  "git_changes_performed": false,
+  "health_labels": 0,
+  "l43_manifest_sha256": "aeb1af103fa04fd5b494997b20bb53debc3d2e82bf10bb5e2d95c6397ec1a213",
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "partial_review_cases": 7,
+  "physical_sync_verified": false,
+  "publication_recovery_verified": true,
+  "schema": "TRUST_ROBOT_L44_SYNTHETIC_CAPTURE_BOUNDARY_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "simulator_launch_authorized": false,
+  "test_source_sha256": "570ccdb7961d4687a756187f5ac07696a6db9f5d1bf4f55f7b80a2abe87e5620"
+}

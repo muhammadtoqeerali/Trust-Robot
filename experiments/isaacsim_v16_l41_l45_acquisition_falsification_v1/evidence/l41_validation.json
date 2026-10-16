@@ -1,0 +1,14 @@
+{
+  "assessment_report_sha256": "67e0be9b1da5944cf41a3bfeccdfdd5110e5e672de6c4fc7370bf3fa1914e798",
+  "assessment_source_sha256": "0d29394a4774eb93bb7133206a6052161be170f1964eb60bbc880014e3a7f34c",
+  "health_labels": 0,
+  "independently_checked_forgeries": 26,
+  "independently_checked_gates": 20,
+  "live_gpu_launch_authorized": false,
+  "next": "L42_NONEXECUTED_HOOK_TO_OUTBOX_BINDING_DESIGN",
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "schema": "TRUST_ROBOT_L41_INDEPENDENT_READINESS_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "scientific_stages_closed": 4,
+  "verifier_source_sha256": "aa86693f71291a0e6dd9f6a4269eac1c0eca833da400134498c7bc9f05695b64"
+}

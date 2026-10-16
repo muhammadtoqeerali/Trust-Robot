@@ -5970,3 +5970,29 @@ L39: 20 simulated recovery cases (1 sealed, 2 review, 17 quarantined).
 L40: transactional outbox; 2 missing-publication recoveries and 7 corruption faults denied.
 No new camera/LiDAR/IMU measurements, trusted clock/exposure sync, independent source authenticity, hardware attestation, qualified 6DoF reference or scientific ATE/RPE. No sensor health labels or estimator pose factors. Physical phase remains blocked.
 Historical verifiers using documentation hashes must be run against their publishing commit; this archive's verifier uses commit-scoped document verification. Next: L41 readiness review and targeted offline tests.
+
+## KIOS L41-L45 acquisition witness falsification checkpoint — 2026-10-16
+
+Archived at `experiments/isaacsim_v16_l41_l45_acquisition_falsification_v1/`, with audit `docs/audits/trust_robot/TRUST_ROBOT_KIOS_L41_L45_ACQUISITION_FALSIFICATION_V1.md`.
+
+Parent Git revision: `8d5a1701df3e9d755ac0a4b5adda2845873f52eb`.
+
+L41 assessed 20 readiness gates and rejected 26 unsupported claims, leaving stages A-D closed.
+
+L42 verified offline L37 guard and L40 outbox compatibility with 25 denied mutations, without implementing an actual acquisition-time witness.
+
+L43 rejected 50 synthetic session changes and classified seven partial captures for review.
+
+L44 exercised an atomic SQLite decision and receipt outbox: one complete synthetic capture, seven review-only cases, 36 event alterations and eight database/receipt faults rejected.
+
+L45 showed that 12 coherent regenerated metadata transcripts passed internal checks but provided ZERO independently trusted sensor origins. Twenty incoherent alterations and 12 database/receipt faults were rejected, and two synthetic publication interruptions were recovered.
+
+Archive: 25 frozen source/report files, three compact synthetic evidence artifacts, README, checkpoint manifest and verifier.
+
+No raw SQLite database, scene assets, raw sensor recordings, or fault-copy databases are committed.
+
+No independent source authenticity, physical exposure synchronization, hardware attestation, independent 6DoF ground truth, real power-loss durability, calibrated sensor health, scientific ATE/RPE or estimator pose factors have been established.
+
+Real M2DGR evaluation remains blocked.
+
+Next: L46 offline witness-authority trust-boundary design, not live simulator permission.

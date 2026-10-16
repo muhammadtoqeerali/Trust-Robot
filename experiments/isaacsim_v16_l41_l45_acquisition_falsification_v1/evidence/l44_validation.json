@@ -1,0 +1,16 @@
+{
+  "core_sha256": "f9eb0917972a14ee5f80d64122d23619ede37b589062e1c30200c0bb1d9dae49",
+  "health_labels_generated": 0,
+  "new_sensor_measurements": 0,
+  "pose_factors_authorized": 0,
+  "receipt_chains_verified": 8,
+  "report_sha256": "6742e4630ab3a8d3b0714b854d27639d67220169acb4d2296111e56ad0243340",
+  "schema": "TRUST_ROBOT_L44_INDEPENDENT_VALIDATION_V1",
+  "simulator_launch_authorized": false,
+  "test_sha256": "570ccdb7961d4687a756187f5ac07696a6db9f5d1bf4f55f7b80a2abe87e5620",
+  "verified_complete": 1,
+  "verified_event_mutations": 36,
+  "verified_faults": 8,
+  "verified_partial": 7,
+  "verifier_sha256": "9662acca5536d47e659ce1c36c658991b9e8a314f1f924467d82925989cc5269"
+}

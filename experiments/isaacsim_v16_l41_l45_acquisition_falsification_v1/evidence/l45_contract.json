@@ -1,0 +1,14 @@
+{
+  "actual_external_trusted_witness": false,
+  "actual_source_authenticity_verified": false,
+  "assessment_source_sha256": "de3729413a5650d673a213d42e42bda08db393a621ca990e19e07d3c948fe532",
+  "baseline_pin_scope": "Previously recorded software-session identity and root, not physically trusted attestation",
+  "independent_verifier_sha256": "6fe61c4844902bbc2fe9c165c8f81b5e37574ce604ee6116e35905875ac7f240",
+  "l44_core_sha256": "f9eb0917972a14ee5f80d64122d23619ede37b589062e1c30200c0bb1d9dae49",
+  "l44_report_sha256": "6742e4630ab3a8d3b0714b854d27639d67220169acb4d2296111e56ad0243340",
+  "live_simulator_launch_authorized": false,
+  "parent_commit": "8d5a1701df3e9d755ac0a4b5adda2845873f52eb",
+  "schema": "TRUST_ROBOT_L45_COHERENT_FORGERY_BOUNDARY_CONTRACT_V1",
+  "scientific_pose_factors": 0,
+  "threat_model": "Attacker controls locally generated metadata and can recompute content digests; external witness is absent"
+}
