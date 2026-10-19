@@ -1,0 +1,1098 @@
+{
+  "bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "cross_modal_pairing_performed": false,
+  "diagnostic_scope": "BOUNDED_DESCRIPTIVE_COVERAGE_ONLY_NOT_A_HEALTH_STABILITY_OR_ACCURACY_CLAIM",
+  "extrinsics_verified": false,
+  "git_baseline": "76685f1a6a97fb8e0750224bb927f1b094e63203",
+  "github_modified": false,
+  "health_features_selected": false,
+  "health_labels_created": 0,
+  "image_odometry_executed": false,
+  "imu_preintegration_executed": false,
+  "indexed_required_stream_messages": 26149,
+  "inspected_unique_chunk_count": 30,
+  "lidar_registration_executed": false,
+  "per_topic": {
+    "/camera/color/image_raw/compressed": {
+      "descriptive_ranges": {
+        "grayscale_mean": {
+          "max": 147.36643229166668,
+          "mean": 129.17107869466147,
+          "min": 119.00140299479168,
+          "observed_sample_count": 8
+        },
+        "grayscale_stddev": {
+          "max": 67.21044081205982,
+          "mean": 52.87565430339784,
+          "min": 34.46980616817351,
+          "observed_sample_count": 8
+        },
+        "observed_image_sizes_px": [
+          "640x480"
+        ]
+      },
+      "index_eligible_chunk_count": 1063,
+      "index_record_count": 1113,
+      "observations": [
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 119.00140299479168,
+            "grayscale_min": 6,
+            "grayscale_stddev": 67.21044081205982,
+            "header_stamp_ns": 1627643739446335793,
+            "height": 480,
+            "jpeg_payload_sha256": "5e71cd17b13b915e2b508c98466becdc76d0b1a2eab8fd29099cf6a885ad73c8",
+            "sequence": 1085,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643739533299874,
+            "chunk_offset": 1001885,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643739446335793,
+            "sequence": 1085,
+            "serialized_message_bytes": 48350,
+            "serialized_message_sha256": "970baa03ee3f980f04d9b3e1ba40854b73209a5677564d81bece045dcf9fd1f8",
+            "subset_index": 0
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 139.63876302083335,
+            "grayscale_min": 49,
+            "grayscale_stddev": 35.6367388741515,
+            "header_stamp_ns": 1627643752668743610,
+            "height": 480,
+            "jpeg_payload_sha256": "586497bff266046435b6833971e5a75ad0862d2cc6835a7543a3b74529a80f65",
+            "sequence": 1269,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643752756537912,
+            "chunk_offset": 2625003703,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643752668743610,
+            "sequence": 1269,
+            "serialized_message_bytes": 34908,
+            "serialized_message_sha256": "b29ef2db618f0e9334c7be99750d23135eef391a066b127cb59a8554e1bbc85b",
+            "subset_index": 1
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 125.45069661458334,
+            "grayscale_min": 17,
+            "grayscale_stddev": 59.06560373378573,
+            "header_stamp_ns": 1627643762799977303,
+            "height": 480,
+            "jpeg_payload_sha256": "56cd2751cfa9e71f652a133caed21b88d27bce8d8512fd5a33c6031c090dc941",
+            "sequence": 1421,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643762876995503,
+            "chunk_offset": 4714719790,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643762799977303,
+            "sequence": 1421,
+            "serialized_message_bytes": 27467,
+            "serialized_message_sha256": "286c713a932f8bc4d394f3bbc45ee9b06849634d37286c46934b785bcdd089b6",
+            "subset_index": 2
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 126.242998046875,
+            "grayscale_min": 15,
+            "grayscale_stddev": 60.40802063059598,
+            "header_stamp_ns": 1627643772949141026,
+            "height": 480,
+            "jpeg_payload_sha256": "282b1ab5b9138f42efdc96d40654e5cb972bce683caddb3ecd6b48ef47fad6ac",
+            "sequence": 1573,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643773017004614,
+            "chunk_offset": 6701686092,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643772949141026,
+            "sequence": 1573,
+            "serialized_message_bytes": 30470,
+            "serialized_message_sha256": "d0bbac1480807ed10c6b6c93e61a3fdd940fe69bbbdffa70af3a8439c5c6b557",
+            "subset_index": 3
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 147.36643229166668,
+            "grayscale_min": 19,
+            "grayscale_stddev": 34.46980616817351,
+            "header_stamp_ns": 1627643783080369234,
+            "height": 480,
+            "jpeg_payload_sha256": "99327d6ca6e1822055b9d171b510f5f057a6a8a3fa75c71726d4eaa06a91640f",
+            "sequence": 1725,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643783155021307,
+            "chunk_offset": 8763888836,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643783080369234,
+            "sequence": 1725,
+            "serialized_message_bytes": 49592,
+            "serialized_message_sha256": "7096d70ad5a783553f7fb82884fc139c1227861a0a2326c33403485a8a02d72b",
+            "subset_index": 4
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 129.10446614583333,
+            "grayscale_min": 22,
+            "grayscale_stddev": 50.08109574107242,
+            "header_stamp_ns": 1627643793219087362,
+            "height": 480,
+            "jpeg_payload_sha256": "38e0e506c6f846050e41b9b792d1f766fb5e6f7b1b1751d858707267e0ae7857",
+            "sequence": 1877,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643793314773367,
+            "chunk_offset": 10856757487,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643793219087362,
+            "sequence": 1877,
+            "serialized_message_bytes": 31398,
+            "serialized_message_sha256": "87d514a05b22c3962d4975ad6bfcfd839f326fabc158e296c434ac41ecd8494f",
+            "subset_index": 5
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 122.52577148437501,
+            "grayscale_min": 5,
+            "grayscale_stddev": 64.31172805778515,
+            "header_stamp_ns": 1627643803368868589,
+            "height": 480,
+            "jpeg_payload_sha256": "b29fdac663468f1a1e10f168c245553d60d199342de94196714a5b6711b30cbb",
+            "sequence": 2029,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643803434335118,
+            "chunk_offset": 12911179175,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643803368868589,
+            "sequence": 2029,
+            "serialized_message_bytes": 38663,
+            "serialized_message_sha256": "d5f5c26ce33c1ce3b3b3cf9a9fadde44a8c5a711a5055806a7614eff9cd05f60",
+            "subset_index": 6
+          }
+        },
+        {
+          "descriptive_signal": {
+            "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+            "decoded_pixel_count": 307200,
+            "frame_id": "camera_color_optical_frame",
+            "grayscale_max": 255,
+            "grayscale_mean": 124.03809895833334,
+            "grayscale_min": 8,
+            "grayscale_stddev": 51.821800409558584,
+            "header_stamp_ns": 1627643814618686914,
+            "height": 480,
+            "jpeg_payload_sha256": "084d3d000118d1c0158a0a00e6148f13655c440e148b6f7f85f162475665b453",
+            "sequence": 2197,
+            "width": 640
+          },
+          "source": {
+            "bag_record_time_ns": 1627643814702598360,
+            "chunk_offset": 15124145903,
+            "connection_id": 4,
+            "frame_id": "camera_color_optical_frame",
+            "header_stamp_ns": 1627643814618686914,
+            "sequence": 2197,
+            "serialized_message_bytes": 42338,
+            "serialized_message_sha256": "8f528a2158ac92e6f4c0c50a1a54c7cecec3cb2233d3214f2d8dd730cbce3092",
+            "subset_index": 7
+          }
+        }
+      ],
+      "qualitative_stability_inference_authorized": false,
+      "selected_chunk_offsets": [
+        1001885,
+        2625003703,
+        4714719790,
+        6701686092,
+        8763888836,
+        10856757487,
+        12911179175,
+        15124145903
+      ],
+      "selected_chunk_percent_of_eligible": 0.7525870178739417,
+      "selected_message_count": 8,
+      "selected_message_percent_of_full_topic": 0.7187780772686433
+    },
+    "/camera/imu": {
+      "descriptive_ranges": {
+        "angular_velocity_norm_rad_s": {
+          "max": 0.5449077307150838,
+          "mean": 0.17576616051241312,
+          "min": 4.630992515887549e-05,
+          "observed_sample_count": 8
+        },
+        "linear_acceleration_norm_m_s2": {
+          "max": 10.153144704403607,
+          "mean": 9.829001725976717,
+          "min": 9.55052496745924,
+          "observed_sample_count": 8
+        },
+        "orientation_norm": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "observed_sample_count": 8
+        }
+      },
+      "index_eligible_chunk_count": 4217,
+      "index_record_count": 13858,
+      "observations": [
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.0034743013743035868,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739475191355,
+            "linear_acceleration_norm_m_s2": 9.76639145189828,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 13153
+          },
+          "source": {
+            "bag_record_time_ns": 1627643739482808635,
+            "chunk_offset": 4117,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739475191355,
+            "sequence": 13153,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924",
+            "subset_index": 0
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.08457712564539645,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643750475637913,
+            "linear_acceleration_norm_m_s2": 9.801948842798925,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 15251
+          },
+          "source": {
+            "bag_record_time_ns": 1627643750461141723,
+            "chunk_offset": 2193477649,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643750475637913,
+            "sequence": 15251,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "2491bc20b97a3362bf4577384cac0f080010d69ce3e704ee2a87006752e51d42",
+            "subset_index": 1
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.07060122367718245,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643761561060429,
+            "linear_acceleration_norm_m_s2": 9.742314965131605,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 17315
+          },
+          "source": {
+            "bag_record_time_ns": 1627643761571478125,
+            "chunk_offset": 4459350330,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643761561060429,
+            "sequence": 17315,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "30ab8b80bc48267269c6b8f5ec97a032a90bd6538503bf3e11f2068e28009995",
+            "subset_index": 2
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.23938125316382983,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643772219687223,
+            "linear_acceleration_norm_m_s2": 9.792223081671631,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 19272
+          },
+          "source": {
+            "bag_record_time_ns": 1627643772217843533,
+            "chunk_offset": 6542514757,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643772219687223,
+            "sequence": 19272,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "8e6e57708f3cc0328b5cfb76b0cb32704e67a77033d6b0a5217381e5e763b174",
+            "subset_index": 3
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.09937162726652808,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643782968370676,
+            "linear_acceleration_norm_m_s2": 10.153144704403607,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 21206
+          },
+          "source": {
+            "bag_record_time_ns": 1627643782965747064,
+            "chunk_offset": 8727580028,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643782968370676,
+            "sequence": 21206,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "002cc59886f8ce4d3aaeec98cfe4d64e0d7f26d3aa4e7e37d6ba81c78ba1a7a5",
+            "subset_index": 4
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.5449077307150838,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643793903030634,
+            "linear_acceleration_norm_m_s2": 9.55052496745924,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 23180
+          },
+          "source": {
+            "bag_record_time_ns": 1627643793897853011,
+            "chunk_offset": 10985498337,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643793903030634,
+            "sequence": 23180,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "5f2bdd9f65c6f308b9b6b93eeb4fd37b094f603dda848213bb68efd37cacaf7c",
+            "subset_index": 5
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.36376971233182176,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643804484886169,
+            "linear_acceleration_norm_m_s2": 9.920863749078148,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 25126
+          },
+          "source": {
+            "bag_record_time_ns": 1627643804481367273,
+            "chunk_offset": 13135093493,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643804484886169,
+            "sequence": 25126,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "fa827ab8b388d6d7e31314e8d2e012bfcaa8c8a08d5415c8477bf1c5ecba3d22",
+            "subset_index": 6
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 4.630992515887549e-05,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814861473322,
+            "linear_acceleration_norm_m_s2": 9.904602045372307,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm": 0.0,
+            "sequence": 27024
+          },
+          "source": {
+            "bag_record_time_ns": 1627643814859912975,
+            "chunk_offset": 15161312100,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814861473322,
+            "sequence": 27024,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "963419f2d9e18590b29013a3f37df5dc7c109a662761a871816c67546f14808f",
+            "subset_index": 7
+          }
+        }
+      ],
+      "qualitative_stability_inference_authorized": false,
+      "selected_chunk_offsets": [
+        4117,
+        2193477649,
+        4459350330,
+        6542514757,
+        8727580028,
+        10985498337,
+        13135093493,
+        15161312100
+      ],
+      "selected_chunk_percent_of_eligible": 0.18970832345269148,
+      "selected_message_count": 8,
+      "selected_message_percent_of_full_topic": 0.05772838793476692
+    },
+    "/handsfree/imu": {
+      "descriptive_ranges": {
+        "angular_velocity_norm_rad_s": {
+          "max": 0.48430143696351763,
+          "mean": 0.15233814238185941,
+          "min": 0.0021029424511825835,
+          "observed_sample_count": 8
+        },
+        "linear_acceleration_norm_m_s2": {
+          "max": 11.408647904359722,
+          "mean": 10.14927056951995,
+          "min": 9.529237852490231,
+          "observed_sample_count": 8
+        },
+        "orientation_norm": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 0.9999999999999999,
+          "observed_sample_count": 8
+        }
+      },
+      "index_eligible_chunk_count": 4247,
+      "index_record_count": 10426,
+      "observations": [
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.0021029424511825835,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739487200021,
+            "linear_acceleration_norm_m_s2": 10.04871765839132,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 111083
+          },
+          "source": {
+            "bag_record_time_ns": 1627643739487759438,
+            "chunk_offset": 4117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739487200021,
+            "sequence": 111083,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5",
+            "subset_index": 0
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.163962317901118,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643750575294971,
+            "linear_acceleration_norm_m_s2": 11.408647904359722,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 112644
+          },
+          "source": {
+            "bag_record_time_ns": 1627643750577507006,
+            "chunk_offset": 2230330059,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643750575294971,
+            "sequence": 112644,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "0515f9e742d72652e7607553cbc88c785d5531ebc3b994afcce78a8e0dff755c",
+            "subset_index": 1
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.020140498930094043,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643761312745094,
+            "linear_acceleration_norm_m_s2": 10.304744273533606,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 0.9999999999999999,
+            "sequence": 114143
+          },
+          "source": {
+            "bag_record_time_ns": 1627643761317032571,
+            "chunk_offset": 4412505771,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643761312745094,
+            "sequence": 114143,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "7d360eb2a9117f341d03e04e447dc5afe540a8b9992df3f42078ca03c41276fd",
+            "subset_index": 2
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.04931149992587966,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643771859986066,
+            "linear_acceleration_norm_m_s2": 10.052064322657081,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 115602
+          },
+          "source": {
+            "bag_record_time_ns": 1627643771860335265,
+            "chunk_offset": 6470108653,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643771859986066,
+            "sequence": 115602,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "70a9ac665f95cf8ace8642a71d67c8f75fd0dafbdedc092fcb168ba5d2208091",
+            "subset_index": 3
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.13156882190267363,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782595648050,
+            "linear_acceleration_norm_m_s2": 10.141145316607437,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 117070
+          },
+          "source": {
+            "bag_record_time_ns": 1627643782601931166,
+            "chunk_offset": 8657104577,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782595648050,
+            "sequence": 117070,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "83d8f7a9931b26395d5086ab37f900e18cc46f8b7b34697f6ebe518e30d7e87e",
+            "subset_index": 4
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.48430143696351763,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643793541908025,
+            "linear_acceleration_norm_m_s2": 9.529237852490231,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 118583
+          },
+          "source": {
+            "bag_record_time_ns": 1627643793542583144,
+            "chunk_offset": 10915849094,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643793541908025,
+            "sequence": 118583,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "9d16a6578cbb60e7f8cbb5b23a651432a5cd6a7bea5b44f1fa4c078ff8a9ef2c",
+            "subset_index": 5
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.3650233835363059,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643804356075048,
+            "linear_acceleration_norm_m_s2": 9.704924808731286,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 120058
+          },
+          "source": {
+            "bag_record_time_ns": 1627643804366357703,
+            "chunk_offset": 13113516117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643804356075048,
+            "sequence": 120058,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "726d40e6167284f110f5f59ab36dba03626ff7e79b130e5202c68fe17493eaa8",
+            "subset_index": 6
+          }
+        },
+        {
+          "descriptive_signal": {
+            "angular_covariance_unknown_sentinel": false,
+            "angular_velocity_norm_rad_s": 0.002294237444103923,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814863142967,
+            "linear_acceleration_norm_m_s2": 10.004682419388919,
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm": 1.0,
+            "sequence": 121507
+          },
+          "source": {
+            "bag_record_time_ns": 1627643814875554783,
+            "chunk_offset": 15161312100,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814863142967,
+            "sequence": 121507,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "d6f811e26cd47a36a43bee0ba04eab936613eded078eb11aa3cac6c4fa066df7",
+            "subset_index": 7
+          }
+        }
+      ],
+      "qualitative_stability_inference_authorized": false,
+      "selected_chunk_offsets": [
+        4117,
+        2230330059,
+        4412505771,
+        6470108653,
+        8657104577,
+        10915849094,
+        13113516117,
+        15161312100
+      ],
+      "selected_chunk_percent_of_eligible": 0.18836825994819872,
+      "selected_message_count": 8,
+      "selected_message_percent_of_full_topic": 0.07673124880107424
+    },
+    "/velodyne_points": {
+      "descriptive_ranges": {
+        "all_xyz_finite_for_selected_samples": true,
+        "finite_xyz_count": {
+          "max": 52128.0,
+          "mean": 51464.75,
+          "min": 50957.0,
+          "observed_sample_count": 8
+        },
+        "point_count": {
+          "max": 52128.0,
+          "mean": 51464.75,
+          "min": 50957.0,
+          "observed_sample_count": 8
+        },
+        "range_max_m": {
+          "max": 21.22000173320171,
+          "mean": 16.237500507827026,
+          "min": 13.816000549167406,
+          "observed_sample_count": 8
+        },
+        "range_min_m": {
+          "max": 0.4999999802169666,
+          "mean": 0.4999999661440089,
+          "min": 0.4999999548932489,
+          "observed_sample_count": 8
+        }
+      },
+      "index_eligible_chunk_count": 752,
+      "index_record_count": 752,
+      "observations": [
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 50957,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643739514966011,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 50957,
+            "point_payload_sha256": "aa3dccdf8b4ffc4f5fec65f6150a1af409350b73bdd5511df5ddc1fb47954e04",
+            "range_max_m": 14.375999431625797,
+            "range_min_m": 0.4999999706627847,
+            "sequence": 7548,
+            "xyz_max_m": [
+              5.723914623260498,
+              10.296957969665527,
+              2.5747320652008057
+            ],
+            "xyz_min_m": [
+              -12.297682762145996,
+              -5.605051517486572,
+              -1.4132355451583862
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643739605994074,
+            "chunk_offset": 17723507,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643739514966011,
+            "sequence": 7548,
+            "serialized_message_bytes": 1121202,
+            "serialized_message_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd",
+            "subset_index": 0
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 52128,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643750235867500,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 52128,
+            "point_payload_sha256": "81d43984e1b75e27570dd26fe8a1385dc59275b74e543baff69b5aaa1675d355",
+            "range_max_m": 16.459999536830907,
+            "range_min_m": 0.49999997028699766,
+            "sequence": 7655,
+            "xyz_max_m": [
+              3.6429443359375,
+              10.083051681518555,
+              2.791104555130005
+            ],
+            "xyz_min_m": [
+              -12.431161880493164,
+              -16.386117935180664,
+              -1.5030969381332397
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643750319930655,
+            "chunk_offset": 2168052464,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643750235867500,
+            "sequence": 7655,
+            "serialized_message_bytes": 1146964,
+            "serialized_message_sha256": "8d5af8a3be70ba5db0a0cf645e522b209896ea398080f6593de255eef43aba3e",
+            "subset_index": 1
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 51356,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643760957835674,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 51356,
+            "point_payload_sha256": "50e43711af0b82bbccf307835dc240297b4c9ffb93be8ee8f03fa836d9219bae",
+            "range_max_m": 13.816000549167406,
+            "range_min_m": 0.4999999733511766,
+            "sequence": 7762,
+            "xyz_max_m": [
+              11.10097885131836,
+              13.540545463562012,
+              2.887385368347168
+            ],
+            "xyz_min_m": [
+              -4.676784992218018,
+              -12.491374969482422,
+              -1.2303576469421387
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643760987295162,
+            "chunk_offset": 4339423562,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643760957835674,
+            "sequence": 7762,
+            "serialized_message_bytes": 1129980,
+            "serialized_message_sha256": "492c002b36f6097aecc3f1507d3a3aa45a383d35a512453b35781d3fa6b367c8",
+            "subset_index": 2
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 51301,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643771677690983,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 51301,
+            "point_payload_sha256": "17724d07380928e423e137ee22e2813413467c293bb4094ab8f48a4b8a68620f",
+            "range_max_m": 14.768000095401804,
+            "range_min_m": 0.4999999600314793,
+            "sequence": 7869,
+            "xyz_max_m": [
+              10.222053527832031,
+              8.456575393676758,
+              2.887385368347168
+            ],
+            "xyz_min_m": [
+              -13.643560409545898,
+              -3.5856516361236572,
+              -1.2303576469421387
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643771715039637,
+            "chunk_offset": 6429762022,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643771677690983,
+            "sequence": 7869,
+            "serialized_message_bytes": 1128770,
+            "serialized_message_sha256": "1d4307a8fdb3f393999d48247d9000ae671f00b61e8a8d6e3e47990b5dfe3912",
+            "subset_index": 3
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 51677,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643782498803377,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 51677,
+            "point_payload_sha256": "44b56c8d03c8511a4a1daba773a2555afac718c3ffab7a02ecee6c703be68a68",
+            "range_max_m": 15.512001835403387,
+            "range_min_m": 0.4999999548932489,
+            "sequence": 7977,
+            "xyz_max_m": [
+              6.187151908874512,
+              3.219191074371338,
+              2.5276660919189453
+            ],
+            "xyz_min_m": [
+              -6.894530296325684,
+              -14.951393127441406,
+              -1.2778345346450806
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643782526070120,
+            "chunk_offset": 8635746993,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643782498803377,
+            "sequence": 7977,
+            "serialized_message_bytes": 1137042,
+            "serialized_message_sha256": "2990eed2c849f602d0451b7f3f2dad8951fe3708e8c6f267171490bf3fb070e2",
+            "subset_index": 4
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 51565,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643793221436024,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 51565,
+            "point_payload_sha256": "a5a1de694c93748f546e9fdf0305aa76a7c4260c67ef9c59f2692f872f95cff1",
+            "range_max_m": 21.22000173320171,
+            "range_min_m": 0.4999999574625321,
+            "sequence": 8084,
+            "xyz_max_m": [
+              13.976768493652344,
+              2.60665225982666,
+              2.865644693374634
+            ],
+            "xyz_min_m": [
+              -7.651169300079346,
+              -19.769107818603516,
+              -1.4318816661834717
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643793264245912,
+            "chunk_offset": 10853899475,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643793221436024,
+            "sequence": 8084,
+            "serialized_message_bytes": 1134578,
+            "serialized_message_sha256": "28c19db66166a988c893f1f62886ba9b6f0fd01bcd95aa46568c135be4d46979",
+            "subset_index": 5
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 51143,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643803940633774,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 51143,
+            "point_payload_sha256": "b19c2f621e9a9dbb6e575a965e617b815a4a41b0f19c2405991337e6698439ff",
+            "range_max_m": 14.532000718119754,
+            "range_min_m": 0.4999999802169666,
+            "sequence": 8191,
+            "xyz_max_m": [
+              13.541731834411621,
+              14.123411178588867,
+              2.979524850845337
+            ],
+            "xyz_min_m": [
+              -11.464263916015625,
+              -3.9310054779052734,
+              -1.131801724433899
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643803977569722,
+            "chunk_offset": 13029479231,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643803940633774,
+            "sequence": 8191,
+            "serialized_message_bytes": 1125294,
+            "serialized_message_sha256": "ee683dacb5f4d95fc9c485a0c03118a2940a1770cae4ffe8db86c94330a6d788",
+            "subset_index": 6
+          }
+        },
+        {
+          "descriptive_signal": {
+            "all_xyz_finite": true,
+            "finite_xyz_count": 51591,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643814761728764,
+            "is_dense_flag_as_recorded": true,
+            "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+            "nonfinite_xyz_count": 0,
+            "point_count": 51591,
+            "point_payload_sha256": "321e92e898924d62c33bd94b324137f0b9eee9e3d85d67d87edb503229aa39b3",
+            "range_max_m": 19.216000162865452,
+            "range_min_m": 0.49999996224688503,
+            "sequence": 8299,
+            "xyz_max_m": [
+              5.78179931640625,
+              18.327560424804688,
+              2.7735049724578857
+            ],
+            "xyz_min_m": [
+              -14.122615814208984,
+              -4.947696685791016,
+              -1.586434006690979
+            ]
+          },
+          "source": {
+            "bag_record_time_ns": 1627643814789366348,
+            "chunk_offset": 15143907657,
+            "connection_id": 9,
+            "frame_id": "velodyne",
+            "header_stamp_ns": 1627643814761728764,
+            "sequence": 8299,
+            "serialized_message_bytes": 1135150,
+            "serialized_message_sha256": "1e99d4ca8eecb2ab16abb3645e7ee2b9eceb1e1f851e8a2c55e80155e01c2d72",
+            "subset_index": 7
+          }
+        }
+      ],
+      "qualitative_stability_inference_authorized": false,
+      "selected_chunk_offsets": [
+        17723507,
+        2168052464,
+        4339423562,
+        6429762022,
+        8635746993,
+        10853899475,
+        13029479231,
+        15143907657
+      ],
+      "selected_chunk_percent_of_eligible": 1.0638297872340425,
+      "selected_message_count": 8,
+      "selected_message_percent_of_full_topic": 1.0638297872340425
+    }
+  },
+  "physical_capture_sync_verified": false,
+  "random_sampling_claimed": false,
+  "raw_bag_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "reference_ground_truth_scored": false,
+  "required_topics": 4,
+  "sampled_message_count": 32,
+  "sampling_rule": "eight integer-spaced chunk ordinals among chunks containing each named topic; first message of that topic within each selected chunk",
+  "schema": "TRUST_ROBOT_R23_INDEX_STRATIFIED_TRAIN_DIAGNOSTICS_V1",
+  "selected_per_topic": 8,
+  "selection_based_on_index_metadata_only": true,
+  "source_chunk_count": 5182,
+  "source_hashes": {
+    "r17_report_sha256": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18_report_sha256": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r22_report_sha256": "5f6f3d4e9e3a8e7b49614a8a56ba1cd560d5ccc5b57eae397258f170f03ce849"
+  },
+  "split": "train",
+  "statistical_stability_established": false,
+  "trajectory_id": "room_02"
+}

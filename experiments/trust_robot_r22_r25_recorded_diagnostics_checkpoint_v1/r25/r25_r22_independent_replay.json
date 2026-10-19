@@ -1,0 +1,12 @@
+{
+  "cross_modal_association_performed": false,
+  "four_modal_streams_rechecked": 4,
+  "health_labels": 0,
+  "pose_factors_admitted": 0,
+  "real_message_samples_recomputed": 8,
+  "schema": "TRUST_ROBOT_R22_INDEPENDENT_CONTENT_VALIDATION_V1",
+  "source_modified": false,
+  "source_report_sha256": "5f6f3d4e9e3a8e7b49614a8a56ba1cd560d5ccc5b57eae397258f170f03ce849",
+  "train_only": true,
+  "verification": "PASS"
+}

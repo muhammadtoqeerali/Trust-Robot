@@ -1,0 +1,243 @@
+{
+  "bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "camera_odometry_executed": false,
+  "cross_modal_alignment_performed": false,
+  "decoded_camera_pixels": true,
+  "frozen_source_report_sha256": {
+    "r17": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r19": "2b64ddc82600c0051a72e7f31eb2e66e2ab5a8a26980c2d7b53bb9c51eeea557",
+    "r20": "116d6323a2e32109f8ae1ce6be7e9cf4e6622438293ae3c2a59dbc9affaa667e"
+  },
+  "github_baseline": "76685f1a6a97fb8e0750224bb927f1b094e63203",
+  "github_modified": false,
+  "health_features_frozen": false,
+  "health_labels_generated": 0,
+  "imu_preintegration_executed": false,
+  "independent_ground_truth_scored": false,
+  "materialized_lidar_xyz_for_descriptive_statistics_only": true,
+  "new_sensor_measurements": 0,
+  "physical_time_semantics_verified": false,
+  "raw_recording_modified": false,
+  "real_lidar_scan_registration_executed": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "sample_count": 8,
+  "sampling_rule": "first message in first two distinct indexed chunks per required topic",
+  "schema": "TRUST_ROBOT_R22_TRAIN_ONLY_SIGNAL_DIAGNOSTICS_V1",
+  "scope": "DESCRIPTIVE_TWO_SAMPLE_TRAIN_ONLY_CANDIDATES_NOT_SELECTED_FEATURES",
+  "sensor_extrinsics_verified": false,
+  "sensor_stream_count": 4,
+  "signals": {
+    "/camera/color/image_raw/compressed": [
+      {
+        "descriptive_signal": {
+          "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+          "decoded_pixel_count": 307200,
+          "frame_id": "camera_color_optical_frame",
+          "grayscale_max": 255,
+          "grayscale_mean": 119.00140299479168,
+          "grayscale_min": 6,
+          "grayscale_stddev": 67.21044081205982,
+          "header_stamp_ns": 1627643739446335793,
+          "height": 480,
+          "jpeg_payload_sha256": "5e71cd17b13b915e2b508c98466becdc76d0b1a2eab8fd29099cf6a885ad73c8",
+          "sequence": 1085,
+          "width": 640
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739533299874,
+          "chunk_offset": 1001885,
+          "connection_id": 4,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 48350,
+          "serialized_message_sha256": "970baa03ee3f980f04d9b3e1ba40854b73209a5677564d81bece045dcf9fd1f8"
+        }
+      },
+      {
+        "descriptive_signal": {
+          "camera_format_as_recorded": "rgb8; jpeg compressed bgr8",
+          "decoded_pixel_count": 307200,
+          "frame_id": "camera_color_optical_frame",
+          "grayscale_max": 255,
+          "grayscale_mean": 119.00564127604167,
+          "grayscale_min": 1,
+          "grayscale_stddev": 67.20584704011347,
+          "header_stamp_ns": 1627643739512976170,
+          "height": 480,
+          "jpeg_payload_sha256": "53ed61c9719290c12a6df7cd28d28e9f7d5b24bd6e13234909110204467385fa",
+          "sequence": 1086,
+          "width": 640
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739605209832,
+          "chunk_offset": 17723507,
+          "connection_id": 4,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 48410,
+          "serialized_message_sha256": "33b6ebfa27458c731bceece50a36013aecd7061ffc17f61810d352e74d103df3"
+        }
+      }
+    ],
+    "/camera/imu": [
+      {
+        "descriptive_signal": {
+          "angular_covariance_unknown_sentinel": false,
+          "angular_velocity_norm_rad_s": 0.0034743013743035868,
+          "frame_id": "camera_imu_optical_frame",
+          "header_stamp_ns": 1627643739475191355,
+          "linear_acceleration_norm_m_s2": 9.76639145189828,
+          "linear_covariance_unknown_sentinel": false,
+          "orientation_covariance_unknown_sentinel": true,
+          "orientation_norm": 0.0,
+          "sequence": 13153
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739482808635,
+          "chunk_offset": 4117,
+          "connection_id": 0,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 336,
+          "serialized_message_sha256": "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924"
+        }
+      },
+      {
+        "descriptive_signal": {
+          "angular_covariance_unknown_sentinel": false,
+          "angular_velocity_norm_rad_s": 0.0024432885337435433,
+          "frame_id": "camera_imu_optical_frame",
+          "header_stamp_ns": 1627643739505099535,
+          "linear_acceleration_norm_m_s2": 9.840573790789184,
+          "linear_covariance_unknown_sentinel": false,
+          "orientation_covariance_unknown_sentinel": true,
+          "orientation_norm": 0.0,
+          "sequence": 13159
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739533237976,
+          "chunk_offset": 1001885,
+          "connection_id": 0,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 336,
+          "serialized_message_sha256": "c8c20977221dc56ef8d687900a2916dd256243a6dfe633d9d5538def8297fd36"
+        }
+      }
+    ],
+    "/handsfree/imu": [
+      {
+        "descriptive_signal": {
+          "angular_covariance_unknown_sentinel": false,
+          "angular_velocity_norm_rad_s": 0.0021029424511825835,
+          "frame_id": "base_link",
+          "header_stamp_ns": 1627643739487200021,
+          "linear_acceleration_norm_m_s2": 10.04871765839132,
+          "linear_covariance_unknown_sentinel": false,
+          "orientation_covariance_unknown_sentinel": false,
+          "orientation_norm": 1.0,
+          "sequence": 111083
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739487759438,
+          "chunk_offset": 4117,
+          "connection_id": 1,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 321,
+          "serialized_message_sha256": "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5"
+        }
+      },
+      {
+        "descriptive_signal": {
+          "angular_covariance_unknown_sentinel": false,
+          "angular_velocity_norm_rad_s": 0.002596684296232732,
+          "frame_id": "base_link",
+          "header_stamp_ns": 1627643739508631944,
+          "linear_acceleration_norm_m_s2": 10.010513532538987,
+          "linear_covariance_unknown_sentinel": false,
+          "orientation_covariance_unknown_sentinel": false,
+          "orientation_norm": 1.0,
+          "sequence": 111086
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739533245674,
+          "chunk_offset": 1001885,
+          "connection_id": 1,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 321,
+          "serialized_message_sha256": "348890e03bd1d3bf70e5d1a0b53f473fdc66d0e3239bce617c9edfea878d4dff"
+        }
+      }
+    ],
+    "/velodyne_points": [
+      {
+        "descriptive_signal": {
+          "all_xyz_finite": true,
+          "finite_xyz_count": 50957,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643739514966011,
+          "is_dense_flag_as_recorded": true,
+          "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+          "nonfinite_xyz_count": 0,
+          "point_count": 50957,
+          "point_payload_sha256": "aa3dccdf8b4ffc4f5fec65f6150a1af409350b73bdd5511df5ddc1fb47954e04",
+          "range_max_m": 14.375999431625797,
+          "range_min_m": 0.4999999706627847,
+          "sequence": 7548,
+          "xyz_max_m": [
+            5.723914623260498,
+            10.296957969665527,
+            2.5747320652008057
+          ],
+          "xyz_min_m": [
+            -12.297682762145996,
+            -5.605051517486572,
+            -1.4132355451583862
+          ]
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739605994074,
+          "chunk_offset": 17723507,
+          "connection_id": 9,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 1121202,
+          "serialized_message_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd"
+        }
+      },
+      {
+        "descriptive_signal": {
+          "all_xyz_finite": true,
+          "finite_xyz_count": 50954,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643739615390778,
+          "is_dense_flag_as_recorded": true,
+          "nonfinite_points_excluded_from_descriptive_statistics_only": false,
+          "nonfinite_xyz_count": 0,
+          "point_count": 50954,
+          "point_payload_sha256": "c0b0bd961561426e4623d473fe709539ac79e3ac2172966d0f586a988058a74d",
+          "range_max_m": 14.372000933573414,
+          "range_min_m": 0.49999998147789315,
+          "sequence": 7549,
+          "xyz_max_m": [
+            5.709619045257568,
+            10.307873725891113,
+            2.5778377056121826
+          ],
+          "xyz_min_m": [
+            -12.27896785736084,
+            -5.594070911407471,
+            -1.4166165590286255
+          ]
+        },
+        "source": {
+          "bag_record_time_ns": 1627643739655845258,
+          "chunk_offset": 33346140,
+          "connection_id": 9,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 1121136,
+          "serialized_message_sha256": "7ac935cf81c066dbb622933c87280e40b5f5fc2399734f5d566c2c5becd14408"
+        }
+      }
+    ]
+  },
+  "split": "train",
+  "trajectory_id": "room_02"
+}

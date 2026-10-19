@@ -1,0 +1,13 @@
+{
+  "health_labels": 0,
+  "r25_junit_sha256": "8b6ad20b908013b28fe8ef8240ac995267db463732130b74990545764efc1d2b",
+  "r25_report_sha256": "23674298708444aa77cd9aee149f754d9bc6658a65a0678e3463962a6f6d7631",
+  "readiness": "NONFACTOR_ARCHIVE_ONLY",
+  "real_pose_factors_generated": 0,
+  "recording_opened_by_r25_independent_verifier": false,
+  "regression_tests": 197,
+  "schema": "TRUST_ROBOT_R25_INDEPENDENT_CHECKPOINT_READINESS_VERIFICATION_V1",
+  "upstream_sha_bound_reports": 10,
+  "verification": "PASS",
+  "verified_recorded_message_scope": 32
+}

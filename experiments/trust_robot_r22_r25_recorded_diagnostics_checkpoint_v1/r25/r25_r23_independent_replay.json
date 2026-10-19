@@ -1,0 +1,14 @@
+{
+  "cross_modal_time_association": false,
+  "exact_chunk_ledgers_verified": true,
+  "health_features_frozen": false,
+  "independent_ground_truth_scored": false,
+  "independently_relocated_serialized_messages": 32,
+  "numeric_diagnostics_recomputed": 32,
+  "pose_factors_admitted": 0,
+  "report_sha256": "8b92dd3e487fa648533d17a5f7c3c5c93c6b4ff4d7e0f299c6a473277a571abd",
+  "sampling_schedule_rebuilt_from_real_bag_index": true,
+  "schema": "TRUST_ROBOT_R23_INDEPENDENT_STRATIFIED_CONTENT_VERIFY_V1",
+  "source_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "verification": "PASS"
+}
