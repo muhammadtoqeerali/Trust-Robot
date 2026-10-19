@@ -1,0 +1,468 @@
+{
+  "bag_record_time_used_as_measurement_time": false,
+  "bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "camera_imu_existing_adapter_receipts": {
+    "/camera/color/image_raw/compressed": [
+      {
+        "message_index_scope": "two_sample_subset_not_full_recording_ordinal",
+        "receipt": {
+          "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+          "bag_record_time_ns": 1627643739533299874,
+          "diagnostic_boundary": {
+            "aggregation_performed": false,
+            "feature_contract_selected": false,
+            "feature_vector_emitted": false,
+            "normalization_performed": false
+          },
+          "header_stamp_ns": 1627643739446335793,
+          "health_boundary": {
+            "classifier_training_authorized": false,
+            "confirmation_used_for_selection": false,
+            "final_localization_error_used": false,
+            "health_label_assigned": false,
+            "health_probability_emitted": false,
+            "health_threshold_selected": false
+          },
+          "message_index": 0,
+          "message_type": "sensor_msgs/CompressedImage",
+          "modality": "camera",
+          "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_RAW_OBSERVATION_RECEIPT_V1",
+          "serialized_payload_sha256": "970baa03ee3f980f04d9b3e1ba40854b73209a5677564d81bece045dcf9fd1f8",
+          "serialized_payload_size_bytes": 48350,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "split_role": "train",
+          "timing_semantics": {
+            "bag_record_time_role": "transport_or_container_time_only",
+            "fixed_offset_selected": false,
+            "header_stamp_physical_capture_semantics_verified": false,
+            "header_stamp_present": true,
+            "interpolation_rule_selected": false,
+            "physical_measurement_time_selected": false,
+            "shared_clock_domain_verified": false
+          },
+          "trajectory_or_session_id": "room_02"
+        },
+        "receipt_content_sha256": "525cc9ca221291759aa7996d06418edde1c2924fd60a68c86dd4eff11212ff3d",
+        "source": {
+          "bag_record_time_ns": 1627643739533299874,
+          "chunk_offset": 1001885,
+          "connection_id": 4,
+          "frame_id": "camera_color_optical_frame",
+          "header_stamp_ns": 1627643739446335793,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 48350,
+          "serialized_message_sha256": "970baa03ee3f980f04d9b3e1ba40854b73209a5677564d81bece045dcf9fd1f8"
+        }
+      },
+      {
+        "message_index_scope": "two_sample_subset_not_full_recording_ordinal",
+        "receipt": {
+          "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+          "bag_record_time_ns": 1627643739605209832,
+          "diagnostic_boundary": {
+            "aggregation_performed": false,
+            "feature_contract_selected": false,
+            "feature_vector_emitted": false,
+            "normalization_performed": false
+          },
+          "header_stamp_ns": 1627643739512976170,
+          "health_boundary": {
+            "classifier_training_authorized": false,
+            "confirmation_used_for_selection": false,
+            "final_localization_error_used": false,
+            "health_label_assigned": false,
+            "health_probability_emitted": false,
+            "health_threshold_selected": false
+          },
+          "message_index": 1,
+          "message_type": "sensor_msgs/CompressedImage",
+          "modality": "camera",
+          "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_RAW_OBSERVATION_RECEIPT_V1",
+          "serialized_payload_sha256": "33b6ebfa27458c731bceece50a36013aecd7061ffc17f61810d352e74d103df3",
+          "serialized_payload_size_bytes": 48410,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "split_role": "train",
+          "timing_semantics": {
+            "bag_record_time_role": "transport_or_container_time_only",
+            "fixed_offset_selected": false,
+            "header_stamp_physical_capture_semantics_verified": false,
+            "header_stamp_present": true,
+            "interpolation_rule_selected": false,
+            "physical_measurement_time_selected": false,
+            "shared_clock_domain_verified": false
+          },
+          "trajectory_or_session_id": "room_02"
+        },
+        "receipt_content_sha256": "fc6254144a0e5d19b95c5fa3baabe62b2f620f2b6903484829f5e378a9e682ea",
+        "source": {
+          "bag_record_time_ns": 1627643739605209832,
+          "chunk_offset": 17723507,
+          "connection_id": 4,
+          "frame_id": "camera_color_optical_frame",
+          "header_stamp_ns": 1627643739512976170,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 48410,
+          "serialized_message_sha256": "33b6ebfa27458c731bceece50a36013aecd7061ffc17f61810d352e74d103df3"
+        }
+      }
+    ],
+    "/camera/imu": [
+      {
+        "message_index_scope": "two_sample_subset_not_full_recording_ordinal",
+        "receipt": {
+          "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+          "bag_record_time_ns": 1627643739482808635,
+          "diagnostic_boundary": {
+            "aggregation_performed": false,
+            "feature_contract_selected": false,
+            "feature_vector_emitted": false,
+            "normalization_performed": false
+          },
+          "header_stamp_ns": 1627643739475191355,
+          "health_boundary": {
+            "classifier_training_authorized": false,
+            "confirmation_used_for_selection": false,
+            "final_localization_error_used": false,
+            "health_label_assigned": false,
+            "health_probability_emitted": false,
+            "health_threshold_selected": false
+          },
+          "message_index": 0,
+          "message_type": "sensor_msgs/Imu",
+          "modality": "imu",
+          "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_RAW_OBSERVATION_RECEIPT_V1",
+          "serialized_payload_sha256": "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924",
+          "serialized_payload_size_bytes": 336,
+          "source_stream_id": "/camera/imu",
+          "split_role": "train",
+          "timing_semantics": {
+            "bag_record_time_role": "transport_or_container_time_only",
+            "fixed_offset_selected": false,
+            "header_stamp_physical_capture_semantics_verified": false,
+            "header_stamp_present": true,
+            "interpolation_rule_selected": false,
+            "physical_measurement_time_selected": false,
+            "shared_clock_domain_verified": false
+          },
+          "trajectory_or_session_id": "room_02"
+        },
+        "receipt_content_sha256": "111c2fea23838dc46f9ebd2d0c003889067acd6c7762b4b3474746d4dc4f9fad",
+        "source": {
+          "bag_record_time_ns": 1627643739482808635,
+          "chunk_offset": 4117,
+          "connection_id": 0,
+          "frame_id": "camera_imu_optical_frame",
+          "header_stamp_ns": 1627643739475191355,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 336,
+          "serialized_message_sha256": "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924"
+        }
+      },
+      {
+        "message_index_scope": "two_sample_subset_not_full_recording_ordinal",
+        "receipt": {
+          "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+          "bag_record_time_ns": 1627643739533237976,
+          "diagnostic_boundary": {
+            "aggregation_performed": false,
+            "feature_contract_selected": false,
+            "feature_vector_emitted": false,
+            "normalization_performed": false
+          },
+          "header_stamp_ns": 1627643739505099535,
+          "health_boundary": {
+            "classifier_training_authorized": false,
+            "confirmation_used_for_selection": false,
+            "final_localization_error_used": false,
+            "health_label_assigned": false,
+            "health_probability_emitted": false,
+            "health_threshold_selected": false
+          },
+          "message_index": 1,
+          "message_type": "sensor_msgs/Imu",
+          "modality": "imu",
+          "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_RAW_OBSERVATION_RECEIPT_V1",
+          "serialized_payload_sha256": "c8c20977221dc56ef8d687900a2916dd256243a6dfe633d9d5538def8297fd36",
+          "serialized_payload_size_bytes": 336,
+          "source_stream_id": "/camera/imu",
+          "split_role": "train",
+          "timing_semantics": {
+            "bag_record_time_role": "transport_or_container_time_only",
+            "fixed_offset_selected": false,
+            "header_stamp_physical_capture_semantics_verified": false,
+            "header_stamp_present": true,
+            "interpolation_rule_selected": false,
+            "physical_measurement_time_selected": false,
+            "shared_clock_domain_verified": false
+          },
+          "trajectory_or_session_id": "room_02"
+        },
+        "receipt_content_sha256": "c77e15d6104f96b5a68adae6dff421db42bcefdf1fd713e8a834c699ffc6a391",
+        "source": {
+          "bag_record_time_ns": 1627643739533237976,
+          "chunk_offset": 1001885,
+          "connection_id": 0,
+          "frame_id": "camera_imu_optical_frame",
+          "header_stamp_ns": 1627643739505099535,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 336,
+          "serialized_message_sha256": "c8c20977221dc56ef8d687900a2916dd256243a6dfe633d9d5538def8297fd36"
+        }
+      }
+    ],
+    "/handsfree/imu": [
+      {
+        "message_index_scope": "two_sample_subset_not_full_recording_ordinal",
+        "receipt": {
+          "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+          "bag_record_time_ns": 1627643739487759438,
+          "diagnostic_boundary": {
+            "aggregation_performed": false,
+            "feature_contract_selected": false,
+            "feature_vector_emitted": false,
+            "normalization_performed": false
+          },
+          "header_stamp_ns": 1627643739487200021,
+          "health_boundary": {
+            "classifier_training_authorized": false,
+            "confirmation_used_for_selection": false,
+            "final_localization_error_used": false,
+            "health_label_assigned": false,
+            "health_probability_emitted": false,
+            "health_threshold_selected": false
+          },
+          "message_index": 0,
+          "message_type": "sensor_msgs/Imu",
+          "modality": "imu",
+          "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_RAW_OBSERVATION_RECEIPT_V1",
+          "serialized_payload_sha256": "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5",
+          "serialized_payload_size_bytes": 321,
+          "source_stream_id": "/handsfree/imu",
+          "split_role": "train",
+          "timing_semantics": {
+            "bag_record_time_role": "transport_or_container_time_only",
+            "fixed_offset_selected": false,
+            "header_stamp_physical_capture_semantics_verified": false,
+            "header_stamp_present": true,
+            "interpolation_rule_selected": false,
+            "physical_measurement_time_selected": false,
+            "shared_clock_domain_verified": false
+          },
+          "trajectory_or_session_id": "room_02"
+        },
+        "receipt_content_sha256": "1788513584e307b937f1ae7ae4d150136a601b9637a40d885f25d4ffcc321af4",
+        "source": {
+          "bag_record_time_ns": 1627643739487759438,
+          "chunk_offset": 4117,
+          "connection_id": 1,
+          "frame_id": "base_link",
+          "header_stamp_ns": 1627643739487200021,
+          "sample_subset_index": 0,
+          "serialized_message_bytes": 321,
+          "serialized_message_sha256": "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5"
+        }
+      },
+      {
+        "message_index_scope": "two_sample_subset_not_full_recording_ordinal",
+        "receipt": {
+          "adapter_id": "trust_robot_phase5_m2dgr_camera_imu_raw_observation_adapter_v1",
+          "bag_record_time_ns": 1627643739533245674,
+          "diagnostic_boundary": {
+            "aggregation_performed": false,
+            "feature_contract_selected": false,
+            "feature_vector_emitted": false,
+            "normalization_performed": false
+          },
+          "header_stamp_ns": 1627643739508631944,
+          "health_boundary": {
+            "classifier_training_authorized": false,
+            "confirmation_used_for_selection": false,
+            "final_localization_error_used": false,
+            "health_label_assigned": false,
+            "health_probability_emitted": false,
+            "health_threshold_selected": false
+          },
+          "message_index": 1,
+          "message_type": "sensor_msgs/Imu",
+          "modality": "imu",
+          "schema": "TRUST_ROBOT_PHASE5_CAMERA_IMU_RAW_OBSERVATION_RECEIPT_V1",
+          "serialized_payload_sha256": "348890e03bd1d3bf70e5d1a0b53f473fdc66d0e3239bce617c9edfea878d4dff",
+          "serialized_payload_size_bytes": 321,
+          "source_stream_id": "/handsfree/imu",
+          "split_role": "train",
+          "timing_semantics": {
+            "bag_record_time_role": "transport_or_container_time_only",
+            "fixed_offset_selected": false,
+            "header_stamp_physical_capture_semantics_verified": false,
+            "header_stamp_present": true,
+            "interpolation_rule_selected": false,
+            "physical_measurement_time_selected": false,
+            "shared_clock_domain_verified": false
+          },
+          "trajectory_or_session_id": "room_02"
+        },
+        "receipt_content_sha256": "f1b1c7b12264c5d4773f73bca4c357a99ede646aa1718470259b7435107fd5bc",
+        "source": {
+          "bag_record_time_ns": 1627643739533245674,
+          "chunk_offset": 1001885,
+          "connection_id": 1,
+          "frame_id": "base_link",
+          "header_stamp_ns": 1627643739508631944,
+          "sample_subset_index": 1,
+          "serialized_message_bytes": 321,
+          "serialized_message_sha256": "348890e03bd1d3bf70e5d1a0b53f473fdc66d0e3239bce617c9edfea878d4dff"
+        }
+      }
+    ]
+  },
+  "camera_imu_receipt_count": 6,
+  "cross_modal_temporal_association_performed": false,
+  "encoded_image_pixels_decoded": false,
+  "full_extrinsics_verified": false,
+  "github_modified": false,
+  "ground_truth_scored": false,
+  "header_stamp_physical_capture_semantics_verified": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "image_odometry_performed": false,
+  "imu_preintegration_performed": false,
+  "lidar_nonfactor_observation_receipts": [
+    {
+      "factor_execution_authorized": false,
+      "frontend_layout_candidate_compatible": true,
+      "point_count": 50957,
+      "point_fields": [
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "x",
+          "offset": 0
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "y",
+          "offset": 4
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "z",
+          "offset": 8
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "intensity",
+          "offset": 12
+        },
+        {
+          "count": 1,
+          "datatype": 4,
+          "name": "ring",
+          "offset": 16
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "time",
+          "offset": 18
+        }
+      ],
+      "point_payload_bytes": 1121054,
+      "point_payload_sha256": "aa3dccdf8b4ffc4f5fec65f6150a1af409350b73bdd5511df5ddc1fb47954e04",
+      "point_step": 22,
+      "registration_executed": false,
+      "relative_pose_computed": false,
+      "source": {
+        "bag_record_time_ns": 1627643739605994074,
+        "chunk_offset": 17723507,
+        "connection_id": 9,
+        "frame_id": "velodyne",
+        "header_stamp_ns": 1627643739514966011,
+        "sample_subset_index": 0,
+        "serialized_message_bytes": 1121202,
+        "serialized_message_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd"
+      }
+    },
+    {
+      "factor_execution_authorized": false,
+      "frontend_layout_candidate_compatible": true,
+      "point_count": 50954,
+      "point_fields": [
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "x",
+          "offset": 0
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "y",
+          "offset": 4
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "z",
+          "offset": 8
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "intensity",
+          "offset": 12
+        },
+        {
+          "count": 1,
+          "datatype": 4,
+          "name": "ring",
+          "offset": 16
+        },
+        {
+          "count": 1,
+          "datatype": 7,
+          "name": "time",
+          "offset": 18
+        }
+      ],
+      "point_payload_bytes": 1120988,
+      "point_payload_sha256": "c0b0bd961561426e4623d473fe709539ac79e3ac2172966d0f586a988058a74d",
+      "point_step": 22,
+      "registration_executed": false,
+      "relative_pose_computed": false,
+      "source": {
+        "bag_record_time_ns": 1627643739655845258,
+        "chunk_offset": 33346140,
+        "connection_id": 9,
+        "frame_id": "velodyne",
+        "header_stamp_ns": 1627643739615390778,
+        "sample_subset_index": 1,
+        "serialized_message_bytes": 1121136,
+        "serialized_message_sha256": "7ac935cf81c066dbb622933c87280e40b5f5fc2399734f5d566c2c5becd14408"
+      }
+    }
+  ],
+  "lidar_observation_count": 2,
+  "lidar_xyz_points_materialized": false,
+  "message_index_role": "two_sample_subset_not_full_recording_ordinal",
+  "physical_sync_verified": false,
+  "r17_report_sha256": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+  "r18_decoder_source_sha256": "b00b77af80634296dd1a38c3e2dc3aaaa8a8db12bf6139fffe6451ba398feee3",
+  "r18_report_sha256": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+  "r19_engine_source_sha256": "80d791495df1a288322b375718296431d9ba445c48e32981afe610902ed45ede",
+  "raw_recording_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "scan_registration_performed": false,
+  "schema": "TRUST_ROBOT_R19_RECORDED_FRONTEND_PROVENANCE_V1",
+  "selected_chunk_offsets": [
+    4117,
+    1001885,
+    17723507,
+    33346140
+  ],
+  "split": "train",
+  "trajectory_id": "room_02"
+}

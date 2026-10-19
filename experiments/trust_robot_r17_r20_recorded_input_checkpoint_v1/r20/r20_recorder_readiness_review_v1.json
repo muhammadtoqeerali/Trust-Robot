@@ -1,0 +1,48 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "camera_relative_motion_factor_qualified": false,
+  "cross_modal_sync_verified": false,
+  "estimator_scoring_authorized": false,
+  "full_sensor_extrinsics_verified": false,
+  "github_modified": false,
+  "ground_truth_scored": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "independent_reference_association_verified": false,
+  "lidar_relative_motion_factor_qualified": false,
+  "live_simulator_launch_authorized": false,
+  "new_real_pose_factors": 0,
+  "new_sensor_acquisitions": 0,
+  "next_action": "GUARDED_R17_R20_OFFLINE_CHECKPOINT_ARCHIVAL",
+  "parent_git_commit": "0dddf4eda57cd629db4c5ee63cdbf645b17fb31d",
+  "physical_capture_time_verified": false,
+  "raw_sensor_payloads_embedded_in_report": false,
+  "readiness_decision": "RECORDED_OBSERVATION_PROVENANCE_ONLY",
+  "real_sensor_factor_execution_authorized": false,
+  "regression_junit_sha256": "e98d9cd2d5f8ee66e8dee9903489de7304f76a8d224b646f473d0d7c0fd2b00e",
+  "regression_tests_passed": 197,
+  "review_counts": {
+    "bounded_samples": 8,
+    "camera_imu_receipts": 6,
+    "health_labels": 0,
+    "lidar_nonfactor_receipts": 2,
+    "r17_chunk_count": 5182,
+    "real_pose_factors": 0,
+    "recorded_lidar_registrations": 0,
+    "recorded_messages": 26149,
+    "sensor_topics": 4
+  },
+  "schema": "TRUST_ROBOT_R20_RECORDER_BOUNDARY_REVIEW_V1",
+  "source_code_sha256": {
+    "negative_tests": "7054ea7d1b0a074e2ea1a029244559209028e9597d5ada138d033ec865f9d5c6",
+    "review_engine": "36c415714ac1657ec5e6d895ec09e9eed37a0d18c6676afff3ec747860328cd8"
+  },
+  "source_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+  "source_report_sha256": {
+    "r17": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r19": "2b64ddc82600c0051a72e7f31eb2e66e2ab5a8a26980c2d7b53bb9c51eeea557"
+  },
+  "split": "train",
+  "trajectory_id": "room_02"
+}

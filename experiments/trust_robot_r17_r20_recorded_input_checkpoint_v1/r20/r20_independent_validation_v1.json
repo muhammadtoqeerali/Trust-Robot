@@ -1,0 +1,14 @@
+{
+  "archive_readiness": "OFFLINE_NONFACTOR_EVIDENCE_ONLY",
+  "existing_camera_imu_receipts_verified": 6,
+  "lidar_nonfactor_receipts_verified": 2,
+  "m2dgr_scoring_authorized": false,
+  "parent_git_commit": "0dddf4eda57cd629db4c5ee63cdbf645b17fb31d",
+  "regression_junit_sha256": "e98d9cd2d5f8ee66e8dee9903489de7304f76a8d224b646f473d0d7c0fd2b00e",
+  "review_report_sha256": "116d6323a2e32109f8ae1ce6be7e9cf4e6622438293ae3c2a59dbc9affaa667e",
+  "review_verifier_sha256": "db4b02fa8553e6138202f9addcbc5ef448f1c1ebf6240b1687111a2d45b2efc4",
+  "sampled_record_hashes_verified": 8,
+  "schema": "TRUST_ROBOT_R20_INDEPENDENT_VERIFICATION_V1",
+  "scientific_real_factor_admission": false,
+  "targeted_regression_tests_verified": 197
+}

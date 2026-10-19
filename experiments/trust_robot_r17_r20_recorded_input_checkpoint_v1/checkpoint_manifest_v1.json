@@ -1,0 +1,98 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "bag_archived": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "documentation_sha256": {
+    "AGENTS.md": "21a651fdc3a44f184ad98247083749dbdfe20f534040c494a35282ace10b9d01",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "5e74aca73d7300a80fe60ee74275a88f0c4d2afc5cdc1dbfd0403ef37ae75516",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R17_R20_RECORDED_INPUT_V1.md": "e97adeb4373a8c0f07ebe4a19f962020256c50a7dbcf5c9056c0cc2c8da00900"
+  },
+  "file_sha256": {
+    "README.md": "c6fbe8ddab0a264b85bce74cbc78ad4b7bff2d09f4389015f36665b5854e136c",
+    "r17/r17_independent_verify.py": "e5b01db09c70b34c3b7482f4dd7e395c6bbcca6cb1826a889c575ac4084d8f2e",
+    "r17/r17_index.py": "1f066e45878a2a5e0bda05f64da29a96ce8b8a6516b4300e9264a6939c321566",
+    "r17/r17_recorded_index.json": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18/r18_bounded_recorded_samples.json": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r18/r18_decode.py": "b00b77af80634296dd1a38c3e2dc3aaaa8a8db12bf6139fffe6451ba398feee3",
+    "r18/r18_decode_original_failed_v1.py.saved": "1ccd923c1559b77d4cbbba0f9b2799353904e78597c44f950247929f7a4e8874",
+    "r18/r18_op7_patch_v1.py": "a421083456327f10c9c13526f27a8599154130f628e91153827ebe60e90fc5f8",
+    "r18/r18_verify.py": "5443b95f1debf52197d4f87eeb8cc2aa55dea2eb00d7957688026dc58825ad73",
+    "r18/r18_verify_original_failed_v1.py.saved": "ccee5d064e24e9daf4d1c080ad2257d8d1e95594426f7947751acf2cbb4054f6",
+    "r18/test_fixture.py": "8a72955c17e20d1a8e5bec6682a0c5f736d453539b16f45a7de4b1e463f2cbdf",
+    "r18/test_r18_embedded_connection_v1.py": "56946a45ed942fb66cec3504e4f34fdab8371fccb051494c6eb5c1cedb8942d7",
+    "r19/r19_frontend_contract.py": "80d791495df1a288322b375718296431d9ba445c48e32981afe610902ed45ede",
+    "r19/r19_independent_verify.py": "a3a5224d46744fe1e418d3d7f261024130a8f44295f918984d0303a80f2aaf32",
+    "r19/r19_recorded_frontend_contract_v1.json": "2b64ddc82600c0051a72e7f31eb2e66e2ab5a8a26980c2d7b53bb9c51eeea557",
+    "r19/test_r19_contract.py": "d7c3617c06daa6585bdadafde89110346f089d39d2a96f267625454bec436f99",
+    "r20/r20_frontend_regressions.xml": "e98d9cd2d5f8ee66e8dee9903489de7304f76a8d224b646f473d0d7c0fd2b00e",
+    "r20/r20_independent_validation_v1.json": "07ae29b60b1e3f60a2080d424dc5dfa4279b3bf19fb40a365a3dec2ea578319e",
+    "r20/r20_independent_verify.py": "db4b02fa8553e6138202f9addcbc5ef448f1c1ebf6240b1687111a2d45b2efc4",
+    "r20/r20_recorder_readiness_review_v1.json": "116d6323a2e32109f8ae1ce6be7e9cf4e6622438293ae3c2a59dbc9affaa667e",
+    "r20/r20_recorder_review.py": "36c415714ac1657ec5e6d895ec09e9eed37a0d18c6676afff3ec747860328cd8",
+    "r20/test_r20_negative.py": "7054ea7d1b0a074e2ea1a029244559209028e9597d5ada138d033ec865f9d5c6"
+  },
+  "frozen_sha256": {
+    "r17/r17_independent_verify.py": "e5b01db09c70b34c3b7482f4dd7e395c6bbcca6cb1826a889c575ac4084d8f2e",
+    "r17/r17_index.py": "1f066e45878a2a5e0bda05f64da29a96ce8b8a6516b4300e9264a6939c321566",
+    "r17/r17_recorded_index.json": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18/r18_bounded_recorded_samples.json": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r18/r18_decode.py": "b00b77af80634296dd1a38c3e2dc3aaaa8a8db12bf6139fffe6451ba398feee3",
+    "r18/r18_decode_original_failed_v1.py.saved": "1ccd923c1559b77d4cbbba0f9b2799353904e78597c44f950247929f7a4e8874",
+    "r18/r18_op7_patch_v1.py": "a421083456327f10c9c13526f27a8599154130f628e91153827ebe60e90fc5f8",
+    "r18/r18_verify.py": "5443b95f1debf52197d4f87eeb8cc2aa55dea2eb00d7957688026dc58825ad73",
+    "r18/r18_verify_original_failed_v1.py.saved": "ccee5d064e24e9daf4d1c080ad2257d8d1e95594426f7947751acf2cbb4054f6",
+    "r18/test_fixture.py": "8a72955c17e20d1a8e5bec6682a0c5f736d453539b16f45a7de4b1e463f2cbdf",
+    "r18/test_r18_embedded_connection_v1.py": "56946a45ed942fb66cec3504e4f34fdab8371fccb051494c6eb5c1cedb8942d7",
+    "r19/r19_frontend_contract.py": "80d791495df1a288322b375718296431d9ba445c48e32981afe610902ed45ede",
+    "r19/r19_independent_verify.py": "a3a5224d46744fe1e418d3d7f261024130a8f44295f918984d0303a80f2aaf32",
+    "r19/r19_recorded_frontend_contract_v1.json": "2b64ddc82600c0051a72e7f31eb2e66e2ab5a8a26980c2d7b53bb9c51eeea557",
+    "r19/test_r19_contract.py": "d7c3617c06daa6585bdadafde89110346f089d39d2a96f267625454bec436f99",
+    "r20/r20_frontend_regressions.xml": "e98d9cd2d5f8ee66e8dee9903489de7304f76a8d224b646f473d0d7c0fd2b00e",
+    "r20/r20_independent_validation_v1.json": "07ae29b60b1e3f60a2080d424dc5dfa4279b3bf19fb40a365a3dec2ea578319e",
+    "r20/r20_independent_verify.py": "db4b02fa8553e6138202f9addcbc5ef448f1c1ebf6240b1687111a2d45b2efc4",
+    "r20/r20_recorder_readiness_review_v1.json": "116d6323a2e32109f8ae1ce6be7e9cf4e6622438293ae3c2a59dbc9affaa667e",
+    "r20/r20_recorder_review.py": "36c415714ac1657ec5e6d895ec09e9eed37a0d18c6676afff3ec747860328cd8",
+    "r20/test_r20_negative.py": "7054ea7d1b0a074e2ea1a029244559209028e9597d5ada138d033ec865f9d5c6"
+  },
+  "frozen_split": "train",
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "live_simulator_launch_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "parent_commit": "0dddf4eda57cd629db4c5ee63cdbf645b17fb31d",
+  "phase_files": {
+    "r17": [
+      "r17/r17_index.py",
+      "r17/r17_independent_verify.py",
+      "r17/r17_recorded_index.json"
+    ],
+    "r18": [
+      "r18/r18_decode.py",
+      "r18/r18_verify.py",
+      "r18/test_fixture.py",
+      "r18/r18_op7_patch_v1.py",
+      "r18/r18_decode_original_failed_v1.py.saved",
+      "r18/r18_verify_original_failed_v1.py.saved",
+      "r18/r18_bounded_recorded_samples.json",
+      "r18/test_r18_embedded_connection_v1.py"
+    ],
+    "r19": [
+      "r19/r19_frontend_contract.py",
+      "r19/r19_independent_verify.py",
+      "r19/test_r19_contract.py",
+      "r19/r19_recorded_frontend_contract_v1.json"
+    ],
+    "r20": [
+      "r20/r20_recorder_review.py",
+      "r20/r20_independent_verify.py",
+      "r20/test_r20_negative.py",
+      "r20/r20_frontend_regressions.xml",
+      "r20/r20_recorder_readiness_review_v1.json",
+      "r20/r20_independent_validation_v1.json"
+    ]
+  },
+  "real_sensor_factor_execution_authorized": false,
+  "schema": "TRUST_ROBOT_R17_R20_RECORDED_NONFACTOR_CHECKPOINT_V1",
+  "scientific_pose_factors": 0,
+  "trajectory_id": "room_02"
+}

@@ -1,0 +1,273 @@
+{
+  "bag_record_time_is_capture_time_proof": false,
+  "bag_record_window_end_ns": 1627643814876537973,
+  "bag_record_window_start_ns": 1627643739482808635,
+  "bag_version": "2.0",
+  "chunk_count": 5182,
+  "connection_count": 15,
+  "connections": [
+    {
+      "id": 0,
+      "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+      "message_definition_sha256": "462e9edb6e5da000f1fc4343ce3dca95b13db0d8abe4bdb31877ffaa59fc3034",
+      "message_type": "sensor_msgs/Imu",
+      "topic": "/camera/imu"
+    },
+    {
+      "id": 1,
+      "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+      "message_definition_sha256": "ebb309053ea5625a839bf57a405e88626ca759f7d814a7644f444c1ceaf07f66",
+      "message_type": "sensor_msgs/Imu",
+      "topic": "/handsfree/imu"
+    },
+    {
+      "id": 2,
+      "md5sum": "2f3b0b43eed0c9501de0fa3ff89a45aa",
+      "message_definition_sha256": "9c096e45e12e44702d08e0afcd1325d1e745cb62cc5e651c94b2ce0dffe2db77",
+      "message_type": "sensor_msgs/MagneticField",
+      "topic": "/handsfree/mag"
+    },
+    {
+      "id": 3,
+      "md5sum": "060021388200f6f0f447d0fcd9c64743",
+      "message_definition_sha256": "6d022f2221ae7fa751d492d1f1e0c25dfa557d2f621d4d4b949ea37714bd46df",
+      "message_type": "sensor_msgs/Image",
+      "topic": "/thermal_image_raw"
+    },
+    {
+      "id": 4,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/color/image_raw/compressed"
+    },
+    {
+      "id": 5,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/third/image_raw/compressed"
+    },
+    {
+      "id": 6,
+      "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+      "message_definition_sha256": "462e9edb6e5da000f1fc4343ce3dca95b13db0d8abe4bdb31877ffaa59fc3034",
+      "message_type": "sensor_msgs/Imu",
+      "topic": "/dvs/imu"
+    },
+    {
+      "id": 7,
+      "md5sum": "5e8beee5a6c107e504c2e78903c224b8",
+      "message_definition_sha256": "3b755acf1664d843be9be28631d6208fccb86a0c909078c5de7a024bc92db278",
+      "message_type": "dvs_msgs/EventArray",
+      "topic": "/dvs/events"
+    },
+    {
+      "id": 8,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/dvs_rendering/compressed"
+    },
+    {
+      "id": 9,
+      "md5sum": "1158d486dd51d683ce2f1be655c3c181",
+      "message_definition_sha256": "a4af0bb9b1cfefb988b772d6968cd94beacb0fbb7759a8f691008b12f11c1c12",
+      "message_type": "sensor_msgs/PointCloud2",
+      "topic": "/velodyne_points"
+    },
+    {
+      "id": 10,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/fifth/image_raw/compressed"
+    },
+    {
+      "id": 11,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/fourth/image_raw/compressed"
+    },
+    {
+      "id": 12,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/sixth/image_raw/compressed"
+    },
+    {
+      "id": 13,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/left/image_raw/compressed"
+    },
+    {
+      "id": 14,
+      "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "topic": "/camera/right/image_raw/compressed"
+    }
+  ],
+  "file_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "frozen_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+  "git_modified": false,
+  "health_labels": 0,
+  "index_position": 15161808873,
+  "messages_decompressed": 0,
+  "physical_extrinsics_verified": false,
+  "physical_sync_verified": false,
+  "real_pose_factors_generated": 0,
+  "recorded_sensor_payload_decoded": false,
+  "required_stream_counts": {
+    "/camera/color/image_raw/compressed": 1113,
+    "/camera/imu": 13858,
+    "/handsfree/imu": 10426,
+    "/velodyne_points": 752
+  },
+  "schema": "TRUST_ROBOT_R17_ROS1_INDEX_READONLY_V1",
+  "size_bytes": 15162620712,
+  "source_file_modified": false,
+  "split": "train",
+  "topic_inventory": {
+    "/camera/color/image_raw/compressed": {
+      "connections": [
+        4
+      ],
+      "record_count": 1113,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/camera/fifth/image_raw/compressed": {
+      "connections": [
+        10
+      ],
+      "record_count": 1129,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/camera/fourth/image_raw/compressed": {
+      "connections": [
+        11
+      ],
+      "record_count": 1129,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/camera/imu": {
+      "connections": [
+        0
+      ],
+      "record_count": 13858,
+      "types": [
+        "sensor_msgs/Imu"
+      ]
+    },
+    "/camera/left/image_raw/compressed": {
+      "connections": [
+        13
+      ],
+      "record_count": 1128,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/camera/right/image_raw/compressed": {
+      "connections": [
+        14
+      ],
+      "record_count": 1128,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/camera/sixth/image_raw/compressed": {
+      "connections": [
+        12
+      ],
+      "record_count": 1127,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/camera/third/image_raw/compressed": {
+      "connections": [
+        5
+      ],
+      "record_count": 1131,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/dvs/events": {
+      "connections": [
+        7
+      ],
+      "record_count": 1131,
+      "types": [
+        "dvs_msgs/EventArray"
+      ]
+    },
+    "/dvs/imu": {
+      "connections": [
+        6
+      ],
+      "record_count": 44221,
+      "types": [
+        "sensor_msgs/Imu"
+      ]
+    },
+    "/dvs_rendering/compressed": {
+      "connections": [
+        8
+      ],
+      "record_count": 1131,
+      "types": [
+        "sensor_msgs/CompressedImage"
+      ]
+    },
+    "/handsfree/imu": {
+      "connections": [
+        1
+      ],
+      "record_count": 10426,
+      "types": [
+        "sensor_msgs/Imu"
+      ]
+    },
+    "/handsfree/mag": {
+      "connections": [
+        2
+      ],
+      "record_count": 10426,
+      "types": [
+        "sensor_msgs/MagneticField"
+      ]
+    },
+    "/thermal_image_raw": {
+      "connections": [
+        3
+      ],
+      "record_count": 1885,
+      "types": [
+        "sensor_msgs/Image"
+      ]
+    },
+    "/velodyne_points": {
+      "connections": [
+        9
+      ],
+      "record_count": 752,
+      "types": [
+        "sensor_msgs/PointCloud2"
+      ]
+    }
+  },
+  "trajectory_id": "room_02"
+}
