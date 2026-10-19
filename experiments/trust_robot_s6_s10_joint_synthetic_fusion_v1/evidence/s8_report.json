@@ -1,0 +1,469 @@
+{
+  "conflict_triggered_health_classification": false,
+  "conflict_triggered_sensor_suppression": false,
+  "correlation_scenarios": [
+    {
+      "baseline": {
+        "assumed_correlation": 0.0,
+        "degrees_of_freedom": 6,
+        "flagged_synthetic_disagreement": false,
+        "handling": "DIAGNOSTIC_ONLY_RETAIN_BOTH_NO_RUNTIME_ACTION",
+        "health_state_inferred": false,
+        "nominal_chi_square_reference": 12.591587243743977,
+        "physical_false_alarm_probability_established": false,
+        "reference_quantile": 0.95,
+        "sensor_auto_suppression_executed": false,
+        "squared_normalized_disagreement": 0.06347093380158217,
+        "status": "SYNTHETIC_DISAGREEMENT_NOT_FLAGGED"
+      },
+      "corrupted": {
+        "assumed_correlation": 0.0,
+        "degrees_of_freedom": 6,
+        "flagged_synthetic_disagreement": true,
+        "handling": "DIAGNOSTIC_ONLY_RETAIN_BOTH_NO_RUNTIME_ACTION",
+        "health_state_inferred": false,
+        "nominal_chi_square_reference": 12.591587243743977,
+        "physical_false_alarm_probability_established": false,
+        "reference_quantile": 0.95,
+        "sensor_auto_suppression_executed": false,
+        "squared_normalized_disagreement": 21.159524869776057,
+        "status": "SYNTHETIC_DISAGREEMENT_FLAGGED"
+      },
+      "information": {
+        "assumed_correlation": 0.0,
+        "correlated_information_matrix": [
+          [
+            3125.000000024767,
+            -6.255508763763906e-09,
+            -5.0094115522369975e-09,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -6.255512316477585e-09,
+            3124.999999997569,
+            5.352074339270985e-10,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.0094115522369975e-09,
+            5.352074339270985e-10,
+            3125.000000000863,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            5555.510823089915,
+            -0.00926689885244842,
+            0.020830981202902166
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.00926689885244842,
+            5555.50649605949,
+            -0.016714066978998687
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.020830981202903942,
+            -0.016714066978998687,
+            5555.536735265663
+          ]
+        ],
+        "correlated_information_trace": 26041.554054438267,
+        "cross_covariance_frobenius": 0.0,
+        "cross_modal_noise_empirically_verified": false,
+        "independent_information_matrix": [
+          [
+            3125.000000024767,
+            -6.255508763763906e-09,
+            -5.0094115522369975e-09,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -6.255512316477585e-09,
+            3124.999999997569,
+            5.352074339270985e-10,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.0094115522369975e-09,
+            5.352074339270985e-10,
+            3125.000000000863,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            5555.510823089915,
+            -0.00926689885244842,
+            0.020830981202902166
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.00926689885244842,
+            5555.50649605949,
+            -0.016714066978998687
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.020830981202903942,
+            -0.016714066978998687,
+            5555.536735265663
+          ]
+        ],
+        "independent_information_trace": 26041.554054438267,
+        "local_jacobian_dimension": [
+          12,
+          6
+        ],
+        "paired_covariance_min_eigenvalue": 0.000225,
+        "physically_calibrated_information": false
+      },
+      "rho": 0.0
+    },
+    {
+      "baseline": {
+        "assumed_correlation": 0.35,
+        "degrees_of_freedom": 6,
+        "flagged_synthetic_disagreement": false,
+        "handling": "DIAGNOSTIC_ONLY_RETAIN_BOTH_NO_RUNTIME_ACTION",
+        "health_state_inferred": false,
+        "nominal_chi_square_reference": 12.591587243743977,
+        "physical_false_alarm_probability_established": false,
+        "reference_quantile": 0.95,
+        "sensor_auto_suppression_executed": false,
+        "squared_normalized_disagreement": 0.08815407472441965,
+        "status": "SYNTHETIC_DISAGREEMENT_NOT_FLAGGED"
+      },
+      "corrupted": {
+        "assumed_correlation": 0.35,
+        "degrees_of_freedom": 6,
+        "flagged_synthetic_disagreement": true,
+        "handling": "DIAGNOSTIC_ONLY_RETAIN_BOTH_NO_RUNTIME_ACTION",
+        "health_state_inferred": false,
+        "nominal_chi_square_reference": 12.591587243743977,
+        "physical_false_alarm_probability_established": false,
+        "reference_quantile": 0.95,
+        "sensor_auto_suppression_executed": false,
+        "squared_normalized_disagreement": 29.38822898580007,
+        "status": "SYNTHETIC_DISAGREEMENT_FLAGGED"
+      },
+      "information": {
+        "assumed_correlation": 0.35,
+        "correlated_information_matrix": [
+          [
+            2564.103505526514,
+            -3.6917455102578045e-05,
+            -1.1005380024187161e-05,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -3.6917455105707486e-05,
+            2564.102642473325,
+            -0.00025767876417326363,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.1005380022410804e-05,
+            -0.00025767876417326363,
+            2564.1034302837434,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            4558.368189418291,
+            -0.007618308778379226,
+            0.017087747489910043
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.007618308778377509,
+            4558.364331993387,
+            -0.013804976979672645
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.017087747489910043,
+            -0.013804976979670869,
+            4558.389424564911
+          ]
+        ],
+        "correlated_information_trace": 21367.43152426017,
+        "cross_covariance_frobenius": 0.0005564339583454625,
+        "cross_modal_noise_empirically_verified": false,
+        "independent_information_matrix": [
+          [
+            3125.000000024767,
+            -6.255508763763906e-09,
+            -5.0094115522369975e-09,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -6.255512316477585e-09,
+            3124.999999997569,
+            5.352074339270985e-10,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.0094115522369975e-09,
+            5.352074339270985e-10,
+            3125.000000000863,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            5555.510823089915,
+            -0.00926689885244842,
+            0.020830981202902166
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.00926689885244842,
+            5555.50649605949,
+            -0.016714066978998687
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.020830981202903942,
+            -0.016714066978998687,
+            5555.536735265663
+          ]
+        ],
+        "independent_information_trace": 26041.554054438267,
+        "local_jacobian_dimension": [
+          12,
+          6
+        ],
+        "paired_covariance_min_eigenvalue": 0.00019005872946194566,
+        "physically_calibrated_information": false
+      },
+      "rho": 0.35
+    },
+    {
+      "baseline": {
+        "assumed_correlation": -0.25,
+        "degrees_of_freedom": 6,
+        "flagged_synthetic_disagreement": false,
+        "handling": "DIAGNOSTIC_ONLY_RETAIN_BOTH_NO_RUNTIME_ACTION",
+        "health_state_inferred": false,
+        "nominal_chi_square_reference": 12.591587243743977,
+        "physical_false_alarm_probability_established": false,
+        "reference_quantile": 0.95,
+        "sensor_auto_suppression_executed": false,
+        "squared_normalized_disagreement": 0.0528924448346518,
+        "status": "SYNTHETIC_DISAGREEMENT_NOT_FLAGGED"
+      },
+      "corrupted": {
+        "assumed_correlation": -0.25,
+        "degrees_of_freedom": 6,
+        "flagged_synthetic_disagreement": true,
+        "handling": "DIAGNOSTIC_ONLY_RETAIN_BOTH_NO_RUNTIME_ACTION",
+        "health_state_inferred": false,
+        "nominal_chi_square_reference": 12.591587243743977,
+        "physical_false_alarm_probability_established": false,
+        "reference_quantile": 0.95,
+        "sensor_auto_suppression_executed": false,
+        "squared_normalized_disagreement": 17.632937391480045,
+        "status": "SYNTHETIC_DISAGREEMENT_FLAGGED"
+      },
+      "information": {
+        "assumed_correlation": -0.25,
+        "correlated_information_matrix": [
+          [
+            3999.9993706361333,
+            2.4670517045251306e-05,
+            7.348722578015554e-06,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.467051704647255e-05,
+            3999.9999475991026,
+            0.0001722776381392066,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            7.34872257446284e-06,
+            0.00017227763814098296,
+            3999.9994208975904,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            7111.053629867617,
+            -0.011851802889791437,
+            0.02666655730633849
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.011851802889791187,
+            7111.04829654749,
+            -0.021333252152331283
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.02666655730634382,
+            -0.021333252152329507,
+            7111.08681491953
+          ]
+        ],
+        "correlated_information_trace": 33333.18748046746,
+        "cross_covariance_frobenius": 0.0003974528273896162,
+        "cross_modal_noise_empirically_verified": false,
+        "independent_information_matrix": [
+          [
+            3125.000000024767,
+            -6.255508763763906e-09,
+            -5.0094115522369975e-09,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -6.255512316477585e-09,
+            3124.999999997569,
+            5.352074339270985e-10,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.0094115522369975e-09,
+            5.352074339270985e-10,
+            3125.000000000863,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            5555.510823089915,
+            -0.00926689885244842,
+            0.020830981202902166
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.00926689885244842,
+            5555.50649605949,
+            -0.016714066978998687
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.020830981202903942,
+            -0.016714066978998687,
+            5555.536735265663
+          ]
+        ],
+        "independent_information_trace": 26041.554054438267,
+        "local_jacobian_dimension": [
+          12,
+          6
+        ],
+        "paired_covariance_min_eigenvalue": 0.0002067437632310569,
+        "physically_calibrated_information": false
+      },
+      "rho": -0.25
+    }
+  ],
+  "cross_modal_synchronization_verified": false,
+  "empirical_camera_lidar_noise_independence_verified": false,
+  "engine_sha256": "9b7f20d7cfb42ea9f229d94a1ecfc430a8917023daa93765525bc5b79476193d",
+  "git_commit_or_push": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "junit_sha256": "b1b4f9d284758e97c98cbd3852b8ecc6a4af4db66c3c9d9032dd56d93e6cec4b",
+  "live_simulator_launch_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "new_sensor_acquisitions": 0,
+  "next": "S9_SYNTHETIC_FACTOR_CONFLICT_ADVERSARIAL_STRESS",
+  "nonlinear_factor_retention": {
+    "accepted_window_solves": 8,
+    "automatic_sensor_suppression_executed": false,
+    "baseline_factor_count": 9,
+    "disturbed_factor_count": 9,
+    "factor_ids_preserved": true,
+    "health_weighting_executed": false,
+    "real_factor_execution_authorized": false,
+    "schur_eliminations": 6,
+    "shared_edge_factor_pairs": 2
+  },
+  "parent_commit": "ebe97e3ee3d3c9872b2b5643de5124bb0cfacf43",
+  "physical_conflict_threshold_calibrated": false,
+  "physical_sensor_extrinsics_verified": false,
+  "raw_sensor_recordings_read": false,
+  "real_sensor_factor_execution_authorized": false,
+  "runtime_health_weighting_authorized": false,
+  "s7_report_sha256": "f0686580071cac879e92cc24dceecb491ab82fc8f545fb4986bf7e640ca31ab9",
+  "s7_validation_sha256": "4c65ffcf81e9ccfec803326260b2b32e83fa08d7de8a642e8686d2f3a8a0523e",
+  "scenario_count": 3,
+  "schema": "TRUST_ROBOT_S8_SYNTHETIC_CORRELATED_CONFLICT_V1",
+  "scientific_pose_factors": 0,
+  "synthetic_camera_conflict_flagged": true,
+  "synthetic_correlated_covariance_evaluated": true,
+  "test_sha256": "79ccfc691cdc43f9016977b5edde1b7bfa221d6907ef2f214fd0eccf19841d9a",
+  "unit_tests_passed": 27
+}

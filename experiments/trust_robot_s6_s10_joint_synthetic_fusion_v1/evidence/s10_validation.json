@@ -1,0 +1,24 @@
+{
+  "archived_s7_failure_and_success_both_preserved": true,
+  "checkpoint_ready_for_guarded_archival": true,
+  "combined_junit_sha256": "a2c13c5e04495873da3b33f71ce40a5d1e9e8c80e5401e61fce20f6ffdcb872c",
+  "cross_phase_replay_recomputed": true,
+  "engine_sha256": "d81f389cff625e59cd80b86a8a103f7383e5ddff5c26723f6a4d58317ef1d058",
+  "factor_ledger_verified": true,
+  "health_labels": 0,
+  "legacy_regressions_verified": 104,
+  "m2dgr_scoring_authorized": false,
+  "new_sensor_acquisitions": 0,
+  "real_sensor_factor_admission": false,
+  "report_sha256": "823423122c25c0a1e6a1488f8b725483ae7da007ff24536f8102143c75574a68",
+  "s6_s9_regressions_verified": {
+    "6": 23,
+    "7": 22,
+    "8": 27,
+    "9": 43
+  },
+  "schema": "TRUST_ROBOT_S10_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "total_regression_tests_verified": 219,
+  "verifier_sha256": "7017a881a4029bcfe0f2556c25be097c76dfd1ee311c7e24270ada9e8529f647"
+}

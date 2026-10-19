@@ -1,0 +1,220 @@
+{
+  "camera_motion_measured_from_images": false,
+  "cross_modal_sensor_noise_independence_verified": false,
+  "empirical_covariance_calibration": false,
+  "engine_sha256": "efca0b7c124e1d07bf4e86cb67939e0e77b4f1ff82abeaf18d713e49b4a2095d",
+  "github_commit_or_push": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "independent_real_6dof_reference_scored": false,
+  "information_experiment": {
+    "assumed_residual_independence_for_additive_information": true,
+    "camera_baseline_whitened_norm": 0.28167120415828206,
+    "camera_corrupted_whitened_norm": 2.15113124547044,
+    "camera_inflated_whitened_norm": 0.05633424083165641,
+    "camera_information_matrix": [
+      [
+        625.0000000002645,
+        -3.4728533174210874e-09,
+        -1.254851111909261e-09,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -3.4728533174210874e-09,
+        624.9999999990266,
+        1.559570250719844e-10,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.254851111909261e-09,
+        1.559570250719844e-10,
+        624.9999999999881,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1111.1023044240587,
+        -0.0018595216868667864,
+        0.004164384253464437
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.0018595216868667864,
+        1111.101310718322,
+        -0.003380786132821445
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.004164384253464437,
+        -0.003380786132821445,
+        1111.1074759362534
+      ]
+    ],
+    "camera_information_trace": 5208.311091077913,
+    "camera_jacobian_rank": 6,
+    "camera_measurement_id": "camera_sim_seed13:0:1",
+    "camera_min_information_eigenvalue": 624.9999999959949,
+    "camera_translation_perturbation_m": 0.08,
+    "covariance_inflation": 25.0,
+    "empirical_cross_modality_noise_independence_verified": false,
+    "joint_information_matrix": [
+      [
+        3125.0000000247674,
+        -6.255509846231355e-09,
+        -5.009412218370812e-09,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -6.255509846231355e-09,
+        3124.999999997569,
+        5.352056575702591e-10,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -5.009412218370812e-09,
+        5.352056575702591e-10,
+        3125.0000000008636,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        5555.510823089915,
+        -0.009266898852447662,
+        0.02083098120290261
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.009266898852447662,
+        5555.506496059492,
+        -0.01671406697899913
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.02083098120290261,
+        -0.01671406697899913,
+        5555.536735265663
+      ]
+    ],
+    "joint_information_trace": 26041.554054438267,
+    "joint_jacobian_rank": 6,
+    "joint_min_information_eigenvalue": 3124.9999999961206,
+    "lidar_information_matrix": [
+      [
+        2500.0000000245027,
+        -2.782656528810268e-09,
+        -3.754561106461551e-09,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -2.782656528810268e-09,
+        2499.999999998542,
+        3.7924863249827467e-10,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -3.754561106461551e-09,
+        3.7924863249827467e-10,
+        2500.0000000008754,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        4444.408518665857,
+        -0.007407377165580875,
+        0.016666596949438173
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.007407377165580875,
+        4444.405185341169,
+        -0.013333280846177686
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.016666596949438173,
+        -0.013333280846177686,
+        4444.429259329409
+      ]
+    ],
+    "lidar_information_trace": 20833.242963360353,
+    "lidar_jacobian_rank": 6,
+    "lidar_measurement_id": "analytic_lidar_edge:0:1",
+    "lidar_min_information_eigenvalue": 2499.9999999982465,
+    "physically_supported_information_matrix": false,
+    "shared_edge": [
+      0,
+      1
+    ]
+  },
+  "junit_sha256": "0810efed347067074101dd3bcd895492e4cc0912f31bb45c605e3fd479c86cb7",
+  "live_simulator_launch_authorized": false,
+  "m2dgr_estimator_scoring_authorized": false,
+  "new_sensor_acquisitions": 0,
+  "next": "S8_SYNTHETIC_CORRELATED_NOISE_AND_CONFLICT_HANDLING",
+  "nonlinear_perturbation": {
+    "baseline_pose_factor_count": 9,
+    "baseline_states_sha256": "ab254d1a4f4f230709eb07c86e3d223125fb590193829239af7996b290122a4e",
+    "camera_disturbance_detectable": true,
+    "disturbed_pose_factor_count": 9,
+    "disturbed_states_sha256": "ea000ecee5d1a8cb84d7fb636cbe64d4be75a83bfee308b20519b1ba36423050",
+    "factor_reuse_after_marginalization": false,
+    "max_trajectory_position_change_m": 0.0010135456332415096,
+    "measurement_id_set_preserved": true,
+    "position_change_per_node_m": [
+      1.7538686585237488e-11,
+      0.0002373957520213786,
+      0.0004430062199261,
+      0.000716629233558766,
+      0.0010135456332415096
+    ],
+    "reference_passed_to_estimator": false,
+    "shared_edges_preserved": true,
+    "state_response_is_physical_accuracy_metric": false,
+    "synthetic_camera_perturbation_m": 0.08
+  },
+  "parent_commit": "ebe97e3ee3d3c9872b2b5643de5124bb0cfacf43",
+  "physical_capture_time_verified": false,
+  "raw_sensor_records_read": false,
+  "real_sensor_factor_admission": false,
+  "s6_report_sha256": "b9d4b6f3372fc6dce59e0c6086282dd66480be03d8f23689a6735564b0de9dd2",
+  "s6_validation_sha256": "854ee0d6a65ef6052cfb68f5b67231048c2e32595e86f4823462eb1d88bfc4be",
+  "schema": "TRUST_ROBOT_S7_SYNTHETIC_FACTOR_SUPPORT_V1",
+  "scientific_pose_factors": 0,
+  "unit_tests_passed": 22
+}

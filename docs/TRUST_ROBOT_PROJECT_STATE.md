@@ -6033,3 +6033,14 @@ S1 verified frozen dataset split 22/7/7 with zero qualified stream timing entrie
 28 local artifacts SHA-pinned with versioned verifier and manifest. No sensor records, simulator execution, real GT, scientific factors, empirical health labels, health model training, M2DGR ATE/RPE, full extrinsics or cross-modal timing qualification. Do not equate test PASS with scientific readiness.
 
 Next S6: implement synthetic independent camera + LiDAR same-edge factor ownership and covariance with adversarial tests while all recorded-input gates remain closed.
+
+## KIOS S6–S10 joint synthetic fusion checkpoint — 2026-10-19
+
+Parent: `ebe97e3ee3d3c9872b2b5643de5124bb0cfacf43`.
+Archive: `experiments/trust_robot_s6_s10_joint_synthetic_fusion_v1/`; audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_S6_S10_JOINT_SYNTHETIC_FUSION_V1.md`.
+
+S6: separate same-edge camera and LiDAR synthetic pose factors, assumed covariance and Schur identity ledger; 23 passing tests. S7: six-dimensional synthetic Jacobian information and camera perturbation; 22 passing tests with original one-failure JUnit retained. S8: three assumed 12D correlated covariance/conflict cases; 27 tests. S9: 15 stress cases, three nonlinear solver scenarios and four denied runtime actions; 43 tests. S10: combined full regression 219/219 passed; 104 historical test cases and 115 S6–S9 tests, independent verification, clean synthetic SHA match across S6/S7/S9. Thirty SHA-pinned files archived.
+
+Current state is **synthetic-development-only**. Real sensor capture timing, physically qualified extrinsics, cross-modal alignment, independent real pose factors, measured covariances, empirical 3-state health labels/training and real M2DGR ATE/RPE remain blocked. No real pose factors or health labels created. Maintain offline and holdout boundaries.
+
+Next: implement and validate physically sourced measurements and their provable lineage only after the scientific input gates can be established; do not advance based solely on synthetic test passes.

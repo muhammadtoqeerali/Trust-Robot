@@ -1,0 +1,19 @@
+{
+  "empirical_conflict_threshold_calibrated": false,
+  "engine_sha256": "d9879f0f5190ae2bb6b3a4a1dec69c2e3d0554a3fd711cdd639244276897182f",
+  "factor_ownership_verified": true,
+  "health_labels": 0,
+  "independent_grid_cases_recomputed": 15,
+  "independent_nonlinear_scenarios_recomputed": 3,
+  "junit_sha256": "8ea4c7ca5db2c2be1d640411b0f5a4e48ea6afcfc6cf7d16aaef46734fde4fed",
+  "new_sensor_acquisitions": 0,
+  "real_sensor_factor_admission": false,
+  "report_sha256": "47db5f0e1dab3b93c77a3de3563415e4c5bbce38a634f4f7476bb13d57b3950e",
+  "runtime_actions_denied": 4,
+  "schema": "TRUST_ROBOT_S9_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "synthetic_conflict_extremes_detected": true,
+  "test_sha256": "b5250d7e826a4ca5b07d23bf27685fb59e298d7cc070fde2c1a3bd9ddcd6e88b",
+  "unit_tests_verified": 43,
+  "verifier_sha256": "6c3048c7d347cd5ff3e024ad1fc425d878047b1a643aff61391879d0065b41b1"
+}

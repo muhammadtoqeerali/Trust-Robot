@@ -199,3 +199,11 @@ See `experiments/trust_robot_s1_s5_core_6dof_readiness_v1/README.md` and `docs/a
 S1: 36 M2DGR trajectories and 140 unqualified synchronization entries; frozen 22/7/7 split. S2: 104/104 selected synthetic estimator regression tests passed in compatible system Python, eight recorded factor denials. S3: 41 metadata-only contract tests. S4: 55 tests and 32 closed sensor science gates; corrected order-independent verifier. S5: 32 rejected false promotions and next-step integration decision. S1–S5 did not qualify real sensor capture, scoring, extrinsics, synchronization, health labels, or pose factors.
 
 Next S6: CPU-only manufactured-fixture same-edge independent camera and LiDAR factor support with distinct covariance and factor identity, while retaining the recorded-source fail-closed gate and prior test baseline. Never unfreeze historical M2DGR calibration, split, ground-truth, or scientific-evidence gates. Work with KIOS and iot4care as separate machines; do not silently run the live simulator.
+
+## KIOS S6–S10 joint synthetic fusion checkpoint — 2026-10-19
+
+Archive: `experiments/trust_robot_s6_s10_joint_synthetic_fusion_v1/`; audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_S6_S10_JOINT_SYNTHETIC_FUSION_V1.md`.
+
+S6 implemented independent manufactured camera and LiDAR pose factors on shared edges in a 15D nonlinear Schur window (23 tests). S7 verified local information and perturbation response (22 passed; original failed JUnit retained). S8 tested assumed 12D correlated noise and conflict flags (27 tests). S9 stressed 15 manufactured conflict cases and 3 solver trajectories (43 tests). S10 reran the 104 legacy tests plus S6–S9 (219/219) and independently matched a clean synthetic trajectory across S6, S7, S9.
+
+Preserve source SHA256 and proof boundaries. Historical M2DGR split and sensor gates unchanged. Do not claim physical covariance calibration, real six-DoF localization accuracy, empirical health labels, or enable live hardware/simulator/risk-based sensor suppression. KIOS and iot4care are separate workstations; use KIOS for current CPU development. Further real sensor data paths need independent scientific qualification before factor admission.

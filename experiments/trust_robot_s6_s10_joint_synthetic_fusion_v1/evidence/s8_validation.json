@@ -1,0 +1,20 @@
+{
+  "automatic_conflict_suppression_authorized": false,
+  "correlation_scenarios_verified": 3,
+  "engine_sha256": "9b7f20d7cfb42ea9f229d94a1ecfc430a8917023daa93765525bc5b79476193d",
+  "health_labels": 0,
+  "independent_conflict_recomputation": true,
+  "independent_information_recomputation": true,
+  "junit_sha256": "b1b4f9d284758e97c98cbd3852b8ecc6a4af4db66c3c9d9032dd56d93e6cec4b",
+  "new_sensor_acquisitions": 0,
+  "nonlinear_schur_factor_retention_verified": true,
+  "paired_covariance_numerically_spd": true,
+  "physical_noise_independence_verified": false,
+  "real_sensor_factor_admission": false,
+  "report_sha256": "ebc7646eb95c1bb3a53fe67ec57ebfe708f978686256b29f63500c20d05aa44e",
+  "schema": "TRUST_ROBOT_S8_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "test_sha256": "79ccfc691cdc43f9016977b5edde1b7bfa221d6907ef2f214fd0eccf19841d9a",
+  "unit_tests_verified": 27,
+  "verifier_sha256": "2039166eca726919b00ae408404ea1ee984abdfbe2644f5f9fe84bcf9e8ab85b"
+}

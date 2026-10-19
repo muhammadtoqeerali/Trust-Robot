@@ -1,0 +1,850 @@
+{
+  "assumed_cross_modal_noise_independence_verified": false,
+  "camera_motion_from_real_images": false,
+  "distinct_assumed_covariances": true,
+  "empirical_noise_covariance_calibrated": false,
+  "git_commit_or_push": false,
+  "health_labels": 0,
+  "health_model_trained": false,
+  "independent_real_6dof_truth_scored": false,
+  "junit_sha256": "6ac245b348e981300803446a34f5759484654a2dfd14994cd823b589e9d2dacd",
+  "new_sensor_acquisitions": 0,
+  "parent_commit": "ebe97e3ee3d3c9872b2b5643de5124bb0cfacf43",
+  "physical_sensor_time_verified": false,
+  "raw_sensor_recordings_read": false,
+  "real_sensor_extrinsics_verified": false,
+  "real_sensor_factor_execution_authorized": false,
+  "s5_matrix_sha256": "aef562021ceb42c77229a5bed208498d387e63108753eb010ac8132cf89be8d4",
+  "same_edge_factors_individually_retained": true,
+  "scenario_count": 4,
+  "scenarios": [
+    {
+      "camera_enabled": false,
+      "camera_measurements_manufactured_from_truth": false,
+      "condition": "clean",
+      "estimated_states_sha256": "156197087c775dc268002582d3cfe6de5176094d69c77e9a36ea85ef02816f8a",
+      "factor_audit": {
+        "accepted_window_count": 4,
+        "camera_factor_count": 0,
+        "consumed_pose_ids": [
+          "analytic_lidar_edge:0:1",
+          "analytic_lidar_edge:0:2",
+          "analytic_lidar_edge:1:2",
+          "analytic_lidar_edge:1:3",
+          "analytic_lidar_edge:2:3",
+          "analytic_lidar_edge:2:4"
+        ],
+        "factor_ledger": [
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              0,
+              1
+            ],
+            "measurement_id": "analytic_lidar_edge:0:1",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              0,
+              2
+            ],
+            "measurement_id": "analytic_lidar_edge:0:2",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              1,
+              2
+            ],
+            "measurement_id": "analytic_lidar_edge:1:2",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              1,
+              3
+            ],
+            "measurement_id": "analytic_lidar_edge:1:3",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              2,
+              3
+            ],
+            "measurement_id": "analytic_lidar_edge:2:3",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              2,
+              4
+            ],
+            "measurement_id": "analytic_lidar_edge:2:4",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              3,
+              4
+            ],
+            "measurement_id": "analytic_lidar_edge:3:4",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          }
+        ],
+        "factor_reuse_after_marginalization": false,
+        "lidar_factor_count": 7,
+        "physical_measurements_used": false,
+        "real_sensor_factor_admitted": false,
+        "remaining_pose_ids": [
+          "analytic_lidar_edge:3:4"
+        ],
+        "same_edge_camera_lidar_count": 0,
+        "same_edge_camera_lidar_edges": [],
+        "schur_elimination_count": 3,
+        "source_counts": {
+          "imu_intervals": 4,
+          "imu_samples_reused": false,
+          "lidar_factor_count": 7,
+          "unique_imu_sample_count": 8
+        },
+        "total_pose_factor_count": 7,
+        "unaccounted_factor_count": 0,
+        "windows": [
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 1,
+            "inertial_factor_count": 1,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 30,
+            "state_dimension": 30
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 2,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1",
+              "analytic_lidar_edge:0:2",
+              "analytic_lidar_edge:1:2"
+            ],
+            "lidar_factor_count": 3,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 3,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:1:2",
+              "analytic_lidar_edge:1:3",
+              "analytic_lidar_edge:2:3"
+            ],
+            "lidar_factor_count": 3,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 4,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:2:3",
+              "analytic_lidar_edge:2:4",
+              "analytic_lidar_edge:3:4"
+            ],
+            "lidar_factor_count": 3,
+            "rank": 45,
+            "state_dimension": 45
+          }
+        ]
+      },
+      "reference_passed_to_solver": false,
+      "scientific_pose_accuracy_claim": false
+    },
+    {
+      "camera_enabled": true,
+      "camera_measurements_manufactured_from_truth": true,
+      "condition": "clean",
+      "estimated_states_sha256": "ab254d1a4f4f230709eb07c86e3d223125fb590193829239af7996b290122a4e",
+      "factor_audit": {
+        "accepted_window_count": 4,
+        "camera_factor_count": 2,
+        "consumed_pose_ids": [
+          "analytic_lidar_edge:0:1",
+          "analytic_lidar_edge:0:2",
+          "analytic_lidar_edge:1:2",
+          "analytic_lidar_edge:1:3",
+          "analytic_lidar_edge:2:3",
+          "analytic_lidar_edge:2:4",
+          "camera_sim_seed13:0:1",
+          "camera_sim_seed13:2:3"
+        ],
+        "factor_ledger": [
+          {
+            "covariance_diagonal": [
+              0.0016,
+              0.0016,
+              0.0016,
+              0.0009,
+              0.0009,
+              0.0009
+            ],
+            "edge": [
+              0,
+              1
+            ],
+            "measurement_id": "camera_sim_seed13:0:1",
+            "modality": "camera",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_camera_relative_motion_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              0,
+              1
+            ],
+            "measurement_id": "analytic_lidar_edge:0:1",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              0,
+              2
+            ],
+            "measurement_id": "analytic_lidar_edge:0:2",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              1,
+              2
+            ],
+            "measurement_id": "analytic_lidar_edge:1:2",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              1,
+              3
+            ],
+            "measurement_id": "analytic_lidar_edge:1:3",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0016,
+              0.0016,
+              0.0016,
+              0.0009,
+              0.0009,
+              0.0009
+            ],
+            "edge": [
+              2,
+              3
+            ],
+            "measurement_id": "camera_sim_seed13:2:3",
+            "modality": "camera",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_camera_relative_motion_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              2,
+              3
+            ],
+            "measurement_id": "analytic_lidar_edge:2:3",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              2,
+              4
+            ],
+            "measurement_id": "analytic_lidar_edge:2:4",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              3,
+              4
+            ],
+            "measurement_id": "analytic_lidar_edge:3:4",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          }
+        ],
+        "factor_reuse_after_marginalization": false,
+        "lidar_factor_count": 7,
+        "physical_measurements_used": false,
+        "real_sensor_factor_admitted": false,
+        "remaining_pose_ids": [
+          "analytic_lidar_edge:3:4"
+        ],
+        "same_edge_camera_lidar_count": 2,
+        "same_edge_camera_lidar_edges": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "schur_elimination_count": 3,
+        "source_counts": {
+          "imu_intervals": 4,
+          "imu_samples_reused": false,
+          "lidar_factor_count": 7,
+          "unique_imu_sample_count": 8
+        },
+        "total_pose_factor_count": 9,
+        "unaccounted_factor_count": 0,
+        "windows": [
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 1,
+            "inertial_factor_count": 1,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1",
+              "camera_sim_seed13:0:1"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 30,
+            "state_dimension": 30
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 2,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1",
+              "analytic_lidar_edge:0:2",
+              "analytic_lidar_edge:1:2",
+              "camera_sim_seed13:0:1"
+            ],
+            "lidar_factor_count": 3,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 3,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:1:2",
+              "analytic_lidar_edge:1:3",
+              "analytic_lidar_edge:2:3",
+              "camera_sim_seed13:2:3"
+            ],
+            "lidar_factor_count": 3,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 4,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:2:3",
+              "analytic_lidar_edge:2:4",
+              "analytic_lidar_edge:3:4",
+              "camera_sim_seed13:2:3"
+            ],
+            "lidar_factor_count": 3,
+            "rank": 45,
+            "state_dimension": 45
+          }
+        ]
+      },
+      "reference_passed_to_solver": false,
+      "scientific_pose_accuracy_claim": false
+    },
+    {
+      "camera_enabled": false,
+      "camera_measurements_manufactured_from_truth": false,
+      "condition": "lidar_dropout",
+      "estimated_states_sha256": "156197087c775dc268002582d3cfe6de5176094d69c77e9a36ea85ef02816f8a",
+      "factor_audit": {
+        "accepted_window_count": 4,
+        "camera_factor_count": 0,
+        "consumed_pose_ids": [
+          "analytic_lidar_edge:0:1",
+          "analytic_lidar_edge:1:3"
+        ],
+        "factor_ledger": [
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              0,
+              1
+            ],
+            "measurement_id": "analytic_lidar_edge:0:1",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              1,
+              3
+            ],
+            "measurement_id": "analytic_lidar_edge:1:3",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              3,
+              4
+            ],
+            "measurement_id": "analytic_lidar_edge:3:4",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          }
+        ],
+        "factor_reuse_after_marginalization": false,
+        "lidar_factor_count": 3,
+        "physical_measurements_used": false,
+        "real_sensor_factor_admitted": false,
+        "remaining_pose_ids": [
+          "analytic_lidar_edge:3:4"
+        ],
+        "same_edge_camera_lidar_count": 0,
+        "same_edge_camera_lidar_edges": [],
+        "schur_elimination_count": 3,
+        "source_counts": {
+          "imu_intervals": 4,
+          "imu_samples_reused": false,
+          "lidar_factor_count": 3,
+          "unique_imu_sample_count": 8
+        },
+        "total_pose_factor_count": 3,
+        "unaccounted_factor_count": 0,
+        "windows": [
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 1,
+            "inertial_factor_count": 1,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 30,
+            "state_dimension": 30
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 2,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 3,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:1:3"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 0,
+            "end_node": 4,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:3:4"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 45,
+            "state_dimension": 45
+          }
+        ]
+      },
+      "reference_passed_to_solver": false,
+      "scientific_pose_accuracy_claim": false
+    },
+    {
+      "camera_enabled": true,
+      "camera_measurements_manufactured_from_truth": true,
+      "condition": "lidar_dropout",
+      "estimated_states_sha256": "6e1509a25b6d3998904e6544e9747e70c58d04e06f7bf34f8b35e46229eb646e",
+      "factor_audit": {
+        "accepted_window_count": 4,
+        "camera_factor_count": 2,
+        "consumed_pose_ids": [
+          "analytic_lidar_edge:0:1",
+          "analytic_lidar_edge:1:3",
+          "camera_sim_seed13:0:1",
+          "camera_sim_seed13:2:3"
+        ],
+        "factor_ledger": [
+          {
+            "covariance_diagonal": [
+              0.0016,
+              0.0016,
+              0.0016,
+              0.0009,
+              0.0009,
+              0.0009
+            ],
+            "edge": [
+              0,
+              1
+            ],
+            "measurement_id": "camera_sim_seed13:0:1",
+            "modality": "camera",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_camera_relative_motion_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              0,
+              1
+            ],
+            "measurement_id": "analytic_lidar_edge:0:1",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              1,
+              3
+            ],
+            "measurement_id": "analytic_lidar_edge:1:3",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0016,
+              0.0016,
+              0.0016,
+              0.0009,
+              0.0009,
+              0.0009
+            ],
+            "edge": [
+              2,
+              3
+            ],
+            "measurement_id": "camera_sim_seed13:2:3",
+            "modality": "camera",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_camera_relative_motion_v1"
+          },
+          {
+            "covariance_diagonal": [
+              0.0004,
+              0.0004,
+              0.0004,
+              0.000225,
+              0.000225,
+              0.000225
+            ],
+            "edge": [
+              3,
+              4
+            ],
+            "measurement_id": "analytic_lidar_edge:3:4",
+            "modality": "lidar",
+            "origin": "ANALYTIC_FIXTURE",
+            "source_id": "analytic_lidar_registration_v1"
+          }
+        ],
+        "factor_reuse_after_marginalization": false,
+        "lidar_factor_count": 3,
+        "physical_measurements_used": false,
+        "real_sensor_factor_admitted": false,
+        "remaining_pose_ids": [
+          "analytic_lidar_edge:3:4"
+        ],
+        "same_edge_camera_lidar_count": 1,
+        "same_edge_camera_lidar_edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "schur_elimination_count": 3,
+        "source_counts": {
+          "imu_intervals": 4,
+          "imu_samples_reused": false,
+          "lidar_factor_count": 3,
+          "unique_imu_sample_count": 8
+        },
+        "total_pose_factor_count": 5,
+        "unaccounted_factor_count": 0,
+        "windows": [
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 1,
+            "inertial_factor_count": 1,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1",
+              "camera_sim_seed13:0:1"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 30,
+            "state_dimension": 30
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 2,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:0:1",
+              "camera_sim_seed13:0:1"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 3,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:1:3",
+              "camera_sim_seed13:2:3"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 45,
+            "state_dimension": 45
+          },
+          {
+            "accepted": true,
+            "camera_factor_count": 1,
+            "end_node": 4,
+            "inertial_factor_count": 2,
+            "joint_factor_ids": [
+              "analytic_lidar_edge:3:4",
+              "camera_sim_seed13:2:3"
+            ],
+            "lidar_factor_count": 1,
+            "rank": 45,
+            "state_dimension": 45
+          }
+        ]
+      },
+      "reference_passed_to_solver": false,
+      "scientific_pose_accuracy_claim": false
+    }
+  ],
+  "schema": "TRUST_ROBOT_S6_JOINT_SYNTHETIC_FUSION_V1",
+  "scientific_pose_factors": 0,
+  "separate_camera_and_lidar_factor_ownership": true,
+  "source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "status": "DEVELOPMENT_ONLY_SYNTHETIC_JOINT_FUSION",
+  "test_cases_passed": 23
+}

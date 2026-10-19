@@ -1,0 +1,265 @@
+{
+  "automatic_sensor_suppression_executed": false,
+  "correlation_count": 3,
+  "correlation_grid": [
+    {
+      "assumed_cross_correlation": -0.25,
+      "cross_covariance_frobenius": 0.0003974528273896162,
+      "disagreement_grid": [
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": -0.2,
+          "flagged": true,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 15.806180831522598
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": -0.1,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 3.7628699715119582
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.0,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 0.0528924448346518
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.1,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 4.676248251490679
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.2,
+          "flagged": true,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 17.632937391480045
+        }
+      ],
+      "paired_covariance_min_eigenvalue": 0.0002067437632310569,
+      "physical_detection_rate_claimed": false
+    },
+    {
+      "assumed_cross_correlation": 0.0,
+      "cross_covariance_frobenius": 0.0,
+      "disagreement_grid": [
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": -0.2,
+          "flagged": true,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 18.967416997827115
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": -0.1,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 4.5154439658143515
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.0,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 0.06347093380158217
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.1,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 5.611497901788815
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.2,
+          "flagged": true,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 21.159524869776057
+        }
+      ],
+      "paired_covariance_min_eigenvalue": 0.000225,
+      "physical_detection_rate_claimed": false
+    },
+    {
+      "assumed_cross_correlation": 0.35,
+      "cross_covariance_frobenius": 0.0005564339583454625,
+      "disagreement_grid": [
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": -0.2,
+          "flagged": true,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 26.343634719204324
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": -0.1,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 6.27144995251993
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.0,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 0.08815407472441965
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.1,
+          "flagged": false,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 7.793747085817796
+        },
+        {
+          "automatic_action": false,
+          "camera_measurement_id": "camera_sim_seed13:0:1",
+          "camera_shift_m": 0.2,
+          "flagged": true,
+          "lidar_measurement_id": "analytic_lidar_edge:0:1",
+          "nominal_chi_square_reference": 12.591587243743977,
+          "normalized_squared_disagreement": 29.38822898580007
+        }
+      ],
+      "paired_covariance_min_eigenvalue": 0.00019005872946194566,
+      "physical_detection_rate_claimed": false
+    }
+  ],
+  "empirical_noise_cross_correlation_established": false,
+  "engine_sha256": "d9879f0f5190ae2bb6b3a4a1dec69c2e3d0554a3fd711cdd639244276897182f",
+  "git_commit_or_push": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "health_state_inference_executed": false,
+  "independent_real_reference_scored": false,
+  "junit_sha256": "8ea4c7ca5db2c2be1d640411b0f5a4e48ea6afcfc6cf7d16aaef46734fde4fed",
+  "live_simulator_launch_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "manufactured_chi_square_reference_only": true,
+  "new_sensor_acquisitions": 0,
+  "next": "S10_SYNTHETIC_REGRESSION_AND_CHECKPOINT_REVIEW",
+  "nonlinear_synthetic_scenarios": [
+    {
+      "accepted_window_solves": 4,
+      "camera_shift_m": -0.2,
+      "consumed_factor_count": 8,
+      "estimated_trajectory_sha256": "88509bc5e8724e819cb034cfd0cca35ef35ba0b4a78f64d607c960f9e8915ad9",
+      "factor_count": 9,
+      "measurement_ids": [
+        "analytic_lidar_edge:0:1",
+        "analytic_lidar_edge:0:2",
+        "analytic_lidar_edge:1:2",
+        "analytic_lidar_edge:1:3",
+        "analytic_lidar_edge:2:3",
+        "analytic_lidar_edge:2:4",
+        "analytic_lidar_edge:3:4",
+        "camera_sim_seed13:0:1",
+        "camera_sim_seed13:2:3"
+      ],
+      "real_sensor_data_used": false,
+      "remaining_factor_count": 1,
+      "schur_eliminations": 3,
+      "state_delta_from_unperturbed_m": 0.002534713468528225
+    },
+    {
+      "accepted_window_solves": 4,
+      "camera_shift_m": 0.0,
+      "consumed_factor_count": 8,
+      "estimated_trajectory_sha256": "ab254d1a4f4f230709eb07c86e3d223125fb590193829239af7996b290122a4e",
+      "factor_count": 9,
+      "measurement_ids": [
+        "analytic_lidar_edge:0:1",
+        "analytic_lidar_edge:0:2",
+        "analytic_lidar_edge:1:2",
+        "analytic_lidar_edge:1:3",
+        "analytic_lidar_edge:2:3",
+        "analytic_lidar_edge:2:4",
+        "analytic_lidar_edge:3:4",
+        "camera_sim_seed13:0:1",
+        "camera_sim_seed13:2:3"
+      ],
+      "real_sensor_data_used": false,
+      "remaining_factor_count": 1,
+      "schur_eliminations": 3,
+      "state_delta_from_unperturbed_m": 0.0
+    },
+    {
+      "accepted_window_solves": 4,
+      "camera_shift_m": 0.2,
+      "consumed_factor_count": 8,
+      "estimated_trajectory_sha256": "0cf6f320d5679eca7842fb2fd84cb40adc5fe08e2c3bac6352698752fb82e239",
+      "factor_count": 9,
+      "measurement_ids": [
+        "analytic_lidar_edge:0:1",
+        "analytic_lidar_edge:0:2",
+        "analytic_lidar_edge:1:2",
+        "analytic_lidar_edge:1:3",
+        "analytic_lidar_edge:2:3",
+        "analytic_lidar_edge:2:4",
+        "analytic_lidar_edge:3:4",
+        "camera_sim_seed13:0:1",
+        "camera_sim_seed13:2:3"
+      ],
+      "real_sensor_data_used": false,
+      "remaining_factor_count": 1,
+      "schur_eliminations": 3,
+      "state_delta_from_unperturbed_m": 0.0025334998995654176
+    }
+  ],
+  "parent_commit": "ebe97e3ee3d3c9872b2b5643de5124bb0cfacf43",
+  "perturbation_count_per_correlation": 5,
+  "physical_false_alarm_probability_calibrated": false,
+  "raw_sensor_records_read": false,
+  "real_sensor_factor_execution_authorized": false,
+  "runtime_action_denials": {
+    "drop_camera": "DENIED",
+    "drop_lidar": "DENIED",
+    "infer_unusable": "DENIED",
+    "weight_camera": "DENIED"
+  },
+  "s8_report_sha256": "ebc7646eb95c1bb3a53fe67ec57ebfe708f978686256b29f63500c20d05aa44e",
+  "s8_validation_sha256": "0480db84d72bf9c564f7bd8ab95304047e496e6691621509c8ceb8865972b0d2",
+  "schema": "TRUST_ROBOT_S9_ADVERSARIAL_CONFLICT_STRESS_V1",
+  "scientific_pose_factors": 0,
+  "test_sha256": "b5250d7e826a4ca5b07d23bf27685fb59e298d7cc070fde2c1a3bd9ddcd6e88b",
+  "total_diagnostic_cases": 15,
+  "true_fault_detection_rate_established": false,
+  "unit_tests_passed": 43
+}

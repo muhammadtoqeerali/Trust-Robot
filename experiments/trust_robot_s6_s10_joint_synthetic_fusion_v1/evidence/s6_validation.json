@@ -1,0 +1,18 @@
+{
+  "all_factor_ownership_verified": true,
+  "empirical_independence_established": false,
+  "engine_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "health_labels": 0,
+  "junit_sha256": "6ac245b348e981300803446a34f5759484654a2dfd14994cd823b589e9d2dacd",
+  "new_sensor_acquisitions": 0,
+  "nonlinear_joint_scenarios_verified": 4,
+  "real_sensor_factor_execution_authorized": false,
+  "report_sha256": "b9d4b6f3372fc6dce59e0c6086282dd66480be03d8f23689a6735564b0de9dd2",
+  "same_edge_independent_factor_slots_verified": true,
+  "schema": "TRUST_ROBOT_S6_INDEPENDENT_VALIDATION_V1",
+  "scientific_pose_factors": 0,
+  "source_specific_assumed_covariances_verified": true,
+  "test_sha256": "7010d22a4d690d4abe5e253f5cc366a1c7f2609db98681a04a6f08481b2e1c3f",
+  "unit_tests_verified": 23,
+  "verifier_sha256": "5bc75bae4a437ca5eceb00356ffd5ca08bd72371aa48ab7f99d55405e3da6c09"
+}
