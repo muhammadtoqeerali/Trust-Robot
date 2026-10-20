@@ -1,0 +1,20 @@
+{
+  "git_modified": false,
+  "original_bag_modified": false,
+  "readers": {
+    "r33_camera_multipair.py": {
+      "failed_backup": "r33_camera_multipair_initial_failed_v1.py.saved",
+      "failed_sha256": "26ed1990ef00cb01c2b60f1af9b60b832e892ede988571fdc72b42a19f3e8dc4",
+      "repaired_sha256": "3139e3514a53c7e03f22a932e2810a42b749983ad18bedd43a245dd2c9579c53"
+    },
+    "r33_independent_verify.py": {
+      "failed_backup": "r33_independent_verify_initial_failed_v1.py.saved",
+      "failed_sha256": "68eb81ea44758c9cfff53e43625c4fef97ec7bd935febe24f35c25c374ad5436",
+      "repaired_sha256": "8af2a47fd76c71b09a31f6a3dd073426aeb43ab6217478c099a07c1ac5931206"
+    }
+  },
+  "real_pose_factors_authorized": false,
+  "reason": "R33 added serialized_message_bytes; R31 baseline did not include it",
+  "repair": "Compare every original R31 frame field while retaining R33 additional serialized length evidence",
+  "schema": "TRUST_ROBOT_R33_R31_FRAME_METADATA_COMPATIBILITY_REPAIR_V1"
+}

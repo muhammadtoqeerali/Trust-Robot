@@ -1,0 +1,2096 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "cross_modal_alignment_performed": false,
+  "eligible_chunks_with_three_or_more_stream_messages": {
+    "/camera/imu": 2490,
+    "/handsfree/imu": 1793
+  },
+  "full_extrinsics_verified": false,
+  "github_baseline": "ebfd02b0ef8ad79b2e6a9810897fcb71efec2e87",
+  "github_modified": false,
+  "gravity_compensation_performed": false,
+  "ground_truth_scored": false,
+  "gyro_rotation_physically_qualified": false,
+  "health_labels_generated": 0,
+  "health_model_training_authorized": false,
+  "imu_bias_calibrated": false,
+  "imu_preintegration_executed": false,
+  "interpretation": "gyro_only_SO3_numerical_exercises_not_physically_qualified_orientation_estimates",
+  "m2dgr_scoring_authorized": false,
+  "metric_position_estimated": false,
+  "metric_velocity_estimated": false,
+  "new_sensor_acquisitions": 0,
+  "numerical_convention": "left_composed_exp_of_trapezoid_gyro_vectors_nominal_header_dt_in_native_sensor_axes",
+  "orientation_pose_measurement_authorized": false,
+  "physical_capture_time_verified": false,
+  "raw_recording_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "sampling_rule": "eight_index_spaced_three_or_more_IMU_message_chunk_anchors_first_valid_consecutive_triple_within_12_eligible_chunks",
+  "schema": "TRUST_ROBOT_R36_TRAIN_GYRO_THREE_SAMPLE_WINDOWS_V1",
+  "source_message_count": 48,
+  "source_report_sha256": {
+    "r17": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r34": "778c223c6c034343413ff848db6276aecdd730390311f178cb918b94ee10064e",
+    "r35": "a0fbf5931833dfecb609f82e27fdd13fa2fc4dbfead8dbb106a99af162698e1e"
+  },
+  "split": "train",
+  "statistical_stability_established": false,
+  "streams": {
+    "/camera/imu": [
+      {
+        "anchor_eligible_rank": 0,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4985094,
+            4983902
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -8.507430988857728e-06,
+              8.617748143365432e-06,
+              -8.605233821777412e-06
+            ],
+            [
+              -8.505396752845583e-06,
+              -8.78141223547695e-06,
+              -4.253901245107874e-06
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -1.701282774170331e-05,
+            -1.6366409211151739e-07,
+            -1.2859135066885285e-05
+          ],
+          "nominal_vector_sum_angle_rad": 2.132651983733669e-05,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 2.132651983726661e-05,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.999999999917307,
+              1.2859210460407912e-05,
+              -1.635732072430497e-07
+            ],
+            [
+              -1.2859207675713345e-05,
+              0.9999999997726032,
+              1.7012772680022446e-05
+            ],
+            [
+              1.637919780302612e-07,
+              -1.7012770575193764e-05,
+              0.9999999998552694
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643739482808635,
+            "chunk_offset": 4117,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739475191355,
+            "sequence": 13153,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924"
+          },
+          {
+            "bag_record_time_ns": 1627643739482827853,
+            "chunk_offset": 4117,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739480176449,
+            "sequence": 13154,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "dbda0a37f3a512f3e343d335f8c12e6742ac7bb5e3ef6580c57823801326d662"
+          },
+          {
+            "bag_record_time_ns": 1627643739486542501,
+            "chunk_offset": 4117,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739485160351,
+            "sequence": 13155,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "e3b871816f521bd9ddf7e5b901e0863b82dfb2686249918023333e33d8dea376"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              0.0034740325063467026,
+              1.9136345144943334e-05
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.051704350534420206,
+              -9.763055287834723,
+              0.24996019389107846
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.0034519031178206205,
+              -1.6626028809696436e-05,
+              -0.0034715221263468266
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.04319851975658169,
+              -9.839010741789695,
+              0.23799211482663665
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              -0.0035072844475507736,
+              0.0017644655890762806
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.0625952967854265,
+              -9.789676725792303,
+              0.29037261175786266
+            ]
+          }
+        ],
+        "selected_eligible_rank": 0,
+        "window_index": 0
+      },
+      {
+        "anchor_eligible_rank": 353,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            5011082,
+            5011081
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              5.704312666724902e-05,
+              -2.1948283929497935e-05,
+              1.3214875704863198e-05
+            ],
+            [
+              4.392413717209199e-05,
+              -3.069426573521225e-05,
+              9.58937755652678e-08
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            0.00010096726383934101,
+            -5.2642549664710186e-05,
+            1.3310769480428466e-05
+          ],
+          "nominal_vector_sum_angle_rad": 0.00011464206464716904,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.0001146420646467647,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999999985257725,
+              -1.3313820466633159e-05,
+              -5.264216504455803e-05
+            ],
+            [
+              1.3308505274031945e-05,
+              0.9999999948142329,
+              -0.00010096741222756256
+            ],
+            [
+              5.264350903356739e-05,
+              0.00010096671149018247,
+              0.9999999935171922
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643749660484712,
+            "chunk_offset": 2036035246,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643749673715353,
+            "sequence": 15099,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "d46cc36886c13e79fb8ecc117b45aeae9b1945e84586133c0264089248551bc4"
+          },
+          {
+            "bag_record_time_ns": 1627643749664678935,
+            "chunk_offset": 2036035246,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643749678726435,
+            "sequence": 15100,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "617b3520d8108039cd810585add1797afce53ad6de46f6376ba570ca116575d9"
+          },
+          {
+            "bag_record_time_ns": 1627643749668480467,
+            "chunk_offset": 2036035246,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643749683737516,
+            "sequence": 15101,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "28d448bb6288d885f1d4ea76c1d31953d60b2e72f6a0e51632d02ee8a8f0dfaa"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              0.012256059795618057,
+              -0.0017619552090764046,
+              0.005255124066025019
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.8200642928518763,
+              -10.15866838148289,
+              1.1755795575232695
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.010510730557143688,
+              -0.006997942924499512,
+              1.9136345144943334e-05
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.675056262545031,
+              -10.073130678791841,
+              1.069251551761301
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.007020072545856237,
+              -0.005252613686025143,
+              1.9136345144943334e-05
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.6449363259536387,
+              -10.070183038180549,
+              0.9297307679276159
+            ]
+          }
+        ],
+        "selected_eligible_rank": 353,
+        "window_index": 1
+      },
+      {
+        "anchor_eligible_rank": 707,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4977942,
+            9954452
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -1.2839298853290937e-05,
+              0.0021502337813637255,
+              0.00010435303460177779
+            ],
+            [
+              -2.5674904237281126e-05,
+              0.004230353859520674,
+              0.00020867605006200077
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -3.851420309057206e-05,
+            0.006380587640884399,
+            0.0003130290846637786
+          ],
+          "nominal_vector_sum_angle_rad": 0.0063883776653147145,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.006388377665314367,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999795951266106,
+              -0.0003131493933772496,
+              0.006380538212251299
+            ],
+            [
+              0.00031290362782774184,
+              0.9999999502648932,
+              3.951621720782615e-05
+            ],
+            [
+              -0.0063805502693939945,
+              -3.7518917330310226e-05,
+              0.9999796433780995
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643760103126825,
+            "chunk_offset": 4166919209,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643760097803354,
+            "sequence": 17028,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "ca33a5a6c0c8ff2ef29a616a28a41092881488b1151f4de6cdd010da353f4e71"
+          },
+          {
+            "bag_record_time_ns": 1627643760112940548,
+            "chunk_offset": 4166919209,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643760102781296,
+            "sequence": 17029,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "adef6d02a0b46542bc68c6cc57b597943f0926e1426f3d8051a922a168f41a40"
+          },
+          {
+            "bag_record_time_ns": 1627643760118794789,
+            "chunk_offset": 4166919209,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643760112735748,
+            "sequence": 17030,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "fc8090a9f0417a9dd66a3b5756e3a623b2fa3c6baa4d314d7c494d40686b33b1"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.005197232123464346,
+              0.438060998916626,
+              0.01747242920100689
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.25060371875748494,
+              -10.19562027139075,
+              0.030686514137954042
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              0.4258437156677246,
+              0.024453746154904366
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.16869645001775327,
+              -9.721710629369891,
+              0.09572428362069979
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.005197232123464346,
+              0.4240983724594116,
+              0.01747242920100689
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.012903569941370839,
+              -9.740090157749767,
+              -0.00710460056080653
+            ]
+          }
+        ],
+        "selected_eligible_rank": 707,
+        "window_index": 2
+      },
+      {
+        "anchor_eligible_rank": 1061,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4985809,
+            4985809
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              6.545731466780323e-05,
+              -0.0006483728657997027,
+              3.9253861041377994e-05
+            ],
+            [
+              7.415919289295189e-05,
+              -0.0006353200368534886,
+              4.3604800153952324e-05
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            0.0001396165075607551,
+            -0.0012836929026531912,
+            8.285866119533031e-05
+          ],
+          "nominal_vector_sum_angle_rad": 0.0012939187745916359,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.001293918774589919,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999991726338351,
+              -8.294500325851226e-05,
+              -0.001283686788779495
+            ],
+            [
+              8.27657764201807e-05,
+              0.9999999868208748,
+              -0.0001396713157439806
+            ],
+            [
+              0.0012836983568993655,
+              0.00013956495485090606,
+              0.9999991663197284
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643770485719321,
+            "chunk_offset": 6224591120,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643770486021519,
+            "sequence": 18945,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "35be1b62e0a0d39ad3938d3cbfefc46e31c7369946d9cc54a06eb15b19aaf20f"
+          },
+          {
+            "bag_record_time_ns": 1627643770488129452,
+            "chunk_offset": 6224591120,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643770491007328,
+            "sequence": 18946,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "a9f8c9276aeacf7ce3c23afb7f0ce74badf4373dd13a16e965b9a754fac4bdfd"
+          },
+          {
+            "bag_record_time_ns": 1627643770498363409,
+            "chunk_offset": 6224591120,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643770495993137,
+            "sequence": 18947,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "09dc5d2bd20b3ae032f085d9c788eb31fa460ecb9a33641a74d3aa106cb3a0b7"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              0.00876540131866932,
+              -0.1274256706237793,
+              0.005255124066025019
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.15159502832323268,
+              -10.055016839089443,
+              1.094949972056044
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.01749204844236374,
+              -0.13266165554523468,
+              0.010491111315786839
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.20097589655141274,
+              -9.924723443805568,
+              1.0122990553770341
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.012256059795618057,
+              -0.12218967825174332,
+              0.007000453304499388
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.17119004005379004,
+              -9.731331358628477,
+              0.8958103487262907
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1061,
+        "window_index": 3
+      },
+      {
+        "anchor_eligible_rank": 1415,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4980803,
+            4981041
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -4.327267272589286e-05,
+              0.00033025654210355136,
+              0.00010441300999562444
+            ],
+            [
+              -1.7194070160571792e-05,
+              0.0003433126506883353,
+              0.00010441799921049179
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -6.046674288646465e-05,
+            0.0006735691927918867,
+            0.0002088310092061162
+          ],
+          "nominal_vector_sum_angle_rad": 0.000707786743927616,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.0007077867439221117,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999997513470453,
+              -0.00020885594455952264,
+              0.000673561461219776
+            ],
+            [
+              0.0002088152165669226,
+              0.9999999763657752,
+              6.0536389505473534e-05
+            ],
+            [
+              -0.0006735740886854834,
+              -6.039572457052567e-05,
+              0.9999997713251257
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643781731453690,
+            "chunk_offset": 8466155812,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643781738886356,
+            "sequence": 20984,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "6d58cca2ebd438a6a71ece828d76765d9d437f04826384ac843648d9493437ee"
+          },
+          {
+            "bag_record_time_ns": 1627643781742473596,
+            "chunk_offset": 8466155812,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643781743867159,
+            "sequence": 20985,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "6c86e82bdb82dbad9004461614b0802d861e8428b66ff1851c77b03c8b9e5000"
+          },
+          {
+            "bag_record_time_ns": 1627643781742492189,
+            "chunk_offset": 8466155812,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643781748848200,
+            "sequence": 20986,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "48c06d7d98f20297bf95c1a8194316a07618f9192391a66d3d48a71670810ad4"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.01043322030454874,
+              0.06456055492162704,
+              0.022708415985107422
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.6846498086473708,
+              -10.084168018090878,
+              -0.4501022871937662
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.006942561361938715,
+              0.06805121153593063,
+              0.019217759370803833
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.4959715593631269,
+              -9.975649141677826,
+              -0.3408140754803637
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              0.06979653984308243,
+              0.022708415985107422
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.5072507127874004,
+              -9.967990869468498,
+              -0.4144973989698834
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1415,
+        "window_index": 4
+      },
+      {
+        "anchor_eligible_rank": 1769,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            5002260,
+            5001545
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -4.782438411772717e-05,
+              0.002448847485132516,
+              -0.00011340195094333962
+            ],
+            [
+              -6.0911560080620696e-05,
+              0.002444132826384753,
+              -0.00010465639906484635
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -0.00010873594419834787,
+            0.0048929803115172685,
+            -0.00021805835000818599
+          ],
+          "nominal_vector_sum_angle_rad": 0.0048990437106097165,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.004899043710597119,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999880056222384,
+              0.00021780756831255485,
+              0.004892971645260649
+            ],
+            [
+              -0.00021833966106626297,
+              0.9999999703089303,
+              0.00010821243421378068
+            ],
+            [
+              -0.004892947930495929,
+              -0.00010927946604359927,
+              0.9999880234875554
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643792860829977,
+            "chunk_offset": 10792139107,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643792840405464,
+            "sequence": 22988,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "5d83d20428af8f0407fa62ec4747cd839d90686374bb8f39993c293b846201d0"
+          },
+          {
+            "bag_record_time_ns": 1627643792860832218,
+            "chunk_offset": 10792139107,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643792845407724,
+            "sequence": 22989,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "3938f9d00775fd18c3c1404637634ed3b534dcf64fdc74cfc56a38d42bb1ee69"
+          },
+          {
+            "bag_record_time_ns": 1627643792860834566,
+            "chunk_offset": 10792139107,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643792850409269,
+            "sequence": 22990,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "d363dede72d098f987ee37dd95e92facf69740336387fba66b6fc5865cf57c14"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.01217854954302311,
+              0.4904208779335022,
+              -0.02092481404542923
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.45902242739228627,
+              -9.573442257618666,
+              0.7015428626864367
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.006942561361938715,
+              0.4886755645275116,
+              -0.024415472522377968
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.23699201078597493,
+              -8.891238323507231,
+              0.7690622911993769
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.017414536327123642,
+              0.4886755645275116,
+              -0.01743415556848049
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.014993341534404347,
+              -8.209131935356538,
+              0.8365720653447681
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1769,
+        "window_index": 5
+      },
+      {
+        "anchor_eligible_rank": 2123,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4974366,
+            4974126
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -5.18986563534569e-05,
+              0.0012327479620292633,
+              -1.7268621647119836e-05
+            ],
+            [
+              -7.35998689234648e-05,
+              0.0012457107095679941,
+              -2.1608532240064817e-05
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -0.0001254985252769217,
+            0.002478458671597257,
+            -3.887715388718465e-05
+          ],
+          "nominal_vector_sum_angle_rad": 0.002481938496368653,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.0024819384963567937,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999969278668455,
+              3.8734635461563346e-05,
+              0.0024784584925130935
+            ],
+            [
+              -3.904567184832726e-05,
+              0.9999999913691625,
+              0.00012544763953579996
+            ],
+            [
+              -0.002478453611953334,
+              -0.00012554402722093574,
+              0.9999969207484544
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643803794613620,
+            "chunk_offset": 12998453758,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643803788371801,
+            "sequence": 25001,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "4f9a86ee69af2cc2380b3cf44140512399a7f63d94c456ac3fa4a48d19a69740"
+          },
+          {
+            "bag_record_time_ns": 1627643803794615988,
+            "chunk_offset": 12998453758,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643803793346167,
+            "sequence": 25002,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "7e877610215fc4fe52ac5b288fce337ecbc53859f6907d4d800ff5dfe3e54b38"
+          },
+          {
+            "bag_record_time_ns": 1627643803794620415,
+            "chunk_offset": 12998453758,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643803798320293,
+            "sequence": 25003,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "0b08e353a7525fd11cd9911f16b398d44e0c6b355b51f8018cc9f44f38c1ccfe"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.008687891066074371,
+              0.24432946741580963,
+              1.9136345144943334e-05
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.5047472136134123,
+              -10.42083933224061,
+              0.1319016401669805
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.01217854954302311,
+              0.2513107657432556,
+              -0.006962180603295565
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.5054339609929525,
+              -9.695592636612552,
+              0.1724315981669439
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.017414536327123642,
+              0.24956545233726501,
+              -0.0017261928878724575
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.4233298106750614,
+              -10.253644414510916,
+              0.13102854201693306
+            ]
+          }
+        ],
+        "selected_eligible_rank": 2123,
+        "window_index": 6
+      },
+      {
+        "anchor_eligible_rank": 2477,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4973650,
+            4974603
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              1.9275602618436098e-07,
+              4.257636480031943e-06,
+              -8.585479270337374e-06
+            ],
+            [
+              -8.489527322747498e-06,
+              4.258452284836356e-06,
+              -1.2928284351440147e-05
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -8.296771296563137e-06,
+            8.5160887648683e-06,
+            -2.151376362177752e-05
+          ],
+          "nominal_vector_sum_angle_rad": 2.458052495314752e-05,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 2.4580524953134993e-05,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999999997323171,
+              2.1513746774813617e-05,
+              8.516140322010025e-06
+            ],
+            [
+              -2.1513817430463032e-05,
+              0.9999999997341605,
+              8.296670447980692e-06
+            ],
+            [
+              -8.515961827279005e-06,
+              -8.296853660447913e-06,
+              0.9999999999293203
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643814558641384,
+            "chunk_offset": 15096688092,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814563053370,
+            "sequence": 26965,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "3c6c2e71752b77c7640b0db4fd2bc7a7e12d9aaa24887e59b1a67eb720d899bd"
+          },
+          {
+            "bag_record_time_ns": 1627643814562478070,
+            "chunk_offset": 15096688092,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814568027020,
+            "sequence": 26966,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "3b9ee8ff943cc22ca20c3506a860d8821d54a1a64b68211a2ebcba529387e2e5"
+          },
+          {
+            "bag_record_time_ns": 1627643814573719977,
+            "chunk_offset": 15096688092,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814573001623,
+            "sequence": 26967,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "148de45eea1c48baeb86c8d95582944c04e90db6a646e04dd8777ca3c696e270"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              -1.6626028809696436e-05,
+              1.9136345144943334e-05
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.06858065552519792,
+              -9.821790756255194,
+              0.15111653355322732
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              0.0017287032678723335,
+              -0.0034715221263468266
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.07306332114921119,
+              -9.782707376972056,
+              0.14028035178794107
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.0034519031178206205,
+              -1.6626028809696436e-05,
+              -0.0017261928878724575
+            ],
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.06411715828911935,
+              -9.862640064471517,
+              0.13200436402831733
+            ]
+          }
+        ],
+        "selected_eligible_rank": 2477,
+        "window_index": 7
+      }
+    ],
+    "/handsfree/imu": [
+      {
+        "anchor_eligible_rank": 0,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            6196976,
+            6289959
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -3.0048593510389333e-06,
+              8.656619525417686e-06,
+              1.6158604496419432e-06
+            ],
+            [
+              -3.0497936853189023e-06,
+              5.436188617835753e-06,
+              -1.5110977830631659e-05
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -6.054653036357835e-06,
+            1.409280814325344e-05,
+            -1.3495117380989716e-05
+          ],
+          "nominal_vector_sum_angle_rad": 2.042998428486714e-05,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 2.0429984284822024e-05,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.999999999809637,
+              1.3495079749858173e-05,
+              1.4092874162951474e-05
+            ],
+            [
+              -1.3495165076090523e-05,
+              0.9999999998906121,
+              6.054488146554495e-06
+            ],
+            [
+              -1.4092792455609498e-05,
+              -6.054678331065169e-06,
+              0.9999999998823672
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643739487759438,
+            "chunk_offset": 4117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739487200021,
+            "sequence": 111083,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5"
+          },
+          {
+            "bag_record_time_ns": 1627643739494362622,
+            "chunk_offset": 4117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739493396997,
+            "sequence": 111084,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "41bc99b5a9096ce2d15e0ad26dc87035218ac61be45f94fa5e37eac0fd882bff"
+          },
+          {
+            "bag_record_time_ns": 1627643739500746859,
+            "chunk_offset": 4117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739499686956,
+            "sequence": 111085,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "7f36de534b7f5ca8c09e784f1ae37cf3d89df1c38c2153763aefcccf26601606"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.0015501640737056732,
+              0.0013969168066978455,
+              0.00026073306798934937
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.04067182475700975,
+              0.09193394556641579,
+              10.048214793205261
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.0005803816020488739,
+              0.0013969037681818008,
+              0.0002607665956020355
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.021614517504349354,
+              0.08007276579737664,
+              9.967502665519715
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.0015501156449317932,
+              0.0003316253423690796,
+              -0.005065560340881348
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.08355076778680087,
+              0.07295606341212989,
+              9.84880952835083
+            ]
+          }
+        ],
+        "selected_eligible_rank": 0,
+        "window_index": 0
+      },
+      {
+        "anchor_eligible_rank": 254,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            4386902,
+            7076025
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              0.00012851532883852723,
+              -0.00019158670872584734,
+              -0.00138161610441193
+            ],
+            [
+              0.0002299184130732436,
+              -0.0003617984007328749,
+              -0.0020740418649639937
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            0.00035843374191177086,
+            -0.0005533851094587222,
+            -0.0034556579693759237
+          ],
+          "nominal_vector_sum_angle_rad": 0.0035179940062516945,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.0035179940060962272,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999938761211499,
+              0.0034555504303515343,
+              -0.0005539778174742165
+            ],
+            [
+              -0.003455748801247704,
+              0.9999939649687118,
+              -0.0003575281498489783
+            ],
+            [
+              0.0005527390176486815,
+              0.0003594403685685574,
+              0.9999997826410766
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643749528767546,
+            "chunk_offset": 2017202512,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643749528175115,
+            "sequence": 112494,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "48948e04617c8ea223368cfd42631d9fd222131e3acdab9ef4dc656798f602e0"
+          },
+          {
+            "bag_record_time_ns": 1627643749532892433,
+            "chunk_offset": 2017202512,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643749532562017,
+            "sequence": 112495,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "00d7c7e280dd2b8162ceaed3b0763335f7d69275ac68eafdb924f8b7ef1b22ea"
+          },
+          {
+            "bag_record_time_ns": 1627643749557966462,
+            "chunk_offset": 2017202512,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643749539638042,
+            "sequence": 112496,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "1bd3ae6dc7faadcd7648f0b908aae2b37b749f33800fdc217ba68ba09f68ef52"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              0.026630867272615433,
+              -0.041008736938238144,
+              -0.3282536268234253
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.21898398399353028,
+              -0.27101806774735454,
+              10.086196970939637
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.03195960447192192,
+              -0.04633614048361778,
+              -0.3016287386417389
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.5358116939663887,
+              -0.2805070225149393,
+              9.86542673110962
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.0330255851149559,
+              -0.05592421069741249,
+              -0.28458791971206665
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.021264420961961152,
+              -0.06937806187197566,
+              10.02210204601288
+            ]
+          }
+        ],
+        "selected_eligible_rank": 254,
+        "window_index": 1
+      },
+      {
+        "anchor_eligible_rank": 508,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            5478859,
+            7365942
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              1.9890152141811327e-05,
+              2.75386005960498e-05,
+              -0.0024095823177377133
+            ],
+            [
+              1.4987698352996261e-05,
+              1.740932296117209e-05,
+              -0.0032669928267643157
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            3.487785049480759e-05,
+            4.494792355722189e-05,
+            -0.005676575144502029
+          ],
+          "nominal_vector_sum_angle_rad": 0.005676860237091051,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.005676860237068012,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999838872812661,
+              0.005676545405807644,
+              4.483418408476868e-05
+            ],
+            [
+              -0.0056765438375496816,
+              0.9999838876817043,
+              -3.502920440650803e-05
+            ],
+            [
+              -4.5032306571467036e-05,
+              3.477413677941199e-05,
+              0.9999999983814255
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643760084309952,
+            "chunk_offset": 4164730216,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643760060815095,
+            "sequence": 113971,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "3a8d7347028676daf23e9d94e3bc38d803a4c6292df2239557087c8a38e07b42"
+          },
+          {
+            "bag_record_time_ns": 1627643760084313730,
+            "chunk_offset": 4164730216,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643760066293954,
+            "sequence": 113972,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "5f8ea091e34bd08fd7b53d16054e647890b6b971e293084538264934b5a4e9f7"
+          },
+          {
+            "bag_record_time_ns": 1627643760084316608,
+            "chunk_offset": 4164730216,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643760073659896,
+            "sequence": 113973,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "9bf4f776b46b142a5eee4fb2775cd322095f10a1cbb358d47fa1d2aac4968f6f"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              0.008422881364822388,
+              0.002895643934607506,
+              -0.4397954046726227
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.331295732408762,
+              -0.03142229528166354,
+              10.079075312614442
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.0011621899902820587,
+              0.007157033309340477,
+              -0.4397973418235779
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.2217162311077118,
+              0.07770053166896106,
+              10.216759538650514
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.005231648683547974,
+              -0.0024300552904605865,
+              -0.44725629687309265
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              -0.29556329585611824,
+              0.1583565376698971,
+              10.010232615470887
+            ]
+          }
+        ],
+        "selected_eligible_rank": 508,
+        "window_index": 2
+      },
+      {
+        "anchor_eligible_rank": 762,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            8165121,
+            4876852
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -1.2148515029076488e-05,
+              -8.567111700964161e-05,
+              0.00014686498059330138
+            ],
+            [
+              8.317922185949982e-06,
+              -6.675706585082411e-05,
+              7.21421779300496e-05
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -3.830592843126506e-06,
+            -0.00015242818286046573,
+            0.00021900715852335098
+          ],
+          "nominal_vector_sum_angle_rad": 0.00026685793946619907,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.00026685793946309896,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999999644007642,
+              -0.0002190061020384218,
+              -0.00015242964970262372
+            ],
+            [
+              0.00021900668620892987,
+              0.9999999760107559,
+              3.815713211902869e-06
+            ],
+            [
+              0.00015242881038147457,
+              -3.8490961885277535e-06,
+              0.9999999883753213
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643770671018535,
+            "chunk_offset": 6252666696,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643770645999908,
+            "sequence": 115430,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "de10cebe37cf9e16f29605e3def5bd914cca0f9e9557070aac2af30bb19f2231"
+          },
+          {
+            "bag_record_time_ns": 1627643770672565031,
+            "chunk_offset": 6252666696,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643770654165029,
+            "sequence": 115431,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "02e81155d2619e3fc99bbffa7282d90b649437fbab70165fe279ed15d03f9f10"
+          },
+          {
+            "bag_record_time_ns": 1627643770672569471,
+            "chunk_offset": 6252666696,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643770659041881,
+            "sequence": 115432,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "18b0559d264a08088e73d9439a8f17e49e24cb6209378985ed981047551eeaa6"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.005215127021074295,
+              -0.012090019881725311,
+              0.01905120722949505
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              1.9722561508417131,
+              0.314924081414938,
+              10.238124513626099
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.0022394172847270966,
+              -0.008894633501768112,
+              0.016922535374760628
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              1.903173378109932,
+              0.01602241238579154,
+              10.202516222000122
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.0011717677116394043,
+              -0.018482480198144913,
+              0.012663016095757484
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              1.0432124719023705,
+              -0.12868394702672958,
+              9.981745982170105
+            ]
+          }
+        ],
+        "selected_eligible_rank": 762,
+        "window_index": 3
+      },
+      {
+        "anchor_eligible_rank": 1017,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            6972074,
+            5775929
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -7.883706651508064e-05,
+              -8.776931095364691e-05,
+              -0.0022597915338892047
+            ],
+            [
+              -2.5305695512989537e-05,
+              -5.4250240555733445e-05,
+              -0.0018721101161646694
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -0.00010414276202807017,
+            -0.00014201955150938036,
+            -0.004131901650053874
+          ],
+          "nominal_vector_sum_angle_rad": 0.004135653093963719,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.0041356530938637965,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999914536239553,
+              0.004131898293328541,
+              -0.00014175874840979122
+            ],
+            [
+              -0.004131883504786723,
+              0.9999914582772762,
+              0.00010445663950314505
+            ],
+            [
+              0.0001421891417563585,
+              -0.00010387001614320984,
+              0.9999999844966339
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643782099098333,
+            "chunk_offset": 8551221184,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782097992897,
+            "sequence": 117000,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "838da6207829d38407bb5b1d10929440792ce64cd807e0a7c644f5944c1460fd"
+          },
+          {
+            "bag_record_time_ns": 1627643782105511486,
+            "chunk_offset": 8551221184,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782104964971,
+            "sequence": 117001,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "e76001e5b5672eff29b461dd93102d5c6ca897f01ae386f2d11269e25e969551"
+          },
+          {
+            "bag_record_time_ns": 1627643782114954512,
+            "chunk_offset": 8551221184,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782110740900,
+            "sequence": 117002,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "e3b2f0c416b50e0528b37e97db60960acb076c46841a184d0c13995e8a9a05c9"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.01716753840446472,
+              -0.016317352652549744,
+              -0.3235866129398346
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.21933407597243787,
+              -0.14054512679576875,
+              10.202516222000122
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.005447559058666229,
+              -0.008860036730766296,
+              -0.324654221534729
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0000000000000002,
+            "specific_force_m_s2": [
+              -0.21218757405877114,
+              -0.0646335936151445,
+              10.375809907913208
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.003314908593893051,
+              -0.009924903512001038,
+              -0.32359132170677185
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.11690104920417071,
+              -0.1879898276180029,
+              10.145544123649598
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1017,
+        "window_index": 4
+      },
+      {
+        "anchor_eligible_rank": 1271,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            6415844,
+            7098198
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -0.00014935462415571513,
+              -4.275349035058916e-05,
+              -0.0030446024015480877
+            ],
+            [
+              -0.0001916788911975995,
+              -2.8390350690487776e-05,
+              -0.00336465124938494
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -0.00034103351535331463,
+            -7.114384104107694e-05,
+            -0.006409253650933028
+          ],
+          "nominal_vector_sum_angle_rad": 0.006418714642879107,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.006418714642814955,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999794582834141,
+              0.006409219802334137,
+              -7.009090756540307e-05
+            ],
+            [
+              -0.00640919552411813,
+              0.9999794026554919,
+              0.00034128800069875337
+            ],
+            [
+              7.227685369121052e-05,
+              -0.00034083176372631926,
+              0.999999939304881
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643792776700061,
+            "chunk_offset": 10777840354,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643792762644052,
+            "sequence": 118473,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "2b44b33e241d66c22749385ded126277c7868dd9e9189f3b0386280046c570c7"
+          },
+          {
+            "bag_record_time_ns": 1627643792776710134,
+            "chunk_offset": 10777840354,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643792769059896,
+            "sequence": 118474,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "6935c50463899a35bd8001e890094c2ea67c1e2b5841e797a68a7ac4156cd7bd"
+          },
+          {
+            "bag_record_time_ns": 1627643792776779592,
+            "chunk_offset": 10777840354,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643792776158094,
+            "sequence": 118475,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "da17ff501f2824cdf3f3ce74338c89d5993f735de0f526557d9b65a67729482d"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.021150335669517517,
+              -0.007729455828666687,
+              -0.475075364112854
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.03352533425204456,
+              0.05635041538625956,
+              10.06720588207245
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.02540772408246994,
+              -0.005598016083240509,
+              -0.4740132987499237
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.09987580738961697,
+              -0.029050061153247955,
+              9.084421122074128
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.028600037097930908,
+              -0.0024012960493564606,
+              -0.474016398191452
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.059379033185541635,
+              0.2840850103646517,
+              10.632188439369202
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1271,
+        "window_index": 5
+      },
+      {
+        "anchor_eligible_rank": 1525,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            12918950,
+            7384061
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              -0.000321701449630782,
+              -1.5805816497653724e-05,
+              -0.0022701659087844194
+            ],
+            [
+              -0.000148481073904695,
+              0.00010502748160897663,
+              -0.0013211380448361189
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            -0.000470182523535477,
+            8.92216651113229e-05,
+            -0.003591303953620538
+          ],
+          "nominal_vector_sum_angle_rad": 0.0036230506756397894,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 0.0036230506747625276,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999935473557385,
+              0.0035912570343988445,
+              9.010992831146161e-05
+            ],
+            [
+              -0.0035912990170579168,
+              0.9999934407432538,
+              0.00047015086798097774
+            ],
+            [
+              -8.842090464544102e-05,
+              -0.0004704714459616496,
+              0.9999998854191745
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643803621004540,
+            "chunk_offset": 12955904889,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643803618678092,
+            "sequence": 119958,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "e36098b5665d8b836231998a351a2436858c605931da941692b11fca27b6f3d8"
+          },
+          {
+            "bag_record_time_ns": 1627643803633918745,
+            "chunk_offset": 12955904889,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643803631597042,
+            "sequence": 119959,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "e27102a35377cc89dbce8fd6b54eedbc34ca8ad3d5904ccbc14a3ebcb277e277"
+          },
+          {
+            "bag_record_time_ns": 1627643803645192631,
+            "chunk_offset": 12955904889,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643803638981103,
+            "sequence": 119960,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "192df1e4c00553a67b1c6052fa1e0ad043a31f1123b10fafa36b916fe70293a0"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              -0.020640186965465546,
+              -0.008680537343025208,
+              -0.1751917004585266
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              1.424358680844307,
+              -0.335068416595459,
+              9.936642146110536
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.029162846505641937,
+              0.006233617663383484,
+              -0.1762557327747345
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.7859388411045075,
+              -0.012444411986507477,
+              9.950885462760926
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              -0.011053796857595444,
+              0.022213460877537727,
+              -0.1815793514251709
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.85740375071764,
+              0.25087371431291106,
+              10.28322834968567
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1525,
+        "window_index": 6
+      },
+      {
+        "anchor_eligible_rank": 1780,
+        "gyro_numerics": {
+          "factor": null,
+          "header_gaps_ns": [
+            6654024,
+            6888151
+          ],
+          "midpoint_gyro_component_increments_rad": [
+            [
+              5.792041230484844e-06,
+              9.507503007352353e-07,
+              2.9382906439304356e-06
+            ],
+            [
+              9.661254630442709e-06,
+              1.56590178551767e-05,
+              6.713796383713372e-06
+            ]
+          ],
+          "nominal_gyro_sum_rotvec_rad": [
+            1.5453295860927553e-05,
+            1.6609768155911936e-05,
+            9.652087027643808e-06
+          ],
+          "nominal_vector_sum_angle_rad": 2.465464530565623e-05,
+          "rotation_is_calibrated_robot_pose": false,
+          "translation_m": null,
+          "two_step_composed_rotation_angle_rad_diagnostic": 2.465464530564216e-05,
+          "two_step_composed_rotation_matrix_diagnostic": [
+            [
+              0.9999999998154769,
+              -9.651917932466786e-06,
+              1.6609847981832633e-05
+            ],
+            [
+              9.652174608538493e-06,
+              0.9999999998340168,
+              -1.545323551390892e-05
+            ],
+            [
+              -1.6609698825714703e-05,
+              1.5453395832210382e-05,
+              0.9999999997426554
+            ]
+          ],
+          "velocity_m_s": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643814361700382,
+            "chunk_offset": 15056831185,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814357919931,
+            "sequence": 121433,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "14f4a6b0c33655770e2eda28b3529ae52c2090301edcbb2ae643e40a0738905f"
+          },
+          {
+            "bag_record_time_ns": 1627643814364904903,
+            "chunk_offset": 15056831185,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814364573955,
+            "sequence": 121434,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "506fbe3167f329dfc86ac4fe4a932696b6a1dfe2441d502385cea88f8a85c2a6"
+          },
+          {
+            "bag_record_time_ns": 1627643814371811981,
+            "chunk_offset": 15056831185,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814371462106,
+            "sequence": 121435,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "39e2bc8eddce107eaf67907c3fd9a6ca9dd1b537f9109fc0fb2718d45fbce115"
+          }
+        ],
+        "physically_qualified_rotation": false,
+        "samples": [
+          {
+            "gyro_rad_s": [
+              0.001403357833623886,
+              0.0006755515933036804,
+              -9.129196405410767e-05
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.0049393750843591995,
+              0.10379512533545494,
+              10.060084223747253
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.00033755600452423096,
+              -0.000389784574508667,
+              0.0009744539856910706
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              -0.05258264150470496,
+              0.07770053166896106,
+              10.043467020988466
+            ]
+          },
+          {
+            "gyro_rad_s": [
+              0.002467624843120575,
+              0.004936438053846359,
+              0.0009749215096235275
+            ],
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              -0.023996681766584517,
+              0.06583935646340251,
+              10.026849818229676
+            ]
+          }
+        ],
+        "selected_eligible_rank": 1780,
+        "window_index": 7
+      }
+    ]
+  },
+  "total_time_intervals": 32,
+  "trajectory_id": "room_02",
+  "window_count_per_stream": 8
+}

@@ -1,0 +1,10 @@
+{
+  "authentic_imu_messages_relocated": 48,
+  "independent_index_schedules_rebuilt": 2,
+  "independently_recomputed_three_sample_windows": 16,
+  "numerical_rotation_crosscheck": "PURE_PYTHON_QUATERNIONS_MATCH_SCIPY_SO3",
+  "physical_rotation_qualified": false,
+  "schema": "TRUST_ROBOT_R36_INDEPENDENT_GYRO_WINDOW_REPLAY_V1",
+  "scientific_sensor_factors_authorized": false,
+  "source_report_sha256": "c025f71eeb8a8467c0ca86cbec079d1bf0d977841d25140750d813d89a54714a"
+}

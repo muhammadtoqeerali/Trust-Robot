@@ -1,0 +1,10 @@
+{
+  "independently_recomputed_pair_tracks": 8,
+  "independently_reconstructed_index_schedule": true,
+  "physical_timing_qualified": false,
+  "r31_baseline_identical": true,
+  "real_sensor_factors_authorized": false,
+  "recorded_camera_messages_verified": 16,
+  "schema": "TRUST_ROBOT_R33_INDEPENDENT_CAMERA_MULTIPAIR_V1",
+  "source_report_sha256": "1e74e18205b8429d88632826f1f3c30055165352228a19aefa1064432b2853b1"
+}

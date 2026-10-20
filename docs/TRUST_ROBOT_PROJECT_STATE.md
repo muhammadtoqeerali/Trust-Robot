@@ -6070,3 +6070,30 @@ R27 computed diagnostic registration from two genuine TRAIN LiDAR scans, selecti
 These results are engineering diagnostics, not independently validated metric localization measurements. No qualified real factors, full physical extrinsics, cross-modal clock verification, independent ground-truth scoring, empirical health supervision, or M2DGR ATE/RPE evaluation are authorized. The original bag and frozen 22/7/7 trajectory split remain intact.
 
 Next: TRAIN-only multi-pair camera tracking and IMU motion candidates, followed by scientific qualification before any recorded estimator factor admission.
+
+## KIOS R33–R37 recorded camera / IMU development checkpoint — 2026-10-20
+
+Parent Git commit:
+`ebfd02b0ef8ad79b2e6a9810897fcb71efec2e87`
+
+Frozen archive:
+`experiments/trust_robot_r33_r37_recorded_motion_checkpoint_v1/`
+
+Audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R33_R37_RECORDED_MOTION_V1.md`
+
+R33 checked eight authenticated camera pairs (16 frames), including preserved first-failure and targeted-repair evidence; independently measured pixel displacements only.
+
+R34 checked 16 short IMU intervals (32 authentic messages) across both native IMU frames.
+
+R35 independently evaluated header-time variation, native frame labels, and orientation-unknown covariance indicators (camera 16/16, HandsFree 0/16).
+
+R36 independently validated 16 numerical three-sample gyro SO(3) windows across 48 real IMU messages.
+
+R37 independently verified 21 frozen R33–R36 artifacts and restrictive no-factor readiness.
+
+All results are diagnostic only. Physical capture clock, IMU bias and gravity modeling, extrinsics, independent reference trajectories, real calibrated 6DoF pose factors, health-label supervision, M2DGR scoring, and safety supervision are unverified or denied.
+
+Original TRAIN recording remains off-Git; frozen 22/7/7 trajectory split is unchanged.
+
+Next: qualify actual real-data sensor factors with independent motion references/calibration before progressing to reliability-conditioned real fusion.

@@ -1,0 +1,10 @@
+{
+  "bias_and_gravity_calibrated": false,
+  "imu_preintegration_or_pose_factor_authorized": false,
+  "independent_chunk_schedule_rebuilt": true,
+  "independent_trapezoid_intervals_recomputed": 16,
+  "original_imu_messages_relocated": 32,
+  "physical_capture_time_verified": false,
+  "schema": "TRUST_ROBOT_R34_INDEPENDENT_TWO_IMU_INTERVALS_V1",
+  "source_report_sha256": "778c223c6c034343413ff848db6276aecdd730390311f178cb918b94ee10064e"
+}

@@ -1,0 +1,14 @@
+{
+  "camera_pairs_source_bound": 8,
+  "factor_admission": false,
+  "github_modified": false,
+  "gyro_windows_recomputed_using_pure_python_quaternion": 16,
+  "imu_interval_variations_recomputed": 16,
+  "imu_trapezoid_intervals_recomputed": 16,
+  "r33_original_failed_readers_preserved": true,
+  "raw_rosbag_read": false,
+  "schema": "TRUST_ROBOT_R37_INDEPENDENT_READINESS_V1",
+  "science_gates_closed": true,
+  "source_artifacts_independently_hashed": 21,
+  "source_readiness_report_sha256": "185c91251dbe9342023155f24db4ba4800b32489a3d1f9af956188f7f5bccc4a"
+}

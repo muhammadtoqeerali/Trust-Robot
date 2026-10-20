@@ -1,0 +1,534 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "cross_modal_alignment_performed": false,
+  "full_extrinsics_verified": false,
+  "github_baseline": "ebfd02b0ef8ad79b2e6a9810897fcb71efec2e87",
+  "github_modified": false,
+  "gravity_compensation_performed": false,
+  "health_labels_generated": 0,
+  "health_model_training_authorized": false,
+  "imu_bias_calibrated": false,
+  "imu_orientation_pose_authorized": false,
+  "imu_preintegration_executed": false,
+  "independent_ground_truth_scored": false,
+  "interpretation": "descriptive_within_stream_sample_variation_only_no_cross_stream_alignment_or_pose",
+  "interval_count": 16,
+  "m2dgr_scoring_authorized": false,
+  "metric_position_estimated": false,
+  "metric_velocity_estimated": false,
+  "new_sensor_acquisitions": 0,
+  "orientation_covariance_calibrated": false,
+  "physical_capture_time_verified": false,
+  "previously_authenticated_messages_represented": 32,
+  "r34_engine_source_sha256": "377627ecabd5c8d0f3fb2555e83ae48ad527111bec22986e1f277080d0bead2a",
+  "r34_independent_validation_sha256": "c3be4f270b093fb6342537de446f6c2c3da89aee7ce0e83a83ba3c7066b99c54",
+  "r34_independent_verifier_source_sha256": "95cf6a99057a79c82d43da16c298c083194d00489b98bb76e09793b3e8c40bb3",
+  "r34_source_report_sha256": "778c223c6c034343413ff848db6276aecdd730390311f178cb918b94ee10064e",
+  "r35_reopened_raw_rosbag": false,
+  "raw_recording_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "schema": "TRUST_ROBOT_R35_TRAIN_IMU_VARIATION_FRAME_SEMANTICS_V1",
+  "split": "train",
+  "statistical_stability_established": false,
+  "stream_count": 2,
+  "streams": {
+    "/camera/imu": {
+      "intervals": [
+        {
+          "gyro_norm_samples_rad_s": [
+            0.0034743013743035868,
+            0.00489564882659789
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.006045997914811149,
+          "gyro_trapezoid_component_norm_rad": 1.4855706453081153e-05,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.985094,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 0,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924",
+            "dbda0a37f3a512f3e343d335f8c12e6742ac7bb5e3ef6580c57823801326d662"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.76639145189828,
+            9.841983475696441
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.07736158645749065,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.10925930329356293,
+            0.1049505638376455
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.007998102738234949,
+          "gyro_trapezoid_component_norm_rad": 0.0005365736047904364,
+          "observed_header_dt_ms_not_capture_clock_proof": 5.012274,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 1,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "93e68d479f31af50252835e887974eac3cf3db812106ca801a91e8218a775393",
+            "47866ed53c956f46b31926b99afa1a68b598dd1fb9d45d75c3392f5ce0afca8a"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.337234430519732,
+            10.1924287325514
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.1588270749286937,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.04307737382062451,
+            0.03599256557168836
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.007404804510298088,
+          "gyro_trapezoid_component_norm_rad": 0.00019672979657353397,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.977942,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 2,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "f704b4b13796c8380ef100d6770d288e06387229c7fef5c774c13c4066e9c217",
+            "13f61709573c2f49c83cae1a4fbf2c3c350e38afb423d6564206ee4780eeabc9"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.90944523483607,
+            9.888390033509477
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.0801634390476987,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.06662153072584041,
+            0.06761955004782004
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.004275165307000904,
+          "gyro_trapezoid_component_norm_rad": 0.00033396191469855157,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.977942,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 3,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "335ddab1a99deac63a347c6cf3fb88e1dc2e62bbb44a7c0962f9b90ba02ac363",
+            "dc1b3bd91ee7be332bea08662dae66c9e66f7b7560d1917047c5e39b648eab89"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.660587546965107,
+            9.879166843649688
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.24835548147953887,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.34105696594204155,
+            0.3358010682358528
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.006530433993750977,
+          "gyro_trapezoid_component_norm_rad": 0.0016840875692257892,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.976273,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 4,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "c5d1d4d3a809a83c1378999563911e38b0159ccb1a1677a84c004b9da8d05f6a",
+            "a5529e93f2b5828fad0afd321bbb0138fc21fe3043cfd76b2c42212f428d62fc"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.921803403532008,
+            9.778755234291573
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.237972538447008,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.502235141471432,
+            0.49062034641300556
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.01541433616159896,
+          "gyro_trapezoid_component_norm_rad": 0.0025082219211947686,
+          "observed_header_dt_ms_not_capture_clock_proof": 5.052805,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 5,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "f53920d32133928fa19bd9d1e5a1419eebed93feaa483011df8b495c02f1f07e",
+            "0b954ebcd5ada87396e68a5067065a74eff9cf1bd09e9b4768ebf251cd1e986a"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.028344756683508,
+            9.782854052855559
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.686621579460972,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.4155713816596033,
+            0.42551553974606926
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.014602477190189053,
+          "gyro_trapezoid_component_norm_rad": 0.0020939735910916694,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.979610999999999,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 6,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "b7e5598e8b508156e883418b8dbf651fc86c457cc5bd636a365b8e8f0d809655",
+            "1aa31cf40fc3909bd74965d971d89fa3b1db597f43ec2a00dd0228e0167a764c"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.547386738593913,
+            9.40862639721708
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.2576875674601377,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            4.630992515887549e-05,
+            4.630992515887549e-05
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.0,
+          "gyro_trapezoid_component_norm_rad": 2.3031829119432813e-07,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.973411,
+          "orientation_covariance_unknown_count": 2,
+          "orientation_norm_samples_as_recorded": [
+            0.0,
+            0.0
+          ],
+          "pair_index": 7,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "963419f2d9e18590b29013a3f37df5dc7c109a662761a871816c67546f14808f",
+            "b1fff034b85670af59d92bdacc7ebdbe8e4dddf29a64d3eea4705da9e485e69e"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.904602045372307,
+            9.743316947433684
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.16361718564116137,
+          "velocity_from_acceleration_m_s": null
+        }
+      ],
+      "orientation_pose_measurement_authorized": false,
+      "orientation_semantics": "recorded_covariance_sentinel_counted_no_orientation_pose_admission",
+      "physical_frame_extrinsics_verified": false,
+      "recorded_frame_id": "camera_imu_optical_frame",
+      "summary": {
+        "gyro_sample_delta_norm_rad_s": {
+          "max": 0.01541433616159896,
+          "median": 0.006967619252024533,
+          "min": 0.0
+        },
+        "observed_gyro_integral_norm_rad": {
+          "max": 0.0025082219211947686,
+          "median": 0.000435267759744494,
+          "min": 2.3031829119432813e-07
+        },
+        "observed_header_dt_ms": {
+          "max": 5.052805,
+          "median": 4.9787764999999995,
+          "min": 4.973411
+        },
+        "orientation_covariance_unknown_samples": 16,
+        "orientation_samples_inspected": 16,
+        "specific_force_sample_delta_norm_m_s2": {
+          "max": 0.686621579460972,
+          "median": 0.2007948620440847,
+          "min": 0.07736158645749065
+        }
+      }
+    },
+    "/handsfree/imu": {
+      "intervals": [
+        {
+          "gyro_norm_samples_rad_s": [
+            0.0021029424511825835,
+            0.0015349860451936387
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.0021305456760582495,
+          "gyro_trapezoid_component_norm_rad": 9.304689480046388e-06,
+          "observed_header_dt_ms_not_capture_clock_proof": 6.196975999999999,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            1.0,
+            1.0
+          ],
+          "pair_index": 0,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5",
+            "41bc99b5a9096ce2d15e0ad26dc87035218ac61be45f94fa5e37eac0fd882bff"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.04871765839132,
+            9.967847722669724
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.08377539078251808,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.09353416601063695,
+            0.09146950814590216
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.005733620182686774,
+          "gyro_trapezoid_component_norm_rad": 0.0008002532556560069,
+          "observed_header_dt_ms_not_capture_clock_proof": 8.654833,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            0.9999999999999999,
+            1.0
+          ],
+          "pair_index": 1,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "ffb5534f3504db1c96c8102b852449ba36db6503be847d7eb3e73127eccb3773",
+            "5939133238f4a1b242db5301d17e994e7ab550fa04b2c7c2e2c6f745eca4bbe4"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.144986174540328,
+            9.770546609132312
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.4339823367130892,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.32684750672733587,
+            0.3135796308573722
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.01384788926504797,
+          "gyro_trapezoid_component_norm_rad": 0.0016846698833677945,
+          "observed_header_dt_ms_not_capture_clock_proof": 5.261183,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            1.0,
+            0.9999999999999999
+          ],
+          "pair_index": 2,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "c031eb6f2fb02272a9595bd70b94c46ccbb2fa914872ac9cbed65977fa705b83",
+            "9209cdb1d8bb481cf5a9f948c45f47656a819c17f5281420315310689bb4b306"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.166330145722434,
+            10.36981783409013
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.34701086897749417,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.09376959812596955,
+            0.09533731435208112
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.006565653737772492,
+          "gyro_trapezoid_component_norm_rad": 0.0006510183655352262,
+          "observed_header_dt_ms_not_capture_clock_proof": 6.889105,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            1.0,
+            0.9999999999999999
+          ],
+          "pair_index": 3,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "d7297f7b1ddae80cb896f6f2fa65739b882c1f73a0c8430a6b5a23eaee0d7d77",
+            "76128f5478e3a9a19d2ad82bce4ac6b50d9f902ed9074cf603d785404564adc1"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.090670196131107,
+            9.629566000635284
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.5050297080320191,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.34089448082049334,
+            0.34179673548455713
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.006303829688199438,
+          "gyro_trapezoid_component_norm_rad": 0.0016564848151108978,
+          "observed_header_dt_ms_not_capture_clock_proof": 4.8530109999999995,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            1.0,
+            1.0
+          ],
+          "pair_index": 4,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "9191d320b3ed64239be5a24ebe0046b3f801a10ab2ad1c5e1a0497c6843ae218",
+            "69507a0f20474377b70ebce37bfd8201c9454be29a91f8c72fd4028ca2f00726"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.405050710556738,
+            9.76958696756625
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.7074110871349958,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.5118798594925322,
+            0.508483629787475
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.008181071728875333,
+          "gyro_trapezoid_component_norm_rad": 0.0035690936768598036,
+          "observed_header_dt_ms_not_capture_clock_proof": 6.995915999999999,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            0.9999999999999999,
+            1.0
+          ],
+          "pair_index": 5,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "4b59e15e84938c250ecf380c837a99bd9678d74a4e6a0d523445024721270d12",
+            "a8bad165dcf92882cd0472d0ea086c3a2eedacfce99ed08775e74c4ab17c352b"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.93183626093947,
+            9.637427591162869
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.41741880097392803,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.36793335378997877,
+            0.36750255879718646
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.007828107062241916,
+          "gyro_trapezoid_component_norm_rad": 0.0026091983653239023,
+          "observed_header_dt_ms_not_capture_clock_proof": 7.096051999999999,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            1.0,
+            1.0
+          ],
+          "pair_index": 6,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "adae8648363fc550d94e059bb81c1b3406e55d2b95da876be83b34cef4b48340",
+            "8815e939c4f9fd97feb7fa7017fd2e5c7b36a60862d370fd956525708ebdba8d"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            9.688895118453962,
+            9.989417910565095
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.6639011389051233,
+          "velocity_from_acceleration_m_s": null
+        },
+        {
+          "gyro_norm_samples_rad_s": [
+            0.002294237444103923,
+            0.003989440166856004
+          ],
+          "gyro_sample_delta_norm_rad_s": 0.004519783291947196,
+          "gyro_trapezoid_component_norm_rad": 1.622383927719736e-05,
+          "observed_header_dt_ms_not_capture_clock_proof": 6.92892,
+          "orientation_covariance_unknown_count": 0,
+          "orientation_norm_samples_as_recorded": [
+            1.0,
+            1.0
+          ],
+          "pair_index": 7,
+          "pose_factor": null,
+          "relative_rotation_estimate_rad": null,
+          "source_serialized_message_sha256": [
+            "d6f811e26cd47a36a43bee0ba04eab936613eded078eb11aa3cac6c4fa066df7",
+            "0b112c13bc3f2f4ff90f3605707b02b92e7a6505741b55cee1269e2d013c0df1"
+          ],
+          "specific_force_norm_samples_m_s2": [
+            10.004682419388919,
+            9.989342379921476
+          ],
+          "specific_force_sample_delta_norm_m_s2": 0.09333804608031242,
+          "velocity_from_acceleration_m_s": null
+        }
+      ],
+      "orientation_pose_measurement_authorized": false,
+      "orientation_semantics": "recorded_covariance_sentinel_counted_no_orientation_pose_admission",
+      "physical_frame_extrinsics_verified": false,
+      "recorded_frame_id": "base_link",
+      "summary": {
+        "gyro_sample_delta_norm_rad_s": {
+          "max": 0.01384788926504797,
+          "median": 0.0064347417129859644,
+          "min": 0.0021305456760582495
+        },
+        "observed_gyro_integral_norm_rad": {
+          "max": 0.0035690936768598036,
+          "median": 0.0012283690353834522,
+          "min": 9.304689480046388e-06
+        },
+        "observed_header_dt_ms": {
+          "max": 8.654833,
+          "median": 6.909012499999999,
+          "min": 4.8530109999999995
+        },
+        "orientation_covariance_unknown_samples": 0,
+        "orientation_samples_inspected": 16,
+        "specific_force_sample_delta_norm_m_s2": {
+          "max": 0.7074110871349958,
+          "median": 0.4257005688435086,
+          "min": 0.08377539078251808
+        }
+      }
+    }
+  },
+  "trajectory_id": "room_02"
+}

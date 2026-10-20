@@ -1,0 +1,1533 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "cross_modal_alignment_performed": false,
+  "eligible_chunks_per_stream": {
+    "/camera/imu": 3360,
+    "/handsfree/imu": 3012
+  },
+  "full_extrinsics_verified": false,
+  "github_baseline": "ebfd02b0ef8ad79b2e6a9810897fcb71efec2e87",
+  "github_modified": false,
+  "gravity_compensation_performed": false,
+  "ground_truth_scored": false,
+  "health_labels_generated": 0,
+  "health_model_training_authorized": false,
+  "imu_bias_calibrated": false,
+  "imu_preintegration_executed": false,
+  "interpretation": "raw_gyro_and_specific_force_two_sample_descriptive_trapezoids_not_pose_or_preintegration",
+  "m2dgr_scoring_authorized": false,
+  "metric_position_estimated": false,
+  "metric_velocity_estimated": false,
+  "new_sensor_acquisitions": 0,
+  "pairs_per_stream": 8,
+  "physical_capture_time_verified": false,
+  "raw_recording_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "sampling_rule": "eight_evenly_spaced_chunks_with_at_least_two_same_stream_IMU_messages_per_topic",
+  "schema": "TRUST_ROBOT_R34_TRAIN_TWO_IMU_BOUNDED_INTERVALS_V1",
+  "serialized_imu_messages_inspected": 32,
+  "source_report_sha256": {
+    "r17": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r33": "1e74e18205b8429d88632826f1f3c30055165352228a19aefa1064432b2853b1"
+  },
+  "split": "train",
+  "statistical_stability_established": false,
+  "stream_count": 2,
+  "streams": {
+    "/camera/imu": [
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 1.4855706453081153e-05,
+          "gyro_trapezoid_component_integrals_rad": [
+            -8.507430988857728e-06,
+            8.617748143365432e-06,
+            -8.605233821777412e-06
+          ],
+          "mean_gyro_rad_s": [
+            -0.0017065738356905058,
+            0.001728703238768503,
+            -0.0017261928906009416
+          ],
+          "mean_specific_force_m_s2": [
+            -0.047451435145500945,
+            -9.801033014812209,
+            0.24397615435885756
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.004985094000000001,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.00023654986463522593,
+            -0.04885907087594226,
+            0.0012162440632374149
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643739482808635,
+            "chunk_offset": 4117,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739475191355,
+            "sequence": 13153,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "c1589e855b7f128ed9a3eee7b138961f8732d4a0976befc6c07c5233dc93f924"
+          },
+          {
+            "bag_record_time_ns": 1627643739482827853,
+            "chunk_offset": 4117,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643739480176449,
+            "sequence": 13154,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "dbda0a37f3a512f3e343d335f8c12e6742ac7bb5e3ef6580c57823801326d662"
+          }
+        ],
+        "observed_header_gap_ns": 4985094,
+        "pair_index": 0,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.0034743013743035868,
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              0.0034740325063467026,
+              1.9136345144943334e-05
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.051704350534420206,
+              -9.763055287834723,
+              0.24996019389107846
+            ],
+            "specific_force_norm_m_s2": 9.76639145189828
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.00489564882659789,
+            "gyro_rad_s": [
+              -0.0034519031178206205,
+              -1.6626028809696436e-05,
+              -0.0034715221263468266
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.04319851975658169,
+              -9.839010741789695,
+              0.23799211482663665
+            ],
+            "specific_force_norm_m_s2": 9.841983475696441
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0005365736047904364,
+          "gyro_trapezoid_component_integrals_rad": [
+            0.00017078158206506076,
+            -0.0005074713083360643,
+            -3.489635798821366e-05
+          ],
+          "mean_gyro_rad_s": [
+            0.03407267481088638,
+            -0.10124572366476059,
+            -0.006962180836126208
+          ],
+          "mean_specific_force_m_s2": [
+            0.36849685291844897,
+            -10.11850117059199,
+            1.686963897069563
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.005012274000000001,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.0018470071949649662,
+            -0.0507167003363278,
+            0.008455525280220448
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643750022231070,
+            "chunk_offset": 2115109187,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643750034528494,
+            "sequence": 15168,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "93e68d479f31af50252835e887974eac3cf3db812106ca801a91e8218a775393"
+          },
+          {
+            "bag_record_time_ns": 1627643750022252945,
+            "chunk_offset": 2115109187,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643750039540768,
+            "sequence": 15169,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "47866ed53c956f46b31926b99afa1a68b598dd1fb9d45d75c3392f5ce0afca8a"
+          }
+        ],
+        "observed_header_gap_ns": 5012274,
+        "pair_index": 1,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.10925930329356293,
+            "gyro_rad_s": [
+              0.03494533896446228,
+              -0.10299105197191238,
+              -0.01045283954590559
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.34236621800029,
+              -10.188354553409479,
+              1.7142440136442487
+            ],
+            "specific_force_norm_m_s2": 10.337234430519732
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.1049505638376455,
+            "gyro_rad_s": [
+              0.033200010657310486,
+              -0.0995003953576088,
+              -0.0034715221263468266
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.39462748783660795,
+              -10.0486477877745,
+              1.6596837804948772
+            ],
+            "specific_force_norm_m_s2": 10.1924287325514
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.00019672979657353397,
+          "gyro_trapezoid_component_integrals_rad": [
+            -9.972077569139377e-05,
+            0.00016499203892714158,
+            3.919192322450364e-05
+          ],
+          "mean_gyro_rad_s": [
+            -0.020032530650496483,
+            0.0331446286290884,
+            0.007873117690905929
+          ],
+          "mean_specific_force_m_s2": [
+            -0.46323041827609773,
+            -9.87321862296693,
+            -0.5404130059086288
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.004977942,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.0023059341548141545,
+            -0.04914830965844924,
+            -0.002690144599458812
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643760960523561,
+            "chunk_offset": 4337400918,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643760929005146,
+            "sequence": 17189,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "f704b4b13796c8380ef100d6770d288e06387229c7fef5c774c13c4066e9c217"
+          },
+          {
+            "bag_record_time_ns": 1627643760960537109,
+            "chunk_offset": 4337400918,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643760933983088,
+            "sequence": 17190,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "13f61709573c2f49c83cae1a4fbf2c3c350e38afb423d6564206ee4780eeabc9"
+          }
+        ],
+        "observed_header_gap_ns": 4977942,
+        "pair_index": 2,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.04307737382062451,
+            "gyro_rad_s": [
+              -0.02090519480407238,
+              0.03663528710603714,
+              0.00874578207731247
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.4250913790210006,
+              -9.885516889281373,
+              -0.5412559592559161
+            ],
+            "specific_force_norm_m_s2": 9.90944523483607
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.03599256557168836,
+            "gyro_rad_s": [
+              -0.019159866496920586,
+              0.029653970152139664,
+              0.007000453304499388
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.5013694575311949,
+              -9.860920356652485,
+              -0.5395700525613416
+            ],
+            "specific_force_norm_m_s2": 9.888390033509477
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.00033396191469855157,
+          "gyro_trapezoid_component_integrals_rad": [
+            -6.496818712931033e-05,
+            0.00032572276942965386,
+            3.484784936448885e-05
+          ],
+          "mean_gyro_rad_s": [
+            -0.013051214162260294,
+            0.06543321907520294,
+            0.007000453071668744
+          ],
+          "mean_specific_force_m_s2": [
+            -0.23058007381533896,
+            -9.765755388359018,
+            -0.15452848159232158
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.004977942,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.001147814233808476,
+            -0.04861336390943867,
+            -0.0007692338187146444
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643771717975961,
+            "chunk_offset": 6431220387,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643771716376543,
+            "sequence": 19174,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "335ddab1a99deac63a347c6cf3fb88e1dc2e62bbb44a7c0962f9b90ba02ac363"
+          },
+          {
+            "bag_record_time_ns": 1627643771721881530,
+            "chunk_offset": 6431220387,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643771721354485,
+            "sequence": 19175,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "dc1b3bd91ee7be332bea08662dae66c9e66f7b7560d1917047c5e39b648eab89"
+          }
+        ],
+        "observed_header_gap_ns": 4977942,
+        "pair_index": 3,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.06662153072584041,
+            "gyro_rad_s": [
+              -0.013923878781497478,
+              0.06456055492162704,
+              0.00874578207731247
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.18895186013026283,
+              -9.656731000032368,
+              -0.1969653272647195
+            ],
+            "specific_force_norm_m_s2": 9.660587546965107
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.06761955004782004,
+            "gyro_rad_s": [
+              -0.01217854954302311,
+              0.06630588322877884,
+              0.005255124066025019
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.2722082875004151,
+              -9.874779776685667,
+              -0.11209163591992366
+            ],
+            "specific_force_norm_m_s2": 9.879166843649688
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0016840875692257892,
+          "gyro_trapezoid_component_integrals_rad": [
+            9.138782807844972e-05,
+            0.001680510203347847,
+            -6.070141797115282e-05
+          ],
+          "mean_gyro_rad_s": [
+            0.01836471352726221,
+            0.3377045840024948,
+            -0.012198168784379959
+          ],
+          "mean_specific_force_m_s2": [
+            -0.7268087563966377,
+            -9.816904858050002,
+            0.3450922523294172
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.004976273000000001,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.0036167987906201658,
+            -0.048851598588683064,
+            0.0017172732577760662
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643782473773062,
+            "chunk_offset": 8633364167,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643782475735664,
+            "sequence": 21123,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "c5d1d4d3a809a83c1378999563911e38b0159ccb1a1677a84c004b9da8d05f6a"
+          },
+          {
+            "bag_record_time_ns": 1627643782476720427,
+            "chunk_offset": 8633364167,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643782480711937,
+            "sequence": 21124,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "a5529e93f2b5828fad0afd321bbb0138fc21fe3043cfd76b2c42212f428d62fc"
+          }
+        ],
+        "observed_header_gap_ns": 4976273,
+        "pair_index": 4,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.34105696594204155,
+            "gyro_rad_s": [
+              0.01749204844236374,
+              0.3403225839138031,
+              -0.013943498022854328
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.6393353944474672,
+              -9.89574701107962,
+              0.3280611596254282
+            ],
+            "specific_force_norm_m_s2": 9.921803403532008
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.3358010682358528,
+            "gyro_rad_s": [
+              0.019237378612160683,
+              0.3350865840911865,
+              -0.01045283954590559
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.8142821183458081,
+              -9.738062705020385,
+              0.3621233450334062
+            ],
+            "specific_force_norm_m_s2": 9.778755234291573
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0025082219211947686,
+          "gyro_trapezoid_component_integrals_rad": [
+            -7.035463962075301e-05,
+            0.002500048186058328,
+            0.00018970107546419839
+          ],
+          "mean_gyro_rad_s": [
+            -0.013923877850174904,
+            0.4947842210531235,
+            0.03754371590912342
+          ],
+          "mean_specific_force_m_s2": [
+            0.23955017462031025,
+            -9.892445726817591,
+            0.31660218989990063
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.0050528050000000005,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.001210400320072377,
+            -0.04998459923069257,
+            0.0015997291281371676
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643793725572284,
+            "chunk_offset": 10949903735,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643793726159334,
+            "sequence": 23146,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "f53920d32133928fa19bd9d1e5a1419eebed93feaa483011df8b495c02f1f07e"
+          },
+          {
+            "bag_record_time_ns": 1627643793725577628,
+            "chunk_offset": 10949903735,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643793731212139,
+            "sequence": 23147,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "0b954ebcd5ada87396e68a5067065a74eff9cf1bd09e9b4768ebf251cd1e986a"
+          }
+        ],
+        "observed_header_gap_ns": 5052805,
+        "pair_index": 5,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.502235141471432,
+            "gyro_rad_s": [
+              -0.0156692061573267,
+              0.5008928775787354,
+              0.033180393278598785
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.07197497817854395,
+              -10.024740035721681,
+              0.25904705676123463
+            ],
+            "specific_force_norm_m_s2": 10.028344756683508
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.49062034641300556,
+            "gyro_rad_s": [
+              -0.01217854954302311,
+              0.4886755645275116,
+              0.041907038539648056
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.5510753274191644,
+              -9.7601514179135,
+              0.37415732303856664
+            ],
+            "specific_force_norm_m_s2": 9.782854052855559
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0020939735910916694,
+          "gyro_trapezoid_component_integrals_rad": [
+            -0.00019101035402403587,
+            0.0020814262615528106,
+            0.0001261156713626217
+          ],
+          "mean_gyro_rad_s": [
+            -0.03835848905146122,
+            0.41798973083496094,
+            0.025326410308480263
+          ],
+          "mean_specific_force_m_s2": [
+            0.4848941782296219,
+            -9.407923929831753,
+            1.0376253443110897
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.004979611,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.0024145843837481856,
+            -0.04684780148815343,
+            0.005166970578410289
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643804526997701,
+            "chunk_offset": 13148986622,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643804529710054,
+            "sequence": 25135,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "b7e5598e8b508156e883418b8dbf651fc86c457cc5bd636a365b8e8f0d809655"
+          },
+          {
+            "bag_record_time_ns": 1627643804527007221,
+            "chunk_offset": 13148986622,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643804534689665,
+            "sequence": 25136,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "1aa31cf40fc3909bd74965d971d89fa3b1db597f43ec2a00dd0228e0167a764c"
+          }
+        ],
+        "observed_header_gap_ns": 4979611,
+        "pair_index": 6,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.4155713816596033,
+            "gyro_rad_s": [
+              -0.03312250226736069,
+              0.41362640261650085,
+              0.022708415985107422
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.5943250883727672,
+              -9.468846202567882,
+              1.06785898775326
+            ],
+            "specific_force_norm_m_s2": 9.547386738593913
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.42551553974606926,
+            "gyro_rad_s": [
+              -0.04359447583556175,
+              0.422353059053421,
+              0.027944404631853104
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              0.3754632680864766,
+              -9.347001657095623,
+              1.0073917008689195
+            ],
+            "specific_force_norm_m_s2": 9.40862639721708
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 2.3031829119432813e-07,
+          "gyro_trapezoid_component_integrals_rad": [
+            1.9274676363266192e-07,
+            -8.268807456846117e-08,
+            9.517290944365778e-08
+          ],
+          "mean_gyro_rad_s": [
+            3.875544643960893e-05,
+            -1.6626028809696436e-05,
+            1.9136345144943334e-05
+          ],
+          "mean_specific_force_m_s2": [
+            -0.06214406250898638,
+            -9.822042880932203,
+            0.1833099081759646
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.0049734110000000005,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.00030906796406688047,
+            -0.048849056106499915,
+            0.0009116755137313324
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643814859912975,
+            "chunk_offset": 15161312100,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814861473322,
+            "sequence": 27024,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "963419f2d9e18590b29013a3f37df5dc7c109a662761a871816c67546f14808f"
+          },
+          {
+            "bag_record_time_ns": 1627643814875583225,
+            "chunk_offset": 15161312100,
+            "connection_id": 0,
+            "frame_id": "camera_imu_optical_frame",
+            "header_stamp_ns": 1627643814866446733,
+            "sequence": 27025,
+            "serialized_message_bytes": 336,
+            "serialized_message_sha256": "b1fff034b85670af59d92bdacc7ebdbe8e4dddf29a64d3eea4705da9e485e69e"
+          }
+        ],
+        "observed_header_gap_ns": 4973411,
+        "pair_index": 7,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 4.630992515887549e-05,
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              -1.6626028809696436e-05,
+              1.9136345144943334e-05
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.04960899401769798,
+              -9.902670539313512,
+              0.18920046172799257
+            ],
+            "specific_force_norm_m_s2": 9.904602045372307
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 4.630992515887549e-05,
+            "gyro_rad_s": [
+              3.875544643960893e-05,
+              -1.6626028809696436e-05,
+              1.9136345144943334e-05
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": true,
+            "orientation_norm_as_recorded": 0.0,
+            "specific_force_m_s2": [
+              -0.07467913100027479,
+              -9.741415222550895,
+              0.1774193546239366
+            ],
+            "specific_force_norm_m_s2": 9.743316947433684
+          }
+        ]
+      }
+    ],
+    "/handsfree/imu": [
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 9.304689480046388e-06,
+          "gyro_trapezoid_component_integrals_rad": [
+            -3.0048593510389333e-06,
+            8.656619525417686e-06,
+            1.6158604496419432e-06
+          ],
+          "mean_gyro_rad_s": [
+            -0.00048489123582839966,
+            0.0013969102874398232,
+            0.00026074983179569244
+          ],
+          "mean_specific_force_m_s2": [
+            -0.03114317113067955,
+            0.08600335568189621,
+            10.00785872936249
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.006196976000000001,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.00019299348406071407,
+            0.0005329607310801746,
+            0.062018460357249845
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643739487759438,
+            "chunk_offset": 4117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739487200021,
+            "sequence": 111083,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "a6610e0527b63423854b0faf5926d05ed32990195359584bad95a13d033597a5"
+          },
+          {
+            "bag_record_time_ns": 1627643739494362622,
+            "chunk_offset": 4117,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643739493396997,
+            "sequence": 111084,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "41bc99b5a9096ce2d15e0ad26dc87035218ac61be45f94fa5e37eac0fd882bff"
+          }
+        ],
+        "observed_header_gap_ns": 6196976,
+        "pair_index": 0,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.0021029424511825835,
+            "gyro_rad_s": [
+              -0.0015501640737056732,
+              0.0013969168066978455,
+              0.00026073306798934937
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.04067182475700975,
+              0.09193394556641579,
+              10.048214793205261
+            ],
+            "specific_force_norm_m_s2": 10.04871765839132
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.0015349860451936387,
+            "gyro_rad_s": [
+              0.0005803816020488739,
+              0.0013969037681818008,
+              0.0002607665956020355
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.021614517504349354,
+              0.08007276579737664,
+              9.967502665519715
+            ],
+            "specific_force_norm_m_s2": 9.967847722669724
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0008002532556560069,
+          "gyro_trapezoid_component_integrals_rad": [
+            9.002557022316569e-05,
+            -0.00019850801965953224,
+            0.0007699969065034502
+          ],
+          "mean_gyro_rad_s": [
+            0.010401768609881401,
+            -0.02293608896434307,
+            0.08896727487444878
+          ],
+          "mean_specific_force_m_s2": [
+            1.0551233023405076,
+            0.036186414456460626,
+            9.901034438610077
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.008654833,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.009131915976165602,
+            0.0003131873739894525,
+            0.08569179959341898
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643750083682769,
+            "chunk_offset": 2119204763,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643750083367109,
+            "sequence": 112572,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "ffb5534f3504db1c96c8102b852449ba36db6503be847d7eb3e73127eccb3773"
+          },
+          {
+            "bag_record_time_ns": 1627643750092835630,
+            "chunk_offset": 2119204763,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643750092021942,
+            "sequence": 112573,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "5939133238f4a1b242db5301d17e994e7ab550fa04b2c7c2e2c6f745eca4bbe4"
+          }
+        ],
+        "observed_header_gap_ns": 8654833,
+        "pair_index": 1,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.09353416601063695,
+            "gyro_rad_s": [
+              0.008272789418697357,
+              -0.021870411932468414,
+              0.09056426584720612
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              1.171849323809147,
+              0.08718947730958462,
+              10.076701426506043
+            ],
+            "specific_force_norm_m_s2": 10.144986174540328
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.09146950814590216,
+            "gyro_rad_s": [
+              0.012530747801065445,
+              -0.024001765996217728,
+              0.08737028390169144
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.9383972808718682,
+              -0.014816648396663369,
+              9.725367450714112
+            ],
+            "specific_force_norm_m_s2": 9.770546609132312
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0016846698833677945,
+          "gyro_trapezoid_component_integrals_rad": [
+            0.00011525360919329524,
+            0.00013316235680692644,
+            -0.0016754393478201478
+          ],
+          "mean_gyro_rad_s": [
+            0.021906405687332153,
+            0.025310344994068146,
+            -0.31845296919345856
+          ],
+          "mean_specific_force_m_s2": [
+            -0.16811755802482367,
+            -1.0372501201927662,
+            10.213199293613435
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.005261183,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.0008844972382817159,
+            -0.005457162699106138,
+            0.053733510499171015
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643760632520832,
+            "chunk_offset": 4282520620,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643760624172925,
+            "sequence": 114051,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "c031eb6f2fb02272a9595bd70b94c46ccbb2fa914872ac9cbed65977fa705b83"
+          },
+          {
+            "bag_record_time_ns": 1627643760632523411,
+            "chunk_offset": 4282520620,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643760629434108,
+            "sequence": 114052,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "9209cdb1d8bb481cf5a9f948c45f47656a819c17f5281420315310689bb4b306"
+          }
+        ],
+        "observed_header_gap_ns": 5261183,
+        "pair_index": 2,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.32684750672733587,
+            "gyro_rad_s": [
+              0.02350381389260292,
+              0.027440935373306274,
+              -0.3248443603515625
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.02876100800931454,
+              -0.999294337630272,
+              10.117057490348817
+            ],
+            "specific_force_norm_m_s2": 10.166330145722434
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.3135796308573722,
+            "gyro_rad_s": [
+              0.020308997482061386,
+              0.023179754614830017,
+              -0.3120615780353546
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              -0.3074741080403328,
+              -1.0752059027552605,
+              10.309341096878052
+            ],
+            "specific_force_norm_m_s2": 10.36981783409013
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0006510183655352262,
+          "gyro_trapezoid_component_integrals_rad": [
+            -3.6365127404686066e-05,
+            0.00016998246478509623,
+            -0.0006273822211687081
+          ],
+          "mean_gyro_rad_s": [
+            -0.005278643220663071,
+            0.02467409987002611,
+            -0.09106875583529472
+          ],
+          "mean_specific_force_m_s2": [
+            0.37501567471772435,
+            0.038558649725746366,
+            9.85237006545067
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.006889105,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.0025835223597762487,
+            0.00026563458661888796,
+            0.06787401187974654
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643771340657200,
+            "chunk_offset": 6359928144,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643771340158939,
+            "sequence": 115532,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "d7297f7b1ddae80cb896f6f2fa65739b882c1f73a0c8430a6b5a23eaee0d7d77"
+          },
+          {
+            "bag_record_time_ns": 1627643771347348256,
+            "chunk_offset": 6359928144,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643771347048044,
+            "sequence": 115533,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "76128f5478e3a9a19d2ad82bce4ac6b50d9f902ed9074cf603d785404564adc1"
+          }
+        ],
+        "observed_header_gap_ns": 6889105,
+        "pair_index": 3,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.09376959812596955,
+            "gyro_rad_s": [
+              -0.006343726068735123,
+              0.02733714133501053,
+              -0.08947164565324783
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.4834040984511376,
+              0.013650177116505803,
+              10.079075312614442
+            ],
+            "specific_force_norm_m_s2": 10.090670196131107
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.09533731435208112,
+            "gyro_rad_s": [
+              -0.004213560372591019,
+              0.022011058405041695,
+              -0.09266586601734161
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              0.2666272509843111,
+              0.06346712233498693,
+              9.625664818286896
+            ],
+            "specific_force_norm_m_s2": 9.629566000635284
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0016564848151108978,
+          "gyro_trapezoid_component_integrals_rad": [
+            9.012259425832704e-05,
+            0.00010437377804498281,
+            -0.0016507349802902193
+          ],
+          "mean_gyro_rad_s": [
+            0.018570449203252792,
+            0.021507014520466328,
+            -0.3401465564966202
+          ],
+          "mean_specific_force_m_s2": [
+            -0.42062687855213887,
+            0.39558009654283527,
+            10.069579768180848
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.004853011,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.002041306868509194,
+            0.0019197545599034416,
+            0.048867781380359104
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643782233572297,
+            "chunk_offset": 8565901354,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782232109069,
+            "sequence": 117018,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "9191d320b3ed64239be5a24ebe0046b3f801a10ab2ad1c5e1a0497c6843ae218"
+          },
+          {
+            "bag_record_time_ns": 1627643782237850264,
+            "chunk_offset": 8565901354,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643782236962080,
+            "sequence": 117019,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "69507a0f20474377b70ebce37bfd8201c9454be29a91f8c72fd4028ca2f00726"
+          }
+        ],
+        "observed_header_gap_ns": 4853011,
+        "pair_index": 4,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.34089448082049334,
+            "gyro_rad_s": [
+              0.016971036791801453,
+              0.024170007556676865,
+              -0.33961278200149536
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.5790407426655293,
+              0.35287986397743226,
+              10.382931566238405
+            ],
+            "specific_force_norm_m_s2": 10.405050710556738
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.34179673548455713,
+            "gyro_rad_s": [
+              0.020169861614704132,
+              0.01884402148425579,
+              -0.340680330991745
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.2622130144387484,
+              0.4382803291082383,
+              9.756227970123291
+            ],
+            "specific_force_norm_m_s2": 9.76958696756625
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0035690936768598036,
+          "gyro_trapezoid_component_integrals_rad": [
+            -4.521023057638854e-05,
+            9.168632274594159e-05,
+            -0.0035676293708109858
+          ],
+          "mean_gyro_rad_s": [
+            -0.006462374702095985,
+            0.013105692341923714,
+            -0.5099588632583618
+          ],
+          "mean_specific_force_m_s2": [
+            0.2582896715030074,
+            -0.3445573713630438,
+            9.774031823873521
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.0069959160000000005,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.0018069728455026336,
+            -0.00241049442723666,
+            0.06837830562114595
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643793297333317,
+            "chunk_offset": 10856757487,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643793297070026,
+            "sequence": 118547,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "4b59e15e84938c250ecf380c837a99bd9678d74a4e6a0d523445024721270d12"
+          },
+          {
+            "bag_record_time_ns": 1627643793314762539,
+            "chunk_offset": 10856757487,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643793304065942,
+            "sequence": 118548,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "a8bad165dcf92882cd0472d0ea086c3a2eedacfce99ed08775e74c4ab17c352b"
+          }
+        ],
+        "observed_header_gap_ns": 6995916,
+        "pair_index": 5,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.5118798594925322,
+            "gyro_rad_s": [
+              -0.0069970302283763885,
+              0.016833767294883728,
+              -0.5115551352500916
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 0.9999999999999999,
+            "specific_force_m_s2": [
+              0.13560826219618322,
+              -0.27339031100273137,
+              9.927146601676942
+            ],
+            "specific_force_norm_m_s2": 9.93183626093947
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.508483629787475,
+            "gyro_rad_s": [
+              -0.005927719175815582,
+              0.0093776173889637,
+              -0.5083625912666321
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.38097108080983166,
+              -0.41572443172335627,
+              9.6209170460701
+            ],
+            "specific_force_norm_m_s2": 9.637427591162869
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 0.0026091983653239023,
+          "gyro_trapezoid_component_integrals_rad": [
+            -0.00010034833028613776,
+            0.0001918598524686359,
+            -0.0026001992460633516
+          ],
+          "mean_gyro_rad_s": [
+            -0.014141431078314781,
+            0.02703754883259535,
+            -0.36642900109291077
+          ],
+          "mean_specific_force_m_s2": [
+            0.4405251691117883,
+            -0.4263995081186295,
+            9.815574830770494
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.007096052,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            0.0031259895073260436,
+            -0.003025753082384217,
+            0.06965182940903863
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643804236947715,
+            "chunk_offset": 13080940850,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643804220999956,
+            "sequence": 120038,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "adae8648363fc550d94e059bb81c1b3406e55d2b95da876be83b34cef4b48340"
+          },
+          {
+            "bag_record_time_ns": 1627643804236950315,
+            "chunk_offset": 13080940850,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643804228096008,
+            "sequence": 120039,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "8815e939c4f9fd97feb7fa7017fd2e5c7b36a60862d370fd956525708ebdba8d"
+          }
+        ],
+        "observed_header_gap_ns": 7096052,
+        "pair_index": 6,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.36793335378997877,
+            "gyro_rad_s": [
+              -0.013077307492494583,
+              0.023308735340833664,
+              -0.36696135997772217
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.7192382782697678,
+              -0.49638044685125354,
+              9.64940367937088
+            ],
+            "specific_force_norm_m_s2": 9.688895118453962
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.36750255879718646,
+            "gyro_rad_s": [
+              -0.01520555466413498,
+              0.030766362324357033,
+              -0.36589664220809937
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.1618120599538088,
+              -0.3564185693860054,
+              9.981745982170105
+            ],
+            "specific_force_norm_m_s2": 9.989417910565095
+          }
+        ]
+      },
+      {
+        "diagnostic": {
+          "gyro_integral_vector_norm_rad": 1.622383927719736e-05,
+          "gyro_trapezoid_component_integrals_rad": [
+            1.3155684854909779e-05,
+            -6.434655487686396e-06,
+            6.981126388013364e-06
+          ],
+          "mean_gyro_rad_s": [
+            0.001898663118481636,
+            -0.0009286664426326752,
+            0.0010075345635414124
+          ],
+          "mean_specific_force_m_s2": [
+            -0.01446802814025432,
+            0.13463418725878,
+            9.995989298820497
+          ],
+          "observed_header_dt_s_not_verified_capture_time": 0.006928920000000001,
+          "position_estimate": null,
+          "preintegration_factor": null,
+          "raw_specific_force_component_integrals_m_s": [
+            -0.00010024780954157096,
+            0.0009328695127811061,
+            0.06926141017238333
+          ],
+          "rotation_estimate": null,
+          "specific_force_is_gravity_compensated": false,
+          "velocity_estimate": null
+        },
+        "messages": [
+          {
+            "bag_record_time_ns": 1627643814875554783,
+            "chunk_offset": 15161312100,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814863142967,
+            "sequence": 121507,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "d6f811e26cd47a36a43bee0ba04eab936613eded078eb11aa3cac6c4fa066df7"
+          },
+          {
+            "bag_record_time_ns": 1627643814875568546,
+            "chunk_offset": 15161312100,
+            "connection_id": 1,
+            "frame_id": "base_link",
+            "header_stamp_ns": 1627643814870071887,
+            "sequence": 121508,
+            "serialized_message_bytes": 321,
+            "serialized_message_sha256": "0b112c13bc3f2f4ff90f3605707b02b92e7a6505741b55cee1269e2d013c0df1"
+          }
+        ],
+        "observed_header_gap_ns": 6928920,
+        "pair_index": 7,
+        "samples": [
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.002294237444103923,
+            "gyro_rad_s": [
+              0.0013662725687026978,
+              -0.0014612488448619843,
+              -0.001123199239373207
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              -0.04067182475700975,
+              0.17258996069431307,
+              10.003110957145692
+            ],
+            "specific_force_norm_m_s2": 10.004682419388919
+          },
+          {
+            "angular_covariance_unknown_sentinel": false,
+            "gyro_norm_rad_s": 0.003989440166856004,
+            "gyro_rad_s": [
+              0.0024310536682605743,
+              -0.0003960840404033661,
+              0.003138268366456032
+            ],
+            "linear_covariance_unknown_sentinel": false,
+            "orientation_covariance_unknown_sentinel": false,
+            "orientation_norm_as_recorded": 1.0,
+            "specific_force_m_s2": [
+              0.011735768476501108,
+              0.09667841382324696,
+              9.9888676404953
+            ],
+            "specific_force_norm_m_s2": 9.989342379921476
+          }
+        ]
+      }
+    ]
+  },
+  "trajectory_id": "room_02"
+}

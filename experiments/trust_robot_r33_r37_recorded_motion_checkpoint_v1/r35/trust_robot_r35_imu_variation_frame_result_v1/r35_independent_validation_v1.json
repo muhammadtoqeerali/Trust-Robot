@@ -1,0 +1,12 @@
+{
+  "inter_imu_alignment_authorized": false,
+  "intervals_independently_recomputed": 16,
+  "physical_capture_clock_authorized": false,
+  "pose_factors_authorized": false,
+  "r34_independent_validation_sha256": "c3be4f270b093fb6342537de446f6c2c3da89aee7ce0e83a83ba3c7066b99c54",
+  "r34_source_report_sha256": "778c223c6c034343413ff848db6276aecdd730390311f178cb918b94ee10064e",
+  "r35_report_sha256": "a0fbf5931833dfecb609f82e27fdd13fa2fc4dbfead8dbb106a99af162698e1e",
+  "raw_bag_reopened": false,
+  "recorded_source_messages_reused_from_verified_r34": 32,
+  "schema": "TRUST_ROBOT_R35_INDEPENDENT_IMU_VARIATION_FRAME_V1"
+}
