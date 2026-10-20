@@ -1,0 +1,10 @@
+{
+  "authenticated_scans_relocated": 2,
+  "brute_force_kabsch_numerically_agrees": true,
+  "ground_truth_pose_scored": false,
+  "registration_recomputed_by": "numpy_pairwise_distance_argmin_and_independent_svd",
+  "sampled_xyz_points_per_scan": 512,
+  "schema": "TRUST_ROBOT_R27_INDEPENDENT_NUMERICAL_CHECK_V1",
+  "scientific_real_factor_execution_authorized": false,
+  "source_report_sha256": "9e3d5ea5488ca8ccd5274a9da8145f34f5f0e05514814c73591d1a3a31b3569e"
+}

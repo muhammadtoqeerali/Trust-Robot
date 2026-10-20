@@ -1,0 +1,10 @@
+{
+  "cases_recomputed": 12,
+  "original_bag_modified": false,
+  "real_pose_factors_admitted": 0,
+  "registrations_computed_by": "independent_raw_struct_xyz_and_dense_bruteforce_nn_svd",
+  "report_sha256": "c7c827996ac684addb86b6ed2b704fb57d38a43a2a3f76aa808193fa26f32658",
+  "schema": "TRUST_ROBOT_R28_INDEPENDENT_RECORDED_SENSITIVITY_V1",
+  "scientific_accuracy_qualified": false,
+  "source_message_hashes_verified": 2
+}

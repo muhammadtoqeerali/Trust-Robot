@@ -1,0 +1,941 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "confidence_threshold_frozen": false,
+  "cross_modal_alignment_performed": false,
+  "full_extrinsics_verified": false,
+  "github_baseline": "d1c8aa7811619d096865f9b5f23a0ca7e940fa81",
+  "github_modified": false,
+  "health_labels_generated": 0,
+  "health_model_training_authorized": false,
+  "independent_ground_truth_scored": false,
+  "interpretation": "sensitivity_and_geometry_only_no_empirically_calibrated_confidence",
+  "m2dgr_scoring_authorized": false,
+  "method": "10_fixed_iterations_identity_initialized_both_directions_independent_subsets",
+  "new_sensor_acquisitions": 0,
+  "pair_count": 8,
+  "pairs": [
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 1.6984251460559971,
+        "candidate_median_nn_distance_m": 0.16458247891025582,
+        "candidate_nearest_neighbor_rmse_m": 0.32828036953279804,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000013,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3299711322153121,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999886344266582,
+            0.0012705165876380955,
+            0.004595302504526852
+          ],
+          [
+            -0.0012141522814745303,
+            0.9999242570069903,
+            -0.012247697059319143
+          ],
+          [
+            -0.0046105153448356044,
+            0.01224197846020001,
+            0.9999144348951247
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.02199490276949173,
+          -0.020698116237322595,
+          -0.012745862693993457
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.16458247891025582,
+        "nearest_neighbor_p90_m": 0.49042946242883423,
+        "unique_target_fraction": 0.583984375
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.2343537258240638,
+            6.332745055546762,
+            13.450548601638221
+          ],
+          "middle_over_largest_eigenvalue": 0.4708168598249933,
+          "smallest_over_largest_eigenvalue": 0.01742335816663422
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.20611201511083366,
+            6.063329238765321,
+            13.836399186748775
+          ],
+          "middle_over_largest_eigenvalue": 0.43821583613836596,
+          "smallest_over_largest_eigenvalue": 0.014896362292599125
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 1.2243257248416728,
+        "roundtrip_translation_m": 0.10765270204505648
+      },
+      "pair_index": 0,
+      "reverse": {
+        "candidate_max_nn_distance_m": 3.839869197715951,
+        "candidate_median_nn_distance_m": 0.16969149826351854,
+        "candidate_nearest_neighbor_rmse_m": 0.4408331611997601,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999994,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.4499299882347011,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9998346045256921,
+            0.013797474661351372,
+            -0.011848767274340418
+          ],
+          [
+            -0.013488956360098999,
+            0.9995777985334091,
+            0.02573466019630263
+          ],
+          [
+            0.012198838029396858,
+            -0.02557057629528846,
+            0.9995985864228992
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.0745833556116765,
+          -0.012152295010479569,
+          -0.02164070956435754
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.16969149826351854,
+        "nearest_neighbor_p90_m": 0.5190102230177538,
+        "unique_target_fraction": 0.5703125
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd",
+        "7ac935cf81c066dbb622933c87280e40b5f5fc2399734f5d566c2c5becd14408"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 1.9210745972988905,
+        "candidate_median_nn_distance_m": 0.1194337730056082,
+        "candidate_nearest_neighbor_rmse_m": 0.2920603698267015,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999987,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.29658811047735106,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9998493501339785,
+            0.01669910186093646,
+            -0.004734662997424908
+          ],
+          [
+            -0.01669548705001317,
+            0.9998602990123177,
+            0.0008019795261047791
+          ],
+          [
+            0.0047473938981246215,
+            -0.000722811203236938,
+            0.9999884698310971
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.02037272636715909,
+          -0.011811554618941456,
+          -0.0007031980617029504
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.1194337730056082,
+        "nearest_neighbor_p90_m": 0.44161806964746936,
+        "unique_target_fraction": 0.599609375
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.19791443506432016,
+            4.450224544149508,
+            12.894243893185203
+          ],
+          "middle_over_largest_eigenvalue": 0.34513264841387997,
+          "smallest_over_largest_eigenvalue": 0.01534905316696552
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.20654207916363154,
+            4.526057711933399,
+            11.624917885017544
+          ],
+          "middle_over_largest_eigenvalue": 0.389341047971331,
+          "smallest_over_largest_eigenvalue": 0.017767186074477793
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 1.0218924444153288,
+        "roundtrip_translation_m": 0.022946190616499402
+      },
+      "pair_index": 1,
+      "reverse": {
+        "candidate_max_nn_distance_m": 1.5451277773192993,
+        "candidate_median_nn_distance_m": 0.11368750569421282,
+        "candidate_nearest_neighbor_rmse_m": 0.2885931692211927,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999986,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.28916921936381157,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999752400130908,
+            -0.0028324570423093505,
+            -0.006441781420059341
+          ],
+          [
+            0.002833307769488635,
+            0.9999959786180994,
+            0.00012294190930385238
+          ],
+          [
+            0.006441407287519323,
+            -0.00014119041461061257,
+            0.9999792439533038
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.0033182599106646726,
+          -0.0019607886351936665,
+          0.007192526194241211
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.11368750569421282,
+        "nearest_neighbor_p90_m": 0.4695984228209774,
+        "unique_target_fraction": 0.603515625
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "8d5af8a3be70ba5db0a0cf645e522b209896ea398080f6593de255eef43aba3e",
+        "413e8bb1af74622f35fc985b8b2618de9108ec2a9bcb1f3f1c8e901e9b76e370"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 1.9253844026195837,
+        "candidate_median_nn_distance_m": 0.13731884123739974,
+        "candidate_nearest_neighbor_rmse_m": 0.3622056816517815,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999996,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.36574105341283614,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.999982693095704,
+            0.005741712675412186,
+            -0.0012830606438788738
+          ],
+          [
+            -0.00573347047487904,
+            0.9999634793524976,
+            0.0063377659754936914
+          ],
+          [
+            0.001319403416908661,
+            -0.006330299898065343,
+            0.9999790930203613
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.043300309939288906,
+          -0.026049145903127624,
+          0.018238412450728048
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.13731884123739974,
+        "nearest_neighbor_p90_m": 0.5084980318929427,
+        "unique_target_fraction": 0.580078125
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.1966514997415131,
+            5.180068726816616,
+            12.312078156720409
+          ],
+          "middle_over_largest_eigenvalue": 0.420730656586121,
+          "smallest_over_largest_eigenvalue": 0.015972242641602557
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.17725430464034783,
+            5.224998506775818,
+            12.443599157144655
+          ],
+          "middle_over_largest_eigenvalue": 0.4198944727157831,
+          "smallest_over_largest_eigenvalue": 0.014244617043821678
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 1.2979838498442837,
+        "roundtrip_translation_m": 0.048657083472736784
+      },
+      "pair_index": 2,
+      "reverse": {
+        "candidate_max_nn_distance_m": 3.1100553599290017,
+        "candidate_median_nn_distance_m": 0.14471071092775756,
+        "candidate_nearest_neighbor_rmse_m": 0.38271507850262837,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999982,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3897414194200732,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999846118056094,
+            -0.0055466179996276205,
+            -0.00010573906631788487
+          ],
+          [
+            0.005547604311928285,
+            0.9998521263497754,
+            0.01627727004846372
+          ],
+          [
+            1.5439631260564992e-05,
+            -0.016277606169168318,
+            0.9998675108728241
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.06493972516756003,
+          -0.01338778728006923,
+          -0.037043124538052474
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.14471071092775756,
+        "nearest_neighbor_p90_m": 0.48552774796912296,
+        "unique_target_fraction": 0.583984375
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "492c002b36f6097aecc3f1507d3a3aa45a383d35a512453b35781d3fa6b367c8",
+        "1c712d76c111504397fa6a2379da1139f38f6385a566b1c53afc8246bf1cb356"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 2.2943603750663897,
+        "candidate_median_nn_distance_m": 0.14543149222700674,
+        "candidate_nearest_neighbor_rmse_m": 0.31684121118909386,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000018,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.32710192122642046,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999852280053133,
+            0.005425546042021143,
+            0.0003274466491184243
+          ],
+          [
+            -0.005431399106644584,
+            0.9997471898218305,
+            0.021818715523563296
+          ],
+          [
+            -0.00020898542162185382,
+            -0.02182017171105094,
+            0.9997618898675803
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.09753681108862289,
+          -0.021957352166239896,
+          0.010276153917023106
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.14543149222700674,
+        "nearest_neighbor_p90_m": 0.42636396369721,
+        "unique_target_fraction": 0.57421875
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.1945999299380909,
+            5.341027901634319,
+            12.365754460501128
+          ],
+          "middle_over_largest_eigenvalue": 0.43192090856200543,
+          "smallest_over_largest_eigenvalue": 0.01573700420461079
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.1893976783960627,
+            5.1650312684149915,
+            12.435475693573188
+          ],
+          "middle_over_largest_eigenvalue": 0.4153464970450905,
+          "smallest_over_largest_eigenvalue": 0.015230432921351438
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 0.9728466595062396,
+        "roundtrip_translation_m": 0.05010890015930743
+      },
+      "pair_index": 3,
+      "reverse": {
+        "candidate_max_nn_distance_m": 1.783405907598585,
+        "candidate_median_nn_distance_m": 0.1385961822529203,
+        "candidate_nearest_neighbor_rmse_m": 0.34837930815346496,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000022,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3540015379626794,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9998948265154717,
+            -0.0011056951177943859,
+            -0.014460751913453054
+          ],
+          [
+            0.0006723860931465231,
+            0.9995516184975216,
+            -0.02993509405242406
+          ],
+          [
+            0.01448736706712761,
+            0.029922222465789752,
+            0.9994472356248592
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.0491232110119636,
+          0.030182699878209873,
+          -0.000718830373763038
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.1385961822529203,
+        "nearest_neighbor_p90_m": 0.5055931790900229,
+        "unique_target_fraction": 0.55859375
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "1d4307a8fdb3f393999d48247d9000ae671f00b61e8a8d6e3e47990b5dfe3912",
+        "88162d635ca3c86bc73762c74e40744ead3cde079fb57c772cf60984c3eb8887"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 2.2635281058807486,
+        "candidate_median_nn_distance_m": 0.10503205490017165,
+        "candidate_nearest_neighbor_rmse_m": 0.32346054452638756,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999991,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.34681922668607146,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9989238182599612,
+            0.04293476891439884,
+            0.017544541350698616
+          ],
+          [
+            -0.04286459383618739,
+            0.9990713918990305,
+            -0.00435665975172579
+          ],
+          [
+            -0.017715301527151582,
+            0.003599931555013521,
+            0.9998365909410397
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.06681560152911117,
+          0.004348544911508823,
+          0.018297815421215752
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.10503205490017165,
+        "nearest_neighbor_p90_m": 0.49794676113292996,
+        "unique_target_fraction": 0.576171875
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.17573419103926854,
+            4.104633911957205,
+            11.891339688753067
+          ],
+          "middle_over_largest_eigenvalue": 0.3451784255931569,
+          "smallest_over_largest_eigenvalue": 0.014778334118693075
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.1835277458009516,
+            4.158767874306819,
+            10.932075437093955
+          ],
+          "middle_over_largest_eigenvalue": 0.3804188782118698,
+          "smallest_over_largest_eigenvalue": 0.01678800579606486
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 1.1470173099118297,
+        "roundtrip_translation_m": 0.08281243224991701
+      },
+      "pair_index": 4,
+      "reverse": {
+        "candidate_max_nn_distance_m": 4.177618140285916,
+        "candidate_median_nn_distance_m": 0.12133689049033154,
+        "candidate_nearest_neighbor_rmse_m": 0.4051458262985263,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999982,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.4331408796748163,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9990708019181731,
+            -0.04220576040122464,
+            -0.008729635933540786
+          ],
+          [
+            0.0420786396450676,
+            0.9990124428457595,
+            -0.014266293315635677
+          ],
+          [
+            0.00932313467661402,
+            0.013885705898571906,
+            0.9998601233830151
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.08956170176227463,
+          0.06893939725277032,
+          0.0202152134368951
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.12133689049033154,
+        "nearest_neighbor_p90_m": 0.42038349145268167,
+        "unique_target_fraction": 0.61328125
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "e9728cc86ca548ee561d1d2d15908587ae6e9a2ea6a0e6fbc90803f8f96a4dda",
+        "2990eed2c849f602d0451b7f3f2dad8951fe3708e8c6f267171490bf3fb070e2"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 1.8773916835359061,
+        "candidate_median_nn_distance_m": 0.12036589999571654,
+        "candidate_nearest_neighbor_rmse_m": 0.32503476746187293,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000004,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3374164481212162,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9996293285838127,
+            0.023049954028780958,
+            -0.01448810043957675
+          ],
+          [
+            -0.023091764417761278,
+            0.9997296353294768,
+            -0.002725189913774394
+          ],
+          [
+            0.014421367866842697,
+            0.003058735565981201,
+            0.9998913282380174
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.0818580956084829,
+          0.003598354385443314,
+          -0.007361339585109955
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.12036589999571654,
+        "nearest_neighbor_p90_m": 0.5239653258125188,
+        "unique_target_fraction": 0.61328125
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.17761862712643506,
+            4.507678412977097,
+            11.47012136415379
+          ],
+          "middle_over_largest_eigenvalue": 0.3929930878555836,
+          "smallest_over_largest_eigenvalue": 0.015485331103952001
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.1860964135065486,
+            4.581303459357262,
+            11.097473282121744
+          ],
+          "middle_over_largest_eigenvalue": 0.4128240134389722,
+          "smallest_over_largest_eigenvalue": 0.016769259882459347
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 2.183461191565857,
+        "roundtrip_translation_m": 0.02927387233469265
+      },
+      "pair_index": 5,
+      "reverse": {
+        "candidate_max_nn_distance_m": 3.197324261224153,
+        "candidate_median_nn_distance_m": 0.11613658821357407,
+        "candidate_nearest_neighbor_rmse_m": 0.3376623007962202,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.000000000000002,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3579716538134781,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9990173420397311,
+            -0.03378045985335437,
+            0.028691999511501573
+          ],
+          [
+            0.03464995579750642,
+            0.9989380159577689,
+            -0.03036808913296313
+          ],
+          [
+            -0.027635681050101512,
+            0.03133242420325405,
+            0.9991268930053111
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.06650942031510265,
+          0.004122440888460477,
+          -0.014600001838734278
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.11613658821357407,
+        "nearest_neighbor_p90_m": 0.4468241978973912,
+        "unique_target_fraction": 0.568359375
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "b7fb0fa59f1ff970c582ae7d066184c04d5e914580c430cf3d1413ba173ffd45",
+        "28c19db66166a988c893f1f62886ba9b6f0fd01bcd95aa46568c135be4d46979"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 5.149870240608908,
+        "candidate_median_nn_distance_m": 0.15777456886655555,
+        "candidate_nearest_neighbor_rmse_m": 0.4714495929162458,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.999999999999999,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.4821861898169946,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9994458199259734,
+            0.03180399191580373,
+            -0.009826450565581036
+          ],
+          [
+            -0.031633067108892826,
+            0.9993535011680957,
+            0.01708592310509883
+          ],
+          [
+            0.01036349833707723,
+            -0.016765613656784396,
+            0.9998057371814423
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.057421760145347694,
+          -0.05215882303061564,
+          -0.0022443436339752015
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.15777456886655555,
+        "nearest_neighbor_p90_m": 0.5291790771254011,
+        "unique_target_fraction": 0.59765625
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.22385831623396865,
+            5.631992031531456,
+            14.047537211308704
+          ],
+          "middle_over_largest_eigenvalue": 0.40092380228738794,
+          "smallest_over_largest_eigenvalue": 0.015935769584846216
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.20209318201946525,
+            6.00707658275249,
+            12.973963827759164
+          ],
+          "middle_over_largest_eigenvalue": 0.46301012261955876,
+          "smallest_over_largest_eigenvalue": 0.01557682638108375
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 2.527490740348989,
+        "roundtrip_translation_m": 0.062421248692355755
+      },
+      "pair_index": 6,
+      "reverse": {
+        "candidate_max_nn_distance_m": 2.2149561602998,
+        "candidate_median_nn_distance_m": 0.14946563253614925,
+        "candidate_nearest_neighbor_rmse_m": 0.3548978923876689,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999979,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.37068166882887726,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9995478854740584,
+            -0.02836512433527704,
+            0.00997217959033669
+          ],
+          [
+            0.028085054808628027,
+            0.9992358179283676,
+            0.02718473589023765
+          ],
+          [
+            -0.010735657443026944,
+            -0.02689237606590171,
+            0.9995806849718505
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.02111172489018026,
+          0.0006667307375863851,
+          0.003827143055623497
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.14946563253614925,
+        "nearest_neighbor_p90_m": 0.4574935073949485,
+        "unique_target_fraction": 0.580078125
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "f3fc83159fdb456e78d8c05119e6a3d6caab3606beb5a6bbe21789b3cb2bd4b2",
+        "ee683dacb5f4d95fc9c485a0c03118a2940a1770cae4ffe8db86c94330a6d788"
+      ]
+    },
+    {
+      "forward": {
+        "candidate_max_nn_distance_m": 1.9070363975437643,
+        "candidate_median_nn_distance_m": 0.11124858913462995,
+        "candidate_nearest_neighbor_rmse_m": 0.2863930462926742,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000009,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.2888665356438402,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999480275653115,
+            0.009137388987110142,
+            0.004522199767921612
+          ],
+          [
+            -0.009126902462150288,
+            0.9999556247616018,
+            -0.0023341291913557194
+          ],
+          [
+            -0.004543326940596408,
+            0.002292734204782586,
+            0.9999870506912467
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.028219234148574412,
+          0.015692187404918418,
+          0.03594755230850798
+        ]
+      },
+      "forward_correspondence": {
+        "nearest_neighbor_median_m": 0.11124858913462995,
+        "nearest_neighbor_p90_m": 0.4351459515411312,
+        "unique_target_fraction": 0.6328125
+      },
+      "forward_factor_admitted": false,
+      "geometry": [
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.16884453002786445,
+            4.681238881987634,
+            10.249206401452144
+          ],
+          "middle_over_largest_eigenvalue": 0.456741595263842,
+          "smallest_over_largest_eigenvalue": 0.016473912556189907
+        },
+        {
+          "centered_covariance_eigenvalues_m2": [
+            0.12715070281559124,
+            4.649881178983173,
+            9.78803608315488
+          ],
+          "middle_over_largest_eigenvalue": 0.47505762539898844,
+          "smallest_over_largest_eigenvalue": 0.01299042031878248
+        }
+      ],
+      "inverse_consistency": {
+        "roundtrip_rotation_deg": 1.8328496524709563,
+        "roundtrip_translation_m": 0.0664433783602401
+      },
+      "pair_index": 7,
+      "reverse": {
+        "candidate_max_nn_distance_m": 4.4012972876151615,
+        "candidate_median_nn_distance_m": 0.11351501382438839,
+        "candidate_nearest_neighbor_rmse_m": 0.38324594156393127,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999997,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.38765388570618603,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9998525953379194,
+            0.005078310687146827,
+            -0.016401169366576852
+          ],
+          [
+            -0.005465466340734712,
+            0.9997054197798277,
+            -0.023647459493923273
+          ],
+          [
+            0.016276248760221906,
+            0.023733613787269237,
+            0.9995858138763736
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.024345898539783084,
+          -0.006627650315664389,
+          0.0039053665569297527
+        ]
+      },
+      "reverse_correspondence": {
+        "nearest_neighbor_median_m": 0.11351501382438839,
+        "nearest_neighbor_p90_m": 0.4002688314070379,
+        "unique_target_fraction": 0.630859375
+      },
+      "reverse_factor_admitted": false,
+      "source_message_sha256": [
+        "d888c713372438756200bebc7d99af74c149171b8e8a68d827fd32ea367cb5de",
+        "1e99d4ca8eecb2ab16abb3645e7ee2b9eceb1e1f851e8a2c55e80155e01c2d72"
+      ]
+    }
+  ],
+  "physical_capture_time_verified": false,
+  "pose_accuracy_established": false,
+  "r17_sha256": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+  "r29_sha256": "5af225ff0ac9225fb16828a6ffacda4e1efcaddc69564f363095d8fe1071402b",
+  "raw_recording_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "scans_considered": 16,
+  "schema": "TRUST_ROBOT_R30_RECORDED_LIDAR_GEOMETRY_CONFIDENCE_LIMITS_V1",
+  "split": "train",
+  "statistical_stability_established": false,
+  "subset_size": 512,
+  "summary": {
+    "max_roundtrip_rotation_deg": 2.527490740348989,
+    "max_roundtrip_translation_m": 0.10765270204505648,
+    "min_geometry_smallest_largest_ratio": 0.01299042031878248,
+    "min_nn_unique_target_fraction": 0.55859375
+  },
+  "trajectory_id": "room_02"
+}

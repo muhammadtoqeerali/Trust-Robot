@@ -1,0 +1,108 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "bag_archived": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "documentation_sha256": {
+    "AGENTS.md": "25640d3963b518087eba4ba27c8c48129b39c7e38203f74e9acccb2ed40000ef",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "d3ecf27afb55b22c33f76fb9fcd70d2b8deb633f0fe4f552de68f4deb660fd14",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R27_R31_RECORDED_MOTION_V1.md": "64858553859a875e65daff1463dfeb4b89fea935ab4390dde1a57d070925ff61"
+  },
+  "file_sha256": {
+    "README.md": "47840b4cbd1534a0fac8c926643b98ea139fc10a0a05a28e7458e123fe03e9c9",
+    "r27/r27_independent_validation_v1.json": "bfd6f5053b5ef1667cfba1445de6c0b0437fc66d538f9b6286ad3787b0dfbc8f",
+    "r27/r27_independent_verify.py": "e8b4d0d645ade0b4846e993a7072ac9f5f77538d09891ab6171ac074c0ff8d93",
+    "r27/r27_lidar_diagnostic_registration_v1.json": "9e3d5ea5488ca8ccd5274a9da8145f34f5f0e05514814c73591d1a3a31b3569e",
+    "r27/r27_lidar_motion.py": "e5b1f5e2dccb039eacc2c1a78fdd034de0ec3d621624058b0e5f097669582d33",
+    "r27/test_r27.py": "102eb7cab9c997a30a2c41fdbe41142f1c1e19a62c8e20741550d514d856acd4",
+    "r28/r28_independent_validation_v1.json": "a2fe1c8a24d516f3271defa0cca3fe16d66c84de5921b716e2b7f443772f9d88",
+    "r28/r28_independent_verify.py": "35bbba6c25db4775b79a1ba1dc683b763a4ca27171cf0e1bc09726c4303fe589",
+    "r28/r28_lidar_sensitivity_v1.json": "c7c827996ac684addb86b6ed2b704fb57d38a43a2a3f76aa808193fa26f32658",
+    "r28/r28_r27_independent_replay_v1.json": "bfd6f5053b5ef1667cfba1445de6c0b0437fc66d538f9b6286ad3787b0dfbc8f",
+    "r28/r28_sensitivity.py": "84aae2cdcb1b866122e833a6f771ead42b4ea34c55f4a8e86b15e9fa3a2bc3f1",
+    "r28/test_r28.py": "a698a23dbedc4a156e1efb1c6ddd8be93b08199e3a3f63c624bab6e3492ded5f",
+    "r29/r29_independent_validation_v1.json": "d1ccc46e81a83d0a7eb13a976286e3414d920dd0d86e1047d0f839c8fe29a978",
+    "r29/r29_independent_verify.py": "fc5b501158f0acee0856ca60f1726d820787cf2d3c7656dd7f9b7436d9aee397",
+    "r29/r29_lidar_multipair_diagnostics_v1.json": "5af225ff0ac9225fb16828a6ffacda4e1efcaddc69564f363095d8fe1071402b",
+    "r29/r29_multipair.py": "e8a8adfb280edec8f13146057332219472993bc7c11b19cde06692d4eaaead63",
+    "r30/r30_geometry.py": "ec787725394967f8f7ca5ce96b4882c9fa37322b3acefc418d3c052379653e3f",
+    "r30/r30_geometry_confidence_limits_v1.json": "373fe8993ccf6afa82bed9fd8f5197954e4b5412bc69d9558914dd08195d8f7d",
+    "r30/r30_independent_validation_v1.json": "e41e59bbe240c927767b0b4dc906e2045d5db574c74559750a3cd0092491b471",
+    "r30/r30_independent_verify.py": "b45a7f7366c38fbb423491a6efcba5057886981b15b0e84f8f904328327c6cf1",
+    "r31/r31_camera.py": "3e2577c1c9d78aaa971474cbf45686d8116adf13e252303e837be306e86d2392",
+    "r31/r31_camera_pixel_motion_v1.json": "f04d6c1ecda049edea612dea9214ccb4c22355b37585e64a0a9169db8f355470",
+    "r31/r31_independent_validation_v1.json": "068243ed843cba5b5a080821bec9296a017236a945de629a4a6827969d454f00",
+    "r31/r31_independent_verify.py": "ac794b7bb193b1fe909676ca6d3b756d88403f4b5100a3d8d7e12437ec5e6618"
+  },
+  "frozen_sha256": {
+    "r27/r27_independent_validation_v1.json": "bfd6f5053b5ef1667cfba1445de6c0b0437fc66d538f9b6286ad3787b0dfbc8f",
+    "r27/r27_independent_verify.py": "e8b4d0d645ade0b4846e993a7072ac9f5f77538d09891ab6171ac074c0ff8d93",
+    "r27/r27_lidar_diagnostic_registration_v1.json": "9e3d5ea5488ca8ccd5274a9da8145f34f5f0e05514814c73591d1a3a31b3569e",
+    "r27/r27_lidar_motion.py": "e5b1f5e2dccb039eacc2c1a78fdd034de0ec3d621624058b0e5f097669582d33",
+    "r27/test_r27.py": "102eb7cab9c997a30a2c41fdbe41142f1c1e19a62c8e20741550d514d856acd4",
+    "r28/r28_independent_validation_v1.json": "a2fe1c8a24d516f3271defa0cca3fe16d66c84de5921b716e2b7f443772f9d88",
+    "r28/r28_independent_verify.py": "35bbba6c25db4775b79a1ba1dc683b763a4ca27171cf0e1bc09726c4303fe589",
+    "r28/r28_lidar_sensitivity_v1.json": "c7c827996ac684addb86b6ed2b704fb57d38a43a2a3f76aa808193fa26f32658",
+    "r28/r28_r27_independent_replay_v1.json": "bfd6f5053b5ef1667cfba1445de6c0b0437fc66d538f9b6286ad3787b0dfbc8f",
+    "r28/r28_sensitivity.py": "84aae2cdcb1b866122e833a6f771ead42b4ea34c55f4a8e86b15e9fa3a2bc3f1",
+    "r28/test_r28.py": "a698a23dbedc4a156e1efb1c6ddd8be93b08199e3a3f63c624bab6e3492ded5f",
+    "r29/r29_independent_validation_v1.json": "d1ccc46e81a83d0a7eb13a976286e3414d920dd0d86e1047d0f839c8fe29a978",
+    "r29/r29_independent_verify.py": "fc5b501158f0acee0856ca60f1726d820787cf2d3c7656dd7f9b7436d9aee397",
+    "r29/r29_lidar_multipair_diagnostics_v1.json": "5af225ff0ac9225fb16828a6ffacda4e1efcaddc69564f363095d8fe1071402b",
+    "r29/r29_multipair.py": "e8a8adfb280edec8f13146057332219472993bc7c11b19cde06692d4eaaead63",
+    "r30/r30_geometry.py": "ec787725394967f8f7ca5ce96b4882c9fa37322b3acefc418d3c052379653e3f",
+    "r30/r30_geometry_confidence_limits_v1.json": "373fe8993ccf6afa82bed9fd8f5197954e4b5412bc69d9558914dd08195d8f7d",
+    "r30/r30_independent_validation_v1.json": "e41e59bbe240c927767b0b4dc906e2045d5db574c74559750a3cd0092491b471",
+    "r30/r30_independent_verify.py": "b45a7f7366c38fbb423491a6efcba5057886981b15b0e84f8f904328327c6cf1",
+    "r31/r31_camera.py": "3e2577c1c9d78aaa971474cbf45686d8116adf13e252303e837be306e86d2392",
+    "r31/r31_camera_pixel_motion_v1.json": "f04d6c1ecda049edea612dea9214ccb4c22355b37585e64a0a9169db8f355470",
+    "r31/r31_independent_validation_v1.json": "068243ed843cba5b5a080821bec9296a017236a945de629a4a6827969d454f00",
+    "r31/r31_independent_verify.py": "ac794b7bb193b1fe909676ca6d3b756d88403f4b5100a3d8d7e12437ec5e6618"
+  },
+  "frozen_split_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+  "full_extrinsics_verified": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "parent_commit": "d1c8aa7811619d096865f9b5f23a0ca7e940fa81",
+  "phase_files": {
+    "r27": [
+      "r27/r27_independent_validation_v1.json",
+      "r27/r27_independent_verify.py",
+      "r27/r27_lidar_diagnostic_registration_v1.json",
+      "r27/r27_lidar_motion.py",
+      "r27/test_r27.py"
+    ],
+    "r28": [
+      "r28/r28_independent_validation_v1.json",
+      "r28/r28_independent_verify.py",
+      "r28/r28_lidar_sensitivity_v1.json",
+      "r28/r28_r27_independent_replay_v1.json",
+      "r28/r28_sensitivity.py",
+      "r28/test_r28.py"
+    ],
+    "r29": [
+      "r29/r29_independent_validation_v1.json",
+      "r29/r29_independent_verify.py",
+      "r29/r29_lidar_multipair_diagnostics_v1.json",
+      "r29/r29_multipair.py"
+    ],
+    "r30": [
+      "r30/r30_geometry.py",
+      "r30/r30_geometry_confidence_limits_v1.json",
+      "r30/r30_independent_validation_v1.json",
+      "r30/r30_independent_verify.py"
+    ],
+    "r31": [
+      "r31/r31_camera.py",
+      "r31/r31_camera_pixel_motion_v1.json",
+      "r31/r31_independent_validation_v1.json",
+      "r31/r31_independent_verify.py"
+    ]
+  },
+  "physical_capture_sync_verified": false,
+  "real_sensor_factor_execution_authorized": false,
+  "schema": "TRUST_ROBOT_R27_R31_TRAIN_RECORDED_MOTION_CHECKPOINT_V1",
+  "scientific_pose_factors": 0,
+  "split": "train",
+  "trajectory_id": "room_02"
+}

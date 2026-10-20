@@ -1,0 +1,10 @@
+{
+  "bidirectional_roundtrips_verified": 8,
+  "geometry_spectra_verified": 16,
+  "independent_brute_force_registrations": 16,
+  "independent_reference_accuracy_scored": false,
+  "original_lidar_messages_verified": 16,
+  "schema": "TRUST_ROBOT_R30_INDEPENDENT_GEOMETRY_AND_INVERSE_CONSISTENCY_V1",
+  "science_factor_admission": false,
+  "source_report_sha256": "373fe8993ccf6afa82bed9fd8f5197954e4b5412bc69d9558914dd08195d8f7d"
+}

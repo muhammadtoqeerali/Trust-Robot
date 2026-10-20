@@ -1,0 +1,88 @@
+{
+  "algorithm": "bounded_10_iteration_identity_initialized_point_to_point_nearest_neighbor_kabsch",
+  "bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "cross_modal_synchronization_verified": false,
+  "full_extrinsics_verified": false,
+  "git_modified": false,
+  "github_parent": "d1c8aa7811619d096865f9b5f23a0ca7e940fa81",
+  "health_labels_generated": 0,
+  "health_training_authorized": false,
+  "independent_ground_truth_scored": false,
+  "m2dgr_scoring_authorized": false,
+  "new_raw_sensor_acquisitions": 0,
+  "physical_capture_semantics_verified": false,
+  "r17_report_sha256": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+  "r18_report_sha256": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+  "raw_sensor_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "registration_diagnostic": {
+    "candidate_max_nn_distance_m": 1.6984251460559971,
+    "candidate_median_nn_distance_m": 0.16458247891025582,
+    "candidate_nearest_neighbor_rmse_m": 0.32828036953279804,
+    "candidate_registered_as_factor": false,
+    "convergence_claimed": false,
+    "determinant": 1.0000000000000013,
+    "deterministic_points_per_scan": 512,
+    "fixed_iterations": 10,
+    "identity_nearest_neighbor_rmse_m": 0.3299711322153121,
+    "independent_pose_accuracy_claimed": false,
+    "physical_scan_time_qualified": false,
+    "rotation_previous_from_current": [
+      [
+        0.9999886344266582,
+        0.0012705165876380955,
+        0.004595302504526852
+      ],
+      [
+        -0.0012141522814745303,
+        0.9999242570069903,
+        -0.012247697059319143
+      ],
+      [
+        -0.0046105153448356044,
+        0.01224197846020001,
+        0.9999144348951247
+      ]
+    ],
+    "translation_previous_from_current_m": [
+      0.02199490276949173,
+      -0.020698116237322595,
+      -0.012745862693993457
+    ]
+  },
+  "registration_orientation": "previous_lidar_T_current_lidar_DIAGNOSTIC_ONLY",
+  "sampling_scope": "first_two_authenticated_lidar_messages_from_distinct_indexed_chunks",
+  "scans": [
+    {
+      "bag_record_time_ns": 1627643739605994074,
+      "chunk_offset": 17723507,
+      "connection_id": 9,
+      "frame_id": "velodyne",
+      "header_stamp_ns": 1627643739514966011,
+      "point_count_total": 50957,
+      "selected_indices_sha256": "b83b55df79625ca4fcecc9120f1dcca5127534e9043c0d360231e38d06a7d6d6",
+      "selected_point_count": 512,
+      "selected_xyz_float64_le_sha256": "064763995f205400070620739924d45b12244bb68290260b6b3336e3a98c1993",
+      "serialized_message_bytes": 1121202,
+      "serialized_message_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd"
+    },
+    {
+      "bag_record_time_ns": 1627643739655845258,
+      "chunk_offset": 33346140,
+      "connection_id": 9,
+      "frame_id": "velodyne",
+      "header_stamp_ns": 1627643739615390778,
+      "point_count_total": 50954,
+      "selected_indices_sha256": "bf1319b1fd1cbe474a768552f037a6ce258642e6afb8d3ac8b49e6bbd8a0c0f1",
+      "selected_point_count": 512,
+      "selected_xyz_float64_le_sha256": "a0bba4fb8c915a0ccc4d4b17b3bf20497b738712daa136564e474820199080f2",
+      "serialized_message_bytes": 1121136,
+      "serialized_message_sha256": "7ac935cf81c066dbb622933c87280e40b5f5fc2399734f5d566c2c5becd14408"
+    }
+  ],
+  "schema": "TRUST_ROBOT_R27_TRAIN_LIDAR_SINGLE_PAIR_REGISTRATION_DIAGNOSTIC_V1",
+  "selected_index_rule": "linspace_512_indices_each_scan",
+  "split": "train",
+  "trajectory_id": "room_02"
+}

@@ -1,0 +1,597 @@
+{
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "cross_modal_alignment_performed": false,
+  "eligible_lidar_chunk_count": 752,
+  "fixed_registration_iterations": 10,
+  "full_extrinsics_verified": false,
+  "github_baseline": "d1c8aa7811619d096865f9b5f23a0ca7e940fa81",
+  "github_modified": false,
+  "health_labels_generated": 0,
+  "health_model_training_authorized": false,
+  "independent_ground_truth_scored": false,
+  "interpretation": "fixed_iteration_point_to_point_registration_descriptive_only_no_stability_threshold",
+  "m2dgr_scoring_authorized": false,
+  "new_sensor_acquisitions": 0,
+  "pair_count": 8,
+  "pair_order": "previous_lidar_T_current_lidar_diagnostic_only",
+  "pairs": [
+    {
+      "observed_header_gap_ns": 100424767,
+      "pair_index": 0,
+      "registration": {
+        "candidate_max_nn_distance_m": 1.6984251460559971,
+        "candidate_median_nn_distance_m": 0.16458247891025582,
+        "candidate_nearest_neighbor_rmse_m": 0.32828036953279804,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000013,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3299711322153121,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999886344266582,
+            0.0012705165876380955,
+            0.004595302504526852
+          ],
+          [
+            -0.0012141522814745303,
+            0.9999242570069903,
+            -0.012247697059319143
+          ],
+          [
+            -0.0046105153448356044,
+            0.01224197846020001,
+            0.9999144348951247
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.02199490276949173,
+          -0.020698116237322595,
+          -0.012745862693993457
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643739605994074,
+          "chunk_offset": 17723507,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643739514966011,
+          "point_count_total": 50957,
+          "point_payload_sha256": "aa3dccdf8b4ffc4f5fec65f6150a1af409350b73bdd5511df5ddc1fb47954e04",
+          "selected_indices_sha256": "b83b55df79625ca4fcecc9120f1dcca5127534e9043c0d360231e38d06a7d6d6",
+          "selected_xyz_float64_le_sha256": "064763995f205400070620739924d45b12244bb68290260b6b3336e3a98c1993",
+          "sequence": 7548,
+          "serialized_message_bytes": 1121202,
+          "serialized_message_sha256": "adc13ce9db806b74574053e9697e33edf85286c9be9767aa345c0aada915e0cd"
+        },
+        {
+          "bag_record_time_ns": 1627643739655845258,
+          "chunk_offset": 33346140,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643739615390778,
+          "point_count_total": 50954,
+          "point_payload_sha256": "c0b0bd961561426e4623d473fe709539ac79e3ac2172966d0f586a988058a74d",
+          "selected_indices_sha256": "bf1319b1fd1cbe474a768552f037a6ce258642e6afb8d3ac8b49e6bbd8a0c0f1",
+          "selected_xyz_float64_le_sha256": "a0bba4fb8c915a0ccc4d4b17b3bf20497b738712daa136564e474820199080f2",
+          "sequence": 7549,
+          "serialized_message_bytes": 1121136,
+          "serialized_message_sha256": "7ac935cf81c066dbb622933c87280e40b5f5fc2399734f5d566c2c5becd14408"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 100323439,
+      "pair_index": 1,
+      "registration": {
+        "candidate_max_nn_distance_m": 1.9210745972988905,
+        "candidate_median_nn_distance_m": 0.1194337730056082,
+        "candidate_nearest_neighbor_rmse_m": 0.2920603698267015,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999987,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.29658811047735106,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9998493501339785,
+            0.01669910186093646,
+            -0.004734662997424908
+          ],
+          [
+            -0.01669548705001317,
+            0.9998602990123177,
+            0.0008019795261047791
+          ],
+          [
+            0.0047473938981246215,
+            -0.000722811203236938,
+            0.9999884698310971
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.02037272636715909,
+          -0.011811554618941456,
+          -0.0007031980617029504
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643750319930655,
+          "chunk_offset": 2168052464,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643750235867500,
+          "point_count_total": 52128,
+          "point_payload_sha256": "81d43984e1b75e27570dd26fe8a1385dc59275b74e543baff69b5aaa1675d355",
+          "selected_indices_sha256": "95945970dac1e1ce32930f2079f62641a4f3c56b0719caa6ff46bd88d9482503",
+          "selected_xyz_float64_le_sha256": "0a181ec0f255c59f0b8436cf261dc5200e4b9bf8bb23f2fc1c51df61939e613c",
+          "sequence": 7655,
+          "serialized_message_bytes": 1146964,
+          "serialized_message_sha256": "8d5af8a3be70ba5db0a0cf645e522b209896ea398080f6593de255eef43aba3e"
+        },
+        {
+          "bag_record_time_ns": 1627643750385789492,
+          "chunk_offset": 2188225387,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643750336190939,
+          "point_count_total": 52092,
+          "point_payload_sha256": "c828136fd16a2458db6b6be83d83aed1636c42abaa4e72aa134c5f0be038d3a0",
+          "selected_indices_sha256": "bd194c878163dee98560896301da0dd7d3fa90a27e959f4984ee3986602fb106",
+          "selected_xyz_float64_le_sha256": "47d562cc58de4b4e243cf0d128fc4309e89466493a1f8e96fa70ffcc599415de",
+          "sequence": 7656,
+          "serialized_message_bytes": 1146172,
+          "serialized_message_sha256": "413e8bb1af74622f35fc985b8b2618de9108ec2a9bcb1f3f1c8e901e9b76e370"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 100938320,
+      "pair_index": 2,
+      "registration": {
+        "candidate_max_nn_distance_m": 1.9253844026195837,
+        "candidate_median_nn_distance_m": 0.13731884123739974,
+        "candidate_nearest_neighbor_rmse_m": 0.3622056816517815,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999996,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.36574105341283614,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.999982693095704,
+            0.005741712675412186,
+            -0.0012830606438788738
+          ],
+          [
+            -0.00573347047487904,
+            0.9999634793524976,
+            0.0063377659754936914
+          ],
+          [
+            0.001319403416908661,
+            -0.006330299898065343,
+            0.9999790930203613
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.043300309939288906,
+          -0.026049145903127624,
+          0.018238412450728048
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643760987295162,
+          "chunk_offset": 4339423562,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643760957835674,
+          "point_count_total": 51356,
+          "point_payload_sha256": "50e43711af0b82bbccf307835dc240297b4c9ffb93be8ee8f03fa836d9219bae",
+          "selected_indices_sha256": "3d16a6cc5ce7fc1bbba05e54de414ac301267e1718b3f277326c10830e6d22f7",
+          "selected_xyz_float64_le_sha256": "a20dc35dce2b1c9d34c02a684e6dd6c3157f7dc338f0e0223fc7b564d81fe26e",
+          "sequence": 7762,
+          "serialized_message_bytes": 1129980,
+          "serialized_message_sha256": "492c002b36f6097aecc3f1507d3a3aa45a383d35a512453b35781d3fa6b367c8"
+        },
+        {
+          "bag_record_time_ns": 1627643761103642146,
+          "chunk_offset": 4366772852,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643761058773994,
+          "point_count_total": 51427,
+          "point_payload_sha256": "fff8513d457bd00a66cf5096f5ddd07333f92304006bb1e69b20ea3b306dcdd0",
+          "selected_indices_sha256": "d7b27f4d11cc9750976b56c614ce26f8bbd31c12d88f9bfe5a429f0db85a9057",
+          "selected_xyz_float64_le_sha256": "3e7ebe342cda67509ce8d0446691cd28fe2173c82266eb45d66528b367137708",
+          "sequence": 7763,
+          "serialized_message_bytes": 1131542,
+          "serialized_message_sha256": "1c712d76c111504397fa6a2379da1139f38f6385a566b1c53afc8246bf1cb356"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 101251602,
+      "pair_index": 3,
+      "registration": {
+        "candidate_max_nn_distance_m": 2.2943603750663897,
+        "candidate_median_nn_distance_m": 0.14543149222700674,
+        "candidate_nearest_neighbor_rmse_m": 0.31684121118909386,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000018,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.32710192122642046,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999852280053133,
+            0.005425546042021143,
+            0.0003274466491184243
+          ],
+          [
+            -0.005431399106644584,
+            0.9997471898218305,
+            0.021818715523563296
+          ],
+          [
+            -0.00020898542162185382,
+            -0.02182017171105094,
+            0.9997618898675803
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.09753681108862289,
+          -0.021957352166239896,
+          0.010276153917023106
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643771715039637,
+          "chunk_offset": 6429762022,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643771677690983,
+          "point_count_total": 51301,
+          "point_payload_sha256": "17724d07380928e423e137ee22e2813413467c293bb4094ab8f48a4b8a68620f",
+          "selected_indices_sha256": "564e7ff530b5ddef60c7f2889b3b84693600d199732c666db1cbfe600282a694",
+          "selected_xyz_float64_le_sha256": "e1bf921429184091d1aaca8be045ca8da6ca28f6192460982bb1e40c734d526a",
+          "sequence": 7869,
+          "serialized_message_bytes": 1128770,
+          "serialized_message_sha256": "1d4307a8fdb3f393999d48247d9000ae671f00b61e8a8d6e3e47990b5dfe3912"
+        },
+        {
+          "bag_record_time_ns": 1627643771835603583,
+          "chunk_offset": 6459633938,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643771778942585,
+          "point_count_total": 51414,
+          "point_payload_sha256": "8bc40633ef54d35d9d1aa70d71eef3212a01f2973266c5c8cd524ecb7e0a8975",
+          "selected_indices_sha256": "5b6f6733aeb18b5479f8c600cef614b92d6439f28a3caa25b4e26d6820595e7b",
+          "selected_xyz_float64_le_sha256": "8e4624b07eb3835139ae617ae998318470f4c36521f4de08f3b60b1b22005a1f",
+          "sequence": 7870,
+          "serialized_message_bytes": 1131256,
+          "serialized_message_sha256": "88162d635ca3c86bc73762c74e40744ead3cde079fb57c772cf60984c3eb8887"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 99526644,
+      "pair_index": 4,
+      "registration": {
+        "candidate_max_nn_distance_m": 2.2635281058807486,
+        "candidate_median_nn_distance_m": 0.10503205490017165,
+        "candidate_nearest_neighbor_rmse_m": 0.32346054452638756,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.9999999999999991,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.34681922668607146,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9989238182599612,
+            0.04293476891439884,
+            0.017544541350698616
+          ],
+          [
+            -0.04286459383618739,
+            0.9990713918990305,
+            -0.00435665975172579
+          ],
+          [
+            -0.017715301527151582,
+            0.003599931555013521,
+            0.9998365909410397
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          -0.06681560152911117,
+          0.004348544911508823,
+          0.018297815421215752
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643782448978034,
+          "chunk_offset": 8618739184,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643782399276733,
+          "point_count_total": 51577,
+          "point_payload_sha256": "6db3c93becc5ded8971ecaf160dc98e9028182cbe880460541a398a89f43b04f",
+          "selected_indices_sha256": "ae5fd21261da58c01c14904e2bc2ee4795f98625af34bbf3a0059c08fb219c22",
+          "selected_xyz_float64_le_sha256": "09e66a0e305146c062d5fa4ca7ea525d2e8c22b1e8bea8e21b4aab9730295017",
+          "sequence": 7976,
+          "serialized_message_bytes": 1134842,
+          "serialized_message_sha256": "e9728cc86ca548ee561d1d2d15908587ae6e9a2ea6a0e6fbc90803f8f96a4dda"
+        },
+        {
+          "bag_record_time_ns": 1627643782526070120,
+          "chunk_offset": 8635746993,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643782498803377,
+          "point_count_total": 51677,
+          "point_payload_sha256": "44b56c8d03c8511a4a1daba773a2555afac718c3ffab7a02ecee6c703be68a68",
+          "selected_indices_sha256": "6d4cab2f9eded5fcae0566f720415dae4ed9b2b7f2e226ccf8ff87885ea802df",
+          "selected_xyz_float64_le_sha256": "6bbe1aaca30ce60d31074c24003d9dcc4eb0a5e22e2a7a6b5a4ae0089b4e74bb",
+          "sequence": 7977,
+          "serialized_message_bytes": 1137042,
+          "serialized_message_sha256": "2990eed2c849f602d0451b7f3f2dad8951fe3708e8c6f267171490bf3fb070e2"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 101915360,
+      "pair_index": 5,
+      "registration": {
+        "candidate_max_nn_distance_m": 1.8773916835359061,
+        "candidate_median_nn_distance_m": 0.12036589999571654,
+        "candidate_nearest_neighbor_rmse_m": 0.32503476746187293,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000004,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.3374164481212162,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9996293285838127,
+            0.023049954028780958,
+            -0.01448810043957675
+          ],
+          [
+            -0.023091764417761278,
+            0.9997296353294768,
+            -0.002725189913774394
+          ],
+          [
+            0.014421367866842697,
+            0.003058735565981201,
+            0.9998913282380174
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.0818580956084829,
+          0.003598354385443314,
+          -0.007361339585109955
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643793166578104,
+          "chunk_offset": 10841367038,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643793119520664,
+          "point_count_total": 51385,
+          "point_payload_sha256": "e4c492e41d06f4b48e9cae12ec1a7c02651e53415afb1938dcc85b08bc1e119b",
+          "selected_indices_sha256": "0010c295bde35cea1628a7f00e17d1a0ad159045a709a44068c07782eb59b76a",
+          "selected_xyz_float64_le_sha256": "4754b6f6ddc6d5ea17a0c82a6ab41d71edd867a4695c471d335bd9d14ce306eb",
+          "sequence": 8083,
+          "serialized_message_bytes": 1130618,
+          "serialized_message_sha256": "b7fb0fa59f1ff970c582ae7d066184c04d5e914580c430cf3d1413ba173ffd45"
+        },
+        {
+          "bag_record_time_ns": 1627643793264245912,
+          "chunk_offset": 10853899475,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643793221436024,
+          "point_count_total": 51565,
+          "point_payload_sha256": "a5a1de694c93748f546e9fdf0305aa76a7c4260c67ef9c59f2692f872f95cff1",
+          "selected_indices_sha256": "ba1804c79bb7eb4a6001b2d7a2a58bb71f75dfff2574df059403ce72c6a296f4",
+          "selected_xyz_float64_le_sha256": "b8dba1633c202e1e39cd37a4096ea20b8807422c9e17d4407d8e3826d66ead79",
+          "sequence": 8084,
+          "serialized_message_bytes": 1134578,
+          "serialized_message_sha256": "28c19db66166a988c893f1f62886ba9b6f0fd01bcd95aa46568c135be4d46979"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 100149632,
+      "pair_index": 6,
+      "registration": {
+        "candidate_max_nn_distance_m": 5.149870240608908,
+        "candidate_median_nn_distance_m": 0.15777456886655555,
+        "candidate_nearest_neighbor_rmse_m": 0.4714495929162458,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 0.999999999999999,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.4821861898169946,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9994458199259734,
+            0.03180399191580373,
+            -0.009826450565581036
+          ],
+          [
+            -0.031633067108892826,
+            0.9993535011680957,
+            0.01708592310509883
+          ],
+          [
+            0.01036349833707723,
+            -0.016765613656784396,
+            0.9998057371814423
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.057421760145347694,
+          -0.05215882303061564,
+          -0.0022443436339752015
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643803876175502,
+          "chunk_offset": 13004368955,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643803840484142,
+          "point_count_total": 51169,
+          "point_payload_sha256": "86085dd5f33ec0a2d2447cab1689273b467c2af5bb99e90722574b154a0f2d50",
+          "selected_indices_sha256": "12772dd3b74c461be22f3e71292a0e13f4bdf9d31c4644e2a4b32d64e745a83b",
+          "selected_xyz_float64_le_sha256": "33173b8413045f1d8b3717152f0bddeb2808e2e86d22fc7933e0e261a723c252",
+          "sequence": 8190,
+          "serialized_message_bytes": 1125866,
+          "serialized_message_sha256": "f3fc83159fdb456e78d8c05119e6a3d6caab3606beb5a6bbe21789b3cb2bd4b2"
+        },
+        {
+          "bag_record_time_ns": 1627643803977569722,
+          "chunk_offset": 13029479231,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643803940633774,
+          "point_count_total": 51143,
+          "point_payload_sha256": "b19c2f621e9a9dbb6e575a965e617b815a4a41b0f19c2405991337e6698439ff",
+          "selected_indices_sha256": "bad1837ce4bffa2ceb5b87cf3a13db9055b109724f797c7ad513cf016612a3dd",
+          "selected_xyz_float64_le_sha256": "eac5b065017e85751f18a242bf6b39c71e61f9e430dc51d077491d96fe93445c",
+          "sequence": 8191,
+          "serialized_message_bytes": 1125294,
+          "serialized_message_sha256": "ee683dacb5f4d95fc9c485a0c03118a2940a1770cae4ffe8db86c94330a6d788"
+        }
+      ]
+    },
+    {
+      "observed_header_gap_ns": 100196362,
+      "pair_index": 7,
+      "registration": {
+        "candidate_max_nn_distance_m": 1.9070363975437643,
+        "candidate_median_nn_distance_m": 0.11124858913462995,
+        "candidate_nearest_neighbor_rmse_m": 0.2863930462926742,
+        "candidate_registered_as_factor": false,
+        "convergence_claimed": false,
+        "determinant": 1.0000000000000009,
+        "deterministic_points_per_scan": 512,
+        "fixed_iterations": 10,
+        "identity_nearest_neighbor_rmse_m": 0.2888665356438402,
+        "independent_pose_accuracy_claimed": false,
+        "physical_scan_time_qualified": false,
+        "rotation_previous_from_current": [
+          [
+            0.9999480275653115,
+            0.009137388987110142,
+            0.004522199767921612
+          ],
+          [
+            -0.009126902462150288,
+            0.9999556247616018,
+            -0.0023341291913557194
+          ],
+          [
+            -0.004543326940596408,
+            0.002292734204782586,
+            0.9999870506912467
+          ]
+        ],
+        "translation_previous_from_current_m": [
+          0.028219234148574412,
+          0.015692187404918418,
+          0.03594755230850798
+        ]
+      },
+      "relative_motion_ground_truth_available": false,
+      "scans": [
+        {
+          "bag_record_time_ns": 1627643814701727009,
+          "chunk_offset": 15123011207,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643814661532402,
+          "point_count_total": 51563,
+          "point_payload_sha256": "869689c2aea06d3b86a06b04cd567cd8cf7346e06931f31cae37da41562ddbe5",
+          "selected_indices_sha256": "2591d4aaaf0c159a3299575b14620e1a0afe3f1479c2358344468ca9d4d95247",
+          "selected_xyz_float64_le_sha256": "4f0f8b42c88785cc2efe37c84de5e2c26975fc84787b39629cca16760350bec5",
+          "sequence": 8298,
+          "serialized_message_bytes": 1134534,
+          "serialized_message_sha256": "d888c713372438756200bebc7d99af74c149171b8e8a68d827fd32ea367cb5de"
+        },
+        {
+          "bag_record_time_ns": 1627643814789366348,
+          "chunk_offset": 15143907657,
+          "connection_id": 9,
+          "frame_id": "velodyne",
+          "header_stamp_ns": 1627643814761728764,
+          "point_count_total": 51591,
+          "point_payload_sha256": "321e92e898924d62c33bd94b324137f0b9eee9e3d85d67d87edb503229aa39b3",
+          "selected_indices_sha256": "b9c38ff69d713ce7bfe8bc445d10bd7c6fbe251d105dde7bf7ce630490661e7b",
+          "selected_xyz_float64_le_sha256": "377cef081b8405787d415051dcb8f0002947aa083ea5c8fd84090c4702ec7916",
+          "sequence": 8299,
+          "serialized_message_bytes": 1135150,
+          "serialized_message_sha256": "1e99d4ca8eecb2ab16abb3645e7ee2b9eceb1e1f851e8a2c55e80155e01c2d72"
+        }
+      ]
+    }
+  ],
+  "per_scan_selected_points": 512,
+  "physical_capture_time_verified": false,
+  "pose_accuracy_established": false,
+  "prior_reports_sha256": {
+    "r17": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r18": "68accc1d4ab7b4c131bd60767be249054ba2469fad266292f615b6619d969bfa",
+    "r27": "9e3d5ea5488ca8ccd5274a9da8145f34f5f0e05514814c73591d1a3a31b3569e",
+    "r28": "c7c827996ac684addb86b6ed2b704fb57d38a43a2a3f76aa808193fa26f32658"
+  },
+  "raw_recording_modified": false,
+  "real_pose_factors_generated": 0,
+  "real_sensor_factor_execution_authorized": false,
+  "sampling_rule": "eight_evenly_spaced_index_anchors_each_with_next_lidar_scan",
+  "schema": "TRUST_ROBOT_R29_TRAIN_LIDAR_ADJACENT_PAIR_DIAGNOSTICS_V1",
+  "selected_unique_chunks": 16,
+  "split": "train",
+  "statistical_stability_established": false,
+  "trajectory_id": "room_02"
+}

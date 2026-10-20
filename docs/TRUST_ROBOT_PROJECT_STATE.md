@@ -6058,3 +6058,15 @@ Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R22_R25_RECORDED_DIAGNOSTICS_V1
 R22 independently decoded 8 genuine TRAIN camera, two IMU and LiDAR observations. R23 examined 32 deterministically index-spaced original messages, 8 per stream from 30 chunks; per-stream sampled proportions span only 0.0577%–1.0638%. R24 challenged the pipeline with 128 rejected in-memory provenance modifications, 8 rejected semantic payload alterations and 2 nonfinite LiDAR descriptive/strict-frontend boundary cases. R25 replayed all three recorded-data independent verifiers, passed 197 selected existing frontend regression tests and 18 anti-promotion controls; independent readiness PASS. Original `room_02.bag` SHA unchanged, no raw bag included in this repository.
 
 All science gates remain closed: no real-sensor 6DoF factors or calibrated noise, verified physical capture time, cross-modal timing, fully verified extrinsics, scored independent GT, ATE/RPE, empirical sensor-health labels or training, risk-based suppression, real hardware test or live simulator. No statistical stability claim from 32 samples. The next implementation should develop tangible single-modality *TRAIN-only* recorded-data motion-front-end candidates under explicit no-factor-admission requirements, not further provenance-only loops.
+
+## KIOS R27–R31 recorded single-modality motion checkpoint — 2026-10-19
+
+Parent commit: `d1c8aa7811619d096865f9b5f23a0ca7e940fa81`.
+Archive: `experiments/trust_robot_r27_r31_recorded_motion_checkpoint_v1/`.
+Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R27_R31_RECORDED_MOTION_V1.md`.
+
+R27 computed diagnostic registration from two genuine TRAIN LiDAR scans, selecting 512 points each; initial NN RMSE 0.329971 m and final 0.328280 m. R28 challenged 12 subset/initialization cases, revealing up to 0.057863 m translation and 2.291 deg rotation variation. R29 evaluated eight distinct adjacent LiDAR pairs at distributed recording positions (16 scans), with independent numeric replay. R30 checked 16 forward/reverse registrations and geometric conditioning, finding closure discrepancies up to 0.107653 m and 2.527491 deg. R31 tracked two genuine successive 640x480 camera images with 400 consistent LK tracks and median displacement 0.023073415420015515 pixels.
+
+These results are engineering diagnostics, not independently validated metric localization measurements. No qualified real factors, full physical extrinsics, cross-modal clock verification, independent ground-truth scoring, empirical health supervision, or M2DGR ATE/RPE evaluation are authorized. The original bag and frozen 22/7/7 trajectory split remain intact.
+
+Next: TRAIN-only multi-pair camera tracking and IMU motion candidates, followed by scientific qualification before any recorded estimator factor admission.

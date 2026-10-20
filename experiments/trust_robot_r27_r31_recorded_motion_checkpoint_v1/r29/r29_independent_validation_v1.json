@@ -1,0 +1,11 @@
+{
+  "adjacent_pairs_verified": 8,
+  "authenticated_lidar_messages_relocated": 16,
+  "brute_force_registration_numeric_match": true,
+  "ground_truth_scoring_performed": false,
+  "independently_reconstructed_schedule": true,
+  "physical_capture_semantics_verified": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R29_INDEPENDENT_RECORDED_LIDAR_MULTIPAIRS_V1",
+  "source_report_sha256": "5af225ff0ac9225fb16828a6ffacda4e1efcaddc69564f363095d8fe1071402b"
+}

@@ -1,0 +1,13 @@
+{
+  "decoded_grayscale_hashes_verified": 2,
+  "features_verified": 400,
+  "forward_backward_consistent_tracks_verified": 400,
+  "independent_lk_numeric_recomputation": true,
+  "jpeg_payload_hashes_verified": 2,
+  "physical_capture_timing_verified": false,
+  "real_sensor_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R31_INDEPENDENT_CAMERA_PIXEL_MOTION_V1",
+  "serialized_messages_verified": 2,
+  "source_report_sha256": "f04d6c1ecda049edea612dea9214ccb4c22355b37585e64a0a9169db8f355470",
+  "visual_odometry_authorized": false
+}

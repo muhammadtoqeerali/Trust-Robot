@@ -219,3 +219,11 @@ R16 authenticated the original `room_02.bag` TRAIN recording by SHA256; the raw 
 Archive: `experiments/trust_robot_r22_r25_recorded_diagnostics_checkpoint_v1/`.
 Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R22_R25_RECORDED_DIAGNOSTICS_V1.md`.
 R22 decoded 8 authentic TRAIN messages; R23 sampled 32 across 30 ROS bag chunks; R24 rejected 128 in-memory provenance and 8 payload mutations, preserving original bag; R25 replayed three independent verifiers and passed 197 targeted frontend tests. The 25 small-source/report evidence files are SHA pinned, and the archive has a no-raw-data standalone verifier. **This is recorded diagnostic readiness, not verified localization or sensor-health classification.** `room_02.bag` is strictly off Git and the original 22/7/7 split remains frozen. Real pose factors, calibrated health, capture-clock synchronization, full extrinsics, independent GT scoring and live simulator activation remain denied. Next: implement bounded single-modality candidate motion diagnostics from TRAIN data, with independent numeric verification and no science promotion.
+
+## KIOS R27–R31 recorded-motion engineering checkpoint — 2026-10-19
+
+Before further recorded-sensor development, read `experiments/trust_robot_r27_r31_recorded_motion_checkpoint_v1/README.md` and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R27_R31_RECORDED_MOTION_V1.md`.
+
+R27–R30 developed diagnostic-only LiDAR registration on authenticated TRAIN data: eight distributed adjacent scan pairs, sixteen genuine scans, and independently verified geometric/directional sensitivity. Bidirectional round-trip mismatch reached 10.8 cm and 2.53 degrees. R31 independently verified two genuine camera JPEGs and pixel-space optical flow (400 consistent tracks, approximately 0.023 pixel median displacement).
+
+No calibrated real 6DoF pose, real sensor factor, physical capture synchronization, full extrinsics, independent ground-truth scoring, or health labels. Keep raw bags outside GitHub. Do not inspect confirmation_test for development. Next: multi-pair camera and IMU diagnostic candidates before scientific factor qualification.
