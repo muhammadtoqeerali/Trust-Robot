@@ -1,0 +1,11 @@
+{
+  "calibration_topics_revealed": 0,
+  "confirmation_test_accessed": false,
+  "frozen_connection_source_match": true,
+  "independently_parsed_original_connection_headers": 15,
+  "plan_sha256": "1105b07f6a70651a88f62a59fdad601b773a76506e7b97d73242319621381df4",
+  "real_sensor_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R42_INDEPENDENT_CONNECTION_METADATA_VALIDATION_V1",
+  "sensor_payload_decompressed": false,
+  "source_report_sha256": "63df9cf270e634553fd24d305af7aeb77e663101899b9fd7052c79fc8299a22e"
+}

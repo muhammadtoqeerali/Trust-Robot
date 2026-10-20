@@ -1,0 +1,192 @@
+{
+  "ate_rpe_scores": 0,
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "camera_intrinsics_qualified": false,
+  "confirmation_test_accessed": false,
+  "cross_modal_alignment_qualified": false,
+  "decision": "DIAGNOSTICS_VERIFIED_QUALIFIED_REAL_FACTORS_BLOCKED",
+  "github_baseline": "df78336320b3b026e448a09d39dfc571f922ae00",
+  "github_modified": false,
+  "health_labels": 0,
+  "health_model_training_authorized": false,
+  "imu_bias_noise_and_gravity_qualified": false,
+  "independent_reference_trajectory_qualified": false,
+  "lidar_extrinsics_qualified": false,
+  "m2dgr_scoring_authorized": false,
+  "measurement_covariance_calibrated": false,
+  "metric_camera_scale_qualified": false,
+  "metrics": {
+    "camera": {
+      "distinct_frames": 16,
+      "median_pixel_displacement_px": {
+        "max": 22.674355462581566,
+        "median": 9.256029598989025,
+        "min": 0.023073415420015515
+      },
+      "metric_camera_pose_known": false,
+      "tracked_feature_fraction": {
+        "max": 1.0,
+        "median": 0.97125,
+        "min": 0.895
+      },
+      "train_pairs": 8
+    },
+    "imu": {
+      "/camera/imu": {
+        "capture_time_physically_verified": false,
+        "inertial_pose_qualified": false,
+        "recorded_frame": "camera_imu_optical_frame",
+        "recorded_orientation_unknown_count_of_16": 16,
+        "three_sample_header_gap_ms": {
+          "max": 9.954452,
+          "median": 4.984498,
+          "min": 4.97365
+        },
+        "three_sample_numeric_rotation_angle_rad": {
+          "max": 0.006388377665314367,
+          "median": 0.0010008527592560153,
+          "min": 2.132651983726661e-05
+        },
+        "two_sample_header_gap_ms": {
+          "max": 5.052805,
+          "median": 4.9787764999999995,
+          "min": 4.973411
+        }
+      },
+      "/handsfree/imu": {
+        "capture_time_physically_verified": false,
+        "inertial_pose_qualified": false,
+        "recorded_frame": "base_link",
+        "recorded_orientation_unknown_count_of_16": 0,
+        "three_sample_header_gap_ms": {
+          "max": 12.918949999999999,
+          "median": 6.7710875,
+          "min": 4.386902
+        },
+        "three_sample_numeric_rotation_angle_rad": {
+          "max": 0.006418714642814955,
+          "median": 0.0035705223404293774,
+          "min": 2.0429984284822024e-05
+        },
+        "two_sample_header_gap_ms": {
+          "max": 8.654833,
+          "median": 6.909012499999999,
+          "min": 4.8530109999999995
+        }
+      }
+    },
+    "lidar": {
+      "adjacent_train_pairs": 8,
+      "distinct_scans": 16,
+      "independent_pose_accuracy_known": false,
+      "inverse_roundtrip_rotation_deg": {
+        "max": 2.527490740348989,
+        "median": 1.2611547873429783,
+        "min": 0.9728466595062396
+      },
+      "inverse_roundtrip_translation_m": {
+        "max": 0.10765270204505648,
+        "median": 0.05626507442583159,
+        "min": 0.022946190616499402
+      },
+      "minimum_eigenvalue_ratio_over_pairs": {
+        "max": 0.01557682638108375,
+        "median": 0.015063397606975282,
+        "min": 0.01299042031878248
+      },
+      "rmse_reduction_m": {
+        "max": 0.023358682159683897,
+        "median": 0.0073942253439880645,
+        "min": 0.0016907626825140576
+      }
+    }
+  },
+  "next_phase": "R40_CALIBRATION_CLOCK_REFERENCE_ASSET_INVENTORY",
+  "physical_capture_time_verified": false,
+  "qualification_gates": {
+    "camera_intrinsics_distortion": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "camera_metric_scale": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "cross_sensor_extrinsics": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "health_label_supervision": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "imu_bias_noise_gravity": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "independent_SE3_reference": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "lidar_registration_accuracy_and_covariance": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "physical_capture_clock": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "validation_calibrated_factor_covariance": {
+      "evidence": "No frozen physically validated calibration/reference receipt",
+      "status": "NOT_QUALIFIED"
+    }
+  },
+  "raw_bag_reopened": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R39_TRAIN_RECORDED_SENSOR_QUALIFICATION_PLAN_V1",
+  "scientific_pose_factors": 0,
+  "source_sha256": {
+    "camera_pairs": "1e74e18205b8429d88632826f1f3c30055165352228a19aefa1064432b2853b1",
+    "gyro_windows": "c025f71eeb8a8467c0ca86cbec079d1bf0d977841d25140750d813d89a54714a",
+    "imu_intervals": "778c223c6c034343413ff848db6276aecdd730390311f178cb918b94ee10064e",
+    "imu_variation": "a0fbf5931833dfecb609f82e27fdd13fa2fc4dbfead8dbb106a99af162698e1e",
+    "lidar_geometry": "373fe8993ccf6afa82bed9fd8f5197954e4b5412bc69d9558914dd08195d8f7d",
+    "lidar_pairs": "5af225ff0ac9225fb16828a6ffacda4e1efcaddc69564f363095d8fe1071402b",
+    "readiness": "185c91251dbe9342023155f24db4ba4800b32489a3d1f9af956188f7f5bccc4a"
+  },
+  "split": "train",
+  "statistical_stability_established": false,
+  "trajectory_id": "room_02",
+  "work_sequence": [
+    {
+      "expected_evidence": "Create asset inventory and explicit unverified-calibration ledger on TRAIN-only data",
+      "phase": "R40",
+      "task": "Inspect native calibration, camera intrinsics/distortion, LiDAR-IMU-camera extrinsics, TF frames, clock sources and independent TRAIN references; log exact provenance and missing items without promoting filename matches"
+    },
+    {
+      "expected_evidence": "Document time-domain conversion, residual statistics, sensitivity and rejection criteria before motion factors",
+      "phase": "R41",
+      "task": "Establish separate message-header vs acquisition-clock semantics and estimate inter-stream offset/drift using TRAIN only; verify capture-time basis independently"
+    },
+    {
+      "expected_evidence": "Evaluate relative geometry without asserting metric motion until scale and external reference pass",
+      "phase": "R42",
+      "task": "Verify camera intrinsics and distortion; develop outlier-robust image correspondence/epipolar geometry and an independent metric scale source"
+    },
+    {
+      "expected_evidence": "Predeclare factor rejection criteria using calibration/validation only",
+      "phase": "R43",
+      "task": "Develop LiDAR correspondence robustness, initialization and degeneracy rejection across multiple TRAIN trajectories, with independent registration reference and covariance diagnostics"
+    },
+    {
+      "expected_evidence": "Only then implement covariance-aware preintegration with numerical and physical checks",
+      "phase": "R44",
+      "task": "Estimate gyro/accelerometer bias and noise, gravitational frame conventions and IMU extrinsics; compare calibrated inertial windows against independently verified references"
+    },
+    {
+      "expected_evidence": "Begin limited TRAIN/validation real-backbone trial only after prior gates; leave confirmation_test held out",
+      "phase": "R45",
+      "task": "Qualify independent timestamp-associated SE3 reference, coordinate transforms, validation-calibrated factor covariance and frozen estimator variants"
+    }
+  ]
+}

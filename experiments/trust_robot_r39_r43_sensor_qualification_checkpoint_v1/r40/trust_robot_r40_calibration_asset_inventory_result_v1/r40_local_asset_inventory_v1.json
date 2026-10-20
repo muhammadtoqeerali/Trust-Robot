@@ -1,0 +1,267 @@
+{
+  "candidate_files": [
+    {
+      "relative_path": "embedded/embedded_reference_path_contract_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "175059822fa16314e5117fa56557280aec831ed8b1c551cee1163e627d1d9d4f",
+      "size_bytes": 5666
+    },
+    {
+      "relative_path": "integrity/integrity_calibration_protocol_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "18adfae600ca69211b9ccbd647fe72658da0209dd9f1d1ae5bd0351f64561e6e",
+      "size_bytes": 11114
+    },
+    {
+      "relative_path": "ood/ood_calibration_protocol_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "a118d39cee4847dd86f41662ffd036a8bae8bcc0551ff5572f83d52ea5c2a862",
+      "size_bytes": 11357
+    },
+    {
+      "relative_path": "trust_robot/phase5_camera_imu_diagnostic_channel_contract_candidate_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "de6656d35e24162dcd3ff489f21b735396c2457dae526a13be9790bb88bdf485",
+      "size_bytes": 5988
+    },
+    {
+      "relative_path": "trust_robot/phase5_camera_imu_observation_adapter_candidate_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "1dd104b036e46b94990600e5484a465081a7f7f95adaa2b17b634838f222d8cd",
+      "size_bytes": 1438
+    },
+    {
+      "relative_path": "trust_robot/phase5_camera_imu_train_ingestion_candidate_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "4a1794c81528bcd04165e4da52b60e10b5140a0a276452aa2cf269a4d66c3b9b",
+      "size_bytes": 1974
+    },
+    {
+      "relative_path": "trust_robot/phase6_probabilistic_calibration_contract_candidate_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "7761cf8c39620d7166c88092470aeb09e2f5b1120cd0d4be3e1c11118822f367",
+      "size_bytes": 4376
+    },
+    {
+      "relative_path": "v2/imu_reliability_v2_competitor_and_benchmark_protocol_candidate_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "575323cd2e65baf4161cb389ec2ec18b2ed7d99962d9aa882d75d2c5acc55379",
+      "size_bytes": 19870
+    },
+    {
+      "relative_path": "v2/imu_reliability_v2_competitor_and_benchmark_protocol_candidate_v1b.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "e7e18f31860309e43e91829ede6544060d984f6e24d3b615f3adc5304c12d238",
+      "size_bytes": 24052
+    },
+    {
+      "relative_path": "v2/imu_reliability_v2_competitor_and_benchmark_protocol_v1.json",
+      "scientific_calibration_verified": false,
+      "scope": "repository_configs",
+      "sha256_small_file": "a3a69e182ee1c2bb0744805b4c8a24aab77b0fb573fe26b19e18622e18c55ac1",
+      "size_bytes": 25351
+    }
+  ],
+  "confirmation_test_accessed": false,
+  "existing_calibration_interpretation": {
+    "author_calibration_provenance_established": true,
+    "author_cross_file_consistency_established": true,
+    "camera_intrinsics_verified": false,
+    "camera_lidar_extrinsic_verified": false,
+    "d435i_imu_relative_rotation_has_independent_released_sensor_content_support": true,
+    "d435i_imu_relative_rotation_support_is_full_extrinsic_verification": false,
+    "dataset_calibration_verified": false,
+    "evaluation_ready": false,
+    "handsfree_lidar_full_extrinsic_verified": false,
+    "reference_lever_arms_verified": false,
+    "synchronization_verified": false,
+    "translation_verified": false
+  },
+  "existing_reference_semantics": {
+    "mocap_reference_body_origin_verified": false,
+    "mocap_to_lidar_transform_verified": false,
+    "reference_timestamp_physical_measurement_event_verified": false
+  },
+  "explicit_room_02_reference_path_receipts": [
+    {
+      "path_relative_to_train": "raw/groundtruth/room_02.txt",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    },
+    {
+      "path_relative_to_train": "raw/ground_truth/room_02.txt",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    },
+    {
+      "path_relative_to_train": "groundtruth/room_02.txt",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    },
+    {
+      "path_relative_to_train": "ground_truth/room_02.txt",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    },
+    {
+      "path_relative_to_train": "raw/gt/room_02.txt",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    },
+    {
+      "path_relative_to_train": "audit/reference_quality/room_02_reference_quality.json",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    },
+    {
+      "path_relative_to_train": "checksums/room_02.txt.sha256",
+      "present_regular_file": false,
+      "scientific_reference_qualified": false
+    }
+  ],
+  "filesystem_scan_nodes_by_scope": {
+    "recorded_m2dgr_train": 2,
+    "repository_calib": 0,
+    "repository_calibration": 0,
+    "repository_config": 0,
+    "repository_configs": 106,
+    "workspace_calib": 0,
+    "workspace_calibration": 0,
+    "workspace_calibrations": 0,
+    "workspace_ground_truth": 0,
+    "workspace_groundtruth": 0,
+    "workspace_metadata": 0,
+    "workspace_reference": 0,
+    "workspace_references": 0
+  },
+  "filesystem_skipped_items_by_scope": {
+    "recorded_m2dgr_train": 0,
+    "repository_calib": 0,
+    "repository_calibration": 0,
+    "repository_config": 0,
+    "repository_configs": 0,
+    "workspace_calib": 0,
+    "workspace_calibration": 0,
+    "workspace_calibrations": 0,
+    "workspace_ground_truth": 0,
+    "workspace_groundtruth": 0,
+    "workspace_metadata": 0,
+    "workspace_reference": 0,
+    "workspace_references": 0
+  },
+  "github_baseline": "df78336320b3b026e448a09d39dfc571f922ae00",
+  "github_modified": false,
+  "health_labels": 0,
+  "m2dgr_scoring_authorized": false,
+  "next_phase": "R41_TRAIN_CALIBRATION_CANDIDATE_SEMANTICS_AND_REFERENCE_CONTENT",
+  "physical_calibration_verified": false,
+  "physical_capture_time_verified": false,
+  "qualification_requirements": {
+    "camera_intrinsics_and_distortion": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "camera_to_imu_extrinsic": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "camera_to_lidar_extrinsic": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "handsfree_imu_to_lidar_extrinsic": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "imu_bias_noise_and_gravity": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "lidar_scan_effective_time": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "mocap_body_origin_to_lidar_transform": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "physical_capture_clock_and_interstream_offset": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    },
+    "room_02_reference_data_quality_and_time_association": {
+      "present_candidate_is_not_qualification": true,
+      "status": "UNVERIFIED"
+    }
+  },
+  "qualified_real_sensor_factors": 0,
+  "raw_bag_opened": false,
+  "recorded_stream_clock_domains": [
+    {
+      "clock_domain": "m2dgr_camera_image_header_clock_unverified",
+      "frame_id": "camera_color_optical_frame",
+      "header_timestamp_unit": "nanoseconds",
+      "physically_verified_offset_seconds": null,
+      "synchronization_status": "unverified",
+      "topic": "/camera/color/image_raw/compressed"
+    },
+    {
+      "clock_domain": "m2dgr_camera_imu_header_clock_unverified",
+      "frame_id": "camera_imu_optical_frame",
+      "header_timestamp_unit": "nanoseconds",
+      "physically_verified_offset_seconds": null,
+      "synchronization_status": "unverified",
+      "topic": "/camera/imu"
+    },
+    {
+      "clock_domain": "m2dgr_handsfree_header_clock_unverified",
+      "frame_id": "base_link",
+      "header_timestamp_unit": "nanoseconds",
+      "physically_verified_offset_seconds": null,
+      "synchronization_status": "unverified",
+      "topic": "/handsfree/imu"
+    },
+    {
+      "clock_domain": "m2dgr_velodyne_header_clock_unverified",
+      "frame_id": "velodyne",
+      "header_timestamp_unit": "nanoseconds",
+      "physically_verified_offset_seconds": null,
+      "synchronization_status": "unverified",
+      "topic": "/velodyne_points"
+    }
+  ],
+  "reference_to_sensor_transform_verified": false,
+  "repository_evidence_sha256": {
+    "m2dgr_calibration_evidence_v1.json": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+    "m2dgr_camera_imu_synchronization_evidence_v1.json": "95ff9fdcaf2b74a9f7b118334f0fe3626bee3afe0916c3e09df4a7451d8425c7",
+    "m2dgr_gt_recording_stream_provenance_evidence_v1.json": "f8cbf76663a027e5487737afb6753eeaed1bc75debbc7c1151d949e809aff814",
+    "m2dgr_lidar_imu_synchronization_evidence_v1.json": "44fe629284cad3f92e3109cec60ee2aab799c69c43eeeb67b5461b781d303f45",
+    "m2dgr_platform_geometry_evidence_v1.json": "e1ba372d38faf32107b2c23ed836ab8a78b783269bab7f89e20f542c57159882",
+    "m2dgr_reference_physical_semantics_evidence_v1.json": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+    "m2dgr_reference_quality_index_v1.json": "5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77",
+    "m2dgr_reference_temporal_association_evidence_v1.json": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117",
+    "m2dgr_synchronization_evidence_v1.json": "58615c56442485fc488eeb47f72dd074f51c05c64cda258a91a8c4937b83ef91",
+    "m2dgr_timing_evidence_index_v1.json": "70f8dbf16b2363c55fa180a8180d7fbc322495c25790498ddf64fb4d74c87b3f",
+    "m2dgr_trajectory_manifest_v1_split_freeze_v1.json": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "room_02_reference_provenance": {
+    "raw_reference_sha256_provenance_only": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+    "reference_quality_artifact_relative_path": "audit/reference_quality/room_02_reference_quality.json",
+    "reference_source": "mocap",
+    "rotation_invalid_count": 90,
+    "translation_invalid_count": 0
+  },
+  "schema": "TRUST_ROBOT_R40_TRAIN_CALIBRATION_REFERENCE_ASSET_INVENTORY_V1",
+  "source_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "split": "train",
+  "trajectory_id": "room_02"
+}

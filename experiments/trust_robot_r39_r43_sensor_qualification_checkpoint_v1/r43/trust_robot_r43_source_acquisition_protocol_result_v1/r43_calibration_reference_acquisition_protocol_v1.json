@@ -1,0 +1,193 @@
+{
+  "ate_rpe_scores": 0,
+  "bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "confirmation_test_accessed": false,
+  "existing_d435i_relative_rotation_content_support": true,
+  "external_sources_acquired": 0,
+  "frozen_manifest_sha256": {
+    "m2dgr_calibration_evidence_v1.json": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+    "m2dgr_camera_imu_synchronization_evidence_v1.json": "95ff9fdcaf2b74a9f7b118334f0fe3626bee3afe0916c3e09df4a7451d8425c7",
+    "m2dgr_gt_recording_stream_provenance_evidence_v1.json": "f8cbf76663a027e5487737afb6753eeaed1bc75debbc7c1151d949e809aff814",
+    "m2dgr_lidar_imu_synchronization_evidence_v1.json": "44fe629284cad3f92e3109cec60ee2aab799c69c43eeeb67b5461b781d303f45",
+    "m2dgr_platform_geometry_evidence_v1.json": "e1ba372d38faf32107b2c23ed836ab8a78b783269bab7f89e20f542c57159882",
+    "m2dgr_reference_physical_semantics_evidence_v1.json": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a",
+    "m2dgr_reference_quality_index_v1.json": "5605c9da59f0081c5f0b4c564451a5d93bb3de2ec35cd9702073422913696f77",
+    "m2dgr_reference_temporal_association_evidence_v1.json": "4f6580c6a0b06b4089990adcc700b5d823a748bacacfc0f00c3dd3b4169d9117",
+    "m2dgr_synchronization_evidence_v1.json": "58615c56442485fc488eeb47f72dd074f51c05c64cda258a91a8c4937b83ef91",
+    "m2dgr_trajectory_manifest_v1_split_freeze_v1.json": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "full_extrinsic_from_partial_rotation": false,
+  "github_baseline": "df78336320b3b026e448a09d39dfc571f922ae00",
+  "github_modified": false,
+  "health_labels": 0,
+  "health_training_authorized": false,
+  "m2dgr_ate_rpe_authorized": false,
+  "next_phase": "R44_GUARDED_R39_R43_CHECKPOINT",
+  "physical_calibration_admitted": false,
+  "qualified_pose_factors": 0,
+  "raw_bag_opened": false,
+  "raw_reference_provenance_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "real_sensor_factors_authorized": false,
+  "reference_scoring_authorized": false,
+  "reference_to_lidar_transform_known": false,
+  "requests": {
+    "camera_imu_extrinsics_physically_verified": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "source_frame",
+        "target_frame",
+        "T_target_source_SE3",
+        "translation_units_m",
+        "rotation_direction",
+        "independent_validation"
+      ],
+      "source_class": "cross_sensor_geometry",
+      "status": "NOT_QUALIFIED"
+    },
+    "camera_intrinsics_physically_verified": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "camera_model",
+        "image_size_px",
+        "K_3x3",
+        "distortion_model_and_coefficients",
+        "capture_resolution_receipt",
+        "independent_reprojection_check"
+      ],
+      "source_class": "camera_calibration",
+      "status": "NOT_QUALIFIED"
+    },
+    "camera_lidar_extrinsics_physically_verified": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "source_frame",
+        "target_frame",
+        "T_target_source_SE3",
+        "translation_units_m",
+        "calibration_method",
+        "independent_transform_residuals"
+      ],
+      "source_class": "cross_sensor_geometry",
+      "status": "NOT_QUALIFIED"
+    },
+    "cross_sensor_synchronization_physically_verified": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "all_sensor_clock_domains",
+        "physical_event_definitions",
+        "offset_and_drift_models",
+        "offset_sign_convention",
+        "lidar_scan_effective_time",
+        "independent_validation"
+      ],
+      "source_class": "sensor_clock_mapping",
+      "status": "NOT_QUALIFIED"
+    },
+    "health_training_authorized": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "supervised_health_labels_provenance",
+        "TRAIN_only_fit",
+        "validation_only_model_selection",
+        "label_leakage_audit",
+        "heldout_isolation_test",
+        "explicit_scientific_approval"
+      ],
+      "source_class": "dependent_decision",
+      "status": "NOT_QUALIFIED"
+    },
+    "m2dgr_ate_rpe_authorized": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "qualified_SE3_reference",
+        "mocap_to_estimator_transform",
+        "physical_time_association",
+        "invalid_rotation_mask",
+        "predeclared_metric_tolerance",
+        "heldout_sealed_scoring_plan"
+      ],
+      "source_class": "dependent_decision",
+      "status": "NOT_QUALIFIED"
+    },
+    "metric_visual_pose_authorized": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "qualified_camera_intrinsics",
+        "qualified_camera_extrinsics",
+        "independent_metric_scale",
+        "nondegenerate_correspondences",
+        "independent_pose_reference",
+        "uncertainty_check"
+      ],
+      "source_class": "dependent_decision",
+      "status": "NOT_QUALIFIED"
+    },
+    "mocap_body_to_lidar_physically_verified": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "tracked_markers_and_body_frame",
+        "target_lidar_frame",
+        "T_lidar_mocap_body_SE3",
+        "translation_units_m",
+        "author_or_measurement_receipt",
+        "independent_geometry_check"
+      ],
+      "source_class": "tracked_body_origin",
+      "status": "NOT_QUALIFIED"
+    },
+    "raw_reference_available_locally": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "room_02_source_uri",
+        "license_and_provenance",
+        "raw_bytes_sha256",
+        "file_format_and_timestamp_units",
+        "90_invalid_rotation_handling",
+        "independent_content_check"
+      ],
+      "source_class": "raw_reference_receipt",
+      "status": "NOT_QUALIFIED"
+    },
+    "real_sensor_factors_authorized": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "qualified_native_sensor_models",
+        "qualified_physical_clock",
+        "qualified_noise_covariances",
+        "independent_consistency_tests",
+        "train_validation_predeclared_gates",
+        "explicit_safety_approval"
+      ],
+      "source_class": "dependent_decision",
+      "status": "NOT_QUALIFIED"
+    },
+    "reference_capture_clock_physically_verified": {
+      "physical_validation_completed": false,
+      "required_evidence_fields": [
+        "reference_event_definition",
+        "timestamp_epoch_and_unit",
+        "export_timebase_mapping",
+        "offset_sign_convention",
+        "per_sequence_or_global_scope",
+        "independent_clock_check"
+      ],
+      "source_class": "reference_timing",
+      "status": "NOT_QUALIFIED"
+    }
+  },
+  "room_02_reference_invalid_rotations": 90,
+  "schema": "TRUST_ROBOT_R43_SOURCE_ACQUISITION_GATE_PROTOCOL_V1",
+  "scientific_interpretation": "author_provenance_and_partial_sensor_content_support_do_not_complete_physical_calibration",
+  "source_acquisition_status": "NOT_ACQUIRED",
+  "split": "train",
+  "split_manifest_sha256": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f",
+  "trajectory_id": "room_02",
+  "unresolved_gate_count": 11,
+  "upstream_report_sha256": {
+    "r39": "fc383222b2d5b4f997d2a270d7aeeae8633e3a50169caaf226dda28f35d8830d",
+    "r40": "a7fd21aeacd98ea1f3a1ae505d10c51402e961f1076b462689040416d7af6b97",
+    "r41": "7b92892f3abcc6fa03be525e08f9772d42ed85cabc89c68cdf1466e97925cc22",
+    "r42": "63df9cf270e634553fd24d305af7aeb77e663101899b9fd7052c79fc8299a22e",
+    "r42_independent": "16c1829cf1ed1054d26334e1beb01877490b1a50bd8e5bcbf492ff7a34a12a9c"
+  }
+}

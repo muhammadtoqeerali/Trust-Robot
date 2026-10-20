@@ -239,3 +239,13 @@ All work uses M2DGR `room_02` TRAIN. No physical time/extrinsic qualification, p
 Never commit raw bag bytes or use confirmation_test for development.
 
 Next pursue scientific sensor-motion qualification rather than treating numerical diagnostics as localization performance.
+
+## R39–R43 sensor qualification checkpoint — KIOS, 2026-10-20
+
+The frozen archive is `experiments/trust_robot_r39_r43_sensor_qualification_checkpoint_v1/`, with standalone `verify_checkpoint.py`. Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R39_R43_SENSOR_QUALIFICATION_V1.md`.
+
+33 frozen source/report/test artifacts, including original R40 failed Python code and targeted canonical-field repair. R39–R43 establish scientific evidence gaps, not qualified real sensor measurements. R41 found ten software contracts/protocols and no local room_02 reference payload; R42 confirmed 15 ROS1 connections with no CameraInfo/TF/mocap reference topics; R43 preserved 11 unfilled evidence receipts.
+
+Never infer complete extrinsics from the partial D435i IMU relative rotation, physical clock alignment from message headers, or ground-truth scoring eligibility from a reference filename. Keep TRAIN/validation/test splits frozen, confirmation_test sealed, bag files out of Git. Real pose factors, health training, ATE/RPE scoring and robot safety actions remain DENIED.
+
+Next R45: physical evidence intake and independent scientific qualification readiness.

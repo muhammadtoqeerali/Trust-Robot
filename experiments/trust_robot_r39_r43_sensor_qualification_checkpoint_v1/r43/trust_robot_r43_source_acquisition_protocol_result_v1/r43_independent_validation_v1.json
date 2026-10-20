@@ -1,0 +1,14 @@
+{
+  "commit_frozen_manifests_verified": 10,
+  "confirmation_test_accessed": false,
+  "github_modified": false,
+  "health_training_authorized": false,
+  "missing_evidence_gates_verified": 11,
+  "nonempty_source_receipts": 0,
+  "plan_sha256": "e262cf0fe040037a2c82f6826ec269b5a358401455c280322fe45396514386bd",
+  "prior_artifacts_verified": 5,
+  "r43_protocol_sha256": "48b95eea59923fb71358172af889eb413c0220d55212a4d400fa1ab7e72bed75",
+  "real_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R43_INDEPENDENT_ACQUISITION_PROTOCOL_V1",
+  "unfilled_receipts_sha256": "260f799a3d1494052416ba83652c6de79165ba2b29e7b28f9cd14bfd6c5bc622"
+}

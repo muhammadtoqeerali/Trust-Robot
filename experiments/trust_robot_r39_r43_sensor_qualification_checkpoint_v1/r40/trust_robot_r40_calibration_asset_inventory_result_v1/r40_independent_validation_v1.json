@@ -1,0 +1,13 @@
+{
+  "confirmation_test_accessed": false,
+  "local_candidate_files_verified": 10,
+  "plan_sha256": "983a925a878a41c423190e1b9de8dc6712b140eca1a6f65dc32f0ac155a60fec",
+  "qualification_requirements_unverified": 9,
+  "raw_bag_reopened": false,
+  "real_pose_factors_authorized": false,
+  "repository_manifest_git_snapshots_verified": 11,
+  "room_02_invalid_rotation_count": 90,
+  "room_02_reference_source": "mocap",
+  "schema": "TRUST_ROBOT_R40_INDEPENDENT_ASSET_INVENTORY_VALIDATION_V1",
+  "source_report_sha256": "a7fd21aeacd98ea1f3a1ae505d10c51402e961f1076b462689040416d7af6b97"
+}

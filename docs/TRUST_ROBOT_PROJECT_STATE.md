@@ -6097,3 +6097,15 @@ All results are diagnostic only. Physical capture clock, IMU bias and gravity mo
 Original TRAIN recording remains off-Git; frozen 22/7/7 trajectory split is unchanged.
 
 Next: qualify actual real-data sensor factors with independent motion references/calibration before progressing to reliability-conditioned real fusion.
+
+## R39–R43 TRAIN sensor calibration / reference qualification checkpoint — 2026-10-20
+
+Git parent: `df78336320b3b026e448a09d39dfc571f922ae00`. Archive: `experiments/trust_robot_r39_r43_sensor_qualification_checkpoint_v1/`. Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R39_R43_SENSOR_QUALIFICATION_V1.md`.
+
+R39 independently verified numerical LiDAR, camera and IMU diagnostics and nine outstanding physical qualifications. R40 audited 11 frozen M2DGR provenance manifests, found ten software candidates and zero explicit local room_02 reference paths, and preserved the initial failed and corrected mocap-field reader. R41 independently classified the ten software configs and found zero additional room_02 reference candidates or checksum matches. R42 independently verified fifteen original ROS1 connection headers with no CameraInfo/TF/mocap reference connections, without decompressing sensor payloads. R43 independently checked ten frozen source manifests and five upstream report links; all eleven physical-evidence receipts remain empty.
+
+Existing D435i relative IMU rotation support is partial, not a full 6DoF extrinsic. Mocap provenance includes 90 invalid rotation records; physical reference origin and timestamp semantics remain unverified.
+
+No real 6DoF localization accuracy, calibrated factors, health labels/training, independent ATE/RPE, physical clock calibration or autonomous safety evidence has been established. Original room_02 TRAIN bag stays off-Git; frozen 22/7/7 trajectory membership and confirmation-test isolation remain unchanged.
+
+Next R45: physically traceable source discovery and evidence intake, not premature real sensor fusion or scoring.

@@ -1,0 +1,172 @@
+{
+  "gate_receipts": {
+    "camera_imu_extrinsics_physically_verified": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "T_target_source_SE3": null,
+        "independent_validation": null,
+        "rotation_direction": null,
+        "source_frame": null,
+        "target_frame": null,
+        "translation_units_m": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "camera_intrinsics_physically_verified": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "K_3x3": null,
+        "camera_model": null,
+        "capture_resolution_receipt": null,
+        "distortion_model_and_coefficients": null,
+        "image_size_px": null,
+        "independent_reprojection_check": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "camera_lidar_extrinsics_physically_verified": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "T_target_source_SE3": null,
+        "calibration_method": null,
+        "independent_transform_residuals": null,
+        "source_frame": null,
+        "target_frame": null,
+        "translation_units_m": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "cross_sensor_synchronization_physically_verified": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "all_sensor_clock_domains": null,
+        "independent_validation": null,
+        "lidar_scan_effective_time": null,
+        "offset_and_drift_models": null,
+        "offset_sign_convention": null,
+        "physical_event_definitions": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "health_training_authorized": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "TRAIN_only_fit": null,
+        "explicit_scientific_approval": null,
+        "heldout_isolation_test": null,
+        "label_leakage_audit": null,
+        "supervised_health_labels_provenance": null,
+        "validation_only_model_selection": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "m2dgr_ate_rpe_authorized": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "heldout_sealed_scoring_plan": null,
+        "invalid_rotation_mask": null,
+        "mocap_to_estimator_transform": null,
+        "physical_time_association": null,
+        "predeclared_metric_tolerance": null,
+        "qualified_SE3_reference": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "metric_visual_pose_authorized": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "independent_metric_scale": null,
+        "independent_pose_reference": null,
+        "nondegenerate_correspondences": null,
+        "qualified_camera_extrinsics": null,
+        "qualified_camera_intrinsics": null,
+        "uncertainty_check": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "mocap_body_to_lidar_physically_verified": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "T_lidar_mocap_body_SE3": null,
+        "author_or_measurement_receipt": null,
+        "independent_geometry_check": null,
+        "target_lidar_frame": null,
+        "tracked_markers_and_body_frame": null,
+        "translation_units_m": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "raw_reference_available_locally": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "90_invalid_rotation_handling": null,
+        "file_format_and_timestamp_units": null,
+        "independent_content_check": null,
+        "license_and_provenance": null,
+        "raw_bytes_sha256": null,
+        "room_02_source_uri": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "real_sensor_factors_authorized": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "explicit_safety_approval": null,
+        "independent_consistency_tests": null,
+        "qualified_native_sensor_models": null,
+        "qualified_noise_covariances": null,
+        "qualified_physical_clock": null,
+        "train_validation_predeclared_gates": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    },
+    "reference_capture_clock_physically_verified": {
+      "independent_validation_sha256": null,
+      "physical_qualification_authorized": false,
+      "required_fields": {
+        "export_timebase_mapping": null,
+        "independent_clock_check": null,
+        "offset_sign_convention": null,
+        "per_sequence_or_global_scope": null,
+        "reference_event_definition": null,
+        "timestamp_epoch_and_unit": null
+      },
+      "source_sha256": null,
+      "source_uri": null,
+      "status": "NO_SOURCE_RECEIVED"
+    }
+  },
+  "intended_split": "train",
+  "schema": "TRUST_ROBOT_R43_EMPTY_EVIDENCE_RECEIPTS_V1",
+  "source_data_present": false
+}

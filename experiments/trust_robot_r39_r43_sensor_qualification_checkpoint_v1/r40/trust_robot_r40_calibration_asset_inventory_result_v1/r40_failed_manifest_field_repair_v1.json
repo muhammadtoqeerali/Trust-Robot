@@ -1,0 +1,13 @@
+{
+  "canonical_frozen_field": "mocap_reference_body_origin_verified",
+  "failure": "KeyError: mocap_body_origin_verified",
+  "field_access_and_output_key_repaired": true,
+  "github_modified": false,
+  "original_failed_source_backup": "r40_inventory_initial_failed_v1.py.saved",
+  "original_source_sha256": "fd016a097316e3c5fc7afa34996223283de82ff50bf27e59f28ecc150a90b8c4",
+  "readable_plan_not_qualified_declaration_enforced": true,
+  "recording_modified": false,
+  "repaired_source_sha256": "90fc89bd141f5811b855b2472e4119ed887f2cb15dfe4482381860a5fd44249f",
+  "schema": "TRUST_ROBOT_R40_CANONICAL_MOCAP_FIELD_REPAIR_V1",
+  "sensor_factor_admission_authorized": false
+}

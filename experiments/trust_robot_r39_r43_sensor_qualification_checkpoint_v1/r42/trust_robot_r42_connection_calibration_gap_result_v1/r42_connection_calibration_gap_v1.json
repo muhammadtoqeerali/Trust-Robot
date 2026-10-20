@@ -1,0 +1,273 @@
+{
+  "ate_rpe_scores": 0,
+  "author_relative_imu_rotation_supported_but_full_extrinsic_verified": false,
+  "camera_info_topic_count": 0,
+  "confirmation_test_accessed": false,
+  "connection_count": 15,
+  "connections": [
+    {
+      "connection_id": 0,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "462e9edb6e5da000f1fc4343ce3dca95b13db0d8abe4bdb31877ffaa59fc3034",
+      "message_type": "sensor_msgs/Imu",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/imu"
+    },
+    {
+      "connection_id": 1,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "ebb309053ea5625a839bf57a405e88626ca759f7d814a7644f444c1ceaf07f66",
+      "message_type": "sensor_msgs/Imu",
+      "physical_calibration_values_qualified": false,
+      "topic": "/handsfree/imu"
+    },
+    {
+      "connection_id": 2,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "9c096e45e12e44702d08e0afcd1325d1e745cb62cc5e651c94b2ce0dffe2db77",
+      "message_type": "sensor_msgs/MagneticField",
+      "physical_calibration_values_qualified": false,
+      "topic": "/handsfree/mag"
+    },
+    {
+      "connection_id": 3,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "6d022f2221ae7fa751d492d1f1e0c25dfa557d2f621d4d4b949ea37714bd46df",
+      "message_type": "sensor_msgs/Image",
+      "physical_calibration_values_qualified": false,
+      "topic": "/thermal_image_raw"
+    },
+    {
+      "connection_id": 4,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/color/image_raw/compressed"
+    },
+    {
+      "connection_id": 5,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/third/image_raw/compressed"
+    },
+    {
+      "connection_id": 6,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "462e9edb6e5da000f1fc4343ce3dca95b13db0d8abe4bdb31877ffaa59fc3034",
+      "message_type": "sensor_msgs/Imu",
+      "physical_calibration_values_qualified": false,
+      "topic": "/dvs/imu"
+    },
+    {
+      "connection_id": 7,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "3b755acf1664d843be9be28631d6208fccb86a0c909078c5de7a024bc92db278",
+      "message_type": "dvs_msgs/EventArray",
+      "physical_calibration_values_qualified": false,
+      "topic": "/dvs/events"
+    },
+    {
+      "connection_id": 8,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/dvs_rendering/compressed"
+    },
+    {
+      "connection_id": 9,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "a4af0bb9b1cfefb988b772d6968cd94beacb0fbb7759a8f691008b12f11c1c12",
+      "message_type": "sensor_msgs/PointCloud2",
+      "physical_calibration_values_qualified": false,
+      "topic": "/velodyne_points"
+    },
+    {
+      "connection_id": 10,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/fifth/image_raw/compressed"
+    },
+    {
+      "connection_id": 11,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/fourth/image_raw/compressed"
+    },
+    {
+      "connection_id": 12,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/sixth/image_raw/compressed"
+    },
+    {
+      "connection_id": 13,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/left/image_raw/compressed"
+    },
+    {
+      "connection_id": 14,
+      "connection_metadata_keys": [
+        "callerid",
+        "latching",
+        "md5sum",
+        "message_definition",
+        "topic",
+        "type"
+      ],
+      "message_definition_sha256": "4bb4e711642b342278e07f22b9c07971273f8405da53a891444dccee8a0f1910",
+      "message_type": "sensor_msgs/CompressedImage",
+      "physical_calibration_values_qualified": false,
+      "topic": "/camera/right/image_raw/compressed"
+    }
+  ],
+  "github_baseline": "df78336320b3b026e448a09d39dfc571f922ae00",
+  "github_modified": false,
+  "health_labels": 0,
+  "interpretation": "The fifteen ROS1 connection types do not expose CameraInfo, TF or mocap reference topics; message definitions and publisher metadata are not physical calibration or capture-clock certification.",
+  "mocap_or_pose_reference_topic_count": 0,
+  "next_phase": "R43_TRAIN_REFERENCE_CALIBRATION_SOURCE_ACQUISITION_PROTOCOL",
+  "qualified_pose_factors": 0,
+  "r40_local_calibration_candidate_count": 10,
+  "r41_frozen_reference_content_matches": 0,
+  "r41_local_reference_candidate_count": 0,
+  "recording_header_and_connection_records_read": true,
+  "reference_mocap_invalid_rotation_count": 90,
+  "schema": "TRUST_ROBOT_R42_TRAIN_ROS_CONNECTION_CALIBRATION_GAP_V1",
+  "sensor_messages_decoded": 0,
+  "sensor_payload_decompressed": false,
+  "source_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "source_sha256": {
+    "calibration_evidence": "dd4d4a8a3424460e93ad8a568499da4d94a537457812ae33f096dd7caef823a2",
+    "r17": "4e904e29f507519e4447642edec55954b672aae2c305ff513bd6aa857c92a5af",
+    "r40": "a7fd21aeacd98ea1f3a1ae505d10c51402e961f1076b462689040416d7af6b97",
+    "r41": "7b92892f3abcc6fa03be525e08f9772d42ed85cabc89c68cdf1466e97925cc22",
+    "reference_semantics": "afbc2c50b0facd9c51af2768aba1a3436b32c9102182a9cb886479714e4b7e2a"
+  },
+  "split": "train",
+  "tf_topic_count": 0,
+  "trajectory_id": "room_02",
+  "unresolved_requirements": {
+    "camera_imu_extrinsics_physically_verified": "NOT_PHYSICALLY_QUALIFIED",
+    "camera_intrinsics_physically_verified": "NOT_PHYSICALLY_QUALIFIED",
+    "camera_lidar_extrinsics_physically_verified": "NOT_PHYSICALLY_QUALIFIED",
+    "cross_sensor_synchronization_physically_verified": "NOT_PHYSICALLY_QUALIFIED",
+    "health_training_authorized": "NOT_PHYSICALLY_QUALIFIED",
+    "m2dgr_ate_rpe_authorized": "NOT_PHYSICALLY_QUALIFIED",
+    "metric_visual_pose_authorized": "NOT_PHYSICALLY_QUALIFIED",
+    "mocap_body_to_lidar_physically_verified": "NOT_PHYSICALLY_QUALIFIED",
+    "raw_reference_available_locally": "NOT_PHYSICALLY_QUALIFIED",
+    "real_sensor_factors_authorized": "NOT_PHYSICALLY_QUALIFIED",
+    "reference_capture_clock_physically_verified": "NOT_PHYSICALLY_QUALIFIED"
+  }
+}

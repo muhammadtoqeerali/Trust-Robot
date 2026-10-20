@@ -1,0 +1,12 @@
+{
+  "confirmation_test_payload_accessed": false,
+  "git_commit_identical_configs": 10,
+  "physical_calibration_qualified": false,
+  "r41_plan_sha256": "838d074bf1e59748c2665d8692c562547ac0061ac214378b601f5fae9da7c954",
+  "r41_report_sha256": "7b92892f3abcc6fa03be525e08f9772d42ed85cabc89c68cdf1466e97925cc22",
+  "raw_bag_opened": false,
+  "real_pose_factors_authorized": false,
+  "reference_candidates_rechecked": 0,
+  "room_02_reference_matches_frozen_sha256": 0,
+  "schema": "TRUST_ROBOT_R41_INDEPENDENT_CANDIDATE_SEMANTICS_V1"
+}
