@@ -1,0 +1,13 @@
+{
+  "action_plan_sha256": "0f1e2f664c6e03b05c3e7cb93055188eee34cb3fc16da8dfd8d4a4c955682dc1",
+  "confirmation_test_used": false,
+  "external_calibration_bytes_sha256_verified_on_kios": false,
+  "github_modified": false,
+  "physical_calibration_admitted": false,
+  "r43_missing_evidence_gate_receipts_verified": 11,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R45_INDEPENDENT_AUTHOR_SOURCE_DISCOVERY_VALIDATION_V1",
+  "source_report_sha256": "5e495326ba36cbc121e3ce4725d7aee565d586ea3472e89ba78a1cf7a7e9fa3e",
+  "upstream_file_content_read_on_kios": false,
+  "upstream_immutable_git_blob_candidates": 4
+}

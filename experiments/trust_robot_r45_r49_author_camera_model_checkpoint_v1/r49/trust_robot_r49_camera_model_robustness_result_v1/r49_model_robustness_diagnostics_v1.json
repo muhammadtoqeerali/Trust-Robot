@@ -1,0 +1,88 @@
+{
+  "angular_effect_degrees": {
+    "ignore_distortion": {
+      "max": 0.6300470360429063,
+      "median": 0.3493953306926576,
+      "min": 0.0
+    },
+    "raw_author_K_wrong_standard_intrinsics": {
+      "max": 37.05570421792145,
+      "median": 32.58911829162636,
+      "min": 20.719346461459402
+    },
+    "synthetic_half_pixel_xy": {
+      "max": 0.06564123521737016,
+      "median": 0.057907853152413334,
+      "min": 0.04649890513557699
+    }
+  },
+  "ate_rpe_scores": 0,
+  "authenticated_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "author_matrix_orientation": "RAW_ROW_MAJOR_K_IS_TRANSPOSED_RELATIVE_TO_STANDARD_PINHOLE_K",
+  "camera_parameters_fx_fy_cx_cy_k1_k2_p1_p2": [
+    617.971050917033,
+    616.44513152479,
+    327.710279392468,
+    253.976983707814,
+    0.148000794688248,
+    -0.217835187249065,
+    0.0,
+    0.0
+  ],
+  "complete_sensor_extrinsics_qualified": false,
+  "confirmation_test_accessed": false,
+  "github_baseline": "17536d0e9a03eb4f0b4adfb5056dc7ba63df9921",
+  "github_modified": false,
+  "grid_points": 64,
+  "health_labels": 0,
+  "health_training_authorized": false,
+  "independent_metric_scale_established": false,
+  "m2dgr_scoring_authorized": false,
+  "max_ray_replay_difference_deg": 0.0,
+  "model": "PINHOLE_RADTAN_K1_K2_P1_P2_K3_ZERO",
+  "next_phase": "R50_GUARDED_R45_R49_GITHUB_CHECKPOINT",
+  "numeric_inverse_verified_against_R48": true,
+  "numeric_simulation_only": true,
+  "physical_calibration_not_established": true,
+  "physical_camera_intrinsics_qualified": false,
+  "physical_capture_time_verified": false,
+  "pose_factors_authorized": false,
+  "qualified_pose_factors": 0,
+  "radial_forward_map_monotonic_on_sampled_domain": true,
+  "radial_jacobian_max": 1.0452356594090553,
+  "radial_jacobian_min": 0.9892214701520838,
+  "raw_bag_reopened": false,
+  "raw_matrix_standard_K_interpretation_is_rejected": true,
+  "raw_sensor_messages_decoded": 0,
+  "schema": "TRUST_ROBOT_R49_TRAIN_CAMERA_MODEL_INTERPRETATION_AND_NOISE_DIAGNOSTICS_V1",
+  "source_recorded_frame_count_dimensions_only": 16,
+  "source_sha256": {
+    "author_calibration_results": "e515207fcf53668953a21a2e4d990643007a3a12ad54b91c456a8ee8a8100a90",
+    "author_camera_yaml": "97d95390c6e2e326323b289040351acfcbd8e3601cb599356547d3863aa2075e",
+    "r46_author_audit": "bea5e79d3a0c64bee224119a75d34c0cf2419dc396636fc25a72f76662a2e517",
+    "r47_recorded_applicability": "db01c05e1efeca555a84e881bf04f48c4fc43d2822ae7b2f4a90cd361c7832a4",
+    "r48_independent": "089913333107bf5b5214f8dae889f46f6943a76e7ca424b706d7379601842590",
+    "r48_numeric_projection": "551d4a799c0c4b25d7667db0e5d8b616e126408d397b8976d030e38e8996bc16"
+  },
+  "split": "train",
+  "synthetic_offsets_px": [
+    [
+      -0.5,
+      -0.5
+    ],
+    [
+      -0.5,
+      0.5
+    ],
+    [
+      0.5,
+      -0.5
+    ],
+    [
+      0.5,
+      0.5
+    ]
+  ],
+  "synthetic_pixel_perturbations": 256,
+  "trajectory_id": "room_02"
+}

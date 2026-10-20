@@ -249,3 +249,9 @@ The frozen archive is `experiments/trust_robot_r39_r43_sensor_qualification_chec
 Never infer complete extrinsics from the partial D435i IMU relative rotation, physical clock alignment from message headers, or ground-truth scoring eligibility from a reference filename. Keep TRAIN/validation/test splits frozen, confirmation_test sealed, bag files out of Git. Real pose factors, health training, ATE/RPE scoring and robot safety actions remain DENIED.
 
 Next R45: physical evidence intake and independent scientific qualification readiness.
+
+## R45–R49 KIOS author calibration and camera-model archive — 2026-10-20
+
+Checkpoint: `experiments/trust_robot_r45_r49_author_camera_model_checkpoint_v1/`, standalone `verify_checkpoint.py`. Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R45_R49_AUTHOR_CAMERA_MODEL_V1.md`.
+
+R45–R49 retain upstream Git-authenticated author parameter content, numeric comparisons, recorded topic/dimension compatibility, synthetic projection and model-robustness results; include original failing R46 independent verifier, targeted repair provenance, and offline author-file transfer evidence. Never promote matching configuration values, synthetically generated rays or small parameter differences to physical intrinsics/extrinsics accuracy, independently verified time synchronization or real robot pose factors. Continue TRAIN-only investigation, keep confirmation_test sealed, bag data off-Git and original split frozen. All eleven R43 missing-physical-evidence gates remain unqualified. Next R51: independent sensor/clock/reference applicability and evidence intake.

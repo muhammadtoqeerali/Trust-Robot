@@ -1,0 +1,82 @@
+{
+  "ate_rpe_scores": 0,
+  "ate_rpe_scoring_authorized": false,
+  "camera_to_imu_physical_alignment_qualified": false,
+  "capture_time_physically_verified": false,
+  "compatibility": {
+    "authentic_color_dimensions": [
+      640,
+      480
+    ],
+    "authentic_color_frames_checked": 16,
+    "authentic_color_pair_count": 8,
+    "camera_config_raw_image_topic": "/camera/color/image_raw",
+    "camera_imu_noise_selection_matches_10x_xsens_author_noise": true,
+    "camera_imu_noise_selection_matches_handsfree_author_noise": false,
+    "camera_imu_observed_header_gap_ms": {
+      "max": 5.052805,
+      "median": 4.9787765,
+      "min": 4.973411
+    },
+    "camera_imu_recorded_frame_id": "camera_imu_optical_frame",
+    "camera_imu_separate_topic_present": true,
+    "camera_intrinsics_image_size_numerically_compatible": true,
+    "camera_intrinsics_sensor_identity_physically_qualified": false,
+    "camera_yaml_selected_imu_topic": "/handsfree/imu",
+    "direct_subscriber_topic_and_type_match": false,
+    "handsfree_observed_header_gap_ms": {
+      "max": 8.654833,
+      "median": 6.909012499999999,
+      "min": 4.853011
+    },
+    "handsfree_recorded_frame_id": "base_link",
+    "image_transport_decompression_adapter_required": true,
+    "lidar_connection_id": 9,
+    "lidar_point_topic_normalized": "/velodyne_points",
+    "lidar_yaml_selected_imu_topic_normalized": "/handsfree/imu",
+    "physical_imu_sample_rate_verified": false,
+    "physical_interstream_clock_offset_verified": false,
+    "recorded_color_connection_id": 4,
+    "recorded_color_frame_id": "camera_color_optical_frame",
+    "recorded_color_message_type": "sensor_msgs/CompressedImage",
+    "recorded_color_topic": "/camera/color/image_raw/compressed"
+  },
+  "confirmation_test_accessed": false,
+  "covariance_model_calibrated": false,
+  "frozen_recorded_sha256": {
+    "r33": "1e74e18205b8429d88632826f1f3c30055165352228a19aefa1064432b2853b1",
+    "r34": "778c223c6c034343413ff848db6276aecdd730390311f178cb918b94ee10064e",
+    "r35": "a0fbf5931833dfecb609f82e27fdd13fa2fc4dbfead8dbb106a99af162698e1e"
+  },
+  "github_baseline": "17536d0e9a03eb4f0b4adfb5056dc7ba63df9921",
+  "github_modified": false,
+  "health_labels": 0,
+  "health_training_authorized": false,
+  "metric_scale_qualified": false,
+  "mocap_reference_qualified": false,
+  "next_phase": "R48_TRAIN_INTRINSIC_MODEL_NUMERIC_PROJECTION_DIAGNOSTICS",
+  "physical_intrinsics_qualified": false,
+  "qualified_pose_factors": 0,
+  "r42_report_sha256": "63df9cf270e634553fd24d305af7aeb77e663101899b9fd7052c79fc8299a22e",
+  "r46_independent_sha256": "d1192e73f15777342f6e12736772209456f0c69e96670fdf812d47ec8e57f763",
+  "r46_report_sha256": "bea5e79d3a0c64bee224119a75d34c0cf2419dc396636fc25a72f76662a2e517",
+  "raw_bag_reopened": false,
+  "raw_sensor_messages_redecoded": 0,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R47_TRAIN_AUTHOR_RECORDER_APPLICABILITY_V1",
+  "scientific_decision": "RECORDING_INTERFACE_COMPATIBILITY_ONLY_NO_PHYSICAL_SENSOR_FACTOR_ADMISSION",
+  "sensor_extrinsics_qualified": false,
+  "source_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "source_git_blobs": {
+    "calibration_results.txt": "f2b1180f9cdef4e665332a09973f9acba9d9d34e",
+    "my_params_camera.yaml": "9c429c28dcfc7bea2e59be5529c79ecf46cdf3c6",
+    "my_params_lidar.yaml": "a768b1a8f8baa5649009c941817a51ff3f3e00e9"
+  },
+  "source_sha256": {
+    "calibration_results.txt": "e515207fcf53668953a21a2e4d990643007a3a12ad54b91c456a8ee8a8100a90",
+    "my_params_camera.yaml": "97d95390c6e2e326323b289040351acfcbd8e3601cb599356547d3863aa2075e",
+    "my_params_lidar.yaml": "95429a4cf76f1b712b2038d8c993530529070fcacd4195c51c750e396bf84bf9"
+  },
+  "split": "train",
+  "trajectory_id": "room_02"
+}

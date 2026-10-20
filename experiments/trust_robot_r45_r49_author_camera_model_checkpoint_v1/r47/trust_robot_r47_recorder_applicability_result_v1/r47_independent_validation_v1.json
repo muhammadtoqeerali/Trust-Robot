@@ -1,0 +1,14 @@
+{
+  "author_git_blob_sources_revalidated": 3,
+  "compressed_image_adapter_required": true,
+  "confirmation_test_used": false,
+  "github_modified": false,
+  "physical_calibration_qualified": false,
+  "plan_sha256": "7118ee0678b14b99def3a6cb0cd6d4694c39b72e32a706e8cf6e6f09681dba91",
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R47_INDEPENDENT_RECORDER_APPLICABILITY_V1",
+  "source_report_sha256": "db01c05e1efeca555a84e881bf04f48c4fc43d2822ae7b2f4a90cd361c7832a4",
+  "verified_color_frames": 16,
+  "verified_connection_topics": 15,
+  "verified_imu_native_frame_streams": 2
+}

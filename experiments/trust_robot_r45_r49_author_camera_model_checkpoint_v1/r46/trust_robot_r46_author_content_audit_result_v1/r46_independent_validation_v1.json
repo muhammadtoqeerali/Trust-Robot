@@ -1,0 +1,13 @@
+{
+  "author_git_blob_files_verified": 3,
+  "confirmation_test_used": false,
+  "github_modified": false,
+  "noise_source_ambiguity_reproduced": true,
+  "physical_calibration_authorized": false,
+  "plan_sha256": "ddca86ab45dbf11f260ef3c5e40e6996e866078bc88b32146914aa559c5b1381",
+  "raw_bag_opened": false,
+  "real_pose_factors_authorized": false,
+  "reparsed_numeric_groups": 6,
+  "schema": "TRUST_ROBOT_R46_INDEPENDENT_AUTHOR_GIT_BLOB_AND_NUMERIC_VALIDATION_V1",
+  "source_report_sha256": "bea5e79d3a0c64bee224119a75d34c0cf2419dc396636fc25a72f76662a2e517"
+}

@@ -6109,3 +6109,13 @@ Existing D435i relative IMU rotation support is partial, not a full 6DoF extrins
 No real 6DoF localization accuracy, calibrated factors, health labels/training, independent ATE/RPE, physical clock calibration or autonomous safety evidence has been established. Original room_02 TRAIN bag stays off-Git; frozen 22/7/7 trajectory membership and confirmation-test isolation remain unchanged.
 
 Next R45: physically traceable source discovery and evidence intake, not premature real sensor fusion or scoring.
+
+## R45–R49 author-published calibration and synthetic camera-model checkpoint — 2026-10-20
+
+Parent GitHub baseline: `17536d0e9a03eb4f0b4adfb5056dc7ba63df9921`. Archive: `experiments/trust_robot_r45_r49_author_camera_model_checkpoint_v1/`. Independent verifier and audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R45_R49_AUTHOR_CAMERA_MODEL_V1.md`.
+
+R45 discovered four immutable official M2DGR source candidates; R46 authenticated three exact author text files by Git blob and independently reproduced numeric camera, LiDAR and IMU parameter comparisons after a targeted repair to the independent section parser. The initial R46 failure and repair remain byte-pinned. R47 bound software topic and frame assumptions to frozen room_02 R33–R35 and R42 diagnostics; recorded camera frames were 640×480 compressed images and distinct IMU streams could not be interchanged. R48 independently verified projection/undistortion for 64 synthetic rays and sensitivity to small parameter changes. R49 independently reproduced distortion omission, author intrinsic-matrix misinterpretation and 256 manufactured half-pixel ray differences. These results are strictly numerical; no physical calibration or real pose accuracy established.
+
+No real sensor factors, physically validated clock/extrinsics/mocap pose reference, health-model training, ATE/RPE scoring or confirmation-test access. The original raw bag remains off-Git; the immutable 22/7/7 split and all eleven R43 scientific evidence gates remain unchanged.
+
+Next R51: independent source applicability and physically traceable clock/extrinsic/reference intake; do not confuse Git source integrity with actual sensor calibration.

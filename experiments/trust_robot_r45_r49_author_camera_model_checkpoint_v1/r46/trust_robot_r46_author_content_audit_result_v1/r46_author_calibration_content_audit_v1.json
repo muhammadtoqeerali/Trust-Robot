@@ -1,0 +1,108 @@
+{
+  "ate_rpe_scores": 0,
+  "bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "calibrated_sensor_factors_authorized": false,
+  "comparisons": {
+    "app_camera_to_imu_translation_m": [
+      0.57711,
+      -0.00012,
+      0.83333
+    ],
+    "author_calibration_document_not_globally_parseable_as_yaml": true,
+    "author_handsfree_to_lidar_translation_m": [
+      -0.27255,
+      0.00053,
+      -0.17954
+    ],
+    "author_realsense_to_lidar_translation_m": [
+      0.30456,
+      0.00065,
+      0.65376
+    ],
+    "camera_config_imu_topic": "/handsfree/imu",
+    "camera_image_topic_setting": "/camera/color/image_raw",
+    "camera_noise_matches_xsens_scaled_10x": true,
+    "camera_noise_to_handsfree_noise_ratios": {
+      "acc_n": 3.401857230014251,
+      "acc_w": 11.980679166168667,
+      "gyr_n": 9.099721254434769,
+      "gyr_w": 25.369339785040662
+    },
+    "handsfree_noise_lidar_config_equal": true,
+    "lidar_point_topic_setting": "velodyne_points",
+    "lidar_to_cam_parameters_match_inverse_handsfree_to_lidar_translation": true,
+    "lidar_to_cam_params_match_inverse_realsense_camera_to_lidar_translation": false,
+    "realsense_distortion_k1_k2_p1_p2": [
+      0.148000794688248,
+      -0.217835187249065,
+      0.0,
+      0.0
+    ],
+    "realsense_distortion_numeric_agreement": true,
+    "realsense_intrinsics_author_storage": "TRANSPOSED_RELATIVE_TO_STANDARD_ROW_MAJOR_K",
+    "realsense_intrinsics_fx_fy_cx_cy": [
+      617.971050917033,
+      616.44513152479,
+      327.710279392468,
+      253.976983707814
+    ],
+    "realsense_intrinsics_numeric_agreement": true,
+    "realsense_resolution": [
+      640,
+      480
+    ],
+    "td_is_default_not_physical_clock_proof": true,
+    "translation_difference_app_minus_author_m": [
+      0.0,
+      -0.00023999999999999998,
+      2.999999999997449e-05
+    ],
+    "translation_difference_norm_m": 0.00024186773244895332,
+    "translation_implied_by_author_sensor_offsets_m": [
+      0.57711,
+      0.00011999999999999999,
+      0.8333
+    ]
+  },
+  "confirmation_test_accessed": false,
+  "github_modified": false,
+  "github_parent": "17536d0e9a03eb4f0b4adfb5056dc7ba63df9921",
+  "health_labels": 0,
+  "health_training_authorized": false,
+  "m2dgr_scoring_authorized": false,
+  "next_phase": "R47_AUTHOR_PARAMETER_SEMANTICS_AND_RECORDER_APPLICABILITY",
+  "physical_calibration_qualified": false,
+  "qualification_gates": {
+    "camera_imu_extrinsics_physically_verified": "NOT_QUALIFIED",
+    "camera_intrinsics_physically_verified": "NOT_QUALIFIED",
+    "camera_lidar_extrinsics_physically_verified": "NOT_QUALIFIED",
+    "cross_sensor_synchronization_physically_verified": "NOT_QUALIFIED",
+    "health_training_authorized": "NOT_QUALIFIED",
+    "m2dgr_ate_rpe_authorized": "NOT_QUALIFIED",
+    "metric_visual_pose_authorized": "NOT_QUALIFIED",
+    "mocap_body_to_lidar_physically_verified": "NOT_QUALIFIED",
+    "raw_reference_available_locally": "NOT_QUALIFIED",
+    "real_sensor_factors_authorized": "NOT_QUALIFIED",
+    "reference_capture_clock_physically_verified": "NOT_QUALIFIED"
+  },
+  "qualified_pose_factors": 0,
+  "raw_bag_opened": false,
+  "schema": "TRUST_ROBOT_R46_GIT_BLOB_AUTHOR_CALIBRATION_CONTENT_AUDIT_V1",
+  "source_content_integrity_not_physical_calibration": true,
+  "source_git_blobs": {
+    "calibration_results.txt": "f2b1180f9cdef4e665332a09973f9acba9d9d34e",
+    "my_params_camera.yaml": "9c429c28dcfc7bea2e59be5529c79ecf46cdf3c6",
+    "my_params_lidar.yaml": "a768b1a8f8baa5649009c941817a51ff3f3e00e9"
+  },
+  "source_sha256": {
+    "calibration_results.txt": "e515207fcf53668953a21a2e4d990643007a3a12ad54b91c456a8ee8a8100a90",
+    "my_params_camera.yaml": "97d95390c6e2e326323b289040351acfcbd8e3601cb599356547d3863aa2075e",
+    "my_params_lidar.yaml": "95429a4cf76f1b712b2038d8c993530529070fcacd4195c51c750e396bf84bf9"
+  },
+  "split": "train",
+  "trajectory_id": "room_02",
+  "transport": "OFFLINE_PASTED_LZW12_SOURCE_CONTENT_NO_KIOS_NETWORK",
+  "upstream_commit": "5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5",
+  "upstream_source_bytes_verified_with_git_sha1": true,
+  "upstream_sources_acquired_as_off_git_text_files": 3
+}

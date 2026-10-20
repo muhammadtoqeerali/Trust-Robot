@@ -1,0 +1,18 @@
+{
+  "error_location": "r46_independent.py section()",
+  "github_modified": false,
+  "original_error": "IndexError: list index out of range",
+  "original_failed_reader": "r46_independent_initial_failed_v1.py.saved",
+  "original_failed_reader_sha256": "777ae6a4815c8888b1584e8a31a9bd6adc1bd96ae50803c1f162b303652bbed5",
+  "original_failure_preserved": true,
+  "physical_calibration_qualified": false,
+  "pose_factors_authorized": false,
+  "preserved_plan_sha256": "ddca86ab45dbf11f260ef3c5e40e6996e866078bc88b32146914aa559c5b1381",
+  "preserved_primary_report_sha256": "bea5e79d3a0c64bee224119a75d34c0cf2419dc396636fc25a72f76662a2e517",
+  "repair": "Skip empty section elements before accessing splitlines()[0]",
+  "repaired_reader_sha256": "83b80792f0a48be4773b08a60e42be7ba05024ed0903f1d0ccc86043687de76a",
+  "root_cause": "Initial empty element returned by re.split on leading %%",
+  "schema": "TRUST_ROBOT_R46_INDEPENDENT_EMPTY_SECTION_REPAIR_V1",
+  "sensor_payload_reprocessed": false,
+  "source_calibration_values_modified": false
+}
