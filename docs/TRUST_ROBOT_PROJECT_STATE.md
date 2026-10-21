@@ -6143,3 +6143,24 @@ Frozen split SHA256: `017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c05410
 All eleven physical-evidence gates stay CLOSED; real factor admission, health
 training and reference scoring remain DENIED. Next: authorized source access
 and independently verified frame/time/reference semantics before any scoring.
+
+## KIOS R59–R61 author-source identity and quarantine checkpoint — 2026-10-21
+
+R59 authenticated the exact author M2DGR README Git blob and its single
+`room_02` published GT link, **not** actual ground-truth bytes. R60 preserved
+an independently reviewed author GitHub issue/request DRAFT, NOT SENT.
+R61 evaluated bounded offline GT quarantine: synthetic-positive allowed only
+as unverified, 10 negative controls rejected, official GT staging ABSENT.
+R62/R62A archived 17 exact SHA256-pinned R59–R61 artifacts and preserved the
+original R62 one-nibble checksum typo and its targeted repair off Git.
+R63 independently rejected five disposable-copy archive tamper challenges and
+replayed five offline synthetic/independent validators. The off-Git replay
+receipt SHA256 is `48d1ec9997bfb1fc07f8995193209b8db88187f47b0960f442d772ee10217766`.
+
+Checkpoint: `experiments/trust_robot_r59_r61_author_source_quarantine_checkpoint_v1/`;
+audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R59_R61_AUTHOR_SOURCE_QUARANTINE_V1.md`.
+Reference acquisition and physical clock/frame/calibration remain blocked;
+all 11 R43 science gates CLOSED. No real sensor factors, health training,
+ATE/RPE scoring, rosbag or confirmation_test access. Next scientific step:
+author-authorized GT bytes or authoritative response; never invent GT from the
+public link or repeat denied SharePoint fetches.

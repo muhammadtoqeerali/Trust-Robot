@@ -1,0 +1,39 @@
+{
+  "ate_rpe_authorized": false,
+  "authenticated_author_readme": true,
+  "author_communication_sent_by_this_phase": false,
+  "candidate": {
+    "bytes": null,
+    "historical_digest_match": null,
+    "observed_sha256": null,
+    "status": "ABSENT"
+  },
+  "candidate_path": "/home/kios/TRUST_ROBOT_ALI/manual_official_gt_staging_v1/room_02_official_gt_candidate.txt",
+  "clock_frame_pose_semantics_qualified": false,
+  "confirmation_test_accessed": false,
+  "git_baseline": "a800ca91326a51fa0cc86972bed08e99b6b459e5",
+  "git_modified": false,
+  "health_training_authorized": false,
+  "historical_expected_digest_only": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "official_ground_truth_independently_authenticated": false,
+  "quarantine_only_not_gt_ingestion": true,
+  "raw_bag_opened": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R61_READ_ONLY_GT_QUARANTINE_V1",
+  "science_gates_opened": 0,
+  "scientific_gates_closed": [
+    "camera_imu_extrinsics_physically_verified",
+    "camera_intrinsics_physically_verified",
+    "camera_lidar_extrinsics_physically_verified",
+    "cross_sensor_synchronization_physically_verified",
+    "health_training_authorized",
+    "m2dgr_ate_rpe_authorized",
+    "metric_visual_pose_authorized",
+    "mocap_body_to_lidar_physically_verified",
+    "raw_reference_available_locally",
+    "real_sensor_factors_authorized",
+    "reference_capture_clock_physically_verified"
+  ],
+  "split": "train",
+  "trajectory": "room_02"
+}

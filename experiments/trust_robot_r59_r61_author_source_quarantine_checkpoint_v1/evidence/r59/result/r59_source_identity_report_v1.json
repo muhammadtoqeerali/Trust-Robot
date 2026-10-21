@@ -1,0 +1,49 @@
+{
+  "ate_rpe_authorized": false,
+  "author_commit": "5db59c1fe38d8f1d2fb3a71f1f8c5581b8de00e5",
+  "confirmation_test_accessed": false,
+  "expected_author_git_blob_sha1": "c394994a8431426c0bd4b3dcf618faf7b97d119f",
+  "github_modified": false,
+  "gt_link_from_frozen_inventory": "https://sjtueducn-my.sharepoint.com/:t:/g/personal/594666_sjtu_edu_cn/ES-9QFWKEeBNqxyMv5dJe7EB5YxfTzi8v3x2Hf1aLObnAg?e=ifwPHL",
+  "health_training_authorized": false,
+  "historical_expected_gt_sha256_NOT_MATCHED_TO_CURRENT_FILE": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "manual_stage_status": "ABSENT_AT_EXACT_APPROVED_STAGING_PATH",
+  "next": "TARGETED_GT_BYTE_AUDIT_ONLY_IF_AUTHORIZED_FILE_IS_STAGED_OTHERWISE_HUMAN_AUTHOR_ACCESS_REQUEST",
+  "official_gt_bytes_acquired_in_r59": false,
+  "original_r55_http_302_attempts": 2,
+  "physical_frame_clock_qualified": false,
+  "public_github_attempts": [
+    {
+      "method": "GITHUB_RAW_COMMIT",
+      "result": "VERIFIED_AUTHOR_README_GIT_BLOB"
+    }
+  ],
+  "publication_baseline": "a800ca91326a51fa0cc86972bed08e99b6b459e5",
+  "r43_gate_count_closed": 11,
+  "r43_gates_closed": [
+    "camera_imu_extrinsics_physically_verified",
+    "camera_intrinsics_physically_verified",
+    "camera_lidar_extrinsics_physically_verified",
+    "cross_sensor_synchronization_physically_verified",
+    "health_training_authorized",
+    "m2dgr_ate_rpe_authorized",
+    "metric_visual_pose_authorized",
+    "mocap_body_to_lidar_physically_verified",
+    "raw_reference_available_locally",
+    "real_sensor_factors_authorized",
+    "reference_capture_clock_physically_verified"
+  ],
+  "raw_bag_opened": false,
+  "readme_retrieval_method": "GITHUB_RAW_COMMIT",
+  "readme_verified": true,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R59_AUTHOR_README_IDENTITY_V1",
+  "sharepoint_gt_requests_made_in_r59": 0,
+  "split": "train",
+  "trajectory": "room_02",
+  "verified_readme_details": {
+    "git_blob_sha1": "c394994a8431426c0bd4b3dcf618faf7b97d119f",
+    "readme_sha256": "dc901f5c46ba30f0c712ee53eb3ffaf6da38ac005c4294c17077d14bc61f36f4",
+    "row": "room_02|2021-07-30|15.2g|75s|room,bright|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EaVK6tu2gs5NnOpAhhWrTPEBK_cpPGiq_1vDXET2GTCeNQ?e=2QpXCE)|[GT](https://sjtueducn-my.sharepoint.com/:t:/g/personal/594666_sjtu_edu_cn/ES-9QFWKEeBNqxyMv5dJe7EB5YxfTzi8v3x2Hf1aLObnAg?e=ifwPHL)"
+  }
+}
