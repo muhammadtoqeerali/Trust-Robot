@@ -6216,3 +6216,21 @@ GT or bag, no confirmation_test, no real factors, health training or ATE/RPE.
 Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R70_R74_SOURCE_ADMISSIBILITY_V1.md`. Next: seek original physical recording/calibration
 receipts and design a prospectively declared protocol; never infer physical
 clock agreement from numeric sampling rate.
+
+## KIOS R76–R78 physical source intake and runtime denial checkpoint — 2026-10-21
+
+Parent commit `c1f59bb5e38bdfece14798031c0d911441b28de8`. R76 created 11-claim/5-timing-receipt format-only
+evidence intake, with 12 rejected negative controls and an UNSENT author
+physical-evidence request. R77 tested format-only candidates against both
+existing M2DGR real-factor admission gates (8 new tests and 30 existing
+regressions). R78 hard-denied real execution for 11 forged complete
+author-like candidates, with 9 new tests, prior regressions, SHA-pinned
+lineage and independent receipt. Archive: `experiments/trust_robot_r76_r78_physical_intake_runtime_checkpoint_v1/`, including 15
+SHA-pinned code, tests and derived results; see `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R76_R78_INTAKE_RUNTIME_GATE_V1.md`. This does not
+qualify mocap-body origin, mocap-to-LiDAR SE(3), GT export event/timebase,
+clock offset/drift or a rotation-repair policy. The recovered room_02 GT
+is preserved off Git; historical R43 no-source receipts are immutable and
+not assertions of current GT availability. All 11 scientific gates CLOSED;
+no real factors, health training, ATE/RPE, raw bags, confirmation_test or
+author request transmission. Next: obtain authoritative physical receipts
+and independently validate them; no synthetic input grants authorization.

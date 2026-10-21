@@ -1,0 +1,11 @@
+{
+  "confirmation_test_accessed": false,
+  "health_training_authorized": false,
+  "physical_qualification_granted": false,
+  "primary_sha256": "ea36b5aab3360d12edf71f1ecae3ddfbf76d2a489caa9584073821c94fb1e24e",
+  "r76_r77_source_lineage_verified": true,
+  "real_sensor_factor_authorized": false,
+  "schema": "TRUST_ROBOT_R78_INDEPENDENT_RUNTIME_BOUNDARY_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS"
+}

@@ -1,0 +1,40 @@
+{
+  "ate_rpe_authorized": false,
+  "author_request_sent": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "f1a348e1668cfbe6458e7aed94c0744f614371f119357ae284aa235cc8ba4197",
+    "verify_checkpoint.py": "2c49f469c3ef134e4fc948c5841cff1f25b5953bbbf71ab14badba20d20ec7ef"
+  },
+  "original_gt_archived": false,
+  "parent_commit": "c1f59bb5e38bdfece14798031c0d911441b28de8",
+  "physical_clock_qualified": false,
+  "physical_frame_qualified": false,
+  "private_verona_reports_archived": false,
+  "r43_historical_unfilled": 11,
+  "r53_historical_unfilled": 5,
+  "real_pose_factors_authorized": false,
+  "rosbags_archived": false,
+  "schema": "TRUST_ROBOT_R76_R78_PHYSICAL_INTAKE_RUNTIME_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 15,
+  "source_sha256": {
+    "evidence/r76/dev/r76_intake.py": "db8db10193f589cdef290397d433e7af94a8e9eddbcc9b01382ce245d223830d",
+    "evidence/r76/dev/test_r76.py": "36ef8e10af9d2b8089c12f13f5b0d42ee2153616312f7f36f4352afd0d9c4ed3",
+    "evidence/r76/result/r76_author_physical_evidence_request_DRAFT_NOT_SENT.md": "c43d041d7f98287d5458a6c1f38d6f2f869eb9e52d122795d278d22ba53ac83a",
+    "evidence/r76/result/r76_independent_validation_v1.json": "5c244e64cfb9e891196ad70cc2a5cca10fb8a50914708bd1889d44417e84d311",
+    "evidence/r76/result/r76_source_intake_contract_v1.json": "c3d18535c4b622620c35aad4e839f89793d4eb3b1fbddf4828ee8103144f8be6",
+    "evidence/r77/dev/r77_bridge.py": "9a010207a7ed8a5c61a8427ee2dd4ecc9fca6fe01dfd4aa0d3629f8c462d6dde",
+    "evidence/r77/dev/r77_independent.py": "1857d40435524f5c417e1fc07aa2ef53a50e4ed7af8034358cd71e0deb592658",
+    "evidence/r77/dev/test_r77.py": "5e40b7a42646fbafbe6e4d974523350e9877349864f54d06778890061dfa8971",
+    "evidence/r77/result/r77_independent_validation_v1.json": "778d609c3be64c2526d5b155d3c264bf41d4ef9d2a92c6a48500eece79a8d13a",
+    "evidence/r77/result/r77_intake_sensor_factor_boundary_v1.json": "3bf5764305f10d68a3d3c43f6b371d4338337cebf483d4b2599dbdcd261ae75c",
+    "evidence/r78/dev/r78_independent.py": "13384e665a16cb7397cfb331f0918d16fd15a3e6a4e19711553c34e248add5f8",
+    "evidence/r78/dev/r78_runtime_boundary.py": "9f02894b0c372fc3d01446bacc8aa7cb26bb7647a59d9361da72bb263d896ae6",
+    "evidence/r78/dev/test_r78.py": "acea29e1d6baaccc1337e4f5c0eea4bd59a428563911df117725650aa512d0db",
+    "evidence/r78/result/r78_independent_validation_v1.json": "630891a0e74fedb81fd759f123957a4dad15980d4d8eb58af3b85e2e5e836887",
+    "evidence/r78/result/r78_runtime_boundary_decision_v1.json": "ea36b5aab3360d12edf71f1ecae3ddfbf76d2a489caa9584073821c94fb1e24e"
+  }
+}

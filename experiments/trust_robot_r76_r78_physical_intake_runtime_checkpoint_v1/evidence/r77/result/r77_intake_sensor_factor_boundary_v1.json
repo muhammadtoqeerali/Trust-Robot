@@ -1,0 +1,43 @@
+{
+  "apparently_filled_author_candidate_admitted": false,
+  "ate_rpe_authorized": false,
+  "candidate_claim_names": [
+    "camera_imu_extrinsics_physically_verified",
+    "camera_intrinsics_physically_verified",
+    "camera_lidar_extrinsics_physically_verified",
+    "cross_sensor_synchronization_physically_verified",
+    "health_training_authorized",
+    "m2dgr_ate_rpe_authorized",
+    "metric_visual_pose_authorized",
+    "mocap_body_to_lidar_physically_verified",
+    "raw_reference_available_locally",
+    "real_sensor_factors_authorized",
+    "reference_capture_clock_physically_verified"
+  ],
+  "confirmation_test_accessed": false,
+  "frozen_inputs_sha256": {
+    "r43": "260f799a3d1494052416ba83652c6de79165ba2b29e7b28f9cd14bfd6c5bc622",
+    "r53": "f4e2d70c8e39d88ee3d6df62c0e7998488dc900398cdc8bd41733b7c1b9548f2",
+    "r74": "22b02194a8899a263484a90e30afd3f95a3fb45d2ccdd7dec8bb8908d59fc98b"
+  },
+  "git_baseline": "c1f59bb5e38bdfece14798031c0d911441b28de8",
+  "gt_recovery_status_preserved": true,
+  "health_training_authorized": false,
+  "historical_gates_checked": 11,
+  "historical_timing_receipts_checked": 5,
+  "m2dgr_sensor_admission_gate_rejected": true,
+  "multimodal_recorded_factor_gate_rejected": true,
+  "new_physical_evidence_received": false,
+  "physical_clock_qualified": false,
+  "physical_frame_qualified": false,
+  "r76_contract_sha256": "c3d18535c4b622620c35aad4e839f89793d4eb3b1fbddf4828ee8103144f8be6",
+  "r76_independent_validation_sha256": "5c244e64cfb9e891196ad70cc2a5cca10fb8a50914708bd1889d44417e84d311",
+  "raw_gt_or_rosbag_opened": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R77_INTAKE_SENSOR_FACTOR_GATE_BRIDGE_V1",
+  "scientific_gates_closed": 11,
+  "split": "train",
+  "status": "PASS_SOFTWARE_ONLY",
+  "synthetic_claim_shapes_validated": 11,
+  "trajectory": "room_02"
+}

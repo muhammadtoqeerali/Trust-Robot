@@ -1,0 +1,12 @@
+{
+  "confirmation_test_accessed": false,
+  "existing_sensor_factor_gates_remained_closed": true,
+  "historical_gate_replay": true,
+  "physical_sources_qualified": 0,
+  "primary_result_sha256": "3bf5764305f10d68a3d3c43f6b371d4338337cebf483d4b2599dbdcd261ae75c",
+  "r76_lineage_verified": true,
+  "raw_gt_or_rosbag_opened": false,
+  "schema": "TRUST_ROBOT_R77_INDEPENDENT_GATE_BRIDGE_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS"
+}

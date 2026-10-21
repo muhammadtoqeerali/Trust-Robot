@@ -1,0 +1,12 @@
+{
+  "contract_sha256": "c3d18535c4b622620c35aad4e839f89793d4eb3b1fbddf4828ee8103144f8be6",
+  "historical_gates": 11,
+  "negative_tests_rejected": 12,
+  "new_authorizations": 0,
+  "schema": "TRUST_ROBOT_R76_INDEPENDENT_PHYSICAL_INTAKE_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "source_request_sent": false,
+  "status": "PASS",
+  "synthetic_candidate_is_not_physical_proof": true,
+  "timing_receipts": 5
+}
