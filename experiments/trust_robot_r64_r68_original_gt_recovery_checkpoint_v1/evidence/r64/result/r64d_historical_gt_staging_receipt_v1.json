@@ -1,0 +1,30 @@
+{
+  "ate_rpe_scoring_authorized": false,
+  "author_confirmed_checksum": false,
+  "confirmation_test_accessed": false,
+  "final_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "final_staging_path": "/home/kios/TRUST_ROBOT_ALI/manual_official_gt_staging_v1/room_02_official_gt_candidate.txt",
+  "git_modified": false,
+  "gt_bytes_available_locally": true,
+  "health_training_authorized": false,
+  "historical_project_checksum_matched": true,
+  "invalid_rotations_resolved": false,
+  "new_author_download_required": false,
+  "original_verona_dataset_modified": false,
+  "pose_factors_authorized": false,
+  "raw_bag_accessed": false,
+  "recovery_chain": [
+    "Original M2DGR dataset on Verona",
+    "Verified Windows handoff",
+    "Verified KIOS temporary copy",
+    "Private KIOS final staging"
+  ],
+  "reference_clock_qualified": false,
+  "reference_frame_qualified": false,
+  "reference_pose_format_validated": false,
+  "schema": "TRUST_ROBOT_R64D_HISTORICAL_GT_STAGING_V1",
+  "scientific_gates_closed": 11,
+  "size_bytes": 504403,
+  "split": "train",
+  "trajectory": "room_02"
+}

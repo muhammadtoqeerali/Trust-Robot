@@ -1,0 +1,13 @@
+{
+  "all_scientific_gates_closed": true,
+  "candidate_nonfinite_quaternions": 0,
+  "candidate_nonunit_gt_0p01": 90,
+  "candidate_zero_norm_quaternions": 0,
+  "eight_column_rows": 3831,
+  "historical_invalid_rotations": 90,
+  "historical_rotation_rule_reproduced": false,
+  "numeric_rows": 3831,
+  "schema": "TRUST_ROBOT_R65_INDEPENDENT_DIRECT_GT_REPLAY_V1",
+  "source_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "status": "PASS"
+}

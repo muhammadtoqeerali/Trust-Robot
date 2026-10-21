@@ -1,0 +1,11 @@
+{
+  "historical_content_sha256_exact_match": true,
+  "historical_file_sha256_exact_match": true,
+  "invalid_rotation_indices_independently_verified": 90,
+  "invalid_rotation_runs_independently_verified": 61,
+  "physical_semantics_qualified": false,
+  "real_pose_factors_health_or_scoring_authorized": false,
+  "schema": "TRUST_ROBOT_R67_INDEPENDENT_HISTORICAL_QUALITY_REPLAY_V1",
+  "scientific_gates_opened": 0,
+  "status": "PASS"
+}

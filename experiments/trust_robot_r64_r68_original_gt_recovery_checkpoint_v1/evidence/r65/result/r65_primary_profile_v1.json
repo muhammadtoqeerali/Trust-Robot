@@ -1,0 +1,53 @@
+{
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "current_profile": {
+    "blank_lines": 0,
+    "comment_lines": 0,
+    "eight_column_diagnostics_only": {
+      "candidate_last_four_deviation_gt_1e_1": 90,
+      "candidate_last_four_deviation_gt_1e_2": 90,
+      "candidate_last_four_deviation_gt_1e_3": 90,
+      "candidate_last_four_nonfinite": 0,
+      "candidate_last_four_zero_norm": 0,
+      "candidate_translation_nonfinite": 0,
+      "eight_column_rows": 3831,
+      "quaternion_order_verified": false,
+      "rotation_frame_verified": false
+    },
+    "first_column_decreasing_steps": 0,
+    "first_column_duplicate_steps": 0,
+    "first_column_finite_values": 3831,
+    "first_column_is_verified_physical_time": false,
+    "first_column_max": 1627643815.8973446,
+    "first_column_median_positive_delta": 0.019977211952209473,
+    "first_column_min": 1627643738.0771835,
+    "first_column_nonfinite": 0,
+    "first_column_span": 77.82016110420227,
+    "nonnumeric_lines": 0,
+    "numeric_row_count": 3831,
+    "numeric_width_histogram": {
+      "8": 3831
+    },
+    "raw_line_count": 3831
+  },
+  "format_semantics_author_confirmed": false,
+  "github_modified": false,
+  "health_training_authorized": false,
+  "historical_reference_source": "mocap",
+  "historical_rotation_invalid_count": 90,
+  "mocap_body_to_lidar_transform_verified": false,
+  "original_gt_modified": false,
+  "physical_calibration_verified": false,
+  "prior_90_samples_reclassified_as_valid": false,
+  "raw_rosbag_opened": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R65_RAW_GT_NUMERICAL_STRUCTURE_V1",
+  "scientific_gates_closed": 11,
+  "sensor_to_reference_clock_mapping_verified": false,
+  "source_bytes": 504403,
+  "source_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "split": "train",
+  "timestamp_physical_event_verified": false,
+  "trajectory": "room_02"
+}

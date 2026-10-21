@@ -1,0 +1,382 @@
+{
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "exact_historical_invalid_index_artifact_compared": false,
+  "git_modified": false,
+  "gt_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "health_training_authorized": false,
+  "historical_reference_invalid_count": 90,
+  "invalid_run_count": 61,
+  "invalid_sample_index_runs_0_based": [
+    [
+      160,
+      161
+    ],
+    [
+      180,
+      180
+    ],
+    [
+      273,
+      275
+    ],
+    [
+      293,
+      293
+    ],
+    [
+      296,
+      297
+    ],
+    [
+      319,
+      321
+    ],
+    [
+      339,
+      339
+    ],
+    [
+      387,
+      388
+    ],
+    [
+      394,
+      394
+    ],
+    [
+      412,
+      412
+    ],
+    [
+      429,
+      429
+    ],
+    [
+      608,
+      608
+    ],
+    [
+      614,
+      614
+    ],
+    [
+      761,
+      762
+    ],
+    [
+      776,
+      777
+    ],
+    [
+      893,
+      894
+    ],
+    [
+      896,
+      896
+    ],
+    [
+      908,
+      908
+    ],
+    [
+      910,
+      912
+    ],
+    [
+      1004,
+      1004
+    ],
+    [
+      1119,
+      1119
+    ],
+    [
+      1137,
+      1137
+    ],
+    [
+      1143,
+      1144
+    ],
+    [
+      1214,
+      1214
+    ],
+    [
+      1399,
+      1399
+    ],
+    [
+      1473,
+      1473
+    ],
+    [
+      1532,
+      1532
+    ],
+    [
+      1623,
+      1624
+    ],
+    [
+      1641,
+      1644
+    ],
+    [
+      1684,
+      1686
+    ],
+    [
+      1789,
+      1789
+    ],
+    [
+      1822,
+      1822
+    ],
+    [
+      1910,
+      1910
+    ],
+    [
+      1920,
+      1920
+    ],
+    [
+      2155,
+      2156
+    ],
+    [
+      2354,
+      2354
+    ],
+    [
+      2599,
+      2600
+    ],
+    [
+      2763,
+      2763
+    ],
+    [
+      2953,
+      2953
+    ],
+    [
+      3028,
+      3028
+    ],
+    [
+      3035,
+      3035
+    ],
+    [
+      3046,
+      3047
+    ],
+    [
+      3062,
+      3062
+    ],
+    [
+      3082,
+      3082
+    ],
+    [
+      3110,
+      3110
+    ],
+    [
+      3115,
+      3115
+    ],
+    [
+      3118,
+      3119
+    ],
+    [
+      3126,
+      3126
+    ],
+    [
+      3146,
+      3146
+    ],
+    [
+      3168,
+      3168
+    ],
+    [
+      3191,
+      3191
+    ],
+    [
+      3193,
+      3193
+    ],
+    [
+      3201,
+      3201
+    ],
+    [
+      3328,
+      3328
+    ],
+    [
+      3352,
+      3352
+    ],
+    [
+      3357,
+      3357
+    ],
+    [
+      3391,
+      3392
+    ],
+    [
+      3394,
+      3395
+    ],
+    [
+      3397,
+      3397
+    ],
+    [
+      3399,
+      3403
+    ],
+    [
+      3416,
+      3416
+    ]
+  ],
+  "maximum_invalid_run_length": 5,
+  "mocap_frame_to_lidar_qualified": false,
+  "original_audit": {
+    "family": "mocap",
+    "invalid_rotation_sample_indices": [
+      160,
+      161,
+      180,
+      273,
+      274,
+      275,
+      293,
+      296,
+      297,
+      319,
+      320,
+      321,
+      339,
+      387,
+      388,
+      394,
+      412,
+      429,
+      608,
+      614,
+      761,
+      762,
+      776,
+      777,
+      893,
+      894,
+      896,
+      908,
+      910,
+      911,
+      912,
+      1004,
+      1119,
+      1137,
+      1143,
+      1144,
+      1214,
+      1399,
+      1473,
+      1532,
+      1623,
+      1624,
+      1641,
+      1642,
+      1643,
+      1644,
+      1684,
+      1685,
+      1686,
+      1789,
+      1822,
+      1910,
+      1920,
+      2155,
+      2156,
+      2354,
+      2599,
+      2600,
+      2763,
+      2953,
+      3028,
+      3035,
+      3046,
+      3047,
+      3062,
+      3082,
+      3110,
+      3115,
+      3118,
+      3119,
+      3126,
+      3146,
+      3168,
+      3191,
+      3193,
+      3201,
+      3328,
+      3352,
+      3357,
+      3391,
+      3392,
+      3394,
+      3395,
+      3397,
+      3399,
+      3400,
+      3401,
+      3402,
+      3403,
+      3416
+    ],
+    "invalid_translation_sample_indices": [],
+    "max_dt_seconds": 0.3314390182495117,
+    "median_dt_seconds": 0.019977211952209473,
+    "min_dt_seconds": 0.0018658638000488281,
+    "qnorm_tolerance": 0.001,
+    "rotation_step_max_deg": 5.337371148578925,
+    "rotation_step_median_deg": 0.1897908568056262,
+    "rotation_step_p95_deg": 0.5499360107659836,
+    "rotation_supported": true,
+    "rotation_valid_count": 3741,
+    "row_count": 3831,
+    "source_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+    "timestamp_end": 1627643815.8973446,
+    "timestamp_start": 1627643738.0771835,
+    "trajectory_id": "room_02",
+    "translation_supported": true,
+    "translation_valid_count": 3831
+  },
+  "original_auditor_relative_path": "src/trust_robot/m2dgr_reference.py",
+  "original_auditor_sha256": "3e32338f45531172bba8bc30b20b5112b3e1c3ba8b69e459a7086d8ac7c5d99a",
+  "original_gt_modified": false,
+  "physical_calibration_qualified": false,
+  "pose_factors_authorized": false,
+  "r65_deviation_gt_0p01_count": 90,
+  "raw_bag_opened": false,
+  "reference_timestamp_semantics_qualified": false,
+  "schema": "TRUST_ROBOT_R66_ORIGINAL_RULE_REPLAY_V1",
+  "scientific_gates_closed": 11,
+  "split": "train",
+  "trajectory": "room_02"
+}

@@ -1,0 +1,11 @@
+{
+  "ate_rpe_authorized": false,
+  "eleven_scientific_gates_remain_closed": true,
+  "health_training_authorized": false,
+  "historical_gate_receipts_unchanged": true,
+  "raw_gt_acquisition_issue_closed_locally": true,
+  "real_pose_factors_authorized": false,
+  "recovered_gt_is_not_physical_calibration": true,
+  "schema": "TRUST_ROBOT_R68_INDEPENDENT_PHYSICAL_GATE_REVIEW_V1",
+  "status": "PASS"
+}

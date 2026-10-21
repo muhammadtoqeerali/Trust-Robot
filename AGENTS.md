@@ -297,3 +297,36 @@ all 11 R43 science gates CLOSED. No real sensor factors, health training,
 ATE/RPE scoring, rosbag or confirmation_test access. Next scientific step:
 author-authorized GT bytes or authoritative response; never invent GT from the
 public link or repeat denied SharePoint fetches.
+
+## R64–R68 original M2DGR GT recovery — 2026-10-21
+
+Original M2DGR data already exists on Verona:
+`/mnt/hdd16T/ToqeerHomeBackup/toqeer/datasets/TRUST_ROBOT/M2DGR/`.
+The Verona project is `~/toqeer/TRUST_ROBOT` (resolved location
+`/mnt/hdd16T/ToqeerHomeBackup/toqeer/TRUST_ROBOT`).
+KIOS active Git checkout: `/home/kios/TRUST_ROBOT_ALI/github_checkout_v15`
+(branch `kios-isaacsim-v15-integration`). Existing TRAIN `room_02.txt` GT
+was securely copied Verona → Windows → KIOS and kept OUTSIDE Git at
+`/home/kios/TRUST_ROBOT_ALI/manual_official_gt_staging_v1/room_02_official_gt_candidate.txt`.
+The 504403-byte copy matches historical GT SHA256 `79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d`.
+This is a project-historical checksum, not a separately author-certified hash.
+No new GT download is necessary.
+
+R65 found 3831 eight-column records, monotonically increasing first-column
+values over 77.82016110420227, and 90 substantial quaternion-norm anomalies.
+R66 original 0.001 quaternion-norm rule and independent replay agree:
+90 invalid rotations in 61 sample-index runs; 3741 structurally valid
+rotations and no structurally invalid translations. R67 reproduced the
+historical Phase-2 quality report byte-for-byte: SHA256 `8b27f25c02d04e838a88eb62980b1f2e94d0e1ed13defd0c6fa0f0b07c6bed49`.
+R68 compared the recovered GT against the immutable original R43 and R53
+receipts. Historical R61 `GT=ABSENT` reflects earlier KIOS staging only,
+not current dataset availability. The revised author inquiry is DRAFT, NOT SENT.
+
+SHA-pinned 22-source-file checkpoint: `experiments/trust_robot_r64_r68_original_gt_recovery_checkpoint_v1/`.
+Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R64_R68_ORIGINAL_GT_RECOVERY_V1.md`. The raw GT is not committed. The 22/7/7 split stays frozen;
+`confirmation_test` remains sealed. All 11 scientific gates remain CLOSED:
+physical mocap tracked-body origin, mocap-body-to-LiDAR SE(3), timestamp
+capture event/timebase and physical cross-sensor clocks are not independently
+qualified. No real pose factors, health training or ATE/RPE scoring.
+Next seek authoritative recording/frame/timing/calibration evidence; do not
+recreate already available GT or infer physical calibration from file shape.
