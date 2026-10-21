@@ -6234,3 +6234,11 @@ not assertions of current GT availability. All 11 scientific gates CLOSED;
 no real factors, health training, ATE/RPE, raw bags, confirmation_test or
 author request transmission. Next: obtain authoritative physical receipts
 and independently validate them; no synthetic input grants authorization.
+
+## R83C — R80–R82 recorded multimodal engineering checkpoint (2026-10-21)
+
+Parent Git revision `aa4c06bdc2eac5cff7352157beef9ec534f2f455`. R80 (KIOS) verified eight separated real TRAIN LiDAR 6-DoF diagnostic pairs and 13 tests. R81 (Verona) implemented a typed read-only adapter, SHA-authenticated and replayed 90,992 recorded LiDAR increments across all 22 frozen TRAIN trajectories (91,014 scans), with 13 synthetic regression tests. R82 (Verona) reused the existing frozen SE3 camera/IMU low-level features and implemented stream-local 256-record descriptive windows over 2,816,957 TRAIN records across 62 source feature files (13 synthetic tests); missing camera/D435i streams remain absent in street_010 and street_09.
+
+The R83A/B transfer delivered eight checksum-verified, sanitized R81/R82 code/report files to KIOS, in addition to four local SHA-verified R80 artifacts. The repository checkpoint archives 13 sources including the transfer manifest, a standalone verifier, and compact reports. Original Phase-2 LiDAR JSONL, SE3 per-record camera/IMU features, 62 R82 window JSONL, GT, ROSbags, private Verona reports, calibration secrets, and confirmation-test data stay off Git. The 22/7/7 split remains frozen. No new physical timing/frame qualification, camera-IMU-LiDAR alignment, real pose factors, health training, calibration or ATE/RPE was authorized; all 11 scientific gates remain CLOSED. Author contact is optional, not a blocker to continued TRAIN-only engineering.
+
+Archive: `experiments/trust_robot_r80_r82_recorded_multimodal_checkpoint_v1/`. Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R80_R82_RECORDED_MULTIMODAL_CHECKPOINT_V1.md`. Next: build a genuinely new, synthetic-testable visual-motion or IMU-preintegration frontend while preserving fail-closed real factor execution, rather than re-extracting already frozen observations.

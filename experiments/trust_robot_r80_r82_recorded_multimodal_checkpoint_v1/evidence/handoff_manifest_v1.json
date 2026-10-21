@@ -1,0 +1,45 @@
+{
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "derived_window_files_included": false,
+  "health_training_authorized": false,
+  "kios_baseline": "aa4c06bdc2eac5cff7352157beef9ec534f2f455",
+  "original_gt_included": false,
+  "original_se3_feature_files_included": false,
+  "r80_kios_expected_sha256": {
+    "r80_independent_validation_v1.json": "35c5e3e452e8a2dd6408a28041522c2c2aa903a36f64f4969f54e68496320bc9",
+    "r80_motion.py": "0b1961349910f882729a81c82a1434b8bd68aa43310206a65470c08b35a7ac41",
+    "r80_recorded_lidar_motion_bridge_v1.json": "c3d755b2ade8a4620e64418065729a60a91d24e16265433787b0568898c5a2ab",
+    "test_r80.py": "46240c484a44e132a13b316544cbeeb77768dbec678fd5cc48688c5387c1e37d"
+  },
+  "r81_train_trajectories": 22,
+  "r81_verified_lidar_increments": 90992,
+  "r82_train_feature_records": 2816957,
+  "r82_verified_window_files_off_git": 62,
+  "raw_rosbags_included": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R83_SANITIZED_R81_R82_TRANSFER_V1",
+  "scientific_gates_closed": 11,
+  "source_bytes": {
+    "r81/dev/r81_adapter.py": 13853,
+    "r81/dev/test_r81.py": 4965,
+    "r81/result/r81_full_train_increment_adapter_v1.json": 9881,
+    "r81/result/r81_independent_validation_v1.json": 704,
+    "r82/dev/r82_temporal.py": 15808,
+    "r82/dev/test_r82.py": 4065,
+    "r82/result/r82_independent_validation_v1.json": 758,
+    "r82/result/r82_temporal_window_manifest_v1.json": 48423
+  },
+  "source_count": 8,
+  "source_private_reports_included": false,
+  "source_sha256": {
+    "r81/dev/r81_adapter.py": "9521b3d69914a5515ec56f2f07108b1a0d30987289f1656d55843f0e558d48ba",
+    "r81/dev/test_r81.py": "56ba6527d2014988d1b5dec46f10c1437cfb859f94a7dc7da67a692b0f806fd0",
+    "r81/result/r81_full_train_increment_adapter_v1.json": "4b21db75053e22cba8eeb276635ed194d260a0c4af725cd50c4cbab63c255510",
+    "r81/result/r81_independent_validation_v1.json": "f1526578bd62fc095bd8c2c730087d4dff98f7577d874e95a8a0ccd0f2623356",
+    "r82/dev/r82_temporal.py": "7adc2a5c2dc3167bebaf6e667c2164ec650556566cd514d9586f703b73575b42",
+    "r82/dev/test_r82.py": "c57fa21937f6c07b444b6091a4ba51988f9a2a9039ecbcea6ee092a0db82d6eb",
+    "r82/result/r82_independent_validation_v1.json": "2ec77018be9f7ad7b64ce01962746af7ec5be84384888cf4dcf5e0b8f672c513",
+    "r82/result/r82_temporal_window_manifest_v1.json": "79e6ba42ef09eb547193abff5416ef7b4adbaacbc47d34adfaee6c23e46e7c23"
+  }
+}

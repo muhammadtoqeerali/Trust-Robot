@@ -1,0 +1,1057 @@
+{
+  "SE3_feature_extraction_rerun": false,
+  "ate_rpe_computed": false,
+  "derived_window_count": 11036,
+  "health_label_or_probability_emitted": false,
+  "new_raw_sensor_processing": false,
+  "per_record_feature_or_timestamp_exported": false,
+  "physical_clock_or_cross_modal_sync_assumed": false,
+  "real_factors_authorized": false,
+  "reference_or_confirmation_accessed": false,
+  "schema": "TRUST_ROBOT_R82_STREAM_LOCAL_TEMPORAL_DIAGNOSTIC_V1",
+  "scientific_gates_closed": 11,
+  "source_R81_result_sha256": "4b21db75053e22cba8eeb276635ed194d260a0c4af725cd50c4cbab63c255510",
+  "source_SE3_run_sha256": "c8eba6d6798ca66a341adc3a872fe53f0268968d903f211b0142e25a3270ad7e",
+  "source_feature_files": 62,
+  "source_feature_records": 2816957,
+  "status": "PASS",
+  "stream_local_temporal_aggregation_only": true,
+  "trajectory_count": 22,
+  "trajectory_summaries": [
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 14,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "7dc1fc8da81216a695b578defda7a11d5f4af83e18f580a5892c393b18169a48",
+          "source_record_count": 3448,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/Circle_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "7b1872ad37f387be2b50db97c986e9db4e8a8d13d182d0fe649df150209d0765"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 173,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "decfa6ee7c296af248ebe1e5e9be0752ce1531e8e68a087f5d56a0a08a6033eb",
+          "source_record_count": 44191,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/Circle_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "431154c7fc951eacb7dacada04d6c58fa6d2813c2d77e35ce908eecfb18741c4"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 129,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "8a0fe3b6cf3ebc4186cabd32412ccc298be185aa9f33d48b44be53ca9e9f9e38",
+          "source_record_count": 33016,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/Circle_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "04a5b8eac34bc47aff449bd582ed515d0525f0a233bbb755c6d3f4d7a6897330"
+        }
+      },
+      "lidar_source_increment_count": 2338,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "Circle_01"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 27,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "01e0a85784f5cbe12a901ea53d3e3ef3c617df10295504c58824c75235ec7f33",
+          "source_record_count": 6823,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/door_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "c1091cd9d8d3ccddbdddb1a8be250af89c0073331105a8fbd480db50e4ff3dc2"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 344,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "23ca987d51be06530139c2539942b416a212b7e14bc43600c36a4640d7abb46c",
+          "source_record_count": 87842,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/door_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "a5a50ebf55b95bf3a787b9fa313bdde21023cf477175194ca931d7c1243d1e7e"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 257,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "3cd6cdde6807a986e4e200dbb2d455bcc98caf67d8d7c4ee2bf30d6adf5e8509",
+          "source_record_count": 65753,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/door_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "0178eafb904cd3b453df22d4a70e58b9401f092a54115f3fc1ff3f42f1dbabed"
+        }
+      },
+      "lidar_source_increment_count": 4605,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "door_01"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 10,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "72cdc1a7189b7d2b8fa7ac0df21e0f54d83282180c34d533114529b9b80665b6",
+          "source_record_count": 2490,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/gate_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "d855ac685c8709d273d953c1ef373c7d41eb83967598e14afee48f2dc632bffd"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 130,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "7ba09dc8c696f44d2a75a6bc693b6f2b88120e1d9e9a094118f7e9c442887d19",
+          "source_record_count": 33224,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/gate_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "4db3565a1336ddda8ce381bbb90fe858916fe06d752bdb1c09dc04ba4ba15f08"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 96,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "b3b538d32137b9f09ff031d60bb8378ad5208885d0eb0c0c2e5aaf85bab95837",
+          "source_record_count": 24545,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/gate_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "928b451fc190fd9e0447e9e77fc87843ff793e4d4f8bfa6227df3c90ec9b31f2"
+        }
+      },
+      "lidar_source_increment_count": 1721,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "gate_01"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 21,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "a5922de3aab3641b2733855e2db2733fe4049c31b9822923041d8db0fcc64617",
+          "source_record_count": 5229,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/hall_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "2592d0a8296a21c9d855d91b48c73312e24b219d52ac7563809703f70b55fe4d"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 267,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "12458dcf61eec370faa877dc2354213fdb6814b0bf7721d0cea3e3abcf809137",
+          "source_record_count": 68150,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/hall_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "18010a3c407ea85c30e5538b0b08e99a2d9f884ff51fe92a2234e7ab90ece18e"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 199,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "ae8156290f62914aa4521a8603eaa4760950fa79751b67e558b0d4fb5581c2d5",
+          "source_record_count": 50731,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/hall_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "1146954fd3d51d4b28aa8bb72c1c0553709b1c1856ff639dfd1a24793cdc8e12"
+        }
+      },
+      "lidar_source_increment_count": 3510,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "hall_01"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 10,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "83a0414f251f72c51268be7b923b09034a48e6e00139af13c34a51857ba86ff4",
+          "source_record_count": 2393,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/hall_03/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "11e5292ec4ea4b4a5e150aa3e8ab99493332498d0e1a204065180efd0a9e12d8"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 124,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "c0b19143e17cb006893e2dbc9e3967d28a07f4d49ce4c3fb5d0734fe87814ffd",
+          "source_record_count": 31602,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/hall_03/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "06ee22f2757eaf86bad59fbb10dc0e2aee169d04b27dd0344aa6c2c395f129ec"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 92,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "8d49f5e5544c17f380ba3baccb175252e9ef0157292746dc0fdb792aa7c6844b",
+          "source_record_count": 23344,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/hall_03/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "5ce4c38bbf3164adc826038fb8511a370b82925f15fc0358bf9beb81a2a05fd5"
+        }
+      },
+      "lidar_source_increment_count": 1644,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "hall_03"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 11,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "f175ac30c54186e0a8f163bc67b5532cc91b78334c26041ca1065cb3a1be6221",
+          "source_record_count": 2712,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/hall_04/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "6dbcccb5c84fdf4562346d2e20a7cbf23f1c3d719532415d5948ab9639e46883"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 136,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "ea3463c03b38cb7174cdb12cae508256bd37107d5057656ef143efbc61f70c28",
+          "source_record_count": 34716,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/hall_04/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "589948bc7e16a73a15adce9a227ce66e10cea83ca8c86446d18ac417030319ba"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 101,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "d13b9e9df0f6b2b3cece2ad6b12e1557c8a3d5ac23c7a3118ae8e0800e2c46ce",
+          "source_record_count": 25796,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/hall_04/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "5228d9a15103f2910654f7f017902aa118d1db6a2348e197792355610ab3b02b"
+        }
+      },
+      "lidar_source_increment_count": 1812,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "hall_04"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 24,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "639a649289440ff1f6761e09e2e0d5e303557e0e65e4fc017009e2e261bf8a41",
+          "source_record_count": 6000,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/hall_05/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "50431ef3533e7615772dcbfce7d14a6ce444c2794226306a5f55f717bd1fe9ef"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 301,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "ce57a3fb7dd35ec377c31f40622e992d949e752a3c856de35aecb90e253a8d5e",
+          "source_record_count": 76911,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/hall_05/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "30bdaa06602fa03a6c8a90266ef502d0b84b0da862c3bfb2878dc01783aba2e4"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 225,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "94a75d4e1a8a1960328176e4a5c1e11ce8198a48a8e719a815f4eee743e61d97",
+          "source_record_count": 57458,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/hall_05/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "5497ddb79e7791f8bb30e44c632e4fd2c93200a60ccd0e57a0a6ccf194e0731d"
+        }
+      },
+      "lidar_source_increment_count": 4016,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "hall_05"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 29,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "e39784c1f346ef25dd346cf62ae1a082914ecfc6db53ad2a9ea732cb8b92f114",
+          "source_record_count": 7255,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/lift_02/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "1727b9eb6e9a61c624c7e6766df0b0fbea67346d343a0f88f4c2a6d06acb52b3"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 372,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "91f04a0d8ae57a12ea812ce523e81f7ba28f861e5369b0da7a317a06a7f9d98e",
+          "source_record_count": 95188,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/lift_02/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "e9c558c59d2f1fa7dd37837a707e2712eb38054fea69b70c9ee85963b6683625"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 279,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "7b44aaf2ac54c33807915691d43d37de8043eb16a8e0dc839364afea87e9d932",
+          "source_record_count": 71401,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/lift_02/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "ebf4b0c4396cd08e8c4664fe6ebebc00e7962566843f1de039dad4ee7ba6e93a"
+        }
+      },
+      "lidar_source_increment_count": 4872,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "lift_02"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 18,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "d0aa8d64b1e7a51e2dbb2bc1472328009e44854f48cdeb422db55800ea14c1bb",
+          "source_record_count": 4440,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/lift_04/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "c173bbb4e5639872d64049bf581d8931e5f4f7861e4dd0ae74d231836aee9121"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 225,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "b3b4ca58ea1f94fc4b913bf295dcd28046a34b0ec828bfa35a8604a9f998183f",
+          "source_record_count": 57457,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/lift_04/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "2596f1bca933eeef795000aaa8be67579a6fe213ed4fba999af02cf264ac9f94"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 168,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "1722da078ece1147909bb0aae41bcfecf9bafd8cd84a9a60a22edc9368448b50",
+          "source_record_count": 42786,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/lift_04/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "67772515c58b2d34c1504c0773becd42d582aef557066f60dd43c39c31400ca0"
+        }
+      },
+      "lidar_source_increment_count": 2985,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "lift_04"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 5,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "12ceaff6bda228b3e899b8ff11695ac197869e3fe3e62b5196698ab83e101090",
+          "source_record_count": 1113,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/room_02/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "a471d221ed454843101953be99dbd5d13619c70f6419b77ffd7e2dcc5c435805"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 55,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "4df914072d0a8cae54115df5b032ed4a064c934e2ed4dcfd8b52d120f59244f5",
+          "source_record_count": 13858,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/room_02/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "4f9bd2824c0241daf789352e36325b0d95cad3061bad3e96531ec78efdeddd16"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 41,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "2ab606ec6a364d76bd948fe8b0ec5c4139ed8d70e9f54216a314a53d604f7a83",
+          "source_record_count": 10426,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/room_02/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "4ed8a9f38064fda689534192b16d4c21cdd7b78863c0f70055b7121f2a1342ca"
+        }
+      },
+      "lidar_source_increment_count": 751,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "room_02"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 7,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "76df599b93427391d48607ad878bc024de34e8141b5435720c88c053d53c1d0e",
+          "source_record_count": 1614,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/room_dark_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "e3705a59a489f179c24705960c9443ab93228978afaf795b727665f6be957c7c"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 82,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "995d1a79e0bf3ae60a8f8f6740c915a08454c6636b54660288915130578148e3",
+          "source_record_count": 20841,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/room_dark_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "27425607fb12fc21af4dec0db266306fa166a19bd009ac047d754262d986bea0"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 61,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "62e47639023896a8e577b52d3ecc7de07da27d3b627bcb65d159751918633451",
+          "source_record_count": 15478,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/room_dark_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "a5fd8173524236f8e89b7d4299e5df2327a551126320ac7343b71d4c9a1a1ef6"
+        }
+      },
+      "lidar_source_increment_count": 1111,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "room_dark_01"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 10,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "cc7cd43db00a3b84fa8f315494d79628696ee23cb93fad03c4ce8d7d44ecf003",
+          "source_record_count": 2404,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/room_dark_02/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "ac06e40e227c186df7ca8b6317633a095b1e09b99fb5d33c553cb885a07fa920"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 120,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "4e0113bcdd76d38d2b753167e719c6a0aefa33e7a8bb129fc71d564db6bc6013",
+          "source_record_count": 30712,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/room_dark_02/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "bedec57996f26c7c4c85855869c09ffc4925117f3d9c6355a7362d2fc05c4651"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 90,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "8ad49b099d64f4986e7159ecfcb9b87dde6fcc404376344b63e330a5a0ff5961",
+          "source_record_count": 22980,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/room_dark_02/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "ca0d11cf88a601b56030b2e386363057bc7ffe8762e2720f0bebc6343c5c54a0"
+        }
+      },
+      "lidar_source_increment_count": 1646,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "room_dark_02"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 7,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "6226fa216c6a7dd01adde98f1d95522e9a3f4748bd8b8004ab13fc890ac71b81",
+          "source_record_count": 1697,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/room_dark_03/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "236c770431ed70c61ec5f0e7b7c1eb708edfd4430a775509f141abf7d2513993"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 85,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "1d1478e205b19e9983a29b36ad7639fe1073d38a74e49b94e2d164259e87e072",
+          "source_record_count": 21508,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/room_dark_03/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "2d1a90631e2421b321ac1bfaf5d85d6f4789c2beae0d18704a81971715042ceb"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 63,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "6a13f0d78c10f0900420b5cb9c7ae60cf69392e331348378c9db67745a3afc84",
+          "source_record_count": 16058,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/room_dark_03/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "48e72c1ed442a3d9a06901b8d22192dd3d7282495bc6e254e8087063f335f646"
+        }
+      },
+      "lidar_source_increment_count": 1158,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "room_dark_03"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 9,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "995a56ac16dd207936873d89d760aebb0c0dba41984745b9bd5572eb3be04629",
+          "source_record_count": 2099,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/room_dark_04/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "9dee342bd221e8f728e3da075d6cee62bd66278c016bd904a23c9e7485b830b5"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 107,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "603164a5142025df5d0c6684d6e6cff58bf4683983b284d5629f7af15a9903ea",
+          "source_record_count": 27268,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/room_dark_04/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "fc73be6acfb407eedfea8f15e4bbfa3d1ab5cc5874324117267d0bc8a5a0e568"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 79,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "c4e52e1292e4e1e182b05ac20cb3235f07bff3e9bbbf5e072f5665bac64b2d93",
+          "source_record_count": 20062,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/room_dark_04/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "66ccf5a6e6c8e09a2fba153e07733e8aba78181dd892271ead3832d012c899b8"
+        }
+      },
+      "lidar_source_increment_count": 1434,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "room_dark_04"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 60,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "57ea4c08f1edc8fe1c7a790b24e284470c78953ac6113aa76c9398dbb2e5bfcb",
+          "source_record_count": 15150,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/street_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "d2d8befbe2d33c8e060419857fbf3867cc621f740441843116f2f7bb616434f1"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 771,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "dc8cb6df470137e36ecac70deb4fa3f8f9f2e8897f5b2f29a343a3fe7aae485d",
+          "source_record_count": 197189,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/street_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "934021b5b44e68e876206e34126fd2e820794c92bc39568a1efc5e8e743836f4"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 576,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "8140d7ae5d5f744e538dd06f4c3990c81aff6d71934a5f5dd93001c4919f3b86",
+          "source_record_count": 147357,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "2e786c397b69f243a493b78a5522379c8c5b46114a210d6dc72358dbfc5757f1"
+        }
+      },
+      "lidar_source_increment_count": 10269,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_01"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_absent",
+          "derived_window_count": 0,
+          "source_record_count": 0,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": null,
+          "window_file_sha256": null
+        },
+        "/camera/imu": {
+          "availability": "observed_absent",
+          "derived_window_count": 0,
+          "source_record_count": 0,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": null,
+          "window_file_sha256": null
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 505,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "ef6217960bba4b890815a6c8a9075365629aa65a72c06646688816fef5129662",
+          "source_record_count": 129117,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_010/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "34ed1bdad9ccbe22f0aab93639e93616716a93bafbb45d669f8406255a24e52f"
+        }
+      },
+      "lidar_source_increment_count": 9086,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_010"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 21,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "d481065cdb61c1362099a4c1f9900e50a6ddf97534ae7bbd73749f111a0393ac",
+          "source_record_count": 5231,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/street_03/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "ff1b6c22f4de318db12926abf93b695fc9e6061b757c054ca6824d7521885671"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 268,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "9316c46bc49a22fc03e96ba03d3c9ec34677dc9235da6ce5b430e25b3eca2c4f",
+          "source_record_count": 68389,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/street_03/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "22ec5e22f4ba5e2c72252f2f5caf40714b928042e543c67488050a35cd9522b8"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 201,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "297bf05026a71472ef882fb80949874cc93587d2d22728815aa9354cf90e3b75",
+          "source_record_count": 51305,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_03/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "82737b517f5ea5b7716b29dc6f605bd6a4d308bfc5b3f875ab205fdc8925c852"
+        }
+      },
+      "lidar_source_increment_count": 3534,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_03"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 51,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "ba78224065c5eb30c41919e21d561858d63be44b9b6d8bc60a313d9460e73b5d",
+          "source_record_count": 12837,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/street_04/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "a4b4740e2fb6456e28a48daa7cf72d3d0d55f4ac8fb228057b1b46e9617bc73e"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 672,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "2c4d19a43e7de1673fc35713b981a2ed1bfcdcc6df7d9733f82f2d8dca91385a",
+          "source_record_count": 172025,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/street_04/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "885776904db7c82c7ccc97fa67248b22b784218103e8b2616af668e5e708583b"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 491,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "db22239987d51de542f03208104fcfa58afb5bf9eb9eaf9b522a472c0ddd9a4d",
+          "source_record_count": 125650,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_04/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "dc9a0ba8aae21a6f95f15f7725523c397db77b1c4752610262b8b3974f8015ac"
+        }
+      },
+      "lidar_source_increment_count": 8567,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_04"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 28,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "305c6683f5b1b61875351689252ed8a984b9dcaa6a99e0894a523b3fed9c49be",
+          "source_record_count": 6964,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/street_05/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "5e008d197c35c746d74fa101c0881c4ca2cd36b68c1125adf8cbd06065f15059"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 353,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "b5851d6eda5a60ae4096d96959ef9105cd421608e6c8155bb39bbf8cbb3fe988",
+          "source_record_count": 90336,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/street_05/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "2443b88017966b3098cb8cf7a10bcbee748717665bfdd4a7cc1281e520028080"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 266,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "aa2fe46270e6e5860017ed856ba4dc0c2f44c9a13ffff4879dc02b29a66b01f7",
+          "source_record_count": 67849,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_05/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "3bfad31e133167c3b821981751bd6d83e2d415faa921e3f78bcc6943929410b6"
+        }
+      },
+      "lidar_source_increment_count": 4686,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_05"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 53,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "1f4757a301f3a56649bedb0bf71cf35c4622d9887db7d443c957d9261338d3a9",
+          "source_record_count": 13443,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/street_07/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "552333b27fdcba81044ee57170a9fb2c2c321a4b7e143f20630b526fb8442ec4"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 693,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "d2ecd0d712f4ba65c00f72dfd193d3ef61a8afd9f58c417b13bf8cb708182f94",
+          "source_record_count": 177240,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/street_07/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "ce45fedf9ab7255862207a9a746d336bd5ed16f4ebd2843719e8fcf7b86c33bc"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 518,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "6ccd0827b42b1aa7344f702241bb39870b81f47725cab297b759c8fbaab7abe0",
+          "source_record_count": 132410,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_07/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "f14efd6910f2885c297dfd9a8a32699b3938f0e937b6e4b084a8db54e6334c57"
+        }
+      },
+      "lidar_source_increment_count": 9275,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_07"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_absent",
+          "derived_window_count": 0,
+          "source_record_count": 0,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": null,
+          "window_file_sha256": null
+        },
+        "/camera/imu": {
+          "availability": "observed_absent",
+          "derived_window_count": 0,
+          "source_record_count": 0,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": null,
+          "window_file_sha256": null
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 504,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "755e4e83e827f458c6b9c05eec0fd453bcbf56720d5c5bb675ffc24e92ac1cb0",
+          "source_record_count": 128787,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/street_09/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "e9ef8bd5c112a4f80732dd704d71474a335a3a18ac000a15d61d1ffc9a57610a"
+        }
+      },
+      "lidar_source_increment_count": 9059,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "street_09"
+    },
+    {
+      "camera_imu_streams": {
+        "/camera/color/image_raw/compressed": {
+          "availability": "observed_present",
+          "derived_window_count": 17,
+          "feature_names": [
+            "gray_mean_intensity_8bit",
+            "gray_std_intensity_8bit",
+            "gray_mean_abs_neighbor_difference_8bit"
+          ],
+          "source_feature_file_sha256": "4b1c5303948b5a48014881ea53a4e131512de584be01c3914fefab77c981b6d5",
+          "source_record_count": 4333,
+          "source_stream_id": "/camera/color/image_raw/compressed",
+          "window_file_relative_path": "windows/walk_01/camera_color_image_raw_compressed.jsonl.windows.jsonl",
+          "window_file_sha256": "e364852cbad104d8f945d7e7b562804aaa4801c507e2a11e1ebdd44920f34609"
+        },
+        "/camera/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 220,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "20890eb4eff7c3c4772977cef3763b75b97383cbae74b3ac73a86b4a7bcb4575",
+          "source_record_count": 56158,
+          "source_stream_id": "/camera/imu",
+          "window_file_relative_path": "windows/walk_01/camera_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "62b14e31bde7705958c0e664547a918106790bfe2cfb0cfc66f92d3e564a4e02"
+        },
+        "/handsfree/imu": {
+          "availability": "observed_present",
+          "derived_window_count": 165,
+          "feature_names": [
+            "angular_speed_norm_rad_s",
+            "linear_acceleration_norm_m_s2"
+          ],
+          "source_feature_file_sha256": "8d066c3f1fe67cdd8fe7978d5d1f97bfbe3e08ccbfafc91711398451d07a33e1",
+          "source_record_count": 42168,
+          "source_stream_id": "/handsfree/imu",
+          "window_file_relative_path": "windows/walk_01/handsfree_imu.jsonl.windows.jsonl",
+          "window_file_sha256": "e6d5bc27eaf6abe5d7661cfc0b5a2e109c66bceec1c269a5c677a986c6f01d6b"
+        }
+      },
+      "lidar_source_increment_count": 2913,
+      "lidar_to_imu_factor_admitted": false,
+      "shared_clock_domain_verified": false,
+      "trajectory": "walk_01"
+    }
+  ],
+  "window_size_source_records": 256
+}

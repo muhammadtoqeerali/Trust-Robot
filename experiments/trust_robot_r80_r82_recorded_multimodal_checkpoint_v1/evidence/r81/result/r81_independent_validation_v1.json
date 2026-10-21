@@ -1,0 +1,14 @@
+{
+  "code_sha256": "9521b3d69914a5515ec56f2f07108b1a0d30987289f1656d55843f0e558d48ba",
+  "confirmation_test_accessed": false,
+  "files_validated": 22,
+  "frozen_freeze_sha256": "4f1daa871be72714bd257e22b43e551259d989c391230edfaac3c95f579d9da0",
+  "increment_records_verified": 90992,
+  "raw_gt_or_rosbags_opened": false,
+  "result_sha256": "4b21db75053e22cba8eeb276635ed194d260a0c4af725cd50c4cbab63c255510",
+  "schema": "TRUST_ROBOT_R81_INDEPENDENT_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "source_run_manifest_sha256": "3fccd2c4a189e6a0dfec1759338794c10e1c23c9714e583ca338d98752a25f71",
+  "status": "PASS",
+  "test_sha256": "56ba6527d2014988d1b5dec46f10c1437cfb859f94a7dc7da67a692b0f806fd0"
+}

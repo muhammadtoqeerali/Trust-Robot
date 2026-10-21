@@ -1,0 +1,16 @@
+{
+  "all_inverse_transform_checks_passed": true,
+  "confirmation_test_accessed": false,
+  "cross_pair_discontinuity_preserved": true,
+  "gt_or_rosbag_opened": false,
+  "new_real_pose_factors_authorized": false,
+  "phase2_full_baseline_already_frozen": true,
+  "r80a_test_launcher_repair_required": true,
+  "r80b_source_field_schema_repair_required": true,
+  "r80d_atomic_zero_byte_output_recovery": true,
+  "real_recorded_pair_count": 8,
+  "result_sha256": "c3d755b2ade8a4620e64418065729a60a91d24e16265433787b0568898c5a2ab",
+  "schema": "TRUST_ROBOT_R80_INDEPENDENT_RECORDED_LIDAR_MOTION_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS"
+}

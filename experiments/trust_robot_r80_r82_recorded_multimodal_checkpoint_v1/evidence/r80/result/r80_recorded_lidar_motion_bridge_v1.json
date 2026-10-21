@@ -1,0 +1,578 @@
+{
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "continuous_trajectory_reconstructed_from_eight_pairs": false,
+  "full_frozen_train_increments_previously_completed": 90992,
+  "health_training_authorized": false,
+  "pair_count": 8,
+  "physical_timestamp_semantics_verified": false,
+  "raw_rosbag_or_gt_opened": false,
+  "real_pose_factors_authorized": false,
+  "records": [
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643739615390778,
+      "current_scan_sequence": 7549,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.3299711322153121,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9999886344266582,
+              -0.0012141522814745303,
+              -0.0046105153448356044
+            ],
+            [
+              0.0012705165876380955,
+              0.9999242570069903,
+              0.01224197846020001
+            ],
+            [
+              0.004595302504526852,
+              -0.012247697059319143,
+              0.9999144348951247
+            ]
+          ],
+          "translation_m": [
+            -0.02207854844539675,
+            0.020824638187793523,
+            0.012390194603758547
+          ]
+        },
+        "inverse_translation_closure_error_m": 1.734723475976807e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9999886344266582,
+              0.0012705165876380955,
+              0.004595302504526852
+            ],
+            [
+              -0.0012141522814745303,
+              0.9999242570069903,
+              -0.012247697059319143
+            ],
+            [
+              -0.0046105153448356044,
+              0.01224197846020001,
+              0.9999144348951247
+            ]
+          ],
+          "translation_m": [
+            0.02199490276949173,
+            -0.020698116237322595,
+            -0.012745862693993457
+          ]
+        },
+        "rotation_angle_rad": 0.01314062996842739,
+        "so3_max_orthogonality_error": 1.5543122344752192e-15,
+        "translation_norm_m": 0.032781775110985775
+      },
+      "observed_header_gap_ns": 100424767,
+      "pair_index": 0,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643739514966011,
+      "previous_scan_sequence": 7548,
+      "registered_rmse_m": 0.32828036953279804,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643750336190939,
+      "current_scan_sequence": 7656,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.29658811047735106,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9998493501339785,
+              -0.01669548705001317,
+              0.0047473938981246215
+            ],
+            [
+              0.01669910186093646,
+              0.9998602990123177,
+              -0.000722811203236938
+            ],
+            [
+              -0.004734662997424908,
+              0.0008019795261047791,
+              0.9999884698310971
+            ]
+          ],
+          "translation_m": [
+            0.020175795919667623,
+            0.012149602486448207,
+            0.0006162045849991353
+          ]
+        },
+        "inverse_translation_closure_error_m": 1.214306433183765e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9998493501339785,
+              0.01669910186093646,
+              -0.004734662997424908
+            ],
+            [
+              -0.01669548705001317,
+              0.9998602990123177,
+              0.0008019795261047791
+            ],
+            [
+              0.0047473938981246215,
+              -0.000722811203236938,
+              0.9999884698310971
+            ]
+          ],
+          "translation_m": [
+            -0.02037272636715909,
+            -0.011811554618941456,
+            -0.0007031980617029504
+          ]
+        },
+        "rotation_angle_rad": 0.017374942223168145,
+        "so3_max_orthogonality_error": 1.5543122344752192e-15,
+        "translation_norm_m": 0.023559611407265594
+      },
+      "observed_header_gap_ns": 100323439,
+      "pair_index": 1,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643750235867500,
+      "previous_scan_sequence": 7655,
+      "registered_rmse_m": 0.2920603698267015,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643761058773994,
+      "current_scan_sequence": 7763,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.36574105341283614,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.999982693095704,
+              -0.00573347047487904,
+              0.001319403416908661
+            ],
+            [
+              0.005741712675412186,
+              0.9999634793524976,
+              -0.006330299898065343
+            ],
+            [
+              -0.0012830606438788738,
+              0.0063377659754936914,
+              0.9999790930203613
+            ]
+          ],
+          "translation_m": [
+            -0.04347297637760668,
+            0.025915031253502384,
+            -0.018017380826463925
+          ]
+        },
+        "inverse_translation_closure_error_m": 1.3877787807814457e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.999982693095704,
+              0.005741712675412186,
+              -0.0012830606438788738
+            ],
+            [
+              -0.00573347047487904,
+              0.9999634793524976,
+              0.0063377659754936914
+            ],
+            [
+              0.001319403416908661,
+              -0.006330299898065343,
+              0.9999790930203613
+            ]
+          ],
+          "translation_m": [
+            0.043300309939288906,
+            -0.026049145903127624,
+            0.018238412450728048
+          ]
+        },
+        "rotation_angle_rad": 0.008644940536480917,
+        "so3_max_orthogonality_error": 6.661338147750939e-16,
+        "translation_norm_m": 0.05372257004131303
+      },
+      "observed_header_gap_ns": 100938320,
+      "pair_index": 2,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643760957835674,
+      "previous_scan_sequence": 7762,
+      "registered_rmse_m": 0.3622056816517815,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643771778942585,
+      "current_scan_sequence": 7870,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.32710192122642046,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9999852280053133,
+              -0.005431399106644584,
+              -0.00020898542162185382
+            ],
+            [
+              0.005425546042021143,
+              0.9997471898218305,
+              -0.02182017171105094
+            ],
+            [
+              0.0003274466491184243,
+              0.021818715523563296,
+              0.9997618898675803
+            ]
+          ],
+          "translation_m": [
+            -0.09765248185194872,
+            0.021646838107772008,
+            -0.009826563942043941
+          ]
+        },
+        "inverse_translation_closure_error_m": 4.163336342344337e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9999852280053133,
+              0.005425546042021143,
+              0.0003274466491184243
+            ],
+            [
+              -0.005431399106644584,
+              0.9997471898218305,
+              0.021818715523563296
+            ],
+            [
+              -0.00020898542162185382,
+              -0.02182017171105094,
+              0.9997618898675803
+            ]
+          ],
+          "translation_m": [
+            0.09753681108862289,
+            -0.021957352166239896,
+            0.010276153917023106
+          ]
+        },
+        "rotation_angle_rad": 0.02248807722116402,
+        "so3_max_orthogonality_error": 1.9984014443252818e-15,
+        "translation_norm_m": 0.1005044982616019
+      },
+      "observed_header_gap_ns": 101251602,
+      "pair_index": 3,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643771677690983,
+      "previous_scan_sequence": 7869,
+      "registered_rmse_m": 0.31684121118909386,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643782498803377,
+      "current_scan_sequence": 7977,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.34681922668607146,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9989238182599612,
+              -0.04286459383618739,
+              -0.017715301527151582
+            ],
+            [
+              0.04293476891439884,
+              0.9990713918990305,
+              0.003599931555013521
+            ],
+            [
+              0.017544541350698616,
+              -0.00435665975172579,
+              0.9998365909410397
+            ]
+          ],
+          "translation_m": [
+            0.06725424572768109,
+            -0.001541665289070272,
+            -0.017103631177922907
+          ]
+        },
+        "inverse_translation_closure_error_m": 4.163336342344337e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9989238182599612,
+              0.04293476891439884,
+              0.017544541350698616
+            ],
+            [
+              -0.04286459383618739,
+              0.9990713918990305,
+              -0.00435665975172579
+            ],
+            [
+              -0.017715301527151582,
+              0.003599931555013521,
+              0.9998365909410397
+            ]
+          ],
+          "translation_m": [
+            -0.06681560152911117,
+            0.004348544911508823,
+            0.018297815421215752
+          ]
+        },
+        "rotation_angle_rad": 0.04656813041628688,
+        "so3_max_orthogonality_error": 1.3322676295501878e-15,
+        "translation_norm_m": 0.06941213510426872
+      },
+      "observed_header_gap_ns": 99526644,
+      "pair_index": 4,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643782399276733,
+      "previous_scan_sequence": 7976,
+      "registered_rmse_m": 0.32346054452638756,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643793221436024,
+      "current_scan_sequence": 8084,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.3374164481212162,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9996293285838127,
+              -0.023091764417761278,
+              0.014421367866842697
+            ],
+            [
+              0.023049954028780958,
+              0.9997296353294768,
+              0.003058735565981201
+            ],
+            [
+              -0.01448810043957675,
+              -0.002725189913774394,
+              0.9998913282380174
+            ]
+          ],
+          "translation_m": [
+            -0.0816385002143474,
+            -0.005461690467002314,
+            0.008556314125412263
+          ]
+        },
+        "inverse_translation_closure_error_m": 4.163336342344337e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9996293285838127,
+              0.023049954028780958,
+              -0.01448810043957675
+            ],
+            [
+              -0.023091764417761278,
+              0.9997296353294768,
+              -0.002725189913774394
+            ],
+            [
+              0.014421367866842697,
+              0.003058735565981201,
+              0.9998913282380174
+            ]
+          ],
+          "translation_m": [
+            0.0818580956084829,
+            0.003598354385443314,
+            -0.007361339585109955
+          ]
+        },
+        "rotation_angle_rad": 0.027381648815651513,
+        "so3_max_orthogonality_error": 4.440892098500626e-16,
+        "translation_norm_m": 0.08226715803659485
+      },
+      "observed_header_gap_ns": 101915360,
+      "pair_index": 5,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643793119520664,
+      "previous_scan_sequence": 8083,
+      "registered_rmse_m": 0.32503476746187293,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643803940633774,
+      "current_scan_sequence": 8191,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.4821861898169946,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9994458199259734,
+              -0.031633067108892826,
+              0.01036349833707723
+            ],
+            [
+              0.03180399191580373,
+              0.9993535011680957,
+              -0.016765613656784396
+            ],
+            [
+              -0.009826450565581036,
+              0.01708592310509883,
+              0.9998057371814423
+            ]
+          ],
+          "translation_m": [
+            -0.0590166224477894,
+            0.050261233418718694,
+            0.0036993413684655203
+          ]
+        },
+        "inverse_translation_closure_error_m": 2.7755575615628914e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9994458199259734,
+              0.03180399191580373,
+              -0.009826450565581036
+            ],
+            [
+              -0.031633067108892826,
+              0.9993535011680957,
+              0.01708592310509883
+            ],
+            [
+              0.01036349833707723,
+              -0.016765613656784396,
+              0.9998057371814423
+            ]
+          ],
+          "translation_m": [
+            0.057421760145347694,
+            -0.05215882303061564,
+            -0.0022443436339752015
+          ]
+        },
+        "rotation_angle_rad": 0.03735108980814489,
+        "so3_max_orthogonality_error": 1.5543122344752192e-15,
+        "translation_norm_m": 0.07760694837755372
+      },
+      "observed_header_gap_ns": 100149632,
+      "pair_index": 6,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643803840484142,
+      "previous_scan_sequence": 8190,
+      "registered_rmse_m": 0.4714495929162458,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    },
+    {
+      "body_frame": "velodyne",
+      "current_header_stamp_ns": 1627643814761728764,
+      "current_scan_sequence": 8299,
+      "factor_executable": false,
+      "gt_used": false,
+      "identity_rmse_m": 0.2888665356438402,
+      "motion": {
+        "current_T_previous": {
+          "rotation_3x3": [
+            [
+              0.9999480275653115,
+              -0.009126902462150288,
+              -0.004543326940596408
+            ],
+            [
+              0.009137388987110142,
+              0.9999556247616018,
+              0.002292734204782586
+            ],
+            [
+              0.004522199767921612,
+              -0.0023341291913557194,
+              0.9999870506912467
+            ]
+          ],
+          "translation_m": [
+            -0.02791122497955645,
+            -0.016031759362451128,
+            -0.036038072233973775
+          ]
+        },
+        "inverse_translation_closure_error_m": 3.469446951953614e-17,
+        "previous_T_current": {
+          "rotation_3x3": [
+            [
+              0.9999480275653115,
+              0.009137388987110142,
+              0.004522199767921612
+            ],
+            [
+              -0.009126902462150288,
+              0.9999556247616018,
+              -0.0023341291913557194
+            ],
+            [
+              -0.004543326940596408,
+              0.002292734204782586,
+              0.9999870506912467
+            ]
+          ],
+          "translation_m": [
+            0.028219234148574412,
+            0.015692187404918418,
+            0.03594755230850798
+          ]
+        },
+        "rotation_angle_rad": 0.010454567295708914,
+        "so3_max_orthogonality_error": 1.1102230246251565e-15,
+        "translation_norm_m": 0.04831973135744926
+      },
+      "observed_header_gap_ns": 100196362,
+      "pair_index": 7,
+      "pair_not_chained_across_unobserved_scans": true,
+      "previous_header_stamp_ns": 1627643814661532402,
+      "previous_scan_sequence": 8298,
+      "registered_rmse_m": 0.2863930462926742,
+      "transform_convention": "previous_lidar_T_current_lidar"
+    }
+  ],
+  "reference_scoring_performed": false,
+  "schema": "TRUST_ROBOT_R80_RECORDED_LIDAR_MOTION_BRIDGE_V1",
+  "scientific_gates_closed": 11,
+  "sensor_frame_to_robot_base_verified": false,
+  "separate_disjoint_scan_segments": 8,
+  "source": "FROZEN_M2DGR_RECORDED_LIDAR_DIAGNOSTICS",
+  "source_sha256": {
+    "phase2": "4f1daa871be72714bd257e22b43e551259d989c391230edfaac3c95f579d9da0",
+    "r27": "9e3d5ea5488ca8ccd5274a9da8145f34f5f0e05514814c73591d1a3a31b3569e",
+    "r29": "5af225ff0ac9225fb16828a6ffacda4e1efcaddc69564f363095d8fe1071402b"
+  },
+  "split": "train",
+  "trajectory": "room_02"
+}

@@ -1,0 +1,218 @@
+{
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "cross_sensor_synchronization_verified": false,
+  "frozen_source_manifest_sha256": "3fccd2c4a189e6a0dfec1759338794c10e1c23c9714e583ca338d98752a25f71",
+  "full_train_recorded_registration_rerun": false,
+  "health_training_authorized": false,
+  "increment_count": 90992,
+  "per_record_pose_or_timestamp_exported": false,
+  "raw_rosbags_or_gt_opened": false,
+  "read_only_typed_adapter": true,
+  "real_pose_factors_authorized": false,
+  "scan_count": 91014,
+  "schema": "TRUST_ROBOT_R81_FULL_TRAIN_READ_ONLY_INCREMENT_ADAPTER_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "trajectory_count": 22,
+  "trajectory_results": [
+    {
+      "increments": 2338,
+      "max_rotation_replay_error": 5.689893001203927e-16,
+      "max_translation_replay_error_m": 1.687538997430238e-14,
+      "scans": 2339,
+      "source_file_sha256": "4b45f0405a0f6461deba648d014ac98279872db87c34ec6e9988e234fa5fc2ee",
+      "trajectory": "Circle_01",
+      "typed_increment_stream_sha256": "99bb33a43bec125e710173107ab20241217418ccbcfbd4cfb26e66a51c78d178"
+    },
+    {
+      "increments": 4605,
+      "max_rotation_replay_error": 1.1102230246251565e-15,
+      "max_translation_replay_error_m": 2.1500162761256547e-14,
+      "scans": 4606,
+      "source_file_sha256": "283491433d1da4384a9a1ea39ff8edcb891ffcff383e7dd1aaf915103e91bcaf",
+      "trajectory": "door_01",
+      "typed_increment_stream_sha256": "ae61adcec94b3e15b9932b6e179d344e8850e190c036694f9113c511689ef8a4"
+    },
+    {
+      "increments": 1721,
+      "max_rotation_replay_error": 6.661338147750939e-16,
+      "max_translation_replay_error_m": 1.1546319456101628e-14,
+      "scans": 1722,
+      "source_file_sha256": "6de89070743d693e2153c2de251bbaafd744847e2eca744098caa2bba9161bce",
+      "trajectory": "gate_01",
+      "typed_increment_stream_sha256": "ea54fc6367c43da14343d55a6a6637fabee748773f4b2549abdd602d11c2d281"
+    },
+    {
+      "increments": 3510,
+      "max_rotation_replay_error": 2.7755575615628914e-16,
+      "max_translation_replay_error_m": 7.105427357601002e-15,
+      "scans": 3511,
+      "source_file_sha256": "089522912dfe0df229d321d8eb26d3fc13b6f348110814e65949bb91db6632cc",
+      "trajectory": "hall_01",
+      "typed_increment_stream_sha256": "2883353451ebf402f474c44d4f911ee2c803809bc85c05b6b5d520c0da699433"
+    },
+    {
+      "increments": 1644,
+      "max_rotation_replay_error": 4.440892098500626e-16,
+      "max_translation_replay_error_m": 5.773159728050814e-15,
+      "scans": 1645,
+      "source_file_sha256": "f8be8fb72f19b062e4f0570912fc82e2394710407f4621a6f88af4c1f500f4c8",
+      "trajectory": "hall_03",
+      "typed_increment_stream_sha256": "19a61ab7c818b411cbf83739c4747d08af5c5af54578117655374f27c318a9a5"
+    },
+    {
+      "increments": 1812,
+      "max_rotation_replay_error": 6.661338147750939e-16,
+      "max_translation_replay_error_m": 7.993605777301127e-15,
+      "scans": 1813,
+      "source_file_sha256": "375d705b55344683ff9f815774aa3dd2196b7adebc9edd3eeb8abe4f1fc7d0b1",
+      "trajectory": "hall_04",
+      "typed_increment_stream_sha256": "c5c493b607db1016c43e7ac0f71e1c5560c7881adbd8e4abf12c1bd0d1c4b763"
+    },
+    {
+      "increments": 4016,
+      "max_rotation_replay_error": 6.661338147750939e-16,
+      "max_translation_replay_error_m": 9.769962616701378e-15,
+      "scans": 4017,
+      "source_file_sha256": "b7ca19a642de0061afbe3cae2d2ef83a11b0a9876a20dbe12dd229e1273baa97",
+      "trajectory": "hall_05",
+      "typed_increment_stream_sha256": "37a48c8460490d0b9c8853a2c145159306358a54ca8e19eec419c9e619a07078"
+    },
+    {
+      "increments": 4872,
+      "max_rotation_replay_error": 1.5543122344752192e-15,
+      "max_translation_replay_error_m": 2.0872192862952943e-14,
+      "scans": 4873,
+      "source_file_sha256": "cfc6e91d8ab522152932e97294e51154ca049713ca761dff38cfc63c9ce23c6c",
+      "trajectory": "lift_02",
+      "typed_increment_stream_sha256": "3c84c7e40594ab205cc9bb9193a6b9b2ccb5206f12432f63811e9ceb130ea626"
+    },
+    {
+      "increments": 2985,
+      "max_rotation_replay_error": 1.9984014443252818e-15,
+      "max_translation_replay_error_m": 5.551115123125783e-14,
+      "scans": 2986,
+      "source_file_sha256": "76135bbae3a93c3506585a160a6e0e5e60aba686c45d6088f3678c70795a6517",
+      "trajectory": "lift_04",
+      "typed_increment_stream_sha256": "5a856e52037adb9902beab837f105bf473bade0c31b47bbe92d94bd1963c5e0d"
+    },
+    {
+      "increments": 751,
+      "max_rotation_replay_error": 3.3306690738754696e-16,
+      "max_translation_replay_error_m": 1.9984014443252818e-15,
+      "scans": 752,
+      "source_file_sha256": "9e835831531c798e868f49dbea659bdb2f403c6efdc74ca4352489c8fd2c720c",
+      "trajectory": "room_02",
+      "typed_increment_stream_sha256": "b30ee5f79ddb7969fd98c27ddc9fc334708b24f0283f57eed7dccfad66352aa3"
+    },
+    {
+      "increments": 1111,
+      "max_rotation_replay_error": 1.3877787807814457e-15,
+      "max_translation_replay_error_m": 3.760880495917718e-15,
+      "scans": 1112,
+      "source_file_sha256": "59ddae6c4d2f61916218aad4e4c8f7a7ab1ebde321f5196a226aae77b1abb58e",
+      "trajectory": "room_dark_01",
+      "typed_increment_stream_sha256": "2c575a02f2438e968cf6684a2b61072db13414dc77f1b8d74c7d538bc41e0e7f"
+    },
+    {
+      "increments": 1646,
+      "max_rotation_replay_error": 4.996003610813204e-16,
+      "max_translation_replay_error_m": 1.9984014443252818e-15,
+      "scans": 1647,
+      "source_file_sha256": "257a92222c360061b0ebe1ff66d5a3f191c7fbdffd2321c2332656cfe75e282c",
+      "trajectory": "room_dark_02",
+      "typed_increment_stream_sha256": "0639e528d6ad1944aa5d0f808e52f38e021b3a19f59ef9ac34e7a5f0b945b3ea"
+    },
+    {
+      "increments": 1158,
+      "max_rotation_replay_error": 8.326672684688674e-16,
+      "max_translation_replay_error_m": 2.6645352591003757e-15,
+      "scans": 1159,
+      "source_file_sha256": "242a80a1a9d751cb2dbbff94393bbc464377bfd2c921c7f2c6bb025c6909e06b",
+      "trajectory": "room_dark_03",
+      "typed_increment_stream_sha256": "2d4f3015bc4f8a01ff4724ea504e33191e2765600c940b5e17e1f0ab0358a544"
+    },
+    {
+      "increments": 1434,
+      "max_rotation_replay_error": 1.8318679906315083e-15,
+      "max_translation_replay_error_m": 5.551115123125783e-15,
+      "scans": 1435,
+      "source_file_sha256": "e48c90995b89291c26df4be9e513277aa2f5f4b243b8a9bf609a05687589026f",
+      "trajectory": "room_dark_04",
+      "typed_increment_stream_sha256": "bc6d3a1c2f094c5eb3469c551642ca31e358f313100b7e24ecc997266ef2872f"
+    },
+    {
+      "increments": 10269,
+      "max_rotation_replay_error": 1.1102230246251565e-15,
+      "max_translation_replay_error_m": 1.9895196601282805e-13,
+      "scans": 10270,
+      "source_file_sha256": "a534b86fe2ff190deca264ba921047243729e9f8cb1ba8dd0614e7532f5d1781",
+      "trajectory": "street_01",
+      "typed_increment_stream_sha256": "80482885eb875bbc508741f0076e7fc4b2ac29a172576b3abc6ac142c579da56"
+    },
+    {
+      "increments": 9086,
+      "max_rotation_replay_error": 1.5543122344752192e-15,
+      "max_translation_replay_error_m": 1.7053025658242404e-13,
+      "scans": 9087,
+      "source_file_sha256": "5b1fc7cbc4ac1844c48985330d451f71ea1edd7aa36743176650b57780bde8e5",
+      "trajectory": "street_010",
+      "typed_increment_stream_sha256": "56a2131ffa8467e5e114ddfb4fb4eb8a2251780adb3496610d50215e2a24c2f9"
+    },
+    {
+      "increments": 3534,
+      "max_rotation_replay_error": 1.0408340855860843e-15,
+      "max_translation_replay_error_m": 3.552713678800501e-14,
+      "scans": 3535,
+      "source_file_sha256": "a0abc03f1adea122648d49bafedd7f48058dcc624f349f0399ecaffb80dd643f",
+      "trajectory": "street_03",
+      "typed_increment_stream_sha256": "a46f41cc888037aa5548e8848de3a28edb31f64c362b6c6767fd1353591eab44"
+    },
+    {
+      "increments": 8567,
+      "max_rotation_replay_error": 1.9984014443252818e-15,
+      "max_translation_replay_error_m": 8.526512829121202e-13,
+      "scans": 8568,
+      "source_file_sha256": "8e09845e87c22c00e1a91edfe29c32a53649a4201610f93397dcdfd41d20936e",
+      "trajectory": "street_04",
+      "typed_increment_stream_sha256": "1b668d8f60d65304d09527f8da64d2737e44b3d32872478e8432e9085bb0555c"
+    },
+    {
+      "increments": 4686,
+      "max_rotation_replay_error": 3.885780586188048e-16,
+      "max_translation_replay_error_m": 4.618527782440651e-14,
+      "scans": 4687,
+      "source_file_sha256": "0df722f38673e49e8900f5aee7e908fee3d22f05a107fb5be1f000fe8c483010",
+      "trajectory": "street_05",
+      "typed_increment_stream_sha256": "a7f820db9ddfa1061afbff3887cb854808d2d102ae30b64e38c3ca27cda30621"
+    },
+    {
+      "increments": 9275,
+      "max_rotation_replay_error": 1.9984014443252818e-15,
+      "max_translation_replay_error_m": 2.0250467969162855e-13,
+      "scans": 9276,
+      "source_file_sha256": "54f4cb59aa12609e36f75a8e1ee5fe09b87c784bc99a8359b1f5a267c391214e",
+      "trajectory": "street_07",
+      "typed_increment_stream_sha256": "c68d3969530c871cf41836c8452ce2180fb100ed80ef853f34230ba6ac18b0b0"
+    },
+    {
+      "increments": 9059,
+      "max_rotation_replay_error": 3.878841692284141e-15,
+      "max_translation_replay_error_m": 1.3073986337985843e-12,
+      "scans": 9060,
+      "source_file_sha256": "c9b726dc99963e50405d128183cfe6372ae06c9842f526826a94e56fdf8ed9ff",
+      "trajectory": "street_09",
+      "typed_increment_stream_sha256": "d5ba8897a4e1c061d77e15608466586961c38df248afcf4d045deadb0f50bcda"
+    },
+    {
+      "increments": 2913,
+      "max_rotation_replay_error": 1.0547118733938987e-15,
+      "max_translation_replay_error_m": 1.7852386235972517e-13,
+      "scans": 2914,
+      "source_file_sha256": "10363a152364347347b8f1868384d3c6bea484329db8c6a34d58064d65d6ada2",
+      "trajectory": "walk_01",
+      "typed_increment_stream_sha256": "4fd1292755d324538cbf6546d53c283cfb42c55e3f98d8299cb1563a3516827a"
+    }
+  ]
+}

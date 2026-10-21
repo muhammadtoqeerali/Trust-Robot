@@ -1,0 +1,15 @@
+{
+  "confirmation_accessed": false,
+  "derived_window_count": 11036,
+  "engine_sha256": "7adc2a5c2dc3167bebaf6e667c2164ec650556566cd514d9586f703b73575b42",
+  "report_sha256": "79e6ba42ef09eb547193abff5416ef7b4adbaacbc47d34adfaee6c23e46e7c23",
+  "schema": "TRUST_ROBOT_R82_INDEPENDENT_TEMPORAL_DIAGNOSTIC_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "source_R81_result_sha256": "4b21db75053e22cba8eeb276635ed194d260a0c4af725cd50c4cbab63c255510",
+  "source_SE3_run_sha256": "c8eba6d6798ca66a341adc3a872fe53f0268968d903f211b0142e25a3270ad7e",
+  "source_bags_or_gt_opened": false,
+  "source_feature_records": 2816957,
+  "status": "PASS",
+  "tests_sha256": "c57fa21937f6c07b444b6091a4ba51988f9a2a9039ecbcea6ee092a0db82d6eb",
+  "verified_window_files": 62
+}
