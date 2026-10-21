@@ -1,0 +1,13 @@
+{
+  "confirmation_test_accessed": false,
+  "historical_quality_comparison": true,
+  "physical_frame_or_clock_qualified": false,
+  "primary_report_sha256": "22b02194a8899a263484a90e30afd3f95a3fb45d2ccdd7dec8bb8908d59fc98b",
+  "r70_r71a_r72_r73_integrity": true,
+  "raw_gt_or_rosbag_opened": false,
+  "sanitized_publication_boundary": true,
+  "schema": "TRUST_ROBOT_R74_INDEPENDENT_EVIDENCE_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "sensor_cadence_crosscheck": true,
+  "status": "PASS"
+}

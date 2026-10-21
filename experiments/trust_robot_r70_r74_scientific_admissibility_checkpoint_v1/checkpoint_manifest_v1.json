@@ -1,0 +1,31 @@
+{
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "gt_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "health_training_authorized": false,
+  "parent_commit": "6873da42fda57f23a46c0ecb2c788489802faa8c",
+  "physical_clock_qualified": false,
+  "physical_frame_qualified": false,
+  "pose_scoring_authorized": false,
+  "private_verona_reports_archived": false,
+  "quality_sha256": "8b27f25c02d04e838a88eb62980b1f2e94d0e1ed13defd0c6fa0f0b07c6bed49",
+  "raw_gt_archived": false,
+  "rosbags_archived": false,
+  "schema": "TRUST_ROBOT_R70_R74_SANITIZED_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 6,
+  "source_pins": {
+    "evidence/dev/r74_independent.py": "f0fc607373661d2f257f2ecec609650e43dcfdc76d780751076c50ce690bc5b3",
+    "evidence/dev/r74_review.py": "17a1588d8284a4f5a3c2f563f9c315845d6e7e1a9964ef65c9ecd3ce1811c9d0",
+    "evidence/dev/test_r74.py": "010b3d8149a9c8ce171c3722893337b9951df5a17b49ec02983eded3e734b516",
+    "evidence/result/r74_independent_validation_v1.json": "b1c24d687050ce8ce3bbc86c8627daff021e8c99b61abc5c7b5f47fb8d2a666c",
+    "evidence/result/r74_scientific_admissibility_v1.json": "22b02194a8899a263484a90e30afd3f95a3fb45d2ccdd7dec8bb8908d59fc98b",
+    "evidence/result/r74_scientific_summary_v1.md": "a7f27a895ec649785d286f5897861403f41556833f070dc6971f11c9c61dc73d"
+  },
+  "verona_private_report_pins": {
+    "r70": "ae0ff5e201f449d34d749b0b6f22254e4455fb0b5422862cc127103e84eba5a0",
+    "r71a": "c0b5264a70ca708d7b532b77388dfe6ce90d71ebba4b47011e48f522d25661e5",
+    "r72": "efcbcbc85dc02732e1fd130c840b921d0abdab72dfda494dd3490b8609fb3d74",
+    "r73": "a90b3bbd9de75e2c6a50a6121eec1779b40a8e48362e38308480d736f6a877c0"
+  }
+}

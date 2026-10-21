@@ -1,0 +1,63 @@
+{
+  "ate_rpe_authorized": false,
+  "author_calibration_explicit_mocap_terms": 0,
+  "author_calibration_lidar_extrinsic_headings": 15,
+  "author_evo_alignment_is_extrinsic_calibration": false,
+  "author_provenance_support": {
+    "indoor_mocap_source": true,
+    "mocap_tracking_failure_reported": true,
+    "published_non_mocap_sensor_calibration_sections": true,
+    "vicon_nominal_rate_description": true
+  },
+  "author_vicon_nominal_rate_hz": 50,
+  "automatic_quaternion_repair_authorized": false,
+  "confirmation_test_accessed": false,
+  "git_modified_during_r74": false,
+  "git_parent_commit": "6873da42fda57f23a46c0ecb2c788489802faa8c",
+  "gt_mean_interval_rate_hz": 49.216037921992694,
+  "gt_median_interval_rate_hz": 50.057035105411714,
+  "health_training_authorized": false,
+  "historical_gt_records": 3831,
+  "historical_gt_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "historical_gt_span_seconds": 77.82016110420227,
+  "historical_quality_sha256": "8b27f25c02d04e838a88eb62980b1f2e94d0e1ed13defd0c6fa0f0b07c6bed49",
+  "invalid_rotation_sample_runs": 61,
+  "pending_authoritative_evidence": [
+    "mocap_rigid_body_and_marker_set_origin",
+    "mocap_body_to_lidar_transform_direction_and_units",
+    "reference_capture_event_and_export_timebase",
+    "physical_cross_sensor_clock_mapping_and_uncertainty",
+    "prospective_invalid_rotation_policy"
+  ],
+  "physical_qualification": {
+    "alignment_mode_selected": false,
+    "association_tolerance_selected": false,
+    "continuous_reference_coverage_verified": false,
+    "gt_capture_event_verified": false,
+    "gt_timebase_export_verified": false,
+    "gt_to_ros_clock_mapping_verified": false,
+    "mocap_body_origin_verified": false,
+    "mocap_to_lidar_se3_verified": false,
+    "physical_sensor_calibration_verified": false,
+    "rotation_filter_authorized": false
+  },
+  "r70_discovered_metadata_candidates": 91,
+  "r71a_dedicated_vicon_config_candidates": 0,
+  "raw_gt_read_in_r74": false,
+  "raw_rosbag_read_in_r74": false,
+  "real_pose_factors_authorized": false,
+  "sampling_rate_is_clock_verification": false,
+  "schema": "TRUST_ROBOT_R74_SANITIZED_EVIDENCE_DECISION_V1",
+  "scientific_gates_closed": 11,
+  "source_report_sha256": {
+    "r70": "ae0ff5e201f449d34d749b0b6f22254e4455fb0b5422862cc127103e84eba5a0",
+    "r71a": "c0b5264a70ca708d7b532b77388dfe6ce90d71ebba4b47011e48f522d25661e5",
+    "r72": "efcbcbc85dc02732e1fd130c840b921d0abdab72dfda494dd3490b8609fb3d74",
+    "r73": "a90b3bbd9de75e2c6a50a6121eec1779b40a8e48362e38308480d736f6a877c0"
+  },
+  "split": "train",
+  "structurally_invalid_rotations": 90,
+  "structurally_invalid_translations": 0,
+  "structurally_valid_rotations": 3741,
+  "trajectory": "room_02"
+}

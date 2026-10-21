@@ -330,3 +330,22 @@ capture event/timebase and physical cross-sensor clocks are not independently
 qualified. No real pose factors, health training or ATE/RPE scoring.
 Next seek authoritative recording/frame/timing/calibration evidence; do not
 recreate already available GT or infer physical calibration from file shape.
+
+## KIOS R70–R74 Verona source admissibility checkpoint — 2026-10-21
+
+R70 on Verona discovered 91 read-only metadata candidates; R71A verified
+three source documents and corrected a research-manifest path error; R72
+classified author calibration, 50 Hz Vicon description and recovered GT
+cadence without claiming synchronization. R73 passed SHA-verified transfer
+of exactly three private reports via Windows to KIOS; R74 completed positive,
+eight negative, and independent validation. The six SHA-pinned R74 derived
+artifacts and executable verifier reside in `experiments/trust_robot_r70_r74_scientific_admissibility_checkpoint_v1/`.
+Source/private handoff report bytes stay off Git; only their checksums are
+recorded. The previous R64–R68 original GT recovery checkpoint remains
+authoritative for the 3,831 row/90 invalid rotation/61 run results. Physical
+mocap origin, mocap-to-LiDAR geometry, event timestamps and physical clock
+mapping remain UNVERIFIED. Eleven gates CLOSED, 22/7/7 split frozen, no raw
+GT or bag, no confirmation_test, no real factors, health training or ATE/RPE.
+Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R70_R74_SOURCE_ADMISSIBILITY_V1.md`. Next: seek original physical recording/calibration
+receipts and design a prospectively declared protocol; never infer physical
+clock agreement from numeric sampling rate.
