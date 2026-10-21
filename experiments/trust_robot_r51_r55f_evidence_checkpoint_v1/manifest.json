@@ -1,0 +1,228 @@
+{
+  "archive_source_bytes": 168290,
+  "ate_rpe": "DENIED",
+  "base_commit": "58e23861811e51c5d00f00f5d22e5cb561c4b43a",
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "files": {
+    "evidence/trust_robot_r51_clock_evidence_dev_v1/r51_clock_evidence.py": {
+      "bytes": 13256,
+      "sha256": "d9bd0fb0b8faff6b7c9aea41a14116e5c91684138a11a18dcc65c70d50d4c058",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r51_clock_evidence_dev_v1/r51_clock_evidence.py"
+    },
+    "evidence/trust_robot_r51_clock_evidence_dev_v1/r51_independent.py": {
+      "bytes": 4024,
+      "sha256": "51c7468e8f2536836861a6c8e734f98ef531ecf8080ad5ed6c00b03b76b33a0a",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r51_clock_evidence_dev_v1/r51_independent.py"
+    },
+    "evidence/trust_robot_r51_clock_evidence_dev_v1/test_r51.py": {
+      "bytes": 3188,
+      "sha256": "62c1f2850a720e9a89278c3e5cc79706136874f6df93571eb6a3bd2635faa5a9",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r51_clock_evidence_dev_v1/test_r51.py"
+    },
+    "evidence/trust_robot_r51_clock_evidence_result_v1/r51_clock_reference_limits_v1.md": {
+      "bytes": 2359,
+      "sha256": "29bce30ecda9c8884e8a52438cf3dbcc1b50c36b8b0daa04a7987295f6de0ee6",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r51_clock_evidence_result_v1/r51_clock_reference_limits_v1.md"
+    },
+    "evidence/trust_robot_r51_clock_evidence_result_v1/r51_header_record_time_diagnostics_v1.json": {
+      "bytes": 5327,
+      "sha256": "8abfa83938f50389f9ae126fa906f1019c916c395756d65f0c99dc887b806000",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r51_clock_evidence_result_v1/r51_header_record_time_diagnostics_v1.json"
+    },
+    "evidence/trust_robot_r51_clock_evidence_result_v1/r51_independent_validation_v1.json": {
+      "bytes": 585,
+      "sha256": "852613e76d272ae1fb312e9dee27ee08bf7cf41e81889aed7495763d3b565602",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r51_clock_evidence_result_v1/r51_independent_validation_v1.json"
+    },
+    "evidence/trust_robot_r52_clock_sensitivity_dev_v1/r52_clock_sensitivity.py": {
+      "bytes": 13138,
+      "sha256": "9dcbae71dabdd45e70d5072812f0765610f163dafe3be2b28cff162466d35835",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r52_clock_sensitivity_dev_v1/r52_clock_sensitivity.py"
+    },
+    "evidence/trust_robot_r52_clock_sensitivity_dev_v1/r52_independent.py": {
+      "bytes": 4813,
+      "sha256": "4035cda645773f8f07a4c9868f6e2a67a9b6ccaaa3a0b055c0f09a1f4aa680a8",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r52_clock_sensitivity_dev_v1/r52_independent.py"
+    },
+    "evidence/trust_robot_r52_clock_sensitivity_dev_v1/test_r52.py": {
+      "bytes": 3347,
+      "sha256": "195b9feb2d9c29eceb412809c30f59a45407c21969fe3e947a07b5c56946bc5b",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r52_clock_sensitivity_dev_v1/test_r52.py"
+    },
+    "evidence/trust_robot_r52_clock_sensitivity_result_v1/r52_clock_sensitivity_diagnostics_v1.json": {
+      "bytes": 11358,
+      "sha256": "3d033c2f37dd657c3099fc45fca7908424b160d383e817d1852c066113673c58",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r52_clock_sensitivity_result_v1/r52_clock_sensitivity_diagnostics_v1.json"
+    },
+    "evidence/trust_robot_r52_clock_sensitivity_result_v1/r52_independent_validation_v1.json": {
+      "bytes": 677,
+      "sha256": "093b1722e23d8e9db92c2ae6dfb173978fbb56041144d64d53388183dcea5210",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r52_clock_sensitivity_result_v1/r52_independent_validation_v1.json"
+    },
+    "evidence/trust_robot_r52_clock_sensitivity_result_v1/r52_physical_clock_source_requirements_v1.md": {
+      "bytes": 2970,
+      "sha256": "a1c55e20452d08690affefc94acd203587e984e1c8a920410b2cff9f5b7c2f9f",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r52_clock_sensitivity_result_v1/r52_physical_clock_source_requirements_v1.md"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_dev_v1/r53_boundary.py": {
+      "bytes": 12172,
+      "sha256": "8055caf24ffe51acb30caf2f97c5800c4518c563d8302a4af111d440a18c6b95",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_dev_v1/r53_boundary.py"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_dev_v1/r53_independent.py": {
+      "bytes": 5587,
+      "sha256": "ffb5e88264b2b16564cc02a0b631c50613c8f677ac9c8e14d433c4d77b033e9e",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_dev_v1/r53_independent.py"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_dev_v1/test_r53.py": {
+      "bytes": 2556,
+      "sha256": "cab9aa163e11fc0679305006de0dd1298d0829193fa8f5b82531caa11613ca6f",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_dev_v1/test_r53.py"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_result_v1/r53_author_evidence_request_and_admission_plan_v1.md": {
+      "bytes": 3327,
+      "sha256": "659d47654fdb8d42ac88c1c80c6641437b528ff9f163031f9ef3c623cf86a098",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_result_v1/r53_author_evidence_request_and_admission_plan_v1.md"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_result_v1/r53_independent_validation_v1.json": {
+      "bytes": 664,
+      "sha256": "9e2a8b5cf30bad5d67a1776c7bfabafb6f3b7dd1b79a93429e8f34aca8096309",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_result_v1/r53_independent_validation_v1.json"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_result_v1/r53_sensor_timing_admission_boundary_v1.json": {
+      "bytes": 3263,
+      "sha256": "2f6591a8d07fe8c8ddd2054d2f704baefd722de5dcd43592904dbe368b7efd8d",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_result_v1/r53_sensor_timing_admission_boundary_v1.json"
+    },
+    "evidence/trust_robot_r53_timing_receipt_boundary_result_v1/r53_unfilled_physical_timing_receipts_v1.json": {
+      "bytes": 3799,
+      "sha256": "f4e2d70c8e39d88ee3d6df62c0e7998488dc900398cdc8bd41733b7c1b9548f2",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r53_timing_receipt_boundary_result_v1/r53_unfilled_physical_timing_receipts_v1.json"
+    },
+    "evidence/trust_robot_r54_author_request_packet_dev_v1/r54_independent.py": {
+      "bytes": 5699,
+      "sha256": "3500c31086b2e9be7a1d6764ece4344dd6251a988e4a1644d2546e1bbb9fe1f2",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_dev_v1/r54_independent.py"
+    },
+    "evidence/trust_robot_r54_author_request_packet_dev_v1/r54_packet.py": {
+      "bytes": 11969,
+      "sha256": "324176c0242bbd53fac3c1781bff115f0e1e81abf6fe1656fc8ec1f7c41d62e5",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_dev_v1/r54_packet.py"
+    },
+    "evidence/trust_robot_r54_author_request_packet_dev_v1/test_r54.py": {
+      "bytes": 2046,
+      "sha256": "8d772b17c562644a16b0930551f35b5710e8145d2ba961fa0b570ead44a13a79",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_dev_v1/test_r54.py"
+    },
+    "evidence/trust_robot_r54_author_request_packet_result_v1/r54_author_source_request_packet_v1.md": {
+      "bytes": 4482,
+      "sha256": "452b29e5f0fa71989c43944f667a761adfeec499778582a47584de58adf5cca1",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_result_v1/r54_author_source_request_packet_v1.md"
+    },
+    "evidence/trust_robot_r54_author_request_packet_result_v1/r54_independent_validation_v1.json": {
+      "bytes": 1402,
+      "sha256": "ac924e0ff77fbe161bc299255802d47fc602da78e9d83bbe0da89d8dd24801d0",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_result_v1/r54_independent_validation_v1.json"
+    },
+    "evidence/trust_robot_r54_author_request_packet_result_v1/r54_official_gt_candidate_inventory_v1.json": {
+      "bytes": 2397,
+      "sha256": "5ebdb056a0fb128a43bfc658900f6f9a0cec0b4ea42ac782be17d46b2620930c",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_result_v1/r54_official_gt_candidate_inventory_v1.json"
+    },
+    "evidence/trust_robot_r54_author_request_packet_result_v1/r54_unfilled_acquisition_tracker_v1.json": {
+      "bytes": 4370,
+      "sha256": "988a2ddce50c55ba804fc6a8b89486e6f8ff2d15f8d4686ef6eaaa112a96cdb1",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r54_author_request_packet_result_v1/r54_unfilled_acquisition_tracker_v1.json"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_dev_v1/r55_core.py": {
+      "bytes": 5208,
+      "sha256": "69d274803f6df1114cdcb76daad76a36d5f56c59437822a4100fb0b748c7d086",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_dev_v1/r55_core.py"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_dev_v1/r55_fetch.py": {
+      "bytes": 8200,
+      "sha256": "e61b94004b9614ebd9f17d0907b84b0e2c702446a19cc740c448ebd77ccd844f",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_dev_v1/r55_fetch.py"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_dev_v1/r55_independent.py": {
+      "bytes": 2874,
+      "sha256": "cb83930625214733f5622b2b32f68a689c9accba1335b5b6d06e33199f4493e1",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_dev_v1/r55_independent.py"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_dev_v1/test_r55.py": {
+      "bytes": 2537,
+      "sha256": "9eb7ad1b44e6a9feaefb8eb754e27689531c5468c4adcce135ddc2f2d77cc99f",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_dev_v1/test_r55.py"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_result_v1/r55_acquisition_interpretation_v1.md": {
+      "bytes": 686,
+      "sha256": "c8ece57812ac100207768bf38d91a003ee65d2fdb546de846d1debdb0dffe0f8",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_result_v1/r55_acquisition_interpretation_v1.md"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_result_v1/r55_acquisition_report_v1.json": {
+      "bytes": 2414,
+      "sha256": "b6b19a5c86b4e214655103141a8f6224c64ccb56dbe8ca87cea17e22c0f3b1e5",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_result_v1/r55_acquisition_report_v1.json"
+    },
+    "evidence/trust_robot_r55_gt_source_acquisition_result_v1/r55_independent_validation_v1.json": {
+      "bytes": 507,
+      "sha256": "899ed3a8582d6fed4d8d211b99729dc2d0a4b7db75cb5a0855b9600192efb65e",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55_gt_source_acquisition_result_v1/r55_independent_validation_v1.json"
+    },
+    "evidence/trust_robot_r55f_official_gt_manual_fallback_dev_v1/r55f_independent.py": {
+      "bytes": 5263,
+      "sha256": "913e8ab2c56f7e395152475d49af36f0ac3eda92845a7df28270cca925bcf79c",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55f_official_gt_manual_fallback_dev_v1/r55f_independent.py"
+    },
+    "evidence/trust_robot_r55f_official_gt_manual_fallback_dev_v1/r55f_manual.py": {
+      "bytes": 6354,
+      "sha256": "e49a82c59008d9ba2297f60a88a9b48cce8cb31c8f3dc08b5b6fbf587a077d70",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55f_official_gt_manual_fallback_dev_v1/r55f_manual.py"
+    },
+    "evidence/trust_robot_r55f_official_gt_manual_fallback_dev_v1/r55f_manual_instructions_v1.md": {
+      "bytes": 1255,
+      "sha256": "42bd1f834327e0a9607c9bb25b5e589d19b14adc8b083de162decc1f0dadca57",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55f_official_gt_manual_fallback_dev_v1/r55f_manual_instructions_v1.md"
+    },
+    "evidence/trust_robot_r55f_official_gt_manual_fallback_dev_v1/test_r55f.py": {
+      "bytes": 2633,
+      "sha256": "1dbedd153dddec7457d796d9f095ba5da234ed0aa271aa02ac4d94e02b756536",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55f_official_gt_manual_fallback_dev_v1/test_r55f.py"
+    },
+    "evidence/trust_robot_r55f_official_gt_manual_fallback_result_v1/r55f_independent_validation_v1.json": {
+      "bytes": 305,
+      "sha256": "22a0ed923ab1057c1bbee38314f4886918dd543e3f43d0bfd0c2c7e27b36bdd8",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55f_official_gt_manual_fallback_result_v1/r55f_independent_validation_v1.json"
+    },
+    "evidence/trust_robot_r55f_official_gt_manual_fallback_result_v1/r55f_manual_acquisition_receipt_v1.json": {
+      "bytes": 1279,
+      "sha256": "302f0c782bbf9ecaba50dabcb3544d4e13620dadc2397c0a6f90e29a41ef2945",
+      "source": "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r55f_official_gt_manual_fallback_result_v1/r55f_manual_acquisition_receipt_v1.json"
+    }
+  },
+  "frozen_split": "22_train_7_validation_calibration_7_confirmation_test",
+  "ground_truth_status": "NOT_ACQUIRED",
+  "health_training": "DENIED",
+  "independent_report_sha256": {
+    "r51": "852613e76d272ae1fb312e9dee27ee08bf7cf41e81889aed7495763d3b565602",
+    "r52": "093b1722e23d8e9db92c2ae6dfb173978fbb56041144d64d53388183dcea5210",
+    "r53": "9e2a8b5cf30bad5d67a1776c7bfabafb6f3b7dd1b79a93429e8f34aca8096309",
+    "r54": "ac924e0ff77fbe161bc299255802d47fc602da78e9d83bbe0da89d8dd24801d0",
+    "r55": "899ed3a8582d6fed4d8d211b99729dc2d0a4b7db75cb5a0855b9600192efb65e",
+    "r55f": "22a0ed923ab1057c1bbee38314f4886918dd543e3f43d0bfd0c2c7e27b36bdd8"
+  },
+  "phase_file_counts": {
+    "r51": 6,
+    "r52": 6,
+    "r53": 7,
+    "r54": 7,
+    "r55": 7,
+    "r55f": 6
+  },
+  "raw_bag_opened": false,
+  "real_pose_factors": "DENIED",
+  "schema": "trust_robot_r51_r55f_checkpoint_manifest_v1",
+  "scientific_gates": "ALL_11_CLOSED",
+  "skipped_nonwhitelisted_names": []
+}

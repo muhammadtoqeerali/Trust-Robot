@@ -1,0 +1,56 @@
+{
+  "acquisition_status": "NOT_DOWNLOADED",
+  "ate_rpe_scores": 0,
+  "attempts": [
+    {
+      "bytes_received": 0,
+      "classification": "ERROR_OR_AUTH_REQUIRED",
+      "content_type": null,
+      "error": "HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound",
+      "final_host": null,
+      "http_status": 302,
+      "response_sha256": null,
+      "variant": "official_url"
+    },
+    {
+      "bytes_received": 0,
+      "classification": "ERROR_OR_AUTH_REQUIRED",
+      "content_type": null,
+      "error": "HTTPError: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound",
+      "final_host": null,
+      "http_status": 302,
+      "response_sha256": null,
+      "variant": "official_url_download_parameter"
+    }
+  ],
+  "confirmation_test_accessed": false,
+  "expected_reference_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "github_baseline": "58e23861811e51c5d00f00f5d22e5cb561c4b43a",
+  "github_modified": false,
+  "health_labels": 0,
+  "health_training_authorized": false,
+  "m2dgr_ate_rpe_authorized": false,
+  "metric_pose_authorized": false,
+  "mocap_time_association_qualified": false,
+  "next_phase": "R55_OFFICIAL_GT_MANUAL_ACCESS_FALLBACK",
+  "physical_calibration_qualified": false,
+  "physical_clock_qualified": false,
+  "qualified_pose_factors": 0,
+  "r43_scientific_gates_closed": 11,
+  "r53_source_receipts_unfilled": 5,
+  "r54_source_sha256": {
+    "r54_independent": "ac924e0ff77fbe161bc299255802d47fc602da78e9d83bbe0da89d8dd24801d0",
+    "r54_inventory": "5ebdb056a0fb128a43bfc658900f6f9a0cec0b4ea42ac782be17d46b2620930c",
+    "r54_tracker": "988a2ddce50c55ba804fc6a8b89486e6f8ff2d15f8d4686ef6eaaa112a96cdb1"
+  },
+  "raw_bag_opened": false,
+  "raw_bag_sha256": "ee621ccb1a37cc19edb1424c39de9b9a2223f9dbc9b0b3dcb4e4b849e9f72ac1",
+  "reference_frame_qualified": false,
+  "schema": "TRUST_ROBOT_R55_AUTHOR_REFERENCE_SHA_ACQUISITION_V1",
+  "source_url": "https://sjtueducn-my.sharepoint.com/:t:/g/personal/594666_sjtu_edu_cn/ES-9QFWKEeBNqxyMv5dJe7EB5YxfTzi8v3x2Hf1aLObnAg?e=ifwPHL",
+  "split": "train",
+  "trajectory_id": "room_02",
+  "upstream_readme_git_blob": "c394994a8431426c0bd4b3dcf618faf7b97d119f",
+  "verified_reference_filename": null,
+  "verified_reference_sha256": null
+}

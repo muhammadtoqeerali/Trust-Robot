@@ -1,0 +1,14 @@
+{
+  "confirmation_test_accessed": false,
+  "frozen_prior_reports_verified": 7,
+  "github_modified": false,
+  "independently_empty_physical_receipts": 5,
+  "no_physical_calibration_admitted": true,
+  "r43_empty_gates_verified": 11,
+  "raw_bag_opened": false,
+  "request_plan_sha256": "659d47654fdb8d42ac88c1c80c6641437b528ff9f163031f9ef3c623cf86a098",
+  "schema": "TRUST_ROBOT_R53_INDEPENDENT_TIMING_RECEIPT_ADMISSION_BOUNDARY_V1",
+  "source_receipts_sha256": "f4e2d70c8e39d88ee3d6df62c0e7998488dc900398cdc8bd41733b7c1b9548f2",
+  "source_report_sha256": "2f6591a8d07fe8c8ddd2054d2f704baefd722de5dcd43592904dbe368b7efd8d",
+  "unverified_clock_domains_verified": 4
+}

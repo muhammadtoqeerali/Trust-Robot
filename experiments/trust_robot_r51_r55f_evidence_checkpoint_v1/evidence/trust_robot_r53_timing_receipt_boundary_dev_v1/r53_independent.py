@@ -1,0 +1,45 @@
+"""Independent source SHA and empty-receipt verification, no physical admission."""
+import hashlib,json,pathlib,sys
+TOPICS=('/camera/color/image_raw/compressed','/camera/imu','/handsfree/imu','/velodyne_points')
+KIND=('camera_color','camera_imu','handsfree_imu','velodyne_lidar','mocap_reference')
+GEN=('source_document_uri','source_sha256','original_publisher_and_version','device_model_and_serial_or_export_identifier','capture_event_definition','header_stamp_timebase_and_epoch','clock_mapping_method_and_parameters','clock_offset_and_drift_uncertainty','independent_validation_source_sha256','room_02_applicability_evidence_sha256')
+REF=('mocap_export_file_sha256','mocap_tracked_body_origin_definition','mocap_to_lidar_transform_and_direction','reference_timestamp_export_semantics','invalid_rotation_resolution_evidence_sha256')
+def need(ok,msg):
+ if not ok:raise ValueError('R53_INDEPENDENT_DENIED:'+msg)
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def load(p):return json.loads(p.read_bytes())
+def verify(splitp,r43p,empty43p,r51p,v51p,r52p,v52p,reportp,receiptsp,planp,outp):
+ paths=dict(zip(('split','r43_protocol','r43_unfilled','r51_diagnostics','r51_independent','r52_sensitivity','r52_independent'),(splitp,r43p,empty43p,r51p,v51p,r52p,v52p)))
+ r=load(reportp);receipts=load(receiptsp);old=load(empty43p);r43=load(r43p);r51=load(r51p);r52=load(r52p);v52=load(v52p);split=load(splitp)
+ need(r['source_sha256']=={k:sha(v) for k,v in paths.items()},'SOURCE_SHA')
+ need(r['receipt_schema_sha256']==sha(receiptsp),'RECEIPT_SHA')
+ need(r['receipt_policy']=='SOURCE_INTAKE_ONLY_ZERO_PHYSICAL_ADMISSION' and r['admission_decision']=='DENIED_UNFILLED_SOURCE_RECEIPTS','ADMISSION')
+ need(r['trajectory_id']=='room_02' and r['split']=='train' and r['github_parent']=='58e23861811e51c5d00f00f5d22e5cb561c4b43a','SOURCE_SCOPE')
+ need(receipts['source_data_present'] is False and receipts['trajectory_id']=='room_02' and set(receipts['receipts'])==set(KIND),'RECEIPT_INVENTORY')
+ for name,receipt in receipts['receipts'].items():
+  required=set(GEN)| (set(REF) if name=='mocap_reference' else set())
+  need(receipt['status']=='NO_PHYSICAL_SOURCE_RECEIVED' and receipt['independently_validated'] is False and receipt['physical_measurement_qualified'] is False,'RECEIPT_STATUS:'+name)
+  need(set(receipt['fields'])==required and all(v is None for v in receipt['fields'].values()),'NULL_FIELDS:'+name)
+ need(len(old['gate_receipts'])==11 and set(r['source_status_by_gate'])==set(old['gate_receipts'])==set(r43['requests']),'GATE_INVENTORY')
+ need(all(v=='NOT_QUALIFIED' for v in r['source_status_by_gate'].values()),'SOURCE_GATES')
+ need(all(item['status']=='NO_SOURCE_RECEIVED' and item['source_uri'] is None and item['source_sha256'] is None for item in old['gate_receipts'].values()),'ORIGINAL_R43_EMPTY')
+ room=[item for item in split['records'] if item['trajectory_id']=='room_02'];need(len(room)==1 and room[0]['split']=='train','TRAIN')
+ need(len(room[0]['synchronization'])==4 and all(item['verification_status']=='unverified' and item['fixed_offset_seconds'] is None and item['tolerance_seconds'] is None for item in room[0]['synchronization']),'FOUR_UNVERIFIED_CLOCKS')
+ need({x['topic'] for x in r['topic_frame_pairs']}==set(TOPICS),'TOPICS')
+ need(r51['streams']['/camera/imu']['negative_residual_count']==9 and r52['record_header_sign_scenarios']['/camera/imu'][1]['negative_residual_count']==9,'NEGATIVE_TIMESTAMP_RESIDUALS')
+ need(v52['source_report_sha256']==sha(r52p) and v52['independent_sparse_shift_distances_recomputed']==224 and v52['independent_record_header_residuals_recomputed']==144,'COUNTERFACTUAL_PROVENANCE')
+ need(r['frozen_observed_timestamp_count']==48 and r['hypothetical_nearest_header_distances']==224 and r['hypothetical_record_header_residuals']==144,'COUNTS')
+ need(r['reference_invalid_rotation_count']==90 and r['physical_offset_seconds'] is None and r['clock_drift_model'] is None and r['temporal_association_tolerance_seconds'] is None,'NO_PHYSICAL_OFFSET')
+ for key in ('physical_clock_qualified','reference_timing_qualified','mocap_reference_qualified','calibration_values_promoted','fixed_offset_selected','clock_drift_selected','pose_factors_authorized','health_training_authorized','ate_rpe_authorized','raw_bag_opened','confirmation_test_accessed','github_modified'):
+  need(r.get(key) is False,'SCIENCE:'+key)
+ for key in ('real_pose_factors','health_labels','ate_rpe_scores','new_external_source_files'):
+  need(type(r.get(key)) is int and r[key]==0,'ZERO:'+key)
+ plan=planp.read_text();need('R54' in plan and 'room_02' in plan and 'invalid rotation' in plan.lower() and 'physical event' in plan.lower(),'REQUEST_PACKET')
+ proof={'schema':'TRUST_ROBOT_R53_INDEPENDENT_TIMING_RECEIPT_ADMISSION_BOUNDARY_V1','source_report_sha256':sha(reportp),'source_receipts_sha256':sha(receiptsp),'request_plan_sha256':sha(planp),'frozen_prior_reports_verified':7,'r43_empty_gates_verified':11,'independently_empty_physical_receipts':5,'unverified_clock_domains_verified':4,'no_physical_calibration_admitted':True,'raw_bag_opened':False,'confirmation_test_accessed':False,'github_modified':False}
+ with outp.open('x') as h:json.dump(proof,h,sort_keys=True,indent=2,allow_nan=False);h.write('\n')
+ print('R53_INDEPENDENT_SOURCE_REPORT_SHA256=7_MATCH')
+ print('R53_INDEPENDENT_PHYSICAL_RECEIPTS=5_EMPTY')
+ print('R53_INDEPENDENT_R43_SCIENCE_GATES=11_CLOSED')
+ print('R53_INDEPENDENT_UNVERIFIED_CLOCK_DOMAINS=4_CONFIRMED')
+ print('R53_INDEPENDENT_VALIDATION=PASS')
+if __name__=='__main__':verify(*(pathlib.Path(x) for x in sys.argv[1:12]))

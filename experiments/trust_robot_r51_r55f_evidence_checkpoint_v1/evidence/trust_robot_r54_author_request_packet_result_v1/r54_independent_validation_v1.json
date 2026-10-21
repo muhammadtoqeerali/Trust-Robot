@@ -1,0 +1,25 @@
+{
+  "acquisition_tracker_sha256": "988a2ddce50c55ba804fc6a8b89486e6f8ff2d15f8d4686ef6eaaa112a96cdb1",
+  "author_request_packet_sha256": "452b29e5f0fa71989c43944f667a761adfeec499778582a47584de58adf5cca1",
+  "confirmation_test_accessed": false,
+  "frozen_inputs_sha256": {
+    "r43": "48b95eea59923fb71358172af889eb413c0220d55212a4d400fa1ab7e72bed75",
+    "r43_unfilled": "260f799a3d1494052416ba83652c6de79165ba2b29e7b28f9cd14bfd6c5bc622",
+    "r53": "2f6591a8d07fe8c8ddd2054d2f704baefd722de5dcd43592904dbe368b7efd8d",
+    "r53_plan": "659d47654fdb8d42ac88c1c80c6641437b528ff9f163031f9ef3c623cf86a098",
+    "r53_unfilled": "f4e2d70c8e39d88ee3d6df62c0e7998488dc900398cdc8bd41733b7c1b9548f2",
+    "r53_validation": "9e2a8b5cf30bad5d67a1776c7bfabafb6f3b7dd1b79a93429e8f34aca8096309",
+    "split": "017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f"
+  },
+  "frozen_timestamp_evidence_count": 48,
+  "github_modified": false,
+  "gt_file_fetched_or_authenticated": false,
+  "gt_published_link_verified_in_packet": true,
+  "inventory_sha256": "5ebdb056a0fb128a43bfc658900f6f9a0cec0b4ea42ac782be17d46b2620930c",
+  "original_bag_opened": false,
+  "r43_unqualified_source_gates_verified": 11,
+  "r53_empty_physical_receipts_verified": 5,
+  "reference_invalid_rotation_count": 90,
+  "schema": "TRUST_ROBOT_R54_INDEPENDENT_PUBLISHED_REFERENCE_CANDIDATE_VERIFICATION_V1",
+  "science_admission": false
+}

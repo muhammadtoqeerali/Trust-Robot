@@ -1,0 +1,13 @@
+{
+  "authentic_frozen_sample_timestamps_recomputed": 48,
+  "confirmation_test_used": false,
+  "github_modified": false,
+  "independently_replayed_streams": 3,
+  "physical_clock_or_reference_timing_admitted": false,
+  "plan_sha256": "29bce30ecda9c8884e8a52438cf3dbcc1b50c36b8b0daa04a7987295f6de0ee6",
+  "raw_bag_opened": false,
+  "real_sensor_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R51_INDEPENDENT_CLOCK_EVIDENCE_VALIDATION_V1",
+  "source_report_sha256": "8abfa83938f50389f9ae126fa906f1019c916c395756d65f0c99dc887b806000",
+  "sparse_nearest_header_groups_recomputed": 2
+}

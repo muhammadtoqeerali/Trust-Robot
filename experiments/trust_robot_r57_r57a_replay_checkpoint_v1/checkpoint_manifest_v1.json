@@ -1,0 +1,39 @@
+{
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "documentation_sha256": {
+    "AGENTS.md": "203b1859be58e6ec504dde0c6dbc3522d244353e31bc37132bd2655006b76c60",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "98529b84245f51b3233d72e8bf322c012f37ce1f8eda084180e647fa78dc0abd",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R51_R55F_EVIDENCE_V1.md": "dbc0174ca114515cd7164a3ba45738a79860a02873f6e04272fb0ea5a6ad0280"
+  },
+  "files_sha256": {
+    "README.md": "6c8818ab9a019b7b2ec64477a71d951d098c2317645ed16a24fcf8e18746c093",
+    "build_checkpoint.py": "f0e8530f52a51663d671d1d35013a4e882a39ee0216764c3bc4f9bc384a58722",
+    "sources/r57_failure/r51_synthetic_negative_replay.txt": "612f61d5f3f5ca8bd68e3111ac498e677c986940ef6e81d2afeb6394e5c5143b",
+    "sources/r57_failure/r57_offline_test_launcher.py": "8594c6269304f6ee76c8fe9391af6da48ee9ee7b0ff651eadb0b710db9392a4c",
+    "sources/r57_failure/r57_replay.py": "0cb51a3949e44a60ca949add5f13c303893e0c0caf686c1268053c73c4dc97f6",
+    "sources/r57a_success/r51_replay.txt": "6091d0481d64842898f42d90368b16cd4ea4efac70c0206fa6bfdc3dd1f87f6c",
+    "sources/r57a_success/r52_replay.txt": "a4388a3099a36e4090d6afd547122307a0430660d6e589b9a1427ad5510c059b",
+    "sources/r57a_success/r53_replay.txt": "67c56afb2c278e810d4252ee68df0f9fc3d2c48a0226040b84b5fe1d8a8c1028",
+    "sources/r57a_success/r54_replay.txt": "a5d984cef2d5e8de37aa71ccd9c90da159c4be3e2e07b277cbd1266ffc06d525",
+    "sources/r57a_success/r55_replay.txt": "f1002655cb96d91cd3952a73614a99016240c8df9fd063a4c812c2c82c9d8922",
+    "sources/r57a_success/r55f_replay.txt": "2169d79117bdf56c7df9b8975147244a0f7993deac9a7003c1d21575e4b85b79",
+    "sources/r57a_success/r57a_offline_test_launcher_fixed.py": "ae2e7c09d8c5fdbd716cf5a73792d740575fdfca03fe39b47204fe40ba6d8c20",
+    "sources/r57a_success/r57a_replay_report_v1.json": "9d67f3a133867698a2a6570b557e369d435103b60a9a30a2ed9ddafe4dca8809",
+    "sources/r57a_success/r57a_resume_tests.py": "5953a0ffaec5751abcb44b30c650ae9091ca27be236882e6a7d1f4ac1da0c89c",
+    "verify_checkpoint.py": "37994e5a55562c7958bdfe1e835b7ddd08c6af5745e0adfbd849787be55bf12e"
+  },
+  "ground_truth_acquired": false,
+  "health_training_authorized": false,
+  "parent_commit": "58e23861811e51c5d00f00f5d22e5cb561c4b43a",
+  "r56_archive_manifest_sha256": "37baa2af905a3bb8dcac1a987a602923e8e847e9d39c2aa254598d29f31ddd0f",
+  "r56_artifacts_byte_replayed": 39,
+  "r57_original_launcher_failed": true,
+  "r57_tamper_controls_rejected": 2,
+  "r57a_synthetic_negative_test_replays_passed": 6,
+  "raw_bag_archived": false,
+  "real_pose_factors_authorized": false,
+  "schema": "TRUST_ROBOT_R57_R57A_REPLAY_CHECKPOINT_V1",
+  "scientific_gates_opened": 0
+}

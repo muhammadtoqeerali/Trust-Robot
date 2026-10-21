@@ -1,0 +1,15 @@
+{
+  "clock_offset_selected": false,
+  "confirmation_test_accessed": false,
+  "github_modified": false,
+  "independent_record_header_residuals_recomputed": 144,
+  "independent_sparse_shift_distances_recomputed": 224,
+  "mocap_reference_scoring_authorized": false,
+  "original_timestamp_receipts_verified": 48,
+  "physical_clock_calibration_authorized": false,
+  "plan_sha256": "a1c55e20452d08690affefc94acd203587e984e1c8a920410b2cff9f5b7c2f9f",
+  "pose_factors_authorized": false,
+  "raw_bag_opened": false,
+  "schema": "TRUST_ROBOT_R52_INDEPENDENT_CLOCK_PROVENANCE_SENSITIVITY_V1",
+  "source_report_sha256": "3d033c2f37dd657c3099fc45fca7908424b160d383e817d1852c066113673c58"
+}

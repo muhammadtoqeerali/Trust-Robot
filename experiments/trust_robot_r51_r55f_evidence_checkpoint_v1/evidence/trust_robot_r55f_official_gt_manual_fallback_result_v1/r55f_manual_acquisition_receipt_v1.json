@@ -1,0 +1,26 @@
+{
+  "admission": "DENIED",
+  "browser_authorship_provenance": "NOT_INDEPENDENTLY_ESTABLISHED",
+  "confirmation_test_accessed": false,
+  "download_method": "USER_BROWSER_MANUAL_STAGING_ONLY_NO_NETWORK_BY_THIS_PHASE",
+  "downloaded_gt_copied_into_git": false,
+  "expected_raw_source_sha256": "79d2c6d9132ce3cf87bb87445729302cd73709a59344a3dfacc5d7788937589d",
+  "next": "MANUALLY_SAVE_OFFICIAL_GT_TO_STAGING_THEN_REQUEST_TARGETED_CHECK",
+  "observed": {
+    "bytes": null,
+    "reason": "MANUAL_FILE_NOT_YET_STAGED",
+    "sha256": null,
+    "status": "ABSENT"
+  },
+  "official_link_provenance": "upstream_M2DGR_README_git_commit_5db59c1f_R54_inventory_candidate_only",
+  "physical_reference_frame_and_clock": "NOT_QUALIFIED",
+  "r43_eleven_scientific_gates": "ALL_CLOSED_UNCHANGED",
+  "r54_inventory_sha256": "5ebdb056a0fb128a43bfc658900f6f9a0cec0b4ea42ac782be17d46b2620930c",
+  "r54_tracker_sha256": "988a2ddce50c55ba804fc6a8b89486e6f8ff2d15f8d4686ef6eaaa112a96cdb1",
+  "raw_rosbag_accessed": false,
+  "real_sensor_factors_health_ate_rpe": "DENIED",
+  "schema": "trust_robot_r55f_offline_browser_source_receipt_v1",
+  "source_candidate": "/home/kios/TRUST_ROBOT_ALI/manual_official_gt_staging_v1/room_02_official_gt_candidate.txt",
+  "split": "TRAIN",
+  "trajectory": "room_02"
+}

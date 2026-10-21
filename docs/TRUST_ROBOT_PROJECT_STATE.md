@@ -1,6 +1,6 @@
 # TRUST-ROBOT Project State
 
-Last Updated: 2026-10-16
+Last Updated: 2026-10-21
 
 Repository: `muhammadtoqeerali/Trust-Robot`
 
@@ -6119,3 +6119,27 @@ R45 discovered four immutable official M2DGR source candidates; R46 authenticate
 No real sensor factors, physically validated clock/extrinsics/mocap pose reference, health-model training, ATE/RPE scoring or confirmation-test access. The original raw bag remains off-Git; the immutable 22/7/7 split and all eleven R43 scientific evidence gates remain unchanged.
 
 Next R51: independent source applicability and physically traceable clock/extrinsic/reference intake; do not confuse Git source integrity with actual sensor calibration.
+
+## KIOS recorded-M2DGR checkpoint R51–R55F, R57/R57A (2026-10-21)
+
+On `kios-isaacsim-v15-integration`, R51 measured only recorded timestamp
+diagnostics from frozen TRAIN room_02 receipts; R52 explored counterfactual
+header shifts without selecting a clock correction. R53/R54 preserved physical
+clock, reference and calibration gaps and the UNSENT author request packet.
+R55 made two HTTPS attempts returning HTTP 302; original room_02 GT bytes
+were NOT downloaded. R55F manual staging and its later stage check found
+no authorized file. The expected GT SHA is historical, NOT matched to bytes.
+
+R56 archived 39 hash-identified local artifacts. R57 independently compared
+all 39 to off-Git KIOS sources, validated the standalone archive, and rejected
+two negative modifications before a test-launch argument error. R57A preserved
+the original failure and verified six isolated synthetic/negative test replays
+using a targeted argument-only launcher repair. Both checkpoint directories
+contain their own standalone verification code; R57/R57A's outcome is
+engineering evidence, not a scientific reference admission. No new raw bag
+reading, confirmation-test access, pose factors, health labels or ATE/RPE.
+
+Frozen split SHA256: `017a388ef1ce4ad30812669632a022ca37c084871bc949693fd9c0541014238f`.
+All eleven physical-evidence gates stay CLOSED; real factor admission, health
+training and reference scoring remain DENIED. Next: authorized source access
+and independently verified frame/time/reference semantics before any scoring.

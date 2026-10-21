@@ -1,0 +1,12 @@
+{
+  "acquisition_status": "NOT_DOWNLOADED",
+  "confirmation_test_accessed": false,
+  "github_modified": false,
+  "physically_qualified": false,
+  "plan_sha256": "c8ece57812ac100207768bf38d91a003ee65d2fdb546de846d1debdb0dffe0f8",
+  "primary_report_sha256": "b6b19a5c86b4e214655103141a8f6224c64ccb56dbe8ca87cea17e22c0f3b1e5",
+  "real_factors_authorized": false,
+  "reference_scoring_authorized": false,
+  "schema": "TRUST_ROBOT_R55_INDEPENDENT_SOURCE_ACQUISITION_AUDIT_V1",
+  "source_sha256_checked": false
+}

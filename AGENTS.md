@@ -255,3 +255,24 @@ Next R45: physical evidence intake and independent scientific qualification read
 Checkpoint: `experiments/trust_robot_r45_r49_author_camera_model_checkpoint_v1/`, standalone `verify_checkpoint.py`. Audit: `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R45_R49_AUTHOR_CAMERA_MODEL_V1.md`.
 
 R45–R49 retain upstream Git-authenticated author parameter content, numeric comparisons, recorded topic/dimension compatibility, synthetic projection and model-robustness results; include original failing R46 independent verifier, targeted repair provenance, and offline author-file transfer evidence. Never promote matching configuration values, synthetically generated rays or small parameter differences to physical intrinsics/extrinsics accuracy, independently verified time synchronization or real robot pose factors. Continue TRAIN-only investigation, keep confirmation_test sealed, bag data off-Git and original split frozen. All eleven R43 missing-physical-evidence gates remain unqualified. Next R51: independent sensor/clock/reference applicability and evidence intake.
+
+## KIOS R51–R55F evidence and R57/R57A replay checkpoint — 2026-10-21
+
+Read `experiments/trust_robot_r51_r55f_evidence_checkpoint_v1/README.md`,
+`experiments/trust_robot_r57_r57a_replay_checkpoint_v1/README.md`, and
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R51_R55F_EVIDENCE_V1.md`.
+R51–R55F preserve authentic TRAIN timestamp diagnostics, clock sensitivity,
+physical-evidence admission denials, author-source candidate and two HTTP-302
+fetch attempts, and an offline manual download fallback. Ground truth was NOT
+ACQUIRED. R56 pinned 39 source/test/report artifacts; R57 compared 39 archived
+source bytes and rejected two tamper controls, then failed from a launcher
+argument omission. R57A preserved that failure, repaired only the copied
+launcher and replayed six synthetic/negative test programs successfully.
+
+These engineering passes are not physical sensor synchronization, independent
+reference GT, qualified metric 6-DoF, trained health estimation or ATE/RPE.
+All eleven R43 scientific gates remain CLOSED. Keep the 22/7/7 split frozen,
+confirmation_test sealed, raw bag and GT source off GitHub. Next science work:
+obtain author-authorized original room_02 reference bytes and independently
+audit their format, pose frames, clock and invalid rotations. No automatic
+third identical SharePoint fetch; do not infer source acquisition from 302.

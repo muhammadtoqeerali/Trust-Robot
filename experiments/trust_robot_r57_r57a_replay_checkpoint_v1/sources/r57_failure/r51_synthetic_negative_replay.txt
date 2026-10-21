@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r57_checkpoint_independent_replay_result_v1/r57_offline_test_launcher.py", line 20, in <module>
+    runpy.run_path(str(target),run_name="__main__")
+  File "/usr/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/usr/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/kios/TRUST_ROBOT_ALI/experiments/trust_robot_r57_checkpoint_independent_replay_result_v1/r57_tests_460hheeq/r51/trust_robot_r51_clock_evidence_dev_v1/test_r51.py", line 3, in <module>
+    root=pathlib.Path(sys.argv[1]);sources=list(root.glob('*.py'))
+IndexError: list index out of range

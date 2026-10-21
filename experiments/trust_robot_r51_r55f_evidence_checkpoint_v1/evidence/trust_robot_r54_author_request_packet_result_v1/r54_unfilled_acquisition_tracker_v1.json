@@ -1,0 +1,129 @@
+{
+  "external_material_acquired": false,
+  "original_gate_receipts": {
+    "camera_imu_extrinsics_physically_verified": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "camera_intrinsics_physically_verified": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "camera_lidar_extrinsics_physically_verified": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "cross_sensor_synchronization_physically_verified": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "health_training_authorized": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "m2dgr_ate_rpe_authorized": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "metric_visual_pose_authorized": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "mocap_body_to_lidar_physically_verified": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "raw_reference_available_locally": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "real_sensor_factors_authorized": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    },
+    "reference_capture_clock_physically_verified": {
+      "admission_authorized": false,
+      "independent_validation_sha256": null,
+      "source_sha256": null,
+      "status": "UNCHANGED_NOT_QUALIFIED"
+    }
+  },
+  "physical_qualification_authorized": false,
+  "physical_source_received": false,
+  "published_link_is_downloaded_content": false,
+  "schema": "TRUST_ROBOT_R54_UNFILLED_SOURCE_ACQUISITION_TRACKER_V1",
+  "sensor_receipts": {
+    "camera_color": {
+      "clock_and_frame_semantics_verified": false,
+      "download_sha256": null,
+      "file_path": null,
+      "independent_validation_sha256": null,
+      "qualification_authorized": false,
+      "received_from": null,
+      "room_02_hardware_applicability_verified": false,
+      "status": "UNFILLED_AWAITING_SOURCE"
+    },
+    "camera_imu": {
+      "clock_and_frame_semantics_verified": false,
+      "download_sha256": null,
+      "file_path": null,
+      "independent_validation_sha256": null,
+      "qualification_authorized": false,
+      "received_from": null,
+      "room_02_hardware_applicability_verified": false,
+      "status": "UNFILLED_AWAITING_SOURCE"
+    },
+    "handsfree_imu": {
+      "clock_and_frame_semantics_verified": false,
+      "download_sha256": null,
+      "file_path": null,
+      "independent_validation_sha256": null,
+      "qualification_authorized": false,
+      "received_from": null,
+      "room_02_hardware_applicability_verified": false,
+      "status": "UNFILLED_AWAITING_SOURCE"
+    },
+    "mocap_reference": {
+      "clock_and_frame_semantics_verified": false,
+      "download_sha256": null,
+      "file_path": null,
+      "independent_validation_sha256": null,
+      "qualification_authorized": false,
+      "received_from": null,
+      "room_02_hardware_applicability_verified": false,
+      "status": "UNFILLED_AWAITING_SOURCE"
+    },
+    "velodyne_lidar": {
+      "clock_and_frame_semantics_verified": false,
+      "download_sha256": null,
+      "file_path": null,
+      "independent_validation_sha256": null,
+      "qualification_authorized": false,
+      "received_from": null,
+      "room_02_hardware_applicability_verified": false,
+      "status": "UNFILLED_AWAITING_SOURCE"
+    }
+  },
+  "split": "train",
+  "trajectory_id": "room_02"
+}

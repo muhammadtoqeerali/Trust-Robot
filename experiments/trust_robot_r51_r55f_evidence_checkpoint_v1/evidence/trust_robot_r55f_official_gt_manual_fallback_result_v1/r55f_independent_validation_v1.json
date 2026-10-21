@@ -1,0 +1,10 @@
+{
+  "confirmation_test_accessed": false,
+  "eleven_scientific_gates": "ALL_CLOSED",
+  "independent_candidate_state": "ABSENT",
+  "original_r55_untouched": true,
+  "raw_bag_opened": false,
+  "schema": "trust_robot_r55f_independent_replay_v1",
+  "source_content_sha256_matched": false,
+  "status": "PASS"
+}

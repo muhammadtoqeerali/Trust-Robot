@@ -1,0 +1,98 @@
+{
+  "receipts": {
+    "camera_color": {
+      "fields": {
+        "capture_event_definition": null,
+        "clock_mapping_method_and_parameters": null,
+        "clock_offset_and_drift_uncertainty": null,
+        "device_model_and_serial_or_export_identifier": null,
+        "header_stamp_timebase_and_epoch": null,
+        "independent_validation_source_sha256": null,
+        "original_publisher_and_version": null,
+        "room_02_applicability_evidence_sha256": null,
+        "source_document_uri": null,
+        "source_sha256": null
+      },
+      "independently_validated": false,
+      "physical_measurement_qualified": false,
+      "status": "NO_PHYSICAL_SOURCE_RECEIVED"
+    },
+    "camera_imu": {
+      "fields": {
+        "capture_event_definition": null,
+        "clock_mapping_method_and_parameters": null,
+        "clock_offset_and_drift_uncertainty": null,
+        "device_model_and_serial_or_export_identifier": null,
+        "header_stamp_timebase_and_epoch": null,
+        "independent_validation_source_sha256": null,
+        "original_publisher_and_version": null,
+        "room_02_applicability_evidence_sha256": null,
+        "source_document_uri": null,
+        "source_sha256": null
+      },
+      "independently_validated": false,
+      "physical_measurement_qualified": false,
+      "status": "NO_PHYSICAL_SOURCE_RECEIVED"
+    },
+    "handsfree_imu": {
+      "fields": {
+        "capture_event_definition": null,
+        "clock_mapping_method_and_parameters": null,
+        "clock_offset_and_drift_uncertainty": null,
+        "device_model_and_serial_or_export_identifier": null,
+        "header_stamp_timebase_and_epoch": null,
+        "independent_validation_source_sha256": null,
+        "original_publisher_and_version": null,
+        "room_02_applicability_evidence_sha256": null,
+        "source_document_uri": null,
+        "source_sha256": null
+      },
+      "independently_validated": false,
+      "physical_measurement_qualified": false,
+      "status": "NO_PHYSICAL_SOURCE_RECEIVED"
+    },
+    "mocap_reference": {
+      "fields": {
+        "capture_event_definition": null,
+        "clock_mapping_method_and_parameters": null,
+        "clock_offset_and_drift_uncertainty": null,
+        "device_model_and_serial_or_export_identifier": null,
+        "header_stamp_timebase_and_epoch": null,
+        "independent_validation_source_sha256": null,
+        "invalid_rotation_resolution_evidence_sha256": null,
+        "mocap_export_file_sha256": null,
+        "mocap_to_lidar_transform_and_direction": null,
+        "mocap_tracked_body_origin_definition": null,
+        "original_publisher_and_version": null,
+        "reference_timestamp_export_semantics": null,
+        "room_02_applicability_evidence_sha256": null,
+        "source_document_uri": null,
+        "source_sha256": null
+      },
+      "independently_validated": false,
+      "physical_measurement_qualified": false,
+      "status": "NO_PHYSICAL_SOURCE_RECEIVED"
+    },
+    "velodyne_lidar": {
+      "fields": {
+        "capture_event_definition": null,
+        "clock_mapping_method_and_parameters": null,
+        "clock_offset_and_drift_uncertainty": null,
+        "device_model_and_serial_or_export_identifier": null,
+        "header_stamp_timebase_and_epoch": null,
+        "independent_validation_source_sha256": null,
+        "original_publisher_and_version": null,
+        "room_02_applicability_evidence_sha256": null,
+        "source_document_uri": null,
+        "source_sha256": null
+      },
+      "independently_validated": false,
+      "physical_measurement_qualified": false,
+      "status": "NO_PHYSICAL_SOURCE_RECEIVED"
+    }
+  },
+  "schema": "TRUST_ROBOT_R53_UNFILLED_PHYSICAL_SOURCE_RECEIPTS_V1",
+  "source_data_present": false,
+  "split": "train",
+  "trajectory_id": "room_02"
+}
