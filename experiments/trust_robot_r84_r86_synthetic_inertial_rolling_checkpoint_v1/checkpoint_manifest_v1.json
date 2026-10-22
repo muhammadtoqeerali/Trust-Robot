@@ -1,0 +1,41 @@
+{
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "health_training_authorized": false,
+  "independent_gt_accuracy_demonstrated": false,
+  "metadata_sha256": {
+    "README.md": "303ae8543c02dba851dffc135ae4befd796a712b1ff493d418ff642a810daecd",
+    "verify_checkpoint.py": "8d51cbb52ac5c8631425ef81637401a87f0144f7bf3810884c7c359f4cb604e0"
+  },
+  "original_gt_or_rosbags_archived": false,
+  "parent_commit": "885bf22f7454a85cee53b82f5d6a5cbd7d3eff3e",
+  "physical_clock_and_extrinsic_qualified": false,
+  "private_verona_reports_archived": false,
+  "r84_r85_r86_regression_tests": 63,
+  "r84_r85_r86_synthetic_scenario_count_each": 4,
+  "recorded_sensor_factors_executed": false,
+  "schema": "TRUST_ROBOT_R84_R86_SYNTHETIC_INERTIAL_ROLLING_CHECKPOINT_V1",
+  "schur_marginalization_implemented": false,
+  "scientific_gates_closed": 11,
+  "source_count": 12,
+  "source_sha256": {
+    "evidence/r84/dev/r84_gap_frontend.py": "efc484f6061641131dbe3a1c3a30ca9e134019924ab602d808b1a657572326ee",
+    "evidence/r84/dev/test_r84.py": "815187e9f62cdaaae79e21b70f1052dc3f6b7cdc127e6c788a8492d4841d7083",
+    "evidence/r84/result/r84_independent_validation_v1.json": "aca3836fdd3504355a1d812256b3dc4a95b1ee644af20ca779cbd56a6363c844",
+    "evidence/r84/result/r84_synthetic_inertial_gap_frontend_v1.json": "e0aee374d0a490613745660bd36035d01270f7ed455550fa424dd94ef604fab2",
+    "evidence/r85/dev/r85_fusion.py": "c16896b707152ce6a50c0a303540748257f8bf0392313bc7a078866d1047fc3a",
+    "evidence/r85/dev/test_r85.py": "f47647ba9dcce7f3cd511531ad5f554dc613f2b901a85fd3199c202d15d143ef",
+    "evidence/r85/result/r85_independent_validation_v1.json": "5ec1f3606d96286a88b1baa1373c2294b6d5a1605e08558a23c6352454508382",
+    "evidence/r85/result/r85_synthetic_gap_aware_fusion_v1.json": "6459c06df63ebbd7761cf81d6518c5df703c740b74c8a93b5bc64e8ac4896680",
+    "evidence/r86/dev/r86_rolling.py": "7d743dfa974d7c33ad749e22394289a2a04d892853172cea1379fc958d938ed3",
+    "evidence/r86/dev/test_r86.py": "e51f9c009f001c16008781f480ee7caef08caa20e55b83d8660c728794611649",
+    "evidence/r86/result/r86_independent_validation_v1.json": "a763a6ae9150ff2e1ea79d1a2becdb1bdb2a4d0d9b0c08b515572342190cf52f",
+    "evidence/r86/result/r86_synthetic_rolling_optimization_v1.json": "6882756ebcba194935a1870e7604877d482ef31cbb7a845e15884bad6e7555e9"
+  },
+  "underlying_fusion_module_sha256": "396fc5171f3db972a2cebcd020f189e8a9c91979ada820a69ab8cd1b954efd79",
+  "underlying_inertial_preintegrator_sha256": "5d1150e1351e205521f7511b7885542199d95a4b9ef34ad618f6f9291bb24b33",
+  "upstream_r83_camera_imu_feature_record_count": 2816957,
+  "upstream_r83_frozen_lidar_increment_count": 90992,
+  "upstream_r83_frozen_train_trajectory_count": 22
+}

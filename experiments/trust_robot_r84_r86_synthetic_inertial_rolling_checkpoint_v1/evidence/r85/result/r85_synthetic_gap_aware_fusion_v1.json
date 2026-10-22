@@ -1,0 +1,328 @@
+{
+  "actual_sensor_timebase_qualified": false,
+  "algorithm": "R84_SEGMENTS_PLUS_FROZEN_15D_INERTIAL_PREINTEGRATION_AND_WHITENING",
+  "ate_rpe_computed": false,
+  "bias_sensitive_preintegrator_reused": true,
+  "camera_imu_lidar_alignment_performed": false,
+  "confirmation_test_accessed": false,
+  "constructed_endpoint_is_independent_truth": false,
+  "constructed_endpoint_residual_closure_verified": true,
+  "cross_gap_factors_constructed": 0,
+  "factor_graph_interface_implemented": true,
+  "full_correlated_covariance_whitening": true,
+  "health_probability_or_label_estimated": false,
+  "r84_report_sha256": "e0aee374d0a490613745660bd36035d01270f7ed455550fa424dd94ef604fab2",
+  "real_estimator_optimization_executed": false,
+  "recorded_sensor_pose_factors_constructed": 0,
+  "rosbags_or_gt_opened": false,
+  "scenario_count": 4,
+  "scenarios": {
+    "accel_injection": {
+      "bridging_gap_factors": 0,
+      "edges": [
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.9997440610190595e-09,
+          "covariance_reconstruction_max_error": 2.117582368135751e-22,
+          "covariance_trace": 4.966313495461177e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1000000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1200000000",
+          "whitened_residual_norm_at_constructed_endpoint": 1.1050938255501498e-13,
+          "window_index": 0
+        },
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.9997440624336417e-09,
+          "covariance_reconstruction_max_error": 3.3881317890172014e-21,
+          "covariance_trace": 4.966245405434164e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1200000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1400000000",
+          "whitened_residual_norm_at_constructed_endpoint": 7.950289495820742e-14,
+          "window_index": 1
+        }
+      ],
+      "full_15d_whitening_exercised": true,
+      "input_packet_count": 9,
+      "integrated_sample_pairs": 8,
+      "interpolation_performed": false,
+      "node_count": 3,
+      "nodes": [
+        {
+          "node_id": "s0:t1000000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1000000000
+        },
+        {
+          "node_id": "s0:t1200000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1200000000
+        },
+        {
+          "node_id": "s0:t1400000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1400000000
+        }
+      ],
+      "nonlinear_solver_executed": false,
+      "physical_clock_qualified": false,
+      "real_factor_admission": false,
+      "rejected_gap_pairs": 0,
+      "safe_factor_count": 2,
+      "segment_count": 1,
+      "source": "ANALYTIC_FIXTURE"
+    },
+    "continuous": {
+      "bridging_gap_factors": 0,
+      "edges": [
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.9997440600134506e-09,
+          "covariance_reconstruction_max_error": 2.117582368135751e-22,
+          "covariance_trace": 4.966364542209573e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1000000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1200000000",
+          "whitened_residual_norm_at_constructed_endpoint": 7.139992256974053e-14,
+          "window_index": 0
+        },
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.9997440600134506e-09,
+          "covariance_reconstruction_max_error": 2.117582368135751e-22,
+          "covariance_trace": 4.966364542209573e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1200000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1400000000",
+          "whitened_residual_norm_at_constructed_endpoint": 7.139992256974053e-14,
+          "window_index": 1
+        }
+      ],
+      "full_15d_whitening_exercised": true,
+      "input_packet_count": 9,
+      "integrated_sample_pairs": 8,
+      "interpolation_performed": false,
+      "node_count": 3,
+      "nodes": [
+        {
+          "node_id": "s0:t1000000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1000000000
+        },
+        {
+          "node_id": "s0:t1200000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1200000000
+        },
+        {
+          "node_id": "s0:t1400000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1400000000
+        }
+      ],
+      "nonlinear_solver_executed": false,
+      "physical_clock_qualified": false,
+      "real_factor_admission": false,
+      "rejected_gap_pairs": 0,
+      "safe_factor_count": 2,
+      "segment_count": 1,
+      "source": "ANALYTIC_FIXTURE"
+    },
+    "gyro_injection": {
+      "bridging_gap_factors": 0,
+      "edges": [
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.9997440599926665e-09,
+          "covariance_reconstruction_max_error": 2.117582368135751e-22,
+          "covariance_trace": 4.966364541980536e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1000000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1200000000",
+          "whitened_residual_norm_at_constructed_endpoint": 7.151551940127789e-14,
+          "window_index": 0
+        },
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.999744059953464e-09,
+          "covariance_reconstruction_max_error": 3.3881317890172014e-21,
+          "covariance_trace": 4.966364533194356e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1200000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1400000000",
+          "whitened_residual_norm_at_constructed_endpoint": 6.602340354741148e-14,
+          "window_index": 1
+        }
+      ],
+      "full_15d_whitening_exercised": true,
+      "input_packet_count": 9,
+      "integrated_sample_pairs": 8,
+      "interpolation_performed": false,
+      "node_count": 3,
+      "nodes": [
+        {
+          "node_id": "s0:t1000000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1000000000
+        },
+        {
+          "node_id": "s0:t1200000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1200000000
+        },
+        {
+          "node_id": "s0:t1400000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1400000000
+        }
+      ],
+      "nonlinear_solver_executed": false,
+      "physical_clock_qualified": false,
+      "real_factor_admission": false,
+      "rejected_gap_pairs": 0,
+      "safe_factor_count": 2,
+      "segment_count": 1,
+      "source": "ANALYTIC_FIXTURE"
+    },
+    "single_gap": {
+      "bridging_gap_factors": 0,
+      "edges": [
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.9997440600134506e-09,
+          "covariance_reconstruction_max_error": 2.117582368135751e-22,
+          "covariance_trace": 4.966364542209573e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s0:t1000000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 4,
+          "segment_id": 0,
+          "synthetic_dt_s": 0.2,
+          "synthetic_only": true,
+          "to_node": "s0:t1200000000",
+          "whitened_residual_norm_at_constructed_endpoint": 7.139992256974053e-14,
+          "window_index": 0
+        },
+        {
+          "covariance_dimension": 15,
+          "covariance_min_eigenvalue": 1.4999147051637183e-09,
+          "covariance_reconstruction_max_error": 1.6940658945086007e-21,
+          "covariance_trace": 3.697567430925324e-05,
+          "endpoint_reference_independent": false,
+          "from_node": "s1:t1950000000",
+          "full_correlated_whitening": true,
+          "real_factor_executable": false,
+          "sample_count": 3,
+          "segment_id": 1,
+          "synthetic_dt_s": 0.15000000000000002,
+          "synthetic_only": true,
+          "to_node": "s1:t2100000000",
+          "whitened_residual_norm_at_constructed_endpoint": 3.364561932671526e-14,
+          "window_index": 1
+        }
+      ],
+      "full_15d_whitening_exercised": true,
+      "input_packet_count": 9,
+      "integrated_sample_pairs": 7,
+      "interpolation_performed": false,
+      "node_count": 4,
+      "nodes": [
+        {
+          "node_id": "s0:t1000000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1000000000
+        },
+        {
+          "node_id": "s0:t1200000000",
+          "physical_state_estimated": false,
+          "segment_id": 0,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1200000000
+        },
+        {
+          "node_id": "s1:t1950000000",
+          "physical_state_estimated": false,
+          "segment_id": 1,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 1950000000
+        },
+        {
+          "node_id": "s1:t2100000000",
+          "physical_state_estimated": false,
+          "segment_id": 1,
+          "state_dimension": 15,
+          "synthetic_timestamp_ns": 2100000000
+        }
+      ],
+      "nonlinear_solver_executed": false,
+      "physical_clock_qualified": false,
+      "real_factor_admission": false,
+      "rejected_gap_pairs": 1,
+      "safe_factor_count": 2,
+      "segment_count": 2,
+      "source": "ANALYTIC_FIXTURE"
+    }
+  },
+  "schema": "TRUST_ROBOT_R85_SYNTHETIC_GAP_AWARE_INERTIAL_FUSION_V1",
+  "scientific_gates_closed": 11,
+  "source": "ANALYTIC_FIXTURE",
+  "status": "PASS_SOFTWARE_ONLY"
+}

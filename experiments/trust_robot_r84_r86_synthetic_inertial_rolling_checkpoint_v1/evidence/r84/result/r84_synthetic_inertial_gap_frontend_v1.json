@@ -1,0 +1,345 @@
+{
+  "algorithm": "SYNTHETIC_IRREGULAR_TIMESTAMP_SEGMENTER_PLUS_EXISTING_ANALYTIC_PREINTEGRATOR",
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "cross_sensor_synchronization_verified": false,
+  "health_training_authorized": false,
+  "max_consecutive_steps_per_window": 4,
+  "max_safe_sample_interval_ns": 120000000,
+  "original_imu_axes_in_se3_feature_vectors_available": false,
+  "parent_R83_r81_result_sha256": "4b21db75053e22cba8eeb276635ed194d260a0c4af725cd50c4cbab63c255510",
+  "parent_R83_r82_result_sha256": "79e6ba42ef09eb547193abff5416ef7b4adbaacbc47d34adfaee6c23e46e7c23",
+  "raw_rosbags_or_gt_opened": false,
+  "real_pose_factors_authorized": false,
+  "recorded_imu_preintegration_performed": false,
+  "scenarios": {
+    "accel_injection": {
+      "gap_count": 0,
+      "gaps_bridged_or_interpolated": false,
+      "input_packet_count": 9,
+      "integrated_pair_count": 8,
+      "physical_clock_verified": false,
+      "real_sensor_factor_execution_authorized": false,
+      "safe_window_count": 2,
+      "source_provenance": "ANALYTIC_FIXTURE",
+      "stream_scope": "ONE_SYNTHETIC_IMU_NOT_CROSS_MODAL",
+      "windows": [
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.371720399315925e-09,
+            5.099676177429674e-08,
+            4.066696322735679e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.9997440610190595e-09,
+          "covariance_15d_trace": 4.966313495461177e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.001963948298745786,
+            0.0038978389319996518,
+            0.19615417328644055
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.0017999969370015635,
+            -0.0010999981281676226,
+            0.0023999959160020856,
+            0.9999948950043436
+          ],
+          "delta_velocity_m_s": [
+            0.020809033089372757,
+            0.0393992458036988,
+            1.9600762128429994
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5333904688020871,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1200000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1000000000,
+          "window_index": 0
+        },
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.362835669851448e-09,
+            5.089232449181825e-08,
+            4.066696322735679e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.9997440624336417e-09,
+          "covariance_15d_trace": 4.966245405434164e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.002901089204069673,
+            0.0046491579918010745,
+            0.19540504717652327
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.0017999969370015635,
+            -0.0010999981281676226,
+            0.0023999959160020856,
+            0.9999948950043436
+          ],
+          "delta_velocity_m_s": [
+            0.028305114328738695,
+            0.04541363474157879,
+            1.9540857468433366
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5332312231484329,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1400000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1200000000,
+          "window_index": 1
+        }
+      ]
+    },
+    "continuous": {
+      "gap_count": 0,
+      "gaps_bridged_or_interpolated": false,
+      "input_packet_count": 9,
+      "integrated_pair_count": 8,
+      "physical_clock_verified": false,
+      "real_sensor_factor_execution_authorized": false,
+      "safe_window_count": 2,
+      "source_provenance": "ANALYTIC_FIXTURE",
+      "stream_scope": "ONE_SYNTHETIC_IMU_NOT_CROSS_MODAL",
+      "windows": [
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.3764348858870494e-09,
+            5.118521621595446e-08,
+            4.066696322735679e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.9997440600134506e-09,
+          "covariance_15d_trace": 4.966364542209573e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.0019015466428239916,
+            0.003847479430345799,
+            0.19620393475679054
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.0017999969370015635,
+            -0.0010999981281676226,
+            0.0023999959160020856,
+            0.9999948950043436
+          ],
+          "delta_velocity_m_s": [
+            0.018312966852500986,
+            0.03738486573754468,
+            1.9620666716569992
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5335499835963452,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1200000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1000000000,
+          "window_index": 0
+        },
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.3764348858870494e-09,
+            5.118521621595446e-08,
+            4.066696322735679e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.9997440600134506e-09,
+          "covariance_15d_trace": 4.966364542209573e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.0019015466428239916,
+            0.003847479430345799,
+            0.19620393475679054
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.0017999969370015635,
+            -0.0010999981281676226,
+            0.0023999959160020856,
+            0.9999948950043436
+          ],
+          "delta_velocity_m_s": [
+            0.018312966852500986,
+            0.03738486573754468,
+            1.9620666716569992
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5335499835963452,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1400000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1200000000,
+          "window_index": 1
+        }
+      ]
+    },
+    "gyro_injection": {
+      "gap_count": 0,
+      "gaps_bridged_or_interpolated": false,
+      "input_packet_count": 9,
+      "integrated_pair_count": 8,
+      "physical_clock_verified": false,
+      "real_sensor_factor_execution_authorized": false,
+      "safe_window_count": 2,
+      "source_provenance": "ANALYTIC_FIXTURE",
+      "stream_scope": "ONE_SYNTHETIC_IMU_NOT_CROSS_MODAL",
+      "windows": [
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.3764348858870494e-09,
+            5.118521621595446e-08,
+            3.4076276138756416e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.9997440599926665e-09,
+          "covariance_15d_trace": 4.966364541980536e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.0019015466428239916,
+            0.003847479430345799,
+            0.19620393475679054
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.002049988571801981,
+            -0.0010494132090754964,
+            0.002300269813537333,
+            0.9999947025047469
+          ],
+          "delta_velocity_m_s": [
+            0.018312966852500986,
+            0.03738486573754468,
+            1.9620666716569992
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5335499772317621,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1200000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1000000000,
+          "window_index": 0
+        },
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.3985884569380316e-09,
+            5.1660907112394696e-08,
+            2.1708266324693354e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.999744059953464e-09,
+          "covariance_15d_trace": 4.966364533194356e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.0019194655958954619,
+            0.003761323123774196,
+            0.19620534357144478
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.0027999940966704014,
+            -0.0008999981025012002,
+            0.0019999957833360003,
+            0.9999936750066677
+          ],
+          "delta_velocity_m_s": [
+            0.018620375081792845,
+            0.03590803861351508,
+            1.9620900922615718
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5335498509449019,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1400000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1200000000,
+          "window_index": 1
+        }
+      ]
+    },
+    "single_gap": {
+      "gap_count": 1,
+      "gaps_bridged_or_interpolated": false,
+      "input_packet_count": 9,
+      "integrated_pair_count": 7,
+      "physical_clock_verified": false,
+      "real_sensor_factor_execution_authorized": false,
+      "safe_window_count": 2,
+      "source_provenance": "ANALYTIC_FIXTURE",
+      "stream_scope": "ONE_SYNTHETIC_IMU_NOT_CROSS_MODAL",
+      "windows": [
+        {
+          "bias_first_order_vs_exact_errors": [
+            2.3764348858870494e-09,
+            5.118521621595446e-08,
+            4.066696322735679e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.9997440600134506e-09,
+          "covariance_15d_trace": 4.966364542209573e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.0019015466428239916,
+            0.003847479430345799,
+            0.19620393475679054
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.0017999969370015635,
+            -0.0010999981281676226,
+            0.0023999959160020856,
+            0.9999948950043436
+          ],
+          "delta_velocity_m_s": [
+            0.018312966852500986,
+            0.03738486573754468,
+            1.9620666716569992
+          ],
+          "integration_duration_s": 0.2,
+          "jacobian_bias_frobenius_norm": 0.5335499835963452,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 4,
+          "synthetic_end_ns": 1200000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1000000000,
+          "window_index": 0
+        },
+        {
+          "bias_first_order_vs_exact_errors": [
+            6.398015618672964e-10,
+            1.828013586282311e-08,
+            1.7156382878884358e-11
+          ],
+          "covariance_15d_min_eigenvalue": 1.4999147051637183e-09,
+          "covariance_15d_trace": 3.697567430925324e-05,
+          "covariance_symmetry_max_error": 0.0,
+          "delta_position_m": [
+            0.0010898233147199055,
+            0.00219553828927321,
+            0.11036392089654365
+          ],
+          "delta_rotation_quaternion_xyzw": [
+            0.001349998707797246,
+            -0.0008249992103205395,
+            0.0017999982770629953,
+            0.9999971284388744
+          ],
+          "delta_velocity_m_s": [
+            0.014155966271662452,
+            0.02869277990535888,
+            1.471533882752876
+          ],
+          "integration_duration_s": 0.15000000000000002,
+          "jacobian_bias_frobenius_norm": 0.3824009788804165,
+          "real_pose_factor_executable": false,
+          "samples_integrated": 3,
+          "synthetic_end_ns": 2100000000,
+          "synthetic_only": true,
+          "synthetic_start_ns": 1950000000,
+          "window_index": 1
+        }
+      ]
+    }
+  },
+  "schema": "TRUST_ROBOT_R84_SYNTHETIC_GAP_AWARE_INERTIAL_FRONTEND_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SOFTWARE_ONLY",
+  "synthetic_cases_executed": 4
+}

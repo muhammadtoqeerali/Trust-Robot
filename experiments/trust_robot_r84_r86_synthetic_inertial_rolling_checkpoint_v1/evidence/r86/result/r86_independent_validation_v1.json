@@ -1,0 +1,16 @@
+{
+  "confirmation_test_accessed": false,
+  "cross_gap_factors": 0,
+  "engine_sha256": "7d743dfa974d7c33ad749e22394289a2a04d892853172cea1379fc958d938ed3",
+  "independent_ground_truth_scored": false,
+  "physical_factors_admitted": false,
+  "raw_rosbag_or_gt_opened": false,
+  "result_sha256": "6882756ebcba194935a1870e7604877d482ef31cbb7a845e15884bad6e7555e9",
+  "rolling_15d_nonlinear_optimization_executed": true,
+  "scenario_count": 4,
+  "schema": "TRUST_ROBOT_R86_INDEPENDENT_SYNTHETIC_ROLLING_OPTIMIZER_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "separate_synthetic_segment_anchors": true,
+  "status": "PASS",
+  "tests_sha256": "e51f9c009f001c16008781f480ee7caef08caa20e55b83d8660c728794611649"
+}

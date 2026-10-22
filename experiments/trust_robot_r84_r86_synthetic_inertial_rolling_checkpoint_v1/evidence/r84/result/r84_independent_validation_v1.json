@@ -1,0 +1,13 @@
+{
+  "confirmation_test_accessed": false,
+  "engine_sha256": "efc484f6061641131dbe3a1c3a30ca9e134019924ab602d808b1a657572326ee",
+  "gap_bridging_or_interpolation": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_factor_admission": false,
+  "result_sha256": "e0aee374d0a490613745660bd36035d01270f7ed455550fa424dd94ef604fab2",
+  "schema": "TRUST_ROBOT_R84_INDEPENDENT_SYNTHETIC_INERTIAL_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "synthetic_scenarios_verified": 4,
+  "tests_sha256": "815187e9f62cdaaae79e21b70f1052dc3f6b7cdc127e6c788a8492d4841d7083"
+}

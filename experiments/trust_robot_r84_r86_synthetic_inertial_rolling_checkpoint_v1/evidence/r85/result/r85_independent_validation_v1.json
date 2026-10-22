@@ -1,0 +1,14 @@
+{
+  "engine_sha256": "c16896b707152ce6a50c0a303540748257f8bf0392313bc7a078866d1047fc3a",
+  "full_covariance_factor_whitening_verified": true,
+  "gap_bridging_factors_constructed": 0,
+  "independent_ground_truth_scored": false,
+  "r84_report_sha256": "e0aee374d0a490613745660bd36035d01270f7ed455550fa424dd94ef604fab2",
+  "real_factor_admission": false,
+  "result_sha256": "6459c06df63ebbd7761cf81d6518c5df703c740b74c8a93b5bc64e8ac4896680",
+  "schema": "TRUST_ROBOT_R85_INDEPENDENT_GAP_AWARE_FUSION_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "synthetic_scenarios": 4,
+  "tests_sha256": "f47647ba9dcce7f3cd511531ad5f554dc613f2b901a85fd3199c202d15d143ef"
+}
