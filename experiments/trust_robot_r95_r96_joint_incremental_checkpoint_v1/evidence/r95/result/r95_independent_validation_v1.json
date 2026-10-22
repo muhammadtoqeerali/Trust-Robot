@@ -1,0 +1,14 @@
+{
+  "confirmation_test_accessed": false,
+  "engine_sha256": "6be155afb10f807b36ba2594cbe6bcd7a76d54a7fcc76040e59ae48c8d47c56b",
+  "r84_r86_pinned_artifacts": 12,
+  "r88_r90_pinned_artifacts": 12,
+  "real_sensor_factors_authorized": false,
+  "report_sha256": "f97df9058de6d26fd7eaf7e1f1efcbae34a13522388c8b63f03c34eaab2eedfb",
+  "schema": "TRUST_ROBOT_R95_INDEPENDENT_INTEGRATION_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "synthetic_prefix_windows": 16,
+  "test_count": 19,
+  "tests_sha256": "65278a43ba54efe26d0086837b3a0183aeeda260cb28a98a081b2fc338ae5939"
+}

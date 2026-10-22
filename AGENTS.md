@@ -403,3 +403,26 @@ Next priority: evidence-first physical source, clock-domain, sensor-frame and ex
 Parent `8b6024cc7c09568fc1e5485abdc0a5aa2bb72cd9`. R92 inspected 13 exact Git-tracked historical evidence records, verified the 11 historical scientific-gate receipts and 5 physical timing receipts, recognized the already recovered original room_02 GT while leaving physical semantics unqualified, and documented five acquisition priorities (18 tests). R93 generated the evidence author outreach **DRAFT NOT SENT** and a strict metadata-only source intake checklist, with no contacts made or new sources acquired (23 tests). The SHA-pinned checkpoint `experiments/trust_robot_r92_r93_physical_evidence_readiness_checkpoint_v1/` contains eleven code/test/report/document artifacts, standalone verifier and five disposable tamper controls (41 tests). The earlier R76 unsent draft is acknowledged and not overwritten.
 
 All 11 scientific gates remain CLOSED. No real fusion factors, qualified physical clocks/extrinsics, actual GT scoring/ATE/RPE, health labels/training, confirmation_test access, original raw GT or ROSbags in Git. External next step: user reviews draft, identifies proper dataset source contact and requests recording-specific physical metadata or plans independent measurement; no gate can open without independent physical verification.
+
+## KIOS R95-R96 synthetic incremental checkpoint — 2026-10-22
+
+Read `experiments/trust_robot_r95_r96_joint_incremental_checkpoint_v1/README.md`
+and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R95_R96_INCREMENTAL_JOINT_GAUSSIAN_CHECKPOINT_V1.md`
+before extending the rolling estimator.
+
+R95 passed 19 regression tests and checked 16 synthetic
+Gaussian prior prefixes. R96 passed 33 regression tests
+and checked 28 Gaussian prefixes with manufactured
+camera/LiDAR endpoint unaries and distinct assumed covariances.
+
+These are mathematical software checks, not a validated
+real-time nonlinear estimator, physical camera/LiDAR factors,
+independently measured synchronization, or calibrated health
+estimation. All 11 scientific gates remain CLOSED.
+
+A separate M2DGR author inquiry was reportedly sent by
+the user; no author response or new qualified physical
+evidence has been ingested.
+
+Continue phased KIOS-only implementation, validate before
+a guarded exact-manifest Git push, and preserve frozen data.

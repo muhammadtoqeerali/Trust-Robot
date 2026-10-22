@@ -1,0 +1,36 @@
+{
+  "archived_regression_tests": 52,
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "documentation_sha256": {
+    "AGENTS.md": "167967dd31506edbba5f706a0de9ca3b7ec180cb23a87430b608a7a37fd10dc4",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "def418d51b2db6e2d2123eee2703e5142a8cbdb6fbe7dd8ab6ca727b4680d928",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R95_R96_INCREMENTAL_JOINT_GAUSSIAN_CHECKPOINT_V1.md": "a8daa4388afa9f8e4749a3c799aa0fd1fe1b5f1c5f816e8c30a84596e78a3f2a"
+  },
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "affa8d560dc4d2286b7ed7a041765734dff2afb922dcf78b25d1d936143a2000",
+    "verify_checkpoint.py": "f4f65d9bd475f09298937913a311dfb21cfaa8b90a41feb5998a51c06806b463"
+  },
+  "parent_commit": "dc82664e3d356ea362097a3b54f10f93f962ca8d",
+  "physical_clock_or_extrinsics_verified": false,
+  "physical_source_reply_ingested": false,
+  "r95_test_count": 19,
+  "r96_test_count": 33,
+  "raw_gt_or_rosbags_archived": false,
+  "real_sensor_factor_execution_authorized": false,
+  "schema": "TRUST_ROBOT_R95_R96_JOINT_INCREMENTAL_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 8,
+  "source_sha256": {
+    "evidence/r95/dev/r95_incremental.py": "6be155afb10f807b36ba2594cbe6bcd7a76d54a7fcc76040e59ae48c8d47c56b",
+    "evidence/r95/dev/test_r95.py": "65278a43ba54efe26d0086837b3a0183aeeda260cb28a98a081b2fc338ae5939",
+    "evidence/r95/result/r95_incremental_prior_lifecycle_v1.json": "f97df9058de6d26fd7eaf7e1f1efcbae34a13522388c8b63f03c34eaab2eedfb",
+    "evidence/r95/result/r95_independent_validation_v1.json": "c2023b534537a4b711995057912a9574d967e33889c6e713431dab89163a4103",
+    "evidence/r96/dev/r96_joint.py": "4cf9c78a58e392e5a417feb5f3fde1103a656d7c642b541d42a5b129da55844b",
+    "evidence/r96/dev/test_r96.py": "2693af9416aea60973f817d504ca13db00956429564b5abd0c3e8b8bf2c43b9c",
+    "evidence/r96/result/r96_independent_validation_v1.json": "e4eaeb0951d92b5e42ecf76ba157ad0211cb0990afc1febcfac553ba1800e68a",
+    "evidence/r96/result/r96_joint_incremental_gaussian_v1.json": "b94fbf3e08265934df1d4cb26af21c3cb4f236852ca7a9f476c6eae1dd0733b3"
+  }
+}

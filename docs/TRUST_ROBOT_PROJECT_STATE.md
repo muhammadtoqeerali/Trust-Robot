@@ -1,6 +1,6 @@
 # TRUST-ROBOT Project State
 
-Last Updated: 2026-10-21
+Last Updated: 2026-10-22
 
 Repository: `muhammadtoqeerali/Trust-Robot`
 
@@ -6270,3 +6270,34 @@ Next priority: evidence-first physical source, clock-domain, sensor-frame and ex
 Parent `8b6024cc7c09568fc1e5485abdc0a5aa2bb72cd9`. R92 inspected 13 exact Git-tracked historical evidence records, verified the 11 historical scientific-gate receipts and 5 physical timing receipts, recognized the already recovered original room_02 GT while leaving physical semantics unqualified, and documented five acquisition priorities (18 tests). R93 generated the evidence author outreach **DRAFT NOT SENT** and a strict metadata-only source intake checklist, with no contacts made or new sources acquired (23 tests). The SHA-pinned checkpoint `experiments/trust_robot_r92_r93_physical_evidence_readiness_checkpoint_v1/` contains eleven code/test/report/document artifacts, standalone verifier and five disposable tamper controls (41 tests). The earlier R76 unsent draft is acknowledged and not overwritten.
 
 All 11 scientific gates remain CLOSED. No real fusion factors, qualified physical clocks/extrinsics, actual GT scoring/ATE/RPE, health labels/training, confirmation_test access, original raw GT or ROSbags in Git. External next step: user reviews draft, identifies proper dataset source contact and requests recording-specific physical metadata or plans independent measurement; no gate can open without independent physical verification.
+
+## KIOS R95-R96 synthetic incremental engineering checkpoint (2026-10-22)
+
+R95: 19 tests passed; four manufactured inertial
+scenarios, sixteen Gaussian prefix evaluations,
+eleven marginalizations, one timestamp gap,
+zero prior transfers across gaps.
+
+R96: 33 tests passed; manufactured camera and
+LiDAR tangent-space unary constraints, four
+synthetic scenarios, three modality ablations,
+twenty-eight prefix evaluations, twenty old-state
+eliminations, and successful Gaussian full-batch
+checks. R96 did not run S6 nonlinear SE(3)
+relative-pose measurement factors.
+
+The checkpoint is archived under
+`experiments/trust_robot_r95_r96_joint_incremental_checkpoint_v1/`
+with exact hashes, verifier and scientific audit.
+
+The user reports a separate M2DGR author email
+was sent on 2026-10-22. No reply or qualified
+physical evidence is included in this checkpoint.
+
+The 22/7/7 split is unchanged; confirmation_test
+is sealed. All 11 scientific gates remain CLOSED.
+No real sensor factors, health training, physical
+calibration qualification, or ATE/RPE.
+
+Next: synthetic nonlinear camera-LiDAR-IMU
+fixed-lag integration, without physical promotion.

@@ -1,0 +1,500 @@
+{
+  "ablations": {
+    "camera": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 3,
+      "mode": "camera",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.465455422767193e-05,
+              "modalities": [
+                "camera"
+              ],
+              "pose_unary_count": 1,
+              "real_factors_executed": false,
+              "state_l2_error": 3.651989552466659e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 1.3418418353971059e-15,
+              "covariance_trace": 4.987985381538885e-05,
+              "modalities": [
+                "camera"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 9.592895961058311e-18,
+              "step": 1
+            },
+            {
+              "cost_abs_error": 1.7763568394002505e-15,
+              "covariance_relative_error": 2.6277758269966415e-15,
+              "covariance_trace": 7.631715556964883e-05,
+              "modalities": [
+                "camera"
+              ],
+              "pose_unary_count": 3,
+              "real_factors_executed": false,
+              "state_l2_error": 1.3436149988440996e-17,
+              "step": 2
+            },
+            {
+              "cost_abs_error": 1.7763568394002505e-15,
+              "covariance_relative_error": 1.4667144490356045e-14,
+              "covariance_trace": 0.00010458379835865758,
+              "modalities": [
+                "camera"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 3.012800691205524e-17,
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "scenario": "continuous",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "imu": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 3,
+      "mode": "imu",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 2.5505856107721492e-17,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4654866527372807e-05,
+              "modalities": [],
+              "pose_unary_count": 0,
+              "real_factors_executed": false,
+              "state_l2_error": 3.757741750604347e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 5.920014912313976e-16,
+              "covariance_relative_error": 2.343956339684627e-15,
+              "covariance_trace": 4.988514105793986e-05,
+              "modalities": [],
+              "pose_unary_count": 0,
+              "real_factors_executed": false,
+              "state_l2_error": 7.822464524518889e-18,
+              "step": 1
+            },
+            {
+              "cost_abs_error": 4.049495114233359e-17,
+              "covariance_relative_error": 7.973820795882334e-15,
+              "covariance_trace": 7.634837025127401e-05,
+              "modalities": [],
+              "pose_unary_count": 0,
+              "real_factors_executed": false,
+              "state_l2_error": 2.2069701937852843e-17,
+              "step": 2
+            },
+            {
+              "cost_abs_error": 1.723881454251952e-17,
+              "covariance_relative_error": 2.3794661750885667e-14,
+              "covariance_trace": 0.00010470073598503714,
+              "modalities": [],
+              "pose_unary_count": 0,
+              "real_factors_executed": false,
+              "state_l2_error": 9.094380656369248e-18,
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "scenario": "continuous",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "lidar": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 3,
+      "mode": "lidar",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4653617415423596e-05,
+              "modalities": [
+                "lidar"
+              ],
+              "pose_unary_count": 1,
+              "real_factors_executed": false,
+              "state_l2_error": 2.0567385113533113e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 1.2107719425891651e-15,
+              "covariance_trace": 4.986400217520759e-05,
+              "modalities": [
+                "lidar"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 7.205446378164143e-18,
+              "step": 1
+            },
+            {
+              "cost_abs_error": 7.105427357601002e-15,
+              "covariance_relative_error": 9.373508419093075e-15,
+              "covariance_trace": 7.622373736513876e-05,
+              "modalities": [
+                "lidar"
+              ],
+              "pose_unary_count": 3,
+              "real_factors_executed": false,
+              "state_l2_error": 1.22702090873902e-17,
+              "step": 2
+            },
+            {
+              "cost_abs_error": 1.4210854715202004e-14,
+              "covariance_relative_error": 2.0296625964291212e-14,
+              "covariance_trace": 0.0001042352824652435,
+              "modalities": [
+                "lidar"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 7.506332507634016e-17,
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "scenario": "continuous",
+      "segments": 1,
+      "timestamp_gaps": 0
+    }
+  },
+  "ate_rpe_authorized": false,
+  "cases": {
+    "accel_injection": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 3,
+      "mode": "both",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 1.7763568394002505e-15,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4653305173621937e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 2.0982129736650442e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 3.552713678800501e-15,
+              "covariance_relative_error": 2.952227131608707e-15,
+              "covariance_trace": 4.985813809137419e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 8.537362698188076e-18,
+              "step": 1
+            },
+            {
+              "cost_abs_error": 1.0658141036401503e-14,
+              "covariance_relative_error": 2.801894966190174e-15,
+              "covariance_trace": 7.61886006714722e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 6,
+              "real_factors_executed": false,
+              "state_l2_error": 1.286935031005884e-17,
+              "step": 2
+            },
+            {
+              "cost_abs_error": 7.105427357601002e-15,
+              "covariance_relative_error": 2.2379578538609742e-14,
+              "covariance_trace": 0.00010410782716771376,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 8,
+              "real_factors_executed": false,
+              "state_l2_error": 5.864507505033607e-17,
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "scenario": "accel_injection",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "continuous": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 3,
+      "mode": "both",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 1.7763568394002505e-15,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4653305173621937e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 2.0982129736650442e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 1.2481667414722822e-15,
+              "covariance_trace": 4.9858721654946944e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 4.625361928598471e-18,
+              "step": 1
+            },
+            {
+              "cost_abs_error": 3.552713678800501e-15,
+              "covariance_relative_error": 7.303729351445712e-15,
+              "covariance_trace": 7.619267301509806e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 6,
+              "real_factors_executed": false,
+              "state_l2_error": 2.657658506778466e-17,
+              "step": 2
+            },
+            {
+              "cost_abs_error": 7.105427357601002e-15,
+              "covariance_relative_error": 9.485794142471567e-15,
+              "covariance_trace": 0.00010411986985012971,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 8,
+              "real_factors_executed": false,
+              "state_l2_error": 3.272014370139984e-17,
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "scenario": "continuous",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "gyro_injection": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 3,
+      "mode": "both",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 1.7763568394002505e-15,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4653305173621937e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 2.0982129736650442e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 2.065211074799679e-15,
+              "covariance_trace": 4.985872168086779e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 9.525106390157653e-18,
+              "step": 1
+            },
+            {
+              "cost_abs_error": 1.7763568394002505e-14,
+              "covariance_relative_error": 5.961239392768135e-15,
+              "covariance_trace": 7.619267267988904e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 6,
+              "real_factors_executed": false,
+              "state_l2_error": 1.080789625160683e-17,
+              "step": 2
+            },
+            {
+              "cost_abs_error": 7.105427357601002e-15,
+              "covariance_relative_error": 1.5434254418795868e-14,
+              "covariance_trace": 0.00010411986667906934,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 8,
+              "real_factors_executed": false,
+              "state_l2_error": 3.644801393782131e-17,
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "scenario": "gyro_injection",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "single_gap": {
+      "cross_gap_prior_carries": 0,
+      "eliminated_old_states": 2,
+      "mode": "both",
+      "prefix_windows": 4,
+      "rows": [
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 0,
+          "windows": [
+            {
+              "cost_abs_error": 1.7763568394002505e-15,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4653305173621937e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 2.0982129736650442e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 1.2481667414722822e-15,
+              "covariance_trace": 4.9858721654946944e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 4.625361928598471e-18,
+              "step": 1
+            }
+          ]
+        },
+        {
+          "new_manufactured_anchor": true,
+          "prior_carried_across_gap": false,
+          "segment_id": 1,
+          "windows": [
+            {
+              "cost_abs_error": 0.0,
+              "covariance_relative_error": 0.0,
+              "covariance_trace": 2.4653305173621937e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 2,
+              "real_factors_executed": false,
+              "state_l2_error": 3.858166689999231e-18,
+              "step": 0
+            },
+            {
+              "cost_abs_error": 7.105427357601002e-15,
+              "covariance_relative_error": 1.6112067895193352e-15,
+              "covariance_trace": 3.7207883556926e-05,
+              "modalities": [
+                "camera",
+                "lidar"
+              ],
+              "pose_unary_count": 4,
+              "real_factors_executed": false,
+              "state_l2_error": 4.1391739674082185e-18,
+              "step": 1
+            }
+          ]
+        }
+      ],
+      "scenario": "single_gap",
+      "segments": 2,
+      "timestamp_gaps": 1
+    }
+  },
+  "confirmation_test_accessed": false,
+  "health_training_authorized": false,
+  "information_order_check": true,
+  "measurement_type": "MANUFACTURED_6D_TANGENT_SPACE_UNARY",
+  "physical_clock_verified": false,
+  "physical_covariance_verified": false,
+  "physical_extrinsics_verified": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_executed": false,
+  "s6_nonlinear_pose_factors_executed": false,
+  "schema": "TRUST_ROBOT_R96_SYNTHETIC_JOINT_INCREMENTAL_GAUSSIAN_V1",
+  "scientific_gates_closed": 11,
+  "separate_camera_lidar_covariances": true,
+  "status": "PASS_SYNTHETIC_SOFTWARE_ONLY",
+  "total_eliminated_old_states": 20,
+  "total_prefix_evaluations": 28
+}

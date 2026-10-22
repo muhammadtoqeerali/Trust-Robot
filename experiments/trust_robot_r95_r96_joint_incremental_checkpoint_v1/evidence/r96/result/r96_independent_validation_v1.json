@@ -1,0 +1,15 @@
+{
+  "confirmation_test_accessed": false,
+  "health_training_authorized": false,
+  "marginalized_old_states": 20,
+  "r95_report_sha256": "f97df9058de6d26fd7eaf7e1f1efcbae34a13522388c8b63f03c34eaab2eedfb",
+  "r96_engine_sha256": "4cf9c78a58e392e5a417feb5f3fde1103a656d7c642b541d42a5b129da55844b",
+  "r96_report_sha256": "b94fbf3e08265934df1d4cb26af21c3cb4f236852ca7a9f476c6eae1dd0733b3",
+  "r96_tests_sha256": "2693af9416aea60973f817d504ca13db00956429564b5abd0c3e8b8bf2c43b9c",
+  "real_sensor_factors_executed": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R96_INDEPENDENT_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "synthetic_prefix_evaluations": 28
+}
