@@ -426,3 +426,33 @@ evidence has been ingested.
 
 Continue phased KIOS-only implementation, validate before
 a guarded exact-manifest Git push, and preserve frozen data.
+
+## KIOS R98-R99 nonlinear Schur lifecycle checkpoint — 2026-10-22
+
+The archived checkpoint is:
+`experiments/trust_robot_r98_r99_nonlinear_prior_checkpoint_v1/`.
+
+Read its README, standalone verifier, and
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R98_R99_NONLINEAR_PRIOR_CHECKPOINT_V1.md`.
+
+R98 passed 22 synthetic regression tests, checking
+the S6 nonlinear SE(3) estimator, factor ownership,
+and one independent local Schur calculation.
+
+R99 passed 33 tests and checked all nine successive
+S6 Schur marginalizations over three synthetic runs.
+Prior inheritance, local normal equations, energy
+differences, source restrictions and estimator
+equivalence were independently tested.
+
+The R95 Gaussian backend has NOT been integrated
+into S6. The event digest chain is not trusted
+physical provenance. The numerical checks do
+not establish nonlinear posterior consistency.
+
+All 11 scientific gates remain CLOSED. The
+M2DGR author inquiry is awaiting independently
+qualifiable evidence; do not infer approval from it.
+
+Next: guarded nonlinear estimator integration
+design and implementation, one phase at a time.

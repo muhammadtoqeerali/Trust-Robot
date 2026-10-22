@@ -1,0 +1,391 @@
+{
+  "actual_marginalizations_independently_checked": 9,
+  "all_prior_inheritance_checks_passed": true,
+  "all_schur_normal_equations_checked": true,
+  "ate_rpe_authorized": false,
+  "cases": {
+    "clean_camera_off": {
+      "camera_enabled": false,
+      "condition": "clean",
+      "events": [
+        {
+          "consumed_imu_edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:0:1",
+            "analytic_lidar_edge:0:2"
+          ],
+          "eliminated_node": 0,
+          "energy_difference_error": 4.147920342704309e-18,
+          "event_digest": "1ef5bb8c520fe046e0e8f03d1f3384fc6dd99ff4652a0475651bc1c719f0782c",
+          "event_index": 0,
+          "gradient_relative_error": 6.612147781163312e-27,
+          "information_relative_error": 1.3370132697754553e-15,
+          "input_nodes": [
+            0,
+            1,
+            2
+          ],
+          "input_prior_digest": "2ced5ca12ded80a153dcb244b6222b52ee4ebecdcfc83c60c9336c22e909bde5",
+          "input_residual_dimension": 42,
+          "output_prior_digest": "6ee3c29e09ca597939fb911e5216605022b1c9ec1e2ae72f81b8cf020931673a",
+          "physical_clock_verified": false,
+          "previous_event_digest": "94b2cd1bda6484b64c90bf467ccefdcdad2c4b34610a536d3033b40dea3f12b9",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            1,
+            2
+          ],
+          "synthetic_only": true
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:1:2",
+            "analytic_lidar_edge:1:3"
+          ],
+          "eliminated_node": 1,
+          "energy_difference_error": 5.116079001415974e-19,
+          "event_digest": "4ba93aa0258d3203e23dd1bc2b22cf38944fc238c429d1a0935078983445b385",
+          "event_index": 1,
+          "gradient_relative_error": 6.021233028335744e-27,
+          "information_relative_error": 1.7701066954983537e-15,
+          "input_nodes": [
+            1,
+            2,
+            3
+          ],
+          "input_prior_digest": "6ee3c29e09ca597939fb911e5216605022b1c9ec1e2ae72f81b8cf020931673a",
+          "input_residual_dimension": 48,
+          "output_prior_digest": "01b9c633489aa5b963e750d32b8ac6eb4658be71bebb7a4ea892a2a6d036f457",
+          "physical_clock_verified": false,
+          "previous_event_digest": "1ef5bb8c520fe046e0e8f03d1f3384fc6dd99ff4652a0475651bc1c719f0782c",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            2,
+            3
+          ],
+          "synthetic_only": true
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              2,
+              3
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:2:3",
+            "analytic_lidar_edge:2:4"
+          ],
+          "eliminated_node": 2,
+          "energy_difference_error": 1.3518645838178633e-18,
+          "event_digest": "1d30b5f17e529b57132d1d20ab4fc500613a4a2586beaec9b73aa1cde8112a16",
+          "event_index": 2,
+          "gradient_relative_error": 3.694759046783939e-27,
+          "information_relative_error": 9.254116329001892e-16,
+          "input_nodes": [
+            2,
+            3,
+            4
+          ],
+          "input_prior_digest": "01b9c633489aa5b963e750d32b8ac6eb4658be71bebb7a4ea892a2a6d036f457",
+          "input_residual_dimension": 48,
+          "output_prior_digest": "0b453ecd7aef4def4a18e106fece74e84bbf0a13bd156084c8a62c0f4d0d4962",
+          "physical_clock_verified": false,
+          "previous_event_digest": "4ba93aa0258d3203e23dd1bc2b22cf38944fc238c429d1a0935078983445b385",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            3,
+            4
+          ],
+          "synthetic_only": true
+        }
+      ],
+      "factor_reuse_count": 0,
+      "instrumented_vs_uninstrumented_state_max_error": 0.0,
+      "marginalization_events": 3,
+      "nonlinear_windows": 4,
+      "pose_factors_consumed": 6,
+      "real_factor_executed": false,
+      "remaining_pose_factors": 1,
+      "same_edge_camera_lidar_count": 0,
+      "unconsumed_imu_edges": [
+        [
+          3,
+          4
+        ]
+      ],
+      "witness_is_trusted_hardware_attestation": false
+    },
+    "clean_joint": {
+      "camera_enabled": true,
+      "condition": "clean",
+      "events": [
+        {
+          "consumed_imu_edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:0:1",
+            "analytic_lidar_edge:0:2",
+            "camera_sim_seed13:0:1"
+          ],
+          "eliminated_node": 0,
+          "energy_difference_error": 7.250602028496811e-19,
+          "event_digest": "80850e21347b3be1eee9c9ec6d0ea6a315108f5d61500a944338928b1a7cbe0f",
+          "event_index": 0,
+          "gradient_relative_error": 6.492499906639858e-16,
+          "information_relative_error": 1.2646956301854303e-15,
+          "input_nodes": [
+            0,
+            1,
+            2
+          ],
+          "input_prior_digest": "2ced5ca12ded80a153dcb244b6222b52ee4ebecdcfc83c60c9336c22e909bde5",
+          "input_residual_dimension": 48,
+          "output_prior_digest": "bb478c10e82e6670cab4df282aeba385097a5a6453c12ece00da0ccae7b21918",
+          "physical_clock_verified": false,
+          "previous_event_digest": "94b2cd1bda6484b64c90bf467ccefdcdad2c4b34610a536d3033b40dea3f12b9",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            1,
+            2
+          ],
+          "synthetic_only": true
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:1:2",
+            "analytic_lidar_edge:1:3"
+          ],
+          "eliminated_node": 1,
+          "energy_difference_error": 6.613633252161577e-18,
+          "event_digest": "5eec9f7324ad9c6cbbef6132997088a5524b917db2f29af78860bc75112bcc24",
+          "event_index": 1,
+          "gradient_relative_error": 1.3859969573443863e-15,
+          "information_relative_error": 1.109522353078849e-15,
+          "input_nodes": [
+            1,
+            2,
+            3
+          ],
+          "input_prior_digest": "bb478c10e82e6670cab4df282aeba385097a5a6453c12ece00da0ccae7b21918",
+          "input_residual_dimension": 48,
+          "output_prior_digest": "a6acd654d439b730621f23a744f9fc20bf64e836a61af6c0a284c905763b5d21",
+          "physical_clock_verified": false,
+          "previous_event_digest": "80850e21347b3be1eee9c9ec6d0ea6a315108f5d61500a944338928b1a7cbe0f",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            2,
+            3
+          ],
+          "synthetic_only": true
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              2,
+              3
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:2:3",
+            "analytic_lidar_edge:2:4",
+            "camera_sim_seed13:2:3"
+          ],
+          "eliminated_node": 2,
+          "energy_difference_error": 1.1329912702473521e-17,
+          "event_digest": "46014014a62009481bb3d59b48ea4abe0ce5dd9b4293a5bb72e6a613ccfeff9a",
+          "event_index": 2,
+          "gradient_relative_error": 1.5978263106278398e-15,
+          "information_relative_error": 1.3245868688286556e-15,
+          "input_nodes": [
+            2,
+            3,
+            4
+          ],
+          "input_prior_digest": "a6acd654d439b730621f23a744f9fc20bf64e836a61af6c0a284c905763b5d21",
+          "input_residual_dimension": 54,
+          "output_prior_digest": "be308b850cff3b7cfdb54bf3ae2dd7e59a159734704edee252ca74c3c3102359",
+          "physical_clock_verified": false,
+          "previous_event_digest": "5eec9f7324ad9c6cbbef6132997088a5524b917db2f29af78860bc75112bcc24",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            3,
+            4
+          ],
+          "synthetic_only": true
+        }
+      ],
+      "factor_reuse_count": 0,
+      "instrumented_vs_uninstrumented_state_max_error": 0.0,
+      "marginalization_events": 3,
+      "nonlinear_windows": 4,
+      "pose_factors_consumed": 8,
+      "real_factor_executed": false,
+      "remaining_pose_factors": 1,
+      "same_edge_camera_lidar_count": 2,
+      "unconsumed_imu_edges": [
+        [
+          3,
+          4
+        ]
+      ],
+      "witness_is_trusted_hardware_attestation": false
+    },
+    "dropout_joint": {
+      "camera_enabled": true,
+      "condition": "lidar_dropout",
+      "events": [
+        {
+          "consumed_imu_edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:0:1",
+            "camera_sim_seed13:0:1"
+          ],
+          "eliminated_node": 0,
+          "energy_difference_error": 9.447805493674466e-18,
+          "event_digest": "5e2a5b7f18461d884cd15f5115610e00e571026b80b0df4680ae305302ccc695",
+          "event_index": 0,
+          "gradient_relative_error": 2.724168053452941e-23,
+          "information_relative_error": 1.6644045559176702e-15,
+          "input_nodes": [
+            0,
+            1,
+            2
+          ],
+          "input_prior_digest": "2ced5ca12ded80a153dcb244b6222b52ee4ebecdcfc83c60c9336c22e909bde5",
+          "input_residual_dimension": 42,
+          "output_prior_digest": "9094cf794385db5b623aeb2f8d8097ea4f0f909a5931340b8d9e0471d0dc33b9",
+          "physical_clock_verified": false,
+          "previous_event_digest": "94b2cd1bda6484b64c90bf467ccefdcdad2c4b34610a536d3033b40dea3f12b9",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            1,
+            2
+          ],
+          "synthetic_only": true
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:1:3"
+          ],
+          "eliminated_node": 1,
+          "energy_difference_error": 8.294146619514109e-18,
+          "event_digest": "fd2a1bdc84f301ef3598c09ae7b5faa5c1ebf466e559791f8034959d33939d53",
+          "event_index": 1,
+          "gradient_relative_error": 9.949275105918887e-16,
+          "information_relative_error": 1.5856256553022206e-15,
+          "input_nodes": [
+            1,
+            2,
+            3
+          ],
+          "input_prior_digest": "9094cf794385db5b623aeb2f8d8097ea4f0f909a5931340b8d9e0471d0dc33b9",
+          "input_residual_dimension": 36,
+          "output_prior_digest": "89b360cca771f02268928e49814f6a23857a6265aaae63a160f0803617020446",
+          "physical_clock_verified": false,
+          "previous_event_digest": "5e2a5b7f18461d884cd15f5115610e00e571026b80b0df4680ae305302ccc695",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            2,
+            3
+          ],
+          "synthetic_only": true
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              2,
+              3
+            ]
+          ],
+          "consumed_pose_ids": [
+            "camera_sim_seed13:2:3"
+          ],
+          "eliminated_node": 2,
+          "energy_difference_error": 1.5585406229479126e-18,
+          "event_digest": "b4bf24f257b771c8e114063e4e1d1721b3b0dc0378ce25fcc1f72760f2ac534e",
+          "event_index": 2,
+          "gradient_relative_error": 2.264001270821848e-16,
+          "information_relative_error": 1.345198810091851e-15,
+          "input_nodes": [
+            2,
+            3,
+            4
+          ],
+          "input_prior_digest": "89b360cca771f02268928e49814f6a23857a6265aaae63a160f0803617020446",
+          "input_residual_dimension": 42,
+          "output_prior_digest": "28986214ae482b2c00d5cad26113dff6f2de7db3b5a9346aef66fa7669bf47bf",
+          "physical_clock_verified": false,
+          "previous_event_digest": "fd2a1bdc84f301ef3598c09ae7b5faa5c1ebf466e559791f8034959d33939d53",
+          "real_sensor_factor_executable": false,
+          "retained_nodes": [
+            3,
+            4
+          ],
+          "synthetic_only": true
+        }
+      ],
+      "factor_reuse_count": 0,
+      "instrumented_vs_uninstrumented_state_max_error": 0.0,
+      "marginalization_events": 3,
+      "nonlinear_windows": 4,
+      "pose_factors_consumed": 4,
+      "real_factor_executed": false,
+      "remaining_pose_factors": 1,
+      "same_edge_camera_lidar_count": 1,
+      "unconsumed_imu_edges": [
+        [
+          3,
+          4
+        ]
+      ],
+      "witness_is_trusted_hardware_attestation": false
+    }
+  },
+  "confirmation_test_accessed": false,
+  "event_digest_is_trusted_source_authentication": false,
+  "health_training_authorized": false,
+  "independent_ground_truth_scoring": false,
+  "instrumentation_restored": true,
+  "nonlinear_solver_scenarios": 3,
+  "nonlinear_windows": 12,
+  "physical_clock_or_extrinsics_verified": false,
+  "r95_gaussian_backend_merged_into_s6": false,
+  "raw_gt_or_rosbags_opened": false,
+  "recorded_source_factors_executed": false,
+  "schema": "TRUST_ROBOT_R99_SYNTHETIC_NONLINEAR_PRIOR_WITNESS_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_SOFTWARE_ONLY"
+}

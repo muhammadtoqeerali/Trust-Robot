@@ -1,0 +1,15 @@
+{
+  "confirmation_test_accessed": false,
+  "engine_sha256": "bfd88a57447930931275fd7b1c219effdb9fa97de7bc6697e654e1e0e5e870c8",
+  "nonlinear_marginalizations_checked": 9,
+  "parent_git_commit": "2520ae6611bc48ddf9bbcd8ce775e29bf7ddc7fb",
+  "r98_report_sha256": "3321b300f7f5bc9a27f9c2b81e1fdbe4a46504cc1c3c89a8f9a30d397ae88042",
+  "real_sensor_factors_authorized": false,
+  "regression_tests": 33,
+  "report_sha256": "00bd9f75e41b2c0e3d763c137170ebc6c696d9e79a0c7bdb1bdd703a95bd78b6",
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R99_INDEPENDENT_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "8b489f0dd63aff47881c6cb975e51d735e515b00eb51c8da58072366bcc9766e"
+}

@@ -1,0 +1,38 @@
+{
+  "archived_regression_tests": 55,
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "documentation_sha256": {
+    "AGENTS.md": "b8ffc3b8468e51de459823805626e681dfb31bac0ea66cec74c5789c27f1db4e",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "3152ddc6e3a33b866eb9f7502fc006cbc7d73b935fbabcbae350da33369600d1",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R98_R99_NONLINEAR_PRIOR_CHECKPOINT_V1.md": "bece2fb3810d3f7047a7d40cb413b39ba33899390727a303520fee0670de7f79"
+  },
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "e9a7a1f06028efd54fa7716271bce643cacf9b4b13a0e94450ba42faa3206e21",
+    "verify_checkpoint.py": "09b016cf05250470e0172687bf123a91c3f86f24e8a69d2ca06ee4f345ac53ed"
+  },
+  "parent_commit": "2520ae6611bc48ddf9bbcd8ce775e29bf7ddc7fb",
+  "physical_clock_or_extrinsics_verified": false,
+  "qualified_author_response_ingested": false,
+  "r95_backend_merged_into_s6": false,
+  "r98_test_count": 22,
+  "r99_test_count": 33,
+  "raw_gt_or_rosbags_archived": false,
+  "real_sensor_factor_execution_authorized": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R98_R99_NONLINEAR_PRIOR_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 8,
+  "source_sha256": {
+    "evidence/r98/dev/r98_nonlinear_audit.py": "108ee66b3fcc47338e380b8014a86b075a8e90b3e11469a61356dbcd3fac7908",
+    "evidence/r98/dev/test_r98.py": "eb290b785cefe4b5d730828cac621c77c9e9633b038a5f6f2c6df9b807fb2ef1",
+    "evidence/r98/result/r98_independent_validation_v1.json": "d2a61a1408f85c0876d5bee2bd9c9ca7be49eafa09b67ece382739a2d1515b7d",
+    "evidence/r98/result/r98_nonlinear_joint_audit_v1.json": "3321b300f7f5bc9a27f9c2b81e1fdbe4a46504cc1c3c89a8f9a30d397ae88042",
+    "evidence/r99/dev/r99_prior_witness.py": "bfd88a57447930931275fd7b1c219effdb9fa97de7bc6697e654e1e0e5e870c8",
+    "evidence/r99/dev/test_r99.py": "8b489f0dd63aff47881c6cb975e51d735e515b00eb51c8da58072366bcc9766e",
+    "evidence/r99/result/r99_independent_validation_v1.json": "8354386e472e50a75f8f6af500709263842724bd55c708ef5dff7dddbf54483a",
+    "evidence/r99/result/r99_nonlinear_prior_lifecycle_v1.json": "00bd9f75e41b2c0e3d763c137170ebc6c696d9e79a0c7bdb1bdd703a95bd78b6"
+  }
+}

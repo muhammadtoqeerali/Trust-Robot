@@ -6301,3 +6301,37 @@ calibration qualification, or ATE/RPE.
 
 Next: synthetic nonlinear camera-LiDAR-IMU
 fixed-lag integration, without physical promotion.
+
+## KIOS R98-R99 nonlinear estimator checkpoint (2026-10-22)
+
+R98 completed 22 regression tests, three synthetic
+nonlinear solver scenarios, twelve nonlinear
+windows, and a local independent Schur audit.
+
+R99 completed 33 regression tests and audited
+all nine successive S6 marginalization operations
+across three scenarios, including prior
+inheritance, factor ownership and numerical
+normal-equation consistency.
+
+Combined checkpoint: 55 passing tests.
+
+Archive:
+`experiments/trust_robot_r98_r99_nonlinear_prior_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R98_R99_NONLINEAR_PRIOR_CHECKPOINT_V1.md`
+
+The R95 Gaussian backend remains separate from
+S6's nonlinear SE(3) solver.
+
+This is synthetic software evidence, not
+a physical localization benchmark.
+
+All 11 scientific gates remain CLOSED.
+No original GT or ROSbags in Git, no
+confirmation_test access, no health training,
+no real sensor factors and no ATE/RPE.
+
+Next: explicitly designed nonlinear integration
+and fail-closed factor-source validation.
