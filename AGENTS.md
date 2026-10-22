@@ -501,3 +501,37 @@ All 11 scientific gates remain CLOSED.
 Continue with phased KIOS-only development,
 source hashing, fail-closed admission,
 independent validation and guarded Git pushes.
+
+## KIOS R107-R108 synthetic incremental-delivery checkpoint — 2026-10-22
+
+Archive:
+`experiments/trust_robot_r107_r108_incremental_delivery_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R107_R108_INCREMENTAL_DELIVERY_CHECKPOINT_V1.md`
+
+R107 passed 38 regression tests and created a
+separate synthetic sequential-admission nonlinear
+estimator using the original S6 factor mathematics.
+Twelve ordinary and twelve recentered windows
+were validated, including nine prior transfers.
+
+R108 passed 42 regression tests, checking ordered
+and bounded-reordered manufactured packet delivery.
+Across 12 solver runs, 48 nonlinear windows,
+36 Schur marginalizations and 18 same-graph
+prior transfers were exercised.
+
+Neither phase modifies the original S6 source.
+R95 Gaussian priors remain incompatible with
+direct S6 import.
+
+The session digest is a local identifier, not
+authenticated source provenance. These are
+in-process software tests, not real-time or
+physical sensor transport measurements.
+
+All 11 scientific gates remain CLOSED.
+
+Next: synthetic failure-state handling and
+explicit fail-stop versus rollback guarantees.

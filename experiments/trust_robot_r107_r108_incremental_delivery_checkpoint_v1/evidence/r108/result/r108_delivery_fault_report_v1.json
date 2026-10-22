@@ -1,0 +1,341 @@
+{
+  "actual_hardware_capture_tested": false,
+  "ate_rpe_authorized": false,
+  "bounded_reordering_preserves_estimates": true,
+  "cases": {
+    "clean_camera_off": {
+      "camera_enabled": false,
+      "condition": "clean",
+      "run_count": 4,
+      "runs": {
+        "bounded_reorder_ordinary": {
+          "arrival_order": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 3,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 0,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "bounded_reorder_recentered": {
+          "arrival_order": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 3,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 3,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "ordered_ordinary": {
+          "arrival_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 1,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 0,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "ordered_recentered": {
+          "arrival_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 1,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 3,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        }
+      },
+      "synthetic_only": true
+    },
+    "clean_joint": {
+      "camera_enabled": true,
+      "condition": "clean",
+      "run_count": 4,
+      "runs": {
+        "bounded_reorder_ordinary": {
+          "arrival_order": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 3,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 0,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "bounded_reorder_recentered": {
+          "arrival_order": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 6.325329149348136e-12,
+          "peak_pending": 3,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 3,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "ordered_ordinary": {
+          "arrival_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 1,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 0,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "ordered_recentered": {
+          "arrival_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 6.325329149348136e-12,
+          "peak_pending": 1,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 3,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        }
+      },
+      "synthetic_only": true
+    },
+    "lidar_dropout_joint": {
+      "camera_enabled": true,
+      "condition": "lidar_dropout",
+      "run_count": 4,
+      "runs": {
+        "bounded_reorder_ordinary": {
+          "arrival_order": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 3,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 0,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "bounded_reorder_recentered": {
+          "arrival_order": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 5.1962323333043514e-12,
+          "peak_pending": 3,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 3,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "ordered_ordinary": {
+          "arrival_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 0.0,
+          "peak_pending": 1,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 0,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        },
+        "ordered_recentered": {
+          "arrival_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "duplicate_factor_consumed": false,
+          "future_factor_consumed": false,
+          "imu_sample_identity_preserved": true,
+          "marginalizations": 3,
+          "max_abs_error_vs_s6": 5.1962323333043514e-12,
+          "peak_pending": 1,
+          "physical_online_streaming_tested": false,
+          "pose_ledger_equal": true,
+          "prior_transfers": 3,
+          "processed_order": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "windows": 4
+        }
+      },
+      "synthetic_only": true
+    }
+  },
+  "confirmation_test_accessed": false,
+  "delivery_schedules_per_scenario": 2,
+  "exactly_once_factor_ownership": true,
+  "execution_deadlines_verified": false,
+  "future_factor_execution": false,
+  "health_training_authorized": false,
+  "nonlinear_windows": 48,
+  "physical_arrival_jitter_measured": false,
+  "physical_clock_or_extrinsics_verified": false,
+  "r95_gaussian_backend_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_authorized": false,
+  "same_graph_prior_transfers": 18,
+  "schema": "TRUST_ROBOT_R108_BOUNDED_SYNTHETIC_DELIVERY_V1",
+  "schur_marginalizations": 36,
+  "scientific_gates_closed": 11,
+  "solver_modes_per_schedule": 2,
+  "status": "PASS_SYNTHETIC_SOFTWARE_ONLY",
+  "synthetic_scenarios": 3,
+  "total_solver_runs": 12,
+  "transactional_solver_rollback_proven": false,
+  "transport_authentication_verified": false
+}

@@ -6388,3 +6388,42 @@ has been added to Git.
 Next: synthetic bounded incremental estimator
 integration with exact factor-consumption and
 linearization provenance.
+
+## KIOS R107-R108 synthetic incremental checkpoint (2026-10-22)
+
+R107: 38 passing tests; manufactured sequential
+factor admission into a separate nonlinear
+fixed-lag estimator. It reproduces S6 results
+within declared numeric tolerances and preserves
+the same-graph Schur prior lifecycle.
+
+R108: 42 passing tests; deterministic bounded
+reordering and adversarial delivery rejection
+on the R107 estimator interface.
+
+Combined archived regression tests: 80.
+
+R108 exercised 12 solver runs, 48 nonlinear
+windows, 36 Schur events and 18 prior
+recenterings across three scenarios.
+
+Archive:
+`experiments/trust_robot_r107_r108_incremental_delivery_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R107_R108_INCREMENTAL_DELIVERY_CHECKPOINT_V1.md`
+
+No actual hardware/network streaming, timing
+deadlines, source authentication or solver
+transactional rollback is established.
+
+The original S6 implementation remains unchanged.
+R95 external Gaussian prior import is denied.
+
+All 11 scientific gates remain CLOSED.
+No real sensor factors, confirmation_test access,
+health training, independent GT scoring, ATE/RPE,
+or raw ROSbags/GT in Git.
+
+Next: fail-stop and atomicity verification for
+bounded synthetic delivery after solver faults.
