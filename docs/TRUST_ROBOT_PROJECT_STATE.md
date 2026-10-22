@@ -6427,3 +6427,46 @@ or raw ROSbags/GT in Git.
 
 Next: fail-stop and atomicity verification for
 bounded synthetic delivery after solver faults.
+
+## KIOS R110-R111 failure isolation checkpoint (2026-10-22)
+
+R110: 39 passing regression tests; six injected
+internal failure stages; six quarantined sessions;
+five failures revealed prior internal state mutation.
+
+R111: 43 passing regression tests; isolated
+in-memory candidate-state execution, six
+aborted shadow candidates, six unchanged
+committed-state snapshots and six successful
+retries after faults were removed.
+
+R111 healthy synthetic runs covered 12 sessions,
+48 nonlinear windows and 18 local Schur-prior
+recenterings.
+
+Combined archived regression count: 82.
+
+Archive:
+`experiments/trust_robot_r110_r111_failure_transaction_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R110_R111_FAILURE_TRANSACTION_CHECKPOINT_V1.md`
+
+Scope: single-threaded synthetic software only.
+
+Durable rollback, process restart recovery,
+concurrent correctness, distributed exactly-once
+delivery, physical capture timing, calibrated
+localization and health model training remain
+unverified and unauthorized.
+
+The S6/R107/R108 source files are unchanged.
+R95 Gaussian priors remain separate.
+
+The 22/7/7 M2DGR split remains frozen.
+All 11 scientific gates remain CLOSED.
+Original GT/ROSBags and sealed confirmation_test
+are not used.
+
+Next: resource-bounded candidate replay,
+session ownership and cancellation controls.

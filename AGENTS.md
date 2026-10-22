@@ -535,3 +535,36 @@ All 11 scientific gates remain CLOSED.
 
 Next: synthetic failure-state handling and
 explicit fail-stop versus rollback guarantees.
+
+## KIOS R110-R111 failure isolation checkpoint — 2026-10-22
+
+Archive:
+`experiments/trust_robot_r110_r111_failure_transaction_checkpoint_v1/`
+
+Audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R110_R111_FAILURE_TRANSACTION_CHECKPOINT_V1.md`
+
+R110 passed 39 tests. Six manufactured internal
+failures were injected and quarantined; five
+showed internal mutation before failure.
+
+R111 passed 43 tests. Its shadow-state wrapper
+preserved committed in-memory state across six
+injected failures and completed six subsequent
+retries using fresh candidate buffers.
+
+Together the phases provide 82 archived tests.
+
+R111 isolation is single-threaded and in-process.
+It does not establish power-loss recovery,
+concurrent publication safety, distributed
+exactly-once delivery or bounded runtime latency.
+
+Original S6 and R107/R108 remain unchanged.
+Direct R95 Gaussian prior import remains denied.
+
+All 11 scientific gates remain CLOSED.
+
+Continue phased KIOS-only engineering with
+source SHA-256 pins, fail-closed testing and
+guarded validated GitHub publication.

@@ -1,0 +1,381 @@
+{
+  "ate_rpe_authorized": false,
+  "committed_operations": 60,
+  "concurrent_atomic_publication_verified": false,
+  "confirmation_test_accessed": false,
+  "direct_private_object_mutation_isolated": false,
+  "distributed_exactly_once_verified": false,
+  "durable_crash_recovery_verified": false,
+  "existing_r108_rollback_implemented": false,
+  "fault_cases": {
+    "finalization": {
+      "committed_object_identity_unchanged": true,
+      "committed_snapshot_unchanged": true,
+      "exception_type": "InjectedFault",
+      "failed_shadow_discarded": true,
+      "fault": "finalization",
+      "new_physical_fault_recovery_proven": false,
+      "no_ack_on_failed_operation": true,
+      "retry_after_injection_removed": true,
+      "session_recovered_without_reusing_failed_shadow": true
+    },
+    "imu_prediction": {
+      "committed_object_identity_unchanged": true,
+      "committed_snapshot_unchanged": true,
+      "exception_type": "InjectedFault",
+      "failed_shadow_discarded": true,
+      "fault": "imu_prediction",
+      "new_physical_fault_recovery_proven": false,
+      "no_ack_on_failed_operation": true,
+      "retry_after_injection_removed": true,
+      "session_recovered_without_reusing_failed_shadow": true
+    },
+    "nonlinear_optimization": {
+      "committed_object_identity_unchanged": true,
+      "committed_snapshot_unchanged": true,
+      "exception_type": "InjectedFault",
+      "failed_shadow_discarded": true,
+      "fault": "nonlinear_optimization",
+      "new_physical_fault_recovery_proven": false,
+      "no_ack_on_failed_operation": true,
+      "retry_after_injection_removed": true,
+      "session_recovered_without_reusing_failed_shadow": true
+    },
+    "pre_publication": {
+      "committed_object_identity_unchanged": true,
+      "committed_snapshot_unchanged": true,
+      "exception_type": "InjectedFault",
+      "failed_shadow_discarded": true,
+      "fault": "pre_publication",
+      "new_physical_fault_recovery_proven": false,
+      "no_ack_on_failed_operation": true,
+      "retry_after_injection_removed": true,
+      "session_recovered_without_reusing_failed_shadow": true
+    },
+    "prior_recentering": {
+      "committed_object_identity_unchanged": true,
+      "committed_snapshot_unchanged": true,
+      "exception_type": "InjectedFault",
+      "failed_shadow_discarded": true,
+      "fault": "prior_recentering",
+      "new_physical_fault_recovery_proven": false,
+      "no_ack_on_failed_operation": true,
+      "retry_after_injection_removed": true,
+      "session_recovered_without_reusing_failed_shadow": true
+    },
+    "schur_marginalization": {
+      "committed_object_identity_unchanged": true,
+      "committed_snapshot_unchanged": true,
+      "exception_type": "InjectedFault",
+      "failed_shadow_discarded": true,
+      "fault": "schur_marginalization",
+      "new_physical_fault_recovery_proven": false,
+      "no_ack_on_failed_operation": true,
+      "retry_after_injection_removed": true,
+      "session_recovered_without_reusing_failed_shadow": true
+    }
+  },
+  "fault_injections": 6,
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "healthy_cases": {
+    "clean_camera_off_ordered_ordinary": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 0,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": false,
+      "schur_marginalizations": 3
+    },
+    "clean_camera_off_ordered_recentered": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 3,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": true,
+      "schur_marginalizations": 3
+    },
+    "clean_camera_off_reordered_ordinary": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 0,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": false,
+      "schur_marginalizations": 3
+    },
+    "clean_camera_off_reordered_recentered": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 3,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": true,
+      "schur_marginalizations": 3
+    },
+    "clean_joint_ordered_ordinary": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 0,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": false,
+      "schur_marginalizations": 3
+    },
+    "clean_joint_ordered_recentered": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 6.325329149348136e-12,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 3,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": true,
+      "schur_marginalizations": 3
+    },
+    "clean_joint_reordered_ordinary": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 0,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": false,
+      "schur_marginalizations": 3
+    },
+    "clean_joint_reordered_recentered": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 6.325329149348136e-12,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 3,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": true,
+      "schur_marginalizations": 3
+    },
+    "lidar_dropout_joint_ordered_ordinary": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 0,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": false,
+      "schur_marginalizations": 3
+    },
+    "lidar_dropout_joint_ordered_recentered": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 5.1962323333043514e-12,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 3,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": true,
+      "schur_marginalizations": 3
+    },
+    "lidar_dropout_joint_reordered_ordinary": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 0.0,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 0,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": false,
+      "schur_marginalizations": 3
+    },
+    "lidar_dropout_joint_reordered_recentered": {
+      "acknowledged_operations": 5,
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "candidate_state_published_after_success": true,
+      "factor_ownership_verified": true,
+      "max_abs_error_vs_s6": 5.1962323333043514e-12,
+      "nonlinear_windows": 4,
+      "physical_execution_verified": false,
+      "prior_transfers": 3,
+      "processed_order": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "recentered": true,
+      "schur_marginalizations": 3
+    }
+  },
+  "healthy_solver_sessions": 12,
+  "in_memory_shadow_isolation_verified": true,
+  "invalid_admission": {
+    "rejections": 8,
+    "session_completed_after_rejections": true,
+    "state_unchanged": true
+  },
+  "nonlinear_windows_in_committed_sessions": 48,
+  "original_r107_r108_modified": false,
+  "physical_clock_or_extrinsics_verified": false,
+  "physical_hardware_recovery_verified": false,
+  "r95_backend_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_authorized": false,
+  "same_graph_prior_transfers": 18,
+  "schema": "TRUST_ROBOT_R111_SYNTHETIC_SHADOW_TRANSACTION_V1",
+  "schur_events_in_committed_sessions": 36,
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_SHADOW_TRANSACTION_ONLY",
+  "successful_retries": 6,
+  "transport_authentication_verified": false,
+  "unchanged_committed_snapshots_after_fault": 6
+}

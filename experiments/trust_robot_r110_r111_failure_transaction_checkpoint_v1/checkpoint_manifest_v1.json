@@ -1,0 +1,44 @@
+{
+  "archived_regression_tests": 82,
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "concurrent_atomic_publication_verified": false,
+  "confirmation_test_accessed": false,
+  "distributed_exactly_once_verified": false,
+  "documentation_sha256": {
+    "AGENTS.md": "3cea6bd76d3f56a1417ba13955eb186d457b2a360c98838b6bb2b41314784675",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "78b4b9d2c9dd9ef835b8e31f56047ca29ea3a2bb51f0472d47badfeb57103b2f",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R110_R111_FAILURE_TRANSACTION_CHECKPOINT_V1.md": "80be2daef88dc6aa71c2abb084a2275305fd943e01bdb822dafbb45345310e3c"
+  },
+  "durable_crash_recovery_verified": false,
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "bc12a73dfef9727206a8bfcb692566d5f039187c92bf38482d42bc4fe121b59f",
+    "verify_checkpoint.py": "4ede0d0dffcd0ab232090929ad12d9f6c9aab4fe5edf9b6794eebdd6e2ad8d12"
+  },
+  "parent_commit": "0ea093b47b04682d1144dc6c2e7f25b9dac3baf2",
+  "physical_clock_or_extrinsics_verified": false,
+  "qualified_author_reply_ingested": false,
+  "r110_test_count": 39,
+  "r111_test_count": 43,
+  "r95_backend_merged_into_s6": false,
+  "raw_gt_or_rosbags_archived": false,
+  "real_sensor_factor_execution_authorized": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R110_R111_FAILURE_TRANSACTION_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 10,
+  "source_sha256": {
+    "evidence/r110/dev/r110_failstop.py": "646a87d7e87122e3054000f755111d00b55ddfb5fe88820613298f564541eed5",
+    "evidence/r110/dev/r110_failstop_contract_v1.md": "6dd0a9a91f77d5cc57509ef395b5eff8e48fd3bde642a097cf6176b85f094da4",
+    "evidence/r110/dev/test_r110.py": "d807b73a8a9d5f9a52a7af4b937858b61d8fc967d2cdf1861f16e6e78745eabd",
+    "evidence/r110/result/r110_failure_atomicity_v1.json": "044286f5764ed82bf66f2bf8fa662a4127706ca5b9a1b283821d52205b21112c",
+    "evidence/r110/result/r110_independent_validation_v1.json": "f33b78735f7d20933238210d21a37c6b56230ce7bc30164bfa43a7aa1a1b492c",
+    "evidence/r111/dev/r111_transaction.py": "e2c7a35aaf37c3b9da17fde7b23a76e55c9468db569ea120fe7f686aa0fd498f",
+    "evidence/r111/dev/r111_transaction_contract_v1.md": "d7470694b523bcba6d476b7dfe0945b2cb2ea6cbe3734293ac1b5bbc003e51d3",
+    "evidence/r111/dev/test_r111.py": "02eaba8a7a89b028ed663d85a5a3fe06d60407d30aa0b9f402ee0fa7b805c70c",
+    "evidence/r111/result/r111_independent_validation_v1.json": "53b2860b585bbf372bfccede1182a9f6e0690ef811975ec1df0a14ac696afee3",
+    "evidence/r111/result/r111_shadow_transaction_v1.json": "66a77ed7aaa9d68a0a04e53ff32a668673b97a0aed8d3b968f0ac17eaf01f8bd"
+  }
+}

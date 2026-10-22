@@ -1,0 +1,280 @@
+{
+  "admission": {
+    "healthy_session_remained_usable": true,
+    "pre_admission_rejections": 8,
+    "rollback_required": false,
+    "state_unchanged_on_rejection": true
+  },
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "existing_r108_transactional_rollback_proven": false,
+  "fault_cases": {
+    "finalization": {
+      "fault_receipt": {
+        "continued_execution_authorized": false,
+        "estimator_changed_before_fault": false,
+        "exception_type": "InjectedFault",
+        "next_node_after_failure": 5,
+        "operation": "finish",
+        "post_estimator_sha256": "03dc0f02b43fe239bb5ebc0fb2d06bbbf4a0406813e18fbe3431b77482c3525a",
+        "post_queue_sha256": "91db019d6b93cf400a34807b82737e14a29702a2cfdc36f153b991a7c24e4428",
+        "pre_estimator_sha256": "03dc0f02b43fe239bb5ebc0fb2d06bbbf4a0406813e18fbe3431b77482c3525a",
+        "pre_queue_sha256": "91db019d6b93cf400a34807b82737e14a29702a2cfdc36f153b991a7c24e4428",
+        "queue_changed_before_fault": false,
+        "successful_acknowledgement_issued": false,
+        "transactional_rollback_performed": false
+      },
+      "injection_point": "finalization",
+      "original_graph_still_valid": true,
+      "post_fault_operations_rejected": 2,
+      "post_fault_state_unchanged_on_rejection": true,
+      "rollback_proven": false,
+      "session_quarantined": true
+    },
+    "imu_prediction": {
+      "fault_receipt": {
+        "continued_execution_authorized": false,
+        "estimator_changed_before_fault": true,
+        "exception_type": "InjectedFault",
+        "next_node_after_failure": 1,
+        "operation": "submit",
+        "post_estimator_sha256": "bb99142b91a76d5d654876397b34c9aac700894beb918522821739a58275c399",
+        "post_queue_sha256": "9006a7a15eb5a20bac63f95445f1269739b73e2b8f80591c41a54d6c31bf7e33",
+        "pre_estimator_sha256": "0c0cd995b21439ee29b2b6ca22938c4b936a43f69126fcf9683c61c5581156c1",
+        "pre_queue_sha256": "904eab5e6f8fea093756d5a3f8c922e610be5436d5f9f32e05090b15d1b7a59f",
+        "queue_changed_before_fault": true,
+        "successful_acknowledgement_issued": false,
+        "transactional_rollback_performed": false
+      },
+      "injection_point": "imu_prediction",
+      "original_graph_still_valid": true,
+      "post_fault_operations_rejected": 2,
+      "post_fault_state_unchanged_on_rejection": true,
+      "rollback_proven": false,
+      "session_quarantined": true
+    },
+    "nonlinear_optimization": {
+      "fault_receipt": {
+        "continued_execution_authorized": false,
+        "estimator_changed_before_fault": true,
+        "exception_type": "InjectedFault",
+        "next_node_after_failure": 1,
+        "operation": "submit",
+        "post_estimator_sha256": "fcc320cb606f3abe80a58bd51f8c63677bf5fc79817216ae8ae74fbfbc27660d",
+        "post_queue_sha256": "9006a7a15eb5a20bac63f95445f1269739b73e2b8f80591c41a54d6c31bf7e33",
+        "pre_estimator_sha256": "0c0cd995b21439ee29b2b6ca22938c4b936a43f69126fcf9683c61c5581156c1",
+        "pre_queue_sha256": "904eab5e6f8fea093756d5a3f8c922e610be5436d5f9f32e05090b15d1b7a59f",
+        "queue_changed_before_fault": true,
+        "successful_acknowledgement_issued": false,
+        "transactional_rollback_performed": false
+      },
+      "injection_point": "nonlinear_optimization",
+      "original_graph_still_valid": true,
+      "post_fault_operations_rejected": 2,
+      "post_fault_state_unchanged_on_rejection": true,
+      "rollback_proven": false,
+      "session_quarantined": true
+    },
+    "post_processing_acknowledgement": {
+      "fault_receipt": {
+        "continued_execution_authorized": false,
+        "estimator_changed_before_fault": true,
+        "exception_type": "InjectedFault",
+        "next_node_after_failure": 2,
+        "operation": "submit",
+        "post_estimator_sha256": "2552698ce3a4d9244f97099f22ccd45bc931ddec428fbd33510580b112fa7520",
+        "post_queue_sha256": "2aaa271e10e08ab9d573a089a7fd17b8b096ac3f7648fde3c97445d16b9c9536",
+        "pre_estimator_sha256": "0c0cd995b21439ee29b2b6ca22938c4b936a43f69126fcf9683c61c5581156c1",
+        "pre_queue_sha256": "904eab5e6f8fea093756d5a3f8c922e610be5436d5f9f32e05090b15d1b7a59f",
+        "queue_changed_before_fault": true,
+        "successful_acknowledgement_issued": false,
+        "transactional_rollback_performed": false
+      },
+      "injection_point": "post_processing_acknowledgement",
+      "original_graph_still_valid": true,
+      "post_fault_operations_rejected": 2,
+      "post_fault_state_unchanged_on_rejection": true,
+      "rollback_proven": false,
+      "session_quarantined": true
+    },
+    "prior_recentering": {
+      "fault_receipt": {
+        "continued_execution_authorized": false,
+        "estimator_changed_before_fault": true,
+        "exception_type": "InjectedFault",
+        "next_node_after_failure": 2,
+        "operation": "submit",
+        "post_estimator_sha256": "37a223eb33534c042081f2a866df89498ea9e2f2cad47480a0db84a0b6a60b81",
+        "post_queue_sha256": "8d58d5e0920593d25b1a1df76c284397567563d0eb34b621257eb8d1f7dfb344",
+        "pre_estimator_sha256": "2552698ce3a4d9244f97099f22ccd45bc931ddec428fbd33510580b112fa7520",
+        "pre_queue_sha256": "2aaa271e10e08ab9d573a089a7fd17b8b096ac3f7648fde3c97445d16b9c9536",
+        "queue_changed_before_fault": true,
+        "successful_acknowledgement_issued": false,
+        "transactional_rollback_performed": false
+      },
+      "injection_point": "prior_recentering",
+      "original_graph_still_valid": true,
+      "post_fault_operations_rejected": 2,
+      "post_fault_state_unchanged_on_rejection": true,
+      "rollback_proven": false,
+      "session_quarantined": true
+    },
+    "schur_marginalization": {
+      "fault_receipt": {
+        "continued_execution_authorized": false,
+        "estimator_changed_before_fault": true,
+        "exception_type": "InjectedFault",
+        "next_node_after_failure": 2,
+        "operation": "submit",
+        "post_estimator_sha256": "37a223eb33534c042081f2a866df89498ea9e2f2cad47480a0db84a0b6a60b81",
+        "post_queue_sha256": "8d58d5e0920593d25b1a1df76c284397567563d0eb34b621257eb8d1f7dfb344",
+        "pre_estimator_sha256": "2552698ce3a4d9244f97099f22ccd45bc931ddec428fbd33510580b112fa7520",
+        "pre_queue_sha256": "2aaa271e10e08ab9d573a089a7fd17b8b096ac3f7648fde3c97445d16b9c9536",
+        "queue_changed_before_fault": true,
+        "successful_acknowledgement_issued": false,
+        "transactional_rollback_performed": false
+      },
+      "injection_point": "schur_marginalization",
+      "original_graph_still_valid": true,
+      "post_fault_operations_rejected": 2,
+      "post_fault_state_unchanged_on_rejection": true,
+      "rollback_proven": false,
+      "session_quarantined": true
+    }
+  },
+  "fault_injection_count": 6,
+  "faulted_session_resume_authorized": false,
+  "faulted_sessions_quarantined": 6,
+  "faults_with_internal_state_change": 5,
+  "fresh_session_recovery": {
+    "arrival_order": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "completed": true,
+    "marginalizations": 3,
+    "max_abs_error_vs_original_s6": 0.0,
+    "physical_streaming_verified": false,
+    "prior_transfers": 0,
+    "recenter": false,
+    "source": "ANALYTIC_FIXTURE",
+    "windows": 4
+  },
+  "fresh_session_recovery_verified": true,
+  "hardware_fault_recovery_verified": false,
+  "health_training_authorized": false,
+  "healthy_cases": {
+    "clean_camera_off_ordinary": {
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed": true,
+      "marginalizations": 3,
+      "max_abs_error_vs_original_s6": 0.0,
+      "physical_streaming_verified": false,
+      "prior_transfers": 0,
+      "recenter": false,
+      "source": "ANALYTIC_FIXTURE",
+      "windows": 4
+    },
+    "clean_camera_off_recentered": {
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed": true,
+      "marginalizations": 3,
+      "max_abs_error_vs_original_s6": 0.0,
+      "physical_streaming_verified": false,
+      "prior_transfers": 3,
+      "recenter": true,
+      "source": "ANALYTIC_FIXTURE",
+      "windows": 4
+    },
+    "clean_joint_ordinary": {
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed": true,
+      "marginalizations": 3,
+      "max_abs_error_vs_original_s6": 0.0,
+      "physical_streaming_verified": false,
+      "prior_transfers": 0,
+      "recenter": false,
+      "source": "ANALYTIC_FIXTURE",
+      "windows": 4
+    },
+    "clean_joint_recentered": {
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed": true,
+      "marginalizations": 3,
+      "max_abs_error_vs_original_s6": 6.325329149348136e-12,
+      "physical_streaming_verified": false,
+      "prior_transfers": 3,
+      "recenter": true,
+      "source": "ANALYTIC_FIXTURE",
+      "windows": 4
+    },
+    "lidar_dropout_joint_ordinary": {
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed": true,
+      "marginalizations": 3,
+      "max_abs_error_vs_original_s6": 0.0,
+      "physical_streaming_verified": false,
+      "prior_transfers": 0,
+      "recenter": false,
+      "source": "ANALYTIC_FIXTURE",
+      "windows": 4
+    },
+    "lidar_dropout_joint_recentered": {
+      "arrival_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "completed": true,
+      "marginalizations": 3,
+      "max_abs_error_vs_original_s6": 5.1962323333043514e-12,
+      "physical_streaming_verified": false,
+      "prior_transfers": 3,
+      "recenter": true,
+      "source": "ANALYTIC_FIXTURE",
+      "windows": 4
+    }
+  },
+  "healthy_nonlinear_windows": 24,
+  "healthy_prior_recenterings": 9,
+  "healthy_schur_marginalizations": 18,
+  "healthy_solver_executions": 6,
+  "new_transactional_rollback_implemented": false,
+  "physical_clock_or_extrinsics_verified": false,
+  "r95_gaussian_prior_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_authorized": false,
+  "real_time_deadlines_verified": false,
+  "schema": "TRUST_ROBOT_R110_SYNTHETIC_FAIL_STOP_AUDIT_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_FAIL_STOP_SOFTWARE_ONLY",
+  "transport_authentication_verified": false
+}
