@@ -1,0 +1,720 @@
+{
+  "ate_rpe_authorized": false,
+  "cases": {
+    "clean_camera_off": {
+      "camera_enabled": false,
+      "camera_factors": 0,
+      "condition": "clean",
+      "fixture_sha256": "5a6f8186e7f17dbd28cb4bf2830fcbbd1017082e5e7b5fdd2983d6233d99c82f",
+      "imu_factors": 4,
+      "imu_ledger": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "sample_indices": [
+            0,
+            1
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 0
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "end_ns": 400000000,
+          "sample_indices": [
+            2,
+            3
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 200000000
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "sample_indices": [
+            4,
+            5
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 400000000
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "end_ns": 800000000,
+          "sample_indices": [
+            6,
+            7
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 600000000
+        }
+      ],
+      "imu_sample_times_ns": [
+        0,
+        100000000,
+        200000000,
+        300000000,
+        400000000,
+        500000000,
+        600000000,
+        700000000,
+        800000000
+      ],
+      "imu_samples_used_exactly_once": true,
+      "lidar_factors": 7,
+      "marginalizations": 3,
+      "node_times_ns": [
+        0,
+        200000000,
+        400000000,
+        600000000,
+        800000000
+      ],
+      "nonlinear_windows": 4,
+      "pose_factors": 7,
+      "pose_factors_consumed": 6,
+      "pose_factors_remaining": 1,
+      "pose_ledger": [
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:0:1",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            0,
+            2
+          ],
+          "end_ns": 400000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:0:2",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            1,
+            2
+          ],
+          "end_ns": 400000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:1:2",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 200000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            1,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:1:3",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 200000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:2:3",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 400000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            2,
+            4
+          ],
+          "end_ns": 800000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:2:4",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 400000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            3,
+            4
+          ],
+          "end_ns": 800000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:3:4",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 600000000
+        }
+      ],
+      "real_sensor_factors_executed": false,
+      "same_edge_camera_lidar": 0,
+      "seed": null,
+      "truth_passed_to_estimator": false
+    },
+    "clean_joint": {
+      "camera_enabled": true,
+      "camera_factors": 2,
+      "condition": "clean",
+      "fixture_sha256": "5a6f8186e7f17dbd28cb4bf2830fcbbd1017082e5e7b5fdd2983d6233d99c82f",
+      "imu_factors": 4,
+      "imu_ledger": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "sample_indices": [
+            0,
+            1
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 0
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "end_ns": 400000000,
+          "sample_indices": [
+            2,
+            3
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 200000000
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "sample_indices": [
+            4,
+            5
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 400000000
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "end_ns": 800000000,
+          "sample_indices": [
+            6,
+            7
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 600000000
+        }
+      ],
+      "imu_sample_times_ns": [
+        0,
+        100000000,
+        200000000,
+        300000000,
+        400000000,
+        500000000,
+        600000000,
+        700000000,
+        800000000
+      ],
+      "imu_samples_used_exactly_once": true,
+      "lidar_factors": 7,
+      "marginalizations": 3,
+      "node_times_ns": [
+        0,
+        200000000,
+        400000000,
+        600000000,
+        800000000
+      ],
+      "nonlinear_windows": 4,
+      "pose_factors": 9,
+      "pose_factors_consumed": 8,
+      "pose_factors_remaining": 1,
+      "pose_ledger": [
+        {
+          "covariance_diagonal": [
+            0.0016,
+            0.0016,
+            0.0016,
+            0.0009,
+            0.0009,
+            0.0009
+          ],
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "camera_sim_seed13:0:1",
+          "modality": "camera",
+          "source_id": "analytic_camera_relative_motion_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:0:1",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            0,
+            2
+          ],
+          "end_ns": 400000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:0:2",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            1,
+            2
+          ],
+          "end_ns": 400000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:1:2",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 200000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            1,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:1:3",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 200000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0016,
+            0.0016,
+            0.0016,
+            0.0009,
+            0.0009,
+            0.0009
+          ],
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "camera_sim_seed13:2:3",
+          "modality": "camera",
+          "source_id": "analytic_camera_relative_motion_v1",
+          "start_ns": 400000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:2:3",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 400000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            2,
+            4
+          ],
+          "end_ns": 800000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:2:4",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 400000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            3,
+            4
+          ],
+          "end_ns": 800000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:3:4",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 600000000
+        }
+      ],
+      "real_sensor_factors_executed": false,
+      "same_edge_camera_lidar": 2,
+      "seed": 13,
+      "truth_passed_to_estimator": false
+    },
+    "lidar_dropout_joint": {
+      "camera_enabled": true,
+      "camera_factors": 2,
+      "condition": "lidar_dropout",
+      "fixture_sha256": "ac43fa26a764b95b48ec2abe08bdedae125f5670c4c889d0b818d94e7a7c633c",
+      "imu_factors": 4,
+      "imu_ledger": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "sample_indices": [
+            0,
+            1
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 0
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "end_ns": 400000000,
+          "sample_indices": [
+            2,
+            3
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 200000000
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "sample_indices": [
+            4,
+            5
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 400000000
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "end_ns": 800000000,
+          "sample_indices": [
+            6,
+            7
+          ],
+          "source_id": "analytic_s6_preintegrated_imu_v1",
+          "start_ns": 600000000
+        }
+      ],
+      "imu_sample_times_ns": [
+        0,
+        100000000,
+        200000000,
+        300000000,
+        400000000,
+        500000000,
+        600000000,
+        700000000,
+        800000000
+      ],
+      "imu_samples_used_exactly_once": true,
+      "lidar_factors": 3,
+      "marginalizations": 3,
+      "node_times_ns": [
+        0,
+        200000000,
+        400000000,
+        600000000,
+        800000000
+      ],
+      "nonlinear_windows": 4,
+      "pose_factors": 5,
+      "pose_factors_consumed": 4,
+      "pose_factors_remaining": 1,
+      "pose_ledger": [
+        {
+          "covariance_diagonal": [
+            0.0016,
+            0.0016,
+            0.0016,
+            0.0009,
+            0.0009,
+            0.0009
+          ],
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "camera_sim_seed13:0:1",
+          "modality": "camera",
+          "source_id": "analytic_camera_relative_motion_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            0,
+            1
+          ],
+          "end_ns": 200000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:0:1",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 0
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            1,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:1:3",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 200000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0016,
+            0.0016,
+            0.0016,
+            0.0009,
+            0.0009,
+            0.0009
+          ],
+          "edge": [
+            2,
+            3
+          ],
+          "end_ns": 600000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "camera_sim_seed13:2:3",
+          "modality": "camera",
+          "source_id": "analytic_camera_relative_motion_v1",
+          "start_ns": 400000000
+        },
+        {
+          "covariance_diagonal": [
+            0.0004,
+            0.0004,
+            0.0004,
+            0.000225,
+            0.000225,
+            0.000225
+          ],
+          "edge": [
+            3,
+            4
+          ],
+          "end_ns": 800000000,
+          "frame_id": "synthetic_body",
+          "measurement_id": "analytic_lidar_edge:3:4",
+          "modality": "lidar",
+          "source_id": "analytic_lidar_registration_v1",
+          "start_ns": 600000000
+        }
+      ],
+      "real_sensor_factors_executed": false,
+      "same_edge_camera_lidar": 1,
+      "seed": 13,
+      "truth_passed_to_estimator": false
+    }
+  },
+  "confirmation_test_accessed": false,
+  "health_training_authorized": false,
+  "imu_edges_per_case": 4,
+  "imu_samples_per_case": 8,
+  "independent_camera_lidar_factor_ids": true,
+  "new_estimator_backend_implemented": false,
+  "nodes_per_case": 5,
+  "original_gt_or_rosbags_opened": false,
+  "physical_extrinsics_verified": false,
+  "physical_sensor_synchronization_verified": false,
+  "r95_prior_imported_into_s6": false,
+  "real_sensor_factors_authorized": false,
+  "scenario_count": 3,
+  "schema": "TRUST_ROBOT_R104_SHARED_SYNTHETIC_FACTOR_GRAPH_V1",
+  "scientific_gates_closed": 11,
+  "single_fixture_per_scenario": true,
+  "status": "PASS_SYNTHETIC_SOFTWARE_ONLY",
+  "total_nonlinear_windows": 12,
+  "total_schur_marginalizations": 9
+}

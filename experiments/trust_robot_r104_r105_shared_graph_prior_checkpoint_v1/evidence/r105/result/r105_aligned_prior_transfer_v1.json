@@ -1,0 +1,375 @@
+{
+  "ate_rpe_authorized": false,
+  "cases": {
+    "clean_camera_off": {
+      "camera_enabled": false,
+      "condition": "clean",
+      "events": [
+        {
+          "consumed_imu_edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:0:1",
+            "analytic_lidar_edge:0:2"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 3.7891604143560154e-16,
+          "index": 0,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "82844427442de1aa04a4dc60508fff3ed33469dcb49e3118b0d1aeed22e702ee",
+          "input_nodes": [
+            0,
+            1,
+            2
+          ],
+          "input_prior_sha256": "9dfb06869cd83d4395c83a0d6d3626e784fdb1f38b4ecac9300ae7b9edbf7808",
+          "max_residual_absolute_error": 1.1942925475010603e-15,
+          "output_prior_sha256": "c4c40ab61fc708ffb1f54d5e2ea81931d50320919aa5dbec06d5b992b7578f34",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            1,
+            2
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.0007769313705232083
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:1:2",
+            "analytic_lidar_edge:1:3"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 3.029748140305259e-16,
+          "index": 1,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "c4c40ab61fc708ffb1f54d5e2ea81931d50320919aa5dbec06d5b992b7578f34",
+          "input_nodes": [
+            1,
+            2,
+            3
+          ],
+          "input_prior_sha256": "96191c823311ec33cb28f5cd0b73f57b88971697ecd8cda5890a75e6c95f046a",
+          "max_residual_absolute_error": 7.301702309191567e-16,
+          "output_prior_sha256": "ffb6972ebaaef732303c34b98eff114a89834ed35ac8c667f66de56d2b86e5fb",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            2,
+            3
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.0007871406693464636
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              2,
+              3
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:2:3",
+            "analytic_lidar_edge:2:4"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 3.5153189335395245e-16,
+          "index": 2,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "ffb6972ebaaef732303c34b98eff114a89834ed35ac8c667f66de56d2b86e5fb",
+          "input_nodes": [
+            2,
+            3,
+            4
+          ],
+          "input_prior_sha256": "f77f53a73a1989835644656a6ded5175000e53f6b2b21bc4aebf97ae8eecaacf",
+          "max_residual_absolute_error": 1.1737913818436066e-15,
+          "output_prior_sha256": "8ecb7c1243fd63ba3fbdf8d3ebea9f875d407395b4d4ed4376a366b6dffc65e3",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            3,
+            4
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.000761625007320229
+        }
+      ],
+      "factor_identity_audit_unchanged": true,
+      "fixture_digest": "5a6f8186e7f17dbd28cb4bf2830fcbbd1017082e5e7b5fdd2983d6233d99c82f",
+      "instrumented_vs_original_state_max_abs_error": 0.0,
+      "nonlinear_windows": 4,
+      "pose_factors_consumed": 6,
+      "pose_factors_remaining": 1,
+      "r95_prior_imported": false,
+      "real_sensor_factors_executed": false,
+      "source_graph_validated": true,
+      "transfers": 3,
+      "unreused_imu_edges": [
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "clean_joint": {
+      "camera_enabled": true,
+      "condition": "clean",
+      "events": [
+        {
+          "consumed_imu_edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:0:1",
+            "analytic_lidar_edge:0:2",
+            "camera_sim_seed13:0:1"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 1.5930322647040942e-16,
+          "index": 0,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "82844427442de1aa04a4dc60508fff3ed33469dcb49e3118b0d1aeed22e702ee",
+          "input_nodes": [
+            0,
+            1,
+            2
+          ],
+          "input_prior_sha256": "77d57effbd754ed816ef1eccf150a552693b8e4f1b72f9d5f3365796e15765d1",
+          "max_residual_absolute_error": 1.2285761863494208e-15,
+          "output_prior_sha256": "b1059afe40bfde69ae6d51f7e90bc772c6686fdaa3a2f27cfa522c7d010d1c96",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            1,
+            2
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.0007769313705232083
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:1:2",
+            "analytic_lidar_edge:1:3"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 3.6789714930356065e-16,
+          "index": 1,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "b1059afe40bfde69ae6d51f7e90bc772c6686fdaa3a2f27cfa522c7d010d1c96",
+          "input_nodes": [
+            1,
+            2,
+            3
+          ],
+          "input_prior_sha256": "82f7034cde3e849e65df18de052f8b914300aec19eedb16b95179d0fd71571e9",
+          "max_residual_absolute_error": 6.776876601581825e-16,
+          "output_prior_sha256": "44512fa799849b74b470ebe42b74f4898dac80b960e8157fac6a335a7c61ab4a",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            2,
+            3
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.0007871406693464636
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              2,
+              3
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:2:3",
+            "analytic_lidar_edge:2:4",
+            "camera_sim_seed13:2:3"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 3.895135104822227e-16,
+          "index": 2,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "44512fa799849b74b470ebe42b74f4898dac80b960e8157fac6a335a7c61ab4a",
+          "input_nodes": [
+            2,
+            3,
+            4
+          ],
+          "input_prior_sha256": "f56f40da6faa086873d4ca02f9aa9190231b349314189b3652060de0d1f44110",
+          "max_residual_absolute_error": 7.800032250022114e-16,
+          "output_prior_sha256": "a4f08cccffabbac63f8e28cc8a1a52080ddc742b91d5fba12bf703880a9ac6ae",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            3,
+            4
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.000761625007320229
+        }
+      ],
+      "factor_identity_audit_unchanged": true,
+      "fixture_digest": "5a6f8186e7f17dbd28cb4bf2830fcbbd1017082e5e7b5fdd2983d6233d99c82f",
+      "instrumented_vs_original_state_max_abs_error": 6.325329149348136e-12,
+      "nonlinear_windows": 4,
+      "pose_factors_consumed": 8,
+      "pose_factors_remaining": 1,
+      "r95_prior_imported": false,
+      "real_sensor_factors_executed": false,
+      "source_graph_validated": true,
+      "transfers": 3,
+      "unreused_imu_edges": [
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "lidar_dropout_joint": {
+      "camera_enabled": true,
+      "condition": "lidar_dropout",
+      "events": [
+        {
+          "consumed_imu_edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:0:1",
+            "camera_sim_seed13:0:1"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 1.4318704095194252e-16,
+          "index": 0,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "82844427442de1aa04a4dc60508fff3ed33469dcb49e3118b0d1aeed22e702ee",
+          "input_nodes": [
+            0,
+            1,
+            2
+          ],
+          "input_prior_sha256": "a361de2c3887bd0f95419344dd20bfb5e3c7dae37b8dc107878d9a18f1f9b2a8",
+          "max_residual_absolute_error": 1.15826669398778e-15,
+          "output_prior_sha256": "1ef42ec5d3d4267394cc06dddbcb40df249251ee7625855d1ed8d8cc926dbfac",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            1,
+            2
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.0007769313705232083
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              1,
+              2
+            ]
+          ],
+          "consumed_pose_ids": [
+            "analytic_lidar_edge:1:3"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 2.8919529673327345e-16,
+          "index": 1,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "1ef42ec5d3d4267394cc06dddbcb40df249251ee7625855d1ed8d8cc926dbfac",
+          "input_nodes": [
+            1,
+            2,
+            3
+          ],
+          "input_prior_sha256": "7603332e4dd270222bdfef8159662f0d55bf22df4f3b70d17302a87007339834",
+          "max_residual_absolute_error": 7.276001859026658e-16,
+          "output_prior_sha256": "a1bc0208b8162ff37234d62a7add2558592955d736617397f4cad465791138d1",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            2,
+            3
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.0007871406693464636
+        },
+        {
+          "consumed_imu_edges": [
+            [
+              2,
+              3
+            ]
+          ],
+          "consumed_pose_ids": [
+            "camera_sim_seed13:2:3"
+          ],
+          "frozen_factor_jacobians_refreshed": false,
+          "gradient_transform_relative_error": 2.0225682812613868e-16,
+          "index": 2,
+          "information_relative_error": 0.0,
+          "inherited_input_prior_sha256": "a1bc0208b8162ff37234d62a7add2558592955d736617397f4cad465791138d1",
+          "input_nodes": [
+            2,
+            3,
+            4
+          ],
+          "input_prior_sha256": "bec5d8d8195eff85ead4f975570a38e21e798d8841f25698a5c6e0b810de70bc",
+          "max_residual_absolute_error": 4.058363234501884e-16,
+          "output_prior_sha256": "3b6cd2ac3490f8d2c51cc90330451b9ca52052d3cc045e3c8ca9cd582c0cb5ac",
+          "recorded_sensor_factors_admitted": false,
+          "retained_nodes": [
+            3,
+            4
+          ],
+          "returned_to_actual_s6_nonlinear_solver": true,
+          "shift_l2": 0.000761625007320229
+        }
+      ],
+      "factor_identity_audit_unchanged": true,
+      "fixture_digest": "ac43fa26a764b95b48ec2abe08bdedae125f5670c4c889d0b818d94e7a7c633c",
+      "instrumented_vs_original_state_max_abs_error": 5.1962323333043514e-12,
+      "nonlinear_windows": 4,
+      "pose_factors_consumed": 4,
+      "pose_factors_remaining": 1,
+      "r95_prior_imported": false,
+      "real_sensor_factors_executed": false,
+      "source_graph_validated": true,
+      "transfers": 3,
+      "unreused_imu_edges": [
+        [
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  "confirmation_test_accessed": false,
+  "exact_local_residual_equivalence_checked": true,
+  "health_training_authorized": false,
+  "new_nonlinear_factor_jacobian_refresh_performed": false,
+  "new_physical_frame_alignment_verified": false,
+  "nonlinear_windows": 12,
+  "original_gt_or_rosbags_opened": false,
+  "original_s6_solver_restored": true,
+  "r95_gaussian_backend_imported": false,
+  "real_nonlinear_prior_rebase_transfers": 9,
+  "real_sensor_factors_authorized": false,
+  "scenarios": 3,
+  "schema": "TRUST_ROBOT_R105_ALIGNED_SYNTHETIC_S6_PRIOR_TRANSFER_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_SOFTWARE_ONLY",
+  "unchanged_non_linear_estimator_ledger": true
+}

@@ -472,3 +472,32 @@ physical source qualification. All 11 scientific gates remain CLOSED.
 Do not alter the frozen 22/7/7 M2DGR split or sealed confirmation data.
 Next: a single-source synthetic graph with explicit clock, gauge, frame,
 noise, prior dimension, node IDs and factor ownership.
+
+## KIOS R104-R105 synthetic graph and local-prior checkpoint — 2026-10-22
+
+Archive:
+`experiments/trust_robot_r104_r105_shared_graph_prior_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R104_R105_SHARED_GRAPH_PRIOR_CHECKPOINT_V1.md`
+
+R104 passed 48 tests, validating a single-source
+synthetic five-node graph with four IMU factors,
+independent camera/LiDAR identities and exact
+synthetic factor ownership.
+
+R105 passed 33 tests after two validated repairs.
+It returned nine recentered, same-graph S6 Schur
+priors to later nonlinear windows and checked
+local residual equivalence and estimator comparison.
+
+R95's Gaussian backend remains SEPARATE.
+Do not equate matching state dimensions with
+matching chronology, gauge, frame or factor history.
+
+These are manufactured software experiments.
+All 11 scientific gates remain CLOSED.
+
+Continue with phased KIOS-only development,
+source hashing, fail-closed admission,
+independent validation and guarded Git pushes.

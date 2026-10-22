@@ -6352,3 +6352,39 @@ The 11 scientific gates remain CLOSED. The M2DGR confirmation split is
 sealed, no real sensor factor/health training/ATE-RPE is authorized, and no
 new author-provided physically qualified evidence has been received.
 Next: a single-source coherent synthetic factor-graph integration design.
+
+## KIOS R104-R105 synthetic factor-graph checkpoint (2026-10-22)
+
+R104: 48 passing tests, five graph nodes,
+eight unique IMU samples, four preintegrated
+inertial factors, distinct camera/LiDAR factors,
+twelve nonlinear windows and nine Schur events.
+
+R105: 33 passing tests, nine recentered 30D
+Schur priors returned to actual later S6
+nonlinear optimization windows.
+
+R105 repairs:
+- exclude previously consumed pose factors
+  from the departing-state lineage comparison;
+- translate R104 admission rejection to the
+  R105 TransferError boundary without bypass.
+
+Combined archived regression count: 81.
+
+Archive:
+`experiments/trust_robot_r104_r105_shared_graph_prior_checkpoint_v1/`
+
+This is same-graph manufactured SE(3) software
+evidence, not imported R95 Gaussian priors,
+independent ground-truth scoring or physical
+localization accuracy.
+
+All 11 scientific gates remain CLOSED.
+No real sensor factors, health training, ATE/RPE,
+confirmation_test access or original raw evidence
+has been added to Git.
+
+Next: synthetic bounded incremental estimator
+integration with exact factor-consumption and
+linearization provenance.
