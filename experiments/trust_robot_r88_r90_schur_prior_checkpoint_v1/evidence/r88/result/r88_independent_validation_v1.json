@@ -1,0 +1,14 @@
+{
+  "confirmation_test_accessed": false,
+  "engine_sha256": "162c4ba1c73ffd3c65e2bdec0d5c44313ce767832f258b013b0c2a110c688e7a",
+  "four_synthetic_scenarios": 4,
+  "gap_prior_carry_count": 0,
+  "only_linearized_gaussian_information_eliminated": true,
+  "real_factors_admitted": false,
+  "report_sha256": "603aeba3811900e444c5cc8f8a044577472482a2ae5478d0456729ec2a52f07b",
+  "schema": "TRUST_ROBOT_R88_INDEPENDENT_SCHUR_NUMERICAL_VALIDATION_V1",
+  "schur_batch_solution_and_covariance_and_cost_agree": true,
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "1e366b025d713e8f50e4fd40617edc0bb6e06d2ddfd177bdba1aff7163c52c19"
+}

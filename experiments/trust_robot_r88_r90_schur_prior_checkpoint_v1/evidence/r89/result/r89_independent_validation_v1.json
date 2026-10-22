@@ -1,0 +1,16 @@
+{
+  "confirmation_test_accessed": false,
+  "cross_gap_prior_carry": 0,
+  "engine_sha256": "eafa8a7915c2090f3652cfd5fd43bb92b3c458f18a786d9aeaa78a7b764aae8d",
+  "exact_local_gaussian_recenter_verified": true,
+  "marginalized_prior_nonlinear_refresh_authorized": false,
+  "nonlinear_jacobian_drift_detected": true,
+  "r88_result_sha256": "603aeba3811900e444c5cc8f8a044577472482a2ae5478d0456729ec2a52f07b",
+  "real_sensor_factors_admitted": false,
+  "result_sha256": "0da4a0e5bcbac889fdf6e56650b2df4097b55040d81c2769193dadb40b146766",
+  "schema": "TRUST_ROBOT_R89_INDEPENDENT_FROZEN_PRIOR_CONSISTENCY_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "synthetic_scenarios": 4,
+  "tests_sha256": "27313ba5e06b3f0d65fa569486f62ece3e6cb898a86e5ae815ffd16ae2c2aff7"
+}

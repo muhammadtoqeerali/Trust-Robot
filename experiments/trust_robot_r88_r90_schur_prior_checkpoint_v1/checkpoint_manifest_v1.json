@@ -1,0 +1,38 @@
+{
+  "archived_regression_tests": 69,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "health_labels_or_training_authorized": false,
+  "independent_gt_scoring_or_ate_rpe": false,
+  "metadata_sha256": {
+    "README.md": "86e849a835d76486c3e67ca5c2010443e8412ef50972cec6b0a565b2b2be556b",
+    "verify_checkpoint.py": "e4b084f7d1fdcc719f1d0224b73ed8670993a9716cd6152e1ded889d725bfe61"
+  },
+  "nonlinear_marginal_prior_relinearization_authorized": false,
+  "original_gt_or_rosbags_archived": false,
+  "parent_commit": "c147ccaba711b8a600294b2df2b8f64f6ef6bcd4",
+  "physical_clock_or_extrinsic_calibration_qualified": false,
+  "private_verona_reports_archived": false,
+  "r88_r89_r90_synthetic_scenarios_each": 4,
+  "r90_accepted_recentering_trials": 15,
+  "r90_adversarial_rejections": 30,
+  "real_sensor_factor_execution": false,
+  "schema": "TRUST_ROBOT_R88_R90_SCHUR_PRIOR_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 12,
+  "source_sha256": {
+    "evidence/r88/dev/r88_schur.py": "162c4ba1c73ffd3c65e2bdec0d5c44313ce767832f258b013b0c2a110c688e7a",
+    "evidence/r88/dev/test_r88.py": "1e366b025d713e8f50e4fd40617edc0bb6e06d2ddfd177bdba1aff7163c52c19",
+    "evidence/r88/result/r88_independent_validation_v1.json": "553713298aaaa39ad20fdb956e443c99f63df76eaa633c6c60e449da8aaf956e",
+    "evidence/r88/result/r88_synthetic_schur_fixed_lag_v1.json": "603aeba3811900e444c5cc8f8a044577472482a2ae5478d0456729ec2a52f07b",
+    "evidence/r89/dev/r89_prior.py": "eafa8a7915c2090f3652cfd5fd43bb92b3c458f18a786d9aeaa78a7b764aae8d",
+    "evidence/r89/dev/test_r89.py": "27313ba5e06b3f0d65fa569486f62ece3e6cb898a86e5ae815ffd16ae2c2aff7",
+    "evidence/r89/result/r89_independent_validation_v1.json": "dc5f6251e8a1b666845424735da938298bf4187d5d4e086f4ed38ab9224e1eb1",
+    "evidence/r89/result/r89_prior_relinearization_consistency_v1.json": "0da4a0e5bcbac889fdf6e56650b2df4097b55040d81c2769193dadb40b146766",
+    "evidence/r90/dev/r90_prior_guard.py": "a6d426c7f84264e520fef7756142704501c4e8aed92efc2a889867243ad99549",
+    "evidence/r90/dev/test_r90.py": "9c2f650d320571f4ebf0f4819f0da66ea35d6095c1a910925f31b40cba68f2f7",
+    "evidence/r90/result/r90_fixed_lag_prior_failure_audit_v1.json": "a3ef0e28c7bddaeb8fae2bb095a7908cf409863fe1dc7ff495a5f24081bde727",
+    "evidence/r90/result/r90_independent_validation_v1.json": "83155be4a9bb2e25e439c14a3139774f5d2c7ac72cd9e4b3b1d54c5f19f3daf3"
+  },
+  "upstream_r87_checkpoint": "experiments/trust_robot_r84_r86_synthetic_inertial_rolling_checkpoint_v1"
+}

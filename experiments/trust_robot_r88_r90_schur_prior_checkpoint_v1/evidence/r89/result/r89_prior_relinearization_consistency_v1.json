@@ -1,0 +1,193 @@
+{
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "eliminated_factor_information_reconstructed": false,
+  "exact_coordinate_recentering_verified": true,
+  "fresh_nonlinear_jacobian_changes_measured": true,
+  "frozen_schur_prior_is_local_gaussian_only": true,
+  "health_training_authorized": false,
+  "marginalized_prior_relinearization_authorized": false,
+  "physical_clock_or_extrinsics_qualified": false,
+  "probabilistic_nonlinear_consistency_proven": false,
+  "r88_report_sha256": "603aeba3811900e444c5cc8f8a044577472482a2ae5478d0456729ec2a52f07b",
+  "raw_rosbags_or_gt_opened": false,
+  "real_pose_factors_authorized": false,
+  "scenario_count": 4,
+  "scenarios": {
+    "accel_injection": {
+      "cross_gap_prior_carry_count": 0,
+      "frozen_information_recentered_without_relinearizing": true,
+      "nonlinear_audits": [
+        {
+          "eliminated_prior_jacobians_refreshed": false,
+          "frozen_prior_claimed_fully_nonlinear": false,
+          "independent_reference_used": false,
+          "linear_prediction_relative_error": 6.627610603195755e-05,
+          "new_jacobians_evaluated_for_audit": true,
+          "nonlinear_residual_evaluated_at_shifted_state": true,
+          "relinearized_jacobian_relative_change": 0.00018135831031735139,
+          "synthetic_state_perturbation_max_abs": 0.0002
+        }
+      ],
+      "nonlinear_jacobian_audits": 1,
+      "physically_qualified_motion_factors_created": false,
+      "prior_recentered_segment_count": 1,
+      "segment_results": [
+        {
+          "coordinate_recentering_trials": 3,
+          "exact_local_gaussian_coordinate_change": true,
+          "information_carried_across_gap": false,
+          "maximum_quadratic_value_abs_error": 4.440892098500626e-16,
+          "maximum_recentered_covariance_l2_error": 0.0,
+          "maximum_recentered_optimum_l2_error": 2.3581884047079613e-18,
+          "nonlinear_prior_relinearization_performed": false,
+          "original_frozen_jacobians_recomputed_by_recenter": false,
+          "retained_state_dimension": 15,
+          "schur_vs_prior_full_batch_cost_abs_error": 4.043532002284689e-16,
+          "segment_id": 0,
+          "window_count": 4
+        }
+      ],
+      "segments": 1,
+      "timestamp_gaps_rejected": 0
+    },
+    "continuous": {
+      "cross_gap_prior_carry_count": 0,
+      "frozen_information_recentered_without_relinearizing": true,
+      "nonlinear_audits": [
+        {
+          "eliminated_prior_jacobians_refreshed": false,
+          "frozen_prior_claimed_fully_nonlinear": false,
+          "independent_reference_used": false,
+          "linear_prediction_relative_error": 6.627551487705883e-05,
+          "new_jacobians_evaluated_for_audit": true,
+          "nonlinear_residual_evaluated_at_shifted_state": true,
+          "relinearized_jacobian_relative_change": 0.0001813579372016574,
+          "synthetic_state_perturbation_max_abs": 0.0002
+        }
+      ],
+      "nonlinear_jacobian_audits": 1,
+      "physically_qualified_motion_factors_created": false,
+      "prior_recentered_segment_count": 1,
+      "segment_results": [
+        {
+          "coordinate_recentering_trials": 3,
+          "exact_local_gaussian_coordinate_change": true,
+          "information_carried_across_gap": false,
+          "maximum_quadratic_value_abs_error": 8.881784197001252e-16,
+          "maximum_recentered_covariance_l2_error": 0.0,
+          "maximum_recentered_optimum_l2_error": 1.2685194376438707e-18,
+          "nonlinear_prior_relinearization_performed": false,
+          "original_frozen_jacobians_recomputed_by_recenter": false,
+          "retained_state_dimension": 15,
+          "schur_vs_prior_full_batch_cost_abs_error": 1.723881454251952e-17,
+          "segment_id": 0,
+          "window_count": 4
+        }
+      ],
+      "segments": 1,
+      "timestamp_gaps_rejected": 0
+    },
+    "gyro_injection": {
+      "cross_gap_prior_carry_count": 0,
+      "frozen_information_recentered_without_relinearizing": true,
+      "nonlinear_audits": [
+        {
+          "eliminated_prior_jacobians_refreshed": false,
+          "frozen_prior_claimed_fully_nonlinear": false,
+          "independent_reference_used": false,
+          "linear_prediction_relative_error": 6.62758838442386e-05,
+          "new_jacobians_evaluated_for_audit": true,
+          "nonlinear_residual_evaluated_at_shifted_state": true,
+          "relinearized_jacobian_relative_change": 0.00018135802547510757,
+          "synthetic_state_perturbation_max_abs": 0.0002
+        }
+      ],
+      "nonlinear_jacobian_audits": 1,
+      "physically_qualified_motion_factors_created": false,
+      "prior_recentered_segment_count": 1,
+      "segment_results": [
+        {
+          "coordinate_recentering_trials": 3,
+          "exact_local_gaussian_coordinate_change": true,
+          "information_carried_across_gap": false,
+          "maximum_quadratic_value_abs_error": 8.881784197001252e-16,
+          "maximum_recentered_covariance_l2_error": 0.0,
+          "maximum_recentered_optimum_l2_error": 2.0118086356994762e-18,
+          "nonlinear_prior_relinearization_performed": false,
+          "original_frozen_jacobians_recomputed_by_recenter": false,
+          "retained_state_dimension": 15,
+          "schur_vs_prior_full_batch_cost_abs_error": 1.3302076454224654e-15,
+          "segment_id": 0,
+          "window_count": 4
+        }
+      ],
+      "segments": 1,
+      "timestamp_gaps_rejected": 0
+    },
+    "single_gap": {
+      "cross_gap_prior_carry_count": 0,
+      "frozen_information_recentered_without_relinearizing": true,
+      "nonlinear_audits": [
+        {
+          "eliminated_prior_jacobians_refreshed": false,
+          "frozen_prior_claimed_fully_nonlinear": false,
+          "independent_reference_used": false,
+          "linear_prediction_relative_error": 6.627551487705883e-05,
+          "new_jacobians_evaluated_for_audit": true,
+          "nonlinear_residual_evaluated_at_shifted_state": true,
+          "relinearized_jacobian_relative_change": 0.0001813579372016574,
+          "synthetic_state_perturbation_max_abs": 0.0002
+        },
+        {
+          "eliminated_prior_jacobians_refreshed": false,
+          "frozen_prior_claimed_fully_nonlinear": false,
+          "independent_reference_used": false,
+          "linear_prediction_relative_error": 7.333186676306797e-05,
+          "new_jacobians_evaluated_for_audit": true,
+          "nonlinear_residual_evaluated_at_shifted_state": true,
+          "relinearized_jacobian_relative_change": 0.00019390284069414375,
+          "synthetic_state_perturbation_max_abs": 0.0002
+        }
+      ],
+      "nonlinear_jacobian_audits": 2,
+      "physically_qualified_motion_factors_created": false,
+      "prior_recentered_segment_count": 2,
+      "segment_results": [
+        {
+          "coordinate_recentering_trials": 3,
+          "exact_local_gaussian_coordinate_change": true,
+          "information_carried_across_gap": false,
+          "maximum_quadratic_value_abs_error": 1.1657341758564144e-15,
+          "maximum_recentered_covariance_l2_error": 0.0,
+          "maximum_recentered_optimum_l2_error": 2.1323303712059355e-18,
+          "nonlinear_prior_relinearization_performed": false,
+          "original_frozen_jacobians_recomputed_by_recenter": false,
+          "retained_state_dimension": 15,
+          "schur_vs_prior_full_batch_cost_abs_error": 5.920014912313976e-16,
+          "segment_id": 0,
+          "window_count": 2
+        },
+        {
+          "coordinate_recentering_trials": 3,
+          "exact_local_gaussian_coordinate_change": true,
+          "information_carried_across_gap": false,
+          "maximum_quadratic_value_abs_error": 1.4988010832439613e-15,
+          "maximum_recentered_covariance_l2_error": 0.0,
+          "maximum_recentered_optimum_l2_error": 2.150212114263611e-18,
+          "nonlinear_prior_relinearization_performed": false,
+          "original_frozen_jacobians_recomputed_by_recenter": false,
+          "retained_state_dimension": 15,
+          "schur_vs_prior_full_batch_cost_abs_error": 5.187907395343139e-17,
+          "segment_id": 1,
+          "window_count": 2
+        }
+      ],
+      "segments": 2,
+      "timestamp_gaps_rejected": 1
+    }
+  },
+  "schema": "TRUST_ROBOT_R89_SYNTHETIC_FROZEN_PRIOR_RELINEARIZATION_AUDIT_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SOFTWARE_ONLY"
+}

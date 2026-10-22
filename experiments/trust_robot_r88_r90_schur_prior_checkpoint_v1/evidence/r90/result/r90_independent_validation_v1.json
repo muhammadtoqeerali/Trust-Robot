@@ -1,0 +1,18 @@
+{
+  "adversarial_rejections": 30,
+  "confirmation_test_accessed": false,
+  "cross_gap_prior_reuse": false,
+  "empirical_physical_safety_claim": false,
+  "engine_sha256": "a6d426c7f84264e520fef7756142704501c4e8aed92efc2a889867243ad99549",
+  "local_gaussian_recentering_verified": true,
+  "nonlinear_prior_refresh_authorized": false,
+  "r88_report_sha256": "603aeba3811900e444c5cc8f8a044577472482a2ae5478d0456729ec2a52f07b",
+  "r89_report_sha256": "0da4a0e5bcbac889fdf6e56650b2df4097b55040d81c2769193dadb40b146766",
+  "real_sensor_factors_admitted": false,
+  "report_sha256": "a3ef0e28c7bddaeb8fae2bb095a7908cf409863fe1dc7ff495a5f24081bde727",
+  "schema": "TRUST_ROBOT_R90_INDEPENDENT_PRIOR_FAILURE_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "synthetic_scenarios": 4,
+  "tests_sha256": "9c2f650d320571f4ebf0f4819f0da66ea35d6095c1a910925f31b40cba68f2f7"
+}

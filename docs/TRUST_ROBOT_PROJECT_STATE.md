@@ -6248,3 +6248,19 @@ Archive: `experiments/trust_robot_r80_r82_recorded_multimodal_checkpoint_v1/`. A
 Parent `885bf22f7454a85cee53b82f5d6a5cbd7d3eff3e`. R84 implements strict synthetic IMU source admission, timestamp gap segmentation and bounded bias/covariance preintegration (21 tests). R85 connects safe continuous intervals to 15D covariance-whitened synthetic inertial graph edges, with zero cross-gap factors and manufactured endpoint residual closure (21 tests). R86 executes controlled nonlinear least-squares rolling 15D state updates with independent synthetic fixed anchors at each segment boundary, checks Jacobian rank/residual reduction, and refuses factor continuity across gaps (21 tests). The six code/test files and six compact result/validation reports are SHA-pinned in `experiments/trust_robot_r84_r86_synthetic_inertial_rolling_checkpoint_v1/`, with an independent verifier and five disposable tamper controls.
 
 The constructed endpoints are not independent reference truth or a measured localization benchmark. The archived SE3 IMU norms do not provide signed axes or verified physical capture time, so no real inertial factors were derived. No Schur-complement marginalization, physical synchronization, independent extrinsic calibration, health model training, or ATE/RPE is claimed. Original GT, ROSbags, private Verona evidence and confirmation_test stay excluded; the frozen 22/7/7 split and all eleven closed scientific gates are preserved. Next: synthetic Schur-complement fixed-lag marginalization with gauge-sensitive numerical tests before any further new real-data factor admission.
+
+## R91 — R88–R90 Schur prior integrity checkpoint (2026-10-22)
+
+Parent `c147ccaba711b8a600294b2df2b8f64f6ef6bcd4`.
+
+R88 implements 15D local linearized Gaussian Schur-complement information elimination with independent full-batch state, covariance and cost checks (21 synthetic tests).
+
+R89 verifies exact frozen-prior coordinate recentering and measures nonlinear Jacobian drift without claiming unauthorized relinearization of eliminated factors (21 tests).
+
+R90 supplies a fail-closed prior admission guard. Twenty-seven regression tests pass, including typed rejection of nonfinite matrices. Across four synthetic scenarios, 30 adversarial operations are rejected and 15 valid recentering trials pass.
+
+The checkpoint `experiments/trust_robot_r88_r90_schur_prior_checkpoint_v1/` contains 12 exact SHA-pinned code/test/result artifacts, compact independent validation receipts, a standalone verifier and five disposable archive tamper controls.
+
+Scientific status: synthetic mathematical engineering only. Fixed synthetic anchors, regularization and numerical thresholds do not prove physical accuracy or safety. No cross-gap information transfer, real sensor fusion factors, real health labels, training or ATE/RPE. Original ROSbags, GT, private Verona evidence and sealed confirmation data remain excluded. The frozen 22/7/7 split is unchanged; all 11 scientific gates remain CLOSED.
+
+Next priority: evidence-first physical source, clock-domain, sensor-frame and extrinsic qualification, followed by authorized measured-sensor engineering only when sufficient independent evidence exists.

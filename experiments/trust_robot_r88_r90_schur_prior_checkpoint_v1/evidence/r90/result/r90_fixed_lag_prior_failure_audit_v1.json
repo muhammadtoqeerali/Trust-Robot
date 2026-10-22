@@ -1,0 +1,177 @@
+{
+  "accepted_local_recentering_trials": 15,
+  "adversarial_rejections": 30,
+  "ate_rpe_authorized": false,
+  "confirmation_test_accessed": false,
+  "exact_local_gaussian_recentering_only": true,
+  "health_training_authorized": false,
+  "local_integrity_fingerprints_checked": true,
+  "nonlinear_marginal_prior_refresh_authorized": false,
+  "physical_clock_or_extrinsics_qualified": false,
+  "physical_observability_demonstrated": false,
+  "r88_report_sha256": "603aeba3811900e444c5cc8f8a044577472482a2ae5478d0456729ec2a52f07b",
+  "r89_report_sha256": "0da4a0e5bcbac889fdf6e56650b2df4097b55040d81c2769193dadb40b146766",
+  "real_sensor_factors_authorized": false,
+  "rosbags_or_gt_opened": false,
+  "scenario_count": 4,
+  "scenarios": {
+    "accel_injection": {
+      "accepted_local_recentering_trials": 3,
+      "adversarial_rejections": 6,
+      "attack_classes": [
+        "CROSS_SEGMENT",
+        "EXCESSIVE_RECENTER",
+        "MATRIX_TAMPER",
+        "NONLINEAR_REFRESH",
+        "REAL_SOURCE",
+        "STALE_LINEARIZATION"
+      ],
+      "cross_gap_prior_carry_count": 0,
+      "probabilistic_nonlinear_consistency_proven": false,
+      "real_factor_admission": false,
+      "rejected_timestamp_gaps": 0,
+      "segment_results": [
+        {
+          "adversarial_rejections": 6,
+          "fixed_synthetic_gauge_anchor": true,
+          "frozen_linearization_identity_preserved": true,
+          "information_crossing_timestamp_gap": false,
+          "information_matrix_dimension": 15,
+          "local_gaussian_recenter_trials": 3,
+          "max_condition_number": 778.3106529171617,
+          "max_covariance_invariance_error": 0.0,
+          "max_optimum_transform_error": 1.5356275167972532e-18,
+          "max_quadratic_energy_error": 4.440892098500626e-16,
+          "nonlinear_eliminated_factors_relinearized": false,
+          "safe_factor_windows": 4,
+          "segment_id": 0
+        }
+      ],
+      "segments": 1
+    },
+    "continuous": {
+      "accepted_local_recentering_trials": 3,
+      "adversarial_rejections": 6,
+      "attack_classes": [
+        "CROSS_SEGMENT",
+        "EXCESSIVE_RECENTER",
+        "MATRIX_TAMPER",
+        "NONLINEAR_REFRESH",
+        "REAL_SOURCE",
+        "STALE_LINEARIZATION"
+      ],
+      "cross_gap_prior_carry_count": 0,
+      "probabilistic_nonlinear_consistency_proven": false,
+      "real_factor_admission": false,
+      "rejected_timestamp_gaps": 0,
+      "segment_results": [
+        {
+          "adversarial_rejections": 6,
+          "fixed_synthetic_gauge_anchor": true,
+          "frozen_linearization_identity_preserved": true,
+          "information_crossing_timestamp_gap": false,
+          "information_matrix_dimension": 15,
+          "local_gaussian_recenter_trials": 3,
+          "max_condition_number": 778.4495318176072,
+          "max_covariance_invariance_error": 0.0,
+          "max_optimum_transform_error": 1.4834175813393633e-18,
+          "max_quadratic_energy_error": 4.440892098500626e-16,
+          "nonlinear_eliminated_factors_relinearized": false,
+          "safe_factor_windows": 4,
+          "segment_id": 0
+        }
+      ],
+      "segments": 1
+    },
+    "gyro_injection": {
+      "accepted_local_recentering_trials": 3,
+      "adversarial_rejections": 6,
+      "attack_classes": [
+        "CROSS_SEGMENT",
+        "EXCESSIVE_RECENTER",
+        "MATRIX_TAMPER",
+        "NONLINEAR_REFRESH",
+        "REAL_SOURCE",
+        "STALE_LINEARIZATION"
+      ],
+      "cross_gap_prior_carry_count": 0,
+      "probabilistic_nonlinear_consistency_proven": false,
+      "real_factor_admission": false,
+      "rejected_timestamp_gaps": 0,
+      "segment_results": [
+        {
+          "adversarial_rejections": 6,
+          "fixed_synthetic_gauge_anchor": true,
+          "frozen_linearization_identity_preserved": true,
+          "information_crossing_timestamp_gap": false,
+          "information_matrix_dimension": 15,
+          "local_gaussian_recenter_trials": 3,
+          "max_condition_number": 778.4494936937887,
+          "max_covariance_invariance_error": 0.0,
+          "max_optimum_transform_error": 1.6067641231464153e-18,
+          "max_quadratic_energy_error": 4.440892098500626e-16,
+          "nonlinear_eliminated_factors_relinearized": false,
+          "safe_factor_windows": 4,
+          "segment_id": 0
+        }
+      ],
+      "segments": 1
+    },
+    "single_gap": {
+      "accepted_local_recentering_trials": 6,
+      "adversarial_rejections": 12,
+      "attack_classes": [
+        "CROSS_SEGMENT",
+        "EXCESSIVE_RECENTER",
+        "MATRIX_TAMPER",
+        "NONLINEAR_REFRESH",
+        "REAL_SOURCE",
+        "STALE_LINEARIZATION"
+      ],
+      "cross_gap_prior_carry_count": 0,
+      "probabilistic_nonlinear_consistency_proven": false,
+      "real_factor_admission": false,
+      "rejected_timestamp_gaps": 1,
+      "segment_results": [
+        {
+          "adversarial_rejections": 6,
+          "fixed_synthetic_gauge_anchor": true,
+          "frozen_linearization_identity_preserved": true,
+          "information_crossing_timestamp_gap": false,
+          "information_matrix_dimension": 15,
+          "local_gaussian_recenter_trials": 3,
+          "max_condition_number": 738.4897813458664,
+          "max_covariance_invariance_error": 0.0,
+          "max_optimum_transform_error": 1.8964339430993244e-18,
+          "max_quadratic_energy_error": 8.881784197001252e-16,
+          "nonlinear_eliminated_factors_relinearized": false,
+          "safe_factor_windows": 2,
+          "segment_id": 0
+        },
+        {
+          "adversarial_rejections": 6,
+          "fixed_synthetic_gauge_anchor": true,
+          "frozen_linearization_identity_preserved": true,
+          "information_crossing_timestamp_gap": false,
+          "information_matrix_dimension": 15,
+          "local_gaussian_recenter_trials": 3,
+          "max_condition_number": 562.7758034286741,
+          "max_covariance_invariance_error": 0.0,
+          "max_optimum_transform_error": 2.4067401945002065e-18,
+          "max_quadratic_energy_error": 1.7763568394002505e-15,
+          "nonlinear_eliminated_factors_relinearized": false,
+          "safe_factor_windows": 2,
+          "segment_id": 1
+        }
+      ],
+      "segments": 2
+    }
+  },
+  "schema": "TRUST_ROBOT_R90_SYNTHETIC_MARGINAL_PRIOR_FAILURE_GUARD_V1",
+  "scientific_gates_closed": 11,
+  "segment_count": 5,
+  "status": "PASS_SOFTWARE_ONLY",
+  "synthetic_condition_limit": 100000000000000.0,
+  "synthetic_recenter_l2_budget": 0.01,
+  "thresholds_are_empirical_safety_limits": false
+}
