@@ -1,0 +1,15 @@
+{
+  "engine_sha256": "1db2dbe984558b0b990fae59125ab47cb342481f06ddee37be50408a13cc14b8",
+  "external_message_sent": false,
+  "gate_count": 11,
+  "intake_checklist_sha256": "773ba40fad60d445677ea47a6e2f0c399387c9bd55cb02f6e960659caddbf285",
+  "new_physical_source_admitted": false,
+  "r92_decision_sha256": "515325eba0bf01b355c3324a82f079f498b87f29e02635875f4ac6aa84bb2774",
+  "readiness_sha256": "5e26b21e6cda94b6e7048907c4b4e474aae94054ea11f2b5ecce6b374f2e63ae",
+  "schema": "TRUST_ROBOT_R93_INDEPENDENT_OUTREACH_READINESS_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "08f4e3e133a12d69dd78fb44b0dea9180ab470520c211229308b7d6993c7705c",
+  "timing_stream_count": 5,
+  "unsent_request_sha256": "c5281db73878466bc8c9392367160cca99f51589f4c439845bce8b2d692fc12e"
+}

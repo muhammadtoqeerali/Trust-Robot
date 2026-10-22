@@ -1,0 +1,14 @@
+{
+  "action_plan_sha256": "f9edd599dcf8758d8ebab8fa2665081a735f8bec58cfa5bd964bfafc1ecb458b",
+  "confirmation_test_accessed": false,
+  "decision_sha256": "515325eba0bf01b355c3324a82f079f498b87f29e02635875f4ac6aa84bb2774",
+  "engine_sha256": "4e947d1d194382921ef03f1ecd804b5089b5d9abc97b48caf28833c176d4749c",
+  "historical_gates_reviewed": 11,
+  "historical_timing_receipts_reviewed": 5,
+  "real_physical_qualification_upgrades": 0,
+  "schema": "TRUST_ROBOT_R92_INDEPENDENT_PHYSICAL_GAP_REVIEW_V1",
+  "scientific_gates_closed": 11,
+  "source_evidence_count": 13,
+  "status": "PASS",
+  "tests_sha256": "076cbb0e894d9de0fc1f466647ca0cc00f61fac03eaf56c5c31e871e14c70a64"
+}

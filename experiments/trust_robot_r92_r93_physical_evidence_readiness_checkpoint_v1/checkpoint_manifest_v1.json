@@ -1,0 +1,39 @@
+{
+  "archived_regression_tests": 41,
+  "ate_rpe_authorized": false,
+  "author_request_status": "DRAFT_NOT_SENT",
+  "branch": "kios-isaacsim-v15-integration",
+  "external_request_sent": false,
+  "gt_or_rosbags_archived": false,
+  "health_training_authorized": false,
+  "historical_scientific_gates": 11,
+  "historical_timing_receipts": 5,
+  "metadata_sha256": {
+    "README.md": "cf6559560936a6299b76f3199e3a5c7a7bf000cc8d807925aee24701a7b9c810",
+    "verify_checkpoint.py": "e2aa68207a1c50ce26257877d1448de2f8331e39e0b4593496af80ed4d66e008"
+  },
+  "new_physical_sources_received": false,
+  "original_ground_truth_bytes_recovered_prior_to_r92": true,
+  "parent_commit": "8b6024cc7c09568fc1e5485abdc0a5aa2bb72cd9",
+  "physical_ground_truth_qualified": false,
+  "physical_sensor_clock_or_extrinsics_qualified": false,
+  "real_sensor_factor_execution_authorized": false,
+  "reviewed_git_evidence_sources": 13,
+  "schema": "TRUST_ROBOT_R92_R93_PHYSICAL_EVIDENCE_READINESS_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "sealed_confirmation_test_accessed": false,
+  "source_count": 11,
+  "source_sha256": {
+    "evidence/r92/dev/r92_gap.py": "4e947d1d194382921ef03f1ecd804b5089b5d9abc97b48caf28833c176d4749c",
+    "evidence/r92/dev/test_r92.py": "076cbb0e894d9de0fc1f466647ca0cc00f61fac03eaf56c5c31e871e14c70a64",
+    "evidence/r92/result/r92_evidence_acquisition_order_v1.md": "f9edd599dcf8758d8ebab8fa2665081a735f8bec58cfa5bd964bfafc1ecb458b",
+    "evidence/r92/result/r92_independent_validation_v1.json": "89b82c7da27121e6a85947c4df88ab383215d8e79a12801e0d8b81463796606d",
+    "evidence/r92/result/r92_physical_source_gap_decision_v1.json": "515325eba0bf01b355c3324a82f079f498b87f29e02635875f4ac6aa84bb2774",
+    "evidence/r93/dev/r93_readiness.py": "1db2dbe984558b0b990fae59125ab47cb342481f06ddee37be50408a13cc14b8",
+    "evidence/r93/dev/test_r93.py": "08f4e3e133a12d69dd78fb44b0dea9180ab470520c211229308b7d6993c7705c",
+    "evidence/r93/result/r93_author_evidence_request_DRAFT_NOT_SENT.md": "c5281db73878466bc8c9392367160cca99f51589f4c439845bce8b2d692fc12e",
+    "evidence/r93/result/r93_independent_validation_v1.json": "3befb106af80500b80a0b28ea8014a9c54f39edcb50d9d3decba15d9815982fb",
+    "evidence/r93/result/r93_outreach_readiness_v1.json": "5e26b21e6cda94b6e7048907c4b4e474aae94054ea11f2b5ecce6b374f2e63ae",
+    "evidence/r93/result/r93_source_intake_checklist_v1.md": "773ba40fad60d445677ea47a6e2f0c399387c9bd55cb02f6e960659caddbf285"
+  }
+}
