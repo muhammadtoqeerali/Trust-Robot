@@ -6335,3 +6335,20 @@ no real sensor factors and no ATE/RPE.
 
 Next: explicitly designed nonlinear integration
 and fail-closed factor-source validation.
+
+## KIOS R101–R102 guarded compatibility checkpoint (2026-10-22)
+
+R101 converted 16 manufactured 15D Gaussian priors into quarantined
+S6-type square-root residual representations; 28 regression tests passed.
+R102 checked actual backend objects and found eight unresolved compatibility
+requirements; 27 tests passed. Direct R95-to-S6 prior reuse is blocked.
+
+The combined 55-test SHA-pinned checkpoint is archived at
+`experiments/trust_robot_r101_r102_backend_compatibility_checkpoint_v1/`.
+The corresponding audit is
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R101_R102_BACKEND_COMPATIBILITY_CHECKPOINT_V1.md`.
+
+The 11 scientific gates remain CLOSED. The M2DGR confirmation split is
+sealed, no real sensor factor/health training/ATE-RPE is authorized, and no
+new author-provided physically qualified evidence has been received.
+Next: a single-source coherent synthetic factor-graph integration design.

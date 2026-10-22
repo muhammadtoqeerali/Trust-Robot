@@ -1,0 +1,40 @@
+{
+  "archived_regression_tests": 55,
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "documentation_sha256": {
+    "AGENTS.md": "53cd31dad22eb139d72d71ef9682e6e697ca317c3a96164b3a242e07041a6616",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "27125a1017a78880aef2b629bd5e8be95df4d94e40ac5d27166767a5f8c05a59",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R101_R102_BACKEND_COMPATIBILITY_CHECKPOINT_V1.md": "617ac258789bbe1f82745175d44a7e392c639d93d928af8a3830b93b67b57f99"
+  },
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "dd0f26bcb186104732b5c0fa7eb4c20ae4ae4c410c73665998222b835815a5c5",
+    "verify_checkpoint.py": "af9bc4ed4d6b58668da400534874fb7dc3ccf22189096f3866f724ae0e1d5416"
+  },
+  "parent_commit": "10ee70fb423930fce30eff919f7a5cb735771f60",
+  "physical_clock_or_extrinsics_verified": false,
+  "qualified_author_response_ingested": false,
+  "r101_test_count": 28,
+  "r102_test_count": 27,
+  "r95_backend_merged_into_s6": false,
+  "raw_gt_or_rosbags_archived": false,
+  "real_sensor_factor_execution_authorized": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R101_R102_PRIOR_COMPATIBILITY_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 10,
+  "source_sha256": {
+    "evidence/r101/dev/r101_interface_contract_v1.md": "46bacfb94163822bd4e0f2697f5c29c334c5c63ce860b290d248cbf9e0a63f7a",
+    "evidence/r101/dev/r101_prior_adapter.py": "cfff7ea529051ec253883d886db21b2460cde7261e8f2649c4c4432ae873c880",
+    "evidence/r101/dev/test_r101.py": "ef96f38fd83b26d79d52f81535d600ba304e4c414e612691d5807a2775078a44",
+    "evidence/r101/result/r101_independent_validation_v1.json": "6f20e1ec0fdf282c474b8ca608ccd7e5c9de17bbb2cc8e7f3b4186b76097096d",
+    "evidence/r101/result/r101_prior_adapter_report_v1.json": "e3d852ee5607c807d62ec4f811d83487060fac9baca21c8327abc2f1c01be186",
+    "evidence/r102/dev/r102_compatibility.py": "16d66f46c5197b2d5a1f35eb6bd471461bbbfddfd32edd0804c815214bc2ed1b",
+    "evidence/r102/dev/r102_compatibility_decision_v1.md": "fd68ca0899792d3bfcac5886f1cbbe9f7a5da2fedc3ca34b2c5db4aa978ac078",
+    "evidence/r102/dev/test_r102.py": "703390420e7921808505105afbf104fb5c33f306c53fdc684904149b434ce07e",
+    "evidence/r102/result/r102_compatibility_report_v1.json": "329f29bd40cd177e5a50907da144e39ed1f7e8bf2616ba94c40d214f3e440120",
+    "evidence/r102/result/r102_independent_validation_v1.json": "0b7bcdee25a25239c04153cdf40c8923ab27c9a0365b28c96dd0d9328219bba0"
+  }
+}

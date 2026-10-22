@@ -456,3 +456,19 @@ qualifiable evidence; do not infer approval from it.
 
 Next: guarded nonlinear estimator integration
 design and implementation, one phase at a time.
+
+## KIOS R101–R102 prior conversion and compatibility checkpoint — 2026-10-22
+
+Read `experiments/trust_robot_r101_r102_backend_compatibility_checkpoint_v1/README.md`
+and `docs/audits/trust_robot/TRUST_ROBOT_KIOS_R101_R102_BACKEND_COMPATIBILITY_CHECKPOINT_V1.md`.
+
+R101: 28 synthetic regression tests and 16 R95 Gaussian-to-square-root
+conversions. The converted priors belong to an isolated R95 local namespace,
+not live S6 nodes. R102: 27 tests and eight independent compatibility blockers
+from actual R95 and S6 priors. Direct nonlinear prior binding remains denied.
+
+These phases do not establish a nonlinear R95/S6 backend merger or any
+physical source qualification. All 11 scientific gates remain CLOSED.
+Do not alter the frozen 22/7/7 M2DGR split or sealed confirmation data.
+Next: a single-source synthetic graph with explicit clock, gauge, frame,
+noise, prior dimension, node IDs and factor ownership.

@@ -1,0 +1,16 @@
+{
+  "confirmation_test_accessed": false,
+  "converted_synthetic_priors": 16,
+  "engine_sha256": "cfff7ea529051ec253883d886db21b2460cde7261e8f2649c4c4432ae873c880",
+  "interface_contract_sha256": "46bacfb94163822bd4e0f2697f5c29c334c5c63ce860b290d248cbf9e0a63f7a",
+  "parent_git_commit": "10ee70fb423930fce30eff919f7a5cb735771f60",
+  "real_sensor_factors_authorized": false,
+  "regression_tests": 28,
+  "report_sha256": "e3d852ee5607c807d62ec4f811d83487060fac9baca21c8327abc2f1c01be186",
+  "s6_nonlinear_binding_authorized": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R101_INDEPENDENT_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "ef96f38fd83b26d79d52f81535d600ba304e4c414e612691d5807a2775078a44"
+}

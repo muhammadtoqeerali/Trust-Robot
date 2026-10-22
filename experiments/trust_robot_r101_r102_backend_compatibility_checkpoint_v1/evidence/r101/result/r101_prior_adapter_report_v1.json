@@ -1,0 +1,241 @@
+{
+  "ate_rpe_authorized": false,
+  "cases": {
+    "accel_injection": {
+      "converted_prefixes": 4,
+      "cross_gap_prior_reuse": false,
+      "rows": [
+        {
+          "fresh_synthetic_segment_gauge": true,
+          "prefixes": [
+            {
+              "condition_number": 729.9215440590345,
+              "gradient_relative_error": 2.2413187487029003e-16,
+              "information_relative_error": 1.1950327716192296e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "8cf780afc141c660a6fd0ac4efbbf2090649d11f61e3ad715e8bd424042c9b76",
+              "step": 0
+            },
+            {
+              "condition_number": 738.4764692979409,
+              "gradient_relative_error": 1.2472583837264194e-16,
+              "information_relative_error": 2.2182715463701132e-16,
+              "max_energy_relative_error": 5.551115123125783e-17,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "4398edc77e121e0a1d7d87da65f8b067ebc832d366dbd4ae281feb1743f227c6",
+              "step": 1
+            },
+            {
+              "condition_number": 754.5437812641785,
+              "gradient_relative_error": 2.6794884575135186e-16,
+              "information_relative_error": 1.5744042747143921e-16,
+              "max_energy_relative_error": 2.220446049250313e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "ca38c324ef292fe05d5a15853e4ea0092232b241b809706126af83d883e60d62",
+              "step": 2
+            },
+            {
+              "condition_number": 778.3106529171617,
+              "gradient_relative_error": 2.9446257378767824e-17,
+              "information_relative_error": 2.305531649862685e-16,
+              "max_energy_relative_error": 5.551115123125783e-17,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "6c70f33d39025ffc4f4205572c2683fd323a467a5efd02a7a3f0a21808377985",
+              "step": 3
+            }
+          ],
+          "prior_copied_across_gap": false,
+          "segment_id": 0
+        }
+      ],
+      "scenario": "accel_injection",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "continuous": {
+      "converted_prefixes": 4,
+      "cross_gap_prior_reuse": false,
+      "rows": [
+        {
+          "fresh_synthetic_segment_gauge": true,
+          "prefixes": [
+            {
+              "condition_number": 729.9215440590345,
+              "gradient_relative_error": 2.2413187487029003e-16,
+              "information_relative_error": 1.1950327716192296e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "8cf780afc141c660a6fd0ac4efbbf2090649d11f61e3ad715e8bd424042c9b76",
+              "step": 0
+            },
+            {
+              "condition_number": 738.4897813458664,
+              "gradient_relative_error": 1.4257758429630531e-16,
+              "information_relative_error": 1.8642983942162258e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "564f599f18f0bc43759d5bd777f9e9519cce7403c23b5269798656717c51334a",
+              "step": 1
+            },
+            {
+              "condition_number": 754.605939308182,
+              "gradient_relative_error": 1.4621859057590672e-16,
+              "information_relative_error": 1.2596317148828606e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "d118617ff489f8ce6a29616977d3c6acd3ee090e06f7526d165eb2e23a8f98de",
+              "step": 2
+            },
+            {
+              "condition_number": 778.4495318176072,
+              "gradient_relative_error": 7.538724921690162e-17,
+              "information_relative_error": 2.3382670778218097e-16,
+              "max_energy_relative_error": 0.0,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "5d70ea6318165460dd05b93c808d52b0bce583b5d8cd6798e91ad83798e24a0b",
+              "step": 3
+            }
+          ],
+          "prior_copied_across_gap": false,
+          "segment_id": 0
+        }
+      ],
+      "scenario": "continuous",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "gyro_injection": {
+      "converted_prefixes": 4,
+      "cross_gap_prior_reuse": false,
+      "rows": [
+        {
+          "fresh_synthetic_segment_gauge": true,
+          "prefixes": [
+            {
+              "condition_number": 729.9215440590345,
+              "gradient_relative_error": 2.2413187487029003e-16,
+              "information_relative_error": 1.1950327716192296e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "8cf780afc141c660a6fd0ac4efbbf2090649d11f61e3ad715e8bd424042c9b76",
+              "step": 0
+            },
+            {
+              "condition_number": 738.489781400105,
+              "gradient_relative_error": 2.496495543867126e-16,
+              "information_relative_error": 2.0115611150979133e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "da889fae625dc9f2409baa45f2d77081377da28fb38b1fc0fb76f2751848a985",
+              "step": 1
+            },
+            {
+              "condition_number": 754.6059321574107,
+              "gradient_relative_error": 5.831159180004102e-17,
+              "information_relative_error": 2.0676308625043113e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "382c03a1107bc2b72d62befe92f4908a198cfde3706005d8df1fccd762e0181e",
+              "step": 2
+            },
+            {
+              "condition_number": 778.4494936937887,
+              "gradient_relative_error": 1.9479352693810546e-16,
+              "information_relative_error": 3.3614675631041555e-16,
+              "max_energy_relative_error": 5.551115123125783e-17,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "cc2488f96d129d52bd000a65e429a809099b517872cb24709c1a4af84ff05433",
+              "step": 3
+            }
+          ],
+          "prior_copied_across_gap": false,
+          "segment_id": 0
+        }
+      ],
+      "scenario": "gyro_injection",
+      "segments": 1,
+      "timestamp_gaps": 0
+    },
+    "single_gap": {
+      "converted_prefixes": 4,
+      "cross_gap_prior_reuse": false,
+      "rows": [
+        {
+          "fresh_synthetic_segment_gauge": true,
+          "prefixes": [
+            {
+              "condition_number": 729.9215440590345,
+              "gradient_relative_error": 2.2413187487029003e-16,
+              "information_relative_error": 1.1950327716192296e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "8cf780afc141c660a6fd0ac4efbbf2090649d11f61e3ad715e8bd424042c9b76",
+              "step": 0
+            },
+            {
+              "condition_number": 738.4897813458664,
+              "gradient_relative_error": 1.4257758429630531e-16,
+              "information_relative_error": 1.8642983942162258e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 100,
+              "source_record_fingerprint": "564f599f18f0bc43759d5bd777f9e9519cce7403c23b5269798656717c51334a",
+              "step": 1
+            }
+          ],
+          "prior_copied_across_gap": false,
+          "segment_id": 0
+        },
+        {
+          "fresh_synthetic_segment_gauge": true,
+          "prefixes": [
+            {
+              "condition_number": 729.9215440590345,
+              "gradient_relative_error": 1.2406226819341256e-16,
+              "information_relative_error": 1.1950327716192296e-16,
+              "max_energy_relative_error": 1.1102230246251565e-16,
+              "quarantine_node_id": 101,
+              "source_record_fingerprint": "f7b352f03a99f3fb62f68eecdca3d8cd7056b4231af3b1295d435b1bbf5db070",
+              "step": 0
+            },
+            {
+              "condition_number": 562.7758034286741,
+              "gradient_relative_error": 7.60888058102418e-17,
+              "information_relative_error": 1.6032458153226114e-16,
+              "max_energy_relative_error": 5.551115123125783e-17,
+              "quarantine_node_id": 101,
+              "source_record_fingerprint": "e5801310f3d8b30810b5b642ff3c11138d2139d8caf9b9bfbc46d99c1753e2da",
+              "step": 1
+            }
+          ],
+          "prior_copied_across_gap": false,
+          "segment_id": 1
+        }
+      ],
+      "scenario": "single_gap",
+      "segments": 2,
+      "timestamp_gaps": 1
+    }
+  },
+  "confirmation_test_accessed": false,
+  "converted_gaussian_prior_prefixes": 16,
+  "health_training_authorized": false,
+  "independent_physical_frame_alignment": false,
+  "independent_synthetic_segments": 5,
+  "new_nonlinear_pose_factors_executed": false,
+  "physical_clock_verified": false,
+  "physical_extrinsics_verified": false,
+  "r95_gaussian_backend_merged_into_s6": false,
+  "raw_gt_or_rosbags_opened": false,
+  "recorded_sensor_factors_authorized": false,
+  "s6_nonlinear_node_binding_authorized": false,
+  "scenarios": 4,
+  "schema": "TRUST_ROBOT_R101_SYNTHETIC_PRIOR_ADAPTER_V1",
+  "scientific_gates_closed": 11,
+  "source_representation": "R95_INFORMATION_FORM_15D",
+  "source_space": "R95_LOCAL_GAUSSIAN_TANGENT_V1",
+  "status": "PASS_SYNTHETIC_SOFTWARE_ONLY",
+  "target_representation": "S6_SQUARE_ROOT_INFORMATION_PRIOR_15D",
+  "target_space": "R95_LOCAL_GAUSSIAN_TANGENT_V1",
+  "timestamp_gaps": 1
+}

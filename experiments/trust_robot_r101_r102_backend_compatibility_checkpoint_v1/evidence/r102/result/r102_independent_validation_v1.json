@@ -1,0 +1,14 @@
+{
+  "decision_sha256": "fd68ca0899792d3bfcac5886f1cbbe9f7a5da2fedc3ca34b2c5db4aa978ac078",
+  "detected_compatibility_blockers": 8,
+  "direct_s6_prior_binding_authorized": false,
+  "engine_sha256": "16d66f46c5197b2d5a1f35eb6bd471461bbbfddfd32edd0804c815214bc2ed1b",
+  "r101_report_sha256": "e3d852ee5607c807d62ec4f811d83487060fac9baca21c8327abc2f1c01be186",
+  "real_sensor_factors_authorized": false,
+  "regression_tests": 27,
+  "report_sha256": "329f29bd40cd177e5a50907da144e39ed1f7e8bf2616ba94c40d214f3e440120",
+  "schema": "TRUST_ROBOT_R102_INDEPENDENT_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "703390420e7921808505105afbf104fb5c33f306c53fdc684904149b434ce07e"
+}
