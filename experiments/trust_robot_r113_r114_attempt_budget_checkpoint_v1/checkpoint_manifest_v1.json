@@ -1,0 +1,45 @@
+{
+  "archived_regression_tests": 101,
+  "ate_rpe_authorized": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "concurrent_atomic_publication_verified": false,
+  "confirmation_test_accessed": false,
+  "cryptographic_ownership_verified": false,
+  "documentation_sha256": {
+    "AGENTS.md": "41fed9c64449ce73d5d77fb661652b169751c3c1217dd91c227cda35a7eb6f7b",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "a2220f14a3c70ab767d72b98f678af89e5a2bdd8d3a51b0fd045788363dc9cd2",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R113_R114_ATTEMPT_BUDGET_CHECKPOINT_V1.md": "0afa7c055431cd15d94eeb6043d107538b002312f40b5b7910c52f75f84d834c"
+  },
+  "durable_crash_recovery_verified": false,
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "4e34da052089170e48b78a96292735c059d1eb15a612bb88d29beed33c0229e1",
+    "verify_checkpoint.py": "f476ffbe661836bc4d3ec46a7e9c114d7246f0fb7ed1cc591763a76c757b7328"
+  },
+  "parent_commit": "eed9d62ba424b0e136d8307b738059bab7c5e44a",
+  "physical_memory_bound_verified": false,
+  "qualified_author_reply_ingested": false,
+  "r113_test_count": 47,
+  "r114_test_count": 54,
+  "r95_backend_merged_into_s6": false,
+  "raw_gt_or_rosbags_archived": false,
+  "real_sensor_factor_execution_authorized": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R113_R114_ATTEMPT_BUDGET_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 10,
+  "source_sha256": {
+    "evidence/r113/dev/r113_bounded.py": "5f4e72d41c1c1616ef83a4c3fccaf0d6eb222e840b81f5358898cc869b3c2cb0",
+    "evidence/r113/dev/r113_resource_contract_v1.md": "b8c985e4bb3c809251323f4154ce0c8e7797cfeee3db416e88599746f9f1a994",
+    "evidence/r113/dev/test_r113.py": "f3f0bc79445c36e44dc3350fc98f890501d1c7e72e75d17e3be1fcac41d8c15a",
+    "evidence/r113/result/r113_bounded_replay_v1.json": "07f5bfaa8a82a0ef3154fbd8a21aaaa2cd99c8a4041c090c0bfa62d611c88c07",
+    "evidence/r113/result/r113_independent_validation_v1.json": "3e7eeee2a9df5383097aa606cf6fd758b46d51a9d323a3cffeae7d9e6d9eec09",
+    "evidence/r114/dev/r114_attempt_budget_contract_v1.md": "8e6067c5366e2fdb49217852462a2b31c0705a9d2db218eac91b12afc448e7f0",
+    "evidence/r114/dev/r114_attempts.py": "567a10ecb33cdc3c16ecf14755a68c6705208ad7d07ce8885dd70dc5d7db9fa1",
+    "evidence/r114/dev/test_r114.py": "1c1d659761b140ddf695081bf57004ad160116aa5efd1571c2494b283f49e852",
+    "evidence/r114/result/r114_attempt_budget_v1.json": "3b4543a00a10979758878b8867d94fc683dbee73547d6d20bcc92f37867cadd5",
+    "evidence/r114/result/r114_independent_validation_v1.json": "c720ea5385fc60737f2185ba465ea4649244805dcb28ef242698b5e20e7af4bd"
+  },
+  "wall_clock_resource_bound_verified": false
+}

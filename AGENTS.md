@@ -568,3 +568,39 @@ All 11 scientific gates remain CLOSED.
 Continue phased KIOS-only engineering with
 source SHA-256 pins, fail-closed testing and
 guarded validated GitHub publication.
+
+## KIOS R113-R114 replay-budget checkpoint — 2026-10-22
+
+Archive:
+`experiments/trust_robot_r113_r114_attempt_budget_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R113_R114_ATTEMPT_BUDGET_CHECKPOINT_V1.md`
+
+R113 passed 47 tests, adding deterministic
+candidate replay-dispatch accounting, local
+owner/version checking and terminal cancellation.
+
+R114 passed 54 tests. It charges replay-work
+reservations for failed candidates and prevents
+unbounded retries under the tested synthetic
+attempt budgets.
+
+The phases contain 101 archived regressions.
+
+R114 preserved committed estimator state across
+six injected failures and verified six retries
+after faults were removed.
+
+Replay work units are software dispatch counts.
+They are not CPU, memory, wall-clock, energy or
+real-time resource guarantees.
+
+No R95 Gaussian prior import, real sensor factor
+execution or original S6 modification occurred.
+
+All 11 scientific gates remain CLOSED.
+
+Continue with source-pinned KIOS-only experiments,
+fail-closed controls, independent verification
+and guarded GitHub checkpoints.

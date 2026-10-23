@@ -6470,3 +6470,46 @@ are not used.
 
 Next: resource-bounded candidate replay,
 session ownership and cancellation controls.
+
+## KIOS R113-R114 synthetic replay checkpoint (2026-10-22)
+
+R113: 47 passing regression tests. Deterministic
+shadow candidate replay-work accounting and
+owner/version/cancellation safeguards.
+
+R114: 54 passing regression tests. Failed candidate
+attempts consume reserved replay-work units.
+
+The combined checkpoint archives 101 tests.
+
+R113 healthy runs: 12 manufactured sessions,
+60 operations and 168 replay work units.
+
+R114: six injected failure stages, six charged
+failed attempts, six successful retries, and
+repeated-failure budget exhaustion.
+
+Archive:
+`experiments/trust_robot_r113_r114_attempt_budget_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R113_R114_ATTEMPT_BUDGET_CHECKPOINT_V1.md`
+
+These results are manufactured software tests.
+They do not verify real-time deadlines, physical
+resource ceilings, concurrency correctness,
+authenticated delivery or durable recovery.
+
+S6 and previous synthetic estimator sources
+remain unchanged. R95 Gaussian prior import
+remains blocked.
+
+The M2DGR 22/7/7 split is frozen.
+All 11 scientific gates remain CLOSED.
+
+No real sensor factors, health training, original
+raw GT/ROSBags, sealed confirmation_test access
+or independently scored ATE/RPE are authorized.
+
+Next: resource-budget lifecycle and synthetic
+failure-pattern coverage.

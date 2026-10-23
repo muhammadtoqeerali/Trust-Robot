@@ -1,0 +1,23 @@
+{
+  "concurrent_publication_verified": false,
+  "confirmation_test_accessed": false,
+  "contract_sha256": "b8c985e4bb3c809251323f4154ce0c8e7797cfeee3db416e88599746f9f1a994",
+  "cryptographic_ownership_verified": false,
+  "engine_sha256": "5f4e72d41c1c1616ef83a4c3fccaf0d6eb222e840b81f5358898cc869b3c2cb0",
+  "healthy_sessions": 12,
+  "parent_git_commit": "eed9d62ba424b0e136d8307b738059bab7c5e44a",
+  "physical_memory_guarantee": false,
+  "prepublication_cancellation_verified": true,
+  "r112_manifest_sha256": "c259492017ed5f6714c0857d19c1242df28f10bc203bab15fafd3317af84ee2f",
+  "real_sensor_factors_authorized": false,
+  "regression_tests": 47,
+  "report_sha256": "07f5bfaa8a82a0ef3154fbd8a21aaaa2cd99c8a4041c090c0bfa62d611c88c07",
+  "resource_budget_rejections": 3,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R113_INDEPENDENT_RESOURCE_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "f3f0bc79445c36e44dc3350fc98f890501d1c7e72e75d17e3be1fcac41d8c15a",
+  "total_replay_work_units": 168,
+  "wall_clock_guarantee": false
+}
