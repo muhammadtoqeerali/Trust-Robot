@@ -1,0 +1,17 @@
+{
+  "contract_unchanged": true,
+  "engine_unchanged": true,
+  "failed_stage": "R124-C independent validation",
+  "full_r117_r122_integration_proven": false,
+  "independent_validation_passed": true,
+  "observed_error": "INDEPENDENT_VALIDATION_FAIL:CONTRACT_MARKER:single",
+  "original_validator_preserved": true,
+  "original_validator_sha256": "c7ebd5575f393351e6fb46b28136701412327622e67151f276f73f9b004aa322",
+  "pass": true,
+  "repair": "Case-insensitive casefold comparison for scientific contract markers",
+  "repaired_validator_sha256": "b3405a727fce4c6773f82e46c5ade5aa1f229ee9028db6cc9fb55ff0690a4169",
+  "root_cause": "Case-sensitive contract marker matching against capitalized Single",
+  "schema": "trust_robot_r124_c1_repair_lineage_v1",
+  "scientific_gates_closed": 11,
+  "unit_tests_passed": 51
+}

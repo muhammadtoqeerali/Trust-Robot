@@ -1,0 +1,213 @@
+{
+  "actual_concurrent_thread_safety_verified": false,
+  "arbitrary_exception_atomicity_verified": false,
+  "ate_rpe_authorized": false,
+  "authenticated_logging_verified": false,
+  "confirmation_test_accessed": false,
+  "cryptographic_owner_authentication_verified": false,
+  "durable_logging_verified": false,
+  "full_terminal_capacity": {
+    "bounded_terminal_receipts": 24,
+    "created_sessions": 12,
+    "creation_limit_rejected": true,
+    "physical_memory_preallocation_verified": false,
+    "registry_drained": true,
+    "retired_sessions": 12,
+    "terminal_capacity": 24
+  },
+  "hardware_emergency_stop_verified": false,
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "healthy_baseline": {
+    "acknowledged_operations": 30,
+    "attempted_work_units": 84,
+    "credentials_excluded_from_observations": true,
+    "detached_observations_verified": true,
+    "nonlinear_windows": 24,
+    "prior_transfers": 9,
+    "runs": {
+      "clean_camera_off_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 6.325329149348136e-12,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 5.1962323333043514e-12,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      }
+    },
+    "schur_events": 18,
+    "sessions": 6
+  },
+  "healthy_baseline_acknowledgements": 30,
+  "healthy_baseline_sessions": 6,
+  "healthy_baseline_work_units": 84,
+  "ordering_and_owner_guards": {
+    "failed_admissions_preserved_state": true,
+    "out_of_order_retirements_denied": 1,
+    "registry_drained": true,
+    "retired_sessions": 2,
+    "terminal_events": 4,
+    "wrong_owner_version_or_handle_denials": 4
+  },
+  "ordinary_execution_after_saturation_denied": true,
+  "partial_commit_rescue": {
+    "accepted_packets_before_saturation": 2,
+    "attempted_work_units_preserved": 3,
+    "committed_work_units_preserved": 3,
+    "no_additional_estimator_execution": true,
+    "session_retired": true,
+    "terminal_events": 2
+  },
+  "physical_clock_or_extrinsics_verified": false,
+  "physical_memory_reclamation_verified": false,
+  "post_saturation_terminal_path_tested": true,
+  "prepublication_terminal_path": {
+    "aborted_candidate_receipts": 1,
+    "candidate_acknowledged": false,
+    "charged_failed_units": 1,
+    "committed_state_unchanged": true,
+    "committed_work_units": 0,
+    "retired": true,
+    "terminal_events": 2
+  },
+  "process_failure_recovery_verified": false,
+  "r95_backend_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_authorized": false,
+  "real_time_deadline_verified": false,
+  "receipt_integrity": {
+    "authenticated_log_verified": false,
+    "detached_copy_verified": true,
+    "internal_tamper_rejected": true,
+    "recovered_after_restoration": true,
+    "retired_after_control": true
+  },
+  "saturated_fault_rescue": {
+    "failed_candidate_attempts": 3,
+    "failed_session_terminal": true,
+    "failed_work_units_charged": 3,
+    "no_peer_progress_claim_after_saturation": true,
+    "ordinary_peer_execution_blocked": true,
+    "peer_session_terminal": true,
+    "sessions_retired": 2,
+    "terminal_events": 4
+  },
+  "saturated_rescue": {
+    "active_after": 0,
+    "committed_state_preserved": true,
+    "denial_capacity": 3,
+    "denial_history_unchanged": true,
+    "ordinary_mutations_blocked": 4,
+    "retired_handle_reuse_denied": true,
+    "session_retired": true,
+    "terminal_events": 2
+  },
+  "schema": "TRUST_ROBOT_R122_SYNTHETIC_POST_SATURATION_TERMINAL_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_POST_SATURATION_TERMINAL_ONLY",
+  "terminal_cancel_and_retire_bounded": true,
+  "terminal_owner_version_guards_retained": true,
+  "terminal_receipt_integrity_checked": true,
+  "terminal_retirement_order_guard_retained": true,
+  "unconditional_termination_guaranteed": false
+}

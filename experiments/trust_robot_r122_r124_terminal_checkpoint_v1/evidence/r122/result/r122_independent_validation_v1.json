@@ -1,0 +1,23 @@
+{
+  "bounded_terminal_ledger_verified": true,
+  "concurrency_verified": false,
+  "confirmation_test_accessed": false,
+  "contract_sha256": "c7890306d20f87afca929792a99a43e1ad0418542dac63a97b62dfd6a8f71d79",
+  "crash_recovery_verified": false,
+  "emergency_stop_verified": false,
+  "engine_sha256": "24bb1061875458068ddb00d710d71aea531052fd7e1eb60f19b52f3afe2f2591",
+  "owner_and_version_checks_retained": true,
+  "parent_git_commit": "447326f489a101782f6ce6914664abf31d5c0aa7",
+  "partially_committed_session_preserved": true,
+  "r121_manifest_sha256": "e8b0919f3c22623ddc9373841aaa44aeba587648e0ece4c9184ed3be80644ea4",
+  "real_sensor_factors_authorized": false,
+  "regression_tests": 72,
+  "report_sha256": "549ff04de04fbfd7eb424bd6476e35b66bb173d0b0af609bee45ab06006fcf88",
+  "retirement_order_verified": true,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "saturated_terminal_path_verified": true,
+  "schema": "TRUST_ROBOT_R122_INDEPENDENT_TERMINAL_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "4ed165f4b26f06438e1ab7213a996e73e2c1db8815eddaf57c069ce535a6012e"
+}

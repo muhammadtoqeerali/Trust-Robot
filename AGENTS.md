@@ -674,3 +674,50 @@ All 11 scientific gates remain CLOSED.
 Continue with exact SHA source checks, scientific
 boundary verification, isolated off-Git experiments,
 strict staged-path allowlists and guarded commits.
+
+
+## KIOS R122-R124 synthetic terminal checkpoint (R125) — 2026-10-23
+
+Validated archive:
+`experiments/trust_robot_r122_r124_terminal_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R122_R124_TERMINAL_CHECKPOINT_V1.md`
+
+R122: 72 regression tests passed. A bounded local terminal
+cancellation/retirement path was demonstrated after normal
+audit-denial capacity saturation.
+
+R123: 78 regression tests passed. Eight terminal fault
+boundaries exposed four missing-receipt conditions and two
+postmutation acknowledgement ambiguities in the original
+R122 implementation.
+
+R124: 51 regression tests passed. A separate manufactured,
+single-session shadow-publication model passed 22 fault
+injections: 18 prepublication preservation cases and four
+postpublication acknowledgement-ambiguity cases.
+
+Combined R125 regression count: 201.
+
+R124's modeled state is NOT a transactional replacement
+for the actual R117/R122 registry or estimator backend.
+The original backend atomicity gap remains unresolved.
+
+The R124 independent-validation casefold repair is
+preserved with the original validator and repair lineage.
+
+Receipts are in-memory, not authenticated or durable.
+No concurrency, crash recovery, guaranteed physical
+shutdown, real-time safety or robot actuation is proven.
+
+The original M2DGR 22/7/7 split remains frozen.
+Recorded data and original GT remain off Git; existence
+of TRAIN GT does not establish physical reference
+qualification or authorize ATE/RPE.
+
+No real sensor factor or health training is authorized.
+All 11 scientific admissibility gates remain CLOSED.
+
+Continue with guarded workstation verification, exact
+source hashes, staged-path review and fail-closed science.

@@ -1,0 +1,56 @@
+test_aggregate_execution_negative_gates (test_r124.TestR124Contract) ... ok
+test_boolean_cancel_version (test_r124.TestR124Contract) ... ok
+test_cancel_after_retirement (test_r124.TestR124Contract) ... ok
+test_cancel_receipt_chain (test_r124.TestR124Contract) ... ok
+test_candidate_identity_tamper_denied (test_r124.TestR124Contract) ... ok
+test_cross_instance_lease (test_r124.TestR124Contract) ... ok
+test_denied_submit_active (test_r124.TestR124Contract) ... ok
+test_denied_submit_cancelled (test_r124.TestR124Contract) ... ok
+test_denied_submit_retired (test_r124.TestR124Contract) ... ok
+test_detached_observation (test_r124.TestR124Contract) ... ok
+test_duplicate_cancel (test_r124.TestR124Contract) ... ok
+test_duplicate_retire (test_r124.TestR124Contract) ... ok
+test_healthy_cancel (test_r124.TestR124Contract) ... ok
+test_healthy_retire (test_r124.TestR124Contract) ... ok
+test_incomplete_candidate_denied (test_r124.TestR124Contract) ... ok
+test_initial_state (test_r124.TestR124Contract) ... ok
+test_lease_owner_unique_objects (test_r124.TestR124Contract) ... ok
+test_premature_retirement (test_r124.TestR124Contract) ... ok
+test_receipt_capacity (test_r124.TestR124Contract) ... ok
+test_registry_receipt_tamper_denied (test_r124.TestR124Contract) ... ok
+test_retirement_cross_chain (test_r124.TestR124Contract) ... ok
+test_stale_cancel_version (test_r124.TestR124Contract) ... ok
+test_terminal_receipt_tamper_denied (test_r124.TestR124Contract) ... ok
+test_unknown_action (test_r124.TestR124Contract) ... ok
+test_unknown_fault_stage (test_r124.TestR124Contract) ... ok
+test_unknown_lease (test_r124.TestR124Contract) ... ok
+test_work_preservation (test_r124.TestR124Contract) ... ok
+test_wrong_owner (test_r124.TestR124Contract) ... ok
+test_wrong_receipt_container_denied (test_r124.TestR124Contract) ... ok
+test_cancel_ack_pre (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_candidate_create_post (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_candidate_create_pre (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_mutation_post (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_mutation_pre (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_publication_post (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_publication_pre (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_receipt_post (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_receipt_pre (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_validation_post (test_r124.TestR124FaultMatrix) ... ok
+test_cancel_validation_pre (test_r124.TestR124FaultMatrix) ... ok
+test_retire_ack_pre (test_r124.TestR124FaultMatrix) ... ok
+test_retire_candidate_create_post (test_r124.TestR124FaultMatrix) ... ok
+test_retire_candidate_create_pre (test_r124.TestR124FaultMatrix) ... ok
+test_retire_mutation_post (test_r124.TestR124FaultMatrix) ... ok
+test_retire_mutation_pre (test_r124.TestR124FaultMatrix) ... ok
+test_retire_publication_post (test_r124.TestR124FaultMatrix) ... ok
+test_retire_publication_pre (test_r124.TestR124FaultMatrix) ... ok
+test_retire_receipt_post (test_r124.TestR124FaultMatrix) ... ok
+test_retire_receipt_pre (test_r124.TestR124FaultMatrix) ... ok
+test_retire_validation_post (test_r124.TestR124FaultMatrix) ... ok
+test_retire_validation_pre (test_r124.TestR124FaultMatrix) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.009s
+
+OK

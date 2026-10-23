@@ -1,0 +1,23 @@
+{
+  "audit_sha256": "f48773c6a4603fa930b5f9c3c95c823574563671cb9d92e01b53c5f910062a06",
+  "auditor_imported_engine": false,
+  "durable_or_concurrent_safety_proven": false,
+  "fault_witnesses_verified": 22,
+  "file_sha256": {
+    "r124_independent_validate.py": "b3405a727fce4c6773f82e46c5ade5aa1f229ee9028db6cc9fb55ff0690a4169",
+    "r124_shadow_terminal.py": "4211a854b43ca691da42ff3a2e2326db6570fb6e3fad94a9b5d35b368a56b633",
+    "r124_shadow_terminal_contract_v1.md": "36518fe3fcd7a99f956e5d93261bcaaff26212dbf8f6b85201a3841d3cb39c72",
+    "test_r124.py": "cfadb64703a79a145beead283350a24accb26469edc0f7eb60896312c237ce9b"
+  },
+  "full_r117_r122_integration_proven": false,
+  "independent_negative_controls_passed": 2,
+  "linked_terminal_and_registry_receipts_verified": true,
+  "pass": true,
+  "postpublication_ambiguities_verified": 4,
+  "prepublication_witnesses_verified": 18,
+  "real_sensor_eligibility_proven": false,
+  "schema": "trust_robot_r124_independent_validation_v1",
+  "scientific_gates_closed": 11,
+  "unit_log_sha256": "549417c7d8a10add9b35236cc86122afefe9a313468b15b87e980a55234e88aa",
+  "unit_tests_passed": 51
+}

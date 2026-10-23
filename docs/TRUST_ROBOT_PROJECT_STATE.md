@@ -6606,3 +6606,64 @@ All 11 scientific gates remain CLOSED.
 
 Next: synthetic post-saturation terminal-path design,
 with fail-closed behavior and no hardware safety claim.
+
+
+## KIOS R122-R124 terminal checkpoint (R125, 2026-10-23)
+
+Following the R121 audit-chain checkpoint, R122 addressed
+post-saturation terminal cancellation and retirement.
+Its 72 regression tests passed.
+
+R123 tested eight injected terminal-failure boundaries
+and passed 78 regression tests. It identified four
+postmutation missing-receipt cases and two
+acknowledgement ambiguities. Old R122 retirement
+and receipt publication are not atomic.
+
+R124 introduced a reduced, single-session synthetic
+shadow-publication model. All 51 tests passed.
+
+Its 22 fault witnesses comprise 18 prepublication
+preservation/retry cases and four postpublication
+acknowledgement-ambiguity cases. Model receipt
+consistency and independent validation passed.
+
+The R124 validator's initial case-sensitive contract
+marker failure was corrected. Original and revised
+validator versions and repair lineage are archived.
+
+Combined archived regressions: 72 + 78 + 51 = 201.
+
+Archive:
+`experiments/trust_robot_r122_r124_terminal_checkpoint_v1/`
+
+Audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R122_R124_TERMINAL_CHECKPOINT_V1.md`
+
+**Critical limitation:** R124 operates on its own
+immutable manufactured single-session state. It does
+not clone or transactionally replace real R117/R122
+private Python objects. The R123 gaps therefore
+remain limitations of the original implementation.
+
+No concurrent linearizability, durable recovery,
+authenticated audit, allocation guarantee,
+physical emergency stop or robotic safety validation.
+
+No real camera/LiDAR/IMU estimator factors,
+independent physical reference scoring, learned
+health head or recorded trajectory ATE/RPE.
+Original M2DGR TRAIN recordings and GT are retained
+privately off Git on the research infrastructure;
+their availability does not open physical evidence gates.
+
+The frozen M2DGR 22/7/7 partition is unchanged.
+The confirmation_test split remains sealed.
+R95-to-S6 direct backend binding remains blocked.
+
+All 11 scientific admissibility gates remain CLOSED.
+
+Next: assess the scientific value and technical scope
+of actual R117/R122 transaction integration, while
+prioritizing independent physical evidence qualification
+over further unvalidated synthetic abstractions.

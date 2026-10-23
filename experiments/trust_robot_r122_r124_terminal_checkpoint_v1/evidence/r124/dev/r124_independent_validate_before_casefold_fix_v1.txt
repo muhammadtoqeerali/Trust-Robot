@@ -1,0 +1,432 @@
+"""Independent R124 JSON/receipt validator. Does not import the R124 engine."""
+import ast
+import copy
+import hashlib
+import json
+from pathlib import Path
+import re
+import sys
+
+
+GENESIS = "0" * 64
+ACTIONS = ("cancel", "retire")
+STAGES = (
+    "candidate_create_pre", "candidate_create_post",
+    "mutation_pre", "mutation_post", "receipt_pre", "receipt_post",
+    "validation_pre", "validation_post", "publication_pre",
+    "publication_post", "ack_pre",
+)
+PRE = STAGES[:9]
+POST = STAGES[9:]
+
+
+def need(condition, label):
+    if not condition:
+        raise ValueError("INDEPENDENT_VALIDATION_FAIL:" + label)
+
+
+def canonical(obj):
+    return json.dumps(
+        obj, sort_keys=True, separators=(",", ":"), allow_nan=False
+    )
+
+
+def digest(obj):
+    return hashlib.sha256(canonical(obj).encode("utf-8")).hexdigest()
+
+
+def sha_file(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+FIXTURE_DIGEST = digest({
+    "fixture": "r124_manufactured_single_session",
+    "attempted": 5,
+    "committed": 3,
+    "version": 7,
+})
+
+
+def link(payload):
+    return {**payload, "linked_sha256": digest(payload)}
+
+
+def registry_receipt():
+    return link({
+        "ordinal": 1,
+        "event": "registry_retire",
+        "issued_index": 1,
+        "terminal_phase": "CANCELLED",
+        "version": 8,
+        "attempted_work_units": 5,
+        "committed_work_units": 3,
+        "committed_digest": FIXTURE_DIGEST,
+        "retired": True,
+        "previous_sha256": GENESIS,
+    })
+
+
+def terminal_receipt(event, previous, registry_tip=GENESIS):
+    payload = {
+        "ordinal": 1 if event == "terminal_cancel" else 2,
+        "event": event,
+        "issued_index": 1,
+        "terminal_phase": "CANCELLED",
+        "version": 8,
+        "attempted_work_units": 5,
+        "committed_work_units": 3,
+        "committed_digest": FIXTURE_DIGEST,
+        "acknowledged": False,
+        "previous_sha256": previous,
+    }
+    if event == "terminal_retire":
+        payload["registry_linked_sha256"] = registry_tip
+    return link(payload)
+
+
+def expected_observation(phase):
+    need(phase in ("CANCELLED", "RETIRED"), "EXPECTED_PHASE")
+    cancel = terminal_receipt("terminal_cancel", GENESIS)
+    registry = registry_receipt()
+    terminal = [cancel]
+    registry_items = []
+    registry_tip = GENESIS
+
+    if phase == "RETIRED":
+        terminal.append(terminal_receipt(
+            "terminal_retire",
+            cancel["linked_sha256"],
+            registry["linked_sha256"],
+        ))
+        registry_items = [registry]
+        registry_tip = registry["linked_sha256"]
+
+    retired = phase == "RETIRED"
+
+    result = {
+        "phase": phase,
+        "version": 8,
+        "issued_index": 1,
+        "active_count": 0 if retired else 1,
+        "retired_count": 1 if retired else 0,
+        "attempted_work_units": 5,
+        "committed_work_units": 3,
+        "committed_digest": FIXTURE_DIGEST,
+        "revision": 2 if retired else 1,
+        "denial_capacity_saturated": True,
+        "terminal_capacity": 2,
+        "registry_capacity": 1,
+        "registry_receipts": registry_items,
+        "registry_tip": registry_tip,
+        "terminal_receipts": terminal,
+        "terminal_tip": terminal[-1]["linked_sha256"],
+    }
+    result["diagnostic_sha256"] = digest(result)
+    return result
+
+
+def verify_normal_states(normal):
+    need(type(normal) is dict, "NORMAL_TYPE")
+    need(set(normal) == set(ACTIONS), "NORMAL_ACTION_SET")
+
+    for action, expected_phase in (
+        ("cancel", "CANCELLED"),
+        ("retire", "RETIRED"),
+    ):
+        actual = normal[action]
+        expected = expected_observation(expected_phase)
+        need(actual == expected, "NORMAL_RECEIPTS:" + action)
+
+        # Re-hash each independently reconstructed receipt.
+        for kind in ("terminal_receipts", "registry_receipts"):
+            for item in actual[kind]:
+                content = {
+                    k: v for k, v in item.items()
+                    if k != "linked_sha256"
+                }
+                need(
+                    item["linked_sha256"] == digest(content),
+                    "RECEIPT_LINK_HASH:" + action + ":" + kind,
+                )
+
+
+def expected_fault_row(action, stage):
+    published = stage in POST
+    cancel_action = action == "cancel"
+
+    before_revision = 0 if cancel_action else 1
+    final_revision = before_revision + 1
+
+    before_terminal = 0 if cancel_action else 1
+    final_terminal = before_terminal + 1
+
+    before_registry = 0
+    final_registry = 0 if cancel_action else 1
+
+    return {
+        "action": action,
+        "stage": stage,
+        "publication_occurred_before_exception": published,
+        "caller_acknowledged": False,
+        "observation_unchanged_after_fault": not published,
+        "retry_result": (
+            "duplicate_denied" if published else "safe_success"
+        ),
+        "revision_before": before_revision,
+        "revision_after_fault": (
+            final_revision if published else before_revision
+        ),
+        "revision_final": final_revision,
+        "terminal_receipts_after_fault": (
+            final_terminal if published else before_terminal
+        ),
+        "terminal_receipts_final": final_terminal,
+        "registry_receipts_after_fault": (
+            final_registry if published else before_registry
+        ),
+        "registry_receipts_final": final_registry,
+        "final_phase": "CANCELLED" if cancel_action else "RETIRED",
+    }
+
+
+def verify_fault_rows(rows):
+    need(type(rows) is list and len(rows) == 22,
+         "FAULT_ROW_COUNT")
+
+    expected = [
+        expected_fault_row(action, stage)
+        for action in ACTIONS
+        for stage in STAGES
+    ]
+
+    need(rows == expected, "FAULT_WITNESS_MATRIX")
+
+    keys = [(r["action"], r["stage"]) for r in rows]
+    need(len(set(keys)) == 22, "FAULT_DUPLICATES")
+
+    return 18, 4
+
+
+REQUIRED_TOP_LEVEL = {
+    "schema", "pass", "prototype", "scenarios",
+    "injection_points_per_action", "fault_cases",
+    "prepublication_cases", "postpublication_ambiguous_cases",
+    "successful_prepublication_retries",
+    "denied_postpublication_replays",
+    "normal_final_states", "fault_witnesses",
+    "scientific_gates_closed", "recorded_sensor_data_accessed",
+    "sealed_test_accessed", "physical_factor_admitted",
+    "physical_gt_scored", "estimator_or_hardware_executed",
+    "full_r117_r122_integration_proven",
+    "concurrent_publication_proven",
+    "durable_recovery_proven",
+    "cryptographically_authenticated_ledger",
+    "physical_safety_proven",
+}
+
+FALSE_FLAGS = (
+    "recorded_sensor_data_accessed",
+    "sealed_test_accessed",
+    "physical_factor_admitted",
+    "physical_gt_scored",
+    "estimator_or_hardware_executed",
+    "full_r117_r122_integration_proven",
+    "concurrent_publication_proven",
+    "durable_recovery_proven",
+    "cryptographically_authenticated_ledger",
+    "physical_safety_proven",
+)
+
+
+def verify_report(report):
+    need(type(report) is dict, "REPORT_TYPE")
+    need(set(report) == REQUIRED_TOP_LEVEL, "REPORT_SCHEMA_KEYS")
+
+    constants = {
+        "schema": "trust_robot_r124_shadow_terminal_audit_v1",
+        "prototype": "modeled_single_session_not_r117_r122_clone",
+        "scenarios": 2,
+        "injection_points_per_action": 11,
+        "fault_cases": 22,
+        "prepublication_cases": 18,
+        "postpublication_ambiguous_cases": 4,
+        "successful_prepublication_retries": 18,
+        "denied_postpublication_replays": 4,
+        "scientific_gates_closed": 11,
+    }
+    for key, expected in constants.items():
+        need(
+            type(report[key]) is type(expected)
+            and report[key] == expected,
+            "REPORT_CONSTANT:" + key,
+        )
+
+    need(report["pass"] is True, "ENGINE_PASS_FLAG")
+    for key in FALSE_FLAGS:
+        need(report[key] is False, "FALSE_GATE:" + key)
+
+    verify_normal_states(report["normal_final_states"])
+    return verify_fault_rows(report["fault_witnesses"])
+
+
+def validate_source_static(dev):
+    names = (
+        "r124_shadow_terminal.py",
+        "test_r124.py",
+        "r124_shadow_terminal_contract_v1.md",
+        "r124_independent_validate.py",
+    )
+    files = {n: dev / n for n in names}
+
+    for name, path in files.items():
+        need(path.is_file() and path.stat().st_size > 0,
+             "SOURCE_MISSING:" + name)
+
+    source = files["r124_shadow_terminal.py"].read_text()
+    source_tree = ast.parse(source)
+
+    imports = set()
+    for node in ast.walk(source_tree):
+        if isinstance(node, ast.Import):
+            imports.update(a.name.split(".")[0] for a in node.names)
+        elif isinstance(node, ast.ImportFrom) and node.module:
+            imports.add(node.module.split(".")[0])
+
+    need(
+        imports <= {"__future__", "dataclasses", "hashlib", "json"},
+        "ENGINE_IMPORT_ALLOWLIST",
+    )
+
+    validator_tree = ast.parse(
+        files["r124_independent_validate.py"].read_text()
+    )
+
+    forbidden = set()
+    for node in ast.walk(validator_tree):
+        if isinstance(node, ast.Import):
+            forbidden.update(a.name.split(".")[0] for a in node.names)
+        elif isinstance(node, ast.ImportFrom) and node.module:
+            forbidden.add(node.module.split(".")[0])
+
+    need(
+        "r124_shadow_terminal" not in forbidden,
+        "VALIDATOR_IMPORTS_ENGINE",
+    )
+
+    contract = files[
+        "r124_shadow_terminal_contract_v1.md"
+    ].read_text()
+
+    for phrase in (
+        "single",
+        "11",
+        "CLOSED",
+        "NOT a clone",
+        "No real camera",
+        "concurrent",
+    ):
+        need(phrase in contract, "CONTRACT_MARKER:" + phrase)
+
+    return {name: sha_file(path) for name, path in files.items()}
+
+
+def validate_unit_log(log_path):
+    need(log_path.is_file(), "UNIT_LOG_MISSING")
+    log = log_path.read_text()
+    matches = re.findall(
+        r"(?m)^Ran\s+(\d+)\s+tests?\s+in\s+",
+        log,
+    )
+    need(matches == ["51"], "UNIT_TEST_COUNT")
+    need(re.search(r"(?m)^OK$", log) is not None,
+         "UNIT_TESTS_NOT_OK")
+    need(
+        "FAILED" not in log
+        and "Traceback (most recent call last)" not in log,
+        "UNIT_LOG_ERRORS",
+    )
+    return 51
+
+
+def negative_controls(report):
+    # Independent validator must reject receipt mutation.
+    corrupt = copy.deepcopy(report)
+    corrupt["normal_final_states"]["retire"][
+        "terminal_receipts"
+    ][1]["committed_work_units"] = 999
+    try:
+        verify_report(corrupt)
+    except ValueError:
+        pass
+    else:
+        raise ValueError("NEGATIVE_RECEIPT_CONTROL_NOT_DETECTED")
+
+    # Independent validator must reject false fault classification.
+    corrupt = copy.deepcopy(report)
+    corrupt["fault_witnesses"][0][
+        "publication_occurred_before_exception"
+    ] = True
+    try:
+        verify_report(corrupt)
+    except ValueError:
+        pass
+    else:
+        raise ValueError("NEGATIVE_FAULT_CONTROL_NOT_DETECTED")
+
+    return 2
+
+
+def main(dev, out):
+    report_path = out / "r124_shadow_terminal_audit_v1.json"
+    result_path = out / "r124_independent_validation_v1.json"
+    log_path = out / "r124_unittest_v1.log"
+
+    need(report_path.is_file(), "AUDIT_MISSING")
+    need(not result_path.exists(), "VALIDATION_ALREADY_EXISTS")
+
+    sha_sources = validate_source_static(dev)
+    tests = validate_unit_log(log_path)
+
+    report = json.loads(report_path.read_text())
+    pre, post = verify_report(report)
+    controls = negative_controls(report)
+
+    validation = {
+        "schema": "trust_robot_r124_independent_validation_v1",
+        "pass": True,
+        "auditor_imported_engine": False,
+        "audit_sha256": sha_file(report_path),
+        "unit_log_sha256": sha_file(log_path),
+        "file_sha256": sha_sources,
+        "unit_tests_passed": tests,
+        "fault_witnesses_verified": pre + post,
+        "prepublication_witnesses_verified": pre,
+        "postpublication_ambiguities_verified": post,
+        "linked_terminal_and_registry_receipts_verified": True,
+        "independent_negative_controls_passed": controls,
+        "scientific_gates_closed": 11,
+        "full_r117_r122_integration_proven": False,
+        "real_sensor_eligibility_proven": False,
+        "durable_or_concurrent_safety_proven": False,
+    }
+
+    result_path.write_text(
+        json.dumps(validation, indent=2, sort_keys=True) + "\n"
+    )
+
+    print("R124_INDEPENDENT_VALIDATION=PASS")
+    print("R124_UNIT_TESTS=51_PASS")
+    print("R124_FAULT_MATRIX=22_PASS")
+    print("R124_PREPUBLICATION=18_PASS")
+    print("R124_POSTPUBLICATION_AMBIGUITIES=4_PASS")
+    print("R124_RECEIPT_RECONSTRUCTION=PASS")
+    print("R124_INDEPENDENT_NEGATIVE_CONTROLS=2_PASS")
+    print("R124_SCIENTIFIC_GATES=11_CLOSED")
+    print("R124_FULL_R117_R122_INTEGRATION=NOT_PROVEN")
+    print("R124_DURABLE_CONCURRENT_SAFETY=NOT_PROVEN")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        raise SystemExit("USAGE: validator DEV_DIR RESULT_DIR")
+    main(Path(sys.argv[1]), Path(sys.argv[2]))
