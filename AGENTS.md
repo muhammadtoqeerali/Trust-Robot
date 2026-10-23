@@ -638,3 +638,39 @@ All 11 scientific gates remain CLOSED.
 Continue with explicit workstation preflight, source
 hash verification, exact change allowlists, scientific
 fail-closed tests and guarded GitHub publication.
+
+## KIOS R119-R120 audit-chain checkpoint — 2026-10-23
+
+Archive:
+`experiments/trust_robot_r119_r120_audit_chain_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R119_R120_AUDIT_CHAIN_CHECKPOINT_V1.md`
+
+R119 passed 58 regression tests, validating
+read-only synthetic observations and linked
+failure receipts.
+
+R120 passed 70 tests, validating denial-receipt
+semantic checks, pre-mutation retirement ordering
+and bounded denial-history behavior.
+
+Combined archived regression count: 128.
+
+Critical limitation: when receipt capacity is
+exhausted, R120 blocks cancellation and retirement.
+A session can remain active and unretired.
+This is NOT guaranteed safe shutdown or liveness.
+
+In-memory hash-linked receipts are neither
+authenticated nor crash durable.
+
+All numerical factors remain manufactured.
+The original S6 and prior estimator phases are
+unchanged. R95 Gaussian prior import remains denied.
+
+All 11 scientific gates remain CLOSED.
+
+Continue with exact SHA source checks, scientific
+boundary verification, isolated off-Git experiments,
+strict staged-path allowlists and guarded commits.

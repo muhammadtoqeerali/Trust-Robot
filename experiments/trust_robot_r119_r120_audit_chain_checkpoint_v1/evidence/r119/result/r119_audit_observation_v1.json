@@ -1,0 +1,288 @@
+{
+  "acknowledged_operations": 60,
+  "actual_concurrent_thread_safety_verified": false,
+  "ate_rpe_authorized": false,
+  "attempted_work_units": 168,
+  "authenticated_logging_verified": false,
+  "cancelled_candidate_receipts": 1,
+  "charged_failure_observation": {
+    "aborted_candidates": 3,
+    "charged_attempt_ledger": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "committed_state_preserved": true,
+    "failure_receipts": 4,
+    "fourth_attempt_denied_without_charge": true,
+    "healthy_peer_completed": true,
+    "healthy_peer_max_abs_error_vs_s6": 0.0,
+    "retirement_receipts": 2
+  },
+  "charged_failure_receipts": 4,
+  "confirmation_test_accessed": false,
+  "cryptographic_owner_authentication_verified": false,
+  "denied_admissions": {
+    "denials": 10,
+    "detached_failure_receipts_verified": true,
+    "invalid_admission_work_units": 0,
+    "linked_denial_chain_verified": true,
+    "max_abs_error_vs_s6": 0.0,
+    "patterns": [
+      "wrong_owner",
+      "stale_version",
+      "future_node",
+      "wrong_graph",
+      "false_frame",
+      "false_real_factor",
+      "missing_imu",
+      "incomplete_finish",
+      "unknown_handle",
+      "duplicate"
+    ],
+    "successful_recovery": true
+  },
+  "durable_logging_verified": false,
+  "external_ledger_anchor_verified": false,
+  "failed_candidate_reservations_visible": true,
+  "failure_receipts_linked": true,
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "healthy_observation": {
+    "acknowledged_operations": 60,
+    "active_after": 0,
+    "attempted_work_units": 168,
+    "denial_receipts": 0,
+    "detached_retirement_copy_verified": true,
+    "observation_reads": 168,
+    "retirement_chain_tip": "f7041079de2816cfd3ac6019527d3e4c4ceb857af8e4a8a47db01c794c6fe0ff",
+    "retirement_receipts": 12,
+    "runs": {
+      "clean_camera_off_bounded_reorder_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_bounded_reorder_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_ordered_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_ordered_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_bounded_reorder_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_bounded_reorder_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 6.325329149348136e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_ordered_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_ordered_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 6.325329149348136e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_bounded_reorder_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_bounded_reorder_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 5.1962323333043514e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_ordered_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_ordered_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "max_abs_error_vs_s6": 5.1962323333043514e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      }
+    },
+    "sessions": 12
+  },
+  "healthy_sessions": 12,
+  "internal_receipt_tamper": {
+    "authenticated_log_verified": false,
+    "internal_receipt_tamper_rejected": true,
+    "subsequent_operations_after_restoration": true
+  },
+  "internal_tamper_controls": 1,
+  "malicious_inprocess_tamper_protection_verified": false,
+  "owner_object_not_in_observations": true,
+  "physical_clock_or_extrinsics_verified": false,
+  "physical_memory_reclamation_verified": false,
+  "prepublication_failure_receipt": {
+    "attempted_work_units_charged": 1,
+    "candidate_acknowledged": false,
+    "committed_state_unchanged": true,
+    "denial_receipts": 1,
+    "retired_after_abort": true,
+    "terminal_cancellation": true
+  },
+  "r95_backend_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "read_observations_detached": true,
+  "real_sensor_factors_authorized": false,
+  "rejected_admission_receipts": 10,
+  "retirement_receipts": 12,
+  "schema": "TRUST_ROBOT_R119_SYNTHETIC_AUDIT_OBSERVATION_V1",
+  "scientific_gates_closed": 11,
+  "source_packet_not_in_observations": true,
+  "status": "PASS_SYNTHETIC_AUDIT_OBSERVATION_SOFTWARE_ONLY",
+  "successful_acknowledgements_not_forged": true,
+  "wall_clock_resource_bound_verified": false
+}

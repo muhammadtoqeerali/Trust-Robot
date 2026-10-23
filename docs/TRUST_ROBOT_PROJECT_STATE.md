@@ -6558,3 +6558,51 @@ All 11 scientific gates remain CLOSED.
 
 Next: synthetic audit-observation and registry
 failure-receipt boundary analysis.
+
+## KIOS R119-R120 audit-chain checkpoint (2026-10-23)
+
+R119: 58 passing tests for detached synthetic
+observations and linked failure receipts.
+
+R120: 70 passing tests for receipt consistency,
+retirement-order enforcement and capacity fail-stop.
+
+Total archived regression count: 128.
+
+R119:
+12 manufactured sessions, 60 acknowledged operations,
+168 replay-work units, and 12 retirement receipts.
+
+R120:
+6 manufactured sessions, 30 acknowledged operations,
+84 replay-work units, 10 invalid admissions and
+3 charged candidate failures.
+
+Archive:
+`experiments/trust_robot_r119_r120_audit_chain_checkpoint_v1/`
+
+Audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R119_R120_AUDIT_CHAIN_CHECKPOINT_V1.md`
+
+IMPORTANT: R120 receipt saturation blocks further
+mutations, including cancellation and retirement.
+It may leave an active session stranded.
+Safe shutdown and post-saturation liveness
+are NOT demonstrated.
+
+The linked audit records are not authenticated,
+crash durable or protected against arbitrary
+in-process Python modification.
+
+No real sensor factors, physical timing guarantee,
+concurrent correctness, health training, raw GT,
+ROSBags or independent ATE/RPE are authorized.
+
+The frozen M2DGR 22/7/7 partition remains unchanged.
+The confirmation_test subset remains sealed.
+
+R95 Gaussian prior import into S6 stays blocked.
+All 11 scientific gates remain CLOSED.
+
+Next: synthetic post-saturation terminal-path design,
+with fail-closed behavior and no hardware safety claim.

@@ -1,0 +1,219 @@
+{
+  "admission_denials": 10,
+  "admission_receipts": {
+    "all_denials_unacknowledged": true,
+    "charged_attempt_units": 0,
+    "denials": 10,
+    "detached_denial_copy_verified": true,
+    "eventual_healthy_completion": true,
+    "max_abs_error_vs_s6": 0.0,
+    "rejected_patterns": [
+      "wrong_owner",
+      "stale_version",
+      "future_node",
+      "cross_graph",
+      "wrong_frame",
+      "real_factor_claim",
+      "missing_imu",
+      "incomplete_finish",
+      "unknown_lease",
+      "duplicate"
+    ],
+    "semantic_denial_validation": true
+  },
+  "ate_rpe_authorized": false,
+  "authenticated_logging_verified": false,
+  "bounded_denial_capacity": true,
+  "capacity_saturation": {
+    "active_session_left_unretired": true,
+    "additional_individual_receipts": 0,
+    "additional_operations_blocked": 2,
+    "committed_state_unchanged": true,
+    "liveness_guarantee_after_saturation": false,
+    "maximum_denial_receipts": 3,
+    "read_only_observations_available": true,
+    "recorded_denials": 3
+  },
+  "charged_failed_candidates": 3,
+  "concurrent_thread_safety_verified": false,
+  "confirmation_test_accessed": false,
+  "cryptographic_owner_authentication_verified": false,
+  "denial_tamper_control": {
+    "authenticated_log_verified": false,
+    "linked_denial_tamper_rejected": true,
+    "subsequent_operations_after_restore": true
+  },
+  "durable_logging_verified": false,
+  "external_ledger_anchor_verified": false,
+  "failed_candidate_receipts": {
+    "aborted_candidates": 3,
+    "attempt_charge_ledger": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "committed_state_preserved": true,
+    "denial_receipts": 4,
+    "fourth_attempt_rejected_without_charge": true,
+    "healthy_peer_completed": true,
+    "healthy_peer_error_vs_s6": 0.0,
+    "retired_sessions": 2,
+    "semantic_receipts_verified": true
+  },
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "healthy_acknowledgements": 30,
+  "healthy_cases": {
+    "acknowledged_operations": 30,
+    "attempted_work_units": 84,
+    "credentials_excluded_from_observations": true,
+    "detached_observations_verified": true,
+    "nonlinear_windows": 24,
+    "prior_transfers": 9,
+    "runs": {
+      "clean_camera_off_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 6.325329149348136e-12,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "detached_observation": true,
+        "max_abs_error_vs_s6": 5.1962323333043514e-12,
+        "nonlinear_windows": 4,
+        "observation_reads": 8,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      }
+    },
+    "schur_events": 18,
+    "sessions": 6
+  },
+  "healthy_replay_work_units": 84,
+  "healthy_sessions": 6,
+  "malicious_inprocess_tamper_protection_verified": false,
+  "out_of_order_retirement_denied_pre_mutation": true,
+  "physical_clock_or_extrinsics_verified": false,
+  "physical_memory_reclamation_verified": false,
+  "prepublication_abort": {
+    "aborted_candidates": 1,
+    "cancellation_terminal": true,
+    "charged_attempt_units": 1,
+    "committed_state_preserved": true,
+    "committed_units": 0,
+    "retired_after_abort": true
+  },
+  "r95_backend_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_authorized": false,
+  "receipt_semantics_verified": true,
+  "retirement_order_denials": 1,
+  "retirement_order_guard": {
+    "committed_state_unchanged": true,
+    "policy_receipts": 1,
+    "policy_tamper_controls": 1,
+    "pre_mutation_order_rejections": 1,
+    "registry_integrity_preserved": true,
+    "retired_sessions": 2,
+    "subsequent_ordered_retirement": true
+  },
+  "schema": "TRUST_ROBOT_R120_SYNTHETIC_AUDIT_CHAIN_GUARD_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_AUDIT_CHAIN_GUARDS_ONLY",
+  "wall_clock_resource_bound_verified": false
+}

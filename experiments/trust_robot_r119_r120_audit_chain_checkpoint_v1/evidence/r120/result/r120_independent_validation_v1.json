@@ -1,0 +1,23 @@
+{
+  "admission_denials": 10,
+  "bounded_denial_history_verified": true,
+  "charged_failed_candidates": 3,
+  "confirmation_test_accessed": false,
+  "contract_sha256": "373bf3b40e71711728746652b43b1d0156fe8f8e3fe5f45967cce9b7a175dbc8",
+  "durable_logging_verified": false,
+  "engine_sha256": "96dbbfb1c3f492d4797963191b917713324c35755d71b6125d06cd7b29932739",
+  "healthy_sessions": 6,
+  "liveness_after_saturation_verified": false,
+  "parent_git_commit": "39a4a27fad7ed9a84b872b1b1b4146f6f9dd8da9",
+  "r118_manifest_sha256": "e04155824d4ec8814b91ecd23828543d2bd5565963d951aa6256855011983675",
+  "r119_report_sha256": "56d526116859247549443f473f9c9473194dbc8a9d6e92f6347f8820dabf7a6a",
+  "real_sensor_factors_authorized": false,
+  "regression_tests": 70,
+  "report_sha256": "01d13b234ec5942ada81bbc3feda85bf40963dbaf9fc43fbf1b44c7a7b02df9f",
+  "retirement_order_preflight_verified": true,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R120_INDEPENDENT_AUDIT_GUARD_VALIDATION_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS",
+  "tests_sha256": "72d68d914eeed456a2ea50c697ab1a8e8688d10fa0add276bac4b381dedb5145"
+}
