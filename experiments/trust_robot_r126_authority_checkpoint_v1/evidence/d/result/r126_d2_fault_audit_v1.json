@@ -1,0 +1,2320 @@
+{
+  "actual_archived_r122_objects": true,
+  "actual_r117_r122_atomicity_proven": false,
+  "actual_r122_source_modified": false,
+  "arbitrary_python_mutation_prevented": false,
+  "concurrent_linearizability_proven": false,
+  "cryptographic_authentication_proven": false,
+  "durable_recovery_proven": false,
+  "exhaustive_alias_isolation_proven": false,
+  "fault_cases": 22,
+  "fault_witnesses": [
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "candidate_create_pre",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "candidate_create_post",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "registry_pre",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "registry_post",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "receipt_pre",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "receipt_post",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "verification_pre",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "verification_post",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "ACTIVE",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "publication_pre",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 0,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": false,
+      "published_before_exception": true,
+      "published_observation_unchanged_at_fault": false,
+      "recovery": "duplicate_denied",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "publication_post",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "cancel",
+      "active_count": 1,
+      "before_observation_sha256": "1f36e40a4ae021e642192d22e11a66801211469c6a9d7f9e5e9c0c3d0ec006b5",
+      "before_phase": "ACTIVE",
+      "before_terminal_count": 0,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": false,
+      "published_before_exception": true,
+      "published_observation_unchanged_at_fault": false,
+      "recovery": "duplicate_denied",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "stage": "ack_pre",
+      "terminal_count": 1,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "candidate_create_pre",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "candidate_create_post",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "registry_pre",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "registry_post",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "receipt_pre",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "receipt_post",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "verification_pre",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "verification_post",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "CANCELLED",
+      "pointer_unchanged_at_fault": true,
+      "published_before_exception": false,
+      "published_observation_unchanged_at_fault": true,
+      "recovery": "safe_retry_succeeded",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "publication_pre",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "RETIRED",
+      "pointer_unchanged_at_fault": false,
+      "published_before_exception": true,
+      "published_observation_unchanged_at_fault": false,
+      "recovery": "duplicate_denied",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "publication_post",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 2,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    },
+    {
+      "action": "retire",
+      "active_count": 0,
+      "before_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "before_phase": "CANCELLED",
+      "before_terminal_count": 1,
+      "caller_acknowledged_at_fault": false,
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "exception_observed": true,
+      "fault_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "phase_at_fault": "RETIRED",
+      "pointer_unchanged_at_fault": false,
+      "published_before_exception": true,
+      "published_observation_unchanged_at_fault": false,
+      "recovery": "duplicate_denied",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "stage": "ack_pre",
+      "terminal_count": 2,
+      "terminal_count_at_fault": 2,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    }
+  ],
+  "normal_cases": {
+    "cancel": {
+      "acknowledged": true,
+      "action": "cancel",
+      "active_count": 1,
+      "before_phase": "ACTIVE",
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "final_observation_sha256": "3d4c3c3247fc4dfb2a0d642fd16923738f7dcd92f1f856ecdbbd670ea21fe507",
+      "phase": "CANCELLED",
+      "retired_count": 0,
+      "retirement_count": 0,
+      "retirement_receipts": [],
+      "retirement_tip": "0000000000000000000000000000000000000000000000000000000000000000",
+      "terminal_count": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    "retire": {
+      "acknowledged": true,
+      "action": "retire",
+      "active_count": 0,
+      "before_phase": "CANCELLED",
+      "denial_count": 1,
+      "denial_receipts": [
+        {
+          "acknowledged": false,
+          "action": "submit",
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "charged_attempt_units": 0,
+          "committed_state_preserved": true,
+          "known_session": true,
+          "linked_sha256": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "reason": "OWNER_MISMATCH"
+        }
+      ],
+      "denial_tip": "beef72744e0d8a7280aa633a2e382b040cdc3d3be560aee31ede11f88a46fd57",
+      "final_observation_sha256": "db9889cdd8d9be23f0135c56c63fe1b2e27faee8cd101b353baefd2178697895",
+      "phase": "RETIRED",
+      "retired_count": 1,
+      "retirement_count": 1,
+      "retirement_receipts": [
+        {
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "handle": "S0001",
+          "issued_index": 1,
+          "linked_sha256": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "retired": true,
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "retirement_tip": "b8b723fd18d9fbc85e327d66e98c7b39dfff27318ad9a6ba991306056757948e",
+      "terminal_count": 2,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    }
+  },
+  "old_facade_revocation_proven": false,
+  "pass": true,
+  "physical_robot_safety_proven": false,
+  "postpublication_acknowledgement_ambiguities": 4,
+  "prepublication_cases": 18,
+  "private_backend_accessible_by_python_introspection": true,
+  "real_sensor_factors_executed": false,
+  "schema": "trust_robot_r126_d2_authority_fault_matrix_v1",
+  "scientific_gates_closed": 11,
+  "sealed_confirmation_test_accessed": false,
+  "supported_api_exposes_raw_backend": false
+}

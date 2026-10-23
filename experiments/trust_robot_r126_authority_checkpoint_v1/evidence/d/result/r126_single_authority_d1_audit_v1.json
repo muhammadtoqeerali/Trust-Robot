@@ -1,0 +1,21 @@
+{
+  "actual_r122_source_modified": false,
+  "arbitrary_python_introspection_prevented": false,
+  "concurrent_publication_proven": false,
+  "durable_recovery_proven": false,
+  "exhaustive_alias_isolation_proven": false,
+  "external_old_reference_revocation_proven": false,
+  "fixture": "actual_archived_r122_synthetic_terminal",
+  "initial_api_unit_tests_expected": 11,
+  "initial_phase": "ACTIVE",
+  "pass": true,
+  "phase_after_cancel": "CANCELLED",
+  "phase_after_retire": "RETIRED",
+  "physical_safety_proven": false,
+  "raw_facade_exposed_through_supported_api": false,
+  "recorded_sensor_factors_executed": false,
+  "schema": "trust_robot_r126_single_authority_d1_v1",
+  "scientific_gates_closed": 11,
+  "sealed_confirmation_test_accessed": false,
+  "terminal_receipts_after_retire": 2
+}

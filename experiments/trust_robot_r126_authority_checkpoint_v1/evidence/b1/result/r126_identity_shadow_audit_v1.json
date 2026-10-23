@@ -1,0 +1,211 @@
+{
+  "actual_r122_source_modified": false,
+  "all_mutable_aliases_exhaustively_excluded": false,
+  "concurrent_publication_proven": false,
+  "confirmation_test_accessed": false,
+  "drop_in_atomic_backend_proven": false,
+  "durable_crash_recovery_proven": false,
+  "external_old_references_remain_usable": true,
+  "fault_count": 10,
+  "fault_witnesses": [
+    {
+      "action": "cancel",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 1,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "registry_pre",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "cancel",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 1,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "registry_post",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "cancel",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 1,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "receipt_pre",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "cancel",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 1,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "receipt_post",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "cancel",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 1,
+      "old_reference_unchanged": true,
+      "published_before_exception": true,
+      "recovery": "duplicate_denied",
+      "stage": "publication_post",
+      "visible_state_unchanged_at_fault": false
+    },
+    {
+      "action": "retire",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 2,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "registry_pre",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "retire",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 2,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "registry_post",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "retire",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 2,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "receipt_pre",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "retire",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 2,
+      "old_reference_unchanged": true,
+      "published_before_exception": false,
+      "recovery": "safe_retry_succeeded",
+      "stage": "receipt_post",
+      "visible_state_unchanged_at_fault": true
+    },
+    {
+      "action": "retire",
+      "caller_acknowledged": false,
+      "final_terminal_receipts": 2,
+      "old_reference_unchanged": true,
+      "published_before_exception": true,
+      "recovery": "duplicate_denied",
+      "stage": "publication_post",
+      "visible_state_unchanged_at_fault": false
+    }
+  ],
+  "normal_cases": {
+    "cancel": {
+      "acknowledged": true,
+      "action": "cancel",
+      "old_reference_remains_accessible": true,
+      "original_reference_unchanged": true,
+      "registry_active_count": 1,
+      "registry_retired_count": 0,
+      "terminal_chain_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+      "terminal_receipt_count": 1,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    "retire": {
+      "acknowledged": true,
+      "action": "retire",
+      "old_reference_remains_accessible": true,
+      "original_reference_unchanged": true,
+      "registry_active_count": 0,
+      "registry_retired_count": 1,
+      "terminal_chain_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+      "terminal_receipt_count": 2,
+      "terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ]
+    }
+  },
+  "original_facades_unchanged": true,
+  "pass": true,
+  "physical_safety_proven": false,
+  "postpublication_ack_ambiguities": 2,
+  "prepublication_faults": 8,
+  "prototype": "actual_r122_objects_identity_memo_candidate",
+  "real_sensor_factors_executed": false,
+  "schema": "trust_robot_r126_identity_shadow_feasibility_v1",
+  "scientific_gates_closed": 11
+}

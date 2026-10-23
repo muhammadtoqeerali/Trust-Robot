@@ -1,0 +1,220 @@
+{
+  "R126_B1_source_modified": false,
+  "actual_r122_source_modified": false,
+  "concurrent_publication_proven": false,
+  "confirmation_test_accessed": false,
+  "confirmed_stale_reference_bypasses": 2,
+  "drop_in_atomic_backend_proven": false,
+  "durable_recovery_proven": false,
+  "fork_cases": {
+    "cancel": {
+      "action": "cancel",
+      "externally_held_old_facade_revoked": false,
+      "first_publication_acknowledged": true,
+      "global_terminal_uniqueness_enforced": false,
+      "old_facade_operation_accepted_after_publication": true,
+      "old_facade_was_distinct_from_new_facade": true,
+      "old_phase_before_bypass": "ACTIVE",
+      "old_reference_retained_same_lease_and_owner": true,
+      "old_registry_distinct_from_published_registry": true,
+      "old_terminal_count_after_bypass": 1,
+      "old_terminal_count_before_bypass": 0,
+      "old_terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "old_terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+      "published_observation_after_sha256": "66e08041c68b69e615875d3b2beb4073d0010e9f992aecf34957facf822ef1c5",
+      "published_observation_before_sha256": "66e08041c68b69e615875d3b2beb4073d0010e9f992aecf34957facf822ef1c5",
+      "published_observation_unchanged_by_old_operation": true,
+      "published_phase_before_bypass": "CANCELLED",
+      "published_terminal_count": 1,
+      "published_terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "published_terminal_tip": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf"
+    },
+    "retire": {
+      "action": "retire",
+      "externally_held_old_facade_revoked": false,
+      "first_publication_acknowledged": true,
+      "global_terminal_uniqueness_enforced": false,
+      "old_facade_operation_accepted_after_publication": true,
+      "old_facade_was_distinct_from_new_facade": true,
+      "old_phase_before_bypass": "CANCELLED",
+      "old_reference_retained_same_lease_and_owner": true,
+      "old_registry_distinct_from_published_registry": true,
+      "old_terminal_count_after_bypass": 2,
+      "old_terminal_count_before_bypass": 1,
+      "old_terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "old_terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+      "published_observation_after_sha256": "9b8c43e0a196a3e30896e27919f48fd7c878a8d99969139998a64a2c3232ade6",
+      "published_observation_before_sha256": "9b8c43e0a196a3e30896e27919f48fd7c878a8d99969139998a64a2c3232ade6",
+      "published_observation_unchanged_by_old_operation": true,
+      "published_phase_before_bypass": "RETIRED",
+      "published_terminal_count": 2,
+      "published_terminal_receipts": [
+        {
+          "acknowledged": false,
+          "after": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "CANCELLED",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "before": {
+            "attempted_work_units": 0,
+            "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+            "committed_work_units": 0,
+            "phase": "ACTIVE",
+            "remaining_attempt_units": 14,
+            "version": 0
+          },
+          "denial_count": 1,
+          "event": "terminal_cancel",
+          "issued_index": 1,
+          "linked_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "ordinal": 1,
+          "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "acknowledged": false,
+          "attempted_work_units": 0,
+          "committed_digest": "1b13bcf17b57ea49821153c4f78993c056f33a0461cd6bbea2f219c5118ddf9f",
+          "committed_work_units": 0,
+          "denial_count": 1,
+          "event": "terminal_retire",
+          "issued_index": 1,
+          "linked_sha256": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270",
+          "ordinal": 2,
+          "previous_sha256": "8110a35fe7b4dcfcb18a803a0b53ee4b739bb54a3d9c255c37676a5107f3cebf",
+          "terminal_phase": "CANCELLED",
+          "version": 0
+        }
+      ],
+      "published_terminal_tip": "80999a05c238c477fc6872f686b055a328bad4a61ba9a37f497cf4c2fafbc270"
+    }
+  },
+  "global_exactly_once_proven": false,
+  "old_facade_revocation_proven": false,
+  "pass": true,
+  "physical_safety_proven": false,
+  "pointer_rebinding_case": {
+    "previous_candidate_phase": "CANCELLED",
+    "revocation_proven": false,
+    "thread_safe_publication_proven": false,
+    "unprotected_pointer_rebinding_possible": true,
+    "visible_phase_after_rebinding": "ACTIVE"
+  },
+  "real_sensor_factors_executed": false,
+  "receipt_mutation_cases": {
+    "cryptographic_authentication_proven": false,
+    "old_mutation_isolated_from_published": true,
+    "old_receipt_tamper_detected": true,
+    "private_python_state_write_prevented": false,
+    "published_receipt_tamper_detected": true
+  },
+  "schema": "trust_robot_r126_external_reference_bypass_v1",
+  "scientific_gates_closed": 11,
+  "selected_alias_case": {
+    "denial_ledger_distinct": true,
+    "exhaustive_object_graph_isolation_proven": false,
+    "facade_distinct": true,
+    "lease_identity_preserved": true,
+    "owner_identity_preserved": true,
+    "policy_ledger_distinct": true,
+    "pool_distinct": true,
+    "registry_distinct": true,
+    "selected_checks_passed": 8,
+    "terminal_ledger_distinct": true
+  }
+}

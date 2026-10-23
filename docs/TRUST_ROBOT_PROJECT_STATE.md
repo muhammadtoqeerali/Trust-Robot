@@ -6667,3 +6667,72 @@ Next: assess the scientific value and technical scope
 of actual R117/R122 transaction integration, while
 prioritizing independent physical evidence qualification
 over further unvalidated synthetic abstractions.
+
+
+## KIOS R126 authority/reference checkpoint (R127, 2026-10-23)
+
+R126 followed the R125 terminal checkpoint, which identified
+unresolved postmutation receipt/publication gaps in the actual
+archived R117/R122 synthetic object graph.
+
+R126-A found that ordinary deepcopy cloned opaque lease and
+owner objects, preventing callers from reusing their original
+object-identity capabilities. Shallow copy shared mutable state.
+
+R126-B1 used a narrow identity memo to preserve inert local
+owner/lease tokens while cloning selected nested registry,
+session and receipt structures. Its 18 tests and ten fault
+witnesses passed after a targeted repair. The first failing
+test log and original engine SHA256 are retained in lineage
+evidence, with the archive log explicitly redacted.
+
+R126-C confirmed two independent retained-facade bypasses
+in 15 tests. Old R122 references could mutate old facade state
+even after the shadow adapter published a separate candidate.
+Python pointer rebinding and direct private-state mutation
+were also demonstrated.
+
+R126-D1/D2 introduced a cooperative single-authority API
+that creates its own synthetic R122 fixture and returns only
+opaque capability tokens and detached observations through
+the documented API. Its combined 45 tests passed.
+
+The D2 matrix covers 22 fault stages: 18 prepublication
+failures preserving visible state, and four postpublication
+cases with an ambiguous acknowledgement and duplicate denial.
+
+Distinct R126 tests: 18 + 15 + 45 = 78.
+The 11 D1 tests are included in D2's count.
+
+The R127 checkpoint contains 37 files and 36 SHA256-pinned
+entries in its final independently verified manifest.
+
+Archive:
+`experiments/trust_robot_r126_authority_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R126_AUTHORITY_REFERENCE_CHECKPOINT_V1.md`
+
+The checkpoint passed its standalone integrity verifier,
+seven negative report controls, two checkpoint tamper
+controls, fresh 78-test regression and source-lineage checks.
+
+**Critical limitation:** the original R117/R122 backend is
+not atomically repaired. The new authority is an experimental
+single-threaded in-memory wrapper, NOT an enforced Python
+security boundary. External private-object access, concurrent
+linearizability, crash durability, hardware emergency shutdown
+and global exactly-once guarantees are not established.
+
+No real camera/LiDAR/IMU factors, independently qualified
+physical references, recorded trajectory ATE/RPE, or learned
+health-head training have been authorized.
+
+The frozen M2DGR 22/7/7 partition is unchanged, and
+confirmation_test remains sealed. All 11 scientific
+admissibility gates remain CLOSED.
+
+Next: evaluate whether a properly owned, non-introspectable
+execution boundary or a durable transaction design is justified,
+while prioritizing actual independent physical evidence
+qualification over further synthetic-only abstractions.

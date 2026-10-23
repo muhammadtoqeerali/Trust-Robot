@@ -1,0 +1,17 @@
+{
+  "actual_backend_atomicity_proven": false,
+  "failed_unit_log_sha256": "9b8ccc66de2f43f9d66dae849dc92cc75d0d6f4d2da1473d95da4e15bf9928a4",
+  "independent_validation_passed": true,
+  "original_engine_sha256": "549bf3067e7778fc2c08fa15d5a77702ddff821744c79d360cbf1aacca52748e",
+  "original_test_errors": 3,
+  "pass": true,
+  "passing_unit_log_sha256": "0411bbd86088249f9dc07447e625df5664186f7250538b4d61c0e9767a1b8096",
+  "repaired_engine_sha256": "cebd24c16b3a5125ac61d062588d2f4b187e5c18a1d04c6fd6ef4289d27fbdec",
+  "root_causes": [
+    "Incorrect nesting for terminal receipt_count",
+    "Retired lease replay rejected by clone guard with LEASE_NOT_ACTIVE"
+  ],
+  "schema": "trust_robot_r126_b1_repair_lineage_v1",
+  "scientific_gates_closed": 11,
+  "unit_tests_passed": 18
+}

@@ -1,0 +1,16 @@
+test_cancel_acknowledgement_ambiguity (test_r126_authority.AuthorityTests) ... ok
+test_detached_observation (test_r126_authority.AuthorityTests) ... ok
+test_initial_saturated_state (test_r126_authority.AuthorityTests) ... ok
+test_prepublication_receipt_post_fault (test_r126_authority.AuthorityTests) ... ok
+test_prepublication_registry_post_fault (test_r126_authority.AuthorityTests) ... ok
+test_public_interface_does_not_return_backend (test_r126_authority.AuthorityTests) ... ok
+test_retire_acknowledgement_ambiguity (test_r126_authority.AuthorityTests) ... ok
+test_sequential_cancel_and_retire (test_r126_authority.AuthorityTests) ... ok
+test_stale_version (test_r126_authority.AuthorityTests) ... ok
+test_wrong_lease (test_r126_authority.AuthorityTests) ... ok
+test_wrong_owner (test_r126_authority.AuthorityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.697s
+
+OK

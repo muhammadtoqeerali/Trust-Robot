@@ -1,0 +1,23 @@
+test_cancel_publication_post (test_r126.FaultTests) ... ok
+test_cancel_receipt_post (test_r126.FaultTests) ... ok
+test_cancel_receipt_pre (test_r126.FaultTests) ... ok
+test_cancel_registry_post (test_r126.FaultTests) ... ok
+test_cancel_registry_pre (test_r126.FaultTests) ... ok
+test_retire_publication_post (test_r126.FaultTests) ... ok
+test_retire_receipt_post (test_r126.FaultTests) ... ok
+test_retire_receipt_pre (test_r126.FaultTests) ... ok
+test_retire_registry_post (test_r126.FaultTests) ... ok
+test_retire_registry_pre (test_r126.FaultTests) ... ok
+test_candidate_nested_objects_distinct (test_r126.Tests) ... ok
+test_identity_tokens_preserved (test_r126.Tests) ... ok
+test_normal_cancel (test_r126.Tests) ... ok
+test_normal_retire (test_r126.Tests) ... ok
+test_old_reference_remains_accessible (test_r126.Tests) ... ok
+test_original_reference_unchanged (test_r126.Tests) ... ok
+test_shallow_copy_is_unsafe (test_r126.Tests) ... ok
+test_wrong_owner_denied (test_r126.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.157s
+
+OK

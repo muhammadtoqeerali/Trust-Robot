@@ -1,0 +1,20 @@
+test_aggregate_nonclaims (test_r126_reference.TestR126ExternalReferences) ... ok
+test_cancel_dual_receipts (test_r126_reference.TestR126ExternalReferences) ... ok
+test_cancel_new_publication_unchanged (test_r126_reference.TestR126ExternalReferences) ... ok
+test_cancel_old_phase (test_r126_reference.TestR126ExternalReferences) ... ok
+test_cancel_old_reference_bypass (test_r126_reference.TestR126ExternalReferences) ... ok
+test_cancel_published_phase (test_r126_reference.TestR126ExternalReferences) ... ok
+test_original_receipt_mutation_detected (test_r126_reference.TestR126ExternalReferences) ... ok
+test_pointer_rebinding (test_r126_reference.TestR126ExternalReferences) ... ok
+test_published_receipt_mutation_detected (test_r126_reference.TestR126ExternalReferences) ... ok
+test_retire_dual_receipts (test_r126_reference.TestR126ExternalReferences) ... ok
+test_retire_new_publication_unchanged (test_r126_reference.TestR126ExternalReferences) ... ok
+test_retire_old_phase (test_r126_reference.TestR126ExternalReferences) ... ok
+test_retire_old_reference_bypass (test_r126_reference.TestR126ExternalReferences) ... ok
+test_retire_published_phase (test_r126_reference.TestR126ExternalReferences) ... ok
+test_selected_mutable_aliases_distinct (test_r126_reference.TestR126ExternalReferences) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.422s
+
+OK

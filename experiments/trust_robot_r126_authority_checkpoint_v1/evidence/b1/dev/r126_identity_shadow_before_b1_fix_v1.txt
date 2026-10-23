@@ -1,0 +1,366 @@
+"""R126-B: bounded identity-aware shadow clone of actual R122 objects.
+
+This is an experimental adapter, not a replacement for TerminalPath.
+External references, concurrency, crash recovery, and arbitrary private
+Python mutation remain outside the publication proof.
+"""
+import copy
+from unittest.mock import patch
+
+import r122_terminal as terminal
+import r123_terminal_faults as faults
+
+ACTIONS = ("cancel", "retire")
+STAGES = (
+    "registry_pre",
+    "registry_post",
+    "receipt_pre",
+    "receipt_post",
+    "publication_post",
+)
+PRE = STAGES[:4]
+POST = STAGES[4:]
+
+
+class IdentityShadowError(RuntimeError):
+    pass
+
+
+class InjectedFault(RuntimeError):
+    pass
+
+
+def need(condition, reason):
+    if not condition:
+        raise IdentityShadowError(reason)
+
+
+def snapshot(f, lease):
+    return {
+        "terminal": f.inspect_terminal(),
+        "session": f._state_for_known_lease(lease),
+    }
+
+
+def clone_preserving_local_identity(source, lease, owner):
+    """Preserve only opaque, inert local owner and lease tokens."""
+    need(type(lease) is object, "LEASE_NOT_INERT_OBJECT")
+    need(type(owner) is object, "OWNER_NOT_INERT_OBJECT")
+
+    reg = source._registry
+    need(lease in reg._active, "LEASE_NOT_ACTIVE")
+    entry = reg._active[lease]
+
+    need(entry["owner"] is owner, "OWNER_MISMATCH")
+
+    handle = entry["handle"]
+    original_session = reg._pool._active[handle]["session"]
+
+    memo = {
+        id(lease): lease,
+        id(owner): owner,
+    }
+
+    candidate = copy.deepcopy(source, memo)
+
+    candidate_reg = candidate._registry
+    candidate_pool = candidate_reg._pool
+
+    need(candidate is not source, "TOP_LEVEL_ALIAS")
+    need(candidate_reg is not reg, "REGISTRY_ALIAS")
+    need(candidate_pool is not reg._pool, "POOL_ALIAS")
+
+    need(candidate._terminal is not source._terminal, "TERMINAL_ALIAS")
+    need(candidate._denials is not source._denials, "DENIAL_ALIAS")
+    need(candidate._policy is not source._policy, "POLICY_ALIAS")
+    need(candidate_reg._active is not reg._active, "ACTIVE_MAP_ALIAS")
+    need(candidate_reg._ledger is not reg._ledger, "LEDGER_ALIAS")
+    need(candidate_pool._active is not reg._pool._active,
+         "POOL_ACTIVE_ALIAS")
+    need(candidate_pool._retired is not reg._pool._retired,
+         "POOL_RETIRED_ALIAS")
+
+    need(
+        any(key is lease for key in candidate_reg._active),
+        "LEASE_IDENTITY_NOT_PRESERVED",
+    )
+
+    candidate_entry = candidate_reg._active[lease]
+
+    need(candidate_entry["owner"] is owner,
+         "REGISTRY_OWNER_IDENTITY")
+    need(candidate_entry["handle"] == handle,
+         "POOL_HANDLE_MISMATCH")
+    need(candidate_pool._active[handle]["owner"] is owner,
+         "POOL_OWNER_IDENTITY")
+
+    candidate_session = candidate_pool._active[handle]["session"]
+
+    need(candidate_session is not original_session,
+         "SESSION_OBJECT_ALIAS")
+
+    candidate._verify()
+    return candidate
+
+
+def invoke(candidate, action, lease, owner):
+    if action == "cancel":
+        return candidate.terminal_cancel(lease, owner, version=0)
+    if action == "retire":
+        return candidate.terminal_retire(lease, owner)
+    raise IdentityShadowError("UNKNOWN_ACTION")
+
+
+class ShadowAdapter:
+    """Local pointer adapter, no external reference invalidation."""
+
+    def __init__(self, action):
+        need(action in ACTIONS, "UNKNOWN_ACTION")
+        source, lease, owner = faults.make_saturated_fixture()
+
+        if action == "retire":
+            source.terminal_cancel(lease, owner, version=0)
+
+        self.action = action
+        self.lease = lease
+        self.owner = owner
+        self.original = source
+        self.published = source
+
+        self.original_snapshot = snapshot(source, lease)
+
+    def _complete(self, candidate):
+        candidate._verify()
+
+        view = candidate.inspect_terminal()
+        ordinary = view["ordinary_audit"]["registry"]
+        receipts = view["terminal"]["receipts"]
+
+        expected_receipts = 1 if self.action == "cancel" else 2
+        expected_retired = 0 if self.action == "cancel" else 1
+
+        need(len(receipts) == expected_receipts,
+             "TERMINAL_RECEIPT_INCOMPLETE")
+        need(ordinary["retired_count"] == expected_retired,
+             "REGISTRY_RETIREMENT_INCOMPLETE")
+        need(ordinary["active_count"] == 1 - expected_retired,
+             "REGISTRY_ACTIVE_COUNT")
+        need(len(candidate._registry._ledger) == expected_retired,
+             "REGISTRY_LEDGER_INCOMPLETE")
+
+        if self.action == "cancel":
+            s = candidate.observe_session(self.lease, self.owner)
+            need(s["phase"] == "CANCELLED", "CANCEL_PHASE")
+            need(s["version"] == 0, "CANCEL_VERSION_CHANGED")
+        else:
+            need(
+                candidate._state_for_known_lease(self.lease) is None,
+                "RETIRED_LEASE_STILL_ACTIVE",
+            )
+
+        before = self.original_snapshot["session"]
+        after = (
+            receipts[0]["after"]
+            if self.action == "cancel"
+            else receipts[-1]
+        )
+
+        for key in (
+            "attempted_work_units",
+            "committed_work_units",
+            "committed_digest",
+        ):
+            need(after[key] == before[key],
+                 "COMMITTED_WORK_CHANGED:" + key)
+
+        need(
+            view["terminal"]["chain_tip"]
+            == receipts[-1]["linked_sha256"],
+            "TERMINAL_TIP_MISMATCH",
+        )
+
+        return view
+
+    def _perform_with_fault(self, candidate, stage):
+        if stage not in PRE:
+            return invoke(
+                candidate, self.action, self.lease, self.owner
+            )
+
+        if stage.startswith("registry"):
+            target = candidate._registry
+            attribute = self.action
+        else:
+            target = candidate
+            attribute = "_append_terminal"
+
+        original = getattr(target, attribute)
+
+        def injected(*args, **kwargs):
+            if stage.endswith("_post"):
+                original(*args, **kwargs)
+            raise InjectedFault(stage)
+
+        with patch.object(
+            target, attribute, side_effect=injected
+        ):
+            return invoke(
+                candidate, self.action, self.lease, self.owner
+            )
+
+    def transact(self, inject=None):
+        need(inject is None or inject in STAGES, "UNKNOWN_STAGE")
+
+        # The published object itself is never used as the candidate.
+        candidate = clone_preserving_local_identity(
+            self.published, self.lease, self.owner
+        )
+
+        self._perform_with_fault(candidate, inject)
+        complete = self._complete(candidate)
+
+        # One assignment publishes the completely validated candidate.
+        # This is NOT synchronized against concurrent access.
+        self.published = candidate
+
+        if inject == "publication_post":
+            raise InjectedFault(inject)
+
+        return {
+            "acknowledged": True,
+            "phase": "CANCELLED" if self.action == "cancel" else "RETIRED",
+            "terminal_receipt_count":
+                complete["terminal"]["receipt_count"],
+        }
+
+
+def normal_case(action):
+    h = ShadowAdapter(action)
+
+    original_ref = h.original
+    original_view = snapshot(original_ref, h.lease)
+
+    acknowledgement = h.transact()
+    final = snapshot(h.published, h.lease)
+
+    need(acknowledgement["acknowledged"] is True,
+         "NORMAL_ACK_MISSING")
+    need(h.published is not original_ref, "POINTER_NOT_PUBLISHED")
+    need(snapshot(original_ref, h.lease) == original_view,
+         "ORIGINAL_REFERENCE_MUTATED")
+
+    return {
+        "action": action,
+        "acknowledged": True,
+        "original_reference_unchanged": True,
+        "terminal_receipt_count":
+            final["terminal"]["receipt_count"],
+        "registry_active_count":
+            final["terminal"]["ordinary_audit"]["registry"]["active_count"],
+        "registry_retired_count":
+            final["terminal"]["ordinary_audit"]["registry"]["retired_count"],
+        "terminal_receipts": final["terminal"]["terminal"]["receipts"],
+        "terminal_chain_tip": final["terminal"]["terminal"]["chain_tip"],
+        "old_reference_remains_accessible": True,
+    }
+
+
+def fault_case(action, stage):
+    need(action in ACTIONS and stage in STAGES, "BAD_FAULT_CASE")
+
+    h = ShadowAdapter(action)
+    old_pointer = h.published
+    original_view = snapshot(h.original, h.lease)
+    before = snapshot(h.published, h.lease)
+
+    try:
+        h.transact(inject=stage)
+    except InjectedFault as exc:
+        need(str(exc) == stage, "WRONG_INJECTION_STAGE")
+    else:
+        raise IdentityShadowError("INJECTION_NOT_OBSERVED")
+
+    after = snapshot(h.published, h.lease)
+    published = stage in POST
+
+    need((h.published is old_pointer) is (not published),
+         "POINTER_PUBLICATION_ERROR")
+
+    if not published:
+        need(after == before, "PREPUBLICATION_STATE_CHANGED")
+        ack = h.transact()
+        need(ack["acknowledged"], "SAFE_RETRY_FAILED")
+        result = "safe_retry_succeeded"
+    else:
+        need(after != before, "PUBLISHED_STATE_NOT_VISIBLE")
+        try:
+            h.transact()
+        except terminal.TerminalPathError:
+            result = "duplicate_denied"
+        else:
+            raise IdentityShadowError("POSTPUBLICATION_REPLAY_ACCEPTED")
+
+        need(snapshot(h.published, h.lease) == after,
+             "DUPLICATE_CHANGED_PUBLICATION")
+
+    need(snapshot(h.original, h.lease) == original_view,
+         "OLD_FACADE_REFERENCE_MUTATED")
+
+    final = snapshot(h.published, h.lease)
+    view = final["terminal"]
+
+    expected_receipts = 1 if action == "cancel" else 2
+    need(view["terminal"]["receipt_count"] == expected_receipts,
+         "FINAL_RECEIPT_COUNT")
+
+    return {
+        "action": action,
+        "stage": stage,
+        "published_before_exception": published,
+        "caller_acknowledged": False,
+        "visible_state_unchanged_at_fault": not published,
+        "recovery": result,
+        "final_terminal_receipts": expected_receipts,
+        "old_reference_unchanged": True,
+    }
+
+
+def execute():
+    normal = {
+        action: normal_case(action)
+        for action in ACTIONS
+    }
+
+    rows = [
+        fault_case(action, stage)
+        for action in ACTIONS
+        for stage in STAGES
+    ]
+
+    need(len(rows) == 10, "FAULT_COUNT")
+    need(sum(not x["published_before_exception"] for x in rows) == 8,
+         "PREPUBLICATION_COUNT")
+    need(sum(x["published_before_exception"] for x in rows) == 2,
+         "POSTPUBLICATION_COUNT")
+
+    return {
+        "schema": "trust_robot_r126_identity_shadow_feasibility_v1",
+        "pass": True,
+        "prototype": "actual_r122_objects_identity_memo_candidate",
+        "normal_cases": normal,
+        "fault_witnesses": rows,
+        "fault_count": 10,
+        "prepublication_faults": 8,
+        "postpublication_ack_ambiguities": 2,
+        "original_facades_unchanged": True,
+        "external_old_references_remain_usable": True,
+        "all_mutable_aliases_exhaustively_excluded": False,
+        "actual_r122_source_modified": False,
+        "drop_in_atomic_backend_proven": False,
+        "concurrent_publication_proven": False,
+        "durable_crash_recovery_proven": False,
+        "physical_safety_proven": False,
+        "real_sensor_factors_executed": False,
+        "confirmation_test_accessed": False,
+        "scientific_gates_closed": 11,
+    }

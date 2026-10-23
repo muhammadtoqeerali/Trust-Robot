@@ -1,0 +1,20 @@
+{
+  "backend_atomicity_proven": false,
+  "concurrency_or_durability_proven": false,
+  "global_exactly_once_proven": false,
+  "negative_tamper_controls_passed": 2,
+  "old_facade_revocation_proven": false,
+  "pass": true,
+  "schema": "trust_robot_r126_reference_validation_v1",
+  "scientific_gates_closed": 11,
+  "source_sha256": {
+    "r126_external_reference_contract_v1.md": "2c4cfbbf104568e3583a9a285a5ad0bb4992e746c38eb4f577a94aecf2c90146",
+    "r126_reference_bypass.py": "1381920c0d1f6a918353fc1bfc305a1858fffa7a451a04c133525104cbf41d40",
+    "r126_reference_bypass_audit_v1.json": "8574e5845752edbf0148fe55c1ec2589a0e73b5f70d4db6e823e224b2a963f62",
+    "r126_reference_unittest_v1.log": "ea2d9a139aeaa81f9107c6e3c59f5890a185481a9b36b1eacbd3d449a018736e",
+    "test_r126_reference.py": "299e0da562a393bfd52b25ec2d17943480ea1b07a32371c4d9f7f6642a2b3254"
+  },
+  "stale_reference_bypasses_confirmed": 2,
+  "terminal_chains_verified": 4,
+  "unit_tests_passed": 15
+}

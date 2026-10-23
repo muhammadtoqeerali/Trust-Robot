@@ -721,3 +721,50 @@ All 11 scientific admissibility gates remain CLOSED.
 
 Continue with guarded workstation verification, exact
 source hashes, staged-path review and fail-closed science.
+
+
+## KIOS R126 authority checkpoint (R127) — 2026-10-23
+
+Validated archive:
+`experiments/trust_robot_r126_authority_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R126_AUTHORITY_REFERENCE_CHECKPOINT_V1.md`
+
+R126-B1 passed 18 tests on an identity-aware shadow clone
+of the actual archived synthetic R122/R117/R116 object graph.
+Ten fault witnesses passed after a targeted three-error
+implementation repair, with original failure evidence preserved.
+
+R126-C passed 15 tests and confirmed two stale-reference
+bypasses: previously retained original facade references could
+still cancel or retire their separately owned session state.
+
+R126-D1/D2 passed 45 combined tests (including the 11 D1 tests).
+The cooperative single-authority API passed 22 fault scenarios:
+18 prepublication preservation cases and four postpublication
+acknowledgement ambiguities.
+
+The three distinct archived suites total 78 passing tests.
+
+R126-D does not expose mutable backend objects through its
+documented API. Arbitrary in-process Python introspection,
+direct private-object mutation and pointer rebinding remain
+possible. No secure isolation, global exactly-once guarantee,
+concurrent linearizability or durable crash recovery is proven.
+
+The original R117/R122 source implementations are unchanged.
+Their actual drop-in transaction atomicity is NOT proven.
+
+One B1 failure log was explicitly redacted before archiving;
+the unchanged original remains off Git with SHA256 lineage.
+
+The frozen M2DGR 22/7/7 partition and sealed confirmation_test
+remain unchanged. No real physical sensor factors, independent
+trajectory scoring, calibrated health head or robot safety
+operation is authorized.
+
+All 11 scientific admissibility gates remain CLOSED.
+
+Continue with separately validated science and software gates,
+exact staged-file allowlists and guarded Git checkpoint commits.

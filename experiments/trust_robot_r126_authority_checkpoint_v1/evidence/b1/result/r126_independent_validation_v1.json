@@ -1,0 +1,24 @@
+{
+  "actual_backend_atomicity_proven": false,
+  "audit_sha256": "d677362029741027141b8f6139b642bd0ed1115e1295cb060c7650c9a4462ad4",
+  "concurrent_or_durable_safety_proven": false,
+  "fault_cases_verified": 10,
+  "negative_controls_passed": 2,
+  "original_failed_log_preserved": true,
+  "pass": true,
+  "postpublication_ambiguities_verified": 2,
+  "prepublication_cases_verified": 8,
+  "schema": "trust_robot_r126_independent_validation_v1",
+  "scientific_gates_closed": 11,
+  "source_sha256": {
+    "r126_identity_shadow.py": "cebd24c16b3a5125ac61d062588d2f4b187e5c18a1d04c6fd6ef4289d27fbdec",
+    "r126_identity_shadow_before_b1_fix_v1.txt": "549bf3067e7778fc2c08fa15d5a77702ddff821744c79d360cbf1aacca52748e",
+    "r126_identity_shadow_contract_v1.md": "bf0b4e8092849c638252ae6f8e52e80a523d3da00c58eeea6af8d4216b3bd49d",
+    "r126_independent_validate.py": "08f3f22d92e37aaf728c3f1087560a6064eb4a8bf9ef70a73156b8242301c9f4",
+    "test_r126.py": "3b2172fa23b27299fba8d4ced6fcccaf73306b970cf9ad5a0d7c082a3c7c0f5f"
+  },
+  "terminal_receipt_chains_verified": true,
+  "unit_log_sha256": "0411bbd86088249f9dc07447e625df5664186f7250538b4d61c0e9767a1b8096",
+  "unit_tests_passed": 18,
+  "validator_does_not_import_engine": true
+}

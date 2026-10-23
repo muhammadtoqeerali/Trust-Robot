@@ -1,0 +1,50 @@
+test_cancel_acknowledgement_ambiguity (test_r126_authority.AuthorityTests) ... ok
+test_detached_observation (test_r126_authority.AuthorityTests) ... ok
+test_initial_saturated_state (test_r126_authority.AuthorityTests) ... ok
+test_prepublication_receipt_post_fault (test_r126_authority.AuthorityTests) ... ok
+test_prepublication_registry_post_fault (test_r126_authority.AuthorityTests) ... ok
+test_public_interface_does_not_return_backend (test_r126_authority.AuthorityTests) ... ok
+test_retire_acknowledgement_ambiguity (test_r126_authority.AuthorityTests) ... ok
+test_sequential_cancel_and_retire (test_r126_authority.AuthorityTests) ... ok
+test_stale_version (test_r126_authority.AuthorityTests) ... ok
+test_wrong_lease (test_r126_authority.AuthorityTests) ... ok
+test_wrong_owner (test_r126_authority.AuthorityTests) ... ok
+test_boolean_version_denied (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_detached_view_mutation_does_not_publish (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_documented_surface_has_no_raw_backend (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_duplicate_terminal_operations_denied (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_invalid_lease_preserves_observation (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_invalid_owner_preserves_observation (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_private_backend_direct_cancel_bypass (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_private_pointer_rebinding_possible (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_python_introspection_can_access_backend (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_retire_before_cancel_denied (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_stale_version_denied (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_unknown_fault_stage_denied (test_r126_authority_faults.AdditionalAuthorityTests) ... ok
+test_cancel_ack_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_candidate_create_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_candidate_create_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_publication_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_publication_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_receipt_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_receipt_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_registry_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_registry_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_verification_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_cancel_verification_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_ack_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_candidate_create_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_candidate_create_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_publication_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_publication_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_receipt_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_receipt_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_registry_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_registry_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_verification_post (test_r126_authority_faults.FullFaultMatrix) ... ok
+test_retire_verification_pre (test_r126_authority_faults.FullFaultMatrix) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 2.899s
+
+OK

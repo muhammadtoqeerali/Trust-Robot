@@ -1,0 +1,40 @@
+======================================================================
+ERROR: test_retire_publication_post (test_r126.FaultTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/test_r126.py", line 86, in test
+    result = fault_case(action, stage)
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/r126_identity_shadow.py", line 297, in fault_case
+    h.transact()
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/r126_identity_shadow.py", line 215, in transact
+    candidate = clone_preserving_local_identity(
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/r126_identity_shadow.py", line 51, in clone_preserving_local_identity
+    need(lease in reg._active, "LEASE_NOT_ACTIVE")
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/r126_identity_shadow.py", line 35, in need
+    raise IdentityShadowError(reason)
+r126_identity_shadow.IdentityShadowError: LEASE_NOT_ACTIVE
+
+======================================================================
+ERROR: test_normal_cancel (test_r126.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/test_r126.py", line 41, in test_normal_cancel
+    row = normal_case("cancel")
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/r126_identity_shadow.py", line 257, in normal_case
+    final["terminal"]["receipt_count"],
+KeyError: 'receipt_count'
+
+======================================================================
+ERROR: test_normal_retire (test_r126.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/test_r126.py", line 46, in test_normal_retire
+    row = normal_case("retire")
+  File "<REDACTED_KIOS_HOME>/TRUST_ROBOT_ALI/experiments/trust_robot_r126_identity_shadow_dev_v1/r126_identity_shadow.py", line 257, in normal_case
+    final["terminal"]["receipt_count"],
+KeyError: 'receipt_count'
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.149s
+
+FAILED (errors=3)
