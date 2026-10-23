@@ -1,0 +1,46 @@
+{
+  "actual_concurrent_thread_safety_verified": false,
+  "archived_regression_tests": 120,
+  "ate_rpe_authorized": false,
+  "authenticated_audit_log_verified": false,
+  "branch": "kios-isaacsim-v15-integration",
+  "confirmation_test_accessed": false,
+  "documentation_sha256": {
+    "AGENTS.md": "8791e4924fbeeafd4150483e04b04d47cd72dcedbe4b86680c10b49050ef7d97",
+    "docs/TRUST_ROBOT_PROJECT_STATE.md": "562e43f3c8be96e0e07654e41ee3b466641a18377b341cd26e050483865e35d3",
+    "docs/audits/trust_robot/TRUST_ROBOT_KIOS_R116_R117_REGISTRY_LIFECYCLE_CHECKPOINT_V1.md": "740c366a8917f7460b2300a30d35abf8e85b99aaedf734d0912017267bf828af"
+  },
+  "durable_audit_log_verified": false,
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "metadata_sha256": {
+    "README.md": "3bfbd227668c10cc0d40214ac1e94b6da8aba1ed84222aecc4e423986f486077",
+    "verify_checkpoint.py": "984d320516dbaa8fc42d70e0f980adda8151854fcbafff1c1e0b047d5b894426"
+  },
+  "parent_commit": "b95302ba3f385a6b39b6b8511bec30e008445b1d",
+  "physical_memory_reclamation_verified": false,
+  "physical_resource_deadlines_verified": false,
+  "qualified_author_reply_ingested": false,
+  "r115_manifest_sha256": "e93f73d5b493a43650b162953b0c1d2182b57d80e5ad82ad5ff0509419a55c37",
+  "r116_test_count": 58,
+  "r117_test_count": 62,
+  "r95_backend_merged_into_s6": false,
+  "raw_gt_or_rosbags_archived": false,
+  "real_sensor_factor_execution_authorized": false,
+  "s6_source_sha256": "a1c9d0b4b9219d1e1b370e5ab5f42fcb25ac53f1b77f005cb42b3497b90bfc9a",
+  "schema": "TRUST_ROBOT_R116_R117_REGISTRY_LIFECYCLE_CHECKPOINT_V1",
+  "scientific_gates_closed": 11,
+  "source_count": 10,
+  "source_sha256": {
+    "evidence/r116/dev/r116_lifecycle.py": "062b00f992d3543611c0cc395ed7b1f102c57eab62315cf2cc713871122ea520",
+    "evidence/r116/dev/r116_lifecycle_contract_v1.md": "6138352528feefdf33091a95125d1ab30537766c97aeaa87f669113693877a03",
+    "evidence/r116/dev/test_r116.py": "8115800b821977460db10c8b3d6c4d5527ca7947c35718ca36a99a4228fdd293",
+    "evidence/r116/result/r116_independent_validation_v1.json": "7e65c32839ab8e9fa170880a9122517863d20f3a50e6e0eb0b87d2039a437ab0",
+    "evidence/r116/result/r116_session_lifecycle_v1.json": "7ecf4dde3b8cf60584a8dfb19fb968c25e51ab27696a178ab9b6430f7e75e8f1",
+    "evidence/r117/dev/r117_registry.py": "f9809330f3bdeec3f2b8f7fd86890edbd0428f1dbf9d2c0c3a5348e899766e98",
+    "evidence/r117/dev/r117_registry_contract_v1.md": "683bad092ab199a8b8ac31ddad4250ea7a692c97018e9a34dda40f88953dbf1b",
+    "evidence/r117/dev/test_r117.py": "463bc7462817e8299616de7800819bf7ad845178fc6acbc3f9143cfbbd2fe84a",
+    "evidence/r117/result/r117_independent_validation_v1.json": "7d555e8255a9d8ab6ceb7aabb05f80ec87e6386011293d2910b42ff5ab67fbfe",
+    "evidence/r117/result/r117_registry_hardening_v1.json": "7a52188672767654bf290b35e17122301dc6f32492b06ca310ab3a8f4b64fd98"
+  }
+}

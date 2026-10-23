@@ -6513,3 +6513,48 @@ or independently scored ATE/RPE are authorized.
 
 Next: resource-budget lifecycle and synthetic
 failure-pattern coverage.
+
+## KIOS R116-R117 registry lifecycle checkpoint (2026-10-23)
+
+R116 passed 58 regression tests:
+bounded synthetic session capacity, retirement,
+charged failure isolation and event admission.
+
+R117 passed 62 regression tests:
+opaque local session handles, SHA-256-linked
+in-memory retirement receipts and two corruption
+detection controls.
+
+120 combined regression tests are archived.
+
+R116/R117 covered twelve manufactured sessions,
+sixty acknowledged operations and 168 replay units.
+
+R117 verified twelve linked retirement receipts
+and six cross-registry invalid admission denials.
+
+Archive:
+`experiments/trust_robot_r116_r117_registry_lifecycle_checkpoint_v1/`
+
+Audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R116_R117_REGISTRY_LIFECYCLE_CHECKPOINT_V1.md`
+
+The linked ledger is not authenticated or durable.
+Real concurrent execution, physical resource bounds,
+sensor-factor execution and hardware fault recovery
+remain unverified.
+
+S6 and R107-R114 checkpoint implementations
+remain unchanged. R95 Gaussian prior import is denied.
+
+The frozen M2DGR 22/7/7 split is unchanged.
+The confirmation_test subset remains sealed.
+Original GT/ROSBags are not accessed.
+
+Physical clocks, extrinsics, health training
+and independent ATE/RPE remain unverified.
+
+All 11 scientific gates remain CLOSED.
+
+Next: synthetic audit-observation and registry
+failure-receipt boundary analysis.

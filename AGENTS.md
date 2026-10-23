@@ -604,3 +604,37 @@ All 11 scientific gates remain CLOSED.
 Continue with source-pinned KIOS-only experiments,
 fail-closed controls, independent verification
 and guarded GitHub checkpoints.
+
+## KIOS R116-R117 registry checkpoint — 2026-10-23
+
+Archive:
+`experiments/trust_robot_r116_r117_registry_lifecycle_checkpoint_v1/`
+
+Scientific audit:
+`docs/audits/trust_robot/TRUST_ROBOT_KIOS_R116_R117_REGISTRY_LIFECYCLE_CHECKPOINT_V1.md`
+
+R116 passed 58 tests covering the bounded synthetic
+session registry, terminal retirement, admission
+rejections, charged failure isolation and cancellation.
+
+R117 passed 62 tests covering local opaque handles,
+linked in-memory retirement receipts, cross-registry
+denial and accidental receipt-corruption detection.
+
+The paired checkpoint preserves 120 tests.
+
+The R117 SHA-256 retirement ledger is an in-memory
+diagnostic integrity chain, not a signed, authenticated
+or crash-durable audit system.
+
+The tests establish neither concurrent thread safety
+nor physical memory reclamation or timing guarantees.
+
+Original S6 and prior estimator implementations
+remain unchanged. R95 prior import remains blocked.
+
+All 11 scientific gates remain CLOSED.
+
+Continue with explicit workstation preflight, source
+hash verification, exact change allowlists, scientific
+fail-closed tests and guarded GitHub publication.

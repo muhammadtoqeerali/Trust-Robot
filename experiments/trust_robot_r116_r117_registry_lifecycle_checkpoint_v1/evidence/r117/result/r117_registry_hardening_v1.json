@@ -1,0 +1,305 @@
+{
+  "acknowledged_operations": 60,
+  "actual_concurrent_thread_safety_verified": false,
+  "ate_rpe_authorized": false,
+  "authenticated_audit_log_verified": false,
+  "capacity_and_stale_handles": {
+    "active_capacity_rejections": 1,
+    "creation_limit_rejections": 1,
+    "opaque_handle_reuse": false,
+    "registry_drained": true,
+    "retired_handles": 3,
+    "stale_handle_rejections": 1
+  },
+  "charged_failed_attempts": 3,
+  "committed_failure_isolation_verified": true,
+  "confirmation_test_accessed": false,
+  "corruption_controls_rejected": 2,
+  "cross_registry_admissions": {
+    "both_registries_completed": true,
+    "both_registries_drained": true,
+    "cross_registry_handle_reuse_denied": true,
+    "rejected_patterns": [
+      "cross_registry_x",
+      "cross_registry_y",
+      "wrong_owner",
+      "stale_version",
+      "wrong_graph",
+      "future_node"
+    ],
+    "rejection_count": 6,
+    "zero_work_charged_for_invalid_admissions": true
+  },
+  "cross_registry_admissions_rejected": 6,
+  "cryptographic_owner_authentication_verified": false,
+  "direct_private_object_mutation_isolated": false,
+  "durable_audit_log_verified": false,
+  "failure_exhaustion_isolation": {
+    "actual_concurrent_threads_tested": false,
+    "charged_failed_attempts": 3,
+    "failure_retirement_phase": "CANCELLED",
+    "fourth_attempt_rejected": true,
+    "healthy_peer_completed": true,
+    "healthy_peer_max_abs_error_vs_s6": 0.0,
+    "healthy_retirement_phase": "COMPLETED",
+    "registry_drained": true,
+    "retirement_chain_entries": 2
+  },
+  "hardware_streaming_verified": false,
+  "health_training_authorized": false,
+  "healthy_attempted_work_units": 168,
+  "healthy_interleaving": {
+    "acknowledged_operations": 60,
+    "actual_concurrent_threads_tested": false,
+    "attempted_work_units": 168,
+    "healthy_sessions": 12,
+    "nonlinear_windows": 48,
+    "prior_transfers": 18,
+    "registry_audit": {
+      "active_count": 0,
+      "created": 12,
+      "peak_active": 2,
+      "receipt_count": 12,
+      "retired_count": 12,
+      "retirement_chain_sha256": "f7041079de2816cfd3ac6019527d3e4c4ceb857af8e4a8a47db01c794c6fe0ff"
+    },
+    "retirement_receipts": 12,
+    "runs": {
+      "clean_camera_off_bounded_reorder_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_bounded_reorder_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_ordered_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_camera_off_ordered_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_bounded_reorder_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_bounded_reorder_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 6.325329149348136e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_ordered_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "clean_joint_ordered_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 6.325329149348136e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_bounded_reorder_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_bounded_reorder_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          3,
+          2,
+          1,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 5.1962323333043514e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_ordered_ordinary": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 0.0,
+        "nonlinear_windows": 4,
+        "prior_transfers": 0,
+        "recentered": false,
+        "retired": true,
+        "schur_events": 3
+      },
+      "lidar_dropout_joint_ordered_recentered": {
+        "acknowledged_operations": 5,
+        "arrival_order": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "attempted_work_units": 14,
+        "committed_work_units": 14,
+        "max_abs_error_vs_s6": 5.1962323333043514e-12,
+        "nonlinear_windows": 4,
+        "prior_transfers": 3,
+        "recentered": true,
+        "retired": true,
+        "schur_events": 3
+      }
+    },
+    "schur_events": 36
+  },
+  "healthy_retirement_receipts": 12,
+  "healthy_sessions": 12,
+  "ledger_corruption_controls": {
+    "cryptographic_authentication_proven": false,
+    "detected_corruptions": 2,
+    "durable_audit_storage_proven": false,
+    "linked_ledger_tamper_rejected": true,
+    "subsequent_healthy_registry_operation": true,
+    "underlying_receipt_tamper_rejected": true
+  },
+  "linked_retirement_ledger_verified": true,
+  "local_opaque_handles_verified": true,
+  "physical_clock_or_extrinsics_verified": false,
+  "physical_memory_reclamation_verified": false,
+  "physical_resource_deadlines_verified": false,
+  "prepublication_cancellation": {
+    "cancelled_and_retired": true,
+    "candidate_acknowledged": false,
+    "committed_estimator_unchanged": true,
+    "committed_work_units": 0,
+    "failed_candidate_attempt_units": 1,
+    "stale_handle_reuse_rejected": true
+  },
+  "r95_backend_imported": false,
+  "raw_gt_or_rosbags_opened": false,
+  "real_sensor_factors_authorized": false,
+  "retired_handle_reuse_denied": true,
+  "schema": "TRUST_ROBOT_R117_SYNTHETIC_REGISTRY_HARDENING_V1",
+  "scientific_gates_closed": 11,
+  "status": "PASS_SYNTHETIC_REGISTRY_HARDENING_SOFTWARE_ONLY"
+}
