@@ -6736,3 +6736,7 @@ Next: evaluate whether a properly owned, non-introspectable
 execution boundary or a durable transaction design is justified,
 while prioritizing actual independent physical evidence
 qualification over further synthetic-only abstractions.
+
+## R128 — Hilti-Oxford alternative dataset source characterization (2026-10-23)
+
+R128-B7/B7-R1 qualified an isolated ROS1 reader on UNIVER. B8 acquired the first SHA256-verified official Exp14 ROSbag (6,260,771,085 bytes); B9/B10 decoded 84/896 bounded messages from seven camera/IMU/LiDAR sensor topics. All 896 sampled header stamps equaled bag stamps; observed median periods were ~24.9973 ms for five cameras, 2.505 ms for IMU, and 99.997 ms for LiDAR. B11A-R1 corrected an overstrict structural-variant cap (122 distinct LiDAR widths), then B11B transported a sanitized hash-bound eight-file handoff to KIOS; original data and ground truth remained off Git. See `experiments/trust_robot_r128_hilti_oxford_2022_source_checkpoint_v1/` and `docs/audits/trust_robot/TRUST_ROBOT_R128_HILTI_OXFORD_SOURCE_CHARACTERIZATION_V1.md`. Hilti is a development candidate only; independent physical synchronization, dense-reference independence, calibration, and alternative split are unqualified. Original M2DGR 22/7/7 split remains frozen, confirmation_test sealed, all 11 gates CLOSED. No real factors, health training, or ATE/RPE scoring authorized.

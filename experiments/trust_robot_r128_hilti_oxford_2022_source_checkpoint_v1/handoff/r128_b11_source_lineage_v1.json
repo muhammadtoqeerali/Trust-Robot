@@ -1,0 +1,13 @@
+{
+  "b10_manifest_sha256": "46937f40df9da2467375072a835a4d7105f2fbb5c189355fda7c68a83678ac66",
+  "b10_report_sha256": "050748585e220b3e14d5941a2797fe30886a1ea8d9b1bebaf1c7f9591271e08d",
+  "b7_manifest_sha256": "63019a62f6354ffe4eec684f23ab2ef9b9a084e22d7c260ef636cca68c9eda8e",
+  "b8_manifest_sha256": "dd0d117694608036fb895f651e80e579f6dba127eb7957c2244e7c968d5ae5c2",
+  "b9_manifest_sha256": "616c4df272aadd7f514a2fd760d5472259c7c7ec574494dfefa1ed6f249138e4",
+  "b9_report_sha256": "7f9d652b7652bc83a1a57e99757176b293b477125938cdc6c14cc60039e5ac40",
+  "m2dgr_scientific_gates_closed": 11,
+  "per_message_sensor_records_included": false,
+  "raw_gt_included": false,
+  "raw_rosbag_included": false,
+  "schema": "TRUST_ROBOT_R128_B11_R1_SOURCE_LINEAGE_V1"
+}

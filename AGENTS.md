@@ -768,3 +768,7 @@ All 11 scientific admissibility gates remain CLOSED.
 
 Continue with separately validated science and software gates,
 exact staged-file allowlists and guarded Git checkpoint commits.
+
+## R128 Hilti-Oxford real-source checkpoint (2026-10-23)
+
+KIOS imported a byte-verified, sanitized real Hilti-Oxford Exp14 camera/LiDAR/IMU source-characterization package at `experiments/trust_robot_r128_hilti_oxford_2022_source_checkpoint_v1/`. Read its README and `docs/audits/trust_robot/TRUST_ROBOT_R128_HILTI_OXFORD_SOURCE_CHARACTERIZATION_V1.md` before further real-data development. The bag and detailed message records remain off Git on UNIVER. Observed header/bag timestamp equality is not physical synchronization proof. No independent full-6DoF reference, real localization factor, calibrated health model, scored ATE/RPE, or robot safety certification is authorized. Original M2DGR 22/7/7 and all 11 CLOSED gates are preserved.

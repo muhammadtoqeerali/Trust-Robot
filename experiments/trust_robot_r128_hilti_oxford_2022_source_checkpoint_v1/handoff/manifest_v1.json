@@ -1,0 +1,21 @@
+{
+  "b10_manifest_sha256": "46937f40df9da2467375072a835a4d7105f2fbb5c189355fda7c68a83678ac66",
+  "decoded_sample_messages": 896,
+  "file_sha256": {
+    "SCIENTIFIC_SCOPE.md": "9d6b47ddcc27c586b980104db45d3c6276983683a31984bb85e562f7cb1fa14d",
+    "r128_b10_timing.py": "91f71e8b276d199737d339125f0b31794f074e2d990d803274eece4668f83348",
+    "r128_b11_sanitized_summary_v1.json": "77df862cae8530d7a3926f3e6b76544d48e816af184ebd035be1fa91accba469",
+    "r128_b11_source_lineage_v1.json": "16c9d263e94749d571bbed8a804b2988ad50cac46d0cba8b8afb05c144223d59",
+    "r128_b11a_r1_failure_lineage_v1.json": "54b5126dc917314c4e83dae84cee4b8be23a309554dcfaee3975d35a1bc18d29",
+    "r128_b9_sensor_audit.py": "166aabf772992fb588a9e420cb94be165f8b3f9011e0cfe3aff30924bb4ac1d6",
+    "verify_handoff.py": "f6b30f6ca35fe0d9bd4afa619c5ae976e2fc267bf4d249acdbb8cd3cfa81df27"
+  },
+  "groundtruth_included": false,
+  "m2dgr_scientific_gates_closed": 11,
+  "rosbag_included": false,
+  "schema": "TRUST_ROBOT_R128_B11_R1_MANIFEST_V1",
+  "scoring_authorized": false,
+  "sensor_topics": 7,
+  "source_bag_sha256": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82",
+  "source_revision": "e62017f907007fdc5ab8c721842e4ae7359d7f49"
+}

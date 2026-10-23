@@ -1,0 +1,15 @@
+{
+  "diagnosis": "LiDAR scan width variation creates more than sixteen structure variants",
+  "failed_step": "2_GENERATE_SANITIZED_SCIENTIFIC_SUMMARY",
+  "groundtruth_accessed": false,
+  "m2dgr_scientific_gates_closed": 11,
+  "observed_lidar_unique_width_count": 122,
+  "original_b9_b10_evidence_modified": false,
+  "original_exception": "AssertionError",
+  "original_failed_assertion": "1 <= len(variants) <= 16",
+  "original_phase": "R128-B11A",
+  "original_python_line": 167,
+  "repair": "Preserve all original 128 per-topic samples off Git; export bounded stable structures and aggregate LiDAR width statistics",
+  "schema": "TRUST_ROBOT_R128_B11A_R1_FAILURE_LINEAGE_V1",
+  "scoring_authorized": false
+}

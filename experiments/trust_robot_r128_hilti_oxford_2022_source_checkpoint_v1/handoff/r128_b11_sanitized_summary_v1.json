@@ -1,0 +1,321 @@
+{
+  "dataset": "Hilti-Oxford 2022",
+  "dataset_revision": "e62017f907007fdc5ab8c721842e4ae7359d7f49",
+  "decoded_message_count": 896,
+  "messages_examined": 7728,
+  "negative_controls_passed_in_b10": 5,
+  "predecessor_b9_first_12_match": true,
+  "recording": "exp14_basement_2",
+  "sampling_rule": "FIRST_128_MESSAGES_PER_SENSOR_TOPIC",
+  "schema": "TRUST_ROBOT_R128_B11_R1_SANITIZED_SUMMARY_V1",
+  "scientific_boundary": {
+    "camera_imu_timeshift_independently_verified": false,
+    "dataset_partition_frozen": false,
+    "groundtruth_accessed": false,
+    "independent_6dof_reference_proven": false,
+    "lidar_scan_time_semantics_verified": false,
+    "m2dgr_confirmation_test_accessed": false,
+    "m2dgr_scientific_gates_closed": 11,
+    "metric_scoring_authorized": false,
+    "physical_clock_sync_proven": false,
+    "real_localization_factors_admitted": false,
+    "recorded_sensor_structure_observed": true,
+    "training_performed": false
+  },
+  "selection_role": "DEVELOPMENT_CANDIDATE_ONLY",
+  "sensor_topic_count": 7,
+  "source_bag_bytes": 6260771085,
+  "source_bag_sha256": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82",
+  "topics": {
+    "/alphasense/cam0/image_raw": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "cam0_sensor_frame"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": null,
+      "modality": "camera",
+      "observed_median_rate_hz": 40.00432,
+      "original_structure_variant_count": 1,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "encoding": "mono8",
+          "height": 540,
+          "payload_length_matches_layout": true,
+          "step": 720,
+          "width": 720
+        }
+      ]
+    },
+    "/alphasense/cam1/image_raw": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "cam1_sensor_frame"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": null,
+      "modality": "camera",
+      "observed_median_rate_hz": 40.00432,
+      "original_structure_variant_count": 1,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "encoding": "mono8",
+          "height": 540,
+          "payload_length_matches_layout": true,
+          "step": 720,
+          "width": 720
+        }
+      ]
+    },
+    "/alphasense/cam2/image_raw": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "cam2_sensor_frame"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": null,
+      "modality": "camera",
+      "observed_median_rate_hz": 40.00432,
+      "original_structure_variant_count": 1,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "encoding": "mono8",
+          "height": 540,
+          "payload_length_matches_layout": true,
+          "step": 720,
+          "width": 720
+        }
+      ]
+    },
+    "/alphasense/cam3/image_raw": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "cam3_sensor_frame"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": null,
+      "modality": "camera",
+      "observed_median_rate_hz": 40.00432,
+      "original_structure_variant_count": 1,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "encoding": "mono8",
+          "height": 540,
+          "payload_length_matches_layout": true,
+          "step": 720,
+          "width": 720
+        }
+      ]
+    },
+    "/alphasense/cam4/image_raw": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "cam4_sensor_frame"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 24999461,
+        "median_ns": 24997300,
+        "min_ns": 24997200,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": null,
+      "modality": "camera",
+      "observed_median_rate_hz": 40.00432,
+      "original_structure_variant_count": 1,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "encoding": "mono8",
+          "height": 540,
+          "payload_length_matches_layout": true,
+          "step": 720,
+          "width": 720
+        }
+      ]
+    },
+    "/alphasense/imu": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 2525100,
+        "median_ns": 2505000,
+        "min_ns": 2483500,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "imu_sensor_frame"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 2525100,
+        "median_ns": 2505000,
+        "min_ns": 2483500,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": null,
+      "modality": "imu",
+      "observed_median_rate_hz": 399.201597,
+      "original_structure_variant_count": 1,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "acceleration_covariance_length": 9,
+          "angular_covariance_length": 9,
+          "motion_components_finite": true,
+          "orientation_covariance_length": 9
+        }
+      ]
+    },
+    "/hesai/pandar": {
+      "bag_intervals": {
+        "count": 127,
+        "max_ns": 101808000,
+        "median_ns": 99997000,
+        "min_ns": 98328000,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "frame_ids": [
+        "PandarXT-32"
+      ],
+      "header_equals_bag_count": 128,
+      "header_intervals": {
+        "count": 127,
+        "max_ns": 101808000,
+        "median_ns": 99997000,
+        "min_ns": 98328000,
+        "negative_count": 0,
+        "zero_count": 0
+      },
+      "header_minus_bag_max_ns": 0,
+      "header_minus_bag_median_ns": 0.0,
+      "header_minus_bag_min_ns": 0,
+      "header_stamp_count": 128,
+      "lidar_width_aggregate": {
+        "max": 63007,
+        "median": 51964.5,
+        "min": 47959,
+        "unique_count": 122
+      },
+      "modality": "lidar",
+      "observed_median_rate_hz": 10.0003,
+      "original_structure_variant_count": 122,
+      "sample_count": 128,
+      "stable_structure_profiles": [
+        {
+          "field_names": [
+            "x",
+            "y",
+            "z",
+            "intensity",
+            "timestamp",
+            "ring"
+          ],
+          "height": 1,
+          "payload_length_matches_layout": true,
+          "point_step": 48
+        }
+      ]
+    }
+  }
+}

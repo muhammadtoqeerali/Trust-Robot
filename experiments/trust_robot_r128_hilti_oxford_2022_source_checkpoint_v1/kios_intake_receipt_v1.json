@@ -1,0 +1,14 @@
+{
+  "archive_member_count": 8,
+  "archive_sha256": "d8c68507ca63f093ec792eb77328b9382b7927117cf80085994dfe68fd207c25",
+  "base_commit": "7c025e920927649d3af67e3853aa0bdbda9c1cb0",
+  "decoded_sample_messages": 896,
+  "handoff_manifest_sha256": "3e2a701bbb685848b8237ab09001e07c82186d1d894abe70d12de5dd243c0ce7",
+  "m2dgr_scientific_gates_closed": 11,
+  "raw_groundtruth_transferred": false,
+  "raw_rosbag_transferred": false,
+  "schema": "TRUST_ROBOT_R128_B11B_KIOS_INTAKE_RECEIPT_V1",
+  "scientific_scoring_authorized": false,
+  "sensor_topics": 7,
+  "standalone_verifier": "PASS"
+}
