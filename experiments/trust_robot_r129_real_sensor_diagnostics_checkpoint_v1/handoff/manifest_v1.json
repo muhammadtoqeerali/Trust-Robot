@@ -1,0 +1,21 @@
+{
+  "b11_manifest_sha256": "3e2a701bbb685848b8237ab09001e07c82186d1d894abe70d12de5dd243c0ce7",
+  "b1_manifest_sha256": "1aa2789b33b99f94bfd5f7d494c33f27db2ccf00d9578ae39e6e61220d53ac5d",
+  "b1_report_sha256": "acdc86114f31e52990a14b74e0787db1fa2d1887dbbd9becd869c02596c838cb",
+  "b2_replay_source_included": false,
+  "file_sha256": {
+    "SCIENTIFIC_SCOPE.md": "2da610dd62102163a135c4a9125ecf0baab6dedb02213ea96617ef14e323c791",
+    "r129_b1_aggregate_diagnostics_v1.json": "acdc86114f31e52990a14b74e0787db1fa2d1887dbbd9becd869c02596c838cb",
+    "r129_b1_diagnostics.py": "84c4cb345fce2dae3fa069b081a3cd13085ace4b823325e9e74a9dde994d9253",
+    "r129_b1_manifest_v1.json": "1aa2789b33b99f94bfd5f7d494c33f27db2ccf00d9578ae39e6e61220d53ac5d",
+    "r129_b2_operator_result_record_v1.json": "7ff288908e8ddb8b3b03d147ba560c61179b035d3fa00c6f1d719261bec9fcb3",
+    "verify_handoff.py": "1e780d50d625d371aab6e7cb060d2c1742728c1e1aee4a2ac5e501f512006fec"
+  },
+  "groundtruth_included": false,
+  "m2dgr_gates_closed": 11,
+  "per_message_records_included": false,
+  "raw_data_included": false,
+  "schema": "TRUST_ROBOT_R129_B3_SANITIZED_HANDOFF_MANIFEST_V1",
+  "scoring_authorized": false,
+  "source_bag_sha256": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82"
+}

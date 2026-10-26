@@ -1,0 +1,16 @@
+{
+  "b1_manifest_sha256": "1aa2789b33b99f94bfd5f7d494c33f27db2ccf00d9578ae39e6e61220d53ac5d",
+  "b1_report_sha256": "acdc86114f31e52990a14b74e0787db1fa2d1887dbbd9becd869c02596c838cb",
+  "decoded_raw_bytes": 284093312,
+  "evidence_basis": "USER_POSTED_TERMINAL_OUTPUT_NOT_CRYPTOGRAPHICALLY_SEALED",
+  "feature_families_reproduced": 33,
+  "independent_replay_source_archived": false,
+  "independently_decoded_messages": 448,
+  "m2dgr_gates_closed": 11,
+  "message_fingerprints_matched": 7,
+  "messages_examined": 3831,
+  "negative_controls_rejected": 6,
+  "schema": "TRUST_ROBOT_R129_B2_OPERATOR_OUTPUT_RECORD_V1",
+  "scoring_authorized": false,
+  "sensor_topics": 7
+}

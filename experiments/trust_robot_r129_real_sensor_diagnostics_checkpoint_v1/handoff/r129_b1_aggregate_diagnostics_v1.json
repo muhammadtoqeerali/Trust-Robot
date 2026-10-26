@@ -1,0 +1,339 @@
+{
+  "camera_sampling_stride_pixels": 8,
+  "dataset": "Hilti-Oxford 2022",
+  "decoded_messages": 448,
+  "decoded_raw_bytes": 284093312,
+  "feature_scope": "DESCRIPTIVE_AGGREGATES_ONLY",
+  "messages_examined": 3831,
+  "numpy": "2.5.4",
+  "reader": "rosbags==0.11.9",
+  "recording": "exp14_basement_2",
+  "sample_limit_per_topic": 64,
+  "sampling_rule": "FIRST_64_MESSAGES_PER_SENSOR_TOPIC",
+  "schema": "TRUST_ROBOT_R129_B1_AGGREGATE_DIAGNOSTICS_V1",
+  "scientific_boundary": {
+    "dataset_partition_frozen": false,
+    "groundtruth_accessed": false,
+    "health_labels_constructed": false,
+    "independent_6dof_reference_proven": false,
+    "m2dgr_confirmation_test_accessed": false,
+    "m2dgr_scientific_gates_closed": 11,
+    "metric_scoring_authorized": false,
+    "physical_clock_sync_proven": false,
+    "real_factors_authorized": false,
+    "training_performed": false
+  },
+  "source_b11_manifest_sha256": "3e2a701bbb685848b8237ab09001e07c82186d1d894abe70d12de5dd243c0ce7",
+  "source_b11_summary_sha256": "77df862cae8530d7a3926f3e6b76544d48e816af184ebd035be1fa91accba469",
+  "source_bag_sha256": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82",
+  "synthetic_negative_controls_passed": 6,
+  "topics": {
+    "/alphasense/cam0/image_raw": {
+      "descriptive_flags": {},
+      "feature_statistics": {
+        "max_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "pixel_mean": {
+          "finite_count": 64,
+          "max": 60.85228758169934,
+          "median": 60.746405228758164,
+          "min": 60.62156862745098
+        },
+        "pixel_std": {
+          "finite_count": 64,
+          "max": 62.507317830384224,
+          "median": 62.32409362848142,
+          "min": 62.185163964952515
+        },
+        "spatial_gradient": {
+          "finite_count": 64,
+          "max": 10.778560546025108,
+          "median": 10.723840932482334,
+          "min": 10.690983833860003
+        },
+        "zero_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        }
+      },
+      "frame_ids": [
+        "cam0_sensor_frame"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 24999461,
+      "median_interval_ns": 24997300,
+      "message_fingerprint_sha256": "9e3794dbb4f90f989878f748d99498cdcb9b1e217f2cadeaa480fdb05384d257",
+      "min_interval_ns": 24997200,
+      "modality": "camera",
+      "sample_count": 64
+    },
+    "/alphasense/cam1/image_raw": {
+      "descriptive_flags": {},
+      "feature_statistics": {
+        "max_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "pixel_mean": {
+          "finite_count": 64,
+          "max": 65.35343137254903,
+          "median": 65.22532679738562,
+          "min": 65.07549019607843
+        },
+        "pixel_std": {
+          "finite_count": 64,
+          "max": 64.8003019434153,
+          "median": 64.64745812781847,
+          "min": 64.43400525542735
+        },
+        "spatial_gradient": {
+          "finite_count": 64,
+          "max": 10.916867441817132,
+          "median": 10.875293462736987,
+          "min": 10.829369401066927
+        },
+        "zero_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        }
+      },
+      "frame_ids": [
+        "cam1_sensor_frame"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 24999461,
+      "median_interval_ns": 24997300,
+      "message_fingerprint_sha256": "23bbe922b95eb4a49610340025123b7999b1a8767e1a7a8955d367c23942a21a",
+      "min_interval_ns": 24997200,
+      "modality": "camera",
+      "sample_count": 64
+    },
+    "/alphasense/cam2/image_raw": {
+      "descriptive_flags": {},
+      "feature_statistics": {
+        "max_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "pixel_mean": {
+          "finite_count": 64,
+          "max": 61.76519607843137,
+          "median": 60.94754901960784,
+          "min": 59.85506535947712
+        },
+        "pixel_std": {
+          "finite_count": 64,
+          "max": 55.87894218822481,
+          "median": 55.66934753047428,
+          "min": 55.31822738963781
+        },
+        "spatial_gradient": {
+          "finite_count": 64,
+          "max": 7.723802364033545,
+          "median": 7.617568332604437,
+          "min": 7.389982424296232
+        },
+        "zero_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        }
+      },
+      "frame_ids": [
+        "cam2_sensor_frame"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 24999461,
+      "median_interval_ns": 24997300,
+      "message_fingerprint_sha256": "90689095b31343a266153f80faa6bbd60b1b8401e9d7fdee29845021c5b2ab9b",
+      "min_interval_ns": 24997200,
+      "modality": "camera",
+      "sample_count": 64
+    },
+    "/alphasense/cam3/image_raw": {
+      "descriptive_flags": {},
+      "feature_statistics": {
+        "max_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "pixel_mean": {
+          "finite_count": 64,
+          "max": 39.462745098039214,
+          "median": 39.3671568627451,
+          "min": 39.22990196078431
+        },
+        "pixel_std": {
+          "finite_count": 64,
+          "max": 30.71886172980088,
+          "median": 30.576845815312318,
+          "min": 30.437719692939254
+        },
+        "spatial_gradient": {
+          "finite_count": 64,
+          "max": 6.786826031771085,
+          "median": 6.7428128963028,
+          "min": 6.685165492212873
+        },
+        "zero_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        }
+      },
+      "frame_ids": [
+        "cam3_sensor_frame"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 24999461,
+      "median_interval_ns": 24997300,
+      "message_fingerprint_sha256": "2908b344b3750410d732a7e8326c4a99067a3ccb6883ceac7b5349cd9fe7e250",
+      "min_interval_ns": 24997200,
+      "modality": "camera",
+      "sample_count": 64
+    },
+    "/alphasense/cam4/image_raw": {
+      "descriptive_flags": {},
+      "feature_statistics": {
+        "max_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        },
+        "pixel_mean": {
+          "finite_count": 64,
+          "max": 90.84313725490196,
+          "median": 90.54411764705881,
+          "min": 90.12777777777778
+        },
+        "pixel_std": {
+          "finite_count": 64,
+          "max": 69.45778449629528,
+          "median": 68.86330918378864,
+          "min": 68.65318917914529
+        },
+        "spatial_gradient": {
+          "finite_count": 64,
+          "max": 16.091110020507728,
+          "median": 15.825100031347997,
+          "min": 15.713154403133046
+        },
+        "zero_fraction": {
+          "finite_count": 64,
+          "max": 0.0,
+          "median": 0.0,
+          "min": 0.0
+        }
+      },
+      "frame_ids": [
+        "cam4_sensor_frame"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 24999461,
+      "median_interval_ns": 24997300,
+      "message_fingerprint_sha256": "139bb5cf6fc8d377e2d2026958aaaa15b26880406df0e953c6d3cb905e358019",
+      "min_interval_ns": 24997200,
+      "modality": "camera",
+      "sample_count": 64
+    },
+    "/alphasense/imu": {
+      "descriptive_flags": {
+        "finite_component_count": 64
+      },
+      "feature_statistics": {
+        "acceleration_delta_norm": {
+          "finite_count": 63,
+          "max": 0.08088028870437161,
+          "median": 0.024420124979705932,
+          "min": 0.0030826212773915587
+        },
+        "acceleration_norm": {
+          "finite_count": 64,
+          "max": 9.708950619864392,
+          "median": 9.657620657691474,
+          "min": 9.62547877516106
+        },
+        "angular_rate_norm": {
+          "finite_count": 64,
+          "max": 0.013349832769146789,
+          "median": 0.005393131195691511,
+          "min": 0.0015140714379878039
+        },
+        "angular_velocity_delta_norm": {
+          "finite_count": 63,
+          "max": 0.01614548813151997,
+          "median": 0.00567214355437997,
+          "min": 0.002026865672276677
+        }
+      },
+      "frame_ids": [
+        "imu_sensor_frame"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 2510800,
+      "median_interval_ns": 2505000,
+      "message_fingerprint_sha256": "d34a79aa0c6b3362a540a01df5c84a757ce1a87f1bd33b1b25d5eaf6e2944c5d",
+      "min_interval_ns": 2498000,
+      "modality": "imu",
+      "sample_count": 64
+    },
+    "/hesai/pandar": {
+      "descriptive_flags": {
+        "declared_dense_count": 64
+      },
+      "feature_statistics": {
+        "finite_xyz_fraction": {
+          "finite_count": 64,
+          "max": 1.0,
+          "median": 1.0,
+          "min": 1.0
+        },
+        "point_count": {
+          "finite_count": 64,
+          "max": 52442.0,
+          "median": 51948.5,
+          "min": 51311.0
+        },
+        "range_median": {
+          "finite_count": 64,
+          "max": 1.3119999453609312,
+          "median": 1.0840000237170333,
+          "min": 1.043999982157283
+        },
+        "range_p95": {
+          "finite_count": 64,
+          "max": 3.7320000348597553,
+          "median": 3.332000018302174,
+          "min": 3.3119998968321926
+        }
+      },
+      "frame_ids": [
+        "PandarXT-32"
+      ],
+      "header_equals_bag_count": 64,
+      "max_interval_ns": 100559000,
+      "median_interval_ns": 99997000,
+      "message_fingerprint_sha256": "46802c8b62b80cb18ebc2e773fdfea6df7df31ffdfa6ee7c5a0eeb34adbb5011",
+      "min_interval_ns": 99599000,
+      "modality": "lidar",
+      "sample_count": 64
+    }
+  }
+}

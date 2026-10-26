@@ -1,0 +1,20 @@
+{
+  "archive_member_count": 7,
+  "archive_sha256": "817c57bf8d1f193153f8bd0167e5ef6df35baa0327db9cc4b789c2a52a0de588",
+  "b1_manifest_sha256": "1aa2789b33b99f94bfd5f7d494c33f27db2ccf00d9578ae39e6e61220d53ac5d",
+  "b1_report_sha256": "acdc86114f31e52990a14b74e0787db1fa2d1887dbbd9becd869c02596c838cb",
+  "b2_evidence_basis": "USER_POSTED_TERMINAL_OUTPUT_NOT_CRYPTOGRAPHICALLY_SEALED",
+  "b2_replay_source_included": false,
+  "base_commit": "9129ccd259370995493c2194e5840e919140fdde",
+  "decoded_messages_aggregated": 448,
+  "groundtruth_transferred": false,
+  "handoff_manifest_sha256": "cceed1e6f68aee374d2bafbdc7e5eb0eccdc7d074adbbe19b32b7efba690a784",
+  "m2dgr_scientific_gates_closed": 11,
+  "payload_hash_count": 6,
+  "r128_handoff_manifest_sha256": "3e2a701bbb685848b8237ab09001e07c82186d1d894abe70d12de5dd243c0ce7",
+  "raw_data_transferred": false,
+  "schema": "TRUST_ROBOT_R129_B4C_KIOS_INTAKE_RECEIPT_V1",
+  "scientific_scoring_authorized": false,
+  "sensor_topics": 7,
+  "standalone_verifier": "PASS"
+}

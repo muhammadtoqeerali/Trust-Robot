@@ -1,0 +1,13 @@
+{
+  "extractor_sha256": "84c4cb345fce2dae3fa069b081a3cd13085ace4b823325e9e74a9dde994d9253",
+  "groundtruth_included": false,
+  "m2dgr_scientific_gates_closed": 11,
+  "per_message_data_exported": false,
+  "report_negative_controls_passed": 3,
+  "report_sha256": "acdc86114f31e52990a14b74e0787db1fa2d1887dbbd9becd869c02596c838cb",
+  "schema": "TRUST_ROBOT_R129_B1_MANIFEST_V1",
+  "scoring_authorized": false,
+  "source_b11_manifest_sha256": "3e2a701bbb685848b8237ab09001e07c82186d1d894abe70d12de5dd243c0ce7",
+  "source_bag_sha256": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82",
+  "synthetic_negative_controls_passed": 6
+}
