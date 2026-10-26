@@ -6748,3 +6748,32 @@ UNIVER R129-A-R1 proved bounded payload-level feasibility on 56 messages. R129-B
 KIOS B4C imported the 11,769-byte B3 sanitized handoff, SHA256 `817c57bf8d1f193153f8bd0167e5ef6df35baa0327db9cc4b789c2a52a0de588`, with 7 members, 6 SHA-pinned payloads, standalone verifier, and receipt SHA256 `8f6e063e3d53ac8f9f7477b167b91349d825d267ab0c316c79211905dfec62d7`. Archive: `experiments/trust_robot_r129_real_sensor_diagnostics_checkpoint_v1/`; audit: `docs/audits/trust_robot/TRUST_ROBOT_R129_REAL_SENSOR_DIAGNOSTICS_V1.md`. Original bag, raw payloads, GT, and per-message records remain off Git on UNIVER.
 
 All features are unlabelled descriptive statistics; physical time reference, calibrated extrinsics, independent GT, Hilti split and health thresholds remain unqualified. No real factors, trained health model, ATE/RPE or safety claim authorized. M2DGR 22/7/7 remains frozen, confirmation_test sealed and all 11 gates CLOSED.
+
+## R130 calibration-source provenance — documentation scope (2026-10-26)
+
+The Hilti-Research dataset mirror revision
+`e62017f907007fdc5ab8c721842e4ae7359d7f49`
+yielded six SHA256-pinned calibration YAMLs on UNIVER off Git.
+Five camera models and six transforms passed structural/geometric checks.
+Stereo composition and the LiDAR frame hierarchy were internally
+consistent. B3 produced a deterministic source-pinned report and
+replayable verifier retained off Git. B4's separately executed
+independent NumPy audit passed, but its source is not archived.
+
+B5's five-file reduced handoff archive SHA256 is
+`e87e64c075629d54166f4a610b9fd44c9fa52361901a78b7b192411c05b87899`.
+B6C-R1 completed KIOS intake; receipt SHA256 is
+`9f310e9fc4dd0594b5cf5de20fd335d9f5b364e892747325d1e074b1aa4d1d92`.
+B7 reported a clean Git checkout and no tracked conventional
+LICENSE/NOTICE files. Upstream publisher material is
+CC BY-NC-SA 3.0. Publication of the B5 handoff remains blocked.
+
+The recorded IMU-to-YAML frame alias, physical calibration accuracy,
+sensor clock identity, independent reference applicability and real
+estimator-factor or health-scoring eligibility remain unqualified.
+No ground truth accessed or evaluated in R130. Frozen M2DGR
+22 TRAIN / 7 validation_calibration / 7 sealed confirmation_test,
+all eleven scientific gates CLOSED.
+
+This record documents bounded R130 provenance and limitations only.
+No original calibration data or B5 handoff is included in Git.

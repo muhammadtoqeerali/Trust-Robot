@@ -776,3 +776,22 @@ KIOS imported a byte-verified, sanitized real Hilti-Oxford Exp14 camera/LiDAR/IM
 ## R129 Hilti real-payload descriptive diagnostics checkpoint (2026-10-23)
 
 KIOS received the B4C SHA-verified sanitized handoff from UNIVER and archived it at `experiments/trust_robot_r129_real_sensor_diagnostics_checkpoint_v1/`. R129-B1 sampled 64 messages per each of five cameras, one IMU, one LiDAR (448); B2 independently replayed and reported seven matching fingerprints and 33 feature families. The B2 replay program is not archived; only its operator outcome is retained, not an independently sealed proof. See `docs/audits/trust_robot/TRUST_ROBOT_R129_REAL_SENSOR_DIAGNOSTICS_V1.md`. These are unlabelled descriptive features, not health labels, physical time qualification, real estimator factors or ATE/RPE. Hilti source ROSbag and per-message records remain off Git; M2DGR 22/7/7 frozen, confirmation_test sealed, all 11 gates CLOSED.
+
+## R130 Hilti-Oxford calibration provenance — documentation scope, 2026-10-26
+
+R130-B1 SHA-froze six publisher calibration YAMLs on UNIVER off Git.
+R130-B2-R2 validated structural camera/transform consistency after
+repairing an incomplete lexical parser; R130-B3 preserved a replayable
+off-Git diagnostic verifier. R130-B4 independently recomputed results
+but retained only operator output, not the independent source program.
+R130-B5/B6 transferred a reduced five-file provenance handoff to
+KIOS off Git; B6C-R1 fixed a verifier intake-directory layout mismatch.
+The B7 seven-file hash audit passed.
+
+No publisher calibration arrays, original YAMLs or detailed report
+are authorized for public Git publication. Recorded IMU frame alias,
+physical extrinsic accuracy, hardware sync, independent reference
+eligibility, real factors, calibrated health and ATE/RPE remain
+unqualified. M2DGR 22/7/7 and all eleven CLOSED gates are unchanged.
+Read the R130 README and scientific audit before further calibration
+work. The B5 handoff's public publication remains blocked.
