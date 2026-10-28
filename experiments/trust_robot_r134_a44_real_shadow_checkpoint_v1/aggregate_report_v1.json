@@ -1,0 +1,97 @@
+{
+  "schema": "TRUST_ROBOT_R134_A44_REAL_SHADOW_AGGREGATE_V1",
+  "evidence_role": "UNTRUSTED_DESCRIPTIVE_REPLAY",
+  "source": {
+    "recording": "Hilti-Oxford 2022 exp14_basement_2",
+    "published_kernel_commit": "eeff75d78f55ee868762a25dde1e7d8fa4ec09d6",
+    "published_kernel_sha256": "048abce9b63a13176dab1ccb36208195c40baaee4ba61f91eb793bccd9a04462",
+    "calibration_yaml_sha256": "344ab530f12ea3eb8c658bdc005368275eccd70bca559a9fab8713a98cb1c60e",
+    "calibration_file_structure_checked": true,
+    "physical_calibration_verified": false,
+    "physical_clock_verified": false,
+    "independent_ground_truth_accessed": false,
+    "source_values": "R134-A44_USER_SUPPLIED_TERMINAL_OUTPUT",
+    "source_log_cryptographically_attested": false
+  },
+  "pair_order": "FOUR_ACTIVE_THEN_FOUR_NEAR_STATIONARY",
+  "metric": "PAIR_MEDIAN_ANGULAR_BEARING_RESIDUAL_DEGREES",
+  "display_precision_decimals": 5,
+  "camera_images_decoded": 12,
+  "imu_messages_decoded": 11003,
+  "rows": [
+    {
+      "frames": [660, 661], "rays": 33, "steps": 11,
+      "zero": 0.98099,
+      "header_negative": 0.37593,
+      "header_positive": 1.82715,
+      "kalibr_negative": 0.38237,
+      "kalibr_positive": 1.82139
+    },
+    {
+      "frames": [660, 663], "rays": 34, "steps": 31,
+      "zero": 2.46928,
+      "header_negative": 1.03024,
+      "header_positive": 4.27368,
+      "kalibr_negative": 1.03006,
+      "kalibr_positive": 4.25598
+    },
+    {
+      "frames": [680, 681], "rays": 34, "steps": 11,
+      "zero": 1.15225,
+      "header_negative": 0.47262,
+      "header_positive": 2.14565,
+      "kalibr_negative": 0.46448,
+      "kalibr_positive": 2.13349
+    },
+    {
+      "frames": [680, 683], "rays": 25, "steps": 31,
+      "zero": 1.99748,
+      "header_negative": 1.13738,
+      "header_positive": 4.23183,
+      "kalibr_negative": 1.08756,
+      "kalibr_positive": 4.20429
+    },
+    {
+      "frames": [1060, 1061], "rays": 39, "steps": 11,
+      "zero": 0.0,
+      "header_negative": 0.01877,
+      "header_positive": 0.01877,
+      "kalibr_negative": 0.01782,
+      "kalibr_positive": 0.01782
+    },
+    {
+      "frames": [1060, 1063], "rays": 39, "steps": 31,
+      "zero": 0.0,
+      "header_negative": 0.04235,
+      "header_positive": 0.04234,
+      "kalibr_negative": 0.04251,
+      "kalibr_positive": 0.04251
+    },
+    {
+      "frames": [1080, 1081], "rays": 38, "steps": 11,
+      "zero": 0.0,
+      "header_negative": 0.01515,
+      "header_positive": 0.01515,
+      "kalibr_negative": 0.01444,
+      "kalibr_positive": 0.01444
+    },
+    {
+      "frames": [1080, 1083], "rays": 39, "steps": 31,
+      "zero": 0.0,
+      "header_negative": 0.01033,
+      "header_positive": 0.01033,
+      "kalibr_negative": 0.00947,
+      "kalibr_positive": 0.00947
+    }
+  ],
+  "scientific_boundaries": {
+    "same_recording_and_windows_as_r134_a33": true,
+    "independent_confirmation": false,
+    "real_factor_admission": false,
+    "health_label_authority": false,
+    "metric_pose_accuracy_claim": false,
+    "camera_imu_frame_identity_verified": false,
+    "m2dgr_scientific_gates_closed": 11,
+    "m2dgr_confirmation_test_accessed": false
+  }
+}
