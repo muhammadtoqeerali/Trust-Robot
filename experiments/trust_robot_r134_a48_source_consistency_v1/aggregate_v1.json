@@ -1,0 +1,45 @@
+{
+  "schema": "TRUST_ROBOT_R134_A48_PUBLISHER_CALIBRATION_CONSISTENCY_V1",
+  "evidence_role": "PUBLISHER_DERIVED_CALIBRATION_SOURCE_CONSISTENCY",
+  "source": {
+    "publisher": "Hilti-Research",
+    "repository": "Hilti-Research/phasma_description",
+    "commit": "79002026e9b229cf9b4e95a403eaec4f00acfd79",
+    "calibration_path": "urdf/calibrations/20220322_calibration.yaml",
+    "calibration_git_blob": "669905cffd11b51fda31ec529f777d5eb0b2663a",
+    "phasma_xacro_path": "urdf/phasma.urdf.xacro",
+    "phasma_xacro_git_blob": "694316c6aaf858584991c459d749133c0bde5489",
+    "camera_zero_identity": "FRONT_RIGHT_CAMERA",
+    "calibration_parent": "ALPHASENSE_IMU",
+    "local_kalibr_sha256": "344ab530f12ea3eb8c658bdc005368275eccd70bca559a9fab8713a98cb1c60e",
+    "source_log": "R134_A48_USER_SUPPLIED_TERMINAL_OUTPUT",
+    "source_log_cryptographically_attested": false
+  },
+  "comparison": {
+    "direction": "KALIBR_T_CAM_IMU_VS_INVERSE_URDF_T_IMU_CAM",
+    "inverse_rotation_difference_deg": 0.00000171,
+    "inverse_translation_difference_mm_displayed": 0.0,
+    "direct_rotation_difference_deg": 120.95316063,
+    "direct_translation_difference_mm": 109.241498,
+    "inverse_rotation_closer": true,
+    "inverse_translation_closer": true,
+    "publisher_to_local_numerical_consistency_supported": true,
+    "comparison_type": "DESCRIPTIVE_NOT_CALIBRATION_ACCEPTANCE",
+    "calibration_fitted": false,
+    "acceptance_threshold_selected": false
+  },
+  "boundaries": {
+    "official_archive_byte_identity_established": false,
+    "shared_calibration_origin_possible": true,
+    "independent_physical_measurement": false,
+    "bag_camera_frame_alias_certified": false,
+    "bag_imu_frame_alias_certified": false,
+    "capture_clock_certified": false,
+    "independent_ground_truth_accessed": false,
+    "metric_pose_accuracy_established": false,
+    "real_estimator_factor_authorized": false,
+    "health_label_authorized": false,
+    "m2dgr_scientific_gates_closed": 11,
+    "m2dgr_confirmation_test_accessed": false
+  }
+}
