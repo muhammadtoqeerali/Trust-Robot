@@ -1,0 +1,96 @@
+{
+  "schema": "TRUST_ROBOT_R134_A54_A56_PROVENANCE_CLOSURE_V1",
+  "status": "LOCAL_PROVENANCE_INVESTIGATION_BLOCKED",
+  "evidence_role": "UNTRUSTED_AGGREGATE_METADATA_ONLY",
+  "source_logs": [
+    "R134_A54_USER_SUPPLIED_TERMINAL_OUTPUT",
+    "R134_A55_USER_SUPPLIED_TERMINAL_OUTPUT",
+    "R134_A56_USER_SUPPLIED_TERMINAL_OUTPUT"
+  ],
+  "source_logs_cryptographically_attested": false,
+  "recording": {
+    "dataset": "HILTI_OXFORD_2022",
+    "sequence": "exp14_basement_2",
+    "bag_size_bytes": 6260771085,
+    "bag_sha256_previously_recorded": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82",
+    "bag_full_sha256_recomputed_in_a54_a56": false
+  },
+  "a54_bag_metadata": {
+    "topics": 8,
+    "connections": 8,
+    "duration_seconds": 74.013,
+    "configuration_diagnostic_topic_candidates": 0,
+    "excluded_reference_topic_count": 0,
+    "alphasense_connections_without_callerid": 6,
+    "camera_publisher_id_recorded": false,
+    "imu_publisher_id_recorded": false,
+    "original_driver_settings_found": false,
+    "original_ptp_lock_evidence_found": false,
+    "ros_messages_deserialized": 0,
+    "ground_truth_messages_read": 0
+  },
+  "a55_scoped_file_inventory": {
+    "search_roots": [
+      "HILTI_OXFORD_2022",
+      "HILTI_OXFORD_2022_RUNTIME_R128_B10",
+      "HILTI_OXFORD_2022_RUNTIME_R128_B7",
+      "HILTI_OXFORD_2022_RUNTIME_R128_B9",
+      "HILTI_OXFORD_2022_RUNTIME_R129_B1",
+      "HILTI_OXFORD_2022_RUNTIME_R130_B1"
+    ],
+    "search_depth_limit": 3,
+    "directories_visited": 9,
+    "entries_inspected": 33,
+    "candidate_files": 14,
+    "symlinks_skipped": 0,
+    "protected_paths_skipped": 0,
+    "scope_coverage": "SCOPED_DEPTH_COMPLETE",
+    "candidate_contents_read": false,
+    "original_capture_configuration_identified": false,
+    "global_filesystem_absence_proven": false
+  },
+  "a56_prior_project_manifests": {
+    "files": {
+      "HILTI_OXFORD_2022/r128_b8_evidence/manifest_v1.json": "dd0d117694608036fb895f651e80e579f6dba127eb7957c2244e7c968d5ae5c2",
+      "HILTI_OXFORD_2022_RUNTIME_R128_B10/manifest_v1.json": "46937f40df9da2467375072a835a4d7105f2fbb5c189355fda7c68a83678ac66",
+      "HILTI_OXFORD_2022_RUNTIME_R128_B7/manifest_v1.json": "63019a62f6354ffe4eec684f23ab2ef9b9a084e22d7c260ef636cca68c9eda8e",
+      "HILTI_OXFORD_2022_RUNTIME_R128_B9/manifest_v1.json": "616c4df272aadd7f514a2fd760d5472259c7c7ec574494dfefa1ed6f249138e4",
+      "HILTI_OXFORD_2022_RUNTIME_R129_B1/r129_b1_manifest_v1.json": "1aa2789b33b99f94bfd5f7d494c33f27db2ccf00d9578ae39e6e61220d53ac5d",
+      "HILTI_OXFORD_2022_RUNTIME_R130_B1/manifest_v1.json": "ffd88df49b95f4f0caf44a472236761085d74802e680b759c2546a54ad4daed3"
+    },
+    "manifests_checked": 6,
+    "relevant_metadata_key_occurrences": 29,
+    "whitelisted_value_occurrences": 0,
+    "r130_manifest_relevant_key_count": 22,
+    "prior_project_generated_evidence": true,
+    "r130_source_provenance_field_names_present": true,
+    "r130_physical_clock_validation_field_name_present": true,
+    "original_driver_logs_inspected": 0,
+    "original_ptp_logs_inspected": 0,
+    "primary_hardware_attestation_obtained": false
+  },
+  "previous_evidence": {
+    "publisher_calibration_source_consistency": "SUPPORTED",
+    "camera_imu_shadow_result": "DESCRIPTIVE_ONLY",
+    "recorded_ros_frame_internal_consistency": "SUPPORTED",
+    "capture_clock_certification": "UNRESOLVED",
+    "physical_frame_alias_certification": "UNRESOLVED"
+  },
+  "scientific_decision": {
+    "local_recording_provenance_workstream": "STOP_UNTIL_PRIMARY_EVIDENCE",
+    "source_absence_claim_scope": "ONLY_INSPECTED_BAG_METADATA_AND_SCOPED_LOCAL_SUPPORT_FILES",
+    "original_recording_driver_config_available": false,
+    "original_recording_ptp_lock_record_available": false,
+    "recording_specific_frame_alias_evidence_available": false,
+    "failure_or_sensor_fault_inferred": false,
+    "calibration_changed": false,
+    "clock_offset_fitted": false,
+    "ground_truth_accessed": false,
+    "metric_pose_estimated": false,
+    "real_factor_admission_authorized": false,
+    "health_label_authorized": false,
+    "m2dgr_scientific_gates_closed": 11,
+    "m2dgr_confirmation_test_accessed": false,
+    "next_workstream": "SYNTHETIC_ESTIMATOR_AND_SENSOR_HEALTH_ENGINEERING"
+  }
+}
