@@ -1,0 +1,87 @@
+{
+  "schema": "TRUST_ROBOT_R134_A51_FRAME_CLOCK_AUDIT_V1",
+  "evidence_role": "UNTRUSTED_RECORDED_METADATA_AND_DOCUMENTARY_CONTEXT",
+  "recording": {
+    "dataset": "HILTI_OXFORD_2022",
+    "sequence": "exp14_basement_2",
+    "bag_size_bytes": 6260771085,
+    "bag_sha256_previously_recorded": "18eea013076b8263ababf4f36eb68d331564a0a493262b006dc0dddc2aa85b82",
+    "bag_sha256_recomputed_in_a51": false,
+    "calibration_sha256": "344ab530f12ea3eb8c658bdc005368275eccd70bca559a9fab8713a98cb1c60e",
+    "source_log": "R134_A51_USER_SUPPLIED_TERMINAL_OUTPUT",
+    "source_log_cryptographically_attested": false
+  },
+  "frames": {
+    "camera_topic": "/alphasense/cam0/image_raw",
+    "camera_header_frame_id": "cam0_sensor_frame",
+    "camera_headers_inspected": 76,
+    "camera_header_mismatch_count": 0,
+    "imu_topic": "/alphasense/imu",
+    "imu_header_frame_id": "imu_sensor_frame",
+    "imu_headers_inspected": 11003,
+    "imu_frame_mismatch_count": 0,
+    "imu_header_nonmonotonic_count": 0,
+    "tf_topic_count": 0,
+    "cam0_camera_info_connections": 0,
+    "publisher_2022_camera_label": "C0",
+    "publisher_2022_imu_label": "I",
+    "publisher_to_recorded_ros_alias_certified": false
+  },
+  "timestamps": {
+    "kalibr_declared_shift_ms": 1.90712,
+    "kalibr_shift_independently_certified": false,
+    "record_minus_header_summary_units": "milliseconds",
+    "record_minus_header_print_precision_decimal_places": 4,
+    "record_minus_header_all_groups_printed_zero": true,
+    "integer_nanosecond_equality_independently_audited": false,
+    "groups": [
+      {"name":"CAMERA_FIRST_64","count":64,"min_ms":0.0,"median_ms":0.0,"max_ms":0.0},
+      {"name":"CAMERA_A33_A44_ANCHORS","count":12,"min_ms":0.0,"median_ms":0.0,"max_ms":0.0},
+      {"name":"IMU_FIRST_128","count":128,"min_ms":0.0,"median_ms":0.0,"max_ms":0.0},
+      {"name":"IMU_SPACED_HISTORY","count":45,"min_ms":0.0,"median_ms":0.0,"max_ms":0.0}
+    ],
+    "camera_first_64_intervals_ms": {
+      "min":24.9972,
+      "median":24.9973,
+      "max":24.99946
+    },
+    "imu_first_128_intervals_ms": {
+      "min":2.4835,
+      "median":2.505,
+      "max":2.5251
+    },
+    "clock_mode_identified": false,
+    "ptp_lock_certified": false,
+    "bag_record_timestamp_independent_capture_clock_reference": false,
+    "capture_time_error_bounded": false
+  },
+  "manufacturer_context": {
+    "repository": "sevensense-robotics/core_research_manual",
+    "pinned_revision": "6280dd64b7271b8a26a21c1703f38086d636a2b2",
+    "time_synchronization_path": "pages/time_synchronization.md",
+    "time_synchronization_git_blob": "b6115e8a4c8cd6ac567d5fd53c0ab20c3e082f2f",
+    "sensor_settings_path": "pages/sensor_settings.md",
+    "sensor_settings_git_blob": "d048ee893aa3a90dcdf852d0413594632477dc9a",
+    "documented_time_modes": [
+      "RAW_DEVICE",
+      "TRANSLATED_HOST",
+      "PTP_SYNCHRONIZED"
+    ],
+    "camera_timestamp_nominal_reference": "EXPOSURE_MIDPOINT",
+    "imu_400_hz_supported_by_manufacturer": true,
+    "recording_specific_mode_verified": false,
+    "recording_specific_driver_configuration_available": false,
+    "manual_version_matches_recording_proven": false
+  },
+  "scientific_boundaries": {
+    "physical_frame_alias_certified": false,
+    "physical_clock_certified": false,
+    "independent_calibration_measurement": false,
+    "ground_truth_accessed": false,
+    "pose_or_covariance_generated": false,
+    "real_factor_authorized": false,
+    "health_labels_authorized": false,
+    "m2dgr_scientific_gates_closed": 11,
+    "m2dgr_confirmation_test_accessed": false
+  }
+}
