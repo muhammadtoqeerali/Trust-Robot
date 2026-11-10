@@ -1,3 +1,21 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A40-2
+
+**Checkpoint publication:** R135-A40-2, after validated KIOS R135-A40-1 offline synthetic stress. This additive page supersedes ONLY the old current-status/next-task fields below. All historical protocols and evidence gates remain unchanged.
+
+**Latest experimentally completed private phase:** R135-A40-1, manufactured-fixture 14-scenario paired stress (16/16 new synthetic tests, 89 existing focused regressions, three schema rejection cases, byte-exact repeatability); private receipt SHA-256 `af57f23efc676493198352704d5b7ef5b0aa1475749037d505f8aeadb24d8859`. No dataset, Nova, UNIVER or physical-control access; no Git push during A40-1.
+
+**Versioned engineering implementation:** R135-A40-2 publishes `src/trust_robot/synthetic_diagnostic_stress_v1.py`, `tests/trust_robot/test_synthetic_diagnostic_stress_v1.py`, and `docs/audits/trust_robot/TRUST_ROBOT_R135_A40_2_SYNTHETIC_DIAGNOSTIC_STRESS_V1.md` on branch `kios-isaacsim-v15-integration`. Treat publication as confirmed ONLY if Git commit/remote HEAD and five-path allowlist are verified; this narrative is not independently a push receipt.
+
+**Next proposed research phase:** R135-A40-3, offline synthetic non-detection / observability-falsification extensions, prior to downstream trust/estimator ablation. Do not repeat A38/A39 surveys or A40-1 tests without a new evidence question.
+
+**Unchanged hard gates:** zero independently accepted real healthy/degraded/unusable labels; no trained calibrated real health model; all eleven M2DGR real-factor evidence gates CLOSED; 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test frozen partitions, with confirmation inaccessible for tuning; no physical sensor control, robot motion, actuation, health-based suppression, real-factor admission or real ATE/RPE claims. Numeric header matches and recorder arrival are not independently qualified physical timestamps. Synthetic intent tags are not attack attribution.
+
+**Git workflow:** KIOS-only, pinned ancestor/remote, exact allowlisted source/test/report/pointer changes, tests, staged blob verification, non-forced push, verified local/remote HEAD equality, private SHA-256 receipt. No raw bags, sensor payloads, private receipts, workstation forensic paths or credentials in Git.
+
+---
+
+## Historical handoff (R135-A39-5; retained verbatim)
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A39-5
 
 **Checkpoint prepared:** 2026-11-10 (Europe/Rome).  **Last completed experimental task:** `R135-A39-5`.  **Next intended engineering task:** `R135-A39-6` (consolidate and version reproducible, unlabelled real-data multimodal diagnostics).  **Git publication of THIS handoff:** must be confirmed by its separate, guarded KIOS publication command. This document must never itself be treated as evidence that the new commit was pushed.

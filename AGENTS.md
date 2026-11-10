@@ -1,6 +1,6 @@
 # TRUST-ROBOT Agent Entry Point
 
-> **CURRENT CHECKPOINT (R135-A39-5; 2026-11-10):** Read `TRUST_ROBOT_CURRENT_HANDOFF.md` first for the current KIOS/Nova/UNIVER workstation map, private A38/A39 receipt lineage, safety gates and next task R135-A39-6. Verify its Git publication; frozen scientific protocols remain authoritative.
+> **CURRENT CHECKPOINT (R135-A40-2; 2026-11-10):** Read `TRUST_ROBOT_CURRENT_HANDOFF.md` first for the reviewed A40-1 synthetic stress, A40-2 versioned benchmark, KIOS/Nova/UNIVER boundaries, frozen scientific gates and next proposed A40-3. Verify the actual Git commit/remote HEAD; no physical sensor health labels or robot control are authorized.
 
 Before making any project change, read:
 
