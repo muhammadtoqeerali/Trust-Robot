@@ -1,3 +1,17 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A44-4
+
+**Checkpoint:** 2026-11-11. This newest status section precedes historical handoffs below; preserve them as evidence. Commit and remote publication are established only by the separate verified KIOS Git receipt.
+
+**Completed private engineering:** A44-1 reconciled existing A39 Nova recording diagnostics and A43 ROS package metadata with the frozen synthetic 15D solver; 120 selected tests passed. A44-2R corrected upstream A41-3 dependency discovery; 273 selected tests passed. A44-3 implemented an observation-aware, manufactured-fixture-only shadow around the existing marginalized 15D estimator; 283 selected tests passed, and its source/test/report were privately SHA-256 pinned. A44-3 receipt SHA-256: `0107753ade6e762366fb38c70e9413b563664c560879e50c42578427e9ef29bb`.
+
+**Scientific result:** In the frozen `(0,2,4,6,8)` synthetic node-frame schedule, manufactured LiDAR frame 4 is absent. The original numerical-support audit still reports support in all four solver windows; the observation-aware overlay holds windows 2 and 3. Clean and manufactured accelerometer-bias conditions remain numerically eligible, which does NOT prove IMU health or bias detection. The original estimator is unchanged. The new module and tests are published with `docs/audits/trust_robot/TRUST_ROBOT_R135_A44_4_OBSERVATION_AWARE_SHADOW_V1.md` only after the operator's guarded publication command succeeds.
+
+**Unchanged safety/science:** Nova's frozen stationary 843-message/7-topic bag is preserved and was not reread in A44; no Nova/UNIVER/ROS access or robot actuation during A44-1 to A44-4. No independently accepted real healthy/degraded/unusable labels, trained/calibrated real health model, independently qualified physical clock/extrinsics/GT, operational sensor suppression, real-factor admission, real ATE/RPE, or physical safety-control authorization. The M2DGR 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test split remains frozen, with eleven M2DGR physical gates CLOSED and 13 independent evidence requests open. A41/A42 private weighted experimental backends are not promoted to operational code.
+
+**Next work:** review offline source-identifiable synthetic fault observability, cross-modality causal ambiguity and bounded factor-conditioning interfaces before any qualified real-data integration. Do not repeat Nova discovery or sensor recording absent a genuinely new physical-evidence question. Use KIOS-only, reviewed nonforced Git publication on branch `kios-isaacsim-v15-integration`; no raw/private evidence in Git.
+
+---
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A40-2
 
 **Checkpoint publication:** R135-A40-2, after validated KIOS R135-A40-1 offline synthetic stress. This additive page supersedes ONLY the old current-status/next-task fields below. All historical protocols and evidence gates remain unchanged.
