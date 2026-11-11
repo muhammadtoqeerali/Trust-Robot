@@ -1,5 +1,7 @@
 # TRUST-ROBOT Agent Entry Point
 
+> **CURRENT CHECKPOINT (R135-A44-6; 2026-11-11):** Read the latest section of `TRUST_ROBOT_CURRENT_HANDOFF.md` and `docs/audits/trust_robot/TRUST_ROBOT_R135_A44_6_FACTOR_OWNERSHIP_AVAILABILITY_V1.md`. Factor ownership and dropout shadow are strictly synthetic; no real factors, calibrated health or robot actuation. Confirm the new Git receipt/remote HEAD before declaring publication.
+
 > **CURRENT CHECKPOINT (R135-A44-4; 2026-11-11):** Read the newest top section of `TRUST_ROBOT_CURRENT_HANDOFF.md` and `docs/audits/trust_robot/TRUST_ROBOT_R135_A44_4_OBSERVATION_AWARE_SHADOW_V1.md`. The observation-aware LiDAR-dropout hold is synthetic shadow engineering only; real factors, operational health and robot control remain denied. Verify Git remote HEAD and publication receipt before asserting publication.
 
 > **CURRENT CHECKPOINT (R135-A40-2; 2026-11-10):** Read `TRUST_ROBOT_CURRENT_HANDOFF.md` first for the reviewed A40-1 synthetic stress, A40-2 versioned benchmark, KIOS/Nova/UNIVER boundaries, frozen scientific gates and next proposed A40-3. Verify the actual Git commit/remote HEAD; no physical sensor health labels or robot control are authorized.

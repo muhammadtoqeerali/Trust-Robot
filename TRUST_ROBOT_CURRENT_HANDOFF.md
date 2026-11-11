@@ -1,3 +1,19 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A44-6
+
+**Checkpoint proposed for publication:** 2026-11-11. The exact commit and remote-head receipt must independently confirm publication. Historical handoffs below remain intact.
+
+**Latest verified private work:** R135-A44-5 inspected 32 of 32 manufactured five-node LiDAR-availability masks using a bounded, independent edge-ownership model. Six selected masks were also tested with the frozen synthetic `analytic_preintegrated_fusion.make_factors` frontend and marginalized 15D estimator. Tests: 16 new plus 121 frozen regressions = 137 passing. Private A44-5 receipt SHA-256 `f41f9b8340d45070a24dcb22cec9a87812cc202336eadc80ed21d368d6aaff45`. A44-4 published 286 tests and five files at Git HEAD `ba1c6165c3e408bdc1f30f14b36566ff97ad4ee1`.
+
+**Finding:** Frozen synthetic LiDAR frontend creates seven scan-pair factors when every node scan is present. With frame 4 absent, three factors remain, while the observation-aware shadow holds optimization windows 2 and 3. When all five node scans are absent, there are zero LiDAR factors yet the synthetic inertial/prior-based optimizer still returns five states; **all four shadow windows are held**. Numeric solver completion and factor-rank support do NOT establish physical sensor availability, physical observability, or safe navigation. No physical fault source or attack actor is inferred.
+
+**Published increment:** `src/trust_robot/factor_ownership_availability_bridge_v1.py`, its regression tests, and `docs/audits/trust_robot/TRUST_ROBOT_R135_A44_6_FACTOR_OWNERSHIP_AVAILABILITY_V1.md` are an offline synthetic integration contract only. A41/A42 private weighting experiments remain private and are NOT enabled as operational factor weighting. No new Nova capture or UNIVER access occurred.
+
+**Science and safety frozen:** independent real health labels = 0; no validated real health model, physical sensor factor, 6DoF physical reference, synchronized clocks, verified physical extrinsics, calibrated operational availability, robot control, stop or return-home. Eleven M2DGR science gates remain closed, 13 evidence requests open, and the frozen 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test partition is unchanged.
+
+**Next:** offline falsification and factor-interface interoperability around the already published estimator, emphasizing source-unknown ambiguity and interventions that do NOT reliably manifest in available diagnostics. No new robot inventory or capture without a concrete new evidence question; independently qualify physical interfaces before any real factor admission.
+
+---
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A44-4
 
 **Checkpoint:** 2026-11-11. This newest status section precedes historical handoffs below; preserve them as evidence. Commit and remote publication are established only by the separate verified KIOS Git receipt.
