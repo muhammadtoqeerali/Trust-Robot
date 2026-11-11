@@ -1,5 +1,7 @@
 # TRUST-ROBOT Agent Entry Point
 
+> **CURRENT CHECKPOINT (R135-A45-3; 2026-11-11):** Read the newest `TRUST_ROBOT_CURRENT_HANDOFF.md` and `docs/audits/trust_robot/TRUST_ROBOT_R135_A45_3_SYNTHETIC_MODALITY_AMBIGUITY_INTEROP_V1.md`. Separate manufactured camera/LiDAR factor identity is supported by an already-existing experimental estimator; real factor admission, calibrated health, causal sensor blame and robot control remain denied. Verify the Git remote HEAD and private publication receipt before declaring success.
+
 > **CURRENT CHECKPOINT (R135-A44-6; 2026-11-11):** Read the latest section of `TRUST_ROBOT_CURRENT_HANDOFF.md` and `docs/audits/trust_robot/TRUST_ROBOT_R135_A44_6_FACTOR_OWNERSHIP_AVAILABILITY_V1.md`. Factor ownership and dropout shadow are strictly synthetic; no real factors, calibrated health or robot actuation. Confirm the new Git receipt/remote HEAD before declaring publication.
 
 > **CURRENT CHECKPOINT (R135-A44-4; 2026-11-11):** Read the newest top section of `TRUST_ROBOT_CURRENT_HANDOFF.md` and `docs/audits/trust_robot/TRUST_ROBOT_R135_A44_4_OBSERVATION_AWARE_SHADOW_V1.md`. The observation-aware LiDAR-dropout hold is synthetic shadow engineering only; real factors, operational health and robot control remain denied. Verify Git remote HEAD and publication receipt before asserting publication.

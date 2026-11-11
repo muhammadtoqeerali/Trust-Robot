@@ -1,3 +1,21 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A45-3
+
+**Checkpoint prepared:** 2026-11-11. Do not infer publication from this handoff; a separate successful KIOS commit, non-forced push, remote-HEAD verification and private receipt are required. All historical handoffs remain below.
+
+**Prior verifications:** A44-6 Git commit `6b07346bf524566952af86c72558ce741c2a8a10` published synthetic scan/factor ownership with 305 selected passing tests. A45-1 privately evaluated manufactured camera/LiDAR disagreement on two overlapping edges for two seeds; 152 selected tests passed. A45-2 reused the already present `analytic_separated_modalities` solver and compared six camera-enabled/disabled synthetic controls with the legacy replacement adapter; 164 selected tests passed. A45-1 and A45-2 private evidence receipts are SHA-pinned off Git; neither phase accessed Nova, UNIVER, sensor data or M2DGR.
+
+**Core result:** On clean manufactured inputs with camera factors enabled, the legacy single pose slot stores seven relative-pose factors after same-edge camera substitution; the existing separate-modality sibling maintains **seven LiDAR and two camera factors** (nine total). For the manufactured LiDAR frame-4 dropout, the legacy adapter has four total pose slots (two camera, two LiDAR), whereas the separate estimator retains three LiDAR factors and two camera factors (five total). This does not prove better trajectory accuracy or independent physical measurements. The original frozen production estimator remains unchanged; fixed camera residual scales are not empirical sensor uncertainties or reliability weights.
+
+**Causal ambiguity:** Equal manufactured pairwise disagreement is compatible with opposite assumed sensor-error explanations (illustrative discrepancy 0.125 m), so culprit attribution is **UNRESOLVED**. No calibrated probability, physical sensor health diagnosis, event-time qualification, physical camera extrinsics, real 6DoF reference, operational weighting or control is supported.
+
+**Proposed new files:** `src/trust_robot/synthetic_cross_modal_ambiguity_v1.py`, `src/trust_robot/synthetic_separated_modality_interop_v1.py`, their published tests, and `docs/audits/trust_robot/TRUST_ROBOT_R135_A45_3_SYNTHETIC_MODALITY_AMBIGUITY_INTEROP_V1.md`. This is an offline integration diagnostic, not a robot operator or real-factor bridge. A41/A42 private weighted derivatives remain off Git and unadmitted.
+
+**Hard gates remain:** independently accepted real sensor-health labels = 0; real-factor admission DENIED; robot actuation DENIED; eleven M2DGR physical evidence gates CLOSED; 13 evidence requests OPEN; frozen split 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test. No robot recapture or repeated hardware discovery is needed for this software checkpoint.
+
+**Next:** source-ambiguous and joint-modality synthetic falsification, numerical information/uncertainty sensitivity in the existing separate residual implementation, and a reviewed design for physically qualified data integration only when the independent timing, extrinsics, reference and supervision evidence exists.
+
+---
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A44-6
 
 **Checkpoint proposed for publication:** 2026-11-11. The exact commit and remote-head receipt must independently confirm publication. Historical handoffs below remain intact.
