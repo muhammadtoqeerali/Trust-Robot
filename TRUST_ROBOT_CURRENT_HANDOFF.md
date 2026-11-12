@@ -1,3 +1,21 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A47-3
+
+**Checkpoint prepared:** 2026-11-12. This section describes the proposed checkpoint. Confirm the exact guarded Git push, remote SHA and separate KIOS private receipt before declaring it published. Historical handoffs below remain intact.
+
+**Previous published HEAD:** `69b3dfd6733f1db8d0ef5c4a809c0c3bf37df17e` (A46-4). In A47-1, 251 selected tests passed for ten offline manufactured-camera residual-scale cases (0.5x, 1.0x, 2.0x for camera-on conditions and two camera-off controls per condition). A47-2R repaired only a missing private Python import path, then passed 270 selected tests. Its 32-mask synthetic LiDAR availability sweep and ten prior controls were deterministic, with all raw evidence SHA-pinned off Git.
+
+**Synthetic numeric sensitivity:** Camera residual scales in the existing experimental `analytic_separated_modalities` solver were temporarily multiplied by 0.5, 1.0 or 2.0 inside scoped, automatically restored software patches. Relative to 1x, final-state position differences were 1.687139 mm and 0.467774 mm (clean, 0.5x and 2x), and 2.877252 mm and 0.870523 mm (manufactured LiDAR dropout, 0.5x and 2x). These are differences between synthetic estimates, NOT measured positioning error, fitted covariance, accuracy gains or operational reliability weights. Camera-disabled controls were invariant under camera-only residual scale changes.
+
+**Factor-availability shadow:** The published A44 factor-ownership model was reused to check all 32 five-node scan-presence masks. Clean: 7 present of 7 possible manufactured LiDAR pose factors, no holds. With manufactured frame-4 absence: 3 present, 4 absent, shadow hold windows 2 and 3. This is an explanatory availability manifest, NOT physical factor deletion, runtime health-driven factor selection or real sensor calibration.
+
+**Proposed files:** `src/trust_robot/synthetic_camera_scale_sensitivity_v1.py`, `src/trust_robot/synthetic_factor_selection_abstention_shadow_v1.py`, their two test files, and `docs/audits/trust_robot/TRUST_ROBOT_R135_A47_3_CAMERA_SCALE_AND_FACTOR_SELECTION_SHADOW_V1.md`. Source bytes are unchanged from tested private A47 candidates. Only test imports adapt to the published package. The existing 15D estimator is not modified.
+
+**Frozen safety and science:** Physical real-factor admission DENIED, physical health ABSTAIN, source attribution UNRESOLVED, operational factor-weight changes and factor selection DENIED, robot actuation DENIED. No Nova/UNIVER access, ROS, recorded sensor data or M2DGR opened in A47. The M2DGR frozen 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test partition, 11 closed physical evidence gates and 13 open evidence requirements remain unchanged.
+
+**Next:** separate experimentally measured numerical stability from actual calibration; design evidence requirements for independent camera/LiDAR/IMU health verification, clock/extrinsics qualification, uncertainty bounds and an external physical reference. Do not infer operational reliability or enable robot control from synthetic factor-count or scale experiments.
+
+---
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A46-4
 
 **Checkpoint prepared 2026-11-11:** A46 consolidated offline manufactured reliability-ambiguity findings. Confirm remote commit and KIOS private publication receipt independently before asserting that A46-4 is published; older handoffs remain below.
