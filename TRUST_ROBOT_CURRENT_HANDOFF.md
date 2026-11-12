@@ -1,3 +1,19 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A48-3
+
+**Checkpoint prepared 2026-11-12:** A48-1R and A48-2RR passed private validation. Do not infer GitHub publication from this text; verify the separately authorized exact seven-path non-forced push, remote SHA and KIOS private publication receipt. Prior handoffs remain below.
+
+**Private evidence:** A48-1R corrected a fail-closed exception-type mismatch, then passed 282 selected tests. Twenty-four offline manufactured fixed-point camera residual/Jacobian cases and sixteen comparisons reproduced numerical translation-information trace ratios of 4.0 (0.5x residual scale) and 0.25 (2.0x) relative to 1x, over two synthetic LiDAR conditions, two camera seeds and two camera edges. This is a camera-only local 3x3 translation Jacobian subblock identity, NOT fitted covariance, 15D posterior uncertainty, physical accuracy or sensor-health evidence.
+
+**Readiness crosswalk:** A48-2RR passed 180 selected tests after correcting a one-character A22 documentary expectation in a private source copy. It verifies five published audits/contracts and identifies seven still-unresolved prospective evidence categories. Eleven M2DGR admission gates remain CLOSED and thirteen previously documented physical evidence requests remain open. Empirical camera/LiDAR/IMU measurement noise and cross-source dependence have not been validated; Phase-5 real health labels/models and Phase-6 probability calibration are blocked; physical clock, geometry and independent 6DoF reference qualification is not established.
+
+**Proposed A48 publication:** `src/trust_robot/synthetic_camera_information_scaling_v1.py`, `src/trust_robot/synthetic_uncertainty_evidence_readiness_v1.py`, both regression tests, and `docs/audits/trust_robot/TRUST_ROBOT_R135_A48_3_INFORMATION_AND_UNCERTAINTY_READINESS_V1.md`, plus handoff pointers. The exact private recovery source bytes are copied unchanged and only test imports adapt to package imports. The original 15D estimator, physical M2DGR evidence and Phase-5/6/8 gates are untouched.
+
+**Fixed scientific boundaries:** Recorded M2DGR 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test split unchanged; historic confirmation membership is not asserted pristine from all earlier inspection. No new datasets or sensors opened. No real health classification, source blame, physical factors, health-driven selection, operational weights, or robot control. All remain ABSTAIN, UNRESOLVED or DENIED.
+
+**Next:** Seek independently witnessed physical provenance, capture-applicable clocks/extrinsics, independent reference and admissible health supervision under separately reviewed acquisition and validation protocols. Never infer calibrated real sensor reliability from fixed synthetic scale ratios.
+
+---
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A47-3
 
 **Checkpoint prepared:** 2026-11-12. This section describes the proposed checkpoint. Confirm the exact guarded Git push, remote SHA and separate KIOS private receipt before declaring it published. Historical handoffs below remain intact.
