@@ -1,3 +1,19 @@
+# TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A46-4
+
+**Checkpoint prepared 2026-11-11:** A46 consolidated offline manufactured reliability-ambiguity findings. Confirm remote commit and KIOS private publication receipt independently before asserting that A46-4 is published; older handoffs remain below.
+
+**What passed privately:** A46-1 ran 203 selected tests and eight manufactured camera/LiDAR joint-factor cases, showing that a common +0.125 m translation preserves pairwise camera-versus-LiDAR discrepancy for seeds 13 and 31. A46-2RR corrected a private import-path error, ran 221 selected tests, compared IMU motion derived from two manufactured IMU samples, and exposed two *algebraic IMU-pose-proxy* common-shift counterexamples; this was **not raw IMU corruption or a physical hardware fault**. A46-3 ran 237 selected tests, reconciling the eight cases into descriptive changed/unchanged comparisons, LiDAR missing-scan holds, and mandatory real-health abstention. The original 15D estimator and scientific contracts remain unchanged.
+
+**Published interfaces (after successful guarded push):** `synthetic_joint_fault_identifiability_v1.py`, `synthetic_tri_modal_consistency_limits_v1.py`, `synthetic_uncertainty_abstention_bridge_v1.py` plus tests and `docs/audits/trust_robot/TRUST_ROBOT_R135_A46_4_JOINT_FAULT_ABSTENTION_V1.md`. Source A46-1/A46-3 is copied unmodified; A46-2 package imports and all test imports are adjusted for installed `trust_robot` package. Private receipts and raw evidence stay outside Git.
+
+**Scientific finding:** a changed three-way comparison can flag a synthetic discrepancy but does not identify a faulty real modality. A common additive shift applied to all three relative-pose observations can preserve all pairwise translation differences. In the latter A46-2 demonstration the IMU proxy is shifted after propagation, not the underlying IMU measurements. All real health, source attribution and operational factor weight decisions remain uncalibrated and **ABSTAIN/DENIED**. Known manufactured LiDAR frame-4 dropout holds windows 2 and 3 in shadow only.
+
+**Hard evidence gates remain:** independent physically accepted healthy/degraded/unusable labels = 0. Physical clock qualification, camera/LiDAR extrinsics, independent 6-DoF ground truth, approved real factor integration and robot safety controls remain unavailable. M2DGR 22 TRAIN / 7 validation_calibration / 7 SEALED confirmation_test unchanged; 11 science gates CLOSED, 13 evidence requirements open. No Nova/UNIVER access in A46.
+
+**Next:** evaluate source-ambiguous synthetic corruption using independent reference/geometry constraints only when justified; design uncertainty-aware factor-conditioning contracts with safe abstention and no physical execution; plan a separate, evidence-gated real-data study instead of repeating sensor discovery.
+
+---
+
 # TRUST-ROBOT | CURRENT OPERATIONAL HANDOFF | R135-A45-3
 
 **Checkpoint prepared:** 2026-11-11. Do not infer publication from this handoff; a separate successful KIOS commit, non-forced push, remote-HEAD verification and private receipt are required. All historical handoffs remain below.
